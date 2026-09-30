@@ -20,7 +20,8 @@ import jax.numpy as jnp
 
 from fem import NU, ELE_TYPE, solve
 from geometry import density
-from pbc import PeriodicLinearElasticityCube, periodic_p_mat
+from pbc import (PeriodicLinearElasticityCube, periodic_p_mat,
+                 xy_compression_fixed_dofs)
 
 __all__ = ["DensityLinearElasticityPeriodic", "make_density_problem",
            "layered_rho", "avg_stress", "solve_lateral_relaxation"]
@@ -35,9 +36,12 @@ class DensityLinearElasticityPeriodic(PeriodicLinearElasticityCube):
         self.rho = jnp.ones((num_cells, num_quads))
 
     def set_params(self, H_macro, rho, E_s=10.0, E_min=None):
-        """``rho``: (num_cells, num_quads) design density in [0, 1]."""
+        """``rho``: scalar uniform density or (num_cells, num_quads) field."""
         self.H_macro = jnp.asarray(H_macro)
-        self.rho = jnp.asarray(rho)
+        rho = jnp.asarray(rho)
+        if rho.ndim == 0:
+            rho = jnp.broadcast_to(rho, (self.fe.num_cells, self.fe.num_quads))
+        self.rho = rho
         if E_min is None:
             E_min = 1e-3 * E_s
         E_q = E_min + self.rho * (jnp.asarray(E_s) - E_min)
@@ -134,12 +138,16 @@ def avg_stress(problem, sol_list):
 def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
                              E_s=10.0, E_min=None, cell_size=1.0,
                              periodic_axes=(0, 1), fixed_class=None,
-                             fixed_dofs=()):
+                             fixed_dofs=None):
     """Solve the macroscopic lateral strains with zero average lateral stress.
 
     The material is linear elastic with a FIXED density, so the average
     lateral stress is affine in (eps_x, eps_y). With the axial strain fixed
     at ``eps_z``:
+    When ``fixed_dofs`` is None (default) the XY-compression rigid-mode pins
+    of ``xy_compression_fixed_dofs`` are applied automatically; without
+    rigid-mode pins the reduced system is singular and the solver silently
+    returns a zero solution.
 
         H0 = diag(0, 0, eps_z)
         Hx = diag(h, 0, eps_z)
@@ -154,6 +162,9 @@ def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
     Returns a dict with the response matrix, eps_x/eps_y, the final H and
     solution, and the average stress of every solve.
     """
+    if fixed_dofs is None:
+        fixed_dofs = (lambda pts: xy_compression_fixed_dofs(pts, Nx, Ny, Nz,
+                                                            Lz=cell_size))
     problem = make_density_problem(
         Nx, Ny, Nz, jnp.zeros((3, 3)),
         None if callable(rho_quad) else rho_quad,

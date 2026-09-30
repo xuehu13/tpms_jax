@@ -16,10 +16,10 @@ BETA = 20.0
 
 
 def test_uniform_relaxation_matches_analytic():
+    # no explicit fixed_dofs: the XY-compression rigid-mode pins must be
+    # applied automatically (an unpinned run would silently return zeros)
     for n in (4, 8):
-        out = solve_lateral_relaxation(
-            n, n, n, rho_quad=1.0, eps_z=-0.01,
-            fixed_dofs=lambda pts: xy_compression_fixed_dofs(pts, n, n, n))
+        out = solve_lateral_relaxation(n, n, n, rho_quad=1.0, eps_z=-0.01)
         assert out["eps_x"] == pytest.approx(0.003, rel=1e-9)
         assert out["eps_y"] == pytest.approx(0.003, rel=1e-9)
         s = out["sigma_avg"]
@@ -30,9 +30,15 @@ def test_uniform_relaxation_matches_analytic():
         top = onp.where(onp.isclose(pts[:, 2], 1.0, atol=1e-8))[0]
         Fz = float(r[top, 2].sum())
         assert Fz == pytest.approx(-0.1, rel=1e-10)
-        eps_zz = -0.01
-        U = 0.5 * float(s[2, 2] * eps_zz)
+        U = 0.5 * float(s[2, 2] * -0.01)
         assert U == pytest.approx(5.0e-4, rel=1e-10)
+        # linear response matrix: symmetric positive definite for an
+        # isotropic solid (lambda+2mu diagonal, lambda off-diagonal)
+        A = onp.asarray(out["A"])
+        assert onp.abs(A - A.T).max() <= 1e-10
+        assert onp.linalg.eigvalsh(A).min() > 0.0
+    # scalar rho must be normalized to the full integration-point shape
+    assert onp.asarray(out["problem"].rho).shape == (n**3, 8)
 
 
 def test_same_instance_reuse_consistency():

@@ -67,7 +67,7 @@ def main():
         r_b = onp.asarray(out["problem"].compute_residual(out["sol_list"])[0])
         Fz_relaxed = float(r_b[top, 2].sum())
         JxW = onp.asarray(problem_a.JxW)[:, 0, :]
-        rho_o = onp.asarray(rho)
+        rho_o = onp.asarray(out["problem"].rho)
         vf = float((rho_o * JxW).sum() / JxW.sum())
         s_b_diag = onp.diag(s_b)
         s_a_diag = onp.diag(s_fixed)
@@ -83,14 +83,6 @@ def main():
 
 def rho_fn(problem):
     return density(problem.physical_quad_points, C_CALIB, BETA, 1.0)
-
-
-def make_fixed_problem(n, pins):
-    from density_fem import make_density_problem
-    H_fixed = onp.diag(onp.array([0.0, 0.0, -0.01]))
-    return make_density_problem(
-        n, n, n, H_macro=jnp.asarray(H_fixed), rho_quad=rho_fn,
-        periodic_axes=(0, 1), fixed_class=None, fixed_dofs=pins)
 
 
 if __name__ == "__main__":
