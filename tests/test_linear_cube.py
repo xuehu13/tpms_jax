@@ -13,14 +13,9 @@ import jax
 
 jax.config.update("jax_enable_x64", True)
 
-from fem import (E, NU, LAMBDA, MU, affine_bc, face_nodes, hex_jacobian_check,
-                 internal_force, make_cube_problem, solve, strain_energy,
-                 uniaxial_bc)
-
-
-def boundary_mask(problem):
-    pts = onp.asarray(problem.fe.points)
-    return (onp.isclose(pts, 0.0, atol=1e-8) | onp.isclose(pts, 1.0, atol=1e-8)).any(axis=1)
+from fem import (E, NU, LAMBDA, MU, affine_bc, constrained_dof_mask,
+                 face_nodes, hex_jacobian_check, internal_force,
+                 make_cube_problem, solve, strain_energy, uniaxial_bc)
 
 
 def test_hex8_mesh_jacobian_and_volume():
@@ -65,8 +60,8 @@ def test_benchmark_affine_displacement(n):
     assert abs(U - U_exact) / U_exact <= 1e-10
 
     r = internal_force(problem, sol_list)
-    free = ~boundary_mask(problem)
-    assert onp.abs(r[free]).max() <= 1e-9, "equilibrium residual at free DOFs"
+    free_dofs = ~constrained_dof_mask(problem)
+    assert onp.abs(r[free_dofs]).max() <= 1e-9, "equilibrium residual at free DOFs"
 
     # reaction through the +x face equals sigma_xx * A (A = 1)
     rx = float(r[face_nodes(problem, 0, 1.0), 0].sum())
@@ -111,5 +106,19 @@ def test_benchmark_uniaxial_compression(n):
     ux_side = u[face_nodes(problem, 0, 1.0), 0]
     assert onp.abs(ux_side - (-NU * delta)).max() <= 1e-6
 
-    free = ~boundary_mask(problem)
-    assert onp.abs(r[free]).max() <= 1e-9
+    # every unconstrained DOF, incl. lateral components on the loaded faces
+    free_dofs = ~constrained_dof_mask(problem)
+    assert onp.abs(r[free_dofs]).max() <= 1e-9
+
+    # Dirichlet must not clamp lateral motion: the only lateral constraints
+    # are the 3 corner rigid-mode removals on the bottom face; the top face
+    # and all side faces stay completely free laterally
+    dof_mask = constrained_dof_mask(problem)
+    pts = onp.asarray(problem.fe.points)
+    lateral = dof_mask[:, :2]  # ux, uy
+    assert not lateral[face_nodes(problem, 2, 1.0)].any(), "top face laterally free"
+    n_lat = int(lateral.sum())
+    assert n_lat == 3, f"expected exactly 3 corner rigid-mode constraints, got {n_lat}"
+    lat_nodes = onp.where(lateral.any(axis=1))[0]
+    coords = {tuple(onp.round(pts[i], 8)) for i in lat_nodes}
+    assert coords.issubset({(0.0, 0.0, 0.0), (1.0, 0.0, 0.0)}), coords

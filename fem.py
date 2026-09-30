@@ -63,6 +63,22 @@ def internal_force(problem, sol_list):
     return onp.asarray(problem.compute_residual(sol_list)[0])
 
 
+def constrained_dof_mask(problem):
+    """(num_nodes, 3) bool: True where jax-fem imposes a Dirichlet value.
+
+    Built from the problem's actual Dirichlet info (one entry per
+    (location_fn, component) pair), so boundary components without any
+    Dirichlet entry count as free DOFs -- unlike a node-level boundary mask.
+    """
+    pts = jnp.asarray(problem.fe.points)
+    mask = onp.zeros((pts.shape[0], 3), dtype=bool)
+    location_fns, vecs, _ = problem.dirichlet_bc_info[0]  # per-variable blocks
+    for location_fn, vec in zip(location_fns, vecs):
+        hit = onp.asarray(jax.vmap(location_fn)(pts)).astype(bool)
+        mask[hit, vec] = True
+    return mask
+
+
 def affine_bc(ex, ey, ez):
     """Dirichlet info prescribing u=(ex*x, ey*y, ez*z) on all six faces.
 
