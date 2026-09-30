@@ -6,6 +6,7 @@ nodes nor HEX8 integration points; they define geometry-only volume
 fractions and regular-grid data for visualization.
 """
 
+import numpy as onp
 import jax
 import jax.numpy as jnp
 
@@ -40,8 +41,9 @@ def cell_centers(N, L=1.0):
 def binary_volume_fraction(xyz, c, L=1.0):
     """Volume fraction of the true binary solid phase {|G| <= c}.
 
-    Equal-volume cell-center samples make the plain mean an unbiased
-    estimator. This is a geometric volume fraction, NOT a material mass
+    With equal-volume cell-center samples the plain mean is a
+    deterministic midpoint quadrature approximation of the true volume
+    integral. This is a geometric volume fraction, NOT a material mass
     density. At fixed N it is a monotone staircase in c.
     """
     return jnp.mean(solid_mask(xyz, c, L).astype(jnp.float64))
@@ -99,25 +101,37 @@ def calibrate_c(target, xyz, L=1.0, c_lo=1e-4, c_hi=1.0, tol=1e-3, max_iter=60):
 def write_vti_cell_data(filepath, N, L, fields):
     """Write cell-centered regular-grid fields as a VTK XML ImageData (.vti).
 
-    meshio is deliberately not used: its data model cannot express
-    cell-centered ImageData (its cell_data requires explicit cell blocks).
-    The output conforms to the standard VTK XML schema and opens directly in
-    ParaView. The fields are cell-center geometry samples -- solid indicator
-    and design density on a regular grid -- NOT FEM integration-point data.
+    ``N`` is an int (cube grid) or a 3-sequence ``(Nx, Ny, Nz)``; ``L`` is
+    the isotropic cell edge length. Fields use the ``(i, j, k)`` convention
+    of ``cell_centers`` (meshgrid ``indexing="ij"``). VTK ImageData cell
+    data varies the X index fastest, so each field is serialized with
+    ``ravel(order="F")``; this is the only place the ordering is adapted,
+    and it does not affect ``cell_centers`` or any JAX computation.
+
+    meshio is deliberately not used for writing: its data model cannot
+    express cell-centered ImageData (its cell_data requires explicit cell
+    blocks). The output conforms to the standard VTK XML schema and opens
+    directly in ParaView. The fields are cell-center geometry samples:
+    solid indicator and design density on a regular grid, NOT FEM
+    integration-point data.
     """
-    h = L / N
+    if onp.isscalar(N):
+        Nx = Ny = Nz = int(N)
+    else:
+        Nx, Ny, Nz = (int(n) for n in N)
     arrays = "\n".join(
-        _dataarray_xml(name, jnp.asarray(v).reshape(-1), dtype)
+        _dataarray_xml(name, onp.asarray(v).ravel(order="F"), dtype)
         for name, (v, dtype) in fields.items()
     )
     xml = (
         '<?xml version="1.0"?>\n'
         f"<!-- Regular cell-center geometry sampling of the periodic cell [0,{L})^3.\n"
-        f"     Grid: {N}^3 equal-volume cubes, samples at (i+0.5)*L/{N}.\n"
+        f"     Grid: {Nx}x{Ny}x{Nz} equal-volume cubes, samples at (i+0.5)*h per axis.\n"
         "     Geometric fields only: not FEM nodes or integration points. -->\n"
         '<VTKFile type="ImageData" version="0.1" byte_order="LittleEndian">\n'
-        f'  <ImageData WholeExtent="0 {N} 0 {N} 0 {N}" Origin="0 0 0" Spacing="{h} {h} {h}">\n'
-        f'    <Piece Extent="0 {N} 0 {N} 0 {N}">\n'
+        f'  <ImageData WholeExtent="0 {Nx} 0 {Ny} 0 {Nz}" Origin="0 0 0"'
+        f' Spacing="{L / Nx} {L / Ny} {L / Nz}">\n'
+        f'    <Piece Extent="0 {Nx} 0 {Ny} 0 {Nz}">\n'
         "      <CellData>\n"
         f"{arrays}\n"
         "      </CellData>\n"

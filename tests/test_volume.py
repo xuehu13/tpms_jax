@@ -122,6 +122,35 @@ def test_vti_export_matches_cell_count(tmp_path):
     assert set(arrays) == set(fields)
     for name, (field, _) in fields.items():
         vals = onp.array(arrays[name], dtype=onp.float64)
-        ref = onp.asarray(field).reshape(-1)
+        ref = onp.asarray(field).ravel(order="F")
         assert vals.shape == ref.shape == (N**3,)
         assert onp.allclose(vals, ref, atol=1e-9)
+
+
+# ---------- VTK ImageData ordering: X fastest (directional test) ----------
+def test_vti_vtk_cell_ordering(tmp_path):
+    # distinct axis sizes and a unique encoding catch any axis transposition
+    Nx, Ny, Nz = 3, 4, 5
+    i = jnp.arange(Nx)
+    j = jnp.arange(Ny)
+    k = jnp.arange(Nz)
+    X, Y, Z = jnp.meshgrid(i, j, k, indexing="ij")
+    f = 100.0 * X + 10.0 * Y + Z
+
+    path = tmp_path / "order.vti"
+    write_vti_cell_data(str(path), (Nx, Ny, Nz), 1.0, {"f": (f, "Float64")})
+
+    root = ET.parse(str(path)).getroot()
+    img = root.find("ImageData")
+    assert img.get("WholeExtent") == f"0 {Nx} 0 {Ny} 0 {Nz}"
+    data = onp.array(img.find("Piece/CellData/DataArray").text.split(), dtype=onp.float64)
+    assert data.shape == (Nx * Ny * Nz,)
+
+    # VTK ImageData cell (i, j, k) sits at flat index i + Nx*j + Nx*Ny*k
+    # (X fastest). Check asymmetric points incl. the last cell.
+    for ci, cj, ck in [(0, 0, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1), (1, 2, 3), (2, 3, 4)]:
+        flat = ci + Nx * cj + Nx * Ny * ck
+        assert data[flat] == 100.0 * ci + 10.0 * cj + ck, (ci, cj, ck, flat, data[flat])
+
+    # guard: plain C-order ravel would place (1,0,0) at index Ny*Nz, not 1
+    assert not onp.allclose(data, onp.asarray(f).reshape(-1))
