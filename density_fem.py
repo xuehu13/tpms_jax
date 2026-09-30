@@ -18,12 +18,12 @@ import scipy.sparse
 import jax
 import jax.numpy as jnp
 
-from fem import NU, ELE_TYPE
+from fem import NU, ELE_TYPE, solve
 from geometry import density
 from pbc import PeriodicLinearElasticityCube, periodic_p_mat
 
 __all__ = ["DensityLinearElasticityPeriodic", "make_density_problem",
-           "layered_rho"]
+           "layered_rho", "avg_stress", "solve_lateral_relaxation"]
 
 
 class DensityLinearElasticityPeriodic(PeriodicLinearElasticityCube):
@@ -85,6 +85,8 @@ def make_density_problem(Nx, Ny, Nz, H_macro, rho_quad, E_s=10.0, E_min=None,
         dirichlet_bc_info=[[], [], []])
     if callable(fixed_dofs):
         fixed_dofs = fixed_dofs(problem.fe.points)
+    if callable(rho_quad):
+        rho_quad = rho_quad(problem)
     H = jnp.zeros((3, 3)) if H_macro is None else jnp.asarray(H_macro)
     rho = jnp.ones((problem.fe.num_cells, problem.fe.num_quads)) \
         if rho_quad is None else jnp.asarray(rho_quad)
@@ -115,3 +117,75 @@ def layered_rho(problem, rho_bottom, rho_top, interface_z=0.5):
     rho = onp.repeat(per_cell[:, None], num_quads, axis=1)
     assert rho.shape == (num_cells, num_quads)
     return jnp.asarray(rho)
+
+
+def avg_stress(problem, sol_list):
+    """JxW-weighted volume-average stress over the periodic cell: (3, 3)."""
+    H = onp.asarray(problem.H_macro)
+    lam = onp.asarray(problem.internal_vars[1])[..., None, None]
+    mu = onp.asarray(problem.internal_vars[2])[..., None, None]
+    u_grad = onp.asarray(problem.fe.sol_to_grad(sol_list[0]))
+    eps = 0.5 * (u_grad + onp.swapaxes(u_grad, -1, -2)) + H
+    sigma = lam * onp.trace(eps, axis1=-2, axis2=-1)[..., None, None] * onp.eye(3)         + 2.0 * mu * eps
+    JxW = onp.asarray(problem.JxW)[:, 0, :]
+    return onp.sum(sigma * JxW[..., None, None], axis=(0, 1)) / JxW.sum()
+
+
+def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
+                             E_s=10.0, E_min=None, cell_size=1.0,
+                             periodic_axes=(0, 1), fixed_class=None,
+                             fixed_dofs=()):
+    """Solve the macroscopic lateral strains with zero average lateral stress.
+
+    The material is linear elastic with a FIXED density, so the average
+    lateral stress is affine in (eps_x, eps_y). With the axial strain fixed
+    at ``eps_z``:
+
+        H0 = diag(0, 0, eps_z)
+        Hx = diag(h, 0, eps_z)
+        Hy = diag(0, h, eps_z)
+
+    two probe solves give the 2x2 lateral response matrix
+    A[:, i] = (sigma_lat(H_i) - sigma_lat(H0)) / h and the load vector
+    b = sigma_lat(H0); eps_lateral = solve(A, -b) cancels the average
+    lateral stress exactly (to linear-solver tolerance). The same Problem
+    instance (mesh, P_mat, density) is reused; only internal_vars change.
+
+    Returns a dict with the response matrix, eps_x/eps_y, the final H and
+    solution, and the average stress of every solve.
+    """
+    problem = make_density_problem(
+        Nx, Ny, Nz, jnp.zeros((3, 3)),
+        None if callable(rho_quad) else rho_quad,
+        E_s, E_min, cell_size, periodic_axes, fixed_class, fixed_dofs)
+    if callable(rho_quad):
+        # 依赖问题几何的密度场(例如 M1 density 作用在真实 Gauss 点上)
+        rho_quad = rho_quad(problem)
+
+    def run(H_vec):
+        H = onp.zeros((3, 3))
+        H[0, 0], H[1, 1], H[2, 2] = H_vec
+        problem.set_params(H, rho_quad, E_s, E_min)
+        sol = solve(problem)
+        return sol, avg_stress(problem, sol)
+
+    s0, sol0 = None, None
+    sol0, s0 = run((0.0, 0.0, eps_z))
+    b = onp.array([s0[0, 0], s0[1, 1]])
+    A = onp.zeros((2, 2))
+    probe_solutions = {}
+    for i, ax in enumerate((0, 1)):
+        hv = [0.0, 0.0, eps_z]
+        hv[ax] = h
+        sol_i, s_i = run(hv)
+        A[:, i] = (onp.array([s_i[0, 0], s_i[1, 1]]) - b) / h
+        probe_solutions[ax] = (sol_i, s_i)
+    eps_lat = onp.linalg.solve(A, -b)
+    H_final = onp.zeros((3, 3))
+    H_final[0, 0], H_final[1, 1], H_final[2, 2] = eps_lat[0], eps_lat[1], eps_z
+    sol_final, s_final = run((eps_lat[0], eps_lat[1], eps_z))
+    return {"problem": problem, "A": A, "b": b, "eps_x": float(eps_lat[0]),
+            "eps_y": float(eps_lat[1]), "H_final": H_final,
+            "sol_list": sol_final, "sigma_avg": s_final,
+            "sigma_avg_base": s0, "base_sol": sol0,
+            "probe_solutions": probe_solutions}
