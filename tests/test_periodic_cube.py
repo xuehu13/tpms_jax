@@ -78,6 +78,11 @@ def test_uniform_macro_strain_recovers_w_zero(n):
     sigma_exact = LAMBDA * onp.trace(H) * onp.eye(3) + 2.0 * MU * H
     assert onp.abs(eps - eps_exact).max() <= 1e-12
     assert onp.abs(sigma - sigma_exact[None, None]).max() <= 1e-12
+    # independent numeric anchors for the isotropic formula (review finding:
+    # sigma_zz = lambda*0.025 + 2*mu*(-0.005) = +0.105769..., not -0.086538)
+    assert sigma_exact[0, 0] == pytest.approx(0.2211538461538462, abs=1e-12)
+    assert sigma_exact[1, 1] == pytest.approx(0.2980769230769231, abs=1e-12)
+    assert sigma_exact[2, 2] == pytest.approx(0.1057692307692308, abs=1e-12)
 
     JxW = onp.asarray(problem.JxW)[:, 0, :]
     U = 0.5 * float(onp.sum(sigma * eps * JxW[..., None, None]))
