@@ -1,0 +1,32 @@
+# pixi 环境
+.pixi/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# pytest 缓存
+.pytest_cache/
+
+# 本地临时文件与密钥
+.env
+.env.*
+*.key
+*.token
+*.log
+
+# 大型计算结果与可视化文件
+results/
+*.vtu
+*.vtk
+*.msh
+*.npy
+*.npz
+*.h5
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
