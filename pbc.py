@@ -21,72 +21,113 @@ __all__ = ["PeriodicLinearElasticityCube", "make_periodic_problem",
            "periodic_node_classes", "periodic_p_mat"]
 
 
-def periodic_node_classes(points, Nx, Ny, Nz, Lx=1.0, Ly=1.0, Lz=1.0):
+def periodic_node_classes(points, Nx, Ny, Nz, Lx=1.0, Ly=1.0, Lz=1.0,
+                          periodic_axes=(0, 1, 2)):
     """Periodic equivalence class id of every node.
 
-    Integer node indices are recovered exactly from the regular-grid
-    coordinates (no nearest-neighbour search): ix = round(x/Lx*Nx) in
-    0..Nx. The class key is (ix mod Nx, iy mod Ny, iz mod Nz), flattened
-    row-major; nodes sharing a key (e.g. all 8 corners) share one class.
+    Axes in ``periodic_axes`` are identified modulo the cell count (default
+    XYZ); all other axes keep their integer levels as distinct classes, so
+    e.g. ``periodic_axes=(0, 1)`` makes the cell XY-periodic while the two
+    z-surfaces stay independent. Integer node indices are recovered exactly
+    from the regular-grid coordinates (no nearest-neighbour search).
     """
     pts = onp.asarray(points)
-    ix = onp.round(pts[:, 0] / Lx * Nx).astype(int)
-    iy = onp.round(pts[:, 1] / Ly * Ny).astype(int)
-    iz = onp.round(pts[:, 2] / Lz * Nz).astype(int)
-    assert ix.min() >= 0 and ix.max() <= Nx, "point outside the periodic grid"
-    assert iy.min() >= 0 and iy.max() <= Ny, "point outside the periodic grid"
-    assert iz.min() >= 0 and iz.max() <= Nz, "point outside the periodic grid"
-    cx, cy, cz = ix % Nx, iy % Ny, iz % Nz
-    class_ids = (cx * Ny + cy) * Nz + cz
-    return class_ids, (ix, iy, iz)
+    idx = (onp.round(pts[:, 0] / Lx * Nx).astype(int),
+           onp.round(pts[:, 1] / Ly * Ny).astype(int),
+           onp.round(pts[:, 2] / Lz * Nz).astype(int))
+    Ns = (Nx, Ny, Nz)
+    per = [a in periodic_axes for a in range(3)]
+    dims = onp.array([Ns[a] if per[a] else Ns[a] + 1 for a in range(3)])
+    c = [idx[a] % Ns[a] if per[a] else idx[a] for a in range(3)]
+    class_ids = (c[0] * dims[1] + c[1]) * dims[2] + c[2]
+    return class_ids, idx
 
 
 def periodic_p_mat(points, Nx, Ny, Nz, Lx=1.0, Ly=1.0, Lz=1.0,
-                   fixed_class=(0, 0, 0)):
-    """CSR constraint matrix u_full = P @ u_reduced for full XYZ periodicity.
+                   periodic_axes=(0, 1, 2), fixed_class=(0, 0, 0), fixed_dofs=()):
+    """CSR constraint matrix u_full = P @ u_reduced.
 
-    One reduced DOF per (class, component). The equivalence class of
-    ``fixed_class`` is EXCLUDED from the reduced space (zero rows in P),
-    which removes the three rigid translations of the fluctuation field.
+    One reduced DOF per (periodic equivalence class, component); classes on
+    a periodic boundary own 2/4/8 member nodes that all share the column.
 
-    Returns (P, class_ids, fixed_class_id).
+    Zero rows in P pin the corresponding full DOFs to w = 0 and remove them
+    from the reduced space:
+    - ``fixed_class``: one whole equivalence class (3 DOFs), e.g. the XYZ
+      corner class removing the three rigid translations;
+    - ``fixed_dofs``: individual full-DOF indices, e.g. w_z = 0 on the two
+      loaded z-surfaces of an XY-periodic cell. Any (class, component)
+      group containing a pinned DOF is excluded as a whole, which for
+      periodically consistent pinning is exactly that group.
+
+    Returns (P, class_ids, fixed_class_id) with ``fixed_class_id = None``
+    when ``fixed_class`` is None.
     """
-    class_ids, _ = periodic_node_classes(points, Nx, Ny, Nz, Lx, Ly, Lz)
-    num_classes = Nx * Ny * Nz
-    fcx, fcy, fcz = fixed_class[0] % Nx, fixed_class[1] % Ny, fixed_class[2] % Nz
-    fixed_id = (fcx * Ny + fcy) * Nz + fcz
-
-    class_to_red = onp.full(num_classes, -1, dtype=onp.int64)
-    nxt = 0
-    for cid in range(num_classes):
-        if cid == fixed_id:
-            continue
-        class_to_red[cid] = nxt
-        nxt += 1
-    N_red = 3 * nxt  # three components per class
-
+    class_ids, _ = periodic_node_classes(points, Nx, Ny, Nz, Lx, Ly, Lz,
+                                         periodic_axes)
+    per = [a in periodic_axes for a in range(3)]
+    Ns = (Nx, Ny, Nz)
+    dims = onp.array([Ns[a] if per[a] else Ns[a] + 1 for a in range(3)])
+    num_classes = int(onp.prod(dims))
     num_nodes = len(points)
     N_full = 3 * num_nodes
-    rows = onp.arange(N_full)
-    cols = onp.empty(N_full, dtype=onp.int64)
-    node_class_per_comp = onp.repeat(class_ids, 3)  # dof (3n+c) -> class
+
+    # one (class, component) group shares a single reduced DOF
     comp = onp.tile(onp.arange(3), num_nodes)
-    red_dof = 3 * class_to_red[node_class_per_comp] + comp
-    is_fixed = node_class_per_comp == fixed_id
-    cols[~is_fixed] = red_dof[~is_fixed]
-    cols[is_fixed] = 0  # placeholder; these rows get no entry
-    data = onp.ones(N_full - int(is_fixed.sum()))
-    keep = ~is_fixed
-    P = scipy.sparse.csr_array((data, (rows[keep], cols[keep])), shape=(N_full, N_red))
+    group_ids = onp.repeat(class_ids, 3) * 3 + comp
+
+    excluded = set()
+    fixed_id = None
+    if fixed_class is not None:
+        fc = [fixed_class[a] % dims[a] for a in range(3)]
+        fixed_id = int((fc[0] * dims[1] + fc[1]) * dims[2] + fc[2])
+        excluded.update(fixed_id * 3 + c for c in range(3))
+    if len(fixed_dofs):
+        excluded.update(onp.asarray(group_ids)[
+            onp.asarray(list(fixed_dofs), dtype=int)].tolist())
+    N_red = 3 * num_classes - len(excluded)
+
+    red_of_group = onp.full(3 * num_classes, -1, dtype=onp.int64)
+    nxt = 0
+    for g in range(3 * num_classes):
+        if g in excluded:
+            continue
+        red_of_group[g] = nxt
+        nxt += 1
+
+    keep = red_of_group[group_ids] >= 0
+    rows = onp.arange(N_full)
+    P = scipy.sparse.csr_array(
+        (onp.ones(int(keep.sum())), (rows[keep], red_of_group[group_ids[keep]])),
+        shape=(N_full, N_red))
     return P, class_ids, fixed_id
 
 
-def make_periodic_problem(Nx, Ny, Nz, H_macro=None,
-                          sine_force_amplitude=None, cell_size=1.0):
-    """Periodic unit cell: HEX8 grid of Nx x Ny x Nz cells, full XYZ PBC.
+def xy_compression_fixed_dofs(points, Nx, Ny, Nz, Lz=1.0, corner=(0.0, 0.0, 0.0)):
+    """Zero-fluctuation pins for XY-periodic uniaxial loading.
 
-    ``H_macro`` sets the macroscopic gradient; ``sine_force_amplitude`` adds
-    the verification body force f_x = (lambda+2mu) A k^2 sin(k x), k = 2*pi/L.
+    w_z = 0 on the z = 0 and z = L surfaces (flat loaded faces; the lateral
+    components of those faces stay free) and w_x = w_y = 0 at one bottom
+    corner, which removes the two remaining rigid translations (the in-plane
+    rotation is already excluded by the XY periodicity itself).
+    """
+    pts = onp.asarray(points)
+    iz = onp.round(pts[:, 2] / Lz * Nz).astype(int)
+    surface = onp.where((iz == 0) | (iz == Nz))[0]
+    dist = onp.abs(pts - onp.asarray(corner, dtype=float)).max(axis=1)
+    corner_node = int(onp.argmin(dist))
+    assert dist[corner_node] < 1e-10, "corner node not found on the grid"
+    return onp.concatenate([3 * surface + 2,
+                            [3 * corner_node, 3 * corner_node + 1]])
+
+
+def make_periodic_problem(Nx, Ny, Nz, H_macro=None, sine_force_amplitude=None,
+                          cell_size=1.0, periodic_axes=(0, 1, 2),
+                          fixed_class=(0, 0, 0), fixed_dofs=()):
+    """Periodic unit cell: HEX8 grid of Nx x Ny x Nz cells.
+
+    ``periodic_axes`` selects the periodic directions; ``H_macro`` sets the
+    macroscopic gradient; ``sine_force_amplitude`` adds the verification body
+    force f_x = (lambda+2mu) A k^2 sin(k x), k = 2*pi/L (x direction).
     """
     from jax_fem.generate_mesh import box_mesh, get_meshio_cell_type, Mesh
     from fem import ELE_TYPE
@@ -96,11 +137,16 @@ def make_periodic_problem(Nx, Ny, Nz, H_macro=None,
     mesh = Mesh(meshio_mesh.points, meshio_mesh.cells_dict[cell_type])
     problem = PeriodicLinearElasticityCube(mesh, vec=3, dim=3, ele_type=ELE_TYPE,
                                            dirichlet_bc_info=[[], [], []])
+    if callable(fixed_dofs):
+        # 一致性由调用方保证:被钉扎的组内所有周期成员一起传入
+        fixed_dofs = fixed_dofs(problem.fe.points)
     H = jnp.zeros((3, 3)) if H_macro is None else jnp.asarray(H_macro)
     problem.set_params(H, sine_force_amplitude, cell_size)
     P, class_ids, fixed_id = periodic_p_mat(
         problem.fe.points, Nx, Ny, Nz,
-        Lx=cell_size, Ly=cell_size, Lz=cell_size)
+        Lx=cell_size, Ly=cell_size, Lz=cell_size,
+        periodic_axes=periodic_axes, fixed_class=fixed_class,
+        fixed_dofs=fixed_dofs)
     problem.P_mat = P
     problem.class_ids = class_ids
     problem.fixed_class_id = fixed_id
