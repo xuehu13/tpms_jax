@@ -104,11 +104,14 @@ def layered_rho(problem, rho_bottom, rho_top, interface_z=0.5):
     """Two-layer density along Z with the interface on an element boundary.
 
     Layer membership is decided by the cell centroid; all quadrature points
-    of a cell share the layer value.
+    of a cell share the layer value. The output is the standard integration-
+    point density shape (num_cells, num_quads).
     """
     pts = onp.asarray(problem.fe.points)
     cells = onp.asarray(problem.fe.cells)
     cell_z = pts[cells].mean(axis=1)[:, 2]
-    rho = onp.where(cell_z[:, None] >= interface_z,
-                    float(rho_top), float(rho_bottom))
+    num_cells, num_quads = problem.fe.num_cells, problem.fe.num_quads
+    per_cell = onp.where(cell_z >= interface_z, float(rho_top), float(rho_bottom))
+    rho = onp.repeat(per_cell[:, None], num_quads, axis=1)
+    assert rho.shape == (num_cells, num_quads)
     return jnp.asarray(rho)
