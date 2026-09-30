@@ -19,25 +19,12 @@ A_SINE = 0.001
 
 
 def build_xy(n, H=None, sine=False):
-    points_cache = {}
-
-    def fixed_dofs(problem_points):
-        return xy_compression_fixed_dofs(problem_points, n, n, n)
-
-    problem = make_periodic_problem(
+    return make_periodic_problem(
         n, n, n,
         H_macro=jnp.zeros((3, 3)) if H is None else jnp.asarray(H),
         sine_force_amplitude=A_SINE if sine else None,
         periodic_axes=(0, 1), fixed_class=None,
-        fixed_dofs=())  # placeholder replaced below (needs node count first)
-    fd = xy_compression_fixed_dofs(problem.fe.points, n, n, n)
-    # rebuild with the actual pinned DOFs
-    problem = make_periodic_problem(
-        n, n, n,
-        H_macro=jnp.zeros((3, 3)) if H is None else jnp.asarray(H),
-        sine_force_amplitude=A_SINE if sine else None,
-        periodic_axes=(0, 1), fixed_class=None, fixed_dofs=fd)
-    return problem
+        fixed_dofs=lambda pts: xy_compression_fixed_dofs(pts, n, n, n))
 
 
 def test_xy_p_mat_structure_and_independent_z_faces():

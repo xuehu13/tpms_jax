@@ -1,13 +1,19 @@
-"""Full XYZ periodic boundary conditions on regular HEX8 grids.
+"""Periodic boundary conditions on regular HEX8 grids: full XYZ or XY.
 
 The unknown field is the periodic fluctuation w in
-u(X) = H_macro @ X + w(X); the macroscopic gradient H_macro enters the
-constitutive law through jax-fem's runtime ``internal_vars`` mechanism.
+u(X) = H_macro @ X + w(X). Supported selections: ``periodic_axes=(0, 1, 2)``
+(full XYZ) and ``periodic_axes=(0, 1)`` (XY; the two z-surfaces stay
+independent, e.g. for flat uniaxial loading). The constraints couple only
+the fluctuation w -- the macroscopic gradient H_macro enters the
+constitutive law through jax-fem's runtime ``internal_vars`` mechanism and
+is never constrained by P_mat.
 
 Constraints u_a(node) = u_a(partner(node)) are imposed with jax-fem 0.0.12's
 ``P_mat`` mechanism: the user attaches a scipy CSR matrix ``problem.P_mat``
 of shape (num_full_dofs, num_reduced_dofs) with u_full = P @ u_reduced; the
 solver forms P.T @ R and P.T @ K @ P (verified in the installed source).
+Zero rows in P pin the corresponding w DOFs to zero (rigid modes, flat
+loaded faces).
 """
 
 import numpy as onp
