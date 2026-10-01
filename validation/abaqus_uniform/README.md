@@ -63,7 +63,7 @@ abaqus python scripts/extract_uniform_baseline.py PATH/TO/uniform_xy_fixed.odb -
 工具输出 `.acceptance.json`，检查最终加载时间、积分点数和体积、JxW/IVOL
 加权平均应力、QZ 反力、ALLSE、宏观位移以及全部物理节点仿射位移。
 理论零应力使用轴向应力尺度的绝对阈值；非零量相对验收目标为 1e-6。
-还需人工检查 `.sta/.msg/.dat` 中的求解完成状态和警告。ODB 实际提取尚未
+对后续作业仍需检查 `.sta/.msg/.dat` 中的求解完成状态和警告。提取工具已
 完成三种实际 ODB 的验证。曾发现 Abaqus 返回的 NumPy 标量导致 JSON
 序列化失败，已统一转换为 Python float/bool，并以实际 ODB 重新验收通过。
 
