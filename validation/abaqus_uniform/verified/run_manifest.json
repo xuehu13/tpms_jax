@@ -1,0 +1,49 @@
+{
+  "captured_at_utc": "2026-10-01T09:15:47.592831+00:00",
+  "abaqus_release": "2026",
+  "prepared_source_commit": "b816e9e14e2aa21acf4872b6d8d114eb31fee968",
+  "agent_submitted_cases": [
+    "uniform_xy_relaxed_prescribed",
+    "uniform_xy_relaxed_free"
+  ],
+  "user_submitted_cases": [
+    "uniform_xy_fixed"
+  ],
+  "all_three_passed": true,
+  "evidence": {
+    "uniform_xy_fixed": {
+      "completed_successfully": true,
+      "warning_messages": 0,
+      "error_messages": 0,
+      "sha256": {
+        "work\\uniform_xy_fixed.acceptance.json": "337884b2f284f1b38f9fe3a8965f54bfd413b2e3690533d274ee26932d74a127",
+        "work\\uniform_xy_fixed.odb": "4851f8bfa068e1dc6d08680734c79a050ac6241bf9a7db9aac49b7bf57f6b318",
+        "work\\uniform_xy_fixed.sta": "a19cbbc8047ea61c9aaa322a9d2c5f71037699c880951716d8fc7e3bc8388d23",
+        "uniform_xy_fixed.inp": "6ffcc1c36059b0292b849426fcde1b974ba344250d7ae0e5d25040133bd6414f",
+        "work\\uniform_xy_fixed.inp": "c383a625f9f3429717c447f4b44fb5e53c5bddbcc4c9debf4855e7060cb67a5b"
+      }
+    },
+    "uniform_xy_relaxed_prescribed": {
+      "completed_successfully": true,
+      "warning_messages": 0,
+      "error_messages": 0,
+      "sha256": {
+        "work\\uniform_xy_relaxed_prescribed.acceptance.json": "ff930009ae9ab99a9bdc1f90f78a3fc228435e1765767c381010cd9385a6eedb",
+        "work\\uniform_xy_relaxed_prescribed.odb": "433714135ea74c7555facbe12f456821d9719a58aa959fd028e0588795512fb7",
+        "work\\uniform_xy_relaxed_prescribed.sta": "fb6580159dea1b296e5b74df29b77299bc6da3a3f58aebd892235f624e391039",
+        "uniform_xy_relaxed_prescribed.inp": "56dbe1b3871c93e272d04be0fc77464b10b81d3a12b06a5e761f6c1ab25cb5f5"
+      }
+    },
+    "uniform_xy_relaxed_free": {
+      "completed_successfully": true,
+      "warning_messages": 0,
+      "error_messages": 0,
+      "sha256": {
+        "work\\uniform_xy_relaxed_free.acceptance.json": "4315a40f5afe5daa24a505dfd9b7bb9d1e6a1d72b93622fa1360c1999eca896c",
+        "work\\uniform_xy_relaxed_free.odb": "d6736b1719c1b9c33fc99d8c5c43936f0c753883129aed800593e0eccf08c01a",
+        "work\\uniform_xy_relaxed_free.sta": "505902926c8ba69bf9a2c99e902745bc4b829cd5c9eeda17297864b13e13481d",
+        "uniform_xy_relaxed_free.inp": "33ab0ac0403ae273153f06d85b9f1d21293a4b207290d6499634987ddbdd49bf"
+      }
+    }
+  }
+}

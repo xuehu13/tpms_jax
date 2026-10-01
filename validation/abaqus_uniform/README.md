@@ -1,9 +1,13 @@
-# Abaqus 2026 均匀实体基准：已准备，尚未求解
+# Abaqus 2026 均匀实体基准：三种工况均已实际验证
 
 JAX 对照基准为提交 `d75a7daf07dec927562e9c222833a1d6a61f8152`。
 本目录是第一级均匀实体验证，**没有 Gyroid 材料场、USDFLD、UEL、
 接触、摩擦、塑性或大变形**。所有 INP 均为 Abaqus/Standard 静力分析，
-NLGEOM=NO。没有提交 Abaqus 求解或 datacheck 作业。
+NLGEOM=NO。2026-10-01 已完成三种工况的实际 Abaqus 2026 求解与结果验收：
+fixed 由用户运行，relaxed_prescribed 与 relaxed_free 由 agent 使用命令完成
+datacheck、求解和提取。三者均成功完成、无错误或警告，验收状态均为 ok。
+详见 [`verified/summary.csv`](verified/summary.csv)、`verified/run_manifest.json`
+及各工况的 `.acceptance.json` 和 `.sta`。
 
 ## 文件与理论值
 
@@ -42,7 +46,7 @@ QX.U1=εx·L、QY.U2=εy·L、QZ.U3=εz·L，L=1。QZ 是各顶面轴向方程�
 
 推荐将本目录复制到 Windows 的专用作业文件夹，避免直接在 Git 验证目录产生
 ODB 等大型结果。保持作业名与 INP 文件名一致。下一阶段先查看并确认模型，
-再进行 datacheck 和求解；本次准备工具不会执行任何作业。
+再进行 datacheck 和求解；准备工具本身不会执行任何作业。后续采用命令运行。
 
 若以后获准运行，在作业文件夹手动运行示例：
 
@@ -60,7 +64,8 @@ abaqus python scripts/extract_uniform_baseline.py PATH/TO/uniform_xy_fixed.odb -
 加权平均应力、QZ 反力、ALLSE、宏观位移以及全部物理节点仿射位移。
 理论零应力使用轴向应力尺度的绝对阈值；非零量相对验收目标为 1e-6。
 还需人工检查 `.sta/.msg/.dat` 中的求解完成状态和警告。ODB 实际提取尚未
-验证，目前只完成语法和本机 Abaqus Python 命令接口检查。
+完成三种实际 ODB 的验证。曾发现 Abaqus 返回的 NumPy 标量导致 JSON
+序列化失败，已统一转换为 Python float/bool，并以实际 ODB 重新验收通过。
 
 ## 边界与材料场验证的范围
 

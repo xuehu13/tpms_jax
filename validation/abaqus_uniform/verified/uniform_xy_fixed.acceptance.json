@@ -1,0 +1,72 @@
+{
+  "odb": "uniform_xy_fixed.odb",
+  "case": "uniform_xy_fixed",
+  "measured": {
+    "volume": 1.0,
+    "sigma": [
+      -0.057692307978868484,
+      -0.057692307978868484,
+      -0.13461539149284363,
+      -2.7736349427570775e-26,
+      -2.907277696000202e-17,
+      -5.068392673765503e-17
+    ],
+    "macro_displacements": [
+      5.769230976571903e-38,
+      5.769230976571903e-38,
+      -0.009999999776482582
+    ],
+    "macro_RF": [
+      -0.057692307978868484,
+      -0.057692307978868484,
+      -0.13461539149284363
+    ],
+    "ALLSE": 0.0006730768945999444,
+    "integration_points": 512,
+    "max_affine_displacement_error": 2.2351741811588166e-10
+  },
+  "expected": {
+    "lateral": "fixed",
+    "controls": [
+      126,
+      127,
+      128
+    ],
+    "eps": [
+      0.0,
+      0.0,
+      -0.01
+    ],
+    "sigma_diagonal": [
+      -0.057692307692307696,
+      -0.057692307692307696,
+      -0.1346153846153846
+    ],
+    "Fz_top": -0.1346153846153846,
+    "energy": 0.000673076923076923,
+    "offline_checks": {
+      "nodes": 125,
+      "elements": 64,
+      "equations": 142,
+      "independent_dofs": 206,
+      "min_detJ": 0.001953125,
+      "total_volume": 1.0,
+      "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+    }
+  },
+  "checks": {
+    "volume": true,
+    "energy": true,
+    "Fz": true,
+    "reaction_vs_stress": true,
+    "sigma_1": true,
+    "eps_1": true,
+    "sigma_2": true,
+    "eps_2": true,
+    "sigma_3": true,
+    "eps_3": true,
+    "mean_shear": true,
+    "affine_displacement": true
+  },
+  "status": "ok"
+}
