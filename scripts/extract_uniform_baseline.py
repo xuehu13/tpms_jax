@@ -48,7 +48,7 @@ def extract(odb_path, expected_path, out_path):
         weight_values = frame.fieldOutputs["IVOL"].getSubset(
             region=solid, position=INTEGRATION_POINT).values
         weights = {point_key(v): float(data(v)) for v in weight_values}
-        stresses = {point_key(v): list(data(v)) for v in stress_values}
+        stresses = {point_key(v): [float(x) for x in data(v)] for v in stress_values}
         count = 8*manifest["n"]**3
         if len(weights) != count or len(stresses) != count or set(weights) != set(stresses):
             raise ValueError("Unexpected or mismatched integration-point output")
@@ -95,11 +95,13 @@ def extract(odb_path, expected_path, out_path):
         for value in u_values:
             xyz = value.instance.getNodeFromLabel(value.nodeLabel).coordinates
             observed = data(value)
-            error = max(error, max(abs(observed[i]-xyz[i]*expected["eps"][i]) for i in range(3)))
+            error = max(error, max(abs(float(observed[i])-float(xyz[i])*expected["eps"][i])
+                                   for i in range(3)))
         checks["affine_displacement"] = error <= rel*0.01
         measured["max_affine_displacement_error"] = error
         if expected["lateral"] != "fixed":
             checks["zero_lateral_stress"] = max(abs(sigma[0]),abs(sigma[1])) <= rel*stress_scale
+        checks = {name: bool(passed) for name, passed in checks.items()}
         report = {"odb":str(odb_path),"case":odb_path.stem,
                   "measured":measured,"expected":expected,"checks":checks,
                   "status":"ok" if all(checks.values()) else "check_failed"}
