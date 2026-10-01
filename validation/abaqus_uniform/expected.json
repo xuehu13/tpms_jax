@@ -1,0 +1,99 @@
+{
+  "prepared_only": true,
+  "abaqus_jobs_submitted": 0,
+  "n": 4,
+  "E": 10.0,
+  "nu": 0.3,
+  "length": 1.0,
+  "jax_reference_commit": "d75a7daf07dec927562e9c222833a1d6a61f8152",
+  "relative_acceptance_tolerance": 1e-06,
+  "cases": {
+    "uniform_xy_fixed": {
+      "lateral": "fixed",
+      "controls": [
+        126,
+        127,
+        128
+      ],
+      "eps": [
+        0.0,
+        0.0,
+        -0.01
+      ],
+      "sigma_diagonal": [
+        -0.057692307692307696,
+        -0.057692307692307696,
+        -0.1346153846153846
+      ],
+      "Fz_top": -0.1346153846153846,
+      "energy": 0.000673076923076923,
+      "offline_checks": {
+        "nodes": 125,
+        "elements": 64,
+        "equations": 142,
+        "independent_dofs": 206,
+        "min_detJ": 0.001953125,
+        "total_volume": 1.0,
+        "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+      }
+    },
+    "uniform_xy_relaxed_prescribed": {
+      "lateral": "relaxed_prescribed",
+      "controls": [
+        126,
+        127,
+        128
+      ],
+      "eps": [
+        0.003,
+        0.003,
+        -0.01
+      ],
+      "sigma_diagonal": [
+        -3.469446951953614e-18,
+        -3.469446951953614e-18,
+        -0.09999999999999999
+      ],
+      "Fz_top": -0.09999999999999999,
+      "energy": 0.0005,
+      "offline_checks": {
+        "nodes": 125,
+        "elements": 64,
+        "equations": 142,
+        "independent_dofs": 206,
+        "min_detJ": 0.001953125,
+        "total_volume": 1.0,
+        "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+      }
+    },
+    "uniform_xy_relaxed_free": {
+      "lateral": "relaxed_free",
+      "controls": [
+        126,
+        127,
+        128
+      ],
+      "eps": [
+        0.003,
+        0.003,
+        -0.01
+      ],
+      "sigma_diagonal": [
+        -3.469446951953614e-18,
+        -3.469446951953614e-18,
+        -0.09999999999999999
+      ],
+      "Fz_top": -0.09999999999999999,
+      "energy": 0.0005,
+      "offline_checks": {
+        "nodes": 125,
+        "elements": 64,
+        "equations": 142,
+        "independent_dofs": 208,
+        "min_detJ": 0.001953125,
+        "total_volume": 1.0,
+        "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "python": "3.10.5 (main, Aug  9 2025, 05:05:40) [MSC v.1934 64 bit (AMD64)]",
+  "executable": "e:\\ABAQUS\\2026\\EstProducts\\win_b64\\code\\bin\\SMAPython.exe",
+  "odb_api_imported": true,
+  "analysis_jobs_submitted": 0,
+  "launcher": "e:/ABAQUS/2026/Commands/abaqus.bat"
+}
