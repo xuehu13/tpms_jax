@@ -1,0 +1,36 @@
+{
+  "captured_at_utc": "2026-10-01T08:17:28.190355+00:00",
+  "code_base_commit": "a71c3b1fc74e3bd70c6f7a7a99d3d836879b80d5",
+  "note": "Captured before commit; code_file_sha256 identifies tested modifications.",
+  "python": "3.13.15 | packaged by conda-forge | (main, Sep  2 2026, 22:01:58) [GCC 15.3.0]",
+  "executable": "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "jax-fem": "0.0.12",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "fenics-basix": "0.10.0",
+    "meshio": "5.3.5",
+    "gmsh": "4.15.2",
+    "pytest": "9.1.1",
+    "petsc4py": "3.25.1"
+  },
+  "devices": [
+    "cuda:0"
+  ],
+  "jax_fem_source": "/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/site-packages/jax_fem",
+  "jax_fem_source_sha256": {
+    "basis.py": "51641346c7d4d1c445d34fe8ea8572f4f44001fa7c428aea6331b08042173654",
+    "fe.py": "2d05679123b3fe10e483b37c218a2e9008c40e8118e9e1a1f97d1817003e2032",
+    "problem.py": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2",
+    "solver.py": "25f967772090fbbe3d37050a67712ca18449b7f9f65a31aeb6a3afce661d39c7"
+  },
+  "code_file_sha256": {
+    "density_fem.py": "1be8a0ac7ea6912885cf839f7fd870ef7576e68b93dbffcebee65c54684da0c7",
+    "scripts/m4_numerical_study.py": "02f5011457741cdf007462dfa36d89e6f52c4075bce82ad33aeb6850baf96b8b",
+    "tests/test_m4_checks.py": "1277f1bf979d836e8197b032c315c68d594361ac38fa38c11785f0cbf10c34a5"
+  },
+  "pixi_lock_sha256": "cb127eb9a55d373325421146bbcec4bd046726d588fe86d27a628ae6164609f2"
+}

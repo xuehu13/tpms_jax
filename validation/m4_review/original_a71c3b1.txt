@@ -1,0 +1,368 @@
+       __       ___      ___   ___                _______  _______ .___  ___. 
+      |  |     /   \     \  \ /  /               |   ____||   ____||   \/   | 
+      |  |    /  ^  \     \  V  /      ______    |  |__   |  |__   |  \  /  | 
+.--.  |  |   /  /_\  \     >   <      |______|   |   __|  |   __|  |  |\/|  | 
+|  `--'  |  /  _____  \   /  .  \                |  |     |  |____ |  |  |  | 
+ \______/  /__/     \__\ /__/ \__\               |__|     |_______||__|  |__| 
+                                                                              
+
+== study 1: N x beta coupling (lateral macro strain fixed) ==
+[10-01 14:57:18][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:18][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:18][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:18][INFO] jax_fem: Solving a problem with 4096 cells, 4913x3 = 14739 dofs.
+[10-01 14:57:18][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:18][INFO] jax_fem: Pre-computations took 0.002 [s]
+[10-01 14:57:20][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:20][INFO] jax_fem:   iter 0
+[10-01 14:57:20][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:24][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:24][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00955 (relative to initial = 1)
+[10-01 14:57:24][INFO] jax_fem:            timing: local assembly  3.450 s, global matrix  0.119 s
+[10-01 14:57:24][INFO] jax_fem:   iter 1
+[10-01 14:57:24][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:24][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:25][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 7.8e-11
+[10-01 14:57:25][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:26][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:26][INFO] jax_fem:            nonlinear residual: L2 norm = 7.8e-11 (relative to initial = 8.17e-09)
+[10-01 14:57:26][INFO] jax_fem:            timing: linear solve  1.504 s, local assembly  0.141 s, global matrix  0.020 s
+[10-01 14:57:26][INFO] jax_fem: Timing summary — 1 Newton iter, 5.622 s wall
+[10-01 14:57:26][INFO] jax_fem:   local      3.591 s   63.9%
+[10-01 14:57:26][INFO] jax_fem:   global     0.139 s    2.5%
+[10-01 14:57:26][INFO] jax_fem:   linear     1.504 s   26.8%
+[10-01 14:57:26][INFO] jax_fem:   other      0.388 s    6.9%
+[10-01 14:57:26][INFO] jax_fem: max of dofs = 0.0020304623973928545
+[10-01 14:57:26][INFO] jax_fem: min of dofs = -0.002030462403371793
+[10-01 14:57:26][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=16 beta= 10.0: ok Vf=0.3513 Fz=-0.023034 U=1.1517e-04 work_err=9.9e-15 t=5.86s
+[10-01 14:57:26][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:26][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:26][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:26][INFO] jax_fem: Solving a problem with 4096 cells, 4913x3 = 14739 dofs.
+[10-01 14:57:26][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:26][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:26][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:26][INFO] jax_fem:   iter 0
+[10-01 14:57:26][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:27][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:27][INFO] jax_fem:            nonlinear residual: L2 norm = 0.0106 (relative to initial = 1)
+[10-01 14:57:27][INFO] jax_fem:            timing: local assembly  0.355 s, global matrix  0.108 s
+[10-01 14:57:27][INFO] jax_fem:   iter 1
+[10-01 14:57:27][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:27][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:27][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 9.07e-11
+[10-01 14:57:27][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:27][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:27][INFO] jax_fem:            nonlinear residual: L2 norm = 9.07e-11 (relative to initial = 8.52e-09)
+[10-01 14:57:27][INFO] jax_fem:            timing: linear solve  0.261 s, local assembly  0.139 s, global matrix  0.020 s
+[10-01 14:57:27][INFO] jax_fem: Timing summary — 1 Newton iter, 0.919 s wall
+[10-01 14:57:27][INFO] jax_fem:   local      0.494 s   53.7%
+[10-01 14:57:27][INFO] jax_fem:   global     0.128 s   13.9%
+[10-01 14:57:27][INFO] jax_fem:   linear     0.261 s   28.4%
+[10-01 14:57:27][INFO] jax_fem:   other      0.037 s    4.0%
+[10-01 14:57:27][INFO] jax_fem: max of dofs = 0.002088108785328632
+[10-01 14:57:27][INFO] jax_fem: min of dofs = -0.002088108790141039
+[10-01 14:57:27][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=16 beta= 20.0: ok Vf=0.3511 Fz=-0.021552 U=1.0776e-04 work_err=1.5e-13 t=0.92s
+[10-01 14:57:28][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:28][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:28][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:28][INFO] jax_fem: Solving a problem with 4096 cells, 4913x3 = 14739 dofs.
+[10-01 14:57:28][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:28][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:28][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:28][INFO] jax_fem:   iter 0
+[10-01 14:57:28][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:28][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:28][INFO] jax_fem:            nonlinear residual: L2 norm = 0.011 (relative to initial = 1)
+[10-01 14:57:28][INFO] jax_fem:            timing: local assembly  0.369 s, global matrix  0.111 s
+[10-01 14:57:28][INFO] jax_fem:   iter 1
+[10-01 14:57:28][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:28][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:28][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 8.3e-11
+[10-01 14:57:28][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:28][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:28][INFO] jax_fem:            nonlinear residual: L2 norm = 8.3e-11 (relative to initial = 7.52e-09)
+[10-01 14:57:28][INFO] jax_fem:            timing: linear solve  0.256 s, local assembly  0.132 s, global matrix  0.020 s
+[10-01 14:57:28][INFO] jax_fem: Timing summary — 1 Newton iter, 0.921 s wall
+[10-01 14:57:28][INFO] jax_fem:   local      0.502 s   54.5%
+[10-01 14:57:28][INFO] jax_fem:   global     0.131 s   14.3%
+[10-01 14:57:28][INFO] jax_fem:   linear     0.256 s   27.8%
+[10-01 14:57:28][INFO] jax_fem:   other      0.032 s    3.5%
+[10-01 14:57:28][INFO] jax_fem: max of dofs = 0.0025373610277114314
+[10-01 14:57:28][INFO] jax_fem: min of dofs = -0.0025373610213327725
+[10-01 14:57:28][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=16 beta= 40.0: ok Vf=0.3530 Fz=-0.021241 U=1.0620e-04 work_err=4.1e-14 t=0.92s
+[10-01 14:57:29][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:29][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:29][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:29][INFO] jax_fem: Solving a problem with 13824 cells, 15625x3 = 46875 dofs.
+[10-01 14:57:29][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:29][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:30][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:30][INFO] jax_fem:   iter 0
+[10-01 14:57:30][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:32][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:32][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00597 (relative to initial = 1)
+[10-01 14:57:32][INFO] jax_fem:            timing: local assembly  1.520 s, global matrix  0.414 s
+[10-01 14:57:32][INFO] jax_fem:   iter 1
+[10-01 14:57:32][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:32][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:34][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 7.99e-11
+[10-01 14:57:34][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:34][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:34][INFO] jax_fem:            nonlinear residual: L2 norm = 7.99e-11 (relative to initial = 1.34e-08)
+[10-01 14:57:34][INFO] jax_fem:            timing: linear solve  1.892 s, local assembly  0.168 s, global matrix  0.075 s
+[10-01 14:57:35][INFO] jax_fem: Timing summary — 1 Newton iter, 4.349 s wall
+[10-01 14:57:35][INFO] jax_fem:   local      1.689 s   38.8%
+[10-01 14:57:35][INFO] jax_fem:   global     0.489 s   11.2%
+[10-01 14:57:35][INFO] jax_fem:   linear     1.892 s   43.5%
+[10-01 14:57:35][INFO] jax_fem:   other      0.280 s    6.4%
+[10-01 14:57:35][INFO] jax_fem: max of dofs = 0.001841388866051806
+[10-01 14:57:35][INFO] jax_fem: min of dofs = -0.0018413886535432913
+[10-01 14:57:35][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=24 beta= 10.0: ok Vf=0.3513 Fz=-0.022517 U=1.1259e-04 work_err=1.4e-13 t=4.49s
+[10-01 14:57:35][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:35][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:35][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:35][INFO] jax_fem: Solving a problem with 13824 cells, 15625x3 = 46875 dofs.
+[10-01 14:57:35][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:35][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:35][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:35][INFO] jax_fem:   iter 0
+[10-01 14:57:35][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:36][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:36][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00687 (relative to initial = 1)
+[10-01 14:57:36][INFO] jax_fem:            timing: local assembly  0.367 s, global matrix  0.380 s
+[10-01 14:57:36][INFO] jax_fem:   iter 1
+[10-01 14:57:36][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:36][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:37][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 8.74e-11
+[10-01 14:57:37][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:37][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:37][INFO] jax_fem:            nonlinear residual: L2 norm = 8.74e-11 (relative to initial = 1.27e-08)
+[10-01 14:57:37][INFO] jax_fem:            timing: linear solve  0.676 s, local assembly  0.181 s, global matrix  0.075 s
+[10-01 14:57:37][INFO] jax_fem: Timing summary — 1 Newton iter, 1.709 s wall
+[10-01 14:57:37][INFO] jax_fem:   local      0.548 s   32.1%
+[10-01 14:57:37][INFO] jax_fem:   global     0.455 s   26.7%
+[10-01 14:57:37][INFO] jax_fem:   linear     0.676 s   39.6%
+[10-01 14:57:37][INFO] jax_fem:   other      0.029 s    1.7%
+[10-01 14:57:37][INFO] jax_fem: max of dofs = 0.0017190709872090617
+[10-01 14:57:37][INFO] jax_fem: min of dofs = -0.0019196480787901338
+[10-01 14:57:37][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=24 beta= 20.0: ok Vf=0.3507 Fz=-0.020863 U=1.0431e-04 work_err=2.0e-13 t=1.71s
+[10-01 14:57:37][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:37][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:37][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:37][INFO] jax_fem: Solving a problem with 13824 cells, 15625x3 = 46875 dofs.
+[10-01 14:57:37][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:37][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:37][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:37][INFO] jax_fem:   iter 0
+[10-01 14:57:37][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:38][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:38][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00723 (relative to initial = 1)
+[10-01 14:57:38][INFO] jax_fem:            timing: local assembly  0.376 s, global matrix  0.396 s
+[10-01 14:57:38][INFO] jax_fem:   iter 1
+[10-01 14:57:38][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:38][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:41][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 6.4e-11
+[10-01 14:57:41][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:42][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:42][INFO] jax_fem:            nonlinear residual: L2 norm = 6.4e-11 (relative to initial = 8.86e-09)
+[10-01 14:57:42][INFO] jax_fem:            timing: linear solve  0.567 s, local assembly  0.176 s, global matrix  0.079 s
+[10-01 14:57:42][INFO] jax_fem: Timing summary — 1 Newton iter, 1.627 s wall
+[10-01 14:57:42][INFO] jax_fem:   local      0.553 s   34.0%
+[10-01 14:57:42][INFO] jax_fem:   global     0.475 s   29.2%
+[10-01 14:57:42][INFO] jax_fem:   linear     0.567 s   34.9%
+[10-01 14:57:42][INFO] jax_fem:   other      0.032 s    2.0%
+[10-01 14:57:42][INFO] jax_fem: max of dofs = 0.0015898507984418008
+[10-01 14:57:42][INFO] jax_fem: min of dofs = -0.002097031572576971
+[10-01 14:57:42][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=24 beta= 40.0: ok Vf=0.3505 Fz=-0.020382 U=1.0191e-04 work_err=1.5e-13 t=1.63s
+[10-01 14:57:42][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:42][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:42][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:42][INFO] jax_fem: Solving a problem with 32768 cells, 35937x3 = 107811 dofs.
+[10-01 14:57:42][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:42][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:44][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:44][INFO] jax_fem:   iter 0
+[10-01 14:57:44][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:46][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:47][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00414 (relative to initial = 1)
+[10-01 14:57:47][INFO] jax_fem:            timing: local assembly  2.300 s, global matrix  1.052 s
+[10-01 14:57:47][INFO] jax_fem:   iter 1
+[10-01 14:57:47][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:47][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:50][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 5.91e-11
+[10-01 14:57:50][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:51][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:51][INFO] jax_fem:            nonlinear residual: L2 norm = 5.91e-11 (relative to initial = 1.43e-08)
+[10-01 14:57:51][INFO] jax_fem:            timing: linear solve  3.075 s, local assembly  0.254 s, global matrix  0.223 s
+[10-01 14:57:51][INFO] jax_fem: Timing summary — 1 Newton iter, 7.219 s wall
+[10-01 14:57:51][INFO] jax_fem:   local      2.554 s   35.4%
+[10-01 14:57:51][INFO] jax_fem:   global     1.274 s   17.7%
+[10-01 14:57:51][INFO] jax_fem:   linear     3.075 s   42.6%
+[10-01 14:57:51][INFO] jax_fem:   other      0.316 s    4.4%
+[10-01 14:57:51][INFO] jax_fem: max of dofs = 0.0017976998130918391
+[10-01 14:57:51][INFO] jax_fem: min of dofs = -0.001797699587579002
+[10-01 14:57:51][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=32 beta= 10.0: ok Vf=0.3513 Fz=-0.022336 U=1.1168e-04 work_err=7.1e-14 t=7.36s
+[10-01 14:57:52][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:52][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:52][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:52][INFO] jax_fem: Solving a problem with 32768 cells, 35937x3 = 107811 dofs.
+[10-01 14:57:52][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:52][INFO] jax_fem: Pre-computations took 0.002 [s]
+[10-01 14:57:52][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:52][INFO] jax_fem:   iter 0
+[10-01 14:57:52][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:52][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:53][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00499 (relative to initial = 1)
+[10-01 14:57:53][INFO] jax_fem:            timing: local assembly  0.499 s, global matrix  1.039 s
+[10-01 14:57:53][INFO] jax_fem:   iter 1
+[10-01 14:57:53][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:53][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:55][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 7.84e-11
+[10-01 14:57:55][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:55][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:55][INFO] jax_fem:            nonlinear residual: L2 norm = 7.84e-11 (relative to initial = 1.57e-08)
+[10-01 14:57:55][INFO] jax_fem:            timing: linear solve  1.641 s, local assembly  0.271 s, global matrix  0.214 s
+[10-01 14:57:55][INFO] jax_fem: Timing summary — 1 Newton iter, 3.701 s wall
+[10-01 14:57:55][INFO] jax_fem:   local      0.769 s   20.8%
+[10-01 14:57:55][INFO] jax_fem:   global     1.253 s   33.9%
+[10-01 14:57:55][INFO] jax_fem:   linear     1.641 s   44.3%
+[10-01 14:57:55][INFO] jax_fem:   other      0.037 s    1.0%
+[10-01 14:57:55][INFO] jax_fem: max of dofs = 0.0015721205609111073
+[10-01 14:57:55][INFO] jax_fem: min of dofs = -0.0019998945616707753
+[10-01 14:57:55][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=32 beta= 20.0: ok Vf=0.3507 Fz=-0.020663 U=1.0331e-04 work_err=1.9e-13 t=3.71s
+[10-01 14:57:56][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:57:56][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:57:56][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:57:56][INFO] jax_fem: Solving a problem with 32768 cells, 35937x3 = 107811 dofs.
+[10-01 14:57:56][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:57:56][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:57:56][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:57:56][INFO] jax_fem:   iter 0
+[10-01 14:57:56][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:56][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:57][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00543 (relative to initial = 1)
+[10-01 14:57:57][INFO] jax_fem:            timing: local assembly  0.516 s, global matrix  1.012 s
+[10-01 14:57:57][INFO] jax_fem:   iter 1
+[10-01 14:57:57][DEBUG] jax_fem: Solving linear system...
+[10-01 14:57:57][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:57:59][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 9.16e-11
+[10-01 14:57:59][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:57:59][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:57:59][INFO] jax_fem:            nonlinear residual: L2 norm = 9.16e-11 (relative to initial = 1.69e-08)
+[10-01 14:57:59][INFO] jax_fem:            timing: linear solve  1.672 s, local assembly  0.262 s, global matrix  0.212 s
+[10-01 14:57:59][INFO] jax_fem: Timing summary — 1 Newton iter, 3.713 s wall
+[10-01 14:57:59][INFO] jax_fem:   local      0.778 s   20.9%
+[10-01 14:57:59][INFO] jax_fem:   global     1.225 s   33.0%
+[10-01 14:57:59][INFO] jax_fem:   linear     1.672 s   45.0%
+[10-01 14:57:59][INFO] jax_fem:   other      0.039 s    1.1%
+[10-01 14:57:59][INFO] jax_fem: max of dofs = 0.0015060970340250134
+[10-01 14:57:59][INFO] jax_fem: min of dofs = -0.002187428105075049
+[10-01 14:57:59][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  N=32 beta= 40.0: ok Vf=0.3506 Fz=-0.020219 U=1.0109e-04 work_err=2.3e-13 t=3.72s
+
+== study 2: E_min verification (N=32, beta=20, fixed) ==
+[10-01 14:58:00][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-01 14:58:00][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-01 14:58:00][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-01 14:58:00][INFO] jax_fem: Solving a problem with 32768 cells, 35937x3 = 107811 dofs.
+[10-01 14:58:00][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-01 14:58:00][INFO] jax_fem: Pre-computations took 0.001 [s]
+[10-01 14:58:00][INFO] jax_fem: Solving the nonlinear problem...
+[10-01 14:58:00][INFO] jax_fem:   iter 0
+[10-01 14:58:00][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:58:00][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:58:01][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00499 (relative to initial = 1)
+[10-01 14:58:01][INFO] jax_fem:            timing: local assembly  0.509 s, global matrix  1.032 s
+[10-01 14:58:01][INFO] jax_fem:   iter 1
+[10-01 14:58:01][DEBUG] jax_fem: Solving linear system...
+[10-01 14:58:01][DEBUG] jax_fem: JAX Solver - Solving linear system
+[10-01 14:58:03][DEBUG] jax_fem: JAX Solver - Finished solving, linear solve res = 3.67e-11
+[10-01 14:58:03][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-01 14:58:03][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-01 14:58:04][INFO] jax_fem:            nonlinear residual: L2 norm = 3.67e-11 (relative to initial = 7.35e-09)
+[10-01 14:58:04][INFO] jax_fem:            timing: linear solve  1.672 s, local assembly  0.280 s, global matrix  0.228 s
+[10-01 14:58:04][INFO] jax_fem: Timing summary — 1 Newton iter, 3.759 s wall
+[10-01 14:58:04][INFO] jax_fem:   local      0.788 s   21.0%
+[10-01 14:58:04][INFO] jax_fem:   global     1.259 s   33.5%
+[10-01 14:58:04][INFO] jax_fem:   linear     1.672 s   44.5%
+[10-01 14:58:04][INFO] jax_fem:   other      0.039 s    1.0%
+[10-01 14:58:04][INFO] jax_fem: max of dofs = 0.0017948169367939491
+[10-01 14:58:04][INFO] jax_fem: min of dofs = -0.0020499083680620925
+[10-01 14:58:04][DEBUG] jax_fem: Computing cell residual...
+
+
+
+
+
+  E_min/E_s=1e-4: ok Fz=-0.020454 U=1.0227e-04
+
+wrote results/m4_numerical_study.csv (10 rows)
+
+== beta=20 column: Fz refinement indicators (fixed lateral) ==
+  adjacent 16->24: |dFz|/|Fz_b| = 0.0330
+  adjacent 24->32: |dFz|/|Fz_b| = 0.0097
+  vs-finest N=16: |Fz(N)-Fz(32)|/|Fz(32)| = 0.0430
+  vs-finest N=24: |Fz(N)-Fz(32)|/|Fz(32)| = 0.0097
+  vs-finest N=32: |Fz(N)-Fz(32)|/|Fz(32)| = 0.0000
+(both are discretization indicators, NOT true physical errors)
+
+== beta effect at fixed N (fixed lateral) ==
+  N=16: |Fz(beta=40)-Fz(beta=10)|/|Fz(beta=20)| = 0.0832
+  N=24: |Fz(beta=40)-Fz(beta=10)|/|Fz(beta=20)| = 0.1023
+  N=32: |Fz(beta=40)-Fz(beta=10)|/|Fz(beta=20)| = 0.1025
+
+== E_min N=32 beta=20: 1e-4 vs 1e-3 relative diff of Fz = 0.0101 ==

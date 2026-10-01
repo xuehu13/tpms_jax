@@ -13,6 +13,7 @@ runtime ``internal_vars``; the density stays a pure JAX array, so the
 c -> rho path remains differentiable.
 """
 
+import time
 import numpy as onp
 import scipy.sparse
 import jax
@@ -129,7 +130,7 @@ def avg_stress(problem, sol_list):
     lam = onp.asarray(problem.internal_vars[1])[..., None, None]
     mu = onp.asarray(problem.internal_vars[2])[..., None, None]
     u_grad = onp.asarray(problem.fe.sol_to_grad(sol_list[0]))
-    eps = 0.5 * (u_grad + onp.swapaxes(u_grad, -1, -2)) + H
+    eps = 0.5 * (u_grad + onp.swapaxes(u_grad, -1, -2)) + 0.5 * (H + H.T)
     sigma = lam * onp.trace(eps, axis1=-2, axis2=-1)[..., None, None] * onp.eye(3)         + 2.0 * mu * eps
     JxW = onp.asarray(problem.JxW)[:, 0, :]
     return onp.sum(sigma * JxW[..., None, None], axis=(0, 1)) / JxW.sum()
@@ -165,6 +166,7 @@ def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
     if fixed_dofs is None:
         fixed_dofs = (lambda pts: xy_compression_fixed_dofs(pts, Nx, Ny, Nz,
                                                             Lz=cell_size))
+    t0 = time.perf_counter()
     problem = make_density_problem(
         Nx, Ny, Nz, jnp.zeros((3, 3)),
         None if callable(rho_quad) else rho_quad,
@@ -172,6 +174,8 @@ def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
     if callable(rho_quad):
         # 依赖问题几何的密度场(例如 M1 density 作用在真实 Gauss 点上)
         rho_quad = rho_quad(problem)
+    problem.set_params(jnp.zeros((3, 3)), rho_quad, E_s, E_min)
+    t1 = time.perf_counter()
 
     def run(H_vec):
         H = onp.zeros((3, 3))
@@ -195,8 +199,10 @@ def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
     H_final = onp.zeros((3, 3))
     H_final[0, 0], H_final[1, 1], H_final[2, 2] = eps_lat[0], eps_lat[1], eps_z
     sol_final, s_final = run((eps_lat[0], eps_lat[1], eps_z))
+    t2 = time.perf_counter()
     return {"problem": problem, "A": A, "b": b, "eps_x": float(eps_lat[0]),
             "eps_y": float(eps_lat[1]), "H_final": H_final,
             "sol_list": sol_final, "sigma_avg": s_final,
             "sigma_avg_base": s0, "base_sol": sol0,
-            "probe_solutions": probe_solutions}
+            "probe_solutions": probe_solutions,
+            "t_build": t1 - t0, "t_solve": t2 - t1}

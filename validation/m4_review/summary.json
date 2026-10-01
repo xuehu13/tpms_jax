@@ -1,0 +1,17 @@
+{
+  "cases": 10,
+  "all_status_ok": true,
+  "comparison_gate": "absolute difference <= 1e-10 + 1e-6*abs(original)",
+  "max_Fz_relative_difference": 1.1212496656348274e-08,
+  "max_energy_relative_difference": 2.8378854502384755e-12,
+  "original_max_reduced_residual": 3.9240529669224995e-12,
+  "fixed_max_reduced_residual": 2.9279174028860877e-12,
+  "artifacts_sha256": {
+    "run.txt": "e287cf6aab8f298790032f1274b3095caced36d85ce8c6f6ba8c7a476b2e05c2",
+    "fixed.csv": "dc6c3c18881d75737cb99678e60376bc30f54b93f54504ea84a9ff8141bd0fb4",
+    "original_a71c3b1.txt": "15f8eaff8d680312095342af3c156fe684ccb718bb19032d582739c30757fb30",
+    "tests.txt": "b2ab610a3e53d58ddb6a0995704788f62c5ed926931a449846fdc2ff0f1a4477",
+    "original_a71c3b1.csv": "1a5505c621f74e6dbd1926d8119c73cfff6059a7685116dfd941e02878e7299c",
+    "comparison.csv": "c818289cf244f017401bc08ba261fcf37d558f734b0ccb86ff5605f3d296eb83"
+  }
+}

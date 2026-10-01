@@ -5,7 +5,9 @@
 ## 环境
 
 使用 [Pixi](https://pixi.prefix.dev) 管理,环境配置见 `pixi.toml`,版本锁定见 `pixi.lock`。
-JAX-FEM 固定在已验证的 commit `9a79b4b`(0.0.12 开发版)。
+当前 Pixi 环境安装 PyPI `jax-fem==0.0.12`；独立的 JAX-FEM 源码目录仅供参考。
+实际安装版本、关键源码指纹及 M4 验证记录见
+[`validation/m4_review/`](validation/m4_review/)。
 
 ```bash
 pixi install        # 按 pixi.lock 创建/恢复环境
