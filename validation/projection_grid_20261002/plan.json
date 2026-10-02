@@ -1,0 +1,14 @@
+{
+  "parent_commit": "38f650cb86d5bee684a76b162ef060ef8368a16f",
+  "purpose": "Separate projected-model grid sensitivity from the finite-resolution projection/binary response difference before gradient work",
+  "model": {"c": 0.541062, "beta": 20.0, "emin_ratio": 0.001, "E_s": 10.0, "nu": 0.3, "eps_z": -0.01, "cell_size": 1.0, "periodic_axes": [0, 1], "interpolation_power": 1},
+  "new_cases": [{"N": 48, "lateral": "fixed"}, {"N": 48, "lateral": "relaxed_free"}],
+  "reused_projection_sources": ["validation/m4_review/fixed.csv", "validation/abaqus_binary/projection_N32_relaxed_free.json"],
+  "reused_binary_source": "validation/abaqus_binary/summary.json",
+  "comparison_denominator": "finer projected response magnitude for grid change; binary response magnitude for model difference",
+  "predeclared_screening": {"preferred_relative_grid_Fz_change": 0.005, "maximum_relative_grid_Fz_change": 0.01, "preferred_relative_grid_energy_change": 0.005, "maximum_relative_grid_energy_change": 0.01},
+  "physical_acceptance": {"finite": true, "reduced_residual_max": 1e-8, "force_balance_abs": 1e-8, "reaction_consistency_abs": 1e-6, "macro_work_identity_abs": 1e-8, "free_lateral_stress_abs": 1e-8},
+  "adaptation": "Run fixed first, stop batch on physical failure. If either grid indicator exceeds 1%, assess N64 resources and refine before interpreting parameter effects. Between 0.5% and 1%, report conditional resolution; refine if parameter effects have comparable size. No automatic full beta/emin sweep.",
+  "rigorous_error_bound": false,
+  "new_abaqus_jobs_planned": 0
+}

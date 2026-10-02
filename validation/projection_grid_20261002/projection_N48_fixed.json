@@ -1,0 +1,63 @@
+{
+  "study": "",
+  "N": 48,
+  "beta": 20.0,
+  "emin_ratio": 0.001,
+  "lateral": "fixed",
+  "status": "ok",
+  "cells": 110592,
+  "quads": 884736,
+  "n_red": 334078,
+  "vf_int": 0.3506863407718227,
+  "vf_binary_ref": 0.3508029513888889,
+  "Fz_top": -0.02049161602488959,
+  "Fz_bottom": 0.020491616011239656,
+  "sigma_xx": -0.008168541726312512,
+  "sigma_yy": -0.007098454378768636,
+  "sigma_zz": -0.020491616021159054,
+  "U_internal": 0.00010245807978708071,
+  "U_macro": 0.00010245808010579496,
+  "eps_x": 0.0,
+  "eps_y": 0.0,
+  "red_res": 4.876701737050615e-13,
+  "balance": -1.3649935348691855e-11,
+  "reaction_consistency_err": 3.7305367128759315e-12,
+  "work_identity_err": 3.18714252580711e-13,
+  "t_build": 3.04,
+  "t_solve": 17.01,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true
+  },
+  "solver": "Existing M4 default solver; global quantities only",
+  "model": {
+    "c": 0.541062,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 6478.3046875
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "56faeb3af46e1bb02dcc984896588ecabc3bd4b71f88de3de1c62b0a230d68d0",
+    "scripts/m4_numerical_study.py": "374b3c00ea46a0676083cbec00d3374c6c007f0217cefad2a4a04bee89f49afb",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "90cb4e06b5f12c0a88b245f0834bcb3602fcf4714c47ac35ddb1d4c029dd672d",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}
