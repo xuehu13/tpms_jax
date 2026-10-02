@@ -1,0 +1,12 @@
+{
+  "case": "binary_gyroid_G24_R0_C3D10_relaxed_free",
+  "errors": 0,
+  "warning_messages": 1,
+  "distorted_elements": 11078,
+  "quality_warning": true,
+  "out_of_core_solver": false,
+  "convergence_claim": false,
+  "warning_text": [
+    " ***WARNING: 11078 elements are distorted. Either the isoparametric angles are "
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "base_commit": "09680e42b261a63d70630163affad976d4545ea5",
+  "source_sha256": {
+    "binary_gyroid.py": "5c97d433659921742dfd4d35c0c933758970ac24a405ecfd659b939cd52b377c",
+    "scripts/prepare_abaqus_binary.py": "df9c92dadb71c21308cde4762a1664543c0862adeb09a28e889ef1c32ff7defd",
+    "scripts/extract_abaqus_binary.py": "5838cc631cd94c6be74c4b16cfc07b11d26bbe77d75104f0b3880cf82038bbd5",
+    "scripts/extract_uniform_baseline.py": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+    "scripts/estimate_binary_volume.py": "9c89db183a8938433a30f9c30ce64f004b08a8b0bde7475785a3effd082ec8ea",
+    "scripts/run_abaqus_binary.ps1": "ff11fbdd94d0d188b455f36a0ffb2538f4a23dedd37cdd2d00468d1696894a5c",
+    "scripts/capture_abaqus_binary.py": "524365b6391186e6a8bcb07f904787ca84e105c7d4780f9ce15de63d11d2175e",
+    "tests/test_abaqus_binary.py": "9bd3f9079a58a63a3d06dbcee1bc1983b7711323a3f3c521e97349a02e2f292a",
+    "scripts/capture_binary_projection_reference.py": "e6b7b1451f40ff5d13f6dc742d2a002a4d0632b051db7afa0a21b083d586ab42",
+    "scripts/plot_abaqus_binary.py": "9aedcab16c22e4e1fb54942c981685f4e8af52a72edf069160bae643e4b8910f",
+    "scripts/prepare_binary_lateral_pair.py": "b534ee9d97dda1664f94e0280d5482c054b364ee31a27dfb63315558f502214b"
+  },
+  "source_hash_scope": "Final scripts at evidence capture. Early inputs were prepared during development; analyzed INP/mesh hashes are authoritative.",
+  "python": "3.13.15 | packaged by conda-forge | (main, Sep  2 2026, 22:01:58) [GCC 15.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "abaqus_release": "2026 (recorded in console logs)",
+  "large_inputs_and_ODB_retained_at": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+  "run_cases": 13
+}

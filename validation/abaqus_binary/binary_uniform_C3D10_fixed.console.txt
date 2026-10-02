@@ -1,0 +1,22 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB binary_uniform_C3D10_fixed
+Abaqus 2 0 2 6
+Abaqus License Manager checked out the following licenses:
+Abaqus/Standard checked out 6 tokens from Flexnet server localhost.
+<9993 out of 9999 licenses remain available>.
+Begin Analysis Input File Processor
+10/2/2026 2:39:49 PM
+Run pre.exe
+10/2/2026 2:39:58 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+10/2/2026 2:39:58 PM
+Run standard.exe
+10/2/2026 2:40:08 PM
+End Abaqus/Standard Analysis
+Begin SIM Wrap-up
+10/2/2026 2:40:08 PM
+Run SMASimUtility.exe
+10/2/2026 2:40:08 PM
+End SIM Wrap-up
+Abaqus JOB binary_uniform_C3D10_fixed COMPLETED

@@ -1,0 +1,47 @@
+{
+  "case": "binary_gyroid_G12_R0_C3D10_fixed",
+  "model": "binary_sheet_gyroid",
+  "geometry_N": 12,
+  "fe_refinement": 0,
+  "c": 0.541062,
+  "E_s": 10.0,
+  "nu": 0.3,
+  "gross_volume": 1.0,
+  "lateral": "fixed",
+  "geometry": {
+    "nodes": 4850,
+    "elements": 14628,
+    "volume": 0.36763499895791857,
+    "min_detJ": 3.881286057594566e-09,
+    "mean_ratio_min": 0.011262890659547543,
+    "mean_ratio_p01": 0.044972428526896396,
+    "mean_ratio_median": 0.4955092764101011,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 9024,
+    "periodic_cap_triangles": {
+      "0": 224,
+      "1": 224
+    },
+    "surface_G_residual_max": 0.11483894467662559,
+    "surface_G_residual_rms": 0.032868650845778044
+  },
+  "meshing": {
+    "mesher": "cached boundary-preserving mesh",
+    "cache_sha256": "bca6d4bbb512341435c66cc6debf1eb1fbe82969097eb5c8c560b16b4cb9d807"
+  },
+  "nodes": 28841,
+  "elements": 14628,
+  "controls": [
+    28842,
+    28843,
+    28844
+  ],
+  "equations": 4104,
+  "periodic_pairs": 1191,
+  "input_sha256": "5b60ef236df3a963d0c20ba2f1f3ce743725b87e21f28880458d2564b9f62416",
+  "mesh_sha256": "95e7cac074fa05924df10fc387059842e242a48860b1cd7a25bb7e882a29e06c",
+  "relative_tolerance": 1e-06,
+  "displacement_tolerance": 1e-08,
+  "convergence_claim": false
+}

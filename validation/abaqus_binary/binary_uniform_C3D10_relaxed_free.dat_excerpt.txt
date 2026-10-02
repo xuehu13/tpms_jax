@@ -1,0 +1,11 @@
+Original: /mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_uniform_C3D10_relaxed_free.dat
+SHA256: 9b576024fc10f4c51ccd8cd3f08c4f320b3751cf4acbd6c1a552e662e7da2964
+Bytes: 10840
+Selected diagnostic lines; full raw DAT retained beside ODB.
+256: 
+257: 
+258:           THE ANALYSIS HAS BEEN COMPLETED
+259: 
+260: 
+261: 
+262:                               ANALYSIS COMPLETE

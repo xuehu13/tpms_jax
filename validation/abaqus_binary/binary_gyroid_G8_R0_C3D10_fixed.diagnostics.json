@@ -1,0 +1,12 @@
+{
+  "case": "binary_gyroid_G8_R0_C3D10_fixed",
+  "errors": 0,
+  "warning_messages": 1,
+  "distorted_elements": 1038,
+  "quality_warning": true,
+  "out_of_core_solver": false,
+  "convergence_claim": false,
+  "warning_text": [
+    " ***WARNING: 1038 elements are distorted. Either the isoparametric angles are "
+  ]
+}

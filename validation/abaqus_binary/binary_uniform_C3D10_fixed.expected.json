@@ -1,0 +1,57 @@
+{
+  "case": "binary_uniform_C3D10_fixed",
+  "model": "uniform",
+  "geometry_N": null,
+  "fe_refinement": 0,
+  "c": 0.541062,
+  "E_s": 10.0,
+  "nu": 0.3,
+  "gross_volume": 1.0,
+  "lateral": "fixed",
+  "geometry": {
+    "nodes": 27,
+    "elements": 48,
+    "volume": 1.0000000000000002,
+    "min_detJ": 0.12500000000000003,
+    "mean_ratio_min": 0.755952629936924,
+    "mean_ratio_p01": 0.755952629936924,
+    "mean_ratio_median": 0.755952629936924,
+    "connected_components": 1,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 48,
+    "periodic_cap_triangles": {
+      "0": 8,
+      "1": 8
+    }
+  },
+  "meshing": {
+    "mesher": "Freudenthal cube patch"
+  },
+  "nodes": 125,
+  "elements": 48,
+  "controls": [
+    126,
+    127,
+    128
+  ],
+  "equations": 142,
+  "periodic_pairs": 45,
+  "input_sha256": "d2e1519c6aa4015c91e5c67ecafb849563b1447bb626e0c67c564859c94a86cd",
+  "mesh_sha256": "ece9c341f230b4e293f6a0d8b6231384bb17040ddc737689e30ebdd1f525678a",
+  "relative_tolerance": 1e-06,
+  "displacement_tolerance": 1e-08,
+  "convergence_claim": false,
+  "analytic": {
+    "eps": [
+      0.0,
+      0.0,
+      -0.01
+    ],
+    "sigma_diagonal": [
+      -0.057692307692307696,
+      -0.057692307692307696,
+      -0.1346153846153846
+    ],
+    "energy": 0.000673076923076923
+  }
+}

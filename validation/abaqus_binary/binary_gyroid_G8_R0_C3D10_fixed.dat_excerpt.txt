@@ -1,0 +1,18 @@
+Original: /mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G8_R0_C3D10_fixed.dat
+SHA256: b09c33ca97f424bf8e907e7537e64f5b1f8b61ae6f0d106723e7466d8cf629b6
+Bytes: 95200
+Selected diagnostic lines; full raw DAT retained beside ODB.
+182:            TO REMESH IN ORDER TO REDUCE THE AMOUNT OF ADJUSTMENT. 
+183: 
+184:  ***WARNING: 1038 elements are distorted. Either the isoparametric angles are 
+185:              out of the suggested limits or the triangular or tetrahedral 
+186:              quality measure is bad. The elements have been identified in 
+187:              element set WarnElemDistorted.
+188:   
+1336: 
+1337: 
+1338:           THE ANALYSIS HAS BEEN COMPLETED
+1339: 
+1340: 
+1341: 
+1342:                               ANALYSIS COMPLETE

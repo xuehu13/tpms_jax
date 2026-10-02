@@ -1,0 +1,13 @@
+{
+  "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+  "errors": 0,
+  "warning_messages": 2,
+  "distorted_elements": 28635,
+  "quality_warning": true,
+  "out_of_core_solver": true,
+  "convergence_claim": false,
+  "warning_text": [
+    " ***WARNING: 28635 elements are distorted. Either the isoparametric angles are ",
+    " ***WARNING: THE MEMORY LIMIT IS INSUFFICENT TO RUN THE PURE THREAD-BASED "
+  ]
+}

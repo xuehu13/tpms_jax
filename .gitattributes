@@ -6,3 +6,9 @@ validation/abaqus_element/*.json -text whitespace=cr-at-eol
 validation/abaqus_discrete/*.sta -text whitespace=-blank-at-eol,-blank-at-eof
 validation/abaqus_discrete/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
 validation/abaqus_discrete/*.json -text whitespace=cr-at-eol
+validation/abaqus_binary/*.sta -text whitespace=-blank-at-eol,-blank-at-eof
+validation/abaqus_binary/*.dat -text whitespace=-blank-at-eol,-blank-at-eof
+validation/abaqus_binary/*.msg -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+validation/abaqus_binary/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
+validation/abaqus_binary/*.json -text whitespace=cr-at-eol
+validation/abaqus_binary/*.inp -text

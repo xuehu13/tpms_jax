@@ -32,3 +32,5 @@ results/
 .vscode/
 .idea/
 .DS_Store
+
+!validation/abaqus_binary/binary_uniform_C3D10_*.mesh.npz

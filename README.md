@@ -26,7 +26,10 @@ pixi run python     # 进入项目 Python 环境
 - [Abaqus 2026 三个均匀实体基准](validation/abaqus_uniform/)
 - [C3D8 与实际 JAX HEX8 单元矩阵比较](validation/abaqus_element/)
 - [同一 Gauss 材料场的线性离散对照](validation/abaqus_discrete/)
-- [验证进度、范围和后续贴体 Gyroid 计划](validation/abaqus_validation_progress.md)
+- [二值 Gyroid C3D10 贴体实体与双工况加密对照](validation/abaqus_binary/)
+- [验证进度、范围和后续计划](validation/abaqus_validation_progress.md)
 
 均匀仿射基准通过不代表 C3D8 与 JAX 的离散刚度相同；当前严格对照通过
-独立积分的线性用户单元矩阵导入实现。真正二值 Gyroid 贴体模型尚未验证。
+独立积分的线性用户单元矩阵导入实现。二值 Gyroid 贴体模型完成 13 个原生
+C3D10 作业：均匀基准、固定/自由横向的几何与 FE 加密；全局响应的 1%
+筛查通过，局部应力和畸变单元质量仍需补充研究。完整回归测试 102/102。

@@ -1,0 +1,61 @@
+{
+  "case": "binary_gyroid_G24_R0_C3D10_relaxed_free",
+  "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G24_R0_C3D10_relaxed_free.odb",
+  "measured": {
+    "volume_solid": 0.3546271061932296,
+    "gross_volume": 1.0,
+    "sigma_gross": [
+      -2.428910258047124e-13,
+      -7.6370211999799e-13,
+      -0.015248234372562602,
+      6.991292655384816e-06,
+      -6.531824076019134e-13,
+      -4.782425257426471e-13
+    ],
+    "sigma_solid_average": [
+      -6.849195156344469e-13,
+      -2.1535356622791917e-12,
+      -0.04299793813351122,
+      1.971449032882273e-05,
+      -1.841885169505364e-12,
+      -1.3485785981685836e-12
+    ],
+    "macro_displacements": [
+      0.003639407455921173,
+      0.002413712674751878,
+      -0.009999999776482582
+    ],
+    "macro_RF": [
+      0.0,
+      0.0,
+      -0.015248234383761883
+    ],
+    "bottom_RFz": 0.015248234363069903,
+    "ALLSE": 7.624117279192433e-05,
+    "IP_energy": 7.624117186180597e-05,
+    "macro_energy": 7.624117015732636e-05,
+    "control_work": 7.624117021468643e-05,
+    "integration_points": 269016,
+    "max_periodic_error": 3.4924596548080444e-10,
+    "max_loaded_face_error": 6.615109660538164e-41,
+    "max_coordinate_error": 2.980163793520063e-08,
+    "max_analytic_affine_error": null
+  },
+  "checks": {
+    "positive_volume": true,
+    "mesh_volume": true,
+    "ODB_coordinates": true,
+    "energy_IP_vs_ALLSE": true,
+    "energy_work_vs_ALLSE": true,
+    "energy_macro_vs_ALLSE": true,
+    "control_RF_vs_gross_stress": true,
+    "top_bottom_balance": true,
+    "periodic_displacement": true,
+    "loaded_face_displacement": true,
+    "zero_lateral_stress": true,
+    "finite_outputs": true
+  },
+  "status": "ok",
+  "convergence_claim": false,
+  "input_sha256": "8373468dd002ff54dd09f3fa654cee9e835d2a5b970610aae10d67c07b02e89f"
+}

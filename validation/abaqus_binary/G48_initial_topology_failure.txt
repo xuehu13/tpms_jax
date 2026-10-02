@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/xuehu/projects/tpms_jax/scripts/prepare_abaqus_binary.py", line 169, in <module>
+    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xuehu/projects/tpms_jax/scripts/prepare_abaqus_binary.py", line 108, in prepare
+    points,cells,metadata = remesh_domain(points,cells,refinement)
+                            ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xuehu/projects/tpms_jax/binary_gyroid.py", line 211, in remesh_domain
+    boundary = boundary_faces(cells)
+  File "/home/xuehu/projects/tpms_jax/binary_gyroid.py", line 122, in boundary_faces
+    raise ValueError("Nonmanifold tetrahedral mesh")
+ValueError: Nonmanifold tetrahedral mesh

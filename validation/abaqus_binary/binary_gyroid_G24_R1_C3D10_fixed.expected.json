@@ -1,0 +1,52 @@
+{
+  "case": "binary_gyroid_G24_R1_C3D10_fixed",
+  "model": "binary_sheet_gyroid",
+  "geometry_N": 24,
+  "fe_refinement": 1,
+  "c": 0.541062,
+  "E_s": 10.0,
+  "nu": 0.3,
+  "gross_volume": 1.0,
+  "lateral": "fixed",
+  "geometry": {
+    "nodes": 124403,
+    "elements": 538032,
+    "volume": 0.3546271061854595,
+    "min_detJ": 1.0290878466113776e-11,
+    "mean_ratio_min": 0.007154325208613234,
+    "mean_ratio_p01": 0.028371876516623987,
+    "mean_ratio_median": 0.5764266990878192,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 134400,
+    "periodic_cap_triangles": {
+      "0": 2432,
+      "1": 2432
+    },
+    "surface_G_residual_max": 0.03271644655886108,
+    "surface_G_residual_rms": 0.008158575706921262
+  },
+  "meshing": {
+    "gmsh_version": "4.15.2",
+    "warnings": [
+      "Warning: 7 ill-shaped tets are still in the mesh",
+      "Warning: 5 ill-shaped tets are still in the mesh"
+    ],
+    "refinement": 1,
+    "identical_tetrahedra_removed": 0
+  },
+  "nodes": 854039,
+  "elements": 538032,
+  "controls": [
+    854040,
+    854041,
+    854042
+  ],
+  "equations": 37760,
+  "periodic_pairs": 10839,
+  "input_sha256": "f733f3024cd27b899abc2febda959ad7d7dbec5f6b2eb2d91386130d4e0edc2d",
+  "mesh_sha256": "929b1a98ee1b0b4f2d45607b647707580e5e2dc134abe87a54accea78f325cb1",
+  "relative_tolerance": 1e-06,
+  "displacement_tolerance": 1e-08,
+  "convergence_claim": false
+}
