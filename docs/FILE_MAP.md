@@ -1,6 +1,6 @@
 # 文件地图与运行边界
 
-当前研究进度/待办只看 [RESEARCH_STATUS.md](RESEARCH_STATUS.md)，指定论文接口见 [PAPER_ROUTE.md](PAPER_ROUTE.md)。旧四参数优化 R1–R4 和提前进入学习/生成的 G1–G5 计划已撤销；当前只判断 TPMS 背景网格计算精度及原壳模型替代可行性。以下是文件用途索引，不新增运行框架。
+当前研究进度/待办只看 [RESEARCH_STATUS.md](RESEARCH_STATUS.md)，指定论文接口见 [PAPER_ROUTE.md](PAPER_ROUTE.md)。旧四参数优化 R1–R4 和提前进入学习/生成的 G1–G5 计划已撤销；当前先判断 TPMS 背景网格线弹性精度及相应壳单元替代可行性。`F:\auto_abaqus\work` 是只读建模参考，旧参数不需照搬。以下是文件用途索引，不新增运行框架。
 
 ## 正式程序位置
 
