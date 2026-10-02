@@ -1,0 +1,28 @@
+{
+  "parent_commit": "84548b8c39cfa021dbd9bceae676bb14a08dc4e3",
+  "current_source_sha256": {
+    "design_fem.py": "2c0d5dffbe45779a5feae1221b8d82d7bef2a10fc2edc830f17c56f3ff27f2c1",
+    "scripts/check_design_gradients.py": "c1144a9b26c133d8b1b8e2c5fd1cebd7aff80ae000d8ce9e8c464f4feb3b0771",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "scripts/m4_numerical_study.py": "e54ebdc90fedd1b315928814f32c375e3401756f82950eb9b546c12015304453",
+    "tests/test_design_fem.py": "d63ada11035f780f52185424bc7d379a904acd81ec28edd4e1e3aed7faac8bbb"
+  },
+  "installed_source_sha256": {
+    "jax_fem.solver": "25f967772090fbbe3d37050a67712ca18449b7f9f65a31aeb6a3afce661d39c7",
+    "jax_fem.problem": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2"
+  },
+  "artifacts_sha256": {
+    "summary.json": "1c04ad92b1d7331cba60678e02412c0b922d4e04dd1b6d3522065cfc4258708d",
+    "run.console.txt": "f419537c37631b5c38e6c74fad5d86f6c7aa3279440a0bf57f015b7a7e6f15a8",
+    "full_tests.txt": "b1cf349da2947fe3b7c9817af5208bf92cc5e28fe6da485fd8c658b06beb7b46",
+    "gradient_check.png": "b94e414dd0ce73cfa441175bb27261c01a43dd8d765a9a7eeee849191c7de0b5",
+    "summarize.py": "c4adda4b26202244ef2a932bb48b61ab7ca54897b27a7d1a92f665a023b99b16",
+    "periodic_N8.json": "b3a16713b91e60d508326923b9e1240b03ba77e4dc7dc1dde26e7353dd5a58cd",
+    "plan.json": "89f3d6ab6c3e6bdf2d95a1a8595d51629128e1534e8d1c5d9fc8e05000504f32",
+    "periodic_N4.json": "0eedcceba2d645bfac0b87f9fee79444c621e2d96b5b6cf8fa88cff12c24ec49",
+    "uniform_N4.json": "9c0fde3275c84e240df90846ea370adaa1eee52becc8a8a1a653b78a83764132"
+  }
+}
