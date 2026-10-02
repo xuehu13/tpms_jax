@@ -29,7 +29,7 @@ import jax.numpy as jnp
 
 jax.config.update("jax_enable_x64", True)
 
-from density_fem import make_density_problem, solve_lateral_relaxation
+from density_fem import make_density_problem, solve_lateral_relaxation, calibrate_density_c
 from fem import solve
 from geometry import density, gyroid
 from pbc import xy_compression_fixed_dofs
@@ -51,14 +51,18 @@ TOL_REACTION = 1e-6
 TOL_WORK = 1e-8
 
 
-def rho_fn_factory(beta):
+def rho_fn_factory(beta, c=C_CALIB, target_vf=None):
     """Density on the TRUE Gauss points of whichever problem asks for it."""
     def rho_fn(problem):
-        return density(problem.physical_quad_points, C_CALIB, beta, 1.0)
+        record = None if target_vf is None else calibrate_density_c(problem, beta, target_vf)
+        problem.projection_c = c if record is None else record["c"]
+        problem.projection_calibration = record
+        return density(problem.physical_quad_points, problem.projection_c, beta, 1.0)
     return rho_fn
 
 
-def solve_case(N, beta, emin_ratio, lateral, solver_options=None):
+def solve_case(N, beta, emin_ratio, lateral, solver_options=None,
+               c=C_CALIB, target_vf=None):
     """One build + one solve (fixed) or one build + four solves (relaxed).
 
     The relaxed path creates NO temporary problem: the callable rho_quad is
@@ -71,7 +75,7 @@ def solve_case(N, beta, emin_ratio, lateral, solver_options=None):
     if lateral == "fixed":
         t0 = time.perf_counter()
         problem = make_density_problem(
-            N, N, N, H_macro=jnp.asarray(H_fixed), rho_quad=rho_fn_factory(beta),
+            N, N, N, H_macro=jnp.asarray(H_fixed), rho_quad=rho_fn_factory(beta, c, target_vf),
             E_min=E_min, periodic_axes=(0, 1), fixed_class=None,
             fixed_dofs=pins)
         t1 = time.perf_counter()
@@ -80,7 +84,7 @@ def solve_case(N, beta, emin_ratio, lateral, solver_options=None):
         return problem, sol_list, H_fixed, 0.0, 0.0, t1 - t0, t2 - t1
     extra_options = {} if solver_options is None else {"solver_options": solver_options}
     out = solve_lateral_relaxation(
-        N, N, N, rho_quad=rho_fn_factory(beta), eps_z=EPS_Z, h=0.01,
+        N, N, N, rho_quad=rho_fn_factory(beta, c, target_vf), eps_z=EPS_Z, h=0.01,
         E_s=E_S, E_min=E_min, cell_size=1.0, periodic_axes=(0, 1),
         fixed_class=None, fixed_dofs=pins, **extra_options)
     return (out["problem"], out["sol_list"], out["H_final"],
@@ -90,7 +94,8 @@ def solve_case(N, beta, emin_ratio, lateral, solver_options=None):
 def evaluate_case(N, beta, emin_ratio, lateral,
                   tol_res=TOL_RES, tol_balance=TOL_BALANCE,
                   tol_reaction=TOL_REACTION, tol_work=TOL_WORK,
-                  include_problem=False, solver_options=None):
+                  include_problem=False, solver_options=None,
+                  c=C_CALIB, target_vf=None):
     """Run one case and apply the numerical consistency checks.
 
     status=ok requires finite values AND the residual/balance/reaction/
@@ -100,9 +105,11 @@ def evaluate_case(N, beta, emin_ratio, lateral,
     row = dict(study="", N=N, beta=beta, emin_ratio=emin_ratio,
                lateral=lateral, status="")
     try:
+        options = {} if solver_options is None else {"solver_options": solver_options}
+        if c != C_CALIB or target_vf is not None:
+            options.update(c=c, target_vf=target_vf)
         problem, sol_list, H_used, eps_x, eps_y, t_build, t_solve = \
-            solve_case(N, beta, emin_ratio, lateral) if solver_options is None else \
-            solve_case(N, beta, emin_ratio, lateral, solver_options)
+            solve_case(N, beta, emin_ratio, lateral, **options)
         r = onp.asarray(problem.compute_residual(sol_list)[0])
         pts = onp.asarray(problem.fe.points)
         top = onp.where(onp.isclose(pts[:, 2], 1.0, atol=1e-8))[0]
@@ -128,7 +135,7 @@ def evaluate_case(N, beta, emin_ratio, lateral,
         rho_o = onp.asarray(problem.rho)
         X_q = onp.asarray(problem.physical_quad_points)
         vf_binary_ref = float(onp.sum(
-            (onp.abs(onp.asarray(gyroid(X_q))) <= C_CALIB) * JxW) / V)
+            (onp.abs(onp.asarray(gyroid(X_q))) <= problem.projection_c) * JxW) / V)
 
         row.update(cells=problem.fe.num_cells,
                    quads=problem.fe.num_cells * problem.fe.num_quads,
@@ -161,6 +168,8 @@ def evaluate_case(N, beta, emin_ratio, lateral,
         row["status"] = "ok" if all(checks.values()) else "check_failed"
         if include_problem:
             row["_problem"] = problem
+        row["_projection_c"] = float(problem.projection_c)
+        row["_projection_calibration"] = problem.projection_calibration
     except Exception as exc:
         row["status"] = f"FAILED: {type(exc).__name__}: {exc}"
     return row

@@ -1,0 +1,117 @@
+       __       ___      ___   ___                _______  _______ .___  ___. 
+      |  |     /   \     \  \ /  /               |   ____||   ____||   \/   | 
+      |  |    /  ^  \     \  V  /      ______    |  |__   |  |__   |  \  /  | 
+.--.  |  |   /  /_\  \     >   <      |______|   |   __|  |   __|  |  |\/|  | 
+|  `--'  |  /  _____  \   /  .  \                |  |     |  |____ |  |  |  | 
+ \______/  /__/     \__\ /__/ \__\               |__|     |_______||__|  |__| 
+                                                                              
+
+[10-02 20:06:35][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-02 20:06:35][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-02 20:06:35][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-02 20:06:35][INFO] jax_fem: Solving a problem with 110592 cells, 117649x3 = 352947 dofs.
+[10-02 20:06:35][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-02 20:06:35][INFO] jax_fem: Pre-computations took 0.002 [s]
+
+[10-02 20:06:37][INFO] jax_fem: Solving the nonlinear problem...
+
+[10-02 20:06:37][INFO] jax_fem:   iter 0
+[10-02 20:06:37][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 20:06:39][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 20:06:45][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00349 (relative to initial = 1)
+[10-02 20:06:45][INFO] jax_fem:            timing: local assembly  2.049 s, global matrix  3.382 s
+
+[10-02 20:06:45][INFO] jax_fem:   iter 1
+[10-02 20:06:45][DEBUG] jax_fem: Solving linear system...
+[10-02 20:06:45][DEBUG] jax_fem: PETSc Solver - Solving linear system with ksp_type = cg, pc = gamg
+[10-02 20:07:10][DEBUG] jax_fem: PETSc Solver - Finished solving, linear solve res = 7.43e-15
+[10-02 20:07:10][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 20:07:11][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 20:07:11][INFO] jax_fem:            nonlinear residual: L2 norm = 7.43e-15 (relative to initial = 2.13e-12)
+[10-02 20:07:11][INFO] jax_fem:            timing: linear solve 24.497 s, local assembly  1.048 s, global matrix  0.696 s
+
+[10-02 20:07:12][INFO] jax_fem: Timing summary — 1 Newton iter, 32.057 s wall
+[10-02 20:07:12][INFO] jax_fem:   local      3.098 s    9.7%
+[10-02 20:07:12][INFO] jax_fem:   global     4.078 s   12.7%
+[10-02 20:07:12][INFO] jax_fem:   linear    24.497 s   76.4%
+[10-02 20:07:12][INFO] jax_fem:   other      0.385 s    1.2%
+
+[10-02 20:07:12][INFO] jax_fem: max of dofs = 0.0014209750121842912
+[10-02 20:07:12][INFO] jax_fem: min of dofs = -0.002237284472403934
+[10-02 20:07:12][DEBUG] jax_fem: Computing cell residual...
+{
+  "study": "",
+  "N": 48,
+  "beta": 40.0,
+  "emin_ratio": 0.001,
+  "lateral": "fixed",
+  "status": "ok",
+  "cells": 110592,
+  "quads": 884736,
+  "n_red": 334078,
+  "vf_int": 0.35053230883842323,
+  "vf_binary_ref": 0.3508029513888889,
+  "Fz_top": -0.020022539910276436,
+  "Fz_bottom": 0.02002253991027743,
+  "sigma_xx": -0.008043123836077528,
+  "sigma_yy": -0.006972105995866715,
+  "sigma_zz": -0.020022539910275555,
+  "U_internal": 0.00010011269955137434,
+  "U_macro": 0.00010011269955137748,
+  "eps_x": 0.0,
+  "eps_y": 0.0,
+  "red_res": 9.790218562602017e-17,
+  "balance": 9.922618282587337e-16,
+  "reaction_consistency_err": 8.81239525796218e-16,
+  "work_identity_err": 3.144186300207963e-18,
+  "t_build": 2.3,
+  "t_solve": 32.22,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true
+  },
+  "solver": "PETSc CG/GAMG; same FEM operator and checks",
+  "solver_options": {
+    "petsc_solver": {
+      "ksp_type": "cg",
+      "pc_type": "gamg"
+    }
+  },
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "calibration": null,
+  "model": {
+    "c": 0.541062,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 5930.8515625
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "17b40b3043336fdbbf2e3d665e4b8546670bc614f7f257e55afe9d8812076f63",
+    "scripts/m4_numerical_study.py": "e54ebdc90fedd1b315928814f32c375e3401756f82950eb9b546c12015304453",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}

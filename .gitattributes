@@ -17,3 +17,4 @@ validation/abaqus_mesh_quality/*.msg -text whitespace=-blank-at-eol,-blank-at-eo
 validation/abaqus_mesh_quality/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
 validation/abaqus_mesh_quality/*.json -text whitespace=cr-at-eol
 validation/projection_grid_20261002/*.console.txt -text whitespace=-blank-at-eol,-blank-at-eof
+validation/projection_effects_20261002/*.console.txt -text whitespace=-blank-at-eol,-blank-at-eof

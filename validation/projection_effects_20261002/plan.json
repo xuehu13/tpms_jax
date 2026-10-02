@@ -1,0 +1,24 @@
+{
+  "parent_commit": "a8b20e2834d77126907f5db283de92f17f344964",
+  "purpose": "Separate fixed-c beta and Emin effects, test their interaction, and compare volume-matched projected fields before gradient work",
+  "model": {"c_fixed": 0.541062, "E_s": 10.0, "nu": 0.3, "eps_z": -0.01, "cell_size": 1.0, "periodic_axes": [0, 1], "interpolation_power": 1, "lateral": "fixed"},
+  "solver": {"type": "PETSc CG/GAMG", "ksp_rtol": 1e-11, "ksp_atol": 1e-13, "ksp_max_it": 5000, "ksp_error_if_not_converged": true},
+  "target_projected_vf": 0.35068707752194295,
+  "target_source": "validation/projection_grid_20261002/projection_N64_fixed.json",
+  "new_cases": [
+    {"name": "N64_beta10_emin3_fixed_c", "N": 64, "beta": 10, "emin_ratio": 0.001},
+    {"name": "N48_beta40_emin3_fixed_c", "N": 48, "beta": 40, "emin_ratio": 0.001},
+    {"name": "N64_beta40_emin3_fixed_c", "N": 64, "beta": 40, "emin_ratio": 0.001},
+    {"name": "N64_beta20_emin4_fixed_c", "N": 64, "beta": 20, "emin_ratio": 0.0001},
+    {"name": "N64_beta40_emin4_fixed_c", "N": 64, "beta": 40, "emin_ratio": 0.0001},
+    {"name": "N64_beta10_emin3_matched_vf", "N": 64, "beta": 10, "emin_ratio": 0.001, "match_target_vf": true},
+    {"name": "N64_beta40_emin3_matched_vf", "N": 64, "beta": 40, "emin_ratio": 0.001, "match_target_vf": true}
+  ],
+  "reuse": ["validation/m4_review/fixed.csv", "validation/projection_grid_20261002", "validation/abaqus_binary/summary.json"],
+  "grid_screening": {"preferred_Fz_and_energy_relative_change": 0.005, "maximum_Fz_and_energy_relative_change": 0.01, "denominator": "finer response magnitude"},
+  "volume_calibration": {"points": "actual problem.physical_quad_points", "weights": "actual problem.JxW", "abs_tolerance": 1e-10, "target_is_projected_volume_not_binary_volume": true},
+  "interpretation": "Use the beta20/40 x Emin1e-3/1e-4 four corners to measure interaction. Volume-matched c(beta) changes the geometry definition and is reported separately; do not normalize Fz by volume as a substitute.",
+  "failure_policy": "Stop on failed physical acceptance. Inspect beta40 N48->64 before the second batch; stop parameter interpretation if it exceeds 1%, report conditional resolution if 0.5%-1%. No larger grid or full sweep is automatic.",
+  "gradient_verified": false,
+  "new_abaqus_jobs_planned": 0
+}

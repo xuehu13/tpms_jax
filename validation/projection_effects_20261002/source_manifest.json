@@ -1,0 +1,41 @@
+{
+  "parent_commit": "a8b20e2834d77126907f5db283de92f17f344964",
+  "current_source_sha256": {
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "scripts/m4_numerical_study.py": "e54ebdc90fedd1b315928814f32c375e3401756f82950eb9b546c12015304453",
+    "scripts/capture_binary_projection_reference.py": "17b40b3043336fdbbf2e3d665e4b8546670bc614f7f257e55afe9d8812076f63",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "tests/test_projection_volume.py": "609d44fa6fb99a1f138f83c735e44942646be2c0fe77dd2912e3854eec380995"
+  },
+  "reused_inputs_sha256": {
+    "validation/m4_review/fixed.csv": "dc6c3c18881d75737cb99678e60376bc30f54b93f54504ea84a9ff8141bd0fb4",
+    "validation/projection_grid_20261002/projection_N64_fixed.json": "4b939770a92674261f445400c621962897daafc3ace5a5e20026fd69bd8819ae",
+    "validation/projection_grid_20261002/projection_N48_fixed.json": "761f4cb62f3f518b26b114b287ace57e61e9776f316a6608e9b4c3eea0b8c546",
+    "validation/projection_grid_20261002/source_manifest.json": "aefa6602c867deff0238885a975e1a4f4eb762d8dec64c828d8bcf8f4812df8b",
+    "validation/abaqus_binary/summary.json": "8e774ed22ccae11b7e8f81af36f670a42ac2b2de42592cb026ad557548551177"
+  },
+  "artifacts_sha256": {
+    "summary.json": "8e9a572f616070fc830a936319f0adb1c3a7a05fb11d0fc823570634d76114d0",
+    "N64_beta40_emin3_fixed_c.console.txt": "5fa19b07a6b6a1a1da7a6c87dbaa3f2bae5319d48f12d3e69159e3b9d544bfbe",
+    "N64_beta40_emin3_fixed_c.json": "47b9b6ac7880c37ba3e52fef03c57a14d57dd92de663ca461d8fc924366a344c",
+    "targeted_tests.txt": "5e57aafa94046fb36d5cdc97898fb26b0ef0ad8bed60a13a0cb8cad48f398193",
+    "N64_beta10_emin3_fixed_c.console.txt": "1f560b0fd10e69b56fbf9d8705c41850b1c3e00b075ac5ed3ebdfbb641ecb230",
+    "projection_effects.png": "b4dcd9e79b31887e07f476f21d1abd4b72eebfc2ad1dc8a0332e30a98331beb3",
+    "full_tests.txt": "f052a4a786f36b8f8dab05963c3dd3d809509d6dce7f2f4052697a8a074c67de",
+    "N64_beta10_emin3_matched_vf.console.txt": "8e50d7bc2d5f43e1a6fa9a0f1a7d507e58fd2b117dd8c355c3af5e711cc95216",
+    "N64_beta40_emin4_fixed_c.console.txt": "d039ae4c2487bf2062864191b5f258fc1c33fe41f43aa5440fe0bc2dc277a2b2",
+    "N64_beta20_emin4_fixed_c.json": "24d028d68f2f974cd9c0a4fc48b07b919d219423305b7e6b70168c3d8daa023b",
+    "N64_beta40_emin3_matched_vf.console.txt": "42660e5c289565066165b2d3516963b0d9206d4600ffa099c6cd184b931d7cb3",
+    "summarize.py": "b79f4ec418fef7c807eb010f432495f32deb6eb42eb5027acc698770718d75bd",
+    "N64_beta20_emin4_fixed_c.console.txt": "20641b33522a3d0906f6f7b33f61027456737aa307b6d90e601365c46c8217f2",
+    "plan.json": "76bea163bb156e8de38523b12854eae869063ae8d7fb240b848dbd89e461d04b",
+    "N64_beta10_emin3_matched_vf.json": "6746d85db170a94bc78c4c9e368b70f57a634f35f808b9053b400c107b7c5b44",
+    "N48_beta40_emin3_fixed_c.console.txt": "a19f5833f592c6bb7de00bae16ec36cd77374ae17594c606a490e07b571d68bd",
+    "N48_beta40_emin3_fixed_c.json": "4d45afaef00a8889e6568fb0fbf799bb4419f7c3bb52d3a71f04a37f06705ecc",
+    "N64_beta40_emin4_fixed_c.json": "80e477039200c14ee3dfe75e7c727f1fc16d9954245cb70ce2b1d48c0857d2ea",
+    "N64_beta40_emin3_matched_vf.json": "9acc8d23c5df6a0010328764c7c5e29e2546787d0d45ddcb39c0b335a5320cf2",
+    "N64_beta10_emin3_fixed_c.json": "add71b1e4658764c627a210ae2d35d7c0068dfc533eaf0e0051748bcda2c6d1b"
+  }
+}

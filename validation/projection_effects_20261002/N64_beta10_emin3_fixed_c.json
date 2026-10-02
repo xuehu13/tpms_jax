@@ -1,0 +1,76 @@
+{
+  "study": "",
+  "N": 64,
+  "beta": 10.0,
+  "emin_ratio": 0.001,
+  "lateral": "fixed",
+  "status": "ok",
+  "cells": 262144,
+  "quads": 2097152,
+  "n_red": 790526,
+  "vf_int": 0.35133822878751614,
+  "vf_binary_ref": 0.34992980957031244,
+  "Fz_top": -0.022153232758996624,
+  "Fz_bottom": 0.022153232758996957,
+  "sigma_xx": -0.008615244414264344,
+  "sigma_yy": -0.007585551629975817,
+  "sigma_zz": -0.022153232759000486,
+  "U_internal": 0.00011076616379500229,
+  "U_macro": 0.00011076616379500197,
+  "eps_x": 0.0,
+  "eps_y": 0.0,
+  "red_res": 9.960175723468592e-17,
+  "balance": 3.3306690738754696e-16,
+  "reaction_consistency_err": 3.8614944575243726e-15,
+  "work_identity_err": 3.2526065174565133e-19,
+  "t_build": 3.84,
+  "t_solve": 87.25,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true
+  },
+  "solver": "PETSc CG/GAMG; same FEM operator and checks",
+  "solver_options": {
+    "petsc_solver": {
+      "ksp_type": "cg",
+      "pc_type": "gamg"
+    }
+  },
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "calibration": null,
+  "model": {
+    "c": 0.541062,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 12421.328125
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "17b40b3043336fdbbf2e3d665e4b8546670bc614f7f257e55afe9d8812076f63",
+    "scripts/m4_numerical_study.py": "e54ebdc90fedd1b315928814f32c375e3401756f82950eb9b546c12015304453",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}

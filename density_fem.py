@@ -20,12 +20,47 @@ import jax
 import jax.numpy as jnp
 
 from fem import NU, ELE_TYPE, solve
-from geometry import density
+from geometry import density, gyroid
 from pbc import (PeriodicLinearElasticityCube, periodic_p_mat,
                  xy_compression_fixed_dofs)
 
 __all__ = ["DensityLinearElasticityPeriodic", "make_density_problem",
-           "layered_rho", "avg_stress", "solve_lateral_relaxation"]
+           "layered_rho", "avg_stress", "solve_lateral_relaxation",
+           "calibrate_density_c"]
+
+
+def calibrate_density_c(problem, beta, target, L=1.0, tol=1e-10, max_iter=80):
+    """Match projected volume on this problem's actual Gauss points and JxW.
+
+    This scalar bisection is a forward-model calibration, not an AD wrapper.
+    Geometry-only cell-center/binary calibration remains in volume.py.
+    """
+    if not onp.isfinite(beta) or beta <= 0 or not onp.isfinite(target) or not 0 < target < 1:
+        raise ValueError("Expected finite beta>0 and 0<target<1")
+    g = gyroid(problem.physical_quad_points, L)
+    weights = jnp.asarray(problem.JxW)[:, 0, :]
+    if g.shape != weights.shape or not onp.all(onp.isfinite(g)) or not onp.all(onp.isfinite(weights)) or onp.any(onp.asarray(weights) <= 0):
+        raise ValueError("Invalid Gauss coordinates or positive volume weights")
+    volume = weights.sum()
+    def fraction(c):
+        rho = jax.nn.sigmoid(beta*(g+c))-jax.nn.sigmoid(beta*(g-c))
+        return float(jnp.sum(rho*weights)/volume)
+    lo, hi = 0., 2.
+    if not fraction(lo) <= target <= fraction(hi):
+        raise ValueError("Target outside projected-volume bracket [0,2]")
+    for iteration in range(1, max_iter+1):
+        c = (lo+hi)/2
+        vf = fraction(c)
+        if abs(vf-target) <= tol:
+            return {"c": c, "beta": float(beta), "target": float(target),
+                    "vf": vf, "abs_error": abs(vf-target), "tolerance": tol,
+                    "iterations": iteration, "bracket": [lo, hi],
+                    "definition": "sum(density(actual_Gauss_points)*JxW)/sum(JxW)"}
+        if vf < target:
+            lo = c
+        else:
+            hi = c
+    raise ValueError("Projected-volume calibration did not meet tolerance")
 
 
 class DensityLinearElasticityPeriodic(PeriodicLinearElasticityCube):

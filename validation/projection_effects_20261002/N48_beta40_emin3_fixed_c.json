@@ -1,0 +1,76 @@
+{
+  "study": "",
+  "N": 48,
+  "beta": 40.0,
+  "emin_ratio": 0.001,
+  "lateral": "fixed",
+  "status": "ok",
+  "cells": 110592,
+  "quads": 884736,
+  "n_red": 334078,
+  "vf_int": 0.35053230883842323,
+  "vf_binary_ref": 0.3508029513888889,
+  "Fz_top": -0.020022539910276436,
+  "Fz_bottom": 0.02002253991027743,
+  "sigma_xx": -0.008043123836077528,
+  "sigma_yy": -0.006972105995866715,
+  "sigma_zz": -0.020022539910275555,
+  "U_internal": 0.00010011269955137434,
+  "U_macro": 0.00010011269955137748,
+  "eps_x": 0.0,
+  "eps_y": 0.0,
+  "red_res": 9.790218562602017e-17,
+  "balance": 9.922618282587337e-16,
+  "reaction_consistency_err": 8.81239525796218e-16,
+  "work_identity_err": 3.144186300207963e-18,
+  "t_build": 2.3,
+  "t_solve": 32.22,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true
+  },
+  "solver": "PETSc CG/GAMG; same FEM operator and checks",
+  "solver_options": {
+    "petsc_solver": {
+      "ksp_type": "cg",
+      "pc_type": "gamg"
+    }
+  },
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "calibration": null,
+  "model": {
+    "c": 0.541062,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 5930.8515625
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "17b40b3043336fdbbf2e3d665e4b8546670bc614f7f257e55afe9d8812076f63",
+    "scripts/m4_numerical_study.py": "e54ebdc90fedd1b315928814f32c375e3401756f82950eb9b546c12015304453",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}
