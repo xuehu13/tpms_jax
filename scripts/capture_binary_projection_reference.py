@@ -19,17 +19,29 @@ if __name__ == "__main__":
     parser.add_argument("--beta", type=float, default=20.)
     parser.add_argument("--emin-ratio", type=float, default=.001)
     parser.add_argument("--lateral", choices=("fixed", "relaxed_free"), default="relaxed_free")
+    parser.add_argument("--solver", choices=("default", "petsc"), default="default")
     parser.add_argument("--out", required=True, type=Path)
     args = parser.parse_args()
     if args.N < 2 or args.beta <= 0 or not 0 < args.emin_ratio < 1:
         parser.error("Expected N>=2, beta>0 and 0<emin-ratio<1")
     if args.out.exists():
         parser.error("Output already exists; choose a new path")
-    row = evaluate_case(args.N, args.beta, args.emin_ratio, args.lateral)
+    solver_options = None
+    petsc_options = None
+    if args.solver == "petsc":
+        from petsc4py import PETSc
+        petsc_options = {"ksp_rtol": 1e-11, "ksp_atol": 1e-13, "ksp_max_it": 5000,
+                         "ksp_error_if_not_converged": True}
+        for key, value in petsc_options.items():
+            PETSc.Options()[key] = value
+        solver_options = {"petsc_solver": {"ksp_type": "cg", "pc_type": "gamg"}}
+    row = evaluate_case(args.N, args.beta, args.emin_ratio, args.lateral, solver_options=solver_options)
     if row["status"] == "ok" and args.lateral == "relaxed_free":
         row["checks"]["zero_lateral_stress<=1e-08"] = max(abs(row["sigma_xx"]), abs(row["sigma_yy"])) <= 1e-8
         row["status"] = "ok" if all(row["checks"].values()) else "check_failed"
-    row["solver"] = "Existing M4 default solver; global quantities only"
+    row["solver"] = "Existing M4 default solver; global quantities only" if solver_options is None else "PETSc CG/GAMG; same FEM operator and checks"
+    row["solver_options"] = solver_options
+    row["petsc_options"] = petsc_options
     row["model"] = {"c": C_CALIB, "E_s": E_S, "nu": NU, "eps_z": EPS_Z,
                     "cell_size": 1., "periodic_axes": [0, 1], "interpolation_power": 1}
     row["runtime"] = {"jax_version": jax.__version__, "devices": [str(d) for d in jax.devices()],

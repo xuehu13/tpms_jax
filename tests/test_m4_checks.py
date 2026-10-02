@@ -103,3 +103,29 @@ def test_main_complete_batch(tmp_path, monkeypatch):
     monkeypatch.setattr(MOD, "evaluate_case", fake_case)
     assert MOD.main() is True
     assert len(calls) == 10
+
+
+def test_petsc_option_preserves_projected_fixed_and_free_response():
+    from petsc4py import PETSc
+    settings = {"ksp_rtol": 1e-11, "ksp_atol": 1e-13, "ksp_max_it": 5000,
+                "ksp_error_if_not_converged": True}
+    options = PETSc.Options()
+    previous = {key: options.getAll().get(key) for key in settings}
+    try:
+        for key, value in settings.items():
+            options[key] = value
+        solver_options = {"petsc_solver": {"ksp_type": "cg", "pc_type": "gamg"}}
+        for lateral in ("fixed", "relaxed_free"):
+            default = MOD.evaluate_case(8, 20., .001, lateral)
+            petsc = MOD.evaluate_case(8, 20., .001, lateral, solver_options=solver_options)
+            assert default["status"] == petsc["status"] == "ok"
+            for key in ("Fz_top", "U_internal", "eps_x", "eps_y"):
+                assert petsc[key] == pytest.approx(default[key], rel=1e-6, abs=1e-10)
+            if lateral == "relaxed_free":
+                assert max(abs(petsc["sigma_xx"]), abs(petsc["sigma_yy"])) <= 1e-8
+    finally:
+        for key, value in previous.items():
+            if value is None:
+                del options[key]
+            else:
+                options[key] = value

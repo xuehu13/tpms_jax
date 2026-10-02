@@ -1,0 +1,195 @@
+       __       ___      ___   ___                _______  _______ .___  ___. 
+      |  |     /   \     \  \ /  /               |   ____||   ____||   \/   | 
+      |  |    /  ^  \     \  V  /      ______    |  |__   |  |__   |  \  /  | 
+.--.  |  |   /  /_\  \     >   <      |______|   |   __|  |   __|  |  |\/|  | 
+|  `--'  |  /  _____  \   /  .  \                |  |     |  |____ |  |  |  | 
+ \______/  /__/     \__\ /__/ \__\               |__|     |_______||__|  |__| 
+                                                                              
+
+[10-02 19:02:27][INFO] jax_fem: Computing shape function values, gradients, etc.
+[10-02 19:02:27][INFO] jax_fem: ele_type = HEX8, quad_points.shape = (num_quads, dim) = (8, 3)
+[10-02 19:02:27][INFO] jax_fem: face_quad_points.shape = (num_faces, num_face_quads, dim) = (6, 4, 3)
+[10-02 19:02:27][INFO] jax_fem: Solving a problem with 262144 cells, 274625x3 = 823875 dofs.
+[10-02 19:02:27][INFO] jax_fem: Element type is HEX8, using 8 quad points per element.
+[10-02 19:02:27][INFO] jax_fem: Pre-computations took 0.001 [s]
+
+[10-02 19:02:30][INFO] jax_fem: Solving the nonlinear problem...
+
+[10-02 19:02:30][INFO] jax_fem:   iter 0
+[10-02 19:02:30][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:02:36][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:02:44][INFO] jax_fem:            nonlinear residual: L2 norm = 0.0021 (relative to initial = 1)
+[10-02 19:02:44][INFO] jax_fem:            timing: local assembly  3.194 s, global matrix  8.318 s
+
+[10-02 19:02:44][INFO] jax_fem:   iter 1
+[10-02 19:02:44][DEBUG] jax_fem: Solving linear system...
+[10-02 19:02:45][DEBUG] jax_fem: PETSc Solver - Solving linear system with ksp_type = cg, pc = gamg
+[10-02 19:04:02][DEBUG] jax_fem: PETSc Solver - Finished solving, linear solve res = 7.99e-15
+[10-02 19:04:02][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:04:05][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:04:07][INFO] jax_fem:            nonlinear residual: L2 norm = 7.99e-15 (relative to initial = 3.82e-12)
+[10-02 19:04:07][INFO] jax_fem:            timing: linear solve 71.832 s, local assembly  3.120 s, global matrix  1.945 s
+
+[10-02 19:04:08][INFO] jax_fem: Timing summary — 1 Newton iter, 88.884 s wall
+[10-02 19:04:08][INFO] jax_fem:   local      6.314 s    7.1%
+[10-02 19:04:08][INFO] jax_fem:   global    10.263 s   11.5%
+[10-02 19:04:08][INFO] jax_fem:   linear    71.832 s   80.8%
+[10-02 19:04:08][INFO] jax_fem:   other      0.476 s    0.5%
+
+[10-02 19:04:08][INFO] jax_fem: max of dofs = 0.0014968012384433437
+[10-02 19:04:08][INFO] jax_fem: min of dofs = -0.002090363258617932
+
+[10-02 19:04:08][INFO] jax_fem: Solving the nonlinear problem...
+
+[10-02 19:04:08][INFO] jax_fem:   iter 0
+[10-02 19:04:08][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:04:10][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:04:12][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00145 (relative to initial = 1)
+[10-02 19:04:12][INFO] jax_fem:            timing: local assembly  1.266 s, global matrix  1.774 s
+
+[10-02 19:04:12][INFO] jax_fem:   iter 1
+[10-02 19:04:12][DEBUG] jax_fem: Solving linear system...
+[10-02 19:04:12][DEBUG] jax_fem: PETSc Solver - Solving linear system with ksp_type = cg, pc = gamg
+[10-02 19:05:33][DEBUG] jax_fem: PETSc Solver - Finished solving, linear solve res = 7.94e-15
+[10-02 19:05:33][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:05:35][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:05:37][INFO] jax_fem:            nonlinear residual: L2 norm = 7.94e-15 (relative to initial = 5.47e-12)
+[10-02 19:05:37][INFO] jax_fem:            timing: linear solve 72.227 s, local assembly  2.283 s, global matrix  1.953 s
+
+[10-02 19:05:37][INFO] jax_fem: Timing summary — 1 Newton iter, 79.602 s wall
+[10-02 19:05:37][INFO] jax_fem:   local      3.549 s    4.5%
+[10-02 19:05:37][INFO] jax_fem:   global     3.728 s    4.7%
+[10-02 19:05:37][INFO] jax_fem:   linear    72.227 s   90.7%
+[10-02 19:05:37][INFO] jax_fem:   other      0.099 s    0.1%
+
+[10-02 19:05:37][INFO] jax_fem: max of dofs = 0.005391127009527411
+[10-02 19:05:37][INFO] jax_fem: min of dofs = -0.002564174438099036
+
+[10-02 19:05:37][INFO] jax_fem: Solving the nonlinear problem...
+
+[10-02 19:05:37][INFO] jax_fem:   iter 0
+[10-02 19:05:37][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:05:39][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:05:41][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00145 (relative to initial = 1)
+[10-02 19:05:41][INFO] jax_fem:            timing: local assembly  1.409 s, global matrix  1.813 s
+
+[10-02 19:05:41][INFO] jax_fem:   iter 1
+[10-02 19:05:41][DEBUG] jax_fem: Solving linear system...
+[10-02 19:05:41][DEBUG] jax_fem: PETSc Solver - Solving linear system with ksp_type = cg, pc = gamg
+[10-02 19:07:00][DEBUG] jax_fem: PETSc Solver - Finished solving, linear solve res = 8.68e-15
+[10-02 19:07:00][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:07:02][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:07:04][INFO] jax_fem:            nonlinear residual: L2 norm = 8.68e-15 (relative to initial = 6e-12)
+[10-02 19:07:04][INFO] jax_fem:            timing: linear solve 72.083 s, local assembly  2.151 s, global matrix  1.796 s
+
+[10-02 19:07:04][INFO] jax_fem: Timing summary — 1 Newton iter, 79.355 s wall
+[10-02 19:07:04][INFO] jax_fem:   local      3.560 s    4.5%
+[10-02 19:07:04][INFO] jax_fem:   global     3.609 s    4.5%
+[10-02 19:07:04][INFO] jax_fem:   linear    72.083 s   90.8%
+[10-02 19:07:04][INFO] jax_fem:   other      0.103 s    0.1%
+
+[10-02 19:07:04][INFO] jax_fem: max of dofs = 0.0032454775626585028
+[10-02 19:07:04][INFO] jax_fem: min of dofs = -0.0016489947560039148
+
+[10-02 19:07:05][INFO] jax_fem: Solving the nonlinear problem...
+
+[10-02 19:07:05][INFO] jax_fem:   iter 0
+[10-02 19:07:05][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:07:06][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:07:08][INFO] jax_fem:            nonlinear residual: L2 norm = 0.00133 (relative to initial = 1)
+[10-02 19:07:08][INFO] jax_fem:            timing: local assembly  1.433 s, global matrix  1.816 s
+
+[10-02 19:07:08][INFO] jax_fem:   iter 1
+[10-02 19:07:08][DEBUG] jax_fem: Solving linear system...
+[10-02 19:07:08][DEBUG] jax_fem: PETSc Solver - Solving linear system with ksp_type = cg, pc = gamg
+[10-02 19:08:26][DEBUG] jax_fem: PETSc Solver - Finished solving, linear solve res = 6.58e-15
+[10-02 19:08:26][DEBUG] jax_fem: Computing cell Jacobian and cell residual...
+[10-02 19:08:28][DEBUG] jax_fem: Updating cached PETSc tangent from COO values...
+[10-02 19:08:30][INFO] jax_fem:            nonlinear residual: L2 norm = 6.58e-15 (relative to initial = 4.96e-12)
+[10-02 19:08:30][INFO] jax_fem:            timing: linear solve 72.290 s, local assembly  2.041 s, global matrix  1.826 s
+
+[10-02 19:08:30][INFO] jax_fem: Timing summary — 1 Newton iter, 79.517 s wall
+[10-02 19:08:30][INFO] jax_fem:   local      3.474 s    4.4%
+[10-02 19:08:30][INFO] jax_fem:   global     3.642 s    4.6%
+[10-02 19:08:30][INFO] jax_fem:   linear    72.290 s   90.9%
+[10-02 19:08:30][INFO] jax_fem:   other      0.112 s    0.1%
+
+[10-02 19:08:30][INFO] jax_fem: max of dofs = 0.001630976792256377
+[10-02 19:08:30][INFO] jax_fem: min of dofs = -0.0016309767922541001
+[10-02 19:08:30][DEBUG] jax_fem: Computing cell residual...
+{
+  "study": "",
+  "N": 64,
+  "beta": 20.0,
+  "emin_ratio": 0.001,
+  "lateral": "relaxed_free",
+  "status": "ok",
+  "cells": 262144,
+  "quads": 2097152,
+  "n_red": 790526,
+  "vf_int": 0.35068707752194295,
+  "vf_binary_ref": 0.34992980957031244,
+  "Fz_top": -0.015750861737686472,
+  "Fz_bottom": 0.015750861737687843,
+  "sigma_xx": 3.4670519342420185e-15,
+  "sigma_yy": 3.599820329660329e-15,
+  "sigma_zz": -0.01575086173768685,
+  "U_internal": 7.875430868843224e-05,
+  "U_macro": 7.87543086884446e-05,
+  "eps_x": 0.003595198956717987,
+  "eps_y": 0.002467378991692931,
+  "red_res": 6.141317092860738e-17,
+  "balance": 1.3704315460216776e-15,
+  "reaction_consistency_err": 3.7816971776294395e-16,
+  "work_identity_err": 1.235990476633475e-17,
+  "t_build": 3.22,
+  "t_solve": 329.84,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true,
+    "zero_lateral_stress<=1e-08": true
+  },
+  "solver": "PETSc CG/GAMG; same FEM operator and checks",
+  "solver_options": {
+    "petsc_solver": {
+      "ksp_type": "cg",
+      "pc_type": "gamg"
+    }
+  },
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "model": {
+    "c": 0.541062,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 12601.76171875
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "01ddb030b71bb1c9491237c326bcfa383363b4929de3e6bf475e459893c27619",
+    "scripts/m4_numerical_study.py": "8decffd4751c29442253952e35026609e8f25d99759190845c0f1cb0a4b43458",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "90cb4e06b5f12c0a88b245f0834bcb3602fcf4714c47ac35ddb1d4c029dd672d",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}

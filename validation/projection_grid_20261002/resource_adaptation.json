@@ -1,0 +1,11 @@
+{
+  "after_commit": "c13b1c7b228615cf0ddf80eb1aef666ca193c22d",
+  "trigger": "N32 to N48 fixed/free grid changes about 0.835%/0.900%, below 1% maximum but above 0.5% preferred and comparable to the earlier approximately 1% Emin effect",
+  "resources": {"GPU": "RTX 4060 Laptop 8188 MiB", "N48_default_observed_GPU_used_MiB": 4613, "WSL_RAM_GiB": 15, "WSL_swap_GiB": 4},
+  "change": "Use the installed JAX-FEM PETSc CG/GAMG option for the linear solve; keep element assembly, material, constraints and physical acceptance unchanged. Do not edit installed JAX-FEM or restart WSL.",
+  "petsc_options": {"ksp_rtol": 1e-11, "ksp_atol": 1e-13, "ksp_max_it": 5000, "ksp_error_if_not_converged": true},
+  "crosscheck": {"N": 48, "lateral": "fixed", "relative_Fz_and_energy_tolerance": 1e-6, "absolute_tolerance": 1e-10, "small_test_includes_both_lateral_conditions": true},
+  "new_cases_after_crosscheck": [{"N": 64, "lateral": "fixed"}, {"N": 64, "lateral": "relaxed_free"}],
+  "preferred_grid_indicator": 0.005,
+  "failure_policy": "Preserve failed evidence and stop on physical failure or resource exhaustion; do not weaken acceptance or launch an automatic parameter sweep."
+}

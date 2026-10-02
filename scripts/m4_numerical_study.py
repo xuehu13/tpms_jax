@@ -90,7 +90,7 @@ def solve_case(N, beta, emin_ratio, lateral, solver_options=None):
 def evaluate_case(N, beta, emin_ratio, lateral,
                   tol_res=TOL_RES, tol_balance=TOL_BALANCE,
                   tol_reaction=TOL_REACTION, tol_work=TOL_WORK,
-                  include_problem=False):
+                  include_problem=False, solver_options=None):
     """Run one case and apply the numerical consistency checks.
 
     status=ok requires finite values AND the residual/balance/reaction/
@@ -101,7 +101,8 @@ def evaluate_case(N, beta, emin_ratio, lateral,
                lateral=lateral, status="")
     try:
         problem, sol_list, H_used, eps_x, eps_y, t_build, t_solve = \
-            solve_case(N, beta, emin_ratio, lateral)
+            solve_case(N, beta, emin_ratio, lateral) if solver_options is None else \
+            solve_case(N, beta, emin_ratio, lateral, solver_options)
         r = onp.asarray(problem.compute_residual(sol_list)[0])
         pts = onp.asarray(problem.fe.points)
         top = onp.where(onp.isclose(pts[:, 2], 1.0, atol=1e-8))[0]

@@ -1,0 +1,49 @@
+{
+  "parent_commit": "38f650cb86d5bee684a76b162ef060ef8368a16f",
+  "N48_capture_commit": "c13b1c7b228615cf0ddf80eb1aef666ca193c22d",
+  "current_sources_sha256": {
+    "scripts/capture_binary_projection_reference.py": "01ddb030b71bb1c9491237c326bcfa383363b4929de3e6bf475e459893c27619",
+    "scripts/m4_numerical_study.py": "8decffd4751c29442253952e35026609e8f25d99759190845c0f1cb0a4b43458",
+    "density_fem.py": "90cb4e06b5f12c0a88b245f0834bcb3602fcf4714c47ac35ddb1d4c029dd672d",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "geometry.py": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "tests/test_m4_checks.py": "7e67d9349e168c7350a2a96aa832ea9f3950db1fb7ba7597d568873be8f32d26"
+  },
+  "installed_jax_fem_sha256": {
+    "solver.py": "25f967772090fbbe3d37050a67712ca18449b7f9f65a31aeb6a3afce661d39c7",
+    "problem.py": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2",
+    "fe.py": "2d05679123b3fe10e483b37c218a2e9008c40e8118e9e1a1f97d1817003e2032"
+  },
+  "package_versions": {
+    "jax": "0.11.2",
+    "jax-fem": "0.0.12",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "petsc4py": "3.25.1"
+  },
+  "reused_inputs_sha256": {
+    "validation/m4_review/fixed.csv": "dc6c3c18881d75737cb99678e60376bc30f54b93f54504ea84a9ff8141bd0fb4",
+    "validation/abaqus_binary/projection_N32_relaxed_free.json": "5212890a66026fa474e12f10e361d69eb6a7ead1cd79942754861ec6467193ea",
+    "validation/abaqus_binary/summary.json": "8e774ed22ccae11b7e8f81af36f670a42ac2b2de42592cb026ad557548551177"
+  },
+  "artifacts_sha256": {
+    "summary.json": "58e8807959da5d4d17590dbffd490280f18e2a1dd5cb3137d94b9b6aa4b00423",
+    "projection_N48_relaxed_free.json": "b87d59495791087f60d3425aedf82007f0dd4c9fa94558e4c28f190995d12af0",
+    "resource_adaptation.json": "8c29cb3110b7197f2671ce7577d5a8b727115ec22f3ab7bc5e830b0280a89f16",
+    "projection_N64_relaxed_free.console.txt": "427824f80abc67548372a9242c3ac3b050e5fb9b0384468dd0603e918f595b10",
+    "projection_N48_relaxed_free.console.txt": "f9d7bcdafedd472773c19db7c40941eaa10de2a07a9583e7c95acbf99a29236d",
+    "full_tests.txt": "74aa6ef775c6be14b07a0a5b6e01b5fc50c348c936213bfa2dcf3154aedd3532",
+    "projection_N64_fixed.console.txt": "0339ab4bb35c2379ae19800a210dacf8605e53f99b9a52b692daefca7d9eee94",
+    "projection_N64_relaxed_free.json": "3befb9079e1869dd2d315e75fae115cac242f6586b3c3dd51d248cdaff7b0504",
+    "projection_N48_fixed_petsc.json": "3e85e58d6cd23a48102f2156e430004535f356a0c57ccfce7a7809465f688ed2",
+    "projection_grid.png": "7a816ef05ad2c895491c847e0b658a1f64b4b68d11680c916840dc49dbb0e132",
+    "summarize.py": "cda99d8a4243ae05538976e0f97d67216c866dae0f4f48c3905cdd9e2954d958",
+    "projection_N48_fixed_petsc.console.txt": "9a096925d24f77f82ae50c23aa178894ce78a65e33a7839012645b0b9695bb5d",
+    "plan.json": "39a2f464df40acfdfce7d1aac093c6c42f7b5d5450c533037939336e751e938a",
+    "projection_N64_fixed.json": "4b939770a92674261f445400c621962897daafc3ace5a5e20026fd69bd8819ae",
+    "projection_N48_fixed.console.txt": "223911e0bdbaf7fb9371331fddd0bd5bf7d6874177f029367c7e43f879a2c5f2",
+    "petsc_crosscheck_test.txt": "b1c64e3587bda934f60845a4d8bdaba2dccf55ea106a190c60fe0b823b082dff",
+    "projection_N48_fixed.json": "761f4cb62f3f518b26b114b287ace57e61e9776f316a6608e9b4c3eea0b8c546"
+  }
+}
