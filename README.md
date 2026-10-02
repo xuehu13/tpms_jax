@@ -29,9 +29,14 @@ pixi run python     # 进入项目 Python 环境
 - [C3D8 与实际 JAX HEX8 单元矩阵比较](validation/abaqus_element/)
 - [同一 Gauss 材料场的线性离散对照](validation/abaqus_discrete/)
 - [二值 Gyroid C3D10 贴体实体与双工况加密对照](validation/abaqus_binary/)
+- [同几何体网格质量对整体刚度的影响](validation/abaqus_mesh_quality/)
 - [验证进度、范围和后续计划](validation/abaqus_validation_progress.md)
 
 均匀仿射基准通过不代表 C3D8 与 JAX 的离散刚度相同；当前严格对照通过
 独立积分的线性用户单元矩阵导入实现。二值 Gyroid 贴体模型完成 13 个原生
 C3D10 作业：均匀基准、固定/自由横向的几何与 FE 加密；全局响应的 1%
-筛查通过，局部应力和畸变单元质量仍需补充研究。完整回归测试 102/102。
+筛查通过，局部应力和畸变单元质量仍需补充研究。二值阶段完整回归测试 102/102。
+
+后续同几何体网格重定位完成两个新作业，固定/自由反力变化分别为
+0.0065%/0.0053%，体积加权应力 p99 变化低于 0.1%。本阶段完整回归
+108/108。当前整体刚度研究可继续，局部最大应力仍未验证收敛。

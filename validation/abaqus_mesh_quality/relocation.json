@@ -1,0 +1,51 @@
+{
+  "method": "Relocate3D",
+  "niter": 10,
+  "threshold": 0.5,
+  "source_mesh_sha256": "5ac7bff75fc6a3c7f02d75796bd7da28601551e4ca31a617fac1d65d3bb82aaf",
+  "before": {
+    "nodes": 20174,
+    "elements": 67254,
+    "volume": 0.3546271061854595,
+    "min_detJ": 8.232702772899286e-11,
+    "mean_ratio_min": 0.00954335200285345,
+    "mean_ratio_p01": 0.03022156474156705,
+    "mean_ratio_median": 0.6265773604012381,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 33600,
+    "periodic_cap_triangles": {
+      "0": 608,
+      "1": 608
+    },
+    "surface_G_residual_max": 0.03271644655886108,
+    "surface_G_residual_rms": 0.00809030830178881
+  },
+  "after": {
+    "nodes": 20174,
+    "elements": 67254,
+    "volume": 0.35462710618545956,
+    "min_detJ": 8.232702772899286e-11,
+    "mean_ratio_min": 0.012108375597007802,
+    "mean_ratio_p01": 0.03720260484514725,
+    "mean_ratio_median": 0.6362244905313172,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 33600,
+    "periodic_cap_triangles": {
+      "0": 608,
+      "1": 608
+    },
+    "surface_G_residual_max": 0.03271644655886108,
+    "surface_G_residual_rms": 0.00809030830178881
+  },
+  "boundary_coordinates_bitwise_equal": true,
+  "connectivity_bitwise_equal": true,
+  "max_node_movement": 0.02220787250847336,
+  "gmsh_version": "4.15.2",
+  "gmsh_messages": [
+    "Warning: Optimization of specified model entities is not interfaced yet",
+    "Info: Optimizing mesh (Relocate3D)...",
+    "Info: Done optimizing mesh (Wall 0.628625s, CPU 0.683392s)"
+  ]
+}

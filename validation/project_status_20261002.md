@@ -1,5 +1,7 @@
 # tpms_jax 阶段总结、计算档案与后续工作计划
 
+后续更新：同几何网格质量对整体刚度的敏感性检查已完成，新增两个原生作业，完整测试 108/108；见[该阶段报告](abaqus_mesh_quality/README.md)。下文的 21 个作业和 102 个测试是本报告最初归档的基线统计。
+
 核查日期：2026-10-02。数值代码基线：`26c47d69516cd5fab7f2481c23d8eaa78bb37378`。本报告依据实际仓库、已完成 Abaqus 2026 作业及已归档验收文件整理。以下“已完成”均与证据对应；后续计划不计入完成工作。本次总结未重新提交 Abaqus 作业。
 
 ## 1. 当前进行到哪一步
@@ -378,7 +380,9 @@ M4 的常规脚本会写工作用 `results/m4_numerical_study.csv`，需要保�
 ```powershell
 $repo = '\\wsl.localhost\Ubuntu-24.04\home\xuehu\projects\tpms_jax'
 $pkg = 'E:\ABAQUS\2026temp\Abaqus_Work\tpms_jax_abaqus\binary_gyroid_20261002'
-& (Join-Path $repo 'scripts\run_abaqus_binary.ps1') `
+$runner = Join-Path $pkg 'scripts\run_abaqus_binary.ps1'
+Copy-Item -LiteralPath (Join-Path $repo 'scripts\run_abaqus_binary.ps1') -Destination $runner
+& $runner `
   -PackageDirectory $pkg `
   -Cases @('binary_gyroid_G48_R0_C3D10_fixed',
            'binary_gyroid_G48_R0_C3D10_relaxed_free') `
@@ -404,7 +408,9 @@ cd /home/xuehu/projects/tpms_jax
 ```powershell
 $repo = '\\wsl.localhost\Ubuntu-24.04\home\xuehu\projects\tpms_jax'
 $newPackage = 'E:\ABAQUS\2026temp\Abaqus_Work\tpms_jax_abaqus\NEW_UNIQUE_FOLDER'
-& (Join-Path $repo 'scripts\run_abaqus_binary.ps1') `
+$runner = Join-Path $newPackage 'scripts\run_abaqus_binary.ps1'
+Copy-Item -LiteralPath (Join-Path $repo 'scripts\run_abaqus_binary.ps1') -Destination $runner
+& $runner `
   -PackageDirectory $newPackage `
   -Cases @('binary_gyroid_G24_R1_C3D10_fixed',
            'binary_gyroid_G24_R1_C3D10_relaxed_free') `

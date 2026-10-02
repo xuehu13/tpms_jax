@@ -1,0 +1,50 @@
+{
+  "parent_commit": "96251072994c40b324c384fd1949c02da1042892",
+  "source_sha256": {
+    "scripts/abaqus_mesh_quality.py": "5bf390e03bf55c1857c08306ff0e13fb25c0006d7930609a878c6dc75e80d489",
+    "validation/abaqus_mesh_quality/prepare.py": "eb76ea70841104a2bf188f9fd94b9c57025b8b9961d270c93d3a15b06bd43d15",
+    "validation/abaqus_mesh_quality/summarize.py": "bb263d2c1b16a5b975aa0145ee51d7fd09c665224d7f717ed0d0cd1ad8d480de",
+    "tests/test_abaqus_mesh_quality.py": "85cf4f047267ec55988563e7dd603bbb0df4ed76f06a84a94ce241c38f14af2a",
+    "scripts/prepare_abaqus_binary.py": "df9c92dadb71c21308cde4762a1664543c0862adeb09a28e889ef1c32ff7defd",
+    "scripts/run_abaqus_binary.ps1": "ff11fbdd94d0d188b455f36a0ffb2538f4a23dedd37cdd2d00468d1696894a5c",
+    "scripts/extract_abaqus_binary.py": "5838cc631cd94c6be74c4b16cfc07b11d26bbe77d75104f0b3880cf82038bbd5",
+    "scripts/extract_uniform_baseline.py": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+    "binary_gyroid.py": "5c97d433659921742dfd4d35c0c933758970ac24a405ecfd659b939cd52b377c"
+  },
+  "raw_package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002",
+  "diagnosed_baseline_package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+  "raw_files": {
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/binary_gyroid_G24_R0_C3D10_fixed.inp": {
+      "sha256": "a44d7a462bbcdff1b1646d2efbbd838a1b7ee0e99fc7a1cbe4f808d18421fe9e",
+      "bytes": 13710204
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/binary_gyroid_G24_R0_C3D10_fixed.mesh.npz": {
+      "sha256": "c22137dadfda1bbfca38ad233f76225602c93ee2be09ef1321178e28926ae5bd",
+      "bytes": 3763720
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/work/binary_gyroid_G24_R0_C3D10_fixed.dat": {
+      "sha256": "f97036ce6a6776edceae5ff108506f19ed521564a3f273a40aebea25e1dcf21e",
+      "bytes": 834878
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/work/binary_gyroid_G24_R0_C3D10_fixed.odb": {
+      "sha256": "6469cb3ad8697c3152fdeeacfcd9c0771d06cb9cda87f809b5cd307b2a4283db",
+      "bytes": 40713336
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/binary_gyroid_G24_R0_C3D10_relaxed_free.inp": {
+      "sha256": "95522d795b6b28669329c573216850f85085d072a2a2894f99e762a7a16acf8f",
+      "bytes": 13710172
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/binary_gyroid_G24_R0_C3D10_relaxed_free.mesh.npz": {
+      "sha256": "c22137dadfda1bbfca38ad233f76225602c93ee2be09ef1321178e28926ae5bd",
+      "bytes": 3763720
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/work/binary_gyroid_G24_R0_C3D10_relaxed_free.dat": {
+      "sha256": "1bf42ef103017acd0c86b534e7998078c332dd635f07c1ad59b52da0fb46ee23",
+      "bytes": 834878
+    },
+    "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002/work/binary_gyroid_G24_R0_C3D10_relaxed_free.odb": {
+      "sha256": "5b13fccb3ba286228c33d5e5e71961d56f94dcfc6ab37ea4029282786044ad9d",
+      "bytes": 40713328
+    }
+  }
+}

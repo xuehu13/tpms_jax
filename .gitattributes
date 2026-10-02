@@ -12,3 +12,7 @@ validation/abaqus_binary/*.msg -text whitespace=-blank-at-eol,-blank-at-eof,-spa
 validation/abaqus_binary/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
 validation/abaqus_binary/*.json -text whitespace=cr-at-eol
 validation/abaqus_binary/*.inp -text
+validation/abaqus_mesh_quality/*.sta -text whitespace=-blank-at-eol,-blank-at-eof
+validation/abaqus_mesh_quality/*.msg -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+validation/abaqus_mesh_quality/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
+validation/abaqus_mesh_quality/*.json -text whitespace=cr-at-eol

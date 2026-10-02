@@ -1,0 +1,85 @@
+{
+  "source_commit": "96251072994c40b324c384fd1949c02da1042892",
+  "new_native_analyses": 2,
+  "cases": [
+    {
+      "case": "binary_gyroid_G24_R0_C3D10_fixed",
+      "lateral": "fixed",
+      "original_Fz": -0.01981327310204506,
+      "relocated_Fz": -0.019811978563666344,
+      "relative_Fz_change": 6.533692702100277e-05,
+      "relative_ALLSE_change": 6.536630321533173e-05,
+      "relative_p99_change": 0.0009880970052289922,
+      "checks": {
+        "Fz": true,
+        "ALLSE": true,
+        "mises_p99": true,
+        "quality_min": true,
+        "quality_p01": true,
+        "physical_consistency": true
+      },
+      "status": "ok"
+    },
+    {
+      "case": "binary_gyroid_G24_R0_C3D10_relaxed_free",
+      "lateral": "relaxed_free",
+      "original_Fz": -0.015248234383761883,
+      "relocated_Fz": -0.015247433446347713,
+      "relative_Fz_change": 5.252656760196735e-05,
+      "relative_ALLSE_change": 5.258382706620323e-05,
+      "relative_p99_change": 0.00045153812237185573,
+      "checks": {
+        "Fz": true,
+        "ALLSE": true,
+        "mises_p99": true,
+        "quality_min": true,
+        "quality_p01": true,
+        "physical_consistency": true
+      },
+      "status": "ok"
+    }
+  ],
+  "screening_passed": true,
+  "full_tests": 108,
+  "denominator": "original response magnitude",
+  "surface_unchanged": true,
+  "connectivity_unchanged": true,
+  "volume_change": 5.551115123125783e-17,
+  "quality_before": {
+    "nodes": 20174,
+    "elements": 67254,
+    "volume": 0.3546271061854595,
+    "min_detJ": 8.232702772899286e-11,
+    "mean_ratio_min": 0.00954335200285345,
+    "mean_ratio_p01": 0.03022156474156705,
+    "mean_ratio_median": 0.6265773604012381,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 33600,
+    "periodic_cap_triangles": {
+      "0": 608,
+      "1": 608
+    },
+    "surface_G_residual_max": 0.03271644655886108,
+    "surface_G_residual_rms": 0.00809030830178881
+  },
+  "quality_after": {
+    "nodes": 20174,
+    "elements": 67254,
+    "volume": 0.35462710618545956,
+    "min_detJ": 8.232702772899286e-11,
+    "mean_ratio_min": 0.012108375597007802,
+    "mean_ratio_p01": 0.03720260484514725,
+    "mean_ratio_median": 0.6362244905313172,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 33600,
+    "periodic_cap_triangles": {
+      "0": 608,
+      "1": 608
+    },
+    "surface_G_residual_max": 0.03271644655886108,
+    "surface_G_residual_rms": 0.00809030830178881
+  },
+  "local_stress_convergence_claim": false
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-02",
+  "purpose": "Assess volume-mesh sensitivity of apparent axial stiffness before gradient validation",
+  "source_commit": "96251072994c40b324c384fd1949c02da1042892",
+  "new_analyses": 2,
+  "geometry": "Same analyzed G24 R0 piecewise-planar binary domain",
+  "method": "Gmsh Relocate3D, 10 iterations; boundary coordinates and tetrahedron connectivity unchanged",
+  "lateral_conditions": ["fixed", "relaxed_free"],
+  "predeclared_screening": {
+    "relative_Fz_change_from_original": 0.005,
+    "relative_ALLSE_change_from_original": 0.005,
+    "relative_volume_weighted_mises_p99_change": 0.02,
+    "mean_ratio_min_and_p01": "Must improve from original",
+    "physical_consistency": "All existing native ODB acceptance checks must pass"
+  },
+  "limits": [
+    "Screening thresholds are working criteria, not rigorous error bounds",
+    "Small energy share of poor elements does not bound stiffness error",
+    "Maximum local stress is diagnostic only; no convergence claim",
+    "No USDFLD, contact, plasticity or global optimizer changes"
+  ]
+}
