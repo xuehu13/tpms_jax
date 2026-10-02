@@ -1,6 +1,6 @@
 # 文件地图与运行边界
 
-当前研究进度/待办只看 [RESEARCH_STATUS.md](RESEARCH_STATUS.md)，指定论文接口见 [PAPER_ROUTE.md](PAPER_ROUTE.md)。旧四参数优化 R1–R4 已撤销。以下是文件用途索引，不新增运行框架。
+当前研究进度/待办只看 [RESEARCH_STATUS.md](RESEARCH_STATUS.md)，指定论文接口见 [PAPER_ROUTE.md](PAPER_ROUTE.md)。旧四参数优化 R1–R4 和提前进入学习/生成的 G1–G5 计划已撤销；当前只判断 TPMS 背景网格计算精度及原壳模型替代可行性。以下是文件用途索引，不新增运行框架。
 
 ## 正式程序位置
 
@@ -41,12 +41,12 @@
 | 路径 | 内容与规则 |
 | --- | --- |
 | README.md | 当前项目入口，仅显示最新有效状态 |
-| docs/RESEARCH_STATUS.md | 用户明确的 TPMS 体素计算/学习/生成目标，G1–G5 当前路线 |
-| docs/PAPER_ROUTE.md | 两篇指定论文的方法、表示/力学差异及接口任务 |
+| docs/RESEARCH_STATUS.md | TPMS 固定背景网格精度与壳模型替代问题，原 B1–B4 实际状态 |
+| docs/PAPER_ROUTE.md | 两篇指定论文的后续方法参考，非当前执行任务 |
 | docs/FILE_MAP.md | 本文件，程序/数据用途和平台边界 |
 | validation/README.md | 9 个正式证据阶段的索引 |
 | validation/research_audit_20261002.json | 历史 23 项作业索引及字节核查；其中 R1–R4 计划已撤销 |
-| validation/scope_correction_20261003.json | 本次用户目标纠正与源文件/原始数据不变核查 |
+| validation/scope_correction_20261003.json | 较早目标纠正的历史记录；其中 G1–G5 不再作为当前执行计划 |
 | validation/*/ | 历史计划、结果、原始轻量日志、验收、图和指纹；阶段测试数/下一步仅代表当时 |
 | tests/ | 最新一次实际完整回归 125 项；文档整理不重复启动计算测试 |
 | results/ | 本机大型/试算结果，被 .gitignore 忽略；不等于 Git 归档。M4 原 CSV 和日志保留 |

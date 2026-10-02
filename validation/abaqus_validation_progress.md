@@ -1,9 +1,7 @@
-# 当前状态入口（2026-10-02 整理）
+# 当前计算精度验证入口
 
-请阅读 [当前 TPMS 体素计算、学习与生成式逆设计总览](../docs/RESEARCH_STATUS.md)、[文件地图](../docs/FILE_MAP.md)、[验证证据索引](README.md) 和 [23 项 Abaqus 作业索引](research_audit_20261002.json)。
+请阅读 [当前范围及原 B1–B4 实际状态](../docs/RESEARCH_STATUS.md)、[文件地图](../docs/FILE_MAP.md) 和 [验证索引](README.md)。
 
-本路径此前是按阶段叠加的长报告，混有 21 项作业/102 项测试及后续阶段数量，现改为单一导航入口。最新有效数量为 23 项正式成功 Abaqus 作业、125 项最新实际回归；本次没有新计算。
+现在要检验固定背景网格/JAX-FEM 的 TPMS 计算精度及原 Abaqus 壳模型替代可行性。旧 R1–R4 四参数优化和 G1–G5 提前学习/生成计划不再执行。历史计算数据和验收保留；旧机器记录里的计划字段不代表当前待办。
 
-整理前全文保存在 [Git 历史快照](https://github.com/xuehu13/tpms_jax/blob/6295ee7b4ad044e3638673636560f09b9e808692/validation/abaqus_validation_progress.md)，可用 `git show 6295ee7b4ad044e3638673636560f09b9e808692:validation/abaqus_validation_progress.md` 离线查看。历史数据/日志/阶段报告仍保留在原证据目录；其旧“下一步”不代表当前安排。
-
-2026-10-03：此前四参数优化 R1–R4 计划已撤销。按用户指定两篇论文开展体素/生成接口工作，具体范围见当前总览和 docs/PAPER_ROUTE.md。
+较早长报告可从 Git 6295ee7 的 validation/abaqus_validation_progress.md 读取，前两次总览在 Git 6774e17/9c720b2 保留。当前证据没有证明原壳模型可替代。

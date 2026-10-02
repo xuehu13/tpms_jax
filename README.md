@@ -1,25 +1,23 @@
 # tpms_jax
 
-个人科研项目：**TPMS 体素表示 → JAX-FEM 力学计算 → 形态/性能学习 → 扩散模型等生成式逆设计 → 独立力学验证。**
+**当前任务：检验体素/固定背景网格方法下，JAX-FEM 能否准确计算 TPMS，并评估能否在用户需要的响应范围内替代此前的 Abaqus 壳单元计算。**
 
-2026-10-03 用户明确纠正研究目标：参考无条件扩散可导力学论文与混合 TPMS 3D-cGAN 论文。此前把“四参数恒体积刚度优化”列为主线的 R1–R4 计划已撤销。
+后续扩散模型/JAX 学习构型和参数是用途；当前先完成计算精度判断。异质材料研究、批量训练样本数及四参数优化不属于当前任务。
 
-## 当前状态与入口
+- [当前范围、原 B1–B4 规划与实际证据](docs/RESEARCH_STATUS.md)
+- [程序与结果文件地图](docs/FILE_MAP.md)
+- [历史验证索引](validation/README.md)
+- [后续论文方法参考](docs/PAPER_ROUTE.md)
 
-已有 Gyroid 平滑代理场计算、均匀与同离散 Abaqus 对照、二值整体响应及低维梯度证据。**尚未建立通用体素输入/体素 AD 链、多形态训练库或生成模型。**
+已有 Gyroid 背景模型、均匀基准、同离散对照及二值实体对照。B2 尚未找到 Abaqus 正式记录；B3 的 USDFLD 路径未完成，实际用了独立线性单元矩阵。现有二值对照仍有约 4.6%–4.9% 有限分辨率响应差，不能据此宣布原壳模型可替代。
 
-- [当前目标、已有工作和 G1–G5 后续路线](docs/RESEARCH_STATUS.md)
-- [两篇指定论文的方法及接口对照](docs/PAPER_ROUTE.md)
-- [程序和数据路径地图](docs/FILE_MAP.md)
-- [历史验证证据索引](validation/README.md)
+下一步先核对原壳算例的几何、厚度、材料、加载和响应范围，匹配所比较的物理问题；按精度判断的需要补 B1–B4 缺口。此前 R1–R4/G1–G5 自动推进计划已撤销。
 
-下一步是 G1：将任意 3D 体素/连续场接入已有 FEM 并做少量必要核查，然后进行多形态小批数据试验。四参数优化不作为前置，不继续扩展单一 Gyroid 的验证扫描。
-
-数值程序基线 `6295ee7`；最新一次实际全套回归 125/125；成功正式 Abaqus 作业 23 项（21 静力 + 2 矩阵）。此次目标纠正只改文档，没有新计算或训练。
+数值基线 `6295ee7`；最新实际完整回归 125/125，正式成功 Abaqus 作业 23 项。本次仅文档校正。
 
 ## 环境
 
-正式 WSL 目录 `/home/xuehu/projects/tpms_jax`。Pixi 配置/锁定见 pixi.toml / pixi.lock，实际 JAX-FEM 为 PyPI 0.0.12；外部源码目录只供参考。
+正式 WSL 目录 `/home/xuehu/projects/tpms_jax`，Pixi 环境由 pixi.toml / pixi.lock 锁定，实际运行库为 PyPI jax-fem 0.0.12。
 
 ```bash
 cd /home/xuehu/projects/tpms_jax
@@ -27,4 +25,4 @@ pixi install
 pixi run test
 ```
 
-validation/ 保存正式轻量证据；results/ 为本机计算数据。现有小应变/XY 边界响应不等于完整均匀化张量或压缩吸能标签。
+validation/ 是正式轻量证据；results/ 为本机结果。已有数据和 Abaqus 原始文件保留。
