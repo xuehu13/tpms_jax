@@ -1,5 +1,7 @@
 # 同一 M4 线性离散问题的 Abaqus 验证
 
+> 历史阶段记录：以下结果、测试数量及“下一步”保留当时口径。当前状态和后续顺序以 [研究主线与四阶段计划](../../docs/RESEARCH_STATUS.md) 为准；本次未改动该阶段原始数值证据。
+
 采用独立 NumPy 代码计算每个 HEX8 的 K_e=Σ Bqᵀ D(Eq,ν) Bq JxWq，
 Eq=E_min+ρq(E_s−E_min)，ρ 为 Gyroid 双 sigmoid 投影。导出前核对完整
 稀疏算子与实际安装的 M4 JAX 切线，并在真实 Gauss 点核对密度公式。

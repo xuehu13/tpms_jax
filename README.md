@@ -1,57 +1,30 @@
 # tpms_jax
 
-三维 TPMS 隐式几何 → HEX8 体素有限元(JAX-FEM)→ 自动微分 → 结构逆设计的科研项目。
+三维 TPMS 隐式几何 → HEX8 体素有限元（JAX-FEM）→ 自动微分 → 结构逆设计的个人科研项目。
 
-## 环境
+## 当前状态
 
-使用 [Pixi](https://pixi.prefix.dev) 管理,环境配置见 `pixi.toml`,版本锁定见 `pixi.lock`。
-当前 Pixi 环境安装 PyPI `jax-fem==0.0.12`；独立的 JAX-FEM 源码目录仅供参考。
-实际安装版本、关键源码指纹及 M4 验证记录见
-[`validation/m4_review/`](validation/m4_review/)。
+已完成几何/前向模型、M4-A 审查、Abaqus 均匀基准、同离散方程对照、真正二值 Gyroid 整体响应、投影网格/参数检查，以及固定横向 N4/N8 一阶梯度验证。**尚未进行优化；论文新颖性尚待核查。**
+
+数值基线：`6295ee7`。最新实际完整回归 **125/125**；正式成功 Abaqus 作业累计 **23 项（21 静力 + 2 矩阵）**。本次整理只改文档，不新增计算。历史阶段的较小测试数量不与当前数量相加。
+
+- [研究目的、已完成/待办、限制及四阶段收口计划](docs/RESEARCH_STATUS.md)
+- [程序、结果与本机路径地图](docs/FILE_MAP.md)
+- [九个验证阶段的证据索引](validation/README.md)
+- [当前 23 项 Abaqus 作业与整理核查记录](validation/research_audit_20261002.json)
+
+下一步为 R1：明确论文问题和代表 N16 梯度复核；随后仅做一个固定横向、投影体积约束的四参数设计案例，再验证细网格及真实二值等体积收益。自由横向导数、USDFLD、全 XYZ 均匀化和局部应力目标列为可选扩展。
+
+当前边界为 XY 周期和平整顶底压缩，结果是该工况的表观轴向刚度。严格同离散 Abaqus 对照采用独立积分后的线性用户单元矩阵；原生 C3D8+USDFLD 尚未验证。二值整体响应通过网格筛查，局部峰值应力仍未收敛。
+
+## 环境与运行
+
+使用 [Pixi](https://pixi.prefix.dev) 管理环境，配置/锁定文件为 pixi.toml / pixi.lock。实际运行库为 PyPI `jax-fem==0.0.12`；独立 JAX-FEM 源码目录仅供参考。
 
 ```bash
-pixi install        # 按 pixi.lock 创建/恢复环境
-pixi run test       # 运行环境自检与有限元 smoke test
-pixi run python     # 进入项目 Python 环境
+cd /home/xuehu/projects/tpms_jax
+pixi install
+pixi run test
 ```
 
-## 状态
-
-- 已完成：M0 环境、M1 几何/体积分数、M2 均匀弹性/周期边界、M3 积分点材料场/横向松弛、M4 数值敏感性。
-- 已完成：Abaqus 2026 均匀基准、单元算子诊断、同离散问题对照及二值 Gyroid 贴体整体响应验证；已整合 main。
-- 下一阶段：自由横向完整导数链和代表网格复核，然后小规模逆设计；固定横向小网格梯度已验证，局部峰值应力仍有限制。
-- [完整阶段报告、文件位置与后续计划](validation/project_status_20261002.md)；[21 个正式 Abaqus 作业索引](validation/project_status_20261002_inventory.json)。
-
-## 数值验证记录
-
-- [M4-A 审查修复与 10 工况](validation/m4_review/)
-- [Abaqus 2026 三个均匀实体基准](validation/abaqus_uniform/)
-- [C3D8 与实际 JAX HEX8 单元矩阵比较](validation/abaqus_element/)
-- [同一 Gauss 材料场的线性离散对照](validation/abaqus_discrete/)
-- [二值 Gyroid C3D10 贴体实体与双工况加密对照](validation/abaqus_binary/)
-- [同几何体网格质量对整体刚度的影响](validation/abaqus_mesh_quality/)
-- [投影模型 N32/N48/N64 网格验证](validation/projection_grid_20261002/)
-- [β/E_min 交互与投影体积分数匹配](validation/projection_effects_20261002/)
-- [固定横向小网格完整梯度链验证](validation/design_gradient_20261002/)
-- [验证进度、范围和后续计划](validation/abaqus_validation_progress.md)
-
-均匀仿射基准通过不代表 C3D8 与 JAX 的离散刚度相同；当前严格对照通过
-独立积分的线性用户单元矩阵导入实现。二值 Gyroid 贴体模型完成 13 个原生
-C3D10 作业：均匀基准、固定/自由横向的几何与 FE 加密；全局响应的 1%
-筛查通过，局部应力和畸变单元质量仍需补充研究。二值阶段完整回归测试 102/102。
-
-后续同几何体网格重定位完成两个新作业，固定/自由反力变化分别为
-0.0065%/0.0053%，体积加权应力 p99 变化低于 0.1%。本阶段完整回归
-108/108。当前整体刚度研究可继续，局部最大应力仍未验证收敛。
-
-投影 β20 工况补至 N64，固定/自由 N48→64 反力变化 0.303%/0.322%，
-达到 0.5% 网格筛查。与既有二值 G48 仍有 4.64%/4.91% 的有限分辨率模型差异。
-该网格阶段完整回归 109/109；参数影响检查见下文。
-
-固定横向新增七项参数对照，β40 N48→64 变化 0.374%。匹配投影体积分数后，
-β10→40 反力跨度仍为 10.46%；E_min 影响约 1%，需计入交互。
-该参数阶段完整测试 117/117；标定二分尚不支持 AD。
-
-固定横向统一 c 和四参数周期场在 N4/N8 完成三组导数核对，132 次差分
-扰动均通过物理检查，预设最后两步梯度门槛通过；非平稳位移指标验证完整
-伴随链。完整回归 125/125；尚不代表连续体梯度收敛，也未进行优化。
+正式结果见 validation/；results/ 为本机结果、不随 Git 上传。保留现有 INP/ODB 与验收证据，新计算使用新输出路径。
