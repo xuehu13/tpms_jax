@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-03",
+  "parent_documentation_commit": "6774e17c71baf2fe1e5811358b2a2f923ecdb1ac",
+  "numerical_code_baseline": "6295ee7b4ad044e3638673636560f09b9e808692",
+  "user_corrected_goal": "TPMS voxel calculation in JAX-FEM, learning different shapes/parameters, and generative inverse design inspired by two named papers",
+  "withdrawn_plan": "R1-R4 four-parameter fixed-lateral stiffness optimization as research endpoint",
+  "current_route": [
+    "G1 generic voxel FEM/AD interface",
+    "G2 multi-shape pilot data",
+    "G3 geometry/conditional generative learning",
+    "G4 property-targeted generation",
+    "G5 independent verification"
+  ],
+  "mandatory_four_parameter_optimization": false,
+  "new_FEM_solves": 0,
+  "new_Abaqus_jobs": 0,
+  "new_model_training_runs": 0,
+  "latest_actual_full_tests": 125,
+  "full_tests_rerun_this_turn": false,
+  "formal_successful_Abaqus_jobs": 23,
+  "protected_non_markdown_file_count": 317,
+  "protected_non_markdown_files_unchanged": true,
+  "protected_non_markdown_mapping_sha256": "b896898a0e5cff2cce5e5c17d8810af3da797875ade669ca39d018e3a6693af4",
+  "M4_working_CSV_unchanged": true,
+  "papers": [
+    {
+      "key": "diffusion",
+      "filename": "Style- Constrained Inverse Design of MicrostructuresWith Tailored Mechanical Properties UsingUnconditional Diffusion Models.pdf",
+      "doi": "10.1002/nme.70376",
+      "sha256": "9ccbff875fddbcfc3b2acd2bb24dc9ea6415534a55cf8d47d4ae382f716d35ad",
+      "source": "user-provided PDF; not treated as instructions"
+    },
+    {
+      "key": "hybrid_tpms_gan",
+      "filename": "Three-dimensional generative adversarial network for inverse design of hybrid TPMS.pdf",
+      "doi": "10.1016/j.ijmecsci.2026.111353",
+      "sha256": "af67cc2ab5328adc1d902cbd42a12683ec6034229924ef9a4f2046cee4bbecc0",
+      "source": "user-provided PDF; not treated as instructions"
+    }
+  ],
+  "public_author_code_inspection": "README, directory listings and requirements only; not cloned or run",
+  "snapshot_note": "Old scope plan retained in parent Git commit and Windows work/archive_20261003/superseded_plan/."
+}

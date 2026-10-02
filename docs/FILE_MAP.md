@@ -1,6 +1,6 @@
 # 文件地图与运行边界
 
-当前研究进度/待办只看 [RESEARCH_STATUS.md](RESEARCH_STATUS.md)。以下是文件用途索引，不新增运行框架。
+当前研究进度/待办只看 [RESEARCH_STATUS.md](RESEARCH_STATUS.md)，指定论文接口见 [PAPER_ROUTE.md](PAPER_ROUTE.md)。旧四参数优化 R1–R4 已撤销。以下是文件用途索引，不新增运行框架。
 
 ## 正式程序位置
 
@@ -16,7 +16,7 @@
 | fem.py | 网格、基础弹性问题与求解封装 |
 | pbc.py | 周期约束与自由度映射 |
 | density_fem.py | 真实 Gauss 点材料插值及宏观横向松弛 |
-| design_fem.py | 四参数周期半宽场、固定横向一阶 AD 适配器 |
+| design_fem.py | 已完成的四参数梯度检查适配器，保留参考；不是通用体素/扩散输入接口 |
 | binary_gyroid.py | 二值域裁剪、网格审查与贴体网格构建 |
 
 保留现有 7 个核心模块、23 个 Python 入口/辅助脚本、2 个 PowerShell 提交器、16 个测试文件。本次没有重命名数值程序，也没有建立新的配置系统。
@@ -41,10 +41,12 @@
 | 路径 | 内容与规则 |
 | --- | --- |
 | README.md | 当前项目入口，仅显示最新有效状态 |
-| docs/RESEARCH_STATUS.md | 原始目的、审查、结果、限制及 R1–R4 当前计划 |
+| docs/RESEARCH_STATUS.md | 用户明确的 TPMS 体素计算/学习/生成目标，G1–G5 当前路线 |
+| docs/PAPER_ROUTE.md | 两篇指定论文的方法、表示/力学差异及接口任务 |
 | docs/FILE_MAP.md | 本文件，程序/数据用途和平台边界 |
 | validation/README.md | 9 个正式证据阶段的索引 |
-| validation/research_audit_20261002.json | 当前 23 项作业索引、本次程序/数据字节不变记录 |
+| validation/research_audit_20261002.json | 历史 23 项作业索引及字节核查；其中 R1–R4 计划已撤销 |
+| validation/scope_correction_20261003.json | 本次用户目标纠正与源文件/原始数据不变核查 |
 | validation/*/ | 历史计划、结果、原始轻量日志、验收、图和指纹；阶段测试数/下一步仅代表当时 |
 | tests/ | 最新一次实际完整回归 125 项；文档整理不重复启动计算测试 |
 | results/ | 本机大型/试算结果，被 .gitignore 忽略；不等于 Git 归档。M4 原 CSV 和日志保留 |

@@ -1,6 +1,6 @@
 # M4 review validation, 2026-10-01
 
-> 历史阶段记录：以下结果、测试数量及“下一步”保留当时口径。当前状态和后续顺序以 [研究主线与四阶段计划](../../docs/RESEARCH_STATUS.md) 为准；本次未改动该阶段原始数值证据。
+> 历史阶段记录：以下结果、测试数量及“下一步”保留当时口径。当前状态和后续顺序以 [当前研究目标与生成式路线](../../docs/RESEARCH_STATUS.md) 为准；本次未改动该阶段原始数值证据。
 
 The original baseline is commit `a71c3b1fc74e3bd70c6f7a7a99d3d836879b80d5`.
 These records are retained outside ignored `results/` so that reviewers can
