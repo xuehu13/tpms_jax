@@ -1,0 +1,617 @@
+{
+  "date": "2026-10-02",
+  "physical_code_baseline_commit": "26c47d69516cd5fab7f2481c23d8eaa78bb37378",
+  "repository": "/home/xuehu/projects/tpms_jax",
+  "formal_successful_abaqus_jobs": 21,
+  "scope": "19 static analyses + 2 element matrix jobs; excludes datachecks and unsuccessful trials",
+  "full_regression": {
+    "passed": 102,
+    "seconds": 83.6,
+    "record": "validation/abaqus_binary/full_tests.txt",
+    "rerun_in_this_summary_turn": false
+  },
+  "current_turn_audit": {
+    "source_files": 11,
+    "source_files_match": true,
+    "binary_input_mesh_dat_hash_checks": 39,
+    "binary_raw_files_match": true,
+    "binary_odb_count": 13,
+    "binary_odb_exists_and_size_matches": true,
+    "note": "ODB existence/size is not an ODB content hash; physical acceptance is from saved native extraction."
+  },
+  "jobs": [
+    {
+      "case": "uniform_xy_fixed",
+      "kind": "uniform_C3D8",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\uniform1001\\abaqus_uniform_baseline",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\uniform1001\\abaqus_uniform_baseline\\work\\uniform_xy_fixed.odb",
+      "evidence": "validation/abaqus_uniform/verified/uniform_xy_fixed.acceptance.json"
+    },
+    {
+      "case": "uniform_xy_relaxed_prescribed",
+      "kind": "uniform_C3D8",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\uniform1001\\abaqus_uniform_baseline",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\uniform1001\\abaqus_uniform_baseline\\work\\uniform_xy_relaxed_prescribed.odb",
+      "evidence": "validation/abaqus_uniform/verified/uniform_xy_relaxed_prescribed.acceptance.json"
+    },
+    {
+      "case": "uniform_xy_relaxed_free",
+      "kind": "uniform_C3D8",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\uniform1001\\abaqus_uniform_baseline",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\uniform1001\\abaqus_uniform_baseline\\work\\uniform_xy_relaxed_free.odb",
+      "evidence": "validation/abaqus_uniform/verified/uniform_xy_relaxed_free.acceptance.json"
+    },
+    {
+      "case": "c3d8_regular",
+      "kind": "element_matrix_C3D8",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular.odb",
+      "evidence": "validation/abaqus_element/comparison.json",
+      "matrix": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular_STIF1.mtx"
+    },
+    {
+      "case": "c3d8_distorted",
+      "kind": "element_matrix_C3D8",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted.odb",
+      "evidence": "validation/abaqus_element/comparison.json",
+      "matrix": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted_STIF1.mtx"
+    },
+    {
+      "case": "discrete_gyroid_N4_fixed",
+      "kind": "linear_user_matrix",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.odb",
+      "evidence": "validation/abaqus_discrete/discrete_gyroid_N4_fixed.acceptance.json"
+    },
+    {
+      "case": "discrete_gyroid_N16_fixed",
+      "kind": "linear_user_matrix",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.odb",
+      "evidence": "validation/abaqus_discrete/discrete_gyroid_N16_fixed.acceptance.json"
+    },
+    {
+      "case": "discrete_gyroid_N16_relaxed_free",
+      "kind": "linear_user_matrix",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.odb",
+      "evidence": "validation/abaqus_discrete/discrete_gyroid_N16_relaxed_free.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G12_R0_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G12_R0_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G12_R0_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G12_R1_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G12_R1_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G12_R1_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G24_R0_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G24_R0_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G24_R0_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G24_R0_C3D10_relaxed_free",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G24_R0_C3D10_relaxed_free.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G24_R0_C3D10_relaxed_free.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G24_R1_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G24_R1_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G24_R1_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G24_R1_C3D10_relaxed_free",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G24_R1_C3D10_relaxed_free.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G24_R1_C3D10_relaxed_free.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G32_R0_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G32_R0_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G32_R0_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G32_R0_C3D10_relaxed_free",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G32_R0_C3D10_relaxed_free.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G32_R0_C3D10_relaxed_free.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G48_R0_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G48_R0_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G48_R0_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G48_R0_C3D10_relaxed_free.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G48_R0_C3D10_relaxed_free.acceptance.json"
+    },
+    {
+      "case": "binary_gyroid_G8_R0_C3D10_fixed",
+      "kind": "binary_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G8_R0_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_gyroid_G8_R0_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_uniform_C3D10_fixed",
+      "kind": "uniform_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_uniform_C3D10_fixed.odb",
+      "evidence": "validation/abaqus_binary/binary_uniform_C3D10_fixed.acceptance.json"
+    },
+    {
+      "case": "binary_uniform_C3D10_relaxed_free",
+      "kind": "uniform_C3D10",
+      "status": "ok",
+      "package_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002",
+      "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_uniform_C3D10_relaxed_free.odb",
+      "evidence": "validation/abaqus_binary/binary_uniform_C3D10_relaxed_free.acceptance.json"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "file": "binary_gyroid.py",
+      "sha256": "5c97d433659921742dfd4d35c0c933758970ac24a405ecfd659b939cd52b377c",
+      "matches": true
+    },
+    {
+      "file": "scripts/prepare_abaqus_binary.py",
+      "sha256": "df9c92dadb71c21308cde4762a1664543c0862adeb09a28e889ef1c32ff7defd",
+      "matches": true
+    },
+    {
+      "file": "scripts/extract_abaqus_binary.py",
+      "sha256": "5838cc631cd94c6be74c4b16cfc07b11d26bbe77d75104f0b3880cf82038bbd5",
+      "matches": true
+    },
+    {
+      "file": "scripts/extract_uniform_baseline.py",
+      "sha256": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+      "matches": true
+    },
+    {
+      "file": "scripts/estimate_binary_volume.py",
+      "sha256": "9c89db183a8938433a30f9c30ce64f004b08a8b0bde7475785a3effd082ec8ea",
+      "matches": true
+    },
+    {
+      "file": "scripts/run_abaqus_binary.ps1",
+      "sha256": "ff11fbdd94d0d188b455f36a0ffb2538f4a23dedd37cdd2d00468d1696894a5c",
+      "matches": true
+    },
+    {
+      "file": "scripts/capture_abaqus_binary.py",
+      "sha256": "524365b6391186e6a8bcb07f904787ca84e105c7d4780f9ce15de63d11d2175e",
+      "matches": true
+    },
+    {
+      "file": "tests/test_abaqus_binary.py",
+      "sha256": "9bd3f9079a58a63a3d06dbcee1bc1983b7711323a3f3c521e97349a02e2f292a",
+      "matches": true
+    },
+    {
+      "file": "scripts/capture_binary_projection_reference.py",
+      "sha256": "e6b7b1451f40ff5d13f6dc742d2a002a4d0632b051db7afa0a21b083d586ab42",
+      "matches": true
+    },
+    {
+      "file": "scripts/plot_abaqus_binary.py",
+      "sha256": "9aedcab16c22e4e1fb54942c981685f4e8af52a72edf069160bae643e4b8910f",
+      "matches": true
+    },
+    {
+      "file": "scripts/prepare_binary_lateral_pair.py",
+      "sha256": "b534ee9d97dda1664f94e0280d5482c054b364ee31a27dfb63315558f502214b",
+      "matches": true
+    }
+  ],
+  "raw_binary_checks": [
+    {
+      "case": "binary_gyroid_G12_R0_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G12_R0_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 3030801,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G12_R0_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 657996,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G12_R0_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 288908,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G12_R1_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G12_R1_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 22761737,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G12_R1_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 4992232,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G12_R1_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 2690509,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G24_R0_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R0_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 13709915,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R0_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 3763348,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G24_R0_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 888361,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G24_R0_C3D10_relaxed_free",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R0_C3D10_relaxed_free.inp",
+          "exists": true,
+          "bytes": 13709883,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R0_C3D10_relaxed_free.mesh.npz",
+          "exists": true,
+          "bytes": 3763348,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G24_R0_C3D10_relaxed_free.dat",
+          "exists": true,
+          "bytes": 888361,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G24_R1_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R1_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 105172446,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R1_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 25836873,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G24_R1_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 8788438,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G24_R1_C3D10_relaxed_free",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R1_C3D10_relaxed_free.inp",
+          "exists": true,
+          "bytes": 105172414,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G24_R1_C3D10_relaxed_free.mesh.npz",
+          "exists": true,
+          "bytes": 25836873,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G24_R1_C3D10_relaxed_free.dat",
+          "exists": true,
+          "bytes": 8788438,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G32_R0_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 26558364,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 7678216,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G32_R0_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 1621639,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G32_R0_C3D10_relaxed_free",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_relaxed_free.inp",
+          "exists": true,
+          "bytes": 26558332,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_relaxed_free.mesh.npz",
+          "exists": true,
+          "bytes": 7678216,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G32_R0_C3D10_relaxed_free.dat",
+          "exists": true,
+          "bytes": 1621639,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G48_R0_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 77318799,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 23474379,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 2275440,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_relaxed_free.inp",
+          "exists": true,
+          "bytes": 77318767,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_relaxed_free.mesh.npz",
+          "exists": true,
+          "bytes": 23474379,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_relaxed_free.dat",
+          "exists": true,
+          "bytes": 2275440,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_gyroid_G8_R0_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G8_R0_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 1135293,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G8_R0_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 195888,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G8_R0_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 95200,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_uniform_C3D10_fixed",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_uniform_C3D10_fixed.inp",
+          "exists": true,
+          "bytes": 10576,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_uniform_C3D10_fixed.mesh.npz",
+          "exists": true,
+          "bytes": 1369,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_uniform_C3D10_fixed.dat",
+          "exists": true,
+          "bytes": 10840,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    },
+    {
+      "case": "binary_uniform_C3D10_relaxed_free",
+      "files": [
+        {
+          "kind": "input",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_uniform_C3D10_relaxed_free.inp",
+          "exists": true,
+          "bytes": 10550,
+          "matches": true
+        },
+        {
+          "kind": "mesh",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_uniform_C3D10_relaxed_free.mesh.npz",
+          "exists": true,
+          "bytes": 1369,
+          "matches": true
+        },
+        {
+          "kind": "dat",
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_uniform_C3D10_relaxed_free.dat",
+          "exists": true,
+          "bytes": 10840,
+          "matches": true
+        }
+      ],
+      "odb_exists": true,
+      "odb_bytes_match": true
+    }
+  ]
+}

@@ -1,10 +1,14 @@
 # Abaqus 验证推进记录（2026-10-02）
 
-已将 M4 审查修复和三个均匀实体 Abaqus 2026 基准以 fast-forward 合并至
-main，GitHub main=`ef2b7d2baae83c8254ecec7daf73b4072016d0ea`。合并前完整
-测试 71/71 通过。单元与同离散问题对照在 `feat/abaqus-element-comparison`
-上完成，提交 `09680e4`，完整测试 91/91。当前二值贴体阶段在
-`feat/abaqus-binary-gyroid`，完整测试 102/102；均未再合并到 main。
+M4 审查修复和三个均匀 C3D8 基准此前整合到 `ef2b7d2`，当时完整测试
+71/71。单元及同离散问题对照完成于 `09680e4`（91/91），二值贴体阶段
+完成于 `26c47d6`（102/102）。用户授权后，2026-10-02 已将两阶段通过
+fast-forward 合并至 main 并同步 GitHub，数值代码基线为
+`26c47d69516cd5fab7f2481c23d8eaa78bb37378`。之后的报告提交仅更新文档。
+
+完整总结、文件清单、剩余风险和下一阶段顺序见
+[阶段报告](project_status_20261002.md)及
+[21 个正式作业索引](project_status_20261002_inventory.json)。
 
 ## 单元与同离散问题对照结论
 

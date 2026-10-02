@@ -68,7 +68,7 @@
 - `scripts/prepare_abaqus_binary.py` 只生成输入；`scripts/run_abaqus_binary.ps1` 执行 datacheck、求解和提取；`-ExtractOnly` 复核已有 ODB，避免重算；`scripts/capture_abaqus_binary.py` 归档和计算指标；`scripts/plot_abaqus_binary.py` 生成科学图。
 - `scripts/prepare_binary_lateral_pair.py --fixed-expected <固定工况清单> --output <新目录>` 从实际固定工况的网格建立自由工况，核对全部坐标及连接关系逐位一致，隔离宏观边界条件的影响。
 - 例：WSL 中运行 `pixi run python scripts/prepare_abaqus_binary.py --n 24 --refinement 1 --output results/new_binary_package`。拷贝输入包及 `extract_abaqus_binary.py`、`extract_uniform_baseline.py` 到 Windows 新作业目录后，运行 `scripts/run_abaqus_binary.ps1 -PackageDirectory <目录> -Cases binary_gyroid_G24_R1_C3D10_fixed -Cpus 8 -Memory 8gb`。新算例使用新目录，保留现有 ODB。
-- 本阶段位于 `feat/abaqus-binary-gyroid`；main 是已验收的 M4/均匀实体版本。Codex 负责生成、提交、提取与证据整理，后续继续直接执行；用户只需决定研究模型和论文目标。
+- 本阶段在 `feat/abaqus-binary-gyroid` 完成于 `26c47d6`，2026-10-02 经用户授权已与上一阶段一起快进整合到 main；阶段分支仍保留。完整进度与后续计划见 [项目阶段报告](../project_status_20261002.md)。Codex 负责生成、提交、提取与证据整理；用户确定研究模型和论文目标。
 
 官方说明：[实体单元选择](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-solidcont.htm)、[剪切应变约定](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEMODRefMap/simamod-c-conventions.htm)、[Gmsh 文档](https://gmsh.info/doc/texinfo/gmsh.html)。网页为可访问版本，关键字、输出数量和数值均由本机 Abaqus 2026 实算核查。
 
