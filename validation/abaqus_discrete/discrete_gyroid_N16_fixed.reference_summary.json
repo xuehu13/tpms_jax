@@ -1,0 +1,71 @@
+{
+  "case": "discrete_gyroid_N16_fixed",
+  "N": 16,
+  "beta": 20.0,
+  "c": 0.541062,
+  "E_s": 10.0,
+  "emin_ratio": 0.001,
+  "nu": 0.3,
+  "lateral": "fixed",
+  "topology": {
+    "nodes": 4913,
+    "elements": 4096,
+    "equations": 1906,
+    "independent_dofs": 12542,
+    "min_detJ": 3.0517578125e-05,
+    "total_volume": 1.0,
+    "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+  },
+  "relative_acceptance_tolerance": 1e-06,
+  "matrix_relative_difference": 2.4668521452432053e-15,
+  "reference_solver_options": {
+    "newton": {
+      "tol": 1e-12,
+      "rel_tol": 1e-12,
+      "linear": {
+        "spsolve_solver": {}
+      }
+    }
+  },
+  "density_max_difference": 1.3322676295501878e-15,
+  "reference_checks": {
+    "matrix_matches_m4": true,
+    "density_matches_m4": true,
+    "m4_reduced_residual": true,
+    "m4_force_balance": true,
+    "m4_reaction_stress": true,
+    "m4_energy_identity": true
+  },
+  "reduced_residual": 1.0960606337470646e-17,
+  "Fz": -0.021551564048036966,
+  "energy": 0.00010775782024018535,
+  "sigma": [
+    [
+      -0.008451589306388032,
+      7.811205490681158e-18,
+      -7.241602303432242e-19
+    ],
+    [
+      7.811205490681158e-18,
+      -0.00732215747723155,
+      -3.9975217019854315e-17
+    ],
+    [
+      -7.241602303432242e-19,
+      -3.9975217019854315e-17,
+      -0.021551564048037073
+    ]
+  ],
+  "eps": [
+    0.0,
+    0.0,
+    -0.01
+  ],
+  "vf_int": 0.35109325136143776,
+  "input_sha256": "7798d38c18e2f7f7a1af753f0254adfc56a795d35cd5a72e3c66f730ad77f4e4",
+  "full_reference": {
+    "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_fixed.expected.json",
+    "bytes": 993337,
+    "sha256": "a2a8a46b2b02263e9523d655b16fd6c344dfdb8b32025838956207809cb08b01"
+  }
+}

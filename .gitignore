@@ -24,6 +24,8 @@ results/
 *.msh
 *.npy
 *.npz
+!validation/abaqus_element/comparison.matrices.npz
+!validation/abaqus_discrete/discrete_gyroid_N4_fixed.quadrature.npz
 *.h5
 
 # 编辑器与系统文件

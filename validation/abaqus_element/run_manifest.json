@@ -1,0 +1,78 @@
+{
+  "c3d8_regular": {
+    "completed": true,
+    "errors": 0,
+    "warnings": 0,
+    "warning_types": [],
+    "files": {
+      "c3d8_regular.inp": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\c3d8_regular.inp",
+        "bytes": 415,
+        "sha256": "20d7fafcb91d4e49e9ecdfd62560dc4afebf83ea0ed4ba13096b9d1c593e710d"
+      },
+      "c3d8_regular_STIF1.mtx": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular_STIF1.mtx",
+        "bytes": 10200,
+        "sha256": "12918ff1b8dc4914be028aa9751b6135c9fa2db062abddd92e0ae9ef39eb12e1"
+      },
+      "c3d8_regular.sta": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular.sta",
+        "bytes": 446,
+        "sha256": "d59ec4bf069178596380305d56a3a7880d94d2b559940f5e7778b95797d2ce0e"
+      },
+      "c3d8_regular.dat": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular.dat",
+        "bytes": 9015,
+        "sha256": "b21fa70d2dff910fe41b24b1623021cb3e47ee610216c12010ba940edf0f50fb"
+      },
+      "c3d8_regular.msg": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular.msg",
+        "bytes": 2114,
+        "sha256": "ba95e3b2f75ec137f7e103ccf726032166b79746edc6960103ecfe96a05139b4"
+      },
+      "c3d8_regular.console.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_regular.console.txt",
+        "bytes": 664,
+        "sha256": "9e6639ed499476693a090ae714f2711ba07c1b9330cd1af72fd6897fb2bc6af4"
+      }
+    }
+  },
+  "c3d8_distorted": {
+    "completed": true,
+    "errors": 0,
+    "warnings": 0,
+    "warning_types": [],
+    "files": {
+      "c3d8_distorted.inp": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\c3d8_distorted.inp",
+        "bytes": 511,
+        "sha256": "341a92a7c136c016c6625b67a98c7deb46cab6685333ea5a506b0d76d117d404"
+      },
+      "c3d8_distorted_STIF1.mtx": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted_STIF1.mtx",
+        "bytes": 10200,
+        "sha256": "899a06ba3fed5191e8c0cfce68e12464ecf66bf3fbfbf4b50a383796d509fb53"
+      },
+      "c3d8_distorted.sta": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted.sta",
+        "bytes": 446,
+        "sha256": "3c51cc3af5c75a8a38ff6206ea3d327acdc6856aa6c4f0d5943654fe3c949c71"
+      },
+      "c3d8_distorted.dat": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted.dat",
+        "bytes": 9019,
+        "sha256": "62981a1e529c40dcb1d89f8206e0475f1a8622396c8c035bc96f65a6bf31c604"
+      },
+      "c3d8_distorted.msg": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted.msg",
+        "bytes": 2118,
+        "sha256": "b9c2992017e801093015292359a75b4ac8b98f0467ffd916ceeb35bf4808a12f"
+      },
+      "c3d8_distorted.console.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\element_comparison_20261002\\work\\c3d8_distorted.console.txt",
+        "bytes": 668,
+        "sha256": "fc30f020330e384ca50e97b0faf4cf123643047a55ab3a011d62e3a13bd688fa"
+      }
+    }
+  }
+}

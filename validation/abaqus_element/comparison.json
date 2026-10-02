@@ -1,0 +1,105 @@
+{
+  "runtime": {
+    "jax": "0.11.2",
+    "jax-fem": "0.0.12",
+    "numpy": "2.4.6"
+  },
+  "tolerance": {
+    "matrix": 1e-10,
+    "rigid_body": 1e-10
+  },
+  "cases": {
+    "regular": {
+      "matrix_sha256": "12918ff1b8dc4914be028aa9751b6135c9fa2db062abddd92e0ae9ef39eb12e1",
+      "volume": 0.9999999999999998,
+      "min_detJ": 0.12499999999999997,
+      "errors": {
+        "jax_vs_full": 3.862037351372385e-16,
+        "abaqus_vs_bbar": 4.973860176324747e-15,
+        "abaqus_vs_jax": 0.2829196401550398,
+        "affine_action_difference": 1.241522419610682e-16
+      },
+      "quality": {
+        "jax": {
+          "symmetric_relative_error": 1.0176966315248839e-16,
+          "rigid_body_relative_residual": 6.374977061775853e-17,
+          "null_mode_count": 6,
+          "positive_mode_count": 18,
+          "minimum_eigenvalue": -2.136929552197896e-15
+        },
+        "abaqus": {
+          "symmetric_relative_error": 0.0,
+          "rigid_body_relative_residual": 4.4635785106886804e-17,
+          "null_mode_count": 6,
+          "positive_mode_count": 18,
+          "minimum_eigenvalue": -6.9363804136706e-16
+        }
+      },
+      "nonaffine_mode": {
+        "definition": "ux=(x-0.5)*(y-0.5), uy=uz=0",
+        "jax_energy": 0.721153846153846,
+        "abaqus_energy": 0.3739316239316293,
+        "relative_energy_difference": 0.4814814814814739
+      },
+      "checks": {
+        "quadrature_matches": true,
+        "zero_state_residual": true,
+        "jax_matches_full_integration": true,
+        "abaqus_matches_bbar": true,
+        "affine_action_agrees": true,
+        "formulation_difference_detected": true,
+        "jax_quality": true,
+        "abaqus_quality": true
+      },
+      "checks_pass": true,
+      "same_discrete_operator": false
+    },
+    "distorted": {
+      "matrix_sha256": "899a06ba3fed5191e8c0cfce68e12464ecf66bf3fbfbf4b50a383796d509fb53",
+      "volume": 1.0627666666666662,
+      "min_detJ": 0.12794185332538327,
+      "errors": {
+        "jax_vs_full": 3.6809760731970603e-16,
+        "abaqus_vs_bbar": 4.8423972362386225e-15,
+        "abaqus_vs_jax": 0.283312423247486,
+        "affine_action_difference": 1.666359194365778e-16
+      },
+      "quality": {
+        "jax": {
+          "symmetric_relative_error": 9.663647003182277e-17,
+          "rigid_body_relative_residual": 6.398199025123814e-17,
+          "null_mode_count": 6,
+          "positive_mode_count": 18,
+          "minimum_eigenvalue": -1.0747545621515141e-15
+        },
+        "abaqus": {
+          "symmetric_relative_error": 0.0,
+          "rigid_body_relative_residual": 6.065162828875765e-17,
+          "null_mode_count": 6,
+          "positive_mode_count": 18,
+          "minimum_eigenvalue": -4.429157073874831e-16
+        }
+      },
+      "nonaffine_mode": {
+        "definition": "ux=(x-0.5)*(y-0.5), uy=uz=0",
+        "jax_energy": 0.7442072593297808,
+        "abaqus_energy": 0.40010511517822756,
+        "relative_energy_difference": 0.4623740763580367
+      },
+      "checks": {
+        "quadrature_matches": true,
+        "zero_state_residual": true,
+        "jax_matches_full_integration": true,
+        "abaqus_matches_bbar": true,
+        "affine_action_agrees": true,
+        "formulation_difference_detected": true,
+        "jax_quality": true,
+        "abaqus_quality": true
+      },
+      "checks_pass": true,
+      "same_discrete_operator": false
+    }
+  },
+  "checks_pass": true,
+  "interpretation": "Homogeneous rho=1 only. Passing checks confirms the formulation difference; it does not certify C3D8 as the same M4 discrete operator."
+}

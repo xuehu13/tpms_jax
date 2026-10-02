@@ -46,8 +46,9 @@ def make_cube_problem(nx, ny, nz, dirichlet_bc_info, location_fns=None):
         dirichlet_bc_info=dirichlet_bc_info, location_fns=location_fns)
 
 
-def solve(problem):
-    return solver(problem)
+def solve(problem, solver_options=None):
+    """Solve with installed JAX-FEM; optional settings leave defaults intact."""
+    return solver(problem) if solver_options is None else solver(problem, solver_options)
 
 
 def internal_force(problem, sol_list):

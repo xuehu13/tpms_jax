@@ -139,7 +139,7 @@ def avg_stress(problem, sol_list):
 def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
                              E_s=10.0, E_min=None, cell_size=1.0,
                              periodic_axes=(0, 1), fixed_class=None,
-                             fixed_dofs=None):
+                             fixed_dofs=None, solver_options=None):
     """Solve the macroscopic lateral strains with zero average lateral stress.
 
     The material is linear elastic with a FIXED density, so the average
@@ -181,7 +181,7 @@ def solve_lateral_relaxation(Nx, Ny, Nz, rho_quad, eps_z=-0.01, h=0.01,
         H = onp.zeros((3, 3))
         H[0, 0], H[1, 1], H[2, 2] = H_vec
         problem.set_params(H, rho_quad, E_s, E_min)
-        sol = solve(problem)
+        sol = solve(problem) if solver_options is None else solve(problem, solver_options)
         return sol, avg_stress(problem, sol)
 
     s0, sol0 = None, None

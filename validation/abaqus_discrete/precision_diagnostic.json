@@ -1,0 +1,17 @@
+{
+  "case": "discrete_gyroid_N16_relaxed_free",
+  "same_input_sha256": "40505e0aaf8a8995092eeea08f4c568d825bb7451559dfa70cd2e0eb98bbb7d0",
+  "initial_reference": {
+    "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_relaxed_free.expected.initial.json",
+    "bytes": 982804,
+    "sha256": "acaff4b8c8d3f7b9aead971723b9d5e2e75a10ddc8fe25ff8f3cda990e193e1e"
+  },
+  "default_vs_direct_max_displacement_difference": 1.5083875540240288e-08,
+  "initial_reduced_residual": 2.131115715077762e-12,
+  "direct_reduced_residual": 1.2115959277525512e-17,
+  "initial_abaqus_max_displacement_difference": 1.5083623381947128e-08,
+  "final_abaqus_max_displacement_difference": 4.6494981996436646e-10,
+  "displacement_acceptance_threshold": 1e-08,
+  "threshold_changed": false,
+  "abaqus_job_rerun": false
+}

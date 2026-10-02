@@ -1,0 +1,32 @@
+{
+  "case": "discrete_gyroid_N4_fixed",
+  "measured": {
+    "macro_displacements": [
+      1.1010322931548418e-38,
+      1.0652284167421106e-38,
+      -0.009999999776482582
+    ],
+    "macro_RF": [
+      -0.011010322719812393,
+      -0.010652284137904644,
+      -0.034437719732522964
+    ],
+    "energy_reconstructed_from_u": 0.00017218859436556947,
+    "energy_source": "Independent element matrices and Abaqus U; no native ALLSE claim",
+    "macro_work_from_RF_U": 0.00017218859481389973,
+    "max_displacement_error": 2.546730031721678e-10
+  },
+  "relative_Fz_difference": 1.9748022476802515e-08,
+  "relative_energy_difference": 4.4703479928235055e-08,
+  "checks": {
+    "finite": true,
+    "displacement_field": true,
+    "Fz": true,
+    "energy_reconstructed": true,
+    "macro_work": true,
+    "macro_strain_0": true,
+    "macro_strain_1": true,
+    "macro_strain_2": true
+  },
+  "status": "ok"
+}

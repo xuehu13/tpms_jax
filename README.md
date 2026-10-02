@@ -19,3 +19,14 @@ pixi run python     # 进入项目 Python 环境
 
 - M0:环境初始化与基础验证(2026-09)
 - 里程碑规划:M1 TPMS 隐式几何与连续密度场 → M2 体素有限元 → M3 自动微分与逆设计
+
+## 数值验证记录
+
+- [M4-A 审查修复与 10 工况](validation/m4_review/)
+- [Abaqus 2026 三个均匀实体基准](validation/abaqus_uniform/)
+- [C3D8 与实际 JAX HEX8 单元矩阵比较](validation/abaqus_element/)
+- [同一 Gauss 材料场的线性离散对照](validation/abaqus_discrete/)
+- [验证进度、范围和后续贴体 Gyroid 计划](validation/abaqus_validation_progress.md)
+
+均匀仿射基准通过不代表 C3D8 与 JAX 的离散刚度相同；当前严格对照通过
+独立积分的线性用户单元矩阵导入实现。真正二值 Gyroid 贴体模型尚未验证。

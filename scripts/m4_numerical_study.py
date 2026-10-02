@@ -58,7 +58,7 @@ def rho_fn_factory(beta):
     return rho_fn
 
 
-def solve_case(N, beta, emin_ratio, lateral):
+def solve_case(N, beta, emin_ratio, lateral, solver_options=None):
     """One build + one solve (fixed) or one build + four solves (relaxed).
 
     The relaxed path creates NO temporary problem: the callable rho_quad is
@@ -75,13 +75,14 @@ def solve_case(N, beta, emin_ratio, lateral):
             E_min=E_min, periodic_axes=(0, 1), fixed_class=None,
             fixed_dofs=pins)
         t1 = time.perf_counter()
-        sol_list = solve(problem)
+        sol_list = solve(problem) if solver_options is None else solve(problem, solver_options)
         t2 = time.perf_counter()
         return problem, sol_list, H_fixed, 0.0, 0.0, t1 - t0, t2 - t1
+    extra_options = {} if solver_options is None else {"solver_options": solver_options}
     out = solve_lateral_relaxation(
         N, N, N, rho_quad=rho_fn_factory(beta), eps_z=EPS_Z, h=0.01,
         E_s=E_S, E_min=E_min, cell_size=1.0, periodic_axes=(0, 1),
-        fixed_class=None, fixed_dofs=pins)
+        fixed_class=None, fixed_dofs=pins, **extra_options)
     return (out["problem"], out["sol_list"], out["H_final"],
             out["eps_x"], out["eps_y"], out["t_build"], out["t_solve"])
 

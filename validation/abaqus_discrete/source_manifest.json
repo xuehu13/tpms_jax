@@ -1,0 +1,57 @@
+{
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\fem.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\fem.py",
+    "bytes": 7020,
+    "sha256": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\density_fem.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\density_fem.py",
+    "bytes": 8902,
+    "sha256": "90cb4e06b5f12c0a88b245f0834bcb3602fcf4714c47ac35ddb1d4c029dd672d"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\pbc.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\pbc.py",
+    "bytes": 8904,
+    "sha256": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\geometry.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\geometry.py",
+    "bytes": 3379,
+    "sha256": "346d4ee057c9ce6a0e40b944df4bb7e471990c8d9157f30f82d9fdb5995c46b0"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\m4_numerical_study.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\m4_numerical_study.py",
+    "bytes": 11011,
+    "sha256": "374b3c00ea46a0676083cbec00d3374c6c007f0217cefad2a4a04bee89f49afb"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\abaqus_element_comparison.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\abaqus_element_comparison.py",
+    "bytes": 12610,
+    "sha256": "863677defd52b89eb239c4862bc0397e85782b07676f2214d6d3deb41c2890dd"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\prepare_abaqus_discrete.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\prepare_abaqus_discrete.py",
+    "bytes": 8944,
+    "sha256": "06498713451d4587d5b8c993209ddd5b3d61e83f2c48d4d07f2e74ef76ec9c35"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\extract_abaqus_discrete.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\scripts\\extract_abaqus_discrete.py",
+    "bytes": 4661,
+    "sha256": "f65e2568905f24608230f659a165449d6cf6374903aeee7c799c3081f07e02a4"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\.pixi\\envs\\default\\lib\\python3.13\\site-packages\\jax_fem\\problem.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\.pixi\\envs\\default\\lib\\python3.13\\site-packages\\jax_fem\\problem.py",
+    "bytes": 29995,
+    "sha256": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\.pixi\\envs\\default\\lib\\python3.13\\site-packages\\jax_fem\\solver.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\.pixi\\envs\\default\\lib\\python3.13\\site-packages\\jax_fem\\solver.py",
+    "bytes": 50946,
+    "sha256": "25f967772090fbbe3d37050a67712ca18449b7f9f65a31aeb6a3afce661d39c7"
+  },
+  "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\.pixi\\envs\\default\\lib\\python3.13\\site-packages\\jax_fem\\fe.py": {
+    "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\.pixi\\envs\\default\\lib\\python3.13\\site-packages\\jax_fem\\fe.py",
+    "bytes": 17077,
+    "sha256": "2d05679123b3fe10e483b37c218a2e9008c40e8118e9e1a1f97d1817003e2032"
+  }
+}

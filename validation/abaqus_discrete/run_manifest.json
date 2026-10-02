@@ -1,0 +1,507 @@
+{
+  "discrete_gyroid_N4_fixed": {
+    "completed": true,
+    "errors": 0,
+    "warnings": 64,
+    "warning_types": [
+      "***WARNING: THE *ELEMENT OUTPUT OPTION IS NOT SUPPORTED FOR USER ELEMENTS"
+    ],
+    "files": {
+      "discrete_gyroid_N4_fixed.inp": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\discrete_gyroid_N4_fixed.inp",
+        "bytes": 502376,
+        "sha256": "4da0ea21081e61a71d26ad9191e2eaf7800cc2457835680f23718bbb41a8a4a2"
+      },
+      "discrete_gyroid_N4_fixed.expected.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\discrete_gyroid_N4_fixed.expected.json",
+        "bytes": 25239,
+        "sha256": "93859105f453b4ea7743165518d63849b9fff45bf32e78bb9fa84c5f9b42dd9a"
+      },
+      "discrete_gyroid_N4_fixed.quadrature.npz": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\discrete_gyroid_N4_fixed.quadrature.npz",
+        "bytes": 90748,
+        "sha256": "a1c3f0e1fe3971a090c60ed0032a5e76594768455aa2b4c81e9d8901bef5aaf1"
+      },
+      "discrete_gyroid_N4_fixed.odb": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.odb",
+        "bytes": 237532,
+        "sha256": "daa516c845faf36d378aadb4429446364d29ad9753a555106599dfcd2f1844da"
+      },
+      "discrete_gyroid_N4_fixed.sta": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.sta",
+        "bytes": 446,
+        "sha256": "23b28c53db3d78196e307e9eb3f28e42b4e794d0b295ab21748e1196c11d7a85"
+      },
+      "discrete_gyroid_N4_fixed.dat": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.dat",
+        "bytes": 20744,
+        "sha256": "bf89901c0264cacb9674a11ffb110dabbb2b373c78a427183ab8e426df3a4d33"
+      },
+      "discrete_gyroid_N4_fixed.msg": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.msg",
+        "bytes": 7660,
+        "sha256": "04bbda8e53f4f7b38229205bed266ba79efc5394f51a5f7fc11592057a796614"
+      },
+      "discrete_gyroid_N4_fixed.console.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.console.txt",
+        "bytes": 686,
+        "sha256": "eb8d5bdaa1b331b988a9a5204b1112366e9fbb05a0a94a98e543654dd949b117"
+      },
+      "discrete_gyroid_N4_fixed.acceptance.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.acceptance.json",
+        "bytes": 935,
+        "sha256": "0baa0d626954a7c38e2928878e2f1746b4c65a5dc608e828690284fd5804f545"
+      },
+      "discrete_gyroid_N4_fixed.acceptance.displacements.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.acceptance.displacements.json",
+        "bytes": 9925,
+        "sha256": "d414420eac1e194f38d4484958b3db73f5531631c14d591a5bb1d559a1020044"
+      },
+      "discrete_gyroid_N4_fixed.extract.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\work\\discrete_gyroid_N4_fixed.extract.txt",
+        "bytes": 935,
+        "sha256": "0baa0d626954a7c38e2928878e2f1746b4c65a5dc608e828690284fd5804f545"
+      }
+    },
+    "reference": {
+      "case": "discrete_gyroid_N4_fixed",
+      "N": 4,
+      "beta": 20.0,
+      "c": 0.541062,
+      "E_s": 10.0,
+      "emin_ratio": 0.001,
+      "nu": 0.3,
+      "lateral": "fixed",
+      "topology": {
+        "nodes": 125,
+        "elements": 64,
+        "equations": 142,
+        "independent_dofs": 206,
+        "min_detJ": 0.001953125,
+        "total_volume": 1.0,
+        "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+      },
+      "relative_acceptance_tolerance": 1e-06,
+      "matrix_relative_difference": 1.9596274082743107e-15,
+      "reference_solver_options": {
+        "newton": {
+          "tol": 1e-12,
+          "rel_tol": 1e-12,
+          "linear": {
+            "spsolve_solver": {}
+          }
+        }
+      },
+      "density_max_difference": 5.551115123125783e-16,
+      "reference_checks": {
+        "matrix_matches_m4": true,
+        "density_matches_m4": true,
+        "m4_reduced_residual": true,
+        "m4_force_balance": true,
+        "m4_reaction_stress": true,
+        "m4_energy_identity": true
+      },
+      "reduced_residual": 4.538402531388541e-18,
+      "Fz": -0.03443772041259984,
+      "energy": 0.00017218860206299919,
+      "sigma": [
+        [
+          -0.011010323144041278,
+          8.868534219426035e-20,
+          -1.772070680633577e-18
+        ],
+        [
+          8.868534219426035e-20,
+          -0.010652284131949158,
+          -6.9581936819593185e-19
+        ],
+        [
+          -1.772070680633577e-18,
+          -6.9581936819593185e-19,
+          -0.034437720412599876
+        ]
+      ],
+      "eps": [
+        0.0,
+        0.0,
+        -0.01
+      ],
+      "vf_int": 0.3396538108075338,
+      "input_sha256": "4da0ea21081e61a71d26ad9191e2eaf7800cc2457835680f23718bbb41a8a4a2",
+      "full_reference": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_20261002\\discrete_gyroid_N4_fixed.expected.json",
+        "bytes": 25239,
+        "sha256": "93859105f453b4ea7743165518d63849b9fff45bf32e78bb9fa84c5f9b42dd9a"
+      }
+    },
+    "acceptance": {
+      "case": "discrete_gyroid_N4_fixed",
+      "measured": {
+        "macro_displacements": [
+          1.1010322931548418e-38,
+          1.0652284167421106e-38,
+          -0.009999999776482582
+        ],
+        "macro_RF": [
+          -0.011010322719812393,
+          -0.010652284137904644,
+          -0.034437719732522964
+        ],
+        "energy_reconstructed_from_u": 0.00017218859436556947,
+        "energy_source": "Independent element matrices and Abaqus U; no native ALLSE claim",
+        "macro_work_from_RF_U": 0.00017218859481389973,
+        "max_displacement_error": 2.546730031721678e-10
+      },
+      "relative_Fz_difference": 1.9748022476802515e-08,
+      "relative_energy_difference": 4.4703479928235055e-08,
+      "checks": {
+        "finite": true,
+        "displacement_field": true,
+        "Fz": true,
+        "energy_reconstructed": true,
+        "macro_work": true,
+        "macro_strain_0": true,
+        "macro_strain_1": true,
+        "macro_strain_2": true
+      },
+      "status": "ok"
+    }
+  },
+  "discrete_gyroid_N16_fixed": {
+    "completed": true,
+    "errors": 0,
+    "warnings": 4096,
+    "warning_types": [
+      "***WARNING: THE *ELEMENT OUTPUT OPTION IS NOT SUPPORTED FOR USER ELEMENTS"
+    ],
+    "files": {
+      "discrete_gyroid_N16_fixed.inp": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_fixed.inp",
+        "bytes": 31920882,
+        "sha256": "7798d38c18e2f7f7a1af753f0254adfc56a795d35cd5a72e3c66f730ad77f4e4"
+      },
+      "discrete_gyroid_N16_fixed.expected.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_fixed.expected.json",
+        "bytes": 993337,
+        "sha256": "a2a8a46b2b02263e9523d655b16fd6c344dfdb8b32025838956207809cb08b01"
+      },
+      "discrete_gyroid_N16_fixed.quadrature.npz": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_fixed.quadrature.npz",
+        "bytes": 10240476,
+        "sha256": "bd3c9ebb712e16dfc2e71dee0473e13dec56e6d5c90fe348846442bde29e8849"
+      },
+      "discrete_gyroid_N16_fixed.odb": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.odb",
+        "bytes": 4924924,
+        "sha256": "864055b73d6177084eff5a1122b50e466791dfd92ed78d66c2a9dd927bac34c4"
+      },
+      "discrete_gyroid_N16_fixed.sta": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.sta",
+        "bytes": 446,
+        "sha256": "a0aae4e9c39ec76c567f6cf7635cdfeeecc4617e213b93fc3039904c7d0890a9"
+      },
+      "discrete_gyroid_N16_fixed.dat": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.dat",
+        "bytes": 685054,
+        "sha256": "d3eb0e97a666b19dfe2c9ffcd7aa426a2211cbc9c2f44c5f13b57e4e63f882d4"
+      },
+      "discrete_gyroid_N16_fixed.msg": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.msg",
+        "bytes": 7663,
+        "sha256": "a9f17c8457c7e74ff290af2a5c0a39be390ea6ccbc9d502e00bb24ca4490b874"
+      },
+      "discrete_gyroid_N16_fixed.console.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.console.txt",
+        "bytes": 688,
+        "sha256": "96908932aa89e736db50b67f741c1a2a1041c38005ba309b1c3274ef58aab707"
+      },
+      "discrete_gyroid_N16_fixed.acceptance.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.acceptance.json",
+        "bytes": 930,
+        "sha256": "aa94a16e9917ed08c49cb790a4c1fae335d4ce7ff70ccfdff53d189b8750a5ee"
+      },
+      "discrete_gyroid_N16_fixed.acceptance.displacements.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.acceptance.displacements.json",
+        "bytes": 398027,
+        "sha256": "235d33b0df3198012d318627dd51eb1262e8a864a47749ffb95a847c5db91656"
+      },
+      "discrete_gyroid_N16_fixed.extract.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_fixed.extract.txt",
+        "bytes": 930,
+        "sha256": "aa94a16e9917ed08c49cb790a4c1fae335d4ce7ff70ccfdff53d189b8750a5ee"
+      }
+    },
+    "reference": {
+      "case": "discrete_gyroid_N16_fixed",
+      "N": 16,
+      "beta": 20.0,
+      "c": 0.541062,
+      "E_s": 10.0,
+      "emin_ratio": 0.001,
+      "nu": 0.3,
+      "lateral": "fixed",
+      "topology": {
+        "nodes": 4913,
+        "elements": 4096,
+        "equations": 1906,
+        "independent_dofs": 12542,
+        "min_detJ": 3.0517578125e-05,
+        "total_volume": 1.0,
+        "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+      },
+      "relative_acceptance_tolerance": 1e-06,
+      "matrix_relative_difference": 2.4668521452432053e-15,
+      "reference_solver_options": {
+        "newton": {
+          "tol": 1e-12,
+          "rel_tol": 1e-12,
+          "linear": {
+            "spsolve_solver": {}
+          }
+        }
+      },
+      "density_max_difference": 1.3322676295501878e-15,
+      "reference_checks": {
+        "matrix_matches_m4": true,
+        "density_matches_m4": true,
+        "m4_reduced_residual": true,
+        "m4_force_balance": true,
+        "m4_reaction_stress": true,
+        "m4_energy_identity": true
+      },
+      "reduced_residual": 1.0960606337470646e-17,
+      "Fz": -0.021551564048036966,
+      "energy": 0.00010775782024018535,
+      "sigma": [
+        [
+          -0.008451589306388032,
+          7.811205490681158e-18,
+          -7.241602303432242e-19
+        ],
+        [
+          7.811205490681158e-18,
+          -0.00732215747723155,
+          -3.9975217019854315e-17
+        ],
+        [
+          -7.241602303432242e-19,
+          -3.9975217019854315e-17,
+          -0.021551564048037073
+        ]
+      ],
+      "eps": [
+        0.0,
+        0.0,
+        -0.01
+      ],
+      "vf_int": 0.35109325136143776,
+      "input_sha256": "7798d38c18e2f7f7a1af753f0254adfc56a795d35cd5a72e3c66f730ad77f4e4",
+      "full_reference": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_fixed.expected.json",
+        "bytes": 993337,
+        "sha256": "a2a8a46b2b02263e9523d655b16fd6c344dfdb8b32025838956207809cb08b01"
+      }
+    },
+    "acceptance": {
+      "case": "discrete_gyroid_N16_fixed",
+      "measured": {
+        "macro_displacements": [
+          8.451589770749839e-39,
+          7.32215722148868e-39,
+          -0.009999999776482582
+        ],
+        "macro_RF": [
+          -0.00845158938318491,
+          -0.007322157267481089,
+          -0.02155156433582306
+        ],
+        "energy_reconstructed_from_u": 0.0001077578154230524,
+        "energy_source": "Independent element matrices and Abaqus U; no native ALLSE claim",
+        "macro_work_from_RF_U": 0.00010775781927054029,
+        "max_displacement_error": 4.635000057373606e-10
+      },
+      "relative_Fz_difference": 1.3353373932647185e-08,
+      "relative_energy_difference": 4.4703325866271224e-08,
+      "checks": {
+        "finite": true,
+        "displacement_field": true,
+        "Fz": true,
+        "energy_reconstructed": true,
+        "macro_work": true,
+        "macro_strain_0": true,
+        "macro_strain_1": true,
+        "macro_strain_2": true
+      },
+      "status": "ok"
+    }
+  },
+  "discrete_gyroid_N16_relaxed_free": {
+    "completed": true,
+    "errors": 0,
+    "warnings": 4096,
+    "warning_types": [
+      "***WARNING: THE *ELEMENT OUTPUT OPTION IS NOT SUPPORTED FOR USER ELEMENTS"
+    ],
+    "files": {
+      "discrete_gyroid_N16_relaxed_free.inp": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_relaxed_free.inp",
+        "bytes": 31920854,
+        "sha256": "40505e0aaf8a8995092eeea08f4c568d825bb7451559dfa70cd2e0eb98bbb7d0"
+      },
+      "discrete_gyroid_N16_relaxed_free.expected.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_relaxed_free.expected.json",
+        "bytes": 982819,
+        "sha256": "ca5f1b4bdfd17de2bf8219c2ed70df6a2b5e35d6a6680bd27a0367bfb35dae99"
+      },
+      "discrete_gyroid_N16_relaxed_free.quadrature.npz": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_relaxed_free.quadrature.npz",
+        "bytes": 10240476,
+        "sha256": "bd3c9ebb712e16dfc2e71dee0473e13dec56e6d5c90fe348846442bde29e8849"
+      },
+      "discrete_gyroid_N16_relaxed_free.odb": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.odb",
+        "bytes": 4924916,
+        "sha256": "84cb32729c358b1785efaf91c2a5bd2e9cc58c968d6b7d30f582d095415dd02e"
+      },
+      "discrete_gyroid_N16_relaxed_free.sta": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.sta",
+        "bytes": 446,
+        "sha256": "eff7497c84f7016be44724cc8e259b85ea65e21fb061dd81b8d784e281e1ab0a"
+      },
+      "discrete_gyroid_N16_relaxed_free.dat": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.dat",
+        "bytes": 685054,
+        "sha256": "310ac193a28e31c74dfaf6201142199b07e5ba6a70b2ddecd75ebcb85151548a"
+      },
+      "discrete_gyroid_N16_relaxed_free.msg": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.msg",
+        "bytes": 7663,
+        "sha256": "fd53ba9a69dbec7a71f3a45fdf2c5e653f49f72dc171f5854562b021969b3038"
+      },
+      "discrete_gyroid_N16_relaxed_free.console.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.console.txt",
+        "bytes": 702,
+        "sha256": "770ad7afed86882621b27db020997a79f30917ffcaa786193db3c12f7e9c3d8f"
+      },
+      "discrete_gyroid_N16_relaxed_free.acceptance.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.acceptance.json",
+        "bytes": 940,
+        "sha256": "33ae69f9159e7b390eb7e8ebbdd87eb62e1f485d2264d0249b6ed75ca24b484a"
+      },
+      "discrete_gyroid_N16_relaxed_free.acceptance.displacements.json": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.acceptance.displacements.json",
+        "bytes": 387212,
+        "sha256": "6ad30e52125f508a8d23b6883fbf2d8d2cbf41373d32d12fecce88da32cf7eca"
+      },
+      "discrete_gyroid_N16_relaxed_free.extract.txt": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\work\\discrete_gyroid_N16_relaxed_free.extract.txt",
+        "bytes": 940,
+        "sha256": "33ae69f9159e7b390eb7e8ebbdd87eb62e1f485d2264d0249b6ed75ca24b484a"
+      }
+    },
+    "reference": {
+      "case": "discrete_gyroid_N16_relaxed_free",
+      "N": 16,
+      "beta": 20.0,
+      "c": 0.541062,
+      "E_s": 10.0,
+      "emin_ratio": 0.001,
+      "nu": 0.3,
+      "lateral": "relaxed_free",
+      "topology": {
+        "nodes": 4913,
+        "elements": 4096,
+        "equations": 1906,
+        "independent_dofs": 12544,
+        "min_detJ": 3.0517578125e-05,
+        "total_volume": 1.0,
+        "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+      },
+      "relative_acceptance_tolerance": 1e-06,
+      "matrix_relative_difference": 2.4668521452432053e-15,
+      "reference_solver_options": {
+        "newton": {
+          "tol": 1e-12,
+          "rel_tol": 1e-12,
+          "linear": {
+            "spsolve_solver": {}
+          }
+        }
+      },
+      "density_max_difference": 1.3322676295501878e-15,
+      "reference_checks": {
+        "matrix_matches_m4": true,
+        "density_matches_m4": true,
+        "m4_reduced_residual": true,
+        "m4_force_balance": true,
+        "m4_reaction_stress": true,
+        "m4_energy_identity": true
+      },
+      "reduced_residual": 1.2115959277525512e-17,
+      "Fz": -0.0166870462409498,
+      "energy": 8.343523120474936e-05,
+      "sigma": [
+        [
+          1.0975105159247488e-17,
+          -3.0962230595696916e-18,
+          7.018462061389937e-18
+        ],
+        [
+          -3.0962230595696916e-18,
+          -7.65881896951419e-18,
+          5.06867162614934e-18
+        ],
+        [
+          7.018462061389937e-18,
+          5.06867162614934e-18,
+          -0.016687046240949747
+        ]
+      ],
+      "eps": [
+        0.0035841075388286328,
+        0.002506607264298088,
+        -0.01
+      ],
+      "vf_int": 0.35109325136143776,
+      "input_sha256": "40505e0aaf8a8995092eeea08f4c568d825bb7451559dfa70cd2e0eb98bbb7d0",
+      "full_reference": {
+        "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\discrete_comparison_verified_20261002\\discrete_gyroid_N16_relaxed_free.expected.json",
+        "bytes": 982819,
+        "sha256": "ca5f1b4bdfd17de2bf8219c2ed70df6a2b5e35d6a6680bd27a0367bfb35dae99"
+      }
+    },
+    "acceptance": {
+      "case": "discrete_gyroid_N16_relaxed_free",
+      "measured": {
+        "macro_displacements": [
+          0.003584107616916299,
+          0.002506607212126255,
+          -0.009999999776482582
+        ],
+        "macro_RF": [
+          0.0,
+          0.0,
+          -0.016687046736478806
+        ],
+        "energy_reconstructed_from_u": 8.343522745455317e-05,
+        "energy_source": "Independent element matrices and Abaqus U; no native ALLSE claim",
+        "macro_work_from_RF_U": 8.343523181747123e-05,
+        "max_displacement_error": 4.6494981996436646e-10
+      },
+      "relative_Fz_difference": 2.9695429590201794e-08,
+      "relative_energy_difference": 4.494739369449853e-08,
+      "checks": {
+        "finite": true,
+        "displacement_field": true,
+        "Fz": true,
+        "energy_reconstructed": true,
+        "macro_work": true,
+        "macro_strain_0": true,
+        "macro_strain_1": true,
+        "macro_strain_2": true,
+        "zero_lateral_macro_force": true
+      },
+      "status": "ok"
+    }
+  }
+}

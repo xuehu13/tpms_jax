@@ -1,0 +1,57 @@
+{
+  "case": "discrete_gyroid_N16_relaxed_free",
+  "N": 16,
+  "beta": 20.0,
+  "c": 0.541062,
+  "E_s": 10.0,
+  "emin_ratio": 0.001,
+  "nu": 0.3,
+  "lateral": "relaxed_free",
+  "topology": {
+    "nodes": 4913,
+    "elements": 4096,
+    "equations": 1906,
+    "independent_dofs": 12544,
+    "min_detJ": 3.0517578125e-05,
+    "total_volume": 1.0,
+    "checks": "unique eliminations, no BC overlap, affine jumps, positive Jacobians"
+  },
+  "relative_acceptance_tolerance": 1e-06,
+  "matrix_relative_difference": 2.4668521452432053e-15,
+  "density_max_difference": 1.3322676295501878e-15,
+  "reference_checks": {
+    "matrix_matches_m4": true,
+    "density_matches_m4": true,
+    "m4_reduced_residual": true,
+    "m4_force_balance": true,
+    "m4_reaction_stress": true,
+    "m4_energy_identity": true
+  },
+  "reduced_residual": 2.131115715077762e-12,
+  "Fz": -0.016687045985852685,
+  "energy": 8.343523120477476e-05,
+  "sigma": [
+    [
+      4.121202347257896e-10,
+      2.0485324523291656e-10,
+      -8.854331494578198e-10
+    ],
+    [
+      2.0485324523291656e-10,
+      4.0732944758707317e-10,
+      -1.4684292745545527e-09
+    ],
+    [
+      -8.854331494578198e-10,
+      -1.4684292745545527e-09,
+      -0.016687045990848626
+    ]
+  ],
+  "eps": [
+    0.0035841075852199498,
+    0.002506607061033173,
+    -0.01
+  ],
+  "vf_int": 0.35109325136143776,
+  "input_sha256": "40505e0aaf8a8995092eeea08f4c568d825bb7451559dfa70cd2e0eb98bbb7d0"
+}
