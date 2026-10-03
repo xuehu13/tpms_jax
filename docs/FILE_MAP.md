@@ -20,7 +20,7 @@
 | design_fem.py | 已验证的四参数梯度适配；不是通用体素或网络接口 |
 | binary_gyroid.py | 二值域与贴体网格参考 |
 
-现有 7 个核心模块保持位置。阶段 2 按需要补体素适配，尽量复用现有求解器；阶段 4 实施时再建立必要的 `learning/` 数据/网络/训练/逆向入口，不预建空框架、不复制两套 FEM。每个实验只保留必要配置及结果清单。
+现有 7 个核心模块保持位置。本轮复用密度场、横向松弛和已有后处理，确有需要时只补一个薄的工况驱动。暂不新增体素/网络适配或 `learning/` 框架；后续架构等本轮四步完成后随实际问题确定。
 
 ## scripts/ 按用途查找
 
@@ -43,7 +43,7 @@
 | --- | --- |
 | AGENTS.md | 后续 agent 的阅读顺序与工作约定，不另定义研究路线 |
 | README.md | 简短入口 |
-| docs/RESEARCH_PLAN.md | 唯一完整研究规划，含长期训练/逆向设计与阶段完成条件 |
+| docs/RESEARCH_PLAN.md | 唯一执行规划：长期目标简述、本轮四步及完成/停止条件 |
 | docs/RESEARCH_STATUS.md | 当前阶段、已有结果和未验证范围 |
 | docs/PAPER_ROUTE.md | 两篇论文的事实与方法关系 |
 | docs/FILE_MAP.md | 文件索引与组织规则 |
@@ -51,7 +51,7 @@
 | validation/research_audit_20261002.json | 历史 23 项作业索引；旧计划字段只供追溯 |
 | validation/scope_correction_20261003.json | 历史范围纠正记录；不是当前执行计划 |
 | tests/ | 最新实际完整回归 125 项；本次文档编辑未重跑 |
-| results/ | 本机结果，Git 忽略；后续大型训练数据/检查点也采用本机存储加轻量清单 |
+| results/ | 本机结果，Git 忽略；原始结果保留，新实验另设目录 |
 
 M4 原 `results/m4_numerical_study.csv` 与 `validation/m4_review/fixed.csv` 字节一致，SHA256 为 `dc6c3c18881d75737cb99678e60376bc30f54b93f54504ea84a9ff8141bd0fb4`。保留它及现有正式证据，新实验使用新结果目录。
 
