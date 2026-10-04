@@ -1,0 +1,242 @@
+[
+  {
+    "case": "thin_target_20261004_r5_step3_xyz_01",
+    "windows_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\thin_target_20261004_r5_step3_xyz_01",
+    "matched_formal_input": "a0p010000",
+    "analysis_complete": true,
+    "files": {
+      "extract_thin_finite.py": {
+        "bytes": 4783,
+        "sha256": "45da5695ce289c56f2ec13373b2475b40e21cd8fae0418c4636a9aee17b5efad"
+      },
+      "input.json": {
+        "bytes": 2958,
+        "sha256": "47f45f46c15ff188c09d4021e8e170c4c91f8860ccfa14bf96d3921e3a220787"
+      },
+      "input_memoryfix.json": {
+        "bytes": 2958,
+        "sha256": "42ba5ce53bca28d22780e2cc7c7104167b61c1e5a2b64f2f32f184f434c3e3e7"
+      },
+      "input_retry.json": {
+        "bytes": 2958,
+        "sha256": "fbc874efbf95a9210cf78f105c6a89306641e8ccb7f05817c4cc69c4991c3f8a"
+      },
+      "shell.json": {
+        "bytes": 3223,
+        "sha256": "e136ce73e0403ea07188a1291905b23f51d529dc6c4e6f2e62ac7fb744eb7b22"
+      },
+      "shell_before_precision_check_fix.json": {
+        "bytes": 3211,
+        "sha256": "b484f59360ee79c4755cb14a40f3b5d5534cd7f39780a8267553fdcd1eb4fb2d"
+      },
+      "shell_before_precision_check_fix_field.npz": {
+        "bytes": 373337,
+        "sha256": "a55b043d72e12404db5c227ddd27c490f7c182d4db0dff815edd0ab00991ec50"
+      },
+      "shell_field.npz": {
+        "bytes": 373337,
+        "sha256": "a55b043d72e12404db5c227ddd27c490f7c182d4db0dff815edd0ab00991ec50"
+      },
+      "shell_memoryfix.json": {
+        "bytes": 3223,
+        "sha256": "723aadc84befabc0bf81decb309c83c9d1cee94c96ded1a61159d35b53f88537"
+      },
+      "shell_retry.json": {
+        "bytes": 3223,
+        "sha256": "0b049134682debebec835ea9e5cc796ec3bb4dac94e11fbc339c3001621dd95f"
+      },
+      "thin_shell.com": {
+        "bytes": 3933,
+        "sha256": "526958c8fc986b1f1a4fb89db6b2e15709fda3e054928c17f75af276990b50f8"
+      },
+      "thin_shell.dat": {
+        "bytes": 10926,
+        "sha256": "52ba71ecc40579ed4cac7436ca49d6e9c9c4124bbcd85fc8a6cb38f0fda23497"
+      },
+      "thin_shell.inp": {
+        "bytes": 1120078,
+        "sha256": "4cfd99e6ccc9c6205d1ed283d8bafb18ac78c87107431884d5e6dd119488dadf"
+      },
+      "thin_shell.msg": {
+        "bytes": 28568,
+        "sha256": "03e04b0533c4518351ad8c085cf4a5830d3cb3be48409e73057a834b98993c8e"
+      },
+      "thin_shell.odb": {
+        "bytes": 11518972,
+        "sha256": "896a885e50d3cf79e71c9ea7fcce9b1b4089b94e4ada68273ae1d64562d88b90"
+      },
+      "thin_shell.prt": {
+        "bytes": 698,
+        "sha256": "33b7ce62a25b0fb56138420a5882423a511de265c87bd1ec7d1810813e47855b"
+      },
+      "thin_shell.sta": {
+        "bytes": 1194,
+        "sha256": "8c7c294f1e35ccaed472e3280e9ce58abdc8d09b2c42ae1fc0b97ef874840d1f"
+      }
+    }
+  },
+  {
+    "case": "thin_target_20261004_r5_step3_xyz_05",
+    "windows_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\thin_target_20261004_r5_step3_xyz_05",
+    "matched_formal_input": "attempt1_a0p050000",
+    "analysis_complete": true,
+    "files": {
+      "extract_thin_finite.py": {
+        "bytes": 4783,
+        "sha256": "45da5695ce289c56f2ec13373b2475b40e21cd8fae0418c4636a9aee17b5efad"
+      },
+      "input.json": {
+        "bytes": 2958,
+        "sha256": "185ddd4d40b8d87fd4a503af1835d829d5073eaaeba73788f9f640b51c344ed6"
+      },
+      "shell.json": {
+        "bytes": 5016,
+        "sha256": "7c53080183b1bc55ac29f1430603cf54b7bed3d5b256bf710dd119f1ce2c247b"
+      },
+      "shell_field.npz": {
+        "bytes": 373161,
+        "sha256": "6748db16d0111579003cbbfd6fcba03a2edf88c143e086b4083ea86368dc87a0"
+      },
+      "thin_shell.com": {
+        "bytes": 3943,
+        "sha256": "0b72e69edc28561a5a8c941d32b969ba402ce1c392899d01d96b99ab2f75fd90"
+      },
+      "thin_shell.dat": {
+        "bytes": 15838,
+        "sha256": "f77e67e7887f1c17a63a82715139eb0c0995f2447c703cd0cb925e36be7da5e8"
+      },
+      "thin_shell.inp": {
+        "bytes": 1120350,
+        "sha256": "bc6c46b42bd4e0b0b69dce12a925e9c8e463bcdd514596b7402947e5a2b09910"
+      },
+      "thin_shell.msg": {
+        "bytes": 56701,
+        "sha256": "f62e3646a81bd720495ec9b060413b2725f428f34cc73202b25118b1267c1d97"
+      },
+      "thin_shell.odb": {
+        "bytes": 22184308,
+        "sha256": "05ac279a3074cd038ac04f90b91a8c7a22974f102652ca1792e87c40c1eb408a"
+      },
+      "thin_shell.prt": {
+        "bytes": 698,
+        "sha256": "33b7ce62a25b0fb56138420a5882423a511de265c87bd1ec7d1810813e47855b"
+      },
+      "thin_shell.sta": {
+        "bytes": 2010,
+        "sha256": "87ca4cba24901c4875eafbcc19d6e41195bedeb6f6764c03e147170cb70c2b27"
+      }
+    }
+  },
+  {
+    "case": "thin_target_20261004_r5_step3_xyz_05_refined",
+    "windows_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\thin_target_20261004_r5_step3_xyz_05_refined",
+    "matched_formal_input": "a0p050000",
+    "analysis_complete": true,
+    "files": {
+      "extract_thin_finite.py": {
+        "bytes": 5527,
+        "sha256": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f"
+      },
+      "input.json": {
+        "bytes": 2958,
+        "sha256": "7a057873b09e29554212cecae14ea45e4badc9be1ef008c1a85fe5c3b4d8b4ae"
+      },
+      "input_true_norm.json": {
+        "bytes": 2958,
+        "sha256": "cd0a9521ec05b04a5c2d377b920ef370a815d4cae00ad0c8d766f79a4b280990"
+      },
+      "shell.json": {
+        "bytes": 11052,
+        "sha256": "a0a435de46bf47cb0be0f86456641de5688009304db4b598bec8bcb09223ebf6"
+      },
+      "shell_field.npz": {
+        "bytes": 373244,
+        "sha256": "644e9f4d998f436a3b207c887eb18f4685a2da7c0e4577884116cb5f0a2cc624"
+      },
+      "shell_true_norm.json": {
+        "bytes": 11369,
+        "sha256": "56558189580b435956b01906d95eee60691f016e84d352c7ede1035f15c865dd"
+      },
+      "thin_shell.com": {
+        "bytes": 3943,
+        "sha256": "1335638d7f76b6e3fe88d75c45b57db08b57e919a9fbb34c5a2d91801ecd9db0"
+      },
+      "thin_shell.dat": {
+        "bytes": 15838,
+        "sha256": "566ac0c4186302064009fc87cce49f7ceb663fb0422e9f5f7bbc27b44abd31e9"
+      },
+      "thin_shell.inp": {
+        "bytes": 1120351,
+        "sha256": "d441ca881aa4b2c35b850d5313ff6c2ae2a8bfcb09e98ea5c8d66bb2d9bd20ed"
+      },
+      "thin_shell.msg": {
+        "bytes": 118188,
+        "sha256": "4adda2db481975c9ba0519b779e181643176be26b9e3b457bfa75f2bcf3be7ac"
+      },
+      "thin_shell.odb": {
+        "bytes": 53300844,
+        "sha256": "0de56004a6710a671711ca78de6ecd5d22f766996479cf4e5d94ef62584cf417"
+      },
+      "thin_shell.prt": {
+        "bytes": 698,
+        "sha256": "33b7ce62a25b0fb56138420a5882423a511de265c87bd1ec7d1810813e47855b"
+      },
+      "thin_shell.sta": {
+        "bytes": 4594,
+        "sha256": "e8dc0a0f55fbff83651957874d1e0338f6227f50e22b86e27f6da987ab92e95b"
+      }
+    }
+  },
+  {
+    "case": "thin_target_20261004_r5_step3_xyz_10",
+    "windows_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\thin_target_20261004_r5_step3_xyz_10",
+    "matched_formal_input": "a0p100000",
+    "analysis_complete": true,
+    "files": {
+      "extract_thin_finite.py": {
+        "bytes": 5527,
+        "sha256": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f"
+      },
+      "input.json": {
+        "bytes": 2957,
+        "sha256": "6a88b112426a028d9a82cda7974493de482305e94536c808d6e8fe212f0b0177"
+      },
+      "shell.json": {
+        "bytes": 19109,
+        "sha256": "2a79503248b6aef6446ffa1f082e9523bc8de5ed2000552d3153829266aafbe7"
+      },
+      "shell_field.npz": {
+        "bytes": 373251,
+        "sha256": "7f570ab52a6b9cfb334bf7426a812716c789b6a7280d9e9d6a8fcb5311317d9f"
+      },
+      "thin_shell.com": {
+        "bytes": 3953,
+        "sha256": "673da18eeb333996c9f658729386884c88141a4ddac7a42b86dac9d1bb53eb7d"
+      },
+      "thin_shell.dat": {
+        "bytes": 20750,
+        "sha256": "1c11910de0a60b9b95960844541cf206d29ba651639875713221ce2fa9856e0b"
+      },
+      "thin_shell.inp": {
+        "bytes": 1120622,
+        "sha256": "a967a1ccf6525c325da8b7dfb0048559ef4d7fe4825818d62e545f96973449c5"
+      },
+      "thin_shell.msg": {
+        "bytes": 208048,
+        "sha256": "3f103cc4ffc535d3a8227956a1edb913a3b26050c01b59757fae59f43d6fc59f"
+      },
+      "thin_shell.odb": {
+        "bytes": 95072176,
+        "sha256": "52e22980843044d02d5fb747b0c09d33feebf5a9b813ee75a6e3efbc197d8338"
+      },
+      "thin_shell.prt": {
+        "bytes": 698,
+        "sha256": "33b7ce62a25b0fb56138420a5882423a511de265c87bd1ec7d1810813e47855b"
+      },
+      "thin_shell.sta": {
+        "bytes": 7994,
+        "sha256": "692bb54b672139b7531094c5460c0a0720bba3208ab645c13f856610b3187c8a"
+      }
+    }
+  }
+]

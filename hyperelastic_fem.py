@@ -33,21 +33,25 @@ class PeriodicHyperelasticity(PeriodicLinearElasticityCube):
         return stress
 
 
-def _make_periodic_problem(n, problem_type):
+def _make_periodic_problem(n, problem_type, periodic_axes=(0,1)):
     """One mesh/constraint definition for full and density-weighted solids."""
     meshio_mesh = box_mesh(n,n,n,1.,1.,1.)
     mesh = Mesh(meshio_mesh.points,meshio_mesh.cells_dict[get_meshio_cell_type(ELE_TYPE)])
     problem = problem_type(mesh,vec=3,dim=3,ele_type=ELE_TYPE,
                            dirichlet_bc_info=[[],[],[]])
-    fixed = xy_compression_fixed_dofs(problem.fe.points,n,n,n)
+    periodic_axes=tuple(periodic_axes)
+    if periodic_axes not in ((0,1),(0,1,2)):
+        raise ValueError('Supported periodic axes are XY or XYZ')
+    fixed=xy_compression_fixed_dofs(problem.fe.points,n,n,n) if periodic_axes==(0,1) else ()
+    gauge=None if periodic_axes==(0,1) else (0,0,0)
     problem.P_mat,problem.class_ids,problem.fixed_class_id = periodic_p_mat(
-        problem.fe.points,n,n,n,periodic_axes=(0,1),fixed_class=None,fixed_dofs=fixed)
+        problem.fe.points,n,n,n,periodic_axes=periodic_axes,fixed_class=gauge,fixed_dofs=fixed)
     return problem
 
 
-def make_hyperelastic_problem(n):
-    """Full solid; XY-periodic fluctuation with the existing compression pins."""
-    problem = _make_periodic_problem(n, PeriodicHyperelasticity)
+def make_hyperelastic_problem(n, periodic_axes=(0,1)):
+    """Full solid; historical XY pins or XYZ with only translation gauge."""
+    problem = _make_periodic_problem(n, PeriodicHyperelasticity, periodic_axes)
     problem.set_params(jnp.zeros((3,3)))
     return problem
 
@@ -141,15 +145,24 @@ class DensityHyperelasticity(PeriodicHyperelasticity):
             self.invalid_trial_w=np.asarray(sol[0])
             raise ValueError('Nonpositive/nonfinite detF in Newton trial; no clipping')
         if self.trial_calls>16:raise RuntimeError('Locked maximum of 15 Newton corrections exceeded')
+        # PETSc copied the previous COO values into its matrix. The next
+        # assembly replaces V entirely; retaining N64's ~1.13 GiB old V
+        # during that assembly serves no purpose. No tangent is approximated.
+        if hasattr(self,'V'):del self.V
         return super().newton_update(sol)
 
 
-def make_density_hyperelastic_problem(n,c=.541062,beta=40.,eta=1e-4):
-    """Historical Gyroid field on the shared periodic HEX8 background.
+def make_density_hyperelastic_problem(n,c=.541062,beta=40.,eta=1e-4,
+                                      rho_quad=None,periodic_axes=(0,1)):
+    """Shared background with optional actual-Gauss input and XY/XYZ constraints.
 
-    c is an implicit-field band parameter, not constant physical shell thickness.
+    Without rho_quad, preserve the historical Gyroid c/beta field. Otherwise
+    evaluate the callable on this unique Problem or accept its Gauss array;
+    c/beta are unused. Geometry is fixed in reference/material coordinates.
     """
     from geometry import density
-    problem=_make_periodic_problem(n,DensityHyperelasticity)
-    problem.set_params(jnp.zeros((3,3)),density(problem.physical_quad_points,c,beta),eta)
+    problem=_make_periodic_problem(n,DensityHyperelasticity,periodic_axes)
+    if rho_quad is None:rho=density(problem.physical_quad_points,c,beta)
+    else:rho=rho_quad(problem) if callable(rho_quad) else rho_quad
+    problem.set_params(jnp.zeros((3,3)),rho,eta)
     return problem

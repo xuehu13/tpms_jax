@@ -1,6 +1,6 @@
 # 文件地图
 
-更新：2026-10-04。方法和结果看 [综合报告](TPMS_RESEARCH_REVIEW.md)，事实看 [状态](RESEARCH_STATUS.md)，执行只看 [唯一主规划](RESEARCH_PLAN.md)。本页只说明位置和职责。
+更新：2026-10-05。方法和结果看 [综合报告](TPMS_RESEARCH_REVIEW.md)，事实看 [状态](RESEARCH_STATUS.md)，执行只看 [唯一主规划](RESEARCH_PLAN.md)。本页只说明位置和职责。
 
 ## 正式计算入口与活动文档
 
@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | START_HERE.md | README.md | 阅读入口 |
 | RESEARCH_BACKGROUND.md | docs/RESEARCH_BACKGROUND.md | 长期研究问题与方法边界 |
-| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁四步，第2步分边界收口，先明确端部等效性 |
+| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁四步，第2步收口；用户选定XYZ；第3步收口，下一项已通过点的有效梯度 |
 | PROJECT_OVERVIEW.md | docs/RESEARCH_STATUS.md | 当前事实及缺口 |
 | TPMS_RESEARCH_REVIEW.md | docs/同名文件 | 完整理论、符号和进度解释 |
 | output/pdf/TPMS_RESEARCH_REVIEW.pdf | docs/TPMS_RESEARCH_REVIEW.pdf | 同一综合报告的可分享导出 |
@@ -22,11 +22,12 @@
 
 | 程序 | 职责/适用状态 |
 | --- | --- |
+| scripts/thin_target_finite.py、extract_thin_finite.py | 第3步分段XYZ Neo-Hookean压缩与只读壳ODB提取；1%/5%初筛通过、10%未接受、20%未提交 |
 | scripts/thin_target_linear.py、extract_thin_shell.py | 第2步薄壁线弹性对照、唯一XYZ边界诊断和只读ODB提取；复用同一FEM |
 | surface_distance.py、scripts/prepare_thin_target.py | 固定周期三角中面的距离、物理厚度投影及第1步真实Gauss准备；厚度AD接口与形态AD分开 |
 | geometry.py、volume.py | Gyroid/Primitive、光滑占据及体积 |
 | fem.py、density_fem.py、pbc.py | HEX8线性力学、真实Gauss场、周期约束/宏观松弛 |
-| hyperelastic_fem.py | 匹配Neo-Hookean及初始Gauss能量权重；完整体通过，TPMS前向精度待验证 |
+| hyperelastic_fem.py | 匹配Neo-Hookean及初始Gauss能量权重；共享XY/XYZ及实际Gauss入口；目标薄壁1%/5%初筛，10%未接受，平衡梯度待验证 |
 | design_fem.py | 历史参数、通用伴随接口及已检查专用K/Vf规则 |
 | voxel_field.py | 周期数组插值，先G后投影 |
 | binary_gyroid.py | 二值实体参考几何、网格及审查；薄壁/变量壁宽G48限制保留 |
@@ -36,7 +37,7 @@
 | scripts/m1_*～m4_*及早期capture/prepare/extract | 历史验证入口；从报告查用途，不按编号自动全部重跑 |
 | tests/；scripts/README.md | 维护检查与脚本职责入口；最新测试数查状态/本轮收据 |
 
-本轮仅合并有限应变重复构建、区分参数校验/可追踪更新，未搬为大型包或增加物理模块。成本诊断仅在实际受阻时考虑，届时复用现有custom_solver入口，必要最小扩展放正式代码；一次性审计/发布工具不提升为通用框架。
+此前维护合并有限应变重复构建、区分参数校验/可追踪更新；本轮最小增加XYZ/实际Gauss入口及已消耗切线值释放，未搬为大型包或增加物理模块。成本诊断仅在实际受阻时考虑，届时复用现有custom_solver入口，必要最小扩展放正式代码；一次性审计/发布工具不提升为通用框架。
 
 ## 冻结研究证据
 
@@ -108,3 +109,5 @@
 第1步正式目录`validation/thin_target_20261004_r5/`；Windows说明为 [第1步报告](../validation/thin_target_20261004_r5/README.md)，图与小收据在work/thin_target_20261004_r5/。大Gauss缓存仅在正式WSL，避免重复复制。
 
 第2步正式目录`validation/thin_target_20261004_r5/step2/`，其中`diagnostic_xyz/`为唯一边界诊断；说明见 [第2步报告](../validation/thin_target_20261004_r5/step2/README.md)。两份INP/JSON/模式图可随Git发布；NPZ、原始日志及source_*复现快照留本机。Abaqus原始目录为包根下`thin_target_20261004_r5_step2`和`thin_target_20261004_r5_step2_xyz`。本轮一次性后处理/输出修复/发布收据在`work/thin_target_step2_20261004/`，不是第二套维护程序。
+
+最新第3步正式证据位于`validation/thin_target_20261004_r5/step3_xyz/`；三个a0p*目录是观察点，attempt*是冻结停止记录，不是自动重跑待办。Abaqus四个独立包为E盘`thin_target_20261004_r5_step3_xyz_01`、`_05`、`_05_refined`、`_10`。Windows阅读/一次性审阅和发布记录在`work/thin_target_step3_20261004/`。完整结果见 [第3步报告](../validation/thin_target_20261004_r5/step3_xyz/README.md)，决定只读step3_decision.json。没有20%/设计梯度/训练结果。

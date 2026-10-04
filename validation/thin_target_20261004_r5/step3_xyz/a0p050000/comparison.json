@@ -1,0 +1,24 @@
+{
+  "compression": 0.05,
+  "relative_force_difference": 0.07886977917486626,
+  "relative_stored_energy_difference": 0.06536140731716222,
+  "relative_total_shell_energy_difference": 0.06127790277106837,
+  "fluctuation_vector_cosine": 0.9998085783046543,
+  "area_weighted_relative_fluctuation_error": 0.05741480283722778,
+  "area_weighted_relative_total_u_error": 0.021205725619512755,
+  "gauge_translation_mm": [
+    0.011683608469166608,
+    0.0005188581955918902,
+    -0.3080127101657122
+  ],
+  "shared_gauge_translation_removed_mm": [
+    -0.011703773103165947,
+    -0.0005084343897279218,
+    0.30800837973647344
+  ],
+  "force_energy_screen_pass": true,
+  "visual_review_required": true,
+  "mode_note": "midsurface translations only; no fit of rotation or scale; not local-stress certification",
+  "input_sha256": "cd0a9521ec05b04a5c2d377b920ef370a815d4cae00ad0c8d766f79a4b280990",
+  "comparison_source_sha256": "4246ccde42a1fd1c4887106560acc974ffa24090be8d9e7fd62325c312564be4"
+}

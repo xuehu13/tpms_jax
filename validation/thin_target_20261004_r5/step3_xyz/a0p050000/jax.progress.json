@@ -1,0 +1,264 @@
+{
+  "state": "completed",
+  "returncode": 0,
+  "reason": null,
+  "elapsed_seconds": 278.4859251976013,
+  "samples": [
+    {
+      "elapsed_seconds": 0.0006508827209472656,
+      "rss_GiB": 0.00048828125,
+      "available_GiB": 13.64145278930664
+    },
+    {
+      "elapsed_seconds": 5.000974178314209,
+      "rss_GiB": 3.7223129272460938,
+      "available_GiB": 10.26559829711914
+    },
+    {
+      "elapsed_seconds": 10.001634120941162,
+      "rss_GiB": 3.8088531494140625,
+      "available_GiB": 10.148120880126953
+    },
+    {
+      "elapsed_seconds": 15.002452850341797,
+      "rss_GiB": 6.505035400390625,
+      "available_GiB": 7.499591827392578
+    },
+    {
+      "elapsed_seconds": 20.00291132926941,
+      "rss_GiB": 7.677764892578125,
+      "available_GiB": 6.374263763427734
+    },
+    {
+      "elapsed_seconds": 27.934880018234253,
+      "rss_GiB": 10.830856323242188,
+      "available_GiB": 3.126495361328125
+    },
+    {
+      "elapsed_seconds": 32.935415506362915,
+      "rss_GiB": 11.239830017089844,
+      "available_GiB": 2.811920166015625
+    },
+    {
+      "elapsed_seconds": 37.93594980239868,
+      "rss_GiB": 9.036460876464844,
+      "available_GiB": 5.057842254638672
+    },
+    {
+      "elapsed_seconds": 42.93646764755249,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 5.000751495361328
+    },
+    {
+      "elapsed_seconds": 47.93696665763855,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 5.015266418457031
+    },
+    {
+      "elapsed_seconds": 52.93740391731262,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.835826873779297
+    },
+    {
+      "elapsed_seconds": 60.87113809585571,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.6435699462890625
+    },
+    {
+      "elapsed_seconds": 65.87167477607727,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.651828765869141
+    },
+    {
+      "elapsed_seconds": 70.87227988243103,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.6667327880859375
+    },
+    {
+      "elapsed_seconds": 75.87274980545044,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.680721282958984
+    },
+    {
+      "elapsed_seconds": 80.87321066856384,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.688373565673828
+    },
+    {
+      "elapsed_seconds": 85.87371945381165,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.694232940673828
+    },
+    {
+      "elapsed_seconds": 90.87420058250427,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.701313018798828
+    },
+    {
+      "elapsed_seconds": 98.80797100067139,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.705127716064453
+    },
+    {
+      "elapsed_seconds": 103.8085069656372,
+      "rss_GiB": 9.124359130859375,
+      "available_GiB": 4.705696105957031
+    },
+    {
+      "elapsed_seconds": 108.80914831161499,
+      "rss_GiB": 7.7756805419921875,
+      "available_GiB": 6.0464324951171875
+    },
+    {
+      "elapsed_seconds": 113.8097574710846,
+      "rss_GiB": 11.002330780029297,
+      "available_GiB": 2.749927520751953
+    },
+    {
+      "elapsed_seconds": 118.81028366088867,
+      "rss_GiB": 10.011459350585938,
+      "available_GiB": 3.6346473693847656
+    },
+    {
+      "elapsed_seconds": 123.81094026565552,
+      "rss_GiB": 8.986011505126953,
+      "available_GiB": 4.6411590576171875
+    },
+    {
+      "elapsed_seconds": 131.74437618255615,
+      "rss_GiB": 9.103206634521484,
+      "available_GiB": 4.5967254638671875
+    },
+    {
+      "elapsed_seconds": 136.74486565589905,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.563686370849609
+    },
+    {
+      "elapsed_seconds": 141.74532771110535,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.569244384765625
+    },
+    {
+      "elapsed_seconds": 146.74581599235535,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.57763671875
+    },
+    {
+      "elapsed_seconds": 151.7463207244873,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.582981109619141
+    },
+    {
+      "elapsed_seconds": 156.74680709838867,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.582134246826172
+    },
+    {
+      "elapsed_seconds": 161.74735832214355,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.5872039794921875
+    },
+    {
+      "elapsed_seconds": 169.67686891555786,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.59124755859375
+    },
+    {
+      "elapsed_seconds": 174.67742466926575,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.5909881591796875
+    },
+    {
+      "elapsed_seconds": 179.67793130874634,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.594196319580078
+    },
+    {
+      "elapsed_seconds": 184.67842841148376,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.593864440917969
+    },
+    {
+      "elapsed_seconds": 189.67900776863098,
+      "rss_GiB": 9.132503509521484,
+      "available_GiB": 4.594585418701172
+    },
+    {
+      "elapsed_seconds": 194.67942118644714,
+      "rss_GiB": 8.890613555908203,
+      "available_GiB": 4.83612060546875
+    },
+    {
+      "elapsed_seconds": 202.61267566680908,
+      "rss_GiB": 8.166114807128906,
+      "available_GiB": 5.549922943115234
+    },
+    {
+      "elapsed_seconds": 207.61321473121643,
+      "rss_GiB": 9.746444702148438,
+      "available_GiB": 3.9442367553710938
+    },
+    {
+      "elapsed_seconds": 212.61377024650574,
+      "rss_GiB": 10.132614135742188,
+      "available_GiB": 3.5529212951660156
+    },
+    {
+      "elapsed_seconds": 217.61433458328247,
+      "rss_GiB": 9.101287841796875,
+      "available_GiB": 4.605266571044922
+    },
+    {
+      "elapsed_seconds": 222.61484813690186,
+      "rss_GiB": 9.130584716796875,
+      "available_GiB": 4.967784881591797
+    },
+    {
+      "elapsed_seconds": 227.61542010307312,
+      "rss_GiB": 9.130584716796875,
+      "available_GiB": 4.979949951171875
+    },
+    {
+      "elapsed_seconds": 232.6160249710083,
+      "rss_GiB": 9.130584716796875,
+      "available_GiB": 4.983741760253906
+    },
+    {
+      "elapsed_seconds": 240.54999589920044,
+      "rss_GiB": 9.130584716796875,
+      "available_GiB": 4.990058898925781
+    },
+    {
+      "elapsed_seconds": 245.5505771636963,
+      "rss_GiB": 9.130584716796875,
+      "available_GiB": 4.9935760498046875
+    },
+    {
+      "elapsed_seconds": 250.55120396614075,
+      "rss_GiB": 9.130584716796875,
+      "available_GiB": 4.996410369873047
+    },
+    {
+      "elapsed_seconds": 255.55187559127808,
+      "rss_GiB": 7.7684783935546875,
+      "available_GiB": 6.360626220703125
+    },
+    {
+      "elapsed_seconds": 260.5525732040405,
+      "rss_GiB": 8.893486022949219,
+      "available_GiB": 5.189399719238281
+    },
+    {
+      "elapsed_seconds": 265.55317878723145,
+      "rss_GiB": 7.858543395996094,
+      "available_GiB": 6.063751220703125
+    },
+    {
+      "elapsed_seconds": 273.4854311943054,
+      "rss_GiB": 7.719791412353516,
+      "available_GiB": 6.202693939208984
+    }
+  ],
+  "no_time_cutoff": true
+}

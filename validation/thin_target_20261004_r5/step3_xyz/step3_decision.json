@@ -1,0 +1,155 @@
+{
+  "stage": 3,
+  "date": "2026-10-05",
+  "user_selected_boundary": "XYZ periodic, axial compression, macro lateral strains fixed",
+  "target": "same 0.5 mm wall / 10 mm cell; N64 actual reference Gauss cache; eta=1e-4; interface width=0.05 mm",
+  "status": "working_screen_pass_at_1_and_5pct_not_accepted_at_10pct",
+  "observations": [
+    {
+      "compression": 0.01,
+      "JAX_force_N": -0.3890530227782958,
+      "shell_force_N": -0.3693266212940216,
+      "force_relative_difference": 0.05341180501735332,
+      "JAX_energy_N_mm": 0.019576903732929297,
+      "shell_energy_N_mm": 0.018575062975287437,
+      "stored_energy_relative_difference": 0.053934716613059264,
+      "gauge_centred_mode_cosine": 0.9997421819675423,
+      "fluctuation_relative_error": 0.054190175202321104,
+      "min_J": 0.9680461802171736,
+      "solid_min_J": 0.9945147423814608,
+      "high_void_energy_fraction": 0.010795622117219773,
+      "reduced_residual_l2": 4.804344857321918e-13,
+      "JAX_solve_seconds": 141.24936204601545,
+      "process_seconds": 169.6993989944458,
+      "Newton_corrections": 2,
+      "peak_RSS_GiB": 11.869209289550781,
+      "shell_energy_work_gap": 0.0007000360627725442,
+      "shell_artificial_energy_fraction": 0.0023353764748723213,
+      "shell_quality_pass": true,
+      "working_screen_pass": true
+    },
+    {
+      "compression": 0.05,
+      "JAX_force_N": -1.7396392699188836,
+      "shell_force_N": -1.6124645471572876,
+      "force_relative_difference": 0.07886977917486626,
+      "JAX_energy_N_mm": 0.4586616135429373,
+      "shell_energy_N_mm": 0.430522084236145,
+      "stored_energy_relative_difference": 0.06536140731716222,
+      "gauge_centred_mode_cosine": 0.9998085783046543,
+      "fluctuation_relative_error": 0.05741480283722778,
+      "min_J": 0.8437430500935374,
+      "solid_min_J": 0.9684737783922897,
+      "high_void_energy_fraction": 0.01279114227134413,
+      "reduced_residual_l2": 7.454550508533388e-12,
+      "JAX_solve_seconds": 237.74558699096087,
+      "process_seconds": 278.4859251976013,
+      "Newton_corrections": 3,
+      "peak_RSS_GiB": 11.861213684082031,
+      "shell_energy_work_gap": 0.004615132799947405,
+      "shell_artificial_energy_fraction": 0.0038506655428732425,
+      "shell_quality_pass": true,
+      "working_screen_pass": true
+    },
+    {
+      "compression": 0.1,
+      "JAX_force_N": -2.5723569042952326,
+      "shell_force_N": -2.2526445388793945,
+      "force_relative_difference": 0.14192756997288303,
+      "JAX_energy_N_mm": 1.5864344224876326,
+      "shell_energy_N_mm": 1.4531593322753906,
+      "stored_energy_relative_difference": 0.09171402423129793,
+      "gauge_centred_mode_cosine": 0.9998469493566341,
+      "fluctuation_relative_error": 0.05202719544791434,
+      "min_J": 0.5881144909201758,
+      "solid_min_J": 0.9199539051078481,
+      "high_void_energy_fraction": 0.01808962622397532,
+      "reduced_residual_l2": 1.0000205469116533e-12,
+      "JAX_solve_seconds": 485.282768895966,
+      "process_seconds": 544.066703081131,
+      "Newton_corrections": 4,
+      "peak_RSS_GiB": 11.86181640625,
+      "shell_energy_work_gap": 0.012939890887950459,
+      "shell_artificial_energy_fraction": 0.007577649489685209,
+      "shell_quality_pass": false,
+      "working_screen_pass": false
+    }
+  ],
+  "JAX_process_attempts": [
+    {
+      "directory": "a0p010000",
+      "state": "completed",
+      "returncode": 0,
+      "reason": null,
+      "elapsed_seconds": 169.6993989944458
+    },
+    {
+      "directory": "a0p050000",
+      "state": "completed",
+      "returncode": 0,
+      "reason": null,
+      "elapsed_seconds": 278.4859251976013
+    },
+    {
+      "directory": "a0p100000",
+      "state": "completed",
+      "returncode": 0,
+      "reason": null,
+      "elapsed_seconds": 544.066703081131
+    },
+    {
+      "directory": "attempt1_a0p010000",
+      "state": "stopped",
+      "returncode": 1,
+      "reason": null,
+      "elapsed_seconds": 108.81420040130615
+    },
+    {
+      "directory": "attempt1_a0p050000",
+      "state": "stopped",
+      "returncode": 1,
+      "reason": null,
+      "elapsed_seconds": 100.87257027626038
+    },
+    {
+      "directory": "attempt2_memory_a0p010000",
+      "state": "stopped",
+      "returncode": 15,
+      "reason": "memory_protection",
+      "elapsed_seconds": 103.99839973449707
+    },
+    {
+      "directory": "attempt2_mgs_a0p050000",
+      "state": "stopped",
+      "returncode": 1,
+      "reason": null,
+      "elapsed_seconds": 108.8066155910492
+    }
+  ],
+  "successful_JAX_states": 3,
+  "failed_or_protected_JAX_attempts": 4,
+  "Abaqus_analyses": 4,
+  "Abaqus_cases": [
+    "thin_target_20261004_r5_step3_xyz_01",
+    "thin_target_20261004_r5_step3_xyz_05",
+    "thin_target_20261004_r5_step3_xyz_05_refined",
+    "thin_target_20261004_r5_step3_xyz_10"
+  ],
+  "accepted_observations": [
+    0.01,
+    0.05
+  ],
+  "next_gradient_candidate": 0.01,
+  "20pct_submitted": false,
+  "new_design_gradients": 0,
+  "new_training": 0,
+  "stop_reason": "10% independent comparison/quality did not pass; do not extend 20% or scan physical parameters",
+  "claim": "sampled periodic elastic equilibria only; no full mesh convergence, global self-contact or stability certification",
+  "successful_state_process_seconds": 992.2520272731781,
+  "all_JAX_attempt_process_seconds": 1414.743813276291,
+  "maintenance_tests": {
+    "passed": 155,
+    "seconds": 98.47,
+    "log_sha256": "40b5b766b2605a19ebdd60b1aeb59f8b9834b8549bfddb22a59f4e09d8dbb23b"
+  }
+}

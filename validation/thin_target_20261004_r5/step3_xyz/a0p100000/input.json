@@ -1,0 +1,67 @@
+{
+  "step": 3,
+  "case_id": "diverse28_t005",
+  "N": 64,
+  "epsilon_z": -0.0001,
+  "diagnostic_xyz": true,
+  "mechanical_periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "jax_units": "L=1; displacement times L, force times L^2, energy times L^3 give mm,N,N mm",
+  "shell_units": "mm,N,MPa; Standard static nlgeom=YES; S3R, five section points; no contact/plasticity",
+  "bc": "XYZ periodic with macro Hzz; three translation gauges; no flat ends",
+  "shell_end_rotation": "periodic in XYZ",
+  "pin_node_label": 1,
+  "pin_xyz_mm": [
+    4.7302002942001655,
+    8.959158702063036,
+    3.2824779837585867
+  ],
+  "physical_node_count": 9351,
+  "element_count": 17986,
+  "periodic_relations": 366,
+  "xy_coordinate_error_over_L": 0.0,
+  "top_roots": 70,
+  "bottom_roots": 54,
+  "macro_control_label": 9352,
+  "screen_relative_stiffness": 0.1,
+  "mode_comparison": "area-weighted midsurface translations after in-plane translation alignment; shell rotations have no direct HEX8 nodal counterpart",
+  "input_sha256": {
+    "input.json": "960372eee8913e4d2d0602f4c3a25273a4a76cf15b29c206d456230c054f3c99",
+    "step1_decision.json": "7a88171888203016cab7fa126985e693f1f2b79bdf32d1250b162ac579ab963e",
+    "gauss_field.npz": "b1f1bf51585074f6bb01da4875a697c1b8ff3c8f350885a4cf529414b6759f49",
+    "step2/diagnostic_xyz/input.json": "87a4f88df427de1cccc7b0a20080dfc7350256e2ef3f5e7a2eb1d64c7eaf56ec",
+    "step2/diagnostic_xyz/jax.json": "2efd6a5a1a13c9488510a34703776dbddb48602c4454983c9138babd6a761397",
+    "step2/diagnostic_xyz/jax_field.npz": "dc33baabb30a1cf69a9ca09d697f392695e70de3c08d8b6e6bad26b903d1e410"
+  },
+  "source_sha256": {
+    "scripts/thin_target_finite.py": "4246ccde42a1fd1c4887106560acc974ffa24090be8d9e7fd62325c312564be4",
+    "scripts/extract_thin_finite.py": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f",
+    "hyperelastic_fem.py": "3330f974328e40627971db3024ad4deca8058e7c4723d0e848ea2587ee942132",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "shell_inp_sha256": "a967a1ccf6525c325da8b7dfb0048559ef4d7fe4825818d62e545f96973449c5",
+  "compression": 0.1,
+  "step_name": "a0p100000",
+  "macro_F": "diag(1,1,1-a); lateral macro strain fixed",
+  "material": {
+    "name": "compressible Neo-Hookean",
+    "mu_MPa": 3.846153846153846,
+    "kappa_MPa": 8.333333333333332,
+    "C10_MPa": 1.923076923076923,
+    "D1_per_MPa": 0.24000000000000005,
+    "energy": "mu/2*(J^(-2/3)*tr(F.T F)-3)+kappa/2*(J-1)^2"
+  },
+  "geometry_update": "rho fixed at reference material Gauss points; F=I+H+grad(w)",
+  "finite_work": "integrate force with displacement; half(F*delta) is not a nonlinear work identity"
+}

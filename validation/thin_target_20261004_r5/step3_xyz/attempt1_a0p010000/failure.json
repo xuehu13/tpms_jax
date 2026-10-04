@@ -1,0 +1,30 @@
+{
+  "type": "Error",
+  "message": "error code 82\n[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094\n[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:915\n[0] KSPSolve_GMRES() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/impls/gmres/gmres.c:215\n[0] KSPGMRESCycle() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/impls/gmres/gmres.c:102\n[0] Residual norm computed by GMRES recursion formula 1.72449e-12 is far from the computed residual norm 9.23797e-12 at restart, residual norm at start of cycle 6.03491e-12",
+  "attempted_compression": 0.01,
+  "previous_converged": null,
+  "trial_detF": {
+    "all_min": 0.9680770925408103,
+    "all_max": 1.0150774932622322,
+    "finite": true,
+    "solid": {
+      "points": 275886,
+      "min": 0.9946479212713659,
+      "p01": 0.9957158902174594,
+      "max": 1.00140338945628
+    },
+    "void": {
+      "points": 1736142,
+      "min": 0.9680770925408103,
+      "p01": 0.9800368968073047,
+      "max": 1.0150774932622322
+    },
+    "transition": {
+      "points": 85124,
+      "min": 0.9908859485691636,
+      "p01": 0.9939995535959577,
+      "max": 1.0038697267036372
+    }
+  },
+  "body_seconds": 96.27950425096788
+}

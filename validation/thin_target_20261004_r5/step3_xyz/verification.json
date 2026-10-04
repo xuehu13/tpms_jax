@@ -1,0 +1,42 @@
+{
+  "base_commit": "0d6c62418930cfeb83b34c3adf875e26563af307",
+  "old_frozen_files_unchanged": 842,
+  "old_thin_tracked_files_unchanged": 34,
+  "step1_cache_unchanged": true,
+  "unchanged_core_environment_files": [
+    "fem.py",
+    "density_fem.py",
+    "pbc.py",
+    "geometry.py",
+    "surface_distance.py",
+    "pixi.toml",
+    "pixi.lock"
+  ],
+  "original_source_snapshots_verified": 42,
+  "comparison_source_snapshots_verified": 3,
+  "new_JAX_completed_states": 3,
+  "new_JAX_stopped_attempts": 4,
+  "new_Abaqus_analyses_verified": 4,
+  "20pct_submitted": false,
+  "design_gradient_started": false,
+  "training_started": false,
+  "maintenance_tests": {
+    "passed": 155,
+    "seconds": 98.47,
+    "log_sha256": "40b5b766b2605a19ebdd60b1aeb59f8b9834b8549bfddb22a59f4e09d8dbb23b"
+  },
+  "syntax_checks_passed": true,
+  "links_checked": 166,
+  "broken_links": [],
+  "pdf_pages_visually_checked": 12,
+  "maintained_source_sha256": {
+    "hyperelastic_fem.py": "3330f974328e40627971db3024ad4deca8058e7c4723d0e848ea2587ee942132",
+    "scripts/thin_target_finite.py": "982437fb2234daccd98676182125295b336fdd8bb15cc4189e8ab57caaa2815b",
+    "scripts/extract_thin_finite.py": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f",
+    "tests/test_xyz_hyperelastic.py": "c441621c749d10111e436161cafcf649bda153a16db6e1452cb0cb8efed77177"
+  },
+  "new_report_sha256": "0d5c2647b2423b20f80b5dd4a6090af7514e8325432c54185f4e3c2eacda8dcc",
+  "decision_sha256": "9d061146d55b0396c3ec914a60c85da350ceb115a73ae2d2c87193d64ad0aa45",
+  "raw_provenance_sha256": "6a76e215354061d402086f18b702eeba4008c4839ca429f76b9c5b7917841727",
+  "metadata_correction_scope": "Future prepare metadata only; all seven original inputs and fields preserved"
+}

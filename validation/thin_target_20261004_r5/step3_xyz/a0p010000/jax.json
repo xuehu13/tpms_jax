@@ -1,0 +1,108 @@
+{
+  "status": "ok",
+  "compression": 0.01,
+  "checks": {
+    "finite": true,
+    "actual_reference_Gauss_mapping_exact": true,
+    "positive_detF": true,
+    "void_min_detF_ge_0p1": true,
+    "reduced_residual_l2_le_1e-8": true,
+    "relative_force_balance_le_1e-6": true,
+    "relative_macro_reaction_vs_P_le_1e-6": true,
+    "energy_partition": true,
+    "XYZ_periodic_le_1e-10": true
+  },
+  "Fz_N": -0.3890530227782958,
+  "energy_N_mm": 0.019576903732929297,
+  "secant_stiffness_N_per_mm": 3.890530227782958,
+  "finite_response_normalized": {
+    "energy": 1.9576903732929295e-05,
+    "reference_volume": 0.9999999999999958,
+    "current_volume": 0.9899999999999958,
+    "J_min": 0.9680461802171736,
+    "J_max": 1.0152577707164738,
+    "mean_first_piola": [
+      [
+        -0.0034830778490044546,
+        6.08174436533305e-08,
+        -2.2180222919354422e-07
+      ],
+      [
+        6.081745069680079e-08,
+        -0.0014531830834343422,
+        -4.320979857296462e-08
+      ],
+      [
+        -2.1958417859656917e-07,
+        -4.277767671217757e-08,
+        -0.0038905302257850067
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.0035182604535276534,
+        6.143176222880677e-08,
+        -2.2180221051128239e-07
+      ],
+      [
+        6.143176222880848e-08,
+        -0.0014678617004401599,
+        -4.320977421149832e-08
+      ],
+      [
+        -2.2180221051127553e-07,
+        -4.32097742114946e-08,
+        -0.0038905302258189526
+      ]
+    ],
+    "Fz_top": -0.003890530227782958,
+    "Fz_bottom": 0.003890530228128751,
+    "reduced_residual_l2": 4.804344857321918e-13
+  },
+  "detF_by_occupancy": {
+    "all_min": 0.9680461802171736,
+    "all_max": 1.0152577707164738,
+    "finite": true,
+    "solid": {
+      "points": 275886,
+      "min": 0.9945147423814608,
+      "p01": 0.9956033709572382,
+      "max": 1.0013983246204807
+    },
+    "void": {
+      "points": 1736142,
+      "min": 0.9680461802171736,
+      "p01": 0.9801529924335158,
+      "max": 1.0152577707164738
+    },
+    "transition": {
+      "points": 85124,
+      "min": 0.9908986162560677,
+      "p01": 0.9938303768617384,
+      "max": 1.0038534204503817
+    }
+  },
+  "periodic_error_over_L": 1.734723475976807e-18,
+  "energy_material_N_mm": 0.01943316244086045,
+  "energy_uniform_floor_N_mm": 0.00014374129206884498,
+  "high_void_energy_fraction": 0.010795622117219773,
+  "relative_macro_force_error": 5.13542156623163e-10,
+  "build_seconds": 3.3737174890120514,
+  "solve_seconds": 141.24936204601545,
+  "body_seconds": 152.81030454300344,
+  "Newton_corrections": 2,
+  "peak_host_RSS_GiB": 11.869209289550781,
+  "seed": "scaled frozen linear XYZ fluctuation",
+  "previous": null,
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-11,
+    "ksp_max_it": 3000,
+    "ksp_error_if_not_converged": true
+  },
+  "devices": [
+    "cuda:0"
+  ],
+  "field_sha256": "034664e7aafec77ff162544546c296a223483cff4d3ae9b9be7fcd4a093c8588",
+  "input_sha256": "42ba5ce53bca28d22780e2cc7c7104167b61c1e5a2b64f2f32f184f434c3e3e7"
+}

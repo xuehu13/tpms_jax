@@ -48,3 +48,6 @@ validation/**/*.lck
 docs/history/**/*.py
 docs/history/**/*.pdf
 validation/**/*.console.txt
+
+# Repeated failed-attempt decks remain in the local frozen archive.
+validation/thin_target_20261004_r5/step3_xyz/attempt*/thin_shell.inp
