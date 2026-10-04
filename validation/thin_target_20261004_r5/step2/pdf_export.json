@@ -1,0 +1,22 @@
+{
+  "pages": 12,
+  "source_sha256": "612c2b32a9e83d51d1ae5f9672e5e2fc24c6c9ae34d8a4e3546e356e7603d1cf",
+  "pdf_sha256": "0c2b0f484def850043efd9eaedf3c37436cc29ecdea050149f98af810801c3e6",
+  "missing_source_glyphs": [],
+  "visual_inspection_pending": false,
+  "visual_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visual_result": "All 12 updated pages inspected; no clipping, overlap or missing glyphs"
+}

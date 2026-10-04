@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | START_HERE.md | README.md | 阅读入口 |
 | RESEARCH_BACKGROUND.md | docs/RESEARCH_BACKGROUND.md | 长期研究问题与方法边界 |
-| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁前向/梯度四步，第1步表示初筛完成 |
+| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁四步，第2步分边界收口，先明确端部等效性 |
 | PROJECT_OVERVIEW.md | docs/RESEARCH_STATUS.md | 当前事实及缺口 |
 | TPMS_RESEARCH_REVIEW.md | docs/同名文件 | 完整理论、符号和进度解释 |
 | output/pdf/TPMS_RESEARCH_REVIEW.pdf | docs/TPMS_RESEARCH_REVIEW.pdf | 同一综合报告的可分享导出 |
@@ -22,6 +22,7 @@
 
 | 程序 | 职责/适用状态 |
 | --- | --- |
+| scripts/thin_target_linear.py、extract_thin_shell.py | 第2步薄壁线弹性对照、唯一XYZ边界诊断和只读ODB提取；复用同一FEM |
 | surface_distance.py、scripts/prepare_thin_target.py | 固定周期三角中面的距离、物理厚度投影及第1步真实Gauss准备；厚度AD接口与形态AD分开 |
 | geometry.py、volume.py | Gyroid/Primitive、光滑占据及体积 |
 | fem.py、density_fem.py、pbc.py | HEX8线性力学、真实Gauss场、周期约束/宏观松弛 |
@@ -72,7 +73,7 @@
 | mechanics_trust_20261004_r4/thin_gyroid/ | G32仅输入；三个G48准备失败，没有分析 |
 | mechanics_trust_20261004_r4/step3_uniform/{N4_d010,N4_d005} | 均匀体20%基准及半步，原始ODB/日志/验收 |
 
-包根保存INP、mesh.npz、expected；work保存ODB/dat/msg/sta及提取/验收；scripts是当时执行副本。原包不搬动，本次没有新作业或新ODB。
+包根保存INP、mesh.npz、expected；work保存ODB/dat/msg/sta及提取/验收；scripts是当时执行副本。原包不搬动；本轮新增以下两套弹性壳作业，不能与旧Explicit参考混用。
 
 ## Windows归档与一次性工具
 
@@ -105,3 +106,5 @@
 `work/repository_cleanup_20261004/`保存整理前源码/文档、Git清单、安装包RECORD核对、维护测试日志、冻结哈希验证和发布收据；`transport.git`/bundle仅传输工具，不是新维护仓库。正式`docs/history/repository_cleanup_20261004/`保存小型维护摘要与验证收据。没有再创建一份研究报告或活动规划；此处记录的是维护时的状态；最新5%薄壁实验目录现已另建。
 
 第1步正式目录`validation/thin_target_20261004_r5/`；Windows说明为 [第1步报告](../validation/thin_target_20261004_r5/README.md)，图与小收据在work/thin_target_20261004_r5/。大Gauss缓存仅在正式WSL，避免重复复制。
+
+第2步正式目录`validation/thin_target_20261004_r5/step2/`，其中`diagnostic_xyz/`为唯一边界诊断；说明见 [第2步报告](../validation/thin_target_20261004_r5/step2/README.md)。两份INP/JSON/模式图可随Git发布；NPZ、原始日志及source_*复现快照留本机。Abaqus原始目录为包根下`thin_target_20261004_r5_step2`和`thin_target_20261004_r5_step2_xyz`。本轮一次性后处理/输出修复/发布收据在`work/thin_target_step2_20261004/`，不是第二套维护程序。

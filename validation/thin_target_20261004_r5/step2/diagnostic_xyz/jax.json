@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "checks": {
+    "finite": true,
+    "actual_Gauss_mapping_exact": true,
+    "reduced_residual_le_1e-8": true,
+    "relative_force_balance_le_1e-6": true,
+    "relative_reaction_stress_le_1e-6": true,
+    "relative_energy_work_le_1e-6": true,
+    "periodic_le_1e-10": true
+  },
+  "Fz_top_N": -0.00396282591086953,
+  "Fz_bottom_N": 0.0039628259108576685,
+  "stiffness_N_per_mm": 3.962825910869529,
+  "effective_axial_MPa": 0.39628259108695296,
+  "energy_N_mm": 1.981412955411857e-06,
+  "macro_energy_N_mm": 1.981412955411857e-06,
+  "average_stress_MPa": [
+    [
+      -3.472605495326881e-05,
+      5.786395414945326e-10,
+      -2.054773766169683e-09
+    ],
+    [
+      5.786395414945326e-10,
+      -1.4883916182895625e-05,
+      -4.3975422607331085e-10
+    ],
+    [
+      -2.054773766169683e-09,
+      -4.3975422607331085e-10,
+      -3.962825910823731e-05
+    ]
+  ],
+  "reduced_residual_normalized": 2.9905350198844003e-18,
+  "relative_reaction_stress_error": 1.1557089227473e-11,
+  "relative_energy_work_error": 0.0,
+  "high_void_energy_fraction": 0.010460188843031808,
+  "periodic_error_over_L": 1.3552527156068805e-20,
+  "build_seconds": 3.3435903900535777,
+  "solve_seconds": 114.79366876999848,
+  "body_seconds": 119.84533498005476,
+  "peak_host_RSS_GiB": 12.214096069335938,
+  "solver": "Existing PETSc CG/GAMG, unchanged JAX-FEM operator",
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "devices": [
+    "cuda:0"
+  ],
+  "jax_version": "0.11.2",
+  "field_sha256": "dc33baabb30a1cf69a9ca09d697f392695e70de3c08d8b6e6bad26b903d1e410",
+  "input_sha256": "87a4f88df427de1cccc7b0a20080dfc7350256e2ef3f5e7a2eb1d64c7eaf56ec"
+}

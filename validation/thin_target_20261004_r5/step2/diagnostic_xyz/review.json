@@ -1,0 +1,40 @@
+{
+  "shell_periodic_U_max_error_mm": 4.749745128457272e-11,
+  "shell_flat_z_max_error_mm": null,
+  "surface_normal_fluctuation_cosine": 0.9997758795256281,
+  "mismatch_by_height": {
+    "end_10pct": {
+      "area_fraction": 0.18549874161899774,
+      "rms_mismatch_over_compression": 0.007611864239053823
+    },
+    "interior_80pct": {
+      "area_fraction": 0.8145012583810022,
+      "rms_mismatch_over_compression": 0.011229171365842625
+    }
+  },
+  "shell_total_energy_relative_difference": 0.049787430952573875,
+  "raw_job_artifacts": {
+    "thin_shell.dat": {
+      "sha256": "f39d98d0712ef2aa3e9613a5b49da1510161efd639d5bc736ea7caeb0b33e4ef",
+      "bytes": 10723
+    },
+    "thin_shell.inp": {
+      "sha256": "a2f4e978b15ebda40c48c624b32576e6d3ca132b7b0deb19c0a3d125ace7d72a",
+      "bytes": 1119978
+    },
+    "thin_shell.msg": {
+      "sha256": "4963e1354bf706d7d30212a5ddacac6fb40a016a7f2b3a8219bfd74da5604e20",
+      "bytes": 9561
+    },
+    "thin_shell.odb": {
+      "sha256": "418f617873111edcabcaab2edfa35a13899b7af2c245b5d00f805db7b397d74e",
+      "bytes": 1784052
+    },
+    "thin_shell.sta": {
+      "sha256": "155717d2d126f9f4526af59263bd186956fee32630780b0994f547e28d860981",
+      "bytes": 446
+    }
+  },
+  "passed_JAX_internal_checks": true,
+  "passed_shell_internal_checks": true
+}

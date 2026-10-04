@@ -1,0 +1,61 @@
+{
+  "status": "ok",
+  "checks": {
+    "finite": true,
+    "actual_Gauss_mapping_exact": true,
+    "reduced_residual_le_1e-8": true,
+    "relative_force_balance_le_1e-6": true,
+    "relative_reaction_stress_le_1e-6": true,
+    "relative_energy_work_le_1e-6": true,
+    "periodic_le_1e-10": true,
+    "flat_z_faces_le_1e-10": true
+  },
+  "Fz_top_N": -0.003119685747314023,
+  "Fz_bottom_N": 0.003119685747329601,
+  "stiffness_N_per_mm": 3.1196857473140223,
+  "effective_axial_MPa": 0.31196857473140227,
+  "energy_N_mm": 1.5598428736629137e-06,
+  "macro_energy_N_mm": 1.5598428736628294e-06,
+  "average_stress_MPa": [
+    [
+      -2.5065330477554893e-05,
+      -2.6464774519047736e-10,
+      -6.618763095448414e-17
+    ],
+    [
+      -2.6464774519047736e-10,
+      -1.753042123207581e-05,
+      5.930439307091191e-17
+    ],
+    [
+      -6.618763095448414e-17,
+      5.930439307091191e-17,
+      -3.1196857473256723e-05
+    ]
+  ],
+  "reduced_residual_normalized": 5.621480565421586e-18,
+  "relative_reaction_stress_error": 3.734271105154393e-12,
+  "relative_energy_work_error": 5.409033429263333e-14,
+  "high_void_energy_fraction": 0.013866825849624481,
+  "periodic_error_over_L": 0.0,
+  "build_seconds": 4.085449822014198,
+  "solve_seconds": 156.6998785350006,
+  "solver": "Existing PETSc CG/GAMG, unchanged JAX-FEM operator",
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "devices": [
+    "cuda:0"
+  ],
+  "jax_version": "0.11.2",
+  "field_sha256": "dafb2f1bbd3b9e4af0dd8a0904b0b2473a32d459acc9ab088a8d06c225720fcb",
+  "input_sha256": "8788b3fdeefc11252c22db7937e02f43fead3ee27faf8d6b8faf8c1da740edb6",
+  "postprocess_recovery_seconds": 6.580344042973593,
+  "original_process_seconds": 187.61403679847717,
+  "recovery_peak_host_RSS_GiB": 3.7795448303222656,
+  "original_peak_sampled_host_RSS_GiB": 11.43704605102539,
+  "serialization_recovery": "Saved equilibrium field reused; reactions/energy recomputed without solve; original log and failed process receipt preserved"
+}

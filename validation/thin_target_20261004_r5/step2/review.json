@@ -1,0 +1,46 @@
+{
+  "shell_periodic_U_max_error_mm": 0.0,
+  "shell_flat_z_max_error_mm": 4.749745128457272e-11,
+  "surface_normal_fluctuation_cosine": 0.9895163093050061,
+  "mismatch_by_height": {
+    "end_10pct": {
+      "area_fraction": 0.18549874161899774,
+      "rms_mismatch_over_compression": 0.08821241195431584
+    },
+    "interior_80pct": {
+      "area_fraction": 0.8145012583810022,
+      "rms_mismatch_over_compression": 0.04531889626083039
+    }
+  },
+  "shell_total_energy_relative_difference": 0.4178439205009863,
+  "extraction_correction": "First extraction compared ALLSE alone to work. ALLAE is also present; corrected total=ALLSE+ALLAE. No input or analysis rerun.",
+  "first_extraction_status": "check_failed_energy_definition",
+  "first_extraction_sha256": "708267d57198144ffeff9d400e478412c28cb7c40e2f59006bc3edd1f7d0dbdc",
+  "corrected_extraction_sha256": "92241f70b67ea596a451a0a738bc8c07d5bbd0f6e0a3e1a3bfca04330fadaa69",
+  "extractor_at_first_extract_sha256": "276f463a97178a0d076b5857fbdf660f277144e06c9a3392c3139e0e887eb765",
+  "corrected_extractor_sha256": "5272914287cae994d550120caddf88e0707ff77c00a4307b6d672688b4e94747",
+  "raw_job_artifacts": {
+    "thin_shell.dat": {
+      "sha256": "08940830b8724ff4247cdb9b716d384e3ab43d9f1f160d4b3e654ad238b18315",
+      "bytes": 10723
+    },
+    "thin_shell.inp": {
+      "sha256": "610e300d62e3c92f6b37c0e214cc62c4f4fbe3fb57de21886aad5216f219ca6d",
+      "bytes": 1095279
+    },
+    "thin_shell.msg": {
+      "sha256": "4abdd4adeea7121400c31e46a9520dae47ea7194f10dfb4f3cda23f9fbf20cc2",
+      "bytes": 9562
+    },
+    "thin_shell.odb": {
+      "sha256": "05c2d4205c8a013a47ccf17b10b32edaf11c4703c3f13be44ce82e92605a0ae4",
+      "bytes": 1786316
+    },
+    "thin_shell.sta": {
+      "sha256": "d203647c38db2867618acc7f6f422b1e8f725578efbc273278fafdf1831e923d",
+      "bytes": 446
+    }
+  },
+  "passed_JAX_internal_checks": true,
+  "passed_shell_internal_checks": true
+}

@@ -1,0 +1,24 @@
+{
+  "step": 2,
+  "relative_stiffness_difference": 0.41784398164011893,
+  "relative_energy_difference": 0.4291668094668515,
+  "jax_stiffness_N_per_mm": 3.1196857473140223,
+  "shell_stiffness_N_per_mm": 2.200302563407057,
+  "area_weighted_relative_total_displacement_error": 0.07475239564729169,
+  "area_weighted_relative_fluctuation_error": 0.11072290094967792,
+  "fluctuation_vector_cosine": 0.9938529888605365,
+  "in_plane_gauge_shift_mm": [
+    -0.0004627417900407278,
+    4.950719790230376e-06,
+    0.0
+  ],
+  "component_fluctuation_cosines": [
+    0.9989748879657967,
+    0.9551963241353838,
+    0.9574213034668657
+  ],
+  "mode_note": "Cosines and weighted errors describe translations on the common triangular midsurface, not shell/solid local stress or rotation equivalence",
+  "stiffness_work_screen_pass": false,
+  "visual_mode_review_required": true,
+  "input_sha256": "8788b3fdeefc11252c22db7937e02f43fead3ee27faf8d6b8faf8c1da740edb6"
+}

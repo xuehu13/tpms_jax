@@ -1,0 +1,23 @@
+{
+  "old_frozen_files_verified": 842,
+  "step1_tracked_artifacts_unchanged": 13,
+  "step1_cache_and_decision_artifacts_unchanged": true,
+  "core_FEM_solver_environment_unchanged": true,
+  "new_JAX_solves": 2,
+  "new_Abaqus_analyses": 2,
+  "new_maintenance_tests_added": 0,
+  "previous_maintenance_tests": 152,
+  "current_validation": "Actual matched cases, exact Gauss reuse, force/work/periodicity/mode checks, script compilation, frozen hashes and links; no new core solver",
+  "links_checked": 157,
+  "broken_links": [],
+  "syntax_checks_passed": true,
+  "pdf_pages_visually_checked": 12,
+  "current_published_source_sha256": {
+    "scripts/thin_target_linear.py": "0449c6be27855cfb9dbdc75cf10658980e2e8e55e89be3136a2e0dc331a45a14",
+    "scripts/extract_thin_shell.py": "a7c6c1d77ea9054d6fc5c1a08f149a3b6dd8d67c660cb04770d0e0a3db561ba6"
+  },
+  "one_time_recovery_script_sha256": "42f384867b854ff7c0b10e282e3bdc5052681ed2c571ef05dfb865bbf1aaaea5",
+  "original_failed_process_log_sha256": "29908dcd024b842471361f8da7a03a4332fd4f20b2e69234719df876d02a581a",
+  "new_report_sha256": "f4ebf88762d1392696cd8652ac3ba689105377b89addba851ffcb95414f13358",
+  "artifact_decision_sha256": "d1522ab9a112f35d4fbb9cbfbf09a804773c17392517df5eb60aac5c45472bab"
+}
