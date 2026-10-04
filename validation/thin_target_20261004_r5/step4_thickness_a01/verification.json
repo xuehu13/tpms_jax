@@ -1,0 +1,46 @@
+{
+  "base_commit": "74e369a656531c0b7fd77df857ade2ed4cb78d1e",
+  "old_frozen_files_unchanged": 842,
+  "step1_2_3_tracked_files_unchanged": 82,
+  "core_environment_unchanged": {
+    "hyperelastic_fem.py": "3330f974328e40627971db3024ad4deca8058e7c4723d0e848ea2587ee942132",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "design_fem.py": "205cad66542a42cfaf3d9ba17f2db3da0d5c08781be26574ff8ad727afc17825",
+    "pixi.toml": "58390b145f3a291cce65302d6576521e87aeee104ade1df05a31b901cb5e71d6",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "scripts/thin_target_finite.py": "982437fb2234daccd98676182125295b336fdd8bb15cc4189e8ab57caaa2815b",
+    "scripts/extract_thin_finite.py": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f"
+  },
+  "installed_solver_unchanged": true,
+  "step1_cache_unchanged": true,
+  "source_snapshots_verified": 14,
+  "result_fields_verified": 8,
+  "new_completed_processes": 8,
+  "stopped_attempts_preserved": 3,
+  "new_Abaqus_analyses_verified": 2,
+  "new_base_forward_solves": 0,
+  "training_started": false,
+  "shape_derivative_started": false,
+  "20pct_submitted": false,
+  "maintenance_tests": {
+    "passed": 157,
+    "seconds": 112.82,
+    "log_sha256": "82519ec078393c912e51b9d4dfb7cd39c1ccf237cc023f3ed746110fe8531636",
+    "targeted_passed": 2,
+    "targeted_log_sha256": "ca564892a4b35d6622b400a586e0c496f596c96f15a030add144a829fa361820"
+  },
+  "syntax_checks_passed": true,
+  "links_checked": 177,
+  "broken_links": [],
+  "pdf_pages_visually_checked": 13,
+  "maintained_source_sha256": {
+    "scripts/thin_thickness_gradient.py": "d95f854c3463d132ebc880e11e129151a5cbe6bc04983e756be93ebe81dc4b11",
+    "tests/test_thin_thickness_gradient.py": "a2ea0ed105a966e90db70fe77c3e1145895fbb00904bc4deccf8c0f006218aed"
+  },
+  "new_report_sha256": "2074b4fa529f0285742e5c19c17eba6096440e34c8c9a0257516088bf1ce6abb",
+  "decision_sha256": "8b89937bea6da1058ad24807261fb6b2ee5e1f7b4f98d6ac2a006dc07e75e0f3",
+  "raw_provenance_sha256": "76c0d27d7e13209d13d72f099bc0e76e8fdb3730469c464f6c5a84d965588d08"
+}

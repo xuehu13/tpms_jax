@@ -1,0 +1,115 @@
+{
+  "status": "ok",
+  "compression": 0.01,
+  "checks": {
+    "complete_step": true,
+    "node_count": true,
+    "finite": true,
+    "load_delta_stored_float_precision": true,
+    "XYZ_periodic_stored_float_precision": true,
+    "XYZ_rotation_periodic_rad_le_1e-8": true,
+    "relative_total_energy_work_le_1pct": true,
+    "macro_work_vs_ALLWK_le_0p1pct": true,
+    "artificial_energy_fraction_le_1pct": true,
+    "positive_current_shell_thickness": true
+  },
+  "Fz_N": -0.37118595838546753,
+  "delta_mm": -0.10000000149011612,
+  "energy_N_mm": 0.01866760477423668,
+  "total_energy_N_mm": 0.018711422657361254,
+  "energies_N_mm": {
+    "ALLSE": 0.01866760477423668,
+    "ALLAE": 4.381788312457502e-05,
+    "ALLWK": 0.01869835890829563
+  },
+  "artificial_energy_fraction": 0.0023434079610663034,
+  "periodic_U_error_mm": 2.2351741846282636e-09,
+  "periodic_UR_error_rad": 0.0,
+  "stored_U_check_tolerance_mm": 1e-08,
+  "relative_total_energy_work_gap": 0.0006986575201434861,
+  "diagnostic_work_within_0p1pct": true,
+  "macro_control_trapezoid_work_N_mm": 0.018698359738707933,
+  "quality_scope": "feasibility reference; <=1% energy balance screen, not strict nonlinear shell energy certification",
+  "current_shell_thickness_mm": {
+    "min": 0.5031915903091431,
+    "max": 0.5046762824058533
+  },
+  "force_path": [
+    {
+      "step": "a0p010000",
+      "time": 0.05000000074505806,
+      "compression": 0.0004999999888241291,
+      "Fz_N": -0.018947917968034744
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.10000000149011612,
+      "compression": 0.0009999999776482583,
+      "Fz_N": -0.03785720840096474
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.17499999701976776,
+      "compression": 0.0017500000074505806,
+      "Fz_N": -0.06614793092012405
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.2750000059604645,
+      "compression": 0.002749999985098839,
+      "Fz_N": -0.10373030602931976
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.375,
+      "compression": 0.003750000149011612,
+      "Fz_N": -0.1411515474319458
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.4749999940395355,
+      "compression": 0.004749999940395355,
+      "Fz_N": -0.17840860784053802
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.574999988079071,
+      "compression": 0.005750000104308128,
+      "Fz_N": -0.21549832820892334
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.675000011920929,
+      "compression": 0.006750000268220901,
+      "Fz_N": -0.2524174749851227
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.7749999761581421,
+      "compression": 0.007750000059604645,
+      "Fz_N": -0.2891627550125122
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.875,
+      "compression": 0.008749999850988389,
+      "Fz_N": -0.3257307708263397
+    },
+    {
+      "step": "a0p010000",
+      "time": 0.9750000238418579,
+      "compression": 0.009749999642372132,
+      "Fz_N": -0.3621179759502411
+    },
+    {
+      "step": "a0p010000",
+      "time": 1.0,
+      "compression": 0.010000000149011612,
+      "Fz_N": -0.37118595838546753
+    }
+  ],
+  "field_sha256": "95f7a2e8bab842bcaabb73ac71f397ce74737b6a5ea88d6421c8be940ca56c0b",
+  "extractor_sha256": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f",
+  "odb_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\thin_target_20261005_r5_step4_t0p502000\\thin_shell.odb",
+  "input_sha256": "28bbdc8d8f9353d690212bdfd91f5f1ad357f67c4b1b07a549ca727381bf4562"
+}

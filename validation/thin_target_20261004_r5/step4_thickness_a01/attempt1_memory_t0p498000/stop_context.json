@@ -1,0 +1,17 @@
+{
+  "reason": "guard policy, not OOM or numerical divergence",
+  "stopped_sample_RSS_GiB": 11.764549255371094,
+  "available_GiB": 2.355743408203125,
+  "old_policy": "min(12 GiB, 75% WSL MemTotal) RSS or <1 GiB available",
+  "new_policy": "min(12 GiB, 80% WSL MemTotal) RSS or <1.5 GiB available",
+  "unchanged": "same input, mesh, thickness perturbation, material, Newton and PETSc settings",
+  "archived_files_sha256": {
+    "input.json": "fa13743b579d1e21ddfd8547eb38d2f691f3921a900aa0b5426cd7aa1e50db44",
+    "thin_shell.inp": "a9392cebba6a3711d5080ba3728ec4d193af3028edf8c711cb7a1bf797222b1d",
+    "jax.log": "0b805968764240fe65d3353fdd740ecfc492762a1b4a466657a77a92bb4ae3e2",
+    "jax.progress.json": "da7f2d7b2c054fa3a297f7feabb59d2395f16fe80ce6e15c96417912fcd56105",
+    "shell.json": "50f74e86eaa38b7780700f35878035393d1516199f73c11cafd22a1d3a9a3211",
+    "shell_field.npz": "157069786ec6f351a152bb43e2715f207f875314241103fa89f57edfa7948ab0"
+  },
+  "no_extra_Abaqus_analysis": true
+}

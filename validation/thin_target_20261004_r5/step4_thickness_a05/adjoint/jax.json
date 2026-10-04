@@ -1,0 +1,36 @@
+{
+  "reaction_amplitude_N": 1.739639268986735,
+  "fixed_state_partial_N_per_mm": 3.520740405071158,
+  "equilibrium_correction_N_per_mm": 1.4919335067477033,
+  "total_gradient_N_per_mm": 5.012673911818862,
+  "adjoint_residual_l2": 2.7878176543319066e-07,
+  "adjoint_relative_residual": 9.595386880370362e-09,
+  "equilibrium_reduced_residual_l2": 7.454550506814463e-12,
+  "partials_seconds": 5.427935157029424,
+  "tangent_seconds": 20.096087917045224,
+  "adjoint_linear_seconds": 65.99939856800484,
+  "reduced_dofs": 786429,
+  "tangent_nonzeros": 63700515,
+  "status": "ok",
+  "checks": {
+    "finite": true,
+    "base_equilibrium_residual_le_1e-8": true,
+    "adjoint_relative_residual_le_1e-6": true,
+    "same_base_reaction_le_1e-6": true
+  },
+  "thickness_mm": 0.5,
+  "compression": 0.05,
+  "build_seconds": 3.3519894799683243,
+  "body_seconds": 95.0159298509825,
+  "petsc_options": {
+    "ksp_rtol": 1e-08,
+    "ksp_atol": 1e-12,
+    "ksp_max_it": 3000,
+    "ksp_error_if_not_converged": true,
+    "ksp_gmres_modifiedgramschmidt": true,
+    "ksp_pc_side": "right",
+    "ksp_norm_type": "unpreconditioned"
+  },
+  "peak_host_RSS_GiB": 10.68667221069336,
+  "input_sha256": "9d687b847cb1c37de3a0fbf193aeed5ca641f4dfee51bb6204bfe6ca30708f85"
+}

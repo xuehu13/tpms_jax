@@ -1,0 +1,23 @@
+{
+  "pages": 13,
+  "source_sha256": "044b6d6c835aea7e9398b80819f1314c5c39521b8e695fec1bd1b9e8bec30a7a",
+  "pdf_sha256": "f7ef5df74cf4f5aa50fd706ef857ee3466d12beb200fcb5914ce862e05f06f65",
+  "missing_source_glyphs": [],
+  "visual_inspection_pending": false,
+  "visual_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "visual_result": "All 13 final pages inspected in rendered contact sheets; pages 4 and 5 additionally at full scale. No overlap, clipped text or missing glyphs."
+}

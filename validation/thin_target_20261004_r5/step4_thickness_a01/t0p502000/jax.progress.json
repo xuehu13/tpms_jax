@@ -1,0 +1,139 @@
+{
+  "state": "completed",
+  "returncode": 0,
+  "reason": null,
+  "elapsed_seconds": 137.0348687171936,
+  "samples": [
+    {
+      "elapsed_seconds": 0.0003914833068847656,
+      "rss_GiB": 0.00048828125,
+      "available_GiB": 13.668880462646484
+    },
+    {
+      "elapsed_seconds": 7.935219049453735,
+      "rss_GiB": 3.6968116760253906,
+      "available_GiB": 10.249706268310547
+    },
+    {
+      "elapsed_seconds": 12.960696458816528,
+      "rss_GiB": 3.7687110900878906,
+      "available_GiB": 10.116283416748047
+    },
+    {
+      "elapsed_seconds": 17.96964168548584,
+      "rss_GiB": 6.791477203369141,
+      "available_GiB": 7.112266540527344
+    },
+    {
+      "elapsed_seconds": 22.97375726699829,
+      "rss_GiB": 7.642749786376953,
+      "available_GiB": 6.331199645996094
+    },
+    {
+      "elapsed_seconds": 27.980576992034912,
+      "rss_GiB": 10.742237091064453,
+      "available_GiB": 3.2299118041992188
+    },
+    {
+      "elapsed_seconds": 33.0107855796814,
+      "rss_GiB": 11.052623748779297,
+      "available_GiB": 2.9715194702148438
+    },
+    {
+      "elapsed_seconds": 40.94968557357788,
+      "rss_GiB": 9.000541687011719,
+      "available_GiB": 5.131752014160156
+    },
+    {
+      "elapsed_seconds": 45.95483875274658,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.085575103759766
+    },
+    {
+      "elapsed_seconds": 50.96294021606445,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.0901947021484375
+    },
+    {
+      "elapsed_seconds": 55.97012138366699,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.099464416503906
+    },
+    {
+      "elapsed_seconds": 60.97579073905945,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.108188629150391
+    },
+    {
+      "elapsed_seconds": 66.01426339149475,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.108592987060547
+    },
+    {
+      "elapsed_seconds": 73.95247602462769,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.110118865966797
+    },
+    {
+      "elapsed_seconds": 78.95776891708374,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.109172821044922
+    },
+    {
+      "elapsed_seconds": 83.99316263198853,
+      "rss_GiB": 9.08843994140625,
+      "available_GiB": 5.11114501953125
+    },
+    {
+      "elapsed_seconds": 89.01931238174438,
+      "rss_GiB": 7.739841461181641,
+      "available_GiB": 6.449146270751953
+    },
+    {
+      "elapsed_seconds": 94.05235981941223,
+      "rss_GiB": 10.21817398071289,
+      "available_GiB": 3.926349639892578
+    },
+    {
+      "elapsed_seconds": 99.06181597709656,
+      "rss_GiB": 10.468437194824219,
+      "available_GiB": 3.6617469787597656
+    },
+    {
+      "elapsed_seconds": 104.06727242469788,
+      "rss_GiB": 9.027099609375,
+      "available_GiB": 5.105556488037109
+    },
+    {
+      "elapsed_seconds": 112.00373435020447,
+      "rss_GiB": 9.114994049072266,
+      "available_GiB": 5.0261077880859375
+    },
+    {
+      "elapsed_seconds": 117.00838947296143,
+      "rss_GiB": 7.73370361328125,
+      "available_GiB": 6.407035827636719
+    },
+    {
+      "elapsed_seconds": 122.0147864818573,
+      "rss_GiB": 10.704471588134766,
+      "available_GiB": 3.4159317016601562
+    },
+    {
+      "elapsed_seconds": 127.01844334602356,
+      "rss_GiB": 7.822986602783203,
+      "available_GiB": 6.139331817626953
+    },
+    {
+      "elapsed_seconds": 132.03050661087036,
+      "rss_GiB": 7.824253082275391,
+      "available_GiB": 6.169734954833984
+    }
+  ],
+  "no_time_cutoff": true,
+  "memory_policy": {
+    "RSS_limit_GiB": 12.0,
+    "minimum_available_GiB": 1.5
+  },
+  "guard_wrapper_sha256": "1e4ffa630c35943a9fd3814ea593bd4ac1810c04454743f1f7d4c1ab2c5db551"
+}

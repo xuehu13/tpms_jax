@@ -1,0 +1,6 @@
+{
+  "reason": "operator interrupted attempt after scheduling overlap and prolonged no-progress observation; retry separately",
+  "log_idle_seconds": 361.2620208263397,
+  "not_a_numerical_failure": true,
+  "mechanical_cause_not_inferred": true
+}

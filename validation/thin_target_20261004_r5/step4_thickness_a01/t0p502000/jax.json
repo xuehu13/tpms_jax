@@ -1,0 +1,103 @@
+{
+  "reaction_amplitude_N": 0.39101195507428527,
+  "energy_N_mm": 0.019674765346032918,
+  "finite_response_normalized": {
+    "energy": 1.967476534603292e-05,
+    "reference_volume": 0.9999999999999957,
+    "current_volume": 0.9899999999999958,
+    "J_min": 0.9681439763952775,
+    "J_max": 1.0154453620405615,
+    "mean_first_piola": [
+      [
+        -0.0034988489878373104,
+        6.09334035764234e-08,
+        -2.2152836321575972e-07
+      ],
+      [
+        6.093340060278592e-08,
+        -0.0014624706879050448,
+        -4.2442845772692834e-08
+      ],
+      [
+        -2.1931316463354143e-07,
+        -4.2018504785106734e-08,
+        -0.003910119549695557
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.0035341908968220706,
+        6.154889034578299e-08,
+        -2.2152843158185057e-07
+      ],
+      [
+        6.154889034578171e-08,
+        -0.0014772431190917003,
+        -4.244293488461519e-08
+      ],
+      [
+        -2.2152843158187796e-07,
+        -4.2442934884613824e-08,
+        -0.003910119549536484
+      ]
+    ],
+    "Fz_top": -0.0039101195507428525,
+    "Fz_bottom": 0.003910119551021845,
+    "reduced_residual_l2": 9.8204262265853e-13
+  },
+  "detF_by_occupancy": {
+    "all_min": 0.9681439763952775,
+    "all_max": 1.0154453620405615,
+    "finite": true,
+    "solid": {
+      "points": 277118,
+      "min": 0.9945132956947572,
+      "p01": 0.9955990639671614,
+      "max": 1.0013698089960572
+    },
+    "void": {
+      "points": 1734889,
+      "min": 0.9681439763952775,
+      "p01": 0.9801672363605514,
+      "max": 1.0154453620405615
+    },
+    "transition": {
+      "points": 85145,
+      "min": 0.9907114078093316,
+      "p01": 0.993846911148242,
+      "max": 1.0038361672535268
+    }
+  },
+  "periodic_error_over_L": 1.734723475976807e-18,
+  "relative_force_balance": 7.135129848942712e-11,
+  "relative_macro_force_error": 2.678422103419811e-10,
+  "solve_seconds": 108.66037386801327,
+  "Newton_corrections": 2,
+  "relative_fluctuation_change": 0.0018611891107040142,
+  "field_sha256": "e3dc03b18fbd37d1eb364584c9263b7ca4ca411d6eb137ef77d89388fa0d238b",
+  "status": "ok",
+  "checks": {
+    "finite": true,
+    "positive_detF": true,
+    "void_min_detF_ge_0p1": true,
+    "reduced_residual_l2_le_1e-8": true,
+    "relative_force_balance_le_1e-6": true,
+    "relative_macro_reaction_vs_P_le_1e-6": true,
+    "XYZ_periodic_le_1e-10": true
+  },
+  "thickness_mm": 0.502,
+  "compression": 0.01,
+  "build_seconds": 3.245561113988515,
+  "body_seconds": 119.82931706099771,
+  "petsc_options": {
+    "ksp_rtol": 1e-08,
+    "ksp_atol": 1e-12,
+    "ksp_max_it": 3000,
+    "ksp_error_if_not_converged": true,
+    "ksp_gmres_modifiedgramschmidt": true,
+    "ksp_pc_side": "right",
+    "ksp_norm_type": "unpreconditioned"
+  },
+  "peak_host_RSS_GiB": 11.826854705810547,
+  "input_sha256": "28bbdc8d8f9353d690212bdfd91f5f1ad357f67c4b1b07a549ca727381bf4562"
+}

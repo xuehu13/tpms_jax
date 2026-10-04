@@ -1,0 +1,159 @@
+{
+  "state": "completed",
+  "returncode": 0,
+  "reason": null,
+  "elapsed_seconds": 156.7487394809723,
+  "samples": [
+    {
+      "elapsed_seconds": 0.0008816719055175781,
+      "rss_GiB": 0.00048065185546875,
+      "available_GiB": 13.296218872070312
+    },
+    {
+      "elapsed_seconds": 5.001338243484497,
+      "rss_GiB": 3.684234619140625,
+      "available_GiB": 9.911136627197266
+    },
+    {
+      "elapsed_seconds": 10.002136707305908,
+      "rss_GiB": 3.771129608154297,
+      "available_GiB": 9.818275451660156
+    },
+    {
+      "elapsed_seconds": 15.0031099319458,
+      "rss_GiB": 6.037879943847656,
+      "available_GiB": 7.482749938964844
+    },
+    {
+      "elapsed_seconds": 20.005304098129272,
+      "rss_GiB": 7.592365264892578,
+      "available_GiB": 6.015769958496094
+    },
+    {
+      "elapsed_seconds": 27.937100172042847,
+      "rss_GiB": 10.524250030517578,
+      "available_GiB": 3.221057891845703
+    },
+    {
+      "elapsed_seconds": 32.938090801239014,
+      "rss_GiB": 10.681678771972656,
+      "available_GiB": 3.0922889709472656
+    },
+    {
+      "elapsed_seconds": 37.93866014480591,
+      "rss_GiB": 8.998737335205078,
+      "available_GiB": 4.8028564453125
+    },
+    {
+      "elapsed_seconds": 42.9391930103302,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.729930877685547
+    },
+    {
+      "elapsed_seconds": 47.93976426124573,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.744907379150391
+    },
+    {
+      "elapsed_seconds": 52.94037890434265,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.757659912109375
+    },
+    {
+      "elapsed_seconds": 60.87473154067993,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.7663421630859375
+    },
+    {
+      "elapsed_seconds": 65.87531852722168,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.769622802734375
+    },
+    {
+      "elapsed_seconds": 70.87585067749023,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.771369934082031
+    },
+    {
+      "elapsed_seconds": 75.87634897232056,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 4.772449493408203
+    },
+    {
+      "elapsed_seconds": 80.87686681747437,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 5.156307220458984
+    },
+    {
+      "elapsed_seconds": 85.87743473052979,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 5.159236907958984
+    },
+    {
+      "elapsed_seconds": 90.87811326980591,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 5.1598968505859375
+    },
+    {
+      "elapsed_seconds": 98.81103324890137,
+      "rss_GiB": 9.08663558959961,
+      "available_GiB": 5.161224365234375
+    },
+    {
+      "elapsed_seconds": 103.81174159049988,
+      "rss_GiB": 7.737987518310547,
+      "available_GiB": 6.490345001220703
+    },
+    {
+      "elapsed_seconds": 108.81261920928955,
+      "rss_GiB": 10.298004150390625,
+      "available_GiB": 3.9126739501953125
+    },
+    {
+      "elapsed_seconds": 113.81320405006409,
+      "rss_GiB": 10.473011016845703,
+      "available_GiB": 3.7344818115234375
+    },
+    {
+      "elapsed_seconds": 118.81379508972168,
+      "rss_GiB": 9.0069580078125,
+      "available_GiB": 5.195793151855469
+    },
+    {
+      "elapsed_seconds": 123.81433129310608,
+      "rss_GiB": 9.094852447509766,
+      "available_GiB": 5.114521026611328
+    },
+    {
+      "elapsed_seconds": 131.74567484855652,
+      "rss_GiB": 9.094852447509766,
+      "available_GiB": 5.1195220947265625
+    },
+    {
+      "elapsed_seconds": 136.74624466896057,
+      "rss_GiB": 9.094852447509766,
+      "available_GiB": 5.135093688964844
+    },
+    {
+      "elapsed_seconds": 141.7469503879547,
+      "rss_GiB": 7.736785888671875,
+      "available_GiB": 6.505455017089844
+    },
+    {
+      "elapsed_seconds": 146.7476897239685,
+      "rss_GiB": 7.427890777587891,
+      "available_GiB": 6.594154357910156
+    },
+    {
+      "elapsed_seconds": 151.7482385635376,
+      "rss_GiB": 7.826404571533203,
+      "available_GiB": 6.1353607177734375
+    }
+  ],
+  "no_time_cutoff": true,
+  "memory_policy": {
+    "RSS_limit_GiB": 12.0,
+    "minimum_available_GiB": 1.5
+  },
+  "guard_wrapper_sha256": "c1b1fa3b88d75b05d02d89b2d26afddc39cc4dedad9396f498a01d5f60411396"
+}

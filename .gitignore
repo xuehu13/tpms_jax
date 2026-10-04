@@ -51,3 +51,8 @@ validation/**/*.console.txt
 
 # Repeated failed-attempt decks remain in the local frozen archive.
 validation/thin_target_20261004_r5/step3_xyz/attempt*/thin_shell.inp
+
+# Step 4 local execution protection and raw stopped-attempt files.
+validation/.thin_step4_process.lock
+validation/thin_target_20261004_r5/step4_thickness_a*/attempt*/thin_shell.inp
+validation/**/thread_observation.txt

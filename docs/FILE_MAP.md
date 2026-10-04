@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | START_HERE.md | README.md | 阅读入口 |
 | RESEARCH_BACKGROUND.md | docs/RESEARCH_BACKGROUND.md | 长期研究问题与方法边界 |
-| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁四步，第2步收口；用户选定XYZ；第3步收口，下一项已通过点的有效梯度 |
+| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁四步，第2步收口；用户选定XYZ；第3/4步限定收口：1%/5%厚度梯度与两点损失通过，形态/训练后置 |
 | PROJECT_OVERVIEW.md | docs/RESEARCH_STATUS.md | 当前事实及缺口 |
 | TPMS_RESEARCH_REVIEW.md | docs/同名文件 | 完整理论、符号和进度解释 |
 | output/pdf/TPMS_RESEARCH_REVIEW.pdf | docs/TPMS_RESEARCH_REVIEW.pdf | 同一综合报告的可分享导出 |
@@ -22,12 +22,13 @@
 
 | 程序 | 职责/适用状态 |
 | --- | --- |
+| scripts/thin_thickness_gradient.py | 第4步保存状态反力伴随、厚度扰动与两点损失；复用原求解器，不是通用训练框架 |
 | scripts/thin_target_finite.py、extract_thin_finite.py | 第3步分段XYZ Neo-Hookean压缩与只读壳ODB提取；1%/5%初筛通过、10%未接受、20%未提交 |
 | scripts/thin_target_linear.py、extract_thin_shell.py | 第2步薄壁线弹性对照、唯一XYZ边界诊断和只读ODB提取；复用同一FEM |
 | surface_distance.py、scripts/prepare_thin_target.py | 固定周期三角中面的距离、物理厚度投影及第1步真实Gauss准备；厚度AD接口与形态AD分开 |
 | geometry.py、volume.py | Gyroid/Primitive、光滑占据及体积 |
 | fem.py、density_fem.py、pbc.py | HEX8线性力学、真实Gauss场、周期约束/宏观松弛 |
-| hyperelastic_fem.py | 匹配Neo-Hookean及初始Gauss能量权重；共享XY/XYZ及实际Gauss入口；目标薄壁1%/5%初筛，10%未接受，平衡梯度待验证 |
+| hyperelastic_fem.py | 匹配Neo-Hookean及初始Gauss能量权重；共享XY/XYZ及实际Gauss入口；目标薄壁1%/5%初筛，10%未接受，反力厚度总梯度已专项验证，形态未认证 |
 | design_fem.py | 历史参数、通用伴随接口及已检查专用K/Vf规则 |
 | voxel_field.py | 周期数组插值，先G后投影 |
 | binary_gyroid.py | 二值实体参考几何、网格及审查；薄壁/变量壁宽G48限制保留 |
@@ -110,4 +111,10 @@
 
 第2步正式目录`validation/thin_target_20261004_r5/step2/`，其中`diagnostic_xyz/`为唯一边界诊断；说明见 [第2步报告](../validation/thin_target_20261004_r5/step2/README.md)。两份INP/JSON/模式图可随Git发布；NPZ、原始日志及source_*复现快照留本机。Abaqus原始目录为包根下`thin_target_20261004_r5_step2`和`thin_target_20261004_r5_step2_xyz`。本轮一次性后处理/输出修复/发布收据在`work/thin_target_step2_20261004/`，不是第二套维护程序。
 
-最新第3步正式证据位于`validation/thin_target_20261004_r5/step3_xyz/`；三个a0p*目录是观察点，attempt*是冻结停止记录，不是自动重跑待办。Abaqus四个独立包为E盘`thin_target_20261004_r5_step3_xyz_01`、`_05`、`_05_refined`、`_10`。Windows阅读/一次性审阅和发布记录在`work/thin_target_step3_20261004/`。完整结果见 [第3步报告](../validation/thin_target_20261004_r5/step3_xyz/README.md)，决定只读step3_decision.json。没有20%/设计梯度/训练结果。
+最新第3步正式证据位于`validation/thin_target_20261004_r5/step3_xyz/`；三个a0p*目录是观察点，attempt*是冻结停止记录，不是自动重跑待办。Abaqus四个独立包为E盘`thin_target_20261004_r5_step3_xyz_01`、`_05`、`_05_refined`、`_10`。Windows阅读/一次性审阅和发布记录在`work/thin_target_step3_20261004/`。完整结果见 [第3步报告](../validation/thin_target_20261004_r5/step3_xyz/README.md)，决定只读step3_decision.json。该第3步目录没有20%/设计梯度/训练结果；第4步另见下述目录。
+
+## 最新第4步证据与发布记录
+
+正式`validation/thin_target_20261004_r5/step4_thickness_a01/`保存总报告README、主决定step4_decision、1%伴随、4厚度扰动和3停止记录；同级`step4_thickness_a05/`保存5%伴随/2扰动。source_at_run与原数组/日志留本机，关键JSON/图/两份壳INP发布。报告唯一正文见 [第4步报告](../validation/thin_target_20261004_r5/step4_thickness_a01/README.md)，不新增活动主规划。
+
+Abaqus包根下`thin_target_20261005_r5_step4_t0p498000`及`t0p502000`为本轮2项独立1%壳厚分析，包含INP/ODB/日志/只读提取结果。5%没有新增壳厚导数。Windows`work/thin_target_step4_20261005/`保留一次性监测/汇总/文档导出/验证/Git发布收据；单进程锁只是本机调度保护，不是新的FEM模块。正式维护仅增加一个梯度验证脚本和两个有针对性的测试。

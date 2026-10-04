@@ -1,0 +1,11 @@
+{
+  "a01_thickness_gradient_pass": true,
+  "gradients_N_per_mm": [
+    0.9791705821111385,
+    0.9791651010158109
+  ],
+  "adjoint_N_per_mm": 0.9791636588739803,
+  "a05_extension": "reuse accepted saved a05 state, one adjoint and one +/-0.001 mm pair; no new shell/mesh/shape case",
+  "two_point_loss": "0.5*sum((Q_i/Q_i0-0.98)^2), i=1%,5%; fixed Q_i0 and no optimization",
+  "loss_gradient_relative_difference_limit": 0.01
+}

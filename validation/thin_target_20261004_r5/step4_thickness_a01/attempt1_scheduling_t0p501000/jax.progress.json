@@ -1,0 +1,39 @@
+{
+  "state": "stopped",
+  "returncode": 15,
+  "reason": "memory_protection",
+  "elapsed_seconds": 23.05205464363098,
+  "samples": [
+    {
+      "elapsed_seconds": 0.0004227161407470703,
+      "rss_GiB": 0.00042724609375,
+      "available_GiB": 6.396015167236328
+    },
+    {
+      "elapsed_seconds": 5.003966808319092,
+      "rss_GiB": 3.576427459716797,
+      "available_GiB": 3.2383499145507812
+    },
+    {
+      "elapsed_seconds": 10.009648084640503,
+      "rss_GiB": 3.7553062438964844,
+      "available_GiB": 2.9993820190429688
+    },
+    {
+      "elapsed_seconds": 17.945177793502808,
+      "rss_GiB": 3.7701187133789062,
+      "available_GiB": 3.0669784545898438
+    },
+    {
+      "elapsed_seconds": 22.94870615005493,
+      "rss_GiB": 5.582454681396484,
+      "available_GiB": 1.42266845703125
+    }
+  ],
+  "no_time_cutoff": true,
+  "memory_policy": {
+    "RSS_limit_GiB": 12.0,
+    "minimum_available_GiB": 1.5
+  },
+  "guard_wrapper_sha256": "1e4ffa630c35943a9fd3814ea593bd4ac1810c04454743f1f7d4c1ab2c5db551"
+}

@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-05",
+  "stage": 4,
+  "status": "thickness_equilibrium_gradient_and_two_point_loss_pass",
+  "target": "t/L=.05, L=10 mm, XYZ axial compression with fixed lateral macro strain; N64 reference Gauss field",
+  "rows": [
+    {
+      "compression": 0.01,
+      "reaction_amplitude_N": 0.3890530227782958,
+      "adjoint_total_N_per_mm": 0.9791636588739803,
+      "fixed_state_partial_N_per_mm": 0.7838049208842127,
+      "implicit_correction_N_per_mm": 0.1953587379897675,
+      "implicit_fraction_of_total": 0.19951591975382987,
+      "dimensionless_thickness_sensitivity": 1.2583935884646276,
+      "central_differences": [
+        {
+          "h_mm": 0.002,
+          "gradient_N_per_mm": 0.9791705821111385,
+          "relative_ad_difference": 7.070561795829988e-06
+        },
+        {
+          "h_mm": 0.001,
+          "gradient_N_per_mm": 0.9791651010158109,
+          "relative_ad_difference": 1.4728302235589297e-06
+        }
+      ],
+      "numerical_derivative_pass": true,
+      "adjoint_relative_residual": 9.850922759657146e-09,
+      "adjoint_process_seconds": 108.8057427406311,
+      "shell_gradient_N_per_mm": 0.9295344352722168,
+      "shell_direction_pass": true,
+      "shell_gradient_relative_difference": 0.05339148472453248,
+      "shell_dimensionless_thickness_sensitivity": 1.258417863320246
+    },
+    {
+      "compression": 0.05,
+      "reaction_amplitude_N": 1.7396392699188836,
+      "adjoint_total_N_per_mm": 5.012673911818862,
+      "fixed_state_partial_N_per_mm": 3.520740405071158,
+      "implicit_correction_N_per_mm": 1.4919335067477033,
+      "implicit_fraction_of_total": 0.29763226832490114,
+      "dimensionless_thickness_sensitivity": 1.4407222228469796,
+      "central_differences": [
+        {
+          "h_mm": 0.001,
+          "gradient_N_per_mm": 5.012684019117586,
+          "relative_ad_difference": 2.0163487395308266e-06
+        }
+      ],
+      "numerical_derivative_pass": true,
+      "adjoint_relative_residual": 9.595386880370362e-09,
+      "adjoint_process_seconds": 110.19501233100891
+    }
+  ],
+  "two_point_loss": {
+    "formula": "0.5*sum((Q_i/Q_i0-0.98)^2), i=1%,5%, fixed Q_i0",
+    "baseline_value": 0.0004000000000000007,
+    "force_cotangents_per_N": [
+      0.05140687471639859,
+      0.011496636311809968
+    ],
+    "adjoint_chain_gradient_per_mm": 0.10796463245246439,
+    "central_difference_h_mm": 0.001,
+    "central_difference_per_mm": 0.10796799612953212,
+    "relative_difference": 3.115536070774638e-05,
+    "pass": true
+  },
+  "processes": [
+    {
+      "loading": 0.01,
+      "directory": "adjoint",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 108.8057427406311,
+      "stop_context": null
+    },
+    {
+      "loading": 0.01,
+      "directory": "attempt1_memory_t0p498000",
+      "state": "stopped",
+      "returncode": 15,
+      "guard_reason": "memory_protection",
+      "seconds": 104.01753258705139,
+      "stop_context": {
+        "reason": "guard policy, not OOM or numerical divergence",
+        "stopped_sample_RSS_GiB": 11.764549255371094,
+        "available_GiB": 2.355743408203125,
+        "old_policy": "min(12 GiB, 75% WSL MemTotal) RSS or <1 GiB available",
+        "new_policy": "min(12 GiB, 80% WSL MemTotal) RSS or <1.5 GiB available",
+        "unchanged": "same input, mesh, thickness perturbation, material, Newton and PETSc settings",
+        "archived_files_sha256": {
+          "input.json": "fa13743b579d1e21ddfd8547eb38d2f691f3921a900aa0b5426cd7aa1e50db44",
+          "thin_shell.inp": "a9392cebba6a3711d5080ba3728ec4d193af3028edf8c711cb7a1bf797222b1d",
+          "jax.log": "0b805968764240fe65d3353fdd740ecfc492762a1b4a466657a77a92bb4ae3e2",
+          "jax.progress.json": "da7f2d7b2c054fa3a297f7feabb59d2395f16fe80ce6e15c96417912fcd56105",
+          "shell.json": "50f74e86eaa38b7780700f35878035393d1516199f73c11cafd22a1d3a9a3211",
+          "shell_field.npz": "157069786ec6f351a152bb43e2715f207f875314241103fa89f57edfa7948ab0"
+        },
+        "no_extra_Abaqus_analysis": true
+      }
+    },
+    {
+      "loading": 0.01,
+      "directory": "attempt1_overlap_t0p499000",
+      "state": "stopped",
+      "returncode": 15,
+      "guard_reason": null,
+      "seconds": 469.14894914627075,
+      "stop_context": {
+        "reason": "operator interrupted attempt after scheduling overlap and prolonged no-progress observation; retry separately",
+        "log_idle_seconds": 361.2620208263397,
+        "not_a_numerical_failure": true,
+        "mechanical_cause_not_inferred": true
+      }
+    },
+    {
+      "loading": 0.01,
+      "directory": "attempt1_scheduling_t0p501000",
+      "state": "stopped",
+      "returncode": 15,
+      "guard_reason": "memory_protection",
+      "seconds": 23.05205464363098,
+      "stop_context": {
+        "reason": "agent scheduling mistake: overlap with .499 process; guard stopped new .501 process before completion",
+        "not_a_standalone_memory_or_mechanical_failure": true,
+        "archived_files_sha256": {
+          "input.json": "4921d084aac30370b2f90bc526a901361d15cc93d88515bbb4530b0aed3172ad",
+          "jax.log": "21c42839327563824943ac81a197019e4a190869e29a6d147eee387151b82961",
+          "jax.progress.json": "223fa890614ce2610d7e0ff7104302cba7d9e48eaa4c8e6b637ad56e96adbab4"
+        },
+        "prevention": "single kernel-held process lock added to the local memory wrapper"
+      }
+    },
+    {
+      "loading": 0.01,
+      "directory": "t0p498000",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 131.92259573936462,
+      "stop_context": null
+    },
+    {
+      "loading": 0.01,
+      "directory": "t0p499000",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 126.74468159675598,
+      "stop_context": null
+    },
+    {
+      "loading": 0.01,
+      "directory": "t0p501000",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 123.80973148345947,
+      "stop_context": null
+    },
+    {
+      "loading": 0.01,
+      "directory": "t0p502000",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 137.0348687171936,
+      "stop_context": null
+    },
+    {
+      "loading": 0.05,
+      "directory": "adjoint",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 110.19501233100891,
+      "stop_context": null
+    },
+    {
+      "loading": 0.05,
+      "directory": "t0p499000",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 156.7487394809723,
+      "stop_context": null
+    },
+    {
+      "loading": 0.05,
+      "directory": "t0p501000",
+      "state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "seconds": 156.745215177536,
+      "stop_context": null
+    }
+  ],
+  "completed_adjoint_processes": 2,
+  "completed_forward_perturbations": 6,
+  "stopped_processes": 3,
+  "Abaqus_analyses": 2,
+  "new_base_forward_solves": 0,
+  "completed_process_seconds": 1052.006587266922,
+  "all_attempt_process_seconds": 1648.2251236438751,
+  "new_training": 0,
+  "new_optimization": 0,
+  "shape_gradient_certified": false,
+  "arbitrary_loss_N64_ad_wrapper_certified": false,
+  "20pct_submitted": false,
+  "claim": "Local first-order thickness response of this fixed representation; a01 independent shell direction/magnitude, a05 numerical total derivative; no full-curve or whole-family precision certification"
+}

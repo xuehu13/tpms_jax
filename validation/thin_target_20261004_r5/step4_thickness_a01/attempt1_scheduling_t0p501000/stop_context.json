@@ -1,0 +1,10 @@
+{
+  "reason": "agent scheduling mistake: overlap with .499 process; guard stopped new .501 process before completion",
+  "not_a_standalone_memory_or_mechanical_failure": true,
+  "archived_files_sha256": {
+    "input.json": "4921d084aac30370b2f90bc526a901361d15cc93d88515bbb4530b0aed3172ad",
+    "jax.log": "21c42839327563824943ac81a197019e4a190869e29a6d147eee387151b82961",
+    "jax.progress.json": "223fa890614ce2610d7e0ff7104302cba7d9e48eaa4c8e6b637ad56e96adbab4"
+  },
+  "prevention": "single kernel-held process lock added to the local memory wrapper"
+}

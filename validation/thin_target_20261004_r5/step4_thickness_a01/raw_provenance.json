@@ -1,0 +1,104 @@
+[
+  {
+    "case": "thin_target_20261005_r5_step4_t0p498000",
+    "analysis_complete": true,
+    "matched_formal_input": "t0p498000",
+    "files": {
+      "extract_thin_finite.py": {
+        "bytes": 5527,
+        "sha256": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f"
+      },
+      "input.json": {
+        "bytes": 3577,
+        "sha256": "fa13743b579d1e21ddfd8547eb38d2f691f3921a900aa0b5426cd7aa1e50db44"
+      },
+      "shell.json": {
+        "bytes": 3610,
+        "sha256": "50f74e86eaa38b7780700f35878035393d1516199f73c11cafd22a1d3a9a3211"
+      },
+      "shell_field.npz": {
+        "bytes": 373382,
+        "sha256": "157069786ec6f351a152bb43e2715f207f875314241103fa89f57edfa7948ab0"
+      },
+      "thin_shell.com": {
+        "bytes": 3933,
+        "sha256": "aa51e9b9a69d21c3b0b135ec2a7d72d26a4533cb2f279335f34d0fc80bbc91a1"
+      },
+      "thin_shell.dat": {
+        "bytes": 10926,
+        "sha256": "e991c973a63b73bb89913e2245c443ecf0baa74d4ace3c2338972ca5327938ef"
+      },
+      "thin_shell.inp": {
+        "bytes": 1120080,
+        "sha256": "a9392cebba6a3711d5080ba3728ec4d193af3028edf8c711cb7a1bf797222b1d"
+      },
+      "thin_shell.msg": {
+        "bytes": 28568,
+        "sha256": "b44397abf9399feda2edacda5ed0656a70a4abe437b9fe7abf8b06926aa941c0"
+      },
+      "thin_shell.odb": {
+        "bytes": 11518972,
+        "sha256": "b71b24014da218df85f0541b5c14354ca00311af7eb7764283f0763a69134ed1"
+      },
+      "thin_shell.prt": {
+        "bytes": 698,
+        "sha256": "33b7ce62a25b0fb56138420a5882423a511de265c87bd1ec7d1810813e47855b"
+      },
+      "thin_shell.sta": {
+        "bytes": 1194,
+        "sha256": "68185e0619dfcd52cc78f0e1b983cb62e7de7a71c552fe15e40ba866bccb340e"
+      }
+    }
+  },
+  {
+    "case": "thin_target_20261005_r5_step4_t0p502000",
+    "analysis_complete": true,
+    "matched_formal_input": "t0p502000",
+    "files": {
+      "extract_thin_finite.py": {
+        "bytes": 5527,
+        "sha256": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f"
+      },
+      "input.json": {
+        "bytes": 3577,
+        "sha256": "28bbdc8d8f9353d690212bdfd91f5f1ad357f67c4b1b07a549ca727381bf4562"
+      },
+      "shell.json": {
+        "bytes": 3606,
+        "sha256": "fa2e224c5affea5e58bf240c85f84758beafb57ac4498c5749556f9be8189966"
+      },
+      "shell_field.npz": {
+        "bytes": 373348,
+        "sha256": "95f7a2e8bab842bcaabb73ac71f397ce74737b6a5ea88d6421c8be940ca56c0b"
+      },
+      "thin_shell.com": {
+        "bytes": 3933,
+        "sha256": "aa51e9b9a69d21c3b0b135ec2a7d72d26a4533cb2f279335f34d0fc80bbc91a1"
+      },
+      "thin_shell.dat": {
+        "bytes": 10926,
+        "sha256": "e5d7bc0039bc9d2afe0c29f9917f2147a88edd082940ed0ddee1a07d6ae58425"
+      },
+      "thin_shell.inp": {
+        "bytes": 1120080,
+        "sha256": "6b7740b72adbcee57d81b8177a95ad54f41e14071819cdb0b878faba8b9ec720"
+      },
+      "thin_shell.msg": {
+        "bytes": 28495,
+        "sha256": "92f5bafdb1a110057ae7472f69f11bd7370ad4876de0a6b2ff11d59c4156e35a"
+      },
+      "thin_shell.odb": {
+        "bytes": 11518972,
+        "sha256": "606362e36881d1a7e50becbd4f20cc08142b57d122edb5d33913f01b473fb408"
+      },
+      "thin_shell.prt": {
+        "bytes": 698,
+        "sha256": "33b7ce62a25b0fb56138420a5882423a511de265c87bd1ec7d1810813e47855b"
+      },
+      "thin_shell.sta": {
+        "bytes": 1194,
+        "sha256": "c0e728060532752f6a610cdf0a1640c120f990d94f8d35b857f3db50bb5ca48e"
+      }
+    }
+  }
+]

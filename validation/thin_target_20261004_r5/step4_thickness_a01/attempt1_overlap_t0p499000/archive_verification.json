@@ -1,0 +1,10 @@
+{
+  "original_files_sha256": {
+    "input.json": "70a87a9455d8ac385cde364614741ac10d9e4f4af82f5b9df00cc822058d5654",
+    "jax.log": "234122ae2371bbbebed06fc89e0ebe92e66d94d575c688db10ffdb5789c32669",
+    "jax.progress.json": "d2b9ac37f3a39211a9b67432211d8c5bb0b6bbafdc8266db531ae7ce6b8db4b2",
+    "thread_observation.txt": "38a043b246dcb461681948c57e1bdde46276eb9cc19bfb5abf002e07832edf60",
+    "stop_context.json": "4db175adf775cfa702c36c4da4913e7ce4d8516660c28e683de103bb2e0c4f23"
+  },
+  "guard_provenance_note": "Final recorded wrapper hash was evaluated after local lock addition; executed initial wrapper was 1e4ffa630c35943a9fd3814ea593bd4ac1810c04454743f1f7d4c1ab2c5db551. Future wrapper snapshots its hash once at start."
+}
