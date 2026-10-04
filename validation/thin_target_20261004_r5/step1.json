@@ -1,0 +1,155 @@
+{
+  "case": {
+    "case_id": "diverse28_t005",
+    "N": 64,
+    "cell_size_mm": 10.0,
+    "thickness_over_L": 0.05,
+    "thickness_mm": 0.5,
+    "reference_original_thickness_mm": 0.3285947046369498,
+    "interface_10_90_over_L": 0.005,
+    "interface_width_fraction_of_nominal_thickness": 0.1,
+    "interface_scale_policy": "Fixed physical ell for later thickness derivatives",
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eta": 0.0001,
+    "material_note": "Normalized model modulus 10 MPa and nu=.3; match these in the future shell case, not the old plastic reference",
+    "geometry": "periodic distance-neighbourhood of the archived triangular midsurface, clipped to unit cube",
+    "geometry_periodic_axes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "mechanical_periodic_axes": [
+      "x",
+      "y"
+    ],
+    "macro_lateral": "fixed",
+    "z_boundary": "existing flat fluctuation w_z=0 on z end planes, existing in-plane rigid-mode pins",
+    "source_inputs": [
+      {
+        "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus/ingredients/shell_mesh.inc",
+        "copied_to": "shell_mesh.inc",
+        "sha256": "087cc3659d09c2a665217e3c3ea72b67049775fd932198897e8bda0c76f1c460"
+      },
+      {
+        "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/case_used.json",
+        "copied_to": "reference_case.json",
+        "sha256": "5ea175b0c73aa45a043b6766a7d000408fc52178e212bcb09e959fd54f4bff43"
+      },
+      {
+        "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus/ingredients/pbc_map.json",
+        "copied_to": "reference_xy_pbc.json",
+        "sha256": "922dd24e62c2f4dcd58d0e18a3dc768d5adc2d2cf139b74daac278d36b38d2f1"
+      }
+    ]
+  },
+  "mesh": {
+    "nodes": 9351,
+    "triangles": 17986,
+    "area_over_L2": 3.0432626755347663,
+    "minimum_triangle_area_over_L2": 3.664233037287653e-05,
+    "periodic_components": 1,
+    "periodic_edges_with_count_not_two": 0,
+    "periodic_orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "low_nodes": 124,
+        "high_nodes": 124,
+        "max_coordinate_mismatch_over_L": 0.0
+      },
+      {
+        "axis": 1,
+        "low_nodes": 120,
+        "high_nodes": 120,
+        "max_coordinate_mismatch_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "low_nodes": 126,
+        "high_nodes": 126,
+        "max_coordinate_mismatch_over_L": 0.0
+      }
+    ],
+    "estimated_node_normal_error_over_L_max": 0.000426895483505285,
+    "estimated_node_normal_error_over_L_p95": 0.00032497906600565307,
+    "error_definition": "abs(implicit value)/gradient norm; first-order nodal indicator, not a global bound",
+    "pass": true
+  },
+  "offsets": {
+    "all_facet_normal_endpoint_distance_ratio_quantiles": [
+      0.9766447585105537,
+      0.9999999999999937,
+      1.0,
+      1.0000000000000107
+    ],
+    "endpoints_short_by_more_than_2_percent": 3,
+    "normal_line_samples": 512,
+    "sampling": "area-weighted triangle centroids, fixed RNG; not a global thickness bound",
+    "normal_line_band_width_over_L_quantiles": [
+      0.04999998807907105,
+      0.04999998807907105,
+      0.05,
+      0.050000011920928955,
+      0.050000011920928955
+    ],
+    "normal_line_bracket_failures": 0,
+    "global_offset_injectivity": "Not proved; local facet and connectivity diagnostics only"
+  },
+  "coverage": {
+    "N": 64,
+    "cells": 262144,
+    "Gauss_points_per_cell": 8,
+    "Gauss_points": 2097152,
+    "thickness_over_cell_width": 3.2,
+    "solid_points_rho_ge_095": 275886,
+    "transition_points_rho_005_to_095": 85124,
+    "void_points_rho_le_005": 1736142,
+    "weighted_projected_Vf": 0.15164916224866734,
+    "same_Gauss_binary_Vf": 0.15163373947143552,
+    "area_times_thickness_nominal_Vf": 0.15216313377673832,
+    "mid_facet_cell_max_rho_min": 0.999999978996472,
+    "mid_facet_cells_with_no_rho_ge_05": 0,
+    "cell_mean_rho_ge_05_periodic_components": 1,
+    "connectivity_definition": "6-neighbour thresholded cell-mean Gauss occupancy with XYZ wrap; geometric diagnostic, not mechanical proof",
+    "reference_volume": 1.0,
+    "minimum_hex_mapping_determinant": 4.768371582031165e-07
+  },
+  "periodic_distance_max_error_over_L": [
+    3.0531133177191805e-16,
+    1.942890293094024e-16,
+    2.463307335887066e-16
+  ],
+  "step1_pass": true,
+  "interpretation": "Geometry/integration readiness only; bending, force response and equilibrium gradients are not validated",
+  "no_displacement_solve": true,
+  "no_Abaqus_job": true,
+  "environment": {
+    "libigl": "2.6.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "jax": "0.11.2",
+    "jax-fem": "0.0.12",
+    "fenics-basix": "0.10.0"
+  },
+  "timing": {
+    "tree_and_mesh_seconds": 0.4306076870416291,
+    "Gauss_query_seconds": 1.2469307139981538,
+    "total_seconds": 853.6714399239863
+  },
+  "maximum_process_RSS_GiB": 3.9224891662597656,
+  "input_sha256": {
+    "input.json": "960372eee8913e4d2d0602f4c3a25273a4a76cf15b29c206d456230c054f3c99",
+    "input/shell_mesh.inc": "087cc3659d09c2a665217e3c3ea72b67049775fd932198897e8bda0c76f1c460"
+  },
+  "source_sha256": {
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "scripts/prepare_thin_target.py": "8994144d793e0d57c037dd942f8a5943afb827418b83713d999560a3d15a66f3",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "pixi.toml": "58390b145f3a291cce65302d6576521e87aeee104ade1df05a31b901cb5e71d6",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "gauss_field_sha256": "b1f1bf51585074f6bb01da4875a697c1b8ff3c8f350885a4cf529414b6759f49"
+}

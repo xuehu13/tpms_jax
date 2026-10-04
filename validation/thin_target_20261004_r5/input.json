@@ -1,0 +1,44 @@
+{
+  "case_id": "diverse28_t005",
+  "N": 64,
+  "cell_size_mm": 10.0,
+  "thickness_over_L": 0.05,
+  "thickness_mm": 0.5,
+  "reference_original_thickness_mm": 0.3285947046369498,
+  "interface_10_90_over_L": 0.005,
+  "interface_width_fraction_of_nominal_thickness": 0.1,
+  "interface_scale_policy": "Fixed physical ell for later thickness derivatives",
+  "E_s": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "material_note": "Normalized model modulus 10 MPa and nu=.3; match these in the future shell case, not the old plastic reference",
+  "geometry": "periodic distance-neighbourhood of the archived triangular midsurface, clipped to unit cube",
+  "geometry_periodic_axes": [
+    "x",
+    "y",
+    "z"
+  ],
+  "mechanical_periodic_axes": [
+    "x",
+    "y"
+  ],
+  "macro_lateral": "fixed",
+  "z_boundary": "existing flat fluctuation w_z=0 on z end planes, existing in-plane rigid-mode pins",
+  "source_inputs": [
+    {
+      "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus/ingredients/shell_mesh.inc",
+      "copied_to": "shell_mesh.inc",
+      "sha256": "087cc3659d09c2a665217e3c3ea72b67049775fd932198897e8bda0c76f1c460"
+    },
+    {
+      "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/case_used.json",
+      "copied_to": "reference_case.json",
+      "sha256": "5ea175b0c73aa45a043b6766a7d000408fc52178e212bcb09e959fd54f4bff43"
+    },
+    {
+      "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus/ingredients/pbc_map.json",
+      "copied_to": "reference_xy_pbc.json",
+      "sha256": "922dd24e62c2f4dcd58d0e18a3dc768d5adc2d2cf139b74daac278d36b38d2f1"
+    }
+  ]
+}

@@ -26,6 +26,7 @@ pytest = ">=8.0,<10"
 jax = { version = ">=0.11.2, <0.12", extras = ["cuda12"] }
 # 官方发布版(与旧环境验证的源码同为 0.0.12;选用 PyPI 是因为 WSL 到 GitHub 连接不稳定)
 jax-fem = "==0.0.12"
+libigl = "==2.6.3"
 
 [tasks]
 test = "pytest tests/ -v"

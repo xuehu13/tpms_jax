@@ -1,0 +1,51 @@
+{
+  "facet_flags": [
+    {
+      "facet_index_zero_based": 3163,
+      "offset_sign": -1,
+      "endpoint_distance_ratio": 0.9766447585105537,
+      "nearest_facet_index": 10686,
+      "shared_periodic_vertices": 2,
+      "normal_angle_deg": 15.408591892275911,
+      "normal_line_width_over_L": 0.050605650851503016,
+      "width_relative_to_nominal": 1.0121130170300603
+    },
+    {
+      "facet_index_zero_based": 7650,
+      "offset_sign": 1,
+      "endpoint_distance_ratio": 0.9796506392779027,
+      "nearest_facet_index": 16188,
+      "shared_periodic_vertices": 2,
+      "normal_angle_deg": 15.207652593315993,
+      "normal_line_width_over_L": 0.050527195632457736,
+      "width_relative_to_nominal": 1.0105439126491547
+    },
+    {
+      "facet_index_zero_based": 16190,
+      "offset_sign": 1,
+      "endpoint_distance_ratio": 0.9796506394374701,
+      "nearest_facet_index": 7555,
+      "shared_periodic_vertices": 2,
+      "normal_angle_deg": 15.207652549236736,
+      "normal_line_width_over_L": 0.05052719558589161,
+      "width_relative_to_nominal": 1.010543911717832
+    }
+  ],
+  "facet_interpretation": "Nearest faces share a periodic edge/vertex; local faceting effect, not a detected distant-sheet collision",
+  "local_offset_screen_pass": true,
+  "void_channel_diagnostics": [
+    {
+      "implicit_side": -1,
+      "unthickened_sign_region_components": 1,
+      "high_void_cell_region_components": 1
+    },
+    {
+      "implicit_side": 1,
+      "unthickened_sign_region_components": 1,
+      "high_void_cell_region_components": 1
+    }
+  ],
+  "channel_definition": "Same N64 centre-sign regions before thickness, versus cells with mean Gauss rho<.05; diagnostic only",
+  "global_injectivity_not_proved": true,
+  "no_additional_FEM_or_Abaqus_solve": true
+}

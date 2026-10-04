@@ -1,9 +1,10 @@
 # 程序入口与范围
 
-维护FEM只有根目录的一套实现；不从validation/source_*或Windows历史副本执行。当前研究任务只看 [唯一主规划](../docs/RESEARCH_PLAN.md)。新薄壁四步尚未启动，下面入口不是批量待办。
+维护FEM只有根目录的一套实现；不从validation/source_*或Windows历史副本执行。当前研究任务只看 [唯一主规划](../docs/RESEARCH_PLAN.md)。5%目标第1步已完成表示初筛，下一步为小变形对照；下面历史入口不是批量待办。
 
 | 入口 | 用途/边界 |
 | --- | --- |
+| prepare_thin_target.py | 第1步周期三角距离/恒厚占据及真实N64 Gauss检查，拒绝覆盖完成目录；没有位移求解 |
 | m1_volume.py、m2_*_cube.py、m3_gyroid_first.py／m3_lateral_relaxation.py、m4_numerical_study.py | 早期几何/线性基准，参数名c不是恒定物理厚度 |
 | capture_binary_projection_reference.py | 在Problem自身Gauss点评估解析或有符号数组输入；旧占据数组仅保留诊断 |
 | prepare_abaqus_binary.py、run_abaqus_binary.ps1、extract_abaqus_binary.py | 二值贴体小变形独立对照；薄壁裁剪限制保留 |

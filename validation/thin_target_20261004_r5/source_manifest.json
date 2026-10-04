@@ -1,0 +1,5 @@
+{
+  "base_commit": "d78cc5864c877d3260f20078ffaa4e40d79a8280",
+  "new_case": "User explicitly changed thickness to .05; independent of old .328595mm shell and Gyroid c-band inputs",
+  "stage": "Step 1; no mechanical solve"
+}

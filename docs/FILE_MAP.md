@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | START_HERE.md | README.md | 阅读入口 |
 | RESEARCH_BACKGROUND.md | docs/RESEARCH_BACKGROUND.md | 长期研究问题与方法边界 |
-| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 目标薄壁前向/梯度四步，尚未执行 |
+| RESEARCH_PLAN.md | docs/RESEARCH_PLAN.md | 5%目标薄壁前向/梯度四步，第1步表示初筛完成 |
 | PROJECT_OVERVIEW.md | docs/RESEARCH_STATUS.md | 当前事实及缺口 |
 | TPMS_RESEARCH_REVIEW.md | docs/同名文件 | 完整理论、符号和进度解释 |
 | output/pdf/TPMS_RESEARCH_REVIEW.pdf | docs/TPMS_RESEARCH_REVIEW.pdf | 同一综合报告的可分享导出 |
@@ -22,6 +22,7 @@
 
 | 程序 | 职责/适用状态 |
 | --- | --- |
+| surface_distance.py、scripts/prepare_thin_target.py | 固定周期三角中面的距离、物理厚度投影及第1步真实Gauss准备；厚度AD接口与形态AD分开 |
 | geometry.py、volume.py | Gyroid/Primitive、光滑占据及体积 |
 | fem.py、density_fem.py、pbc.py | HEX8线性力学、真实Gauss场、周期约束/宏观松弛 |
 | hyperelastic_fem.py | 匹配Neo-Hookean及初始Gauss能量权重；完整体通过，TPMS前向精度待验证 |
@@ -54,7 +55,7 @@
 
 早期验证全部索引在正式`validation/README.md`，包括均匀、单元矩阵、同离散、二值实体/质量、投影/网格/梯度。M4原10行CSV在`results/m4_numerical_study.csv`，Git忽略，保持原样。
 
-已完成计划：WSL `docs/RESEARCH_PLAN_ROUND{1,2,3,4}_COMPLETED.md`；Windows第四轮原文在`history/planning_snapshots_20261004/RESEARCH_PLAN_ROUND4_COMPLETED.md`。它们不是第二份主规划。未执行的中等厚度成本/加密计划原文保存在`history/planning_snapshots_20261004/RESEARCH_PLAN_MIDDLE_GYROID_SUPERSEDED.md`；正式副本在`docs/history/thin_target_correction_20261004/`。新实验拟名`validation/thin_target_20261004_r5/`，尚未启动或建立。
+已完成计划：WSL `docs/history/completed_plans/RESEARCH_PLAN_ROUND{1,2,3,4}_COMPLETED.md`；Windows第四轮原文在`history/planning_snapshots_20261004/RESEARCH_PLAN_ROUND4_COMPLETED.md`。它们不是第二份主规划。未执行的中等厚度成本/加密计划原文保存在`history/planning_snapshots_20261004/RESEARCH_PLAN_MIDDLE_GYROID_SUPERSEDED.md`；正式副本在`docs/history/thin_target_correction_20261004/`。新实验`validation/thin_target_20261004_r5/`已启动：input.json与原中面输入、实际Gauss距离/占据缓存、step1.json及截面图；它是独立5%目标，不覆盖旧结果。
 
 ## Abaqus原始包
 
@@ -101,4 +102,6 @@
 
 ## 2026-10-04维护与Git发布
 
-`work/repository_cleanup_20261004/`保存整理前源码/文档、Git清单、安装包RECORD核对、维护测试日志、冻结哈希验证和发布收据；`transport.git`/bundle仅传输工具，不是新维护仓库。正式`docs/history/repository_cleanup_20261004/`保存小型维护摘要与验证收据。没有再创建一份研究报告或活动规划；新薄壁实验目录仍未创建。
+`work/repository_cleanup_20261004/`保存整理前源码/文档、Git清单、安装包RECORD核对、维护测试日志、冻结哈希验证和发布收据；`transport.git`/bundle仅传输工具，不是新维护仓库。正式`docs/history/repository_cleanup_20261004/`保存小型维护摘要与验证收据。没有再创建一份研究报告或活动规划；此处记录的是维护时的状态；最新5%薄壁实验目录现已另建。
+
+第1步正式目录`validation/thin_target_20261004_r5/`；Windows说明为 [第1步报告](../validation/thin_target_20261004_r5/README.md)，图与小收据在work/thin_target_20261004_r5/。大Gauss缓存仅在正式WSL，避免重复复制。
