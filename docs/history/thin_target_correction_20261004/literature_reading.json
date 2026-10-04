@@ -1,0 +1,78 @@
+[
+  {
+    "id": "paper_17",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+    "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0",
+    "pages": 18,
+    "selected_pages": [
+      1,
+      2,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "id": "paper_04",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour.pdf",
+    "sha256": "e8db9aa5fcca053f9c2b5bca6cd1c0d7de23472e296ea50c5a9d04f5fc7c82f6",
+    "pages": 16,
+    "selected_pages": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      14,
+      15
+    ]
+  },
+  {
+    "id": "paper_12",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Style- Constrained Inverse Design of MicrostructuresWith Tailored Mechanical Properties UsingUnconditional Diffusion Models.pdf",
+    "sha256": "9ccbff875fddbcfc3b2acd2bb24dc9ea6415534a55cf8d47d4ae382f716d35ad",
+    "pages": 30,
+    "selected_pages": [
+      6,
+      7,
+      22,
+      24,
+      26,
+      27,
+      30
+    ]
+  },
+  {
+    "id": "paper_22",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Sensitivity analysis of any hyperelastic evaluation functions coupled with adjoint method and automatic differentiation.pdf",
+    "sha256": "7746a579d9bbe5cbcaa97fb1272036b9a9a62e52b5168311142c069187f98a1e",
+    "pages": 19,
+    "selected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ]
+  }
+]

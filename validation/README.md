@@ -1,11 +1,20 @@
 # 验证证据索引
 
-完整研究路线见 [研究主规划](../docs/RESEARCH_PLAN.md)，当前证据见 [研究状态](../docs/RESEARCH_STATUS.md)，运行位置见 [文件地图](../docs/FILE_MAP.md)。验证是长期 TPMS 学习与逆向设计主线的第一阶段。
+方法、符号和结果解释见 [综合报告](../docs/TPMS_RESEARCH_REVIEW.md)，当前事实见 [状态](../docs/RESEARCH_STATUS.md)，执行只看 [主规划](../docs/RESEARCH_PLAN.md)。原四轮均已按判据/停止条件收口；子目录保留冻结记录，其中历史“下一步”不是自动待办。
 
-以下子目录是冻结实验记录。阶段 README 中的测试数和“下一步”仅代表当时；计算数据、原始日志、验收和指纹保留。当前工作从主规划继续。
+当前新四步仅面向目标薄壁：恒厚表示、小变形壳对照、分段压缩、可信区间有效梯度，尚未执行。旧中等厚度成本/N48/N64/半步计划已替换，不能从历史报告恢复待办。前三轮及第四轮实验的原始输入/结果/日志保持冻结；旧manifest记录当时版本，不改写匹配活动文档。
+
+Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_before/source_at_run等源码快照、大型数组和求解器原始日志留在本机原位、由.gitignore排除。克隆Git不等于下载完整实验档案；复核具体旧运行须按FILE_MAP取本机冻结证据/环境及原Abaqus包。已被Git跟踪的早期证据继续保留。
 
 | 目录 | 已完成范围 |
 | --- | --- |
+| [mechanics_trust_20261003_r4/step4](mechanics_trust_20261003_r4/step4/README.md) | Gyroid预检查至5%，N48在0.5%点按资源停止；3条路径尝试/26状态、零新增Abaqus/训练/设计梯度，148项回归；有限应变精度未认证 |
+| [mechanics_trust_20261003_r4/step3](mechanics_trust_20261003_r4/step3/README.md) | 第四轮完整均匀实体有限应变基准通过至20%；3条JAX路径、2项分析及2项datacheck，144项回归通过；不认证TPMS大压缩 |
+| [mechanics_trust_20261003_r4/step2](mechanics_trust_20261003_r4/step2/README.md) | 第四轮新构型/薄壁筛查：Primitive整体响应通过，薄壁细参考未成立；2前向、2分析、2datacheck；最终138项回归通过 |
+| [mechanics_trust_20261003_r4/step1](mechanics_trust_20261003_r4/step1/README.md) | 第四轮参考审计：14个旧包、实际INP/拓扑/映射检查通过；零新增求解；原始记录冻结 |
+| [learning_bridge_20261003_r3](learning_bridge_20261003_r3/README.md) | N64专用梯度通过；新壁宽示例性能跨度不足／G48网格审查失败，第3/4步未启动 |
+| [geometry_interface_20261003_r2](geometry_interface_20261003_r2/README.md) | 隐式输入三锚点与小／中网格梯度，通过与资源停止证据冻结 |
+| [near_term_20261003](near_term_20261003/README.md) | 第一轮四步：解析前向通过；数组保真未达标并停止；全链导数仅作诊断通过 |
 | [m4_review](m4_review/README.md) | M4-A 修复及 10 项固定横向参数数据 |
 | [abaqus_uniform](abaqus_uniform/README.md) | 3 项原生 C3D8 解析基准 |
 | [abaqus_element](abaqus_element/README.md) | 2 项 C3D8 单元矩阵诊断 |
@@ -16,6 +25,6 @@
 | [projection_effects_20261002](projection_effects_20261002/README.md) | 7 项 β/E_min/体积分数影响计算 |
 | [design_gradient_20261002](design_gradient_20261002/README.md) | 3 组 N4/N8 固定横向参数梯度，132 次差分扰动 |
 
-正式成功 Abaqus 作业共 23 项（含 2 项矩阵诊断），最新实际完整回归 125/125；文档整理未重跑。完整路径及哈希见 [23 项索引](research_audit_20261002.json)，较早的 [21 项快照](project_status_20261002_inventory.json) 保留。
+历史截至2026-10-02的Abaqus分析／矩阵诊断共23项；加第二轮4、第三轮1，加第四轮第2步2项，加第3步2项，当前总数32，datacheck另计。原23项索引及第一轮127项回归是历史快照。完整路径及哈希见 [23 项索引](research_audit_20261002.json)，较早的 [21 项快照](project_status_20261002_inventory.json) 保留。
 
-大型 INP/ODB 在 E 盘。旧长报告可从 Git `6295ee7` 读取；历史 R/G 草案与 [范围纠正记录](scope_correction_20261003.json) 只供追溯。研究完成还需要多构型接口、训练、逆向设计和独立设计复核，不能以这些验证记录替代。
+大型 INP/ODB 在 E 盘。旧长报告可从 Git `6295ee7` 读取；历史 R/G 草案与 [范围纠正记录](scope_correction_20261003.json) 只供追溯。这些验证记录不能替代训练与逆向设计证据；具体后续只能由新的近期主规划决定。

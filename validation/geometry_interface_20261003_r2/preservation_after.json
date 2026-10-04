@@ -1,0 +1,8 @@
+{
+  "round1_evidence_unchanged": true,
+  "installed_library_unchanged": true,
+  "FEM_material_pbc_environment_unchanged": true,
+  "M4_CSV_unchanged": true,
+  "old_transport_clone_untouched": true,
+  "new_git_commit_push_merge": false
+}

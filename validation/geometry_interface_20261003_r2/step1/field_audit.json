@@ -1,0 +1,32 @@
+[
+  {
+    "M": 64,
+    "N": 64,
+    "implicit_min": -1.4975923633360986,
+    "implicit_max": 1.4975923633360986,
+    "periodic_translation_error": 1.3322676295501878e-15,
+    "projection_min": 0.0,
+    "projection_max": 0.9999999992023326,
+    "analytic_vf": 0.35052805329389947,
+    "mapped_vf": 0.3512333234886412,
+    "weighted_L1": 0.0007052701947421957,
+    "max_field_error": 0.011066376010986145,
+    "analytic_transition": 0.096282958984375,
+    "mapped_transition": 0.0964202880859375
+  },
+  {
+    "M": 32,
+    "N": 64,
+    "implicit_min": -1.4903926402016154,
+    "implicit_max": 1.4903926402016154,
+    "periodic_translation_error": 1.3322676295501878e-15,
+    "projection_min": 0.0,
+    "projection_max": 0.9999999992023344,
+    "analytic_vf": 0.35052805329389947,
+    "mapped_vf": 0.35284334780390036,
+    "weighted_L1": 0.00231530966233825,
+    "max_field_error": 0.060958832113055694,
+    "analytic_transition": 0.096282958984375,
+    "mapped_transition": 0.0959625244140625
+  }
+]

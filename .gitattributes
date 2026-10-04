@@ -19,3 +19,9 @@ validation/abaqus_mesh_quality/*.json -text whitespace=cr-at-eol
 validation/projection_grid_20261002/*.console.txt -text whitespace=-blank-at-eol,-blank-at-eof
 validation/projection_effects_20261002/*.console.txt -text whitespace=-blank-at-eol,-blank-at-eof
 validation/design_gradient_20261002/*.console.txt -text whitespace=-blank-at-eol,-blank-at-eof
+
+# PDFs are binary even when their first 8 KiB happen to be printable ASCII.
+*.pdf binary
+# Frozen evidence/archive bytes and diagnostic spacing must stay unchanged.
+validation/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+docs/history/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab

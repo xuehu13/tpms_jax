@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "platform": "cpu",
+  "log": "contactfix_regression_final.log",
+  "prior_logs_preserved": [
+    "contactfix_regression.log",
+    "contactfix_regression_retry.log"
+  ],
+  "precision": "Primitive test declares x64 through the installed JAX config API"
+}

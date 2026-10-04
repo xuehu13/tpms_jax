@@ -1,0 +1,33 @@
+{
+  "authoritative_plan": "docs/RESEARCH_PLAN.md",
+  "step1_new_cases": [
+    {
+      "N": 48,
+      "lateral": "fixed"
+    },
+    {
+      "N": 48,
+      "lateral": "relaxed_free"
+    },
+    {
+      "N": 64,
+      "lateral": "relaxed_free"
+    }
+  ],
+  "step2_new_cases_max": 2,
+  "step2_order": [
+    "M64_N64_fixed",
+    "M32_N64_fixed_if_M64_passes"
+  ],
+  "step3_small_forward_solves_max": 9,
+  "step3_primary_adjoint_solves": 1,
+  "new_Abaqus_jobs": 0,
+  "thresholds": {
+    "background_grid": 0.01,
+    "reference_grid": 0.01,
+    "independent_response": 0.02,
+    "mapping_added_response": 0.01,
+    "direction_derivative": 0.001
+  },
+  "stop_policy": "Preserve failures and report; no automatic parameter or mesh sweep"
+}

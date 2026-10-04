@@ -1,0 +1,40 @@
+{
+  "frozen_files_unchanged": 842,
+  "maintained_source_changes_this_turn": [
+    "hyperelastic_fem.py",
+    "voxel_field.py",
+    "scripts/finite_strain_gyroid.py",
+    "tests/test_density_hyperelastic.py"
+  ],
+  "environment_unchanged": true,
+  "archived_documents_byte_preserved": 9,
+  "active_links_checked": 139,
+  "broken_links": [],
+  "full_tests": {
+    "passed": 149,
+    "seconds": 95.26,
+    "log_sha256": "c856a7b13f9b81e7dd8a70f35ba97a81118e7a2ac77530f79659d4dbd3cebe1b"
+  },
+  "targeted_tests": {
+    "passed": 11,
+    "log_sha256": "de0d153986a3248dc65706d7ffb628181d3b893cdba3fe4329fa0c850c2760bc"
+  },
+  "newly_excluded_local_evidence": {
+    "files": 171,
+    "bytes": 9754007
+  },
+  "installed_solver_matches_wheel_RECORD": true,
+  "no_new_research_jobs": true,
+  "thin_four_steps": "Not executed",
+  "new_thin_experiment_directory": false,
+  "diff_check": "passed",
+  "published_sha256": {
+    "docs/RESEARCH_BACKGROUND.md": "0b82bdb1df33053f9cdd8a665725f72f94b5f638019cd9140d3f893e512c84d1",
+    "docs/RESEARCH_PLAN.md": "d9dda51f100545d9d17b22f0398ed59d7b75fbff8bca3be84222230dfa694fc2",
+    "docs/RESEARCH_STATUS.md": "bdc691486a8ba4cb3a01193a261b59a628cc70d51d0d94a8720cab46d9e7e0d6",
+    "docs/FILE_MAP.md": "cdc9985823a001a698a0cca50b898a2df2b55f22803fd1bc22ccd754e7ec3488",
+    "docs/PAPER_ROUTE.md": "1c0b829677056b9be5cd0969f92ae47a2826c0f5b684bc3ccfb47007121fc0b6",
+    "docs/TPMS_RESEARCH_REVIEW.md": "362fff1e3440d5108a0c184de937eb078ebcec7b756458ee0365dfaa5826cd44",
+    "README.md": "c977e070c961887e5e7e56641dd4291a5c66a54af4073f08aea9130eda5ef325"
+  }
+}

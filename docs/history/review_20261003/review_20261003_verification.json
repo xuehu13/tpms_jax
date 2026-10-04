@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "frozen_files_checked": {
+    "near_term_20261003": 37,
+    "geometry_interface_20261003_r2": 136,
+    "learning_bridge_20261003_r3": 162
+  },
+  "frozen_total": 335,
+  "numerical_source_and_tests_unchanged": 52,
+  "frozen_reports_and_archived_plans_unchanged": true,
+  "old_M4_CSV_locked_environment_transport_unchanged": true,
+  "third_round_Abaqus_artifacts_unchanged": 31,
+  "moves_verified": 92,
+  "deleted_files": 0,
+  "active_links_checked": 110,
+  "synchronized_active_reading_docs": 6,
+  "local_PDF_sources_unchanged": 23,
+  "HEAD_unchanged": "5e1d03d505d8e205009700ac8102d949dc463fa0",
+  "git_diff_check": true,
+  "PDF_pages": 13,
+  "PDF_glyph_check": true,
+  "PDF_all_pages_visually_reviewed": true,
+  "new_numerical_jobs": 0,
+  "new_training": 0,
+  "note": "No numerical tests rerun for documentation-only work; all 13 final PDF pages visually reviewed; detailed formula/table pages inspected at full size."
+}

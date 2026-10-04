@@ -1,0 +1,6 @@
+[
+  "hyperelastic_fem.py",
+  "scripts/extract_finite_strain.py",
+  "scripts/finite_strain_uniform.py",
+  "tests/test_hyperelastic_fem.py"
+]

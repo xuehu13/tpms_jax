@@ -1,0 +1,33 @@
+{
+  "coarse_grid": {
+    "force_path_difference_over_N32_max": 0.052681919109739316,
+    "energy_path_difference_over_N32_max": 0.05124465169852012,
+    "interpretation": "Coarse-mesh indication only; cannot substitute required N48/N64 check or independent solid reference"
+  },
+  "small_strain_N48": {
+    "compression": 0.0001,
+    "old_linear_stiffness": 1.983775328767394,
+    "new_finite_strain_secant": 1.9838092827231617,
+    "relative_difference": 1.7115827218579112e-05,
+    "pass_locked_1percent": true,
+    "old_record": "/home/xuehu/projects/tpms_jax/validation/near_term_20261003/step1/N48_fixed.json",
+    "old_record_sha256": "b83e53bcedf32390cc4916c6467caa27ee54dd870ed1c652739776c5b68196f6"
+  },
+  "N48_resource_boundary": {
+    "last_completed_compression": 0.0001,
+    "attempted_compression": 0.005,
+    "state_limit_seconds": 300,
+    "total_attempt_wall_seconds": 618.8282176249777,
+    "completed_small_point_seconds": 297.82524758100044,
+    "peak_sampled_host_RSS_GiB": 5.534343719482422,
+    "completed_point_reported_host_peak_GiB": 5.969276428222656,
+    "peak_device_total_used_GiB": 2.5703125,
+    "first_correction_linear_seconds": 210.376,
+    "last_logged_residual_l2": 6.12e-06,
+    "memory_limit_triggered": false,
+    "negative_detF_or_solver_divergence_reported": false,
+    "interpretation": "Stopped during second linear correction by external time guard. Incomplete point is not an accepted equilibrium."
+  },
+  "performance_limit": "One configured host/device and PETSc GMRES/GAMG. This is not an intrinsic impossibility proof; preconditioner setup versus Krylov iteration not separately timed.",
+  "FEM_solves_added_by_this_analysis": 0
+}

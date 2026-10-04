@@ -1,0 +1,7 @@
+{
+  "stage": "round4_step3_paths_complete",
+  "JAX_paths": 3,
+  "Abaqus_analyses": 2,
+  "datachecks": 2,
+  "steps4_started": false
+}

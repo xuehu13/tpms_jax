@@ -1,0 +1,82 @@
+{
+  "N2_d010": {
+    "max_reduced_residual": 3.710848838523167e-16,
+    "max_balance": 4.440892098500626e-16,
+    "max_reaction_piola_difference": 1.3322676295501878e-15,
+    "max_affine_displacement_error": 5.771093050455123e-17,
+    "max_analytic_force_difference": 1.7763568394002505e-15,
+    "max_analytic_energy_difference": 1.1102230246251565e-16,
+    "seeded_log_evidence": [],
+    "half_Fu_relative_error_at_twenty_percent": 0.04113639615210658
+  },
+  "N4_d010": {
+    "max_reduced_residual": 1.1056964257907653e-14,
+    "max_balance": 8.881784197001252e-16,
+    "max_reaction_piola_difference": 3.552713678800501e-15,
+    "max_affine_displacement_error": 8.989179554014462e-16,
+    "max_analytic_force_difference": 4.884981308350689e-15,
+    "max_analytic_energy_difference": 1.3877787807814457e-15,
+    "seeded_log_evidence": [],
+    "half_Fu_relative_error_at_twenty_percent": 0.04113639615210363
+  },
+  "N4_d005": {
+    "max_reduced_residual": 1.1056964257907653e-14,
+    "max_balance": 8.881784197001252e-16,
+    "max_reaction_piola_difference": 3.552713678800501e-15,
+    "max_affine_displacement_error": 8.989179554014462e-16,
+    "max_analytic_force_difference": 4.884981308350689e-15,
+    "max_analytic_energy_difference": 1.3877787807814457e-15,
+    "seeded_log_evidence": [],
+    "half_Fu_relative_error_at_twenty_percent": 0.04113639615210363
+  },
+  "Abaqus_N4_d010": {
+    "diagnostics": {
+      "warning_messages": 0,
+      "errors": 0,
+      "quality_warning": false,
+      "convergence_claim": false,
+      "out_of_core_solver": false,
+      "distorted_elements": 0,
+      "case": "uniform_finite_N4_d010"
+    },
+    "datacheck_diagnostics": {
+      "warning_messages": 0,
+      "errors": 0,
+      "quality_warning": false,
+      "convergence_claim": false,
+      "out_of_core_solver": false,
+      "distorted_elements": 0,
+      "case": "uniform_finite_N4_d010_check"
+    },
+    "ALLWK_final": 0.28871333599090576,
+    "ALLSE_final": 0.2886832654476166,
+    "SENER_IVOL_energy_final": 0.2886832757097979,
+    "max_nodal_error": 7.152557379708213e-09,
+    "max_logarithmic_J_error": 2.9511602273046833e-08
+  },
+  "Abaqus_N4_d005": {
+    "diagnostics": {
+      "warning_messages": 0,
+      "quality_warning": false,
+      "out_of_core_solver": false,
+      "convergence_claim": false,
+      "distorted_elements": 0,
+      "errors": 0,
+      "case": "uniform_finite_N4_d005"
+    },
+    "datacheck_diagnostics": {
+      "warning_messages": 0,
+      "quality_warning": false,
+      "out_of_core_solver": false,
+      "convergence_claim": false,
+      "distorted_elements": 0,
+      "errors": 0,
+      "case": "uniform_finite_N4_d005_check"
+    },
+    "ALLWK_final": 0.2886907756328583,
+    "ALLSE_final": 0.2886832654476166,
+    "SENER_IVOL_energy_final": 0.2886832757097979,
+    "max_nodal_error": 7.152557379708213e-09,
+    "max_logarithmic_J_error": 2.9511602273046833e-08
+  }
+}

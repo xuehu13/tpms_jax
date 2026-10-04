@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-04",
+  "HEAD": "5e1d03d505d8e205009700ac8102d949dc463fa0",
+  "synced_sha256": {
+    "RESEARCH_BACKGROUND.md": "10f6e7bbb115d89c347f4a2c78f9e09428e545b63532823c99bbe23189dc2126",
+    "RESEARCH_PLAN.md": "0a27b73db97efba03870da864f4e16bafced954aba03aac8eeecd09fd55a844e",
+    "PROJECT_OVERVIEW.md": "a0fb482b9087b48dcc1e3b6b0844ccfd459d2ed0b9f287d21f555d15e348fb1b",
+    "FILE_MAP.md": "c3e34e1fdd1fe42f648f1413e61ec62941f6075c3c6176de39a91eb98f22a09f",
+    "AGENTS.md": "daef6e50dc837632bfb92f3707686066052d74436e17a4bb798937dd6a075ae6",
+    "ROUND4_STEP3_REPORT.md": "3383fb878dbaf61d0c9f71b94a280c06a22f30d74fc2a0c9adf48db988101625"
+  },
+  "Windows_report_sha256": "96eef01bedf5fa04aa04e224a3e33fae86feaed7346d74af792ae9704d86371e",
+  "closure_sha256": "198279680c7bf7760526f259aabaf584e4635632b06a743c2053756c7d0f8bb7",
+  "verification_sha256": "1db83b1030a24d3846a65fa123b2058b4cd55bf54c975186cb0941fc0270862e",
+  "active_relative_links_validated": 133,
+  "prior_step_files_unchanged": {
+    "step1": 7,
+    "step2": 96
+  },
+  "old_Abaqus_manifest_files_unchanged": 176,
+  "no_commit_push_merge": true
+}

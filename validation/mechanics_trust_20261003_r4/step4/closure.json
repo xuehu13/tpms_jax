@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-04",
+  "status": "closed_at_configured_resource_boundary",
+  "planned_step": 4,
+  "actual": {
+    "JAX_paths_attempted": 3,
+    "saved_equilibrium_states": 26,
+    "preflight_paths": 2,
+    "failure_diagnostic_paths": 0,
+    "precision_paths_attempted": 1,
+    "Abaqus_analyses": 0,
+    "datachecks": 0,
+    "training": 0,
+    "design_gradient": 0
+  },
+  "N48": {
+    "last_completed_compression": 0.0001,
+    "attempted_compression": 0.005,
+    "state_limit_seconds": 300,
+    "total_attempt_wall_seconds": 618.8282176249777,
+    "completed_small_point_seconds": 297.82524758100044,
+    "peak_sampled_host_RSS_GiB": 5.534343719482422,
+    "completed_point_reported_host_peak_GiB": 5.969276428222656,
+    "peak_device_total_used_GiB": 2.5703125,
+    "first_correction_linear_seconds": 210.376,
+    "last_logged_residual_l2": 6.12e-06,
+    "memory_limit_triggered": false,
+    "negative_detF_or_solver_divergence_reported": false,
+    "interpretation": "Stopped during second linear correction by external time guard. Incomplete point is not an accepted equilibrium."
+  },
+  "completed": {
+    "small_strain_N48": {
+      "compression": 0.0001,
+      "old_linear_stiffness": 1.983775328767394,
+      "new_finite_strain_secant": 1.9838092827231617,
+      "relative_difference": 1.7115827218579112e-05,
+      "pass_locked_1percent": true,
+      "old_record": "/home/xuehu/projects/tpms_jax/validation/near_term_20261003/step1/N48_fixed.json",
+      "old_record_sha256": "b83e53bcedf32390cc4916c6467caa27ee54dd870ed1c652739776c5b68196f6"
+    },
+    "coarse_paths_to_five_percent_internal_checks": true,
+    "maintenance_tests": 148,
+    "added_physics_tests": 4
+  },
+  "not_executed": [
+    "N64",
+    "half increment",
+    "independent nonlinear solid reference",
+    "10/20 percent extensions",
+    "training",
+    "design gradient"
+  ],
+  "TPMS_nonlinear_precision_certified": false,
+  "physical_compression_limit_identified": false,
+  "next_stage": "Separately lock targeted same-model tangent linear-solve cost/configuration diagnosis, then restore required precision/reference work",
+  "no_commit_push_merge": true
+}

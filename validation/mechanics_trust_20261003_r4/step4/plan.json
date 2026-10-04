@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-04",
+  "stage": "round4_step4_locked_before_FEM",
+  "question": "Finite-strain credibility and practical limit of the already verified medium-wall Gyroid background model",
+  "geometry": {
+    "family": "gyroid",
+    "c": 0.541062,
+    "L": 1.0,
+    "target": "abs(G)<=c",
+    "map": "density at actual reference-configuration Gauss points",
+    "beta": 40.0,
+    "eta": 0.0001,
+    "no_geometry_calibration": true
+  },
+  "material": {
+    "E0": 10.0,
+    "nu0": 0.3,
+    "W": "[eta+(1-eta)*rho(X)] * W_step3(F)",
+    "mu0": 3.846153846153846,
+    "kappa0": 8.333333333333332,
+    "occupancy_fixed_in_reference": true,
+    "no_J_clipping_or_stabilization": true
+  },
+  "loading": {
+    "H": "diag(0,0,-a)",
+    "XY_periodic": true,
+    "flat_axial_faces": true,
+    "macro_lateral": "fixed",
+    "no_contact_plasticity": true
+  },
+  "reference": {
+    "32": {
+      "case": "binary_gyroid_G32_R0_C3D10_fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "sha256": {
+        "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_fixed.inp": "a8903a63e8fb717537593e70c1df0b978c179962590b7e5637d43218b54623b1",
+        "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_fixed.mesh.npz": "c23f717415a25a00eeb373272eb11e07dc2713f94efbd4a5b9021bf11d4b5af2",
+        "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G32_R0_C3D10_fixed.expected.json": "8cec223ece802bd2eceeb613a68fd1ae9fd3b3f02dc1fff9db97a8458f06ab09"
+      }
+    },
+    "48": {
+      "case": "binary_gyroid_G48_R0_C3D10_fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "sha256": {
+        "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_fixed.inp": "82a7d040a38a57830c8cc727d52f442d66bd469d6a19705d86e1d7d1949f423b",
+        "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_fixed.mesh.npz": "289b4be171668b19539513f10fff6b6945ad1f112f3606191f518d87b7309bc4",
+        "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/binary_gyroid_G48_R0_C3D10_fixed.expected.json": "d81cdb59fc6aecd475a07c3de744df466427a3a62ca11c31ccfe47ca6c28a022"
+      }
+    }
+  },
+  "reference_reuse": "Copy existing audited actual input/mesh; replace only material and load/output steps in new packages; no remeshing",
+  "preflight": {
+    "N": [
+      16,
+      32
+    ],
+    "path": [
+      0.0,
+      0.0001,
+      0.005,
+      0.01,
+      0.015,
+      0.02,
+      0.025,
+      0.03,
+      0.035,
+      0.04,
+      0.045,
+      0.05
+    ],
+    "purpose": "implementation, soft-domain distortion, measured cost only; not precision certification",
+    "failure_diagnostic": "At most one same-N half-increment restart to distinguish loading/Newton overshoot; cannot certify fine-grid accuracy"
+  },
+  "precision": {
+    "JAX_N": [
+      48,
+      64
+    ],
+    "increment": 0.005,
+    "first_limit": 0.05,
+    "half_increment_N": 64,
+    "reference_G": [
+      32,
+      48
+    ],
+    "conditional_extension": ".10 only after 0-.05 passes all checks; .20 only after .10, contact and instability branch evidence pass",
+    "extension_increment": 0.005,
+    "max_extension_paths": 2
+  },
+  "criteria": {
+    "force_path_difference_over_reference_max": 0.05,
+    "energy_path_difference_over_reference_max": 0.05,
+    "background_grid_path_change": 0.01,
+    "reference_grid_path_change": 0.01,
+    "half_increment_path_change": 0.01,
+    "work_energy_gap": 0.01,
+    "small_strain_secant_vs_old_linear": 0.01,
+    "reduced_equilibrium_l2": 1e-08,
+    "reaction_balance_or_Piola_absolute": 1e-08,
+    "constraint_error": 1e-10,
+    "Abaqus_constraint_error": 1e-07,
+    "positive_detF": true,
+    "soft_domain_J_min_stop": 0.1,
+    "sample_mode_RMS_difference_over_compression": 0.05,
+    "void_energy_fraction_trigger": 0.01
+  },
+  "budget": {
+    "preflight_paths": 2,
+    "same_N_half_increment_diagnostic_max": 1,
+    "precision_paths_max": 3,
+    "conditional_extension_paths_max": 2,
+    "Abaqus_analyses_max": 5,
+    "datachecks_max": 5,
+    "JAX_host_RSS_limit_GiB": 12.5,
+    "JAX_GPU_used_limit_GiB": 7.2,
+    "host_available_floor_GiB": 1.5,
+    "per_JAX_path_timeout_s": 1800,
+    "per_state_timeout_s": 300,
+    "Newton_corrections_per_state_max": 15,
+    "linear_KSP_iterations_max": 3000,
+    "Abaqus_each_timeout_s": 3600,
+    "Abaqus_cpus": 2,
+    "Abaqus_memory": "8gb",
+    "one_void_sensitivity_diagnostic_max": 1,
+    "maintenance_tests_separate": true,
+    "training_design_gradient": 0
+  },
+  "solver": {
+    "Newton": "installed JAX-FEM, reduced-coordinate continuation",
+    "linear": "existing PETSc GMRES/GAMG; rtol1e-11, atol1e-13, error-if-unconverged",
+    "globalization": "no new line-search/arc-length/contact solver; invalid trials retained as failures, one smaller-increment diagnostic allowed"
+  },
+  "stop": "Reference/precision resources infeasible, repeated invalid or severe soft-domain detF, nonconvergence, grid/step disagreement, instability or contact require boundary conclusion; no automatic stabilization or training",
+  "literature": {
+    "JAX_example": "https://deepmodeling.github.io/jax-fem/learn/hyperelasticity/example.html",
+    "soft_domain_instability": "https://orbit.dtu.dk/en/publications/interpolation-scheme-for-fictitious-domain-techniques-and-topolog/"
+  }
+}

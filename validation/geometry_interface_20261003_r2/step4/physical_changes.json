@@ -1,0 +1,34 @@
+[
+  {
+    "from": "c048",
+    "to": "c0",
+    "delta_c": 0.06106200000000006,
+    "delta_K_analytic": 0.30564654887407205,
+    "delta_K_binary": 0.3035392612218857,
+    "delta_K_mapped": 0.30668720272588534,
+    "slope_analytic": 5.005511592710225,
+    "slope_binary": 4.971000969864816,
+    "slope_mapped": 5.02255416995652,
+    "max_absolute_mesh_change_indicator": 0.011800974607467651,
+    "screening_threshold": 0.035402923822402954,
+    "same_sign": true,
+    "resolved_direction": true,
+    "claim": "Finite physical trend only, not exact continuum shape derivative or confidence interval"
+  },
+  {
+    "from": "c0",
+    "to": "c060",
+    "delta_c": 0.058937999999999935,
+    "delta_K_analytic": 0.31925902341500256,
+    "delta_K_binary": 0.3175158053636551,
+    "delta_K_mapped": 0.3203624428866094,
+    "slope_analytic": 5.4168621842445095,
+    "slope_binary": 5.387285034504996,
+    "slope_mapped": 5.435583882836367,
+    "max_absolute_mesh_change_indicator": 0.013940781354904175,
+    "screening_threshold": 0.041822344064712524,
+    "same_sign": true,
+    "resolved_direction": true,
+    "claim": "Finite physical trend only, not exact continuum shape derivative or confidence interval"
+  }
+]

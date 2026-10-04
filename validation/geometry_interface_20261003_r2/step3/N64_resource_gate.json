@@ -1,0 +1,44 @@
+{
+  "decision": "skip_N64",
+  "available_host_MiB": 13757.07421875,
+  "total_host_MiB": 15800.65234375,
+  "known_max_N64_forward_peak_MiB": 12473.265625,
+  "N32_adjoint_added_host_MiB": 134.46484375,
+  "scale_factor": 8,
+  "estimated_N64_forward_plus_adjoint_peak_MiB": 13548.984375,
+  "minimum_host_headroom_MiB": 1024,
+  "estimated_host_headroom_MiB": 208.08984375,
+  "N32_device_peak_MiB": 1478,
+  "required_device_headroom_MiB": 512,
+  "GPU_N64_projection": "Not certified; host gate fails first",
+  "estimate_is_exact_bound": false,
+  "method": "Observed N64 peak + N32 adjoint peak/RSS increment times element-count ratio; conservative planning estimate, not an OOM proof",
+  "forward_evidence": [
+    {
+      "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step1/M64_N64.json",
+      "rss_MiB": 12473.265625
+    },
+    {
+      "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step1/M32_N64.json",
+      "rss_MiB": 12433.80078125
+    },
+    {
+      "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c060_N64_M64.json",
+      "rss_MiB": 12472.125
+    },
+    {
+      "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c048_N64_M64.json",
+      "rss_MiB": 12470.23046875
+    },
+    {
+      "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c060_N64_analytic.json",
+      "rss_MiB": 12428.52734375
+    },
+    {
+      "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c048_N64_analytic.json",
+      "rss_MiB": 12432.87890625
+    }
+  ],
+  "N64_new_cost_forward_used": 0,
+  "N64_adjoint_used": 0
+}

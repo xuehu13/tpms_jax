@@ -1,0 +1,29 @@
+{
+  "phase": "round3_closed_at_step2",
+  "step1": "passed",
+  "step2": "not_passed",
+  "step3": "not_started_condition_not_met",
+  "step4": "not_started_condition_not_met",
+  "research_forward_count": 14,
+  "research_general_adjoint_count": 0,
+  "research_small_forward_count": 0,
+  "Abaqus_analysis_count": 1,
+  "Abaqus_datacheck_count": 1,
+  "JAX_research_seconds": 1159.0738665099489,
+  "Abaqus_preparation_run_and_retry_seconds": 216.59886953397654,
+  "regression_partition_counts": [
+    130,
+    3
+  ],
+  "training_runs": 0,
+  "new_dependencies": 0,
+  "performance_span": 0.0060114370594208655,
+  "background_three_times_mesh_lower_bound": 0.02187387529580964,
+  "uniform_N48_K": 1.983775328767394,
+  "uniform_N48_evidence": "/home/xuehu/projects/tpms_jax/validation/near_term_20261003/step1/N48_fixed.json",
+  "reference": "ax035 G32 consistency passed; ax035 G48 post-remesh nonmanifold failed before submission; az035 references not executed",
+  "ax035_G32_K": 1.9645867869257927,
+  "ax035_N64_vs_G32_relative_diagnostic_only": 0.00639614308591981,
+  "mesh_failure_is_not_FEM_failure": true,
+  "stopped_items_not_automatic_todo": true
+}

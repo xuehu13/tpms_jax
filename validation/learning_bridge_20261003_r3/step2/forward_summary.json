@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "label": "ax035",
+      "N": 48,
+      "K": 1.9844119669760403,
+      "Vf": 0.35052926217015706,
+      "seconds": 36.03255367500242
+    },
+    {
+      "label": "ax035",
+      "N": 64,
+      "K": 1.9771525651196775,
+      "Vf": 0.35052805333812903,
+      "seconds": 96.73812527500559
+    },
+    {
+      "label": "az035",
+      "N": 48,
+      "K": 1.9891996101248277,
+      "Vf": 0.350529262170157,
+      "seconds": 36.14478113100631
+    },
+    {
+      "label": "az035",
+      "N": 64,
+      "K": 1.982495474061545,
+      "Vf": 0.350528053338129,
+      "seconds": 97.2782346640015
+    }
+  ],
+  "uniform_baseline_K": 1.9764840370021242,
+  "background_passed": true,
+  "Vf_target": 0.3505280533,
+  "background_max_absolute_mesh_change": 0.007259401856362757,
+  "physical_span_background_only": 0.0060114370594208655,
+  "binary_reference_state": "not_yet_computed",
+  "forward_count": 4,
+  "Abaqus_count": 0
+}

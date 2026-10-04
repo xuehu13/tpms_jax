@@ -1,0 +1,88 @@
+[
+  {
+    "case": "N48_fixed",
+    "return_code": 0,
+    "wall_seconds_including_startup_and_diagnostics": 41.294356942002196,
+    "log": "validation/near_term_20261003/step1/N48_fixed.console.txt",
+    "result": "validation/near_term_20261003/step1/N48_fixed.json",
+    "macro_equilibrium_solves_observed": 1,
+    "linear_solves_observed": 1,
+    "process_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    },
+    "status": "ok",
+    "Fz": -0.01983775328767394,
+    "K": 1.983775328767394,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-08": true,
+      "balance<=1e-08": true,
+      "reaction<=1e-06": true,
+      "work_identity<=1e-08": true,
+      "periodic_fluctuation<=1e-10": true,
+      "loaded_face_fluctuation<=1e-10": true
+    },
+    "peak_host_rss_MiB": 5929.94921875
+  },
+  {
+    "case": "N48_relaxed_free",
+    "return_code": 0,
+    "wall_seconds_including_startup_and_diagnostics": 129.12202398799127,
+    "log": "validation/near_term_20261003/step1/N48_relaxed_free.console.txt",
+    "result": "validation/near_term_20261003/step1/N48_relaxed_free.json",
+    "macro_equilibrium_solves_observed": 4,
+    "linear_solves_observed": 4,
+    "process_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    },
+    "status": "ok",
+    "Fz": -0.01525910364244167,
+    "K": 1.525910364244167,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-08": true,
+      "balance<=1e-08": true,
+      "reaction<=1e-06": true,
+      "work_identity<=1e-08": true,
+      "periodic_fluctuation<=1e-10": true,
+      "loaded_face_fluctuation<=1e-10": true,
+      "zero_lateral_stress<=1e-08": true
+    },
+    "peak_host_rss_MiB": 6018.9609375
+  },
+  {
+    "case": "N64_relaxed_free",
+    "return_code": 0,
+    "wall_seconds_including_startup_and_diagnostics": 376.20505162200425,
+    "log": "validation/near_term_20261003/step1/N64_relaxed_free.console.txt",
+    "result": "validation/near_term_20261003/step1/N64_relaxed_free.json",
+    "macro_equilibrium_solves_observed": 4,
+    "linear_solves_observed": 4,
+    "process_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    },
+    "status": "ok",
+    "Fz": -0.015201780425567434,
+    "K": 1.5201780425567433,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-08": true,
+      "balance<=1e-08": true,
+      "reaction<=1e-06": true,
+      "work_identity<=1e-08": true,
+      "periodic_fluctuation<=1e-10": true,
+      "loaded_face_fluctuation<=1e-10": true,
+      "zero_lateral_stress<=1e-08": true
+    },
+    "peak_host_rss_MiB": 12724.1875
+  }
+]

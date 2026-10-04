@@ -1,0 +1,90 @@
+{
+  "study": "",
+  "N": 64,
+  "beta": 40.0,
+  "emin_ratio": 0.0001,
+  "lateral": "fixed",
+  "status": "ok",
+  "cells": 262144,
+  "quads": 2097152,
+  "n_red": 790526,
+  "vf_int": 0.3429859132188673,
+  "vf_binary_ref": 0.3428497314453125,
+  "Fz_top": -0.01798745882138877,
+  "Fz_bottom": 0.017987458821387862,
+  "sigma_xx": -0.009432473152709479,
+  "sigma_yy": -0.00943247315270967,
+  "sigma_zz": -0.01798745882138804,
+  "U_internal": 8.993729410693979e-05,
+  "U_macro": 8.993729410693981e-05,
+  "eps_x": 0.0,
+  "eps_y": 0.0,
+  "red_res": 4.6912919783679424e-17,
+  "balance": -9.08995101411847e-16,
+  "reaction_consistency_err": 7.320533068622126e-16,
+  "work_identity_err": 2.710505431213761e-20,
+  "t_build": 2.93,
+  "t_solve": 88.66,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true,
+    "periodic_fluctuation<=1e-10": true,
+    "loaded_face_fluctuation<=1e-10": true
+  },
+  "max_periodic_fluctuation_error": 0.0,
+  "periodic_face_pair_count": 8450,
+  "max_loaded_face_fluctuation_error": 0.0,
+  "macro_equilibrium_solves_expected": 1,
+  "displacement_field": {
+    "path": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step2/primitive/N64.displacement.npz",
+    "sha256": "568b1c64b72f473fffd0d2802c418a701b1353b4ebfcc63e1c5e63c3f8fbe281"
+  },
+  "solver": "PETSc CG/GAMG; same FEM operator and checks",
+  "solver_options": {
+    "petsc_solver": {
+      "ksp_type": "cg",
+      "pc_type": "gamg"
+    }
+  },
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "calibration": null,
+  "model": {
+    "c": 0.6,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1,
+    "family": "primitive"
+  },
+  "input_representation": {
+    "type": "analytic_Gauss"
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 12433.19921875
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "f5960b7fd4ce561c5fdf0cb169b5802bef2388911fb7175a7de6790545da5bcb",
+    "scripts/m4_numerical_study.py": "6fb59f67991a7c0792f3b8c6b3e61b604c94f3328938f33125fba76b78e66235",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "geometry.py": "144d9ba017d5fc230cbcca0c91504a9106e5249b8b52511dd5edcf148b14028c",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}

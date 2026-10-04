@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "medium_large_forward_count": 10,
+  "general_adjoint_count": 0,
+  "total_seconds": 892.880171764933,
+  "N64_K": 1.9821422289232733,
+  "N64_Vf": 0.3512333234886412,
+  "N64_dK_dc": 5.235176446802837,
+  "N64_spatial_AD": -0.006218097822960735,
+  "max_nonzero_relative_FD_error": 4.2017280555351945e-07,
+  "peak_host_rss_MiB": 12438.98046875,
+  "sampled_min_host_available_MiB": 1894.953125,
+  "sampled_peak_device_MiB": 5066,
+  "cost_includes_new_process_build_compile_and_checks": true,
+  "resource_samples_are_not_rigorous_instantaneous_bounds": true
+}

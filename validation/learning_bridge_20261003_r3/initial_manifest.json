@@ -1,0 +1,43 @@
+{
+  "source_before": {
+    "voxel_field.py": "720d805bba12892d9bb7e551b292cd0a01c8fa41eb2ac49888efb62d2a1c412c",
+    "geometry.py": "119aecac56b201282bbb9dee08213de3bc6d6a6eaa4c1b424d9f4b8831f03d12",
+    "design_fem.py": "f655ef168fa408f43b5dc7f778dae74049051eee3d42dac048f38cd875515135",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "scripts/capture_binary_projection_reference.py": "35abf1b1e3863bfdbea69055b2a675cc03770f0693ee280f59681e63ba2e3b81",
+    "scripts/m4_numerical_study.py": "29d5ca22b04927fc0dcb4f853c2f8333d63458a596d9c7384519476dc612bc4b",
+    "binary_gyroid.py": "a0210f145e0c6ae0d9b2f1b78e4992bdf93590601fc79d6ebf3cf8d948e19a88",
+    "scripts/prepare_abaqus_binary.py": "d027dcad35b1342486201f5992ad94cf7a911cd5997bb687a6caf9269b4f6d24",
+    "scripts/prepare_binary_lateral_pair.py": "5ed44b9742c8498ef471d575f57bd027c9a37041101cef418b9492641f246df4",
+    "scripts/estimate_binary_volume.py": "eee2d15e1078d19eaa36a0d9a6359a77639eaff2911e4434a3b20bdeab1d9aef",
+    "scripts/run_abaqus_binary.ps1": "ff11fbdd94d0d188b455f36a0ffb2538f4a23dedd37cdd2d00468d1696894a5c",
+    "scripts/extract_abaqus_binary.py": "5838cc631cd94c6be74c4b16cfc07b11d26bbe77d75104f0b3880cf82038bbd5",
+    "scripts/extract_uniform_baseline.py": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+    "tests/test_voxel_field.py": "419e27fe3b6bcff675633a7f97d16dfe2969125de7c3c09a0cb0ed6f95cc4bb0",
+    "tests/test_abaqus_binary.py": "f12fa5a25fbe2220f707ee990e1c138d35222f80a7204e206c8443dd690a859c",
+    "pixi.toml": "1991d379076803f757a4db8fb315fadff0eaf9896b3547393deb5e4e65fadb72",
+    "pixi.lock": "cb127eb9a55d373325421146bbcec4bd046726d588fe86d27a628ae6164609f2",
+    "AGENTS.md": "7810ff46233d879c50cd3f0e6546afbcbf9c3612acb33e27c8d5751bdce53fab",
+    "README.md": "ab9abb568ce3655309f66c522be5589133721c576006ccb49f56ea9d5a219ddd",
+    "docs/RESEARCH_PLAN.md": "4a93e2274eadd8d0850a4efacd2b71db1027c80b8ed8b7a27058458dc300fb7f",
+    "docs/RESEARCH_STATUS.md": "afd73322a5993f98deca52f3171fd8f88339b3be259aa71338e81bed6f0c3754",
+    "docs/FILE_MAP.md": "b5a845b44afd30a382a9e877928dc16a8acf7c09349a08c0637485265166eb0f",
+    "docs/RESEARCH_BACKGROUND.md": "6452bd92e713bf67261784f06c39f00a96ba54630ae26dbeec9189ad1534463e",
+    "docs/PAPER_ROUTE.md": "777d7512976e70c920a7f817c203d72a3f5529cfca4caa09c71ded92e74f872d"
+  },
+  "HEAD": "5e1d03d505d8e205009700ac8102d949dc463fa0",
+  "frozen_manifests": {
+    "near_term_20261003": "ee2fa25f45237058c3ec65752e47ddf776ea7e3ff2e1ff6b527fe94a04870f9a",
+    "geometry_interface_20261003_r2": "0ac21f4b843f5a61a9af0f396689ea461de02134cbabe340c8f7d57b21db982e"
+  },
+  "budgets": {
+    "medium_large_forward": 32,
+    "small_forward": 5,
+    "general_adjoint": 0,
+    "abaqus_analysis": 8,
+    "jax_seconds": 7200,
+    "abaqus_seconds": 5400
+  }
+}

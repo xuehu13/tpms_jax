@@ -1,0 +1,31 @@
+{
+  "status": "stopped",
+  "failed_mesh": 48,
+  "record": {
+    "kind": "JAX_precision_path",
+    "tag": "N48_d005",
+    "N": 48,
+    "increment": 0.005,
+    "exit_code": 15,
+    "resource_stop": "state_timeout",
+    "wall_seconds": 618.8282176249777,
+    "peak_sampled_host_RSS_GiB": 5.534343719482422,
+    "peak_device_total_used_GiB": 2.5703125,
+    "command": [
+      "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/scripts/finite_strain_gyroid.py",
+      "--N",
+      "48",
+      "--increment",
+      "0.005",
+      "--limit",
+      ".05",
+      "--out",
+      "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N48_d005.json"
+    ],
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N48_d005.log",
+    "status": "resource_stopped"
+  },
+  "reason": "Required accuracy mesh did not complete within physical/resource budget",
+  "Abaqus_started": false
+}

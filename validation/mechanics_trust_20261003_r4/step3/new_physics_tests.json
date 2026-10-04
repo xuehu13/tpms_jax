@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_hyperelastic_fem.py",
+    "-q"
+  ],
+  "new_sources": {
+    "hyperelastic_fem.py": "1373d82b81f4c60e8e2ea7d6fdf69e5649cdd4c03a89c01bd3f10d7aa5cd0c56",
+    "scripts/extract_finite_strain.py": "2420116656bd30007e38044206a11582ae931f55abd8666ac218eedb641c69ee",
+    "scripts/finite_strain_uniform.py": "bfb194695d760bc6d8f4c2cf8e2e9a3c255969087c8f28d91ce3c5543480bda9",
+    "tests/test_hyperelastic_fem.py": "577aa8ed973c43fbb7a0db47cfd344b65ad366d61cf70b305c724279bbdb691a"
+  }
+}

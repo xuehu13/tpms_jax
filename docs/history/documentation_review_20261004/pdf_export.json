@@ -1,0 +1,19 @@
+{
+  "pages": 9,
+  "source_sha256": "17437761481be08e5cb69b087cdd1f89e476d7162ea7106777ccaa9c1b78f4e3",
+  "pdf_sha256": "69f6b943230e4c6ad3a5b013245439c582d9085aa041546f63d21a861ffc295f",
+  "missing_source_glyphs": [],
+  "visual_inspection_pending": false,
+  "visual_pages_checked": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "visual_findings": "All pages inspected after final render; no overlap, clipping, missing glyphs or split data tables; ordered steps separated."
+}

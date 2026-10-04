@@ -1,0 +1,163 @@
+[
+  {
+    "seconds": 0.000280087988357991,
+    "host_rss_MiB": 453.83984375,
+    "host_available_MiB": 13354.56640625,
+    "device_used_MiB": 211,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 0.558034167974256,
+    "host_rss_MiB": 1027.8359375,
+    "host_available_MiB": 12896.33203125,
+    "device_used_MiB": 948,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 1.0800885679782368,
+    "host_rss_MiB": 3448.671875,
+    "host_available_MiB": 10546.1328125,
+    "device_used_MiB": 948,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 1.6007533560041338,
+    "host_rss_MiB": 3609.53515625,
+    "host_available_MiB": 10448.23046875,
+    "device_used_MiB": 5046,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 2.1251852329587564,
+    "host_rss_MiB": 3698.984375,
+    "host_available_MiB": 10357.078125,
+    "device_used_MiB": 5062,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 2.666657813999336,
+    "host_rss_MiB": 3673.921875,
+    "host_available_MiB": 10346.53125,
+    "device_used_MiB": 5062,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 3.1900394869735464,
+    "host_rss_MiB": 3716.984375,
+    "host_available_MiB": 10315.28515625,
+    "device_used_MiB": 5062,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 3.712614129995927,
+    "host_rss_MiB": 3721.10546875,
+    "host_available_MiB": 10297.4140625,
+    "device_used_MiB": 5064,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 4.235527478973381,
+    "host_rss_MiB": 3739.69921875,
+    "host_available_MiB": 10282.1875,
+    "device_used_MiB": 5064,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 4.759909084998071,
+    "host_rss_MiB": 3749.51953125,
+    "host_available_MiB": 10275.19140625,
+    "device_used_MiB": 5064,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 5.2935500699677505,
+    "host_rss_MiB": 4197.34765625,
+    "host_available_MiB": 9798.20703125,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 5.8196877939626575,
+    "host_rss_MiB": 6457.8515625,
+    "host_available_MiB": 7529.296875,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 6.343710240966175,
+    "host_rss_MiB": 6120.06640625,
+    "host_available_MiB": 7810.80078125,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 12.971905649988912,
+    "host_rss_MiB": 7320.296875,
+    "host_available_MiB": 6696.9140625,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 89.99965284799691,
+    "host_rss_MiB": 8980.35546875,
+    "host_available_MiB": 5258.62109375,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 90.5646462420118,
+    "host_rss_MiB": 8937.16796875,
+    "host_available_MiB": 5260.78515625,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 91.09555878100218,
+    "host_rss_MiB": 9561.19140625,
+    "host_available_MiB": 4616.15625,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 91.62835840397747,
+    "host_rss_MiB": 10844.96484375,
+    "host_available_MiB": 3314.0078125,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 92.16278809501091,
+    "host_rss_MiB": 12250.97265625,
+    "host_available_MiB": 2025.11328125,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 93.47009040997364,
+    "host_rss_MiB": 9672.51171875,
+    "host_available_MiB": 4600.4609375,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 94.91715903900331,
+    "host_rss_MiB": 7324.48828125,
+    "host_available_MiB": 6801.55078125,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 95.44666390999919,
+    "host_rss_MiB": 7324.81640625,
+    "host_available_MiB": 6788.66015625,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  },
+  {
+    "seconds": 95.97112183197169,
+    "host_rss_MiB": 7325.25390625,
+    "host_available_MiB": 6795.4921875,
+    "device_used_MiB": 5066,
+    "device_total_MiB": 8188
+  }
+]

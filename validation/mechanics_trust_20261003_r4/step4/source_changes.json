@@ -1,0 +1,10 @@
+{
+  "modified": [
+    "hyperelastic_fem.py"
+  ],
+  "added": [
+    "scripts/finite_strain_gyroid.py",
+    "tests/test_density_hyperelastic.py"
+  ],
+  "prior_solvers_modified": false
+}

@@ -1,0 +1,9 @@
+{
+  "quality_warning": true,
+  "warning_messages": 1,
+  "convergence_claim": false,
+  "case": "binary_gyroid_G32_R0_C3D10_fixed",
+  "distorted_elements": 19972,
+  "errors": 0,
+  "out_of_core_solver": false
+}

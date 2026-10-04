@@ -1,0 +1,220 @@
+{
+  "stage": "round4_step3_uniform_passed",
+  "checks": {
+    "independent_force_path": true,
+    "independent_energy_path": true,
+    "grid_and_increment": true,
+    "small_strain_limit": true,
+    "path_work": true,
+    "all_node_modes": true,
+    "all_stored_physical_checks": true
+  },
+  "comparisons": {
+    "JAX_N4_vs_Abaqus_base": {
+      "common_states": 22,
+      "force_over_reference_max": 3.381336813628819e-08,
+      "energy_over_reference_max": 3.893334678232874e-08
+    },
+    "JAX_N4_vs_Abaqus_half_increment": {
+      "common_states": 42,
+      "force_over_reference_max": 3.498883906039999e-08,
+      "energy_over_reference_max": 3.893334678232874e-08
+    },
+    "JAX_grid_N2_N4": {
+      "common_states": 22,
+      "force_over_reference_max": 1.1820366946870287e-15,
+      "energy_over_reference_max": 4.4226896087629495e-15
+    },
+    "JAX_increment_halved": {
+      "common_states": 22,
+      "force_over_reference_max": 0.0,
+      "energy_over_reference_max": 0.0
+    },
+    "Abaqus_increment_halved": {
+      "common_states": 22,
+      "force_over_reference_max": 0.0,
+      "energy_over_reference_max": 0.0
+    }
+  },
+  "small_strain": [
+    {
+      "path": "N2_d010",
+      "small_compression": 0.0001,
+      "secant": 13.462136823361165,
+      "linear_constrained_modulus": 13.461538461538462,
+      "relative_difference": 4.444973540082791e-05
+    },
+    {
+      "path": "N4_d010",
+      "small_compression": 0.0001,
+      "secant": 13.462136823357069,
+      "linear_constrained_modulus": 13.461538461538462,
+      "relative_difference": 4.444973509653291e-05
+    },
+    {
+      "path": "N4_d005",
+      "small_compression": 0.0001,
+      "secant": 13.462136823357069,
+      "linear_constrained_modulus": 13.461538461538462,
+      "relative_difference": 4.444973509653291e-05
+    },
+    {
+      "path": "Abaqus_N4_d010",
+      "small_compression": 0.0001,
+      "secant": 13.462136266753078,
+      "linear_constrained_modulus": 13.461538461538462,
+      "relative_difference": 4.44083873714618e-05
+    },
+    {
+      "path": "Abaqus_N4_d005",
+      "small_compression": 0.0001,
+      "secant": 13.462136266753078,
+      "linear_constrained_modulus": 13.461538461538462,
+      "relative_difference": 4.44083873714618e-05
+    }
+  ],
+  "node_modes": [
+    {
+      "path": "N4_d010",
+      "nodes": 125,
+      "states": 22,
+      "max_absolute_displacement_difference": 7.152557379708213e-09,
+      "rms_difference_at_twenty_percent_over_axial_displacement": 8.867964633176559e-09
+    },
+    {
+      "path": "N4_d005",
+      "nodes": 125,
+      "states": 42,
+      "max_absolute_displacement_difference": 7.152557379708213e-09,
+      "rms_difference_at_twenty_percent_over_axial_displacement": 8.867964633176562e-09
+    }
+  ],
+  "selected_points": [
+    {
+      "compression": 0.01,
+      "JAX_Fz": -0.1352208809642923,
+      "Abaqus_Fz": -0.13522088527679443,
+      "JAX_energy": 0.0006750891975105492,
+      "Abaqus_energy": 0.0006750891916453838,
+      "JAX_J_min": 0.989999999999996,
+      "Abaqus_J_min": 0.9900000095367432
+    },
+    {
+      "compression": 0.05,
+      "JAX_Fz": -0.6889790136172356,
+      "Abaqus_Fz": -0.6889790296554565,
+      "JAX_energy": 0.017087879534578805,
+      "Abaqus_energy": 0.01708787865936756,
+      "JAX_J_min": 0.9499999999999961,
+      "Abaqus_J_min": 0.949999988079071
+    },
+    {
+      "compression": 0.1,
+      "JAX_Fz": -1.4140328682338361,
+      "Abaqus_Fz": -1.4140328168869019,
+      "JAX_energy": 0.06949822808081105,
+      "Abaqus_energy": 0.0694982260465622,
+      "JAX_J_min": 0.8999999999999962,
+      "Abaqus_J_min": 0.8999999761581421
+    },
+    {
+      "compression": 0.2,
+      "JAX_Fz": -3.005586522516501,
+      "Abaqus_Fz": -3.005586624145508,
+      "JAX_energy": 0.2886832631751934,
+      "Abaqus_energy": 0.2886832654476166,
+      "JAX_J_min": 0.7999999999999976,
+      "Abaqus_J_min": 0.800000011920929
+    }
+  ],
+  "cost": [
+    {
+      "path": "N2_d010",
+      "states": 22,
+      "runtime": {
+        "build_seconds": 1.1612886630464345,
+        "path_seconds": 2.577559905999806,
+        "wall_seconds": 3.738848806009628,
+        "peak_host_RSS_MiB": 953.546875,
+        "jax": "0.11.2",
+        "devices": [
+          "cpu:0"
+        ]
+      },
+      "initial_residual_at_seeded_points": [
+        0.18987902833957043,
+        0.19300455084104734
+      ],
+      "work": {
+        "path_trapezoid": 0.28871333184311326,
+        "stored_energy": 0.2886832631751929,
+        "relative_gap": 0.00010415798820360479,
+        "uses_half_Fu": false
+      }
+    },
+    {
+      "path": "N4_d010",
+      "states": 22,
+      "runtime": {
+        "build_seconds": 0.6964691549655981,
+        "path_seconds": 3.741670816030819,
+        "wall_seconds": 4.438140156969894,
+        "peak_host_RSS_MiB": 994.26171875,
+        "jax": "0.11.2",
+        "devices": [
+          "cpu:0"
+        ]
+      },
+      "initial_residual_at_seeded_points": [
+        0.11291298357409656,
+        0.10635140463252818
+      ],
+      "work": {
+        "path_trapezoid": 0.28871333184311304,
+        "stored_energy": 0.2886832631751934,
+        "relative_gap": 0.00010415798820110482,
+        "uses_half_Fu": false
+      }
+    },
+    {
+      "path": "N4_d005",
+      "states": 42,
+      "runtime": {
+        "build_seconds": 0.6953828539699316,
+        "path_seconds": 4.819679255015217,
+        "wall_seconds": 5.515062393969856,
+        "peak_host_RSS_MiB": 998.4375,
+        "jax": "0.11.2",
+        "devices": [
+          "cpu:0"
+        ]
+      },
+      "initial_residual_at_seeded_points": [
+        0.11291298357409656,
+        0.10635140463252818
+      ],
+      "work": {
+        "path_trapezoid": 0.28869078066370746,
+        "stored_energy": 0.2886832631751934,
+        "relative_gap": 2.6040610845918086e-05,
+        "uses_half_Fu": false
+      }
+    }
+  ],
+  "Abaqus_work": {
+    "N4_d010": {
+      "path_trapezoid": 0.28871333462500487,
+      "stored_energy": 0.2886832654476166,
+      "relative_gap": 0.00010415975218261629,
+      "uses_half_Fu": false
+    },
+    "N4_d005": {
+      "path_trapezoid": 0.2886907798445667,
+      "stored_energy": 0.2886832654476166,
+      "relative_gap": 2.6029901450900743e-05,
+      "uses_half_Fu": false
+    }
+  },
+  "steps4_started": false,
+  "limit": "Uniform affine full-solid algorithm/material/constraints benchmark only, no TPMS finite-strain certification"
+}

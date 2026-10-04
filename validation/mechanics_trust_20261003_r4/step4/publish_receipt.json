@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-04",
+  "status": "step4_resource_boundary_published",
+  "HEAD": "5e1d03d505d8e205009700ac8102d949dc463fa0",
+  "synced_sha256": {
+    "RESEARCH_BACKGROUND.md": "540398ed779a12b1b6cdf1ffd045bcf01d319e29ec6abbbd37b760189195fe5a",
+    "RESEARCH_PLAN.md": "ca0bca0c4afd1fea52b1c8ea7e9cd0e03f42e67b67dbcb209db780e434fc943f",
+    "PROJECT_OVERVIEW.md": "d7d327185466873b138f4c2b61bb745fc4114845bcf402f2ac3346aca771efc2",
+    "FILE_MAP.md": "d6e95692ebc07f39d3560cb10b1cf9d729721eb5180979e977d063e3471aef43",
+    "ROUND4_STEP4_REPORT.md": "124dcf38f61c8e3508b3b711b19ea78d4de4192a5819e83e855ef405701a2729"
+  },
+  "Windows_report_sha256": "ebb0ac263ecb304bee0366585bb1a9ec99cb844456d84ff961b97f30c7905680",
+  "verification_sha256": "9acc2815c56ca749f0c43aac95df7eea8eaad06680105536db79479a7a365e7b",
+  "closure_sha256": "5419943c693c6bf00fc237cfffc6dc7cb490cb948cd321da47e36b0221046a40",
+  "source_at_run_sha256": {
+    "hyperelastic_fem.py": "1951234c7b08ca3d647563ee1c2d6ef75b12224e7e06c80ad89e5b7f475c924b",
+    "scripts/finite_strain_gyroid.py": "9ff307bc9c74628dd858b8a6dfcd927b7600ddda03e7ad6cc36afe286934cca3",
+    "tests/test_density_hyperelastic.py": "e29a9a5d391c8c030ac4ded54158cc0c83c5d2d31346a5df30c948da2ec21d89"
+  },
+  "relative_links_checked": 153,
+  "historical_files_unchanged": 338,
+  "prior_step_files_unchanged": {
+    "step1": 7,
+    "step2": 96,
+    "step3": 54
+  },
+  "old_Abaqus_files_unchanged": 236,
+  "new_Abaqus_jobs": 0,
+  "tests": 148,
+  "no_commit_push_merge": true,
+  "final_wording_clarification": "Extra void-parameter solves were zero; saved-field void-energy postprocessing was performed. Uniform capture is a baseline entry."
+}

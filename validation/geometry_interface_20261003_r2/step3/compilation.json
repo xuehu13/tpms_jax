@@ -1,0 +1,12 @@
+{
+  "8": {
+    "XLA_compilation_events": 0,
+    "logged_XLA_compilation_seconds_sum": 0,
+    "notes": "Compilation-event sum, not independent wall-clock timing; no second high-resolution forward added for speed testing"
+  },
+  "32": {
+    "XLA_compilation_events": 0,
+    "logged_XLA_compilation_seconds_sum": 0,
+    "notes": "Compilation-event sum, not independent wall-clock timing; no second high-resolution forward added for speed testing"
+  }
+}

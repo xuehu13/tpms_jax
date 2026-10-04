@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-04",
+  "stage": "round4_step3_closed_passed",
+  "checks": {
+    "independent_force_path": true,
+    "independent_energy_path": true,
+    "grid_and_increment": true,
+    "small_strain_limit": true,
+    "path_work": true,
+    "all_node_modes": true,
+    "all_stored_physical_checks": true
+  },
+  "actual_counts": {
+    "JAX_paths": 3,
+    "saved_JAX_equilibrium_states": 86,
+    "Abaqus_analyses": 2,
+    "datachecks": 2,
+    "new_physics_checks": 6,
+    "final_maintenance_test_count": 144,
+    "TPMS_paths": 0,
+    "design_gradient_experiments": 0,
+    "training": 0
+  },
+  "finite_strain_range": "0-20% uniform full solid only",
+  "source_change": "4 new files, no existing numerical edits",
+  "does_not_certify": [
+    "TPMS finite strain",
+    "real material calibration",
+    "soft void behavior",
+    "buckling/contact",
+    "N64 nonlinear resources"
+  ],
+  "next_step": "original step4: verified medium-wall Gyroid, lock interpolation/reference/resources first; staged 1-5-10%, conditional20%",
+  "step4_started": false,
+  "further_thin_reference_work_started": false
+}

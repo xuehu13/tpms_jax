@@ -1,0 +1,3449 @@
+{
+  "N": 4,
+  "increment": 0.005,
+  "status": "ok",
+  "rows": [
+    {
+      "energy": -3.3360066845666195e-18,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9999999999999998,
+      "J_min": 0.999999999999996,
+      "J_max": 1.0000000000000024,
+      "mean_first_piola": [
+        [
+          1.42247325030098e-16,
+          -2.5453090145021716e-30,
+          2.7621032431866627e-15
+        ],
+        [
+          -2.526820087036054e-30,
+          7.806255641895626e-17,
+          3.6380693085660724e-16
+        ],
+        [
+          2.762103243186661e-15,
+          3.6380693085660774e-16,
+          1.7433970933566911e-16
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          1.4224732503010713e-16,
+          4.498972350088584e-31,
+          2.762103243186658e-15
+        ],
+        [
+          5.115269932292499e-31,
+          7.806255641895881e-17,
+          3.6380693085660813e-16
+        ],
+        [
+          2.762103243186658e-15,
+          3.638069308566081e-16,
+          1.7433970933567777e-16
+        ]
+      ],
+      "Fz_top": 1.1310397063368784e-15,
+      "Fz_bottom": -8.014422459012841e-16,
+      "reduced_residual_l2": 1.0994288859956559e-14,
+      "compression": 0.0,
+      "solve_seconds": 0.8479522899724543,
+      "initial_residual_l2": 0.11291298357409656,
+      "nonzero_seed": true,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.0,
+        "Fz": 0.0,
+        "energy": 0.0,
+        "J": 1.0,
+        "first_piola_diagonal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cauchy_diagonal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 6.730968689258184e-08,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.999899999999999,
+      "J_min": 0.999899999999996,
+      "J_max": 0.9999000000000025,
+      "mean_first_piola": [
+        [
+          -0.0005768354695155067,
+          -2.563797941968289e-30,
+          2.762287398749257e-15
+        ],
+        [
+          -2.594612821078485e-30,
+          -0.0005768354695155709,
+          3.63831186673327e-16
+        ],
+        [
+          2.7629779491156614e-15,
+          3.6392214164035265e-16,
+          -0.001346213682336666
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.0005768931588313902,
+          4.622694135942965e-31,
+          2.762287398749255e-15
+        ],
+        [
+          4.869237823193257e-31,
+          -0.0005768931588314544,
+          3.6383118667332817e-16
+        ],
+        [
+          2.762287398749255e-15,
+          3.638311866733281e-16,
+          -0.0013462136823366667
+        ]
+      ],
+      "Fz_top": -0.001346213682335707,
+      "Fz_bottom": 0.001346213682336016,
+      "reduced_residual_l2": 1.0993252211459475e-14,
+      "compression": 0.0001,
+      "solve_seconds": 0.03847408399451524,
+      "initial_residual_l2": 1.0993252211459475e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.0001,
+        "Fz": -0.0013462136823367147,
+        "energy": 6.730968685255143e-08,
+        "J": 0.9999,
+        "first_piola_diagonal": [
+          -0.0005768354695153303,
+          -0.0005768354695153303,
+          -0.0013462136823367147
+        ],
+        "cauchy_diagonal": [
+          -0.0005768931588312135,
+          -0.0005768931588312135,
+          -0.0013462136823367147
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.00016851963657855599,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.994999999999999,
+      "J_min": 0.994999999999996,
+      "J_max": 0.9950000000000024,
+      "mean_first_piola": [
+        [
+          -0.028627065179175813,
+          -2.5699609177903282e-30,
+          2.7713487878276528e-15
+        ],
+        [
+          -2.6131017485446023e-30,
+          -0.028627065179175862,
+          3.650246960607983e-16
+        ],
+        [
+          2.80593690886128e-15,
+          3.6958042662169716e-16,
+          -0.06745816044386736
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.028770919778066166,
+          4.335761884851671e-31,
+          2.7713487878276496e-15
+        ],
+        [
+          4.707398617838957e-31,
+          -0.028770919778066215,
+          3.6502469606079956e-16
+        ],
+        [
+          2.7713487878276496e-15,
+          3.650246960607995e-16,
+          -0.0674581604438674
+        ]
+      ],
+      "Fz_top": -0.0674581604438665,
+      "Fz_bottom": 0.06745816044386668,
+      "reduced_residual_l2": 1.1027599573734085e-14,
+      "compression": 0.005,
+      "solve_seconds": 0.04609243298182264,
+      "initial_residual_l2": 1.1027599573734085e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.005,
+        "Fz": -0.06745816044386739,
+        "energy": 0.0001685196365785595,
+        "J": 0.995,
+        "first_piola_diagonal": [
+          -0.028627065179176295,
+          -0.028627065179176295,
+          -0.06745816044386739
+        ],
+        "cauchy_diagonal": [
+          -0.028770919778066627,
+          -0.028770919778066627,
+          -0.06745816044386739
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.0006750891975105492,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9899999999999999,
+      "J_min": 0.989999999999996,
+      "J_max": 0.9900000000000024,
+      "mean_first_piola": [
+        [
+          -0.05681566392267429,
+          -2.5822868694344065e-30,
+          2.7806720916108444e-15
+        ],
+        [
+          -2.4651903288156626e-30,
+          -0.056815663922674335,
+          3.6625270321193355e-16
+        ],
+        [
+          2.8499738194978223e-15,
+          3.753806925395648e-16,
+          -0.13522088096429333
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.0573895595178528,
+          4.731173358333089e-31,
+          2.780672091610839e-15
+        ],
+        [
+          4.7934256393637875e-31,
+          -0.057389559517852844,
+          3.6625270321193444e-16
+        ],
+        [
+          2.780672091610839e-15,
+          3.6625270321193434e-16,
+          -0.1352208809642933
+        ]
+      ],
+      "Fz_top": -0.1352208809642923,
+      "Fz_bottom": 0.1352208809642926,
+      "reduced_residual_l2": 1.0925670339878423e-14,
+      "compression": 0.01,
+      "solve_seconds": 0.038172134023625404,
+      "initial_residual_l2": 1.0925670339878423e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.01,
+        "Fz": -0.13522088096429366,
+        "energy": 0.0006750891975111571,
+        "J": 0.99,
+        "first_piola_diagonal": [
+          -0.05681566392267491,
+          -0.05681566392267491,
+          -0.13522088096429366
+        ],
+        "cauchy_diagonal": [
+          -0.05738955951785345,
+          -0.05738955951785345,
+          -0.13522088096429366
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.0015212452582677241,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9849999999999994,
+      "J_min": 0.984999999999996,
+      "J_max": 0.9850000000000024,
+      "mean_first_piola": [
+        [
+          -0.08456535616405934,
+          -2.5822868694344065e-30,
+          2.790074206226443e-15
+        ],
+        [
+          -2.5822868694344065e-30,
+          -0.08456535616405941,
+          3.6749109083205625e-16
+        ],
+        [
+          2.894217817058027e-15,
+          3.812082346493358e-16,
+          -0.2032936930679004
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.08585315346605013,
+          4.630052901836525e-31,
+          2.7900742062264385e-15
+        ],
+        [
+          4.942894314122777e-31,
+          -0.0858531534660502,
+          3.6749109083205724e-16
+        ],
+        [
+          2.7900742062264393e-15,
+          3.674910908320572e-16,
+          -0.20329369306790046
+        ]
+      ],
+      "Fz_top": -0.20329369306789954,
+      "Fz_bottom": 0.20329369306789982,
+      "reduced_residual_l2": 1.0898135565026383e-14,
+      "compression": 0.015,
+      "solve_seconds": 0.03843240498099476,
+      "initial_residual_l2": 1.0898135565026383e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.015,
+        "Fz": -0.20329369306790024,
+        "energy": 0.0015212452582680737,
+        "J": 0.985,
+        "first_piola_diagonal": [
+          -0.08456535616405939,
+          -0.08456535616405939,
+          -0.20329369306790024
+        ],
+        "cauchy_diagonal": [
+          -0.08585315346605014,
+          -0.08585315346605014,
+          -0.20329369306790024
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.0027085523770020974,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.979999999999999,
+      "J_min": 0.979999999999996,
+      "J_max": 0.9800000000000024,
+      "mean_first_piola": [
+        [
+          -0.11187569311902244,
+          -2.5761238936123674e-30,
+          2.799556203022481e-15
+        ],
+        [
+          -2.5021681837478975e-30,
+          -0.11187569311902247,
+          3.687400000324157e-16
+        ],
+        [
+          2.93867283558154e-15,
+          3.870635711180602e-16,
+          -0.27168225894076964
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.11415887052961482,
+          4.842338145887912e-31,
+          2.7995562030224787e-15
+        ],
+        [
+          4.905225654276068e-31,
+          -0.11415887052961485,
+          3.6874000003241696e-16
+        ],
+        [
+          2.7995562030224787e-15,
+          3.6874000003241696e-16,
+          -0.2716822589407698
+        ]
+      ],
+      "Fz_top": -0.27168225894076853,
+      "Fz_bottom": 0.27168225894076886,
+      "reduced_residual_l2": 1.1056964257907653e-14,
+      "compression": 0.02,
+      "solve_seconds": 0.03848458401625976,
+      "initial_residual_l2": 1.1056964257907653e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.02,
+        "Fz": -0.2716822589407701,
+        "energy": 0.0027085523770015744,
+        "J": 0.98,
+        "first_piola_diagonal": [
+          -0.1118756931190229,
+          -0.1118756931190229,
+          -0.2716822589407701
+        ],
+        "cauchy_diagonal": [
+          -0.11415887052961521,
+          -0.11415887052961521,
+          -0.2716822589407701
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.004238603757357945,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9749999999999999,
+      "J_min": 0.9749999999999961,
+      "J_max": 0.9750000000000024,
+      "mean_first_piola": [
+        [
+          -0.1387462170727394,
+          -2.5329830628580933e-30,
+          2.80911917347486e-15
+        ],
+        [
+          -2.4590273529936234e-30,
+          -0.13874621707273946,
+          3.699995745753783e-16
+        ],
+        [
+          2.9833429038723552e-15,
+          3.929472325945543e-16,
+          -0.34039237523540594
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.1423038123822968,
+          4.930380657631325e-31,
+          2.8091191734748553e-15
+        ],
+        [
+          4.740750632337812e-31,
+          -0.14230381238229686,
+          3.6999957457537913e-16
+        ],
+        [
+          2.8091191734748553e-15,
+          3.6999957457537913e-16,
+          -0.3403923752354059
+        ]
+      ],
+      "Fz_top": -0.34039237523540505,
+      "Fz_bottom": 0.3403923752354053,
+      "reduced_residual_l2": 1.0857576864560591e-14,
+      "compression": 0.025,
+      "solve_seconds": 0.037786881963256747,
+      "initial_residual_l2": 1.0857576864560591e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.025,
+        "Fz": -0.3403923752354062,
+        "energy": 0.004238603757358446,
+        "J": 0.975,
+        "first_piola_diagonal": [
+          -0.13874621707273954,
+          -0.13874621707273954,
+          -0.3403923752354062
+        ],
+        "cauchy_diagonal": [
+          -0.14230381238229697,
+          -0.14230381238229697,
+          -0.3403923752354062
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.0061130219305403225,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9699999999999992,
+      "J_min": 0.9699999999999961,
+      "J_max": 0.9700000000000024,
+      "mean_first_piola": [
+        [
+          -0.16517646116095205,
+          -2.4960052079258584e-30,
+          2.8187642296711153e-15
+        ],
+        [
+          -2.48367925628178e-30,
+          -0.16517646116095205,
+          3.7126996093814546e-16
+        ],
+        [
+          3.0282321482778467e-15,
+          3.988597625754367e-16,
+          -0.409429976987727
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.17028501150613623,
+          5.2099383237856815e-31,
+          2.8187642296711114e-15
+        ],
+        [
+          4.82872332448429e-31,
+          -0.17028501150613623,
+          3.712699609381465e-16
+        ],
+        [
+          2.8187642296711114e-15,
+          3.7126996093814654e-16,
+          -0.4094299769877272
+        ]
+      ],
+      "Fz_top": -0.4094299769877261,
+      "Fz_bottom": 0.40942997698772626,
+      "reduced_residual_l2": 1.0928776364494333e-14,
+      "compression": 0.03,
+      "solve_seconds": 0.036473240004852414,
+      "initial_residual_l2": 1.0928776364494333e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.03,
+        "Fz": -0.40942997698772776,
+        "energy": 0.006113021930541248,
+        "J": 0.97,
+        "first_piola_diagonal": [
+          -0.16517646116095264,
+          -0.16517646116095264,
+          -0.40942997698772776
+        ],
+        "cauchy_diagonal": [
+          -0.17028501150613673,
+          -0.17028501150613673,
+          -0.40942997698772776
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.008333459457305476,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.964999999999999,
+      "J_min": 0.9649999999999961,
+      "J_max": 0.9650000000000023,
+      "mean_first_piola": [
+        [
+          -0.19116594914457888,
+          -2.5391460386801324e-30,
+          2.8284925048083666e-15
+        ],
+        [
+          -2.4590273529936234e-30,
+          -0.19116594914457885,
+          3.7255130837834063e-16
+        ],
+        [
+          3.073344795564072e-15,
+          4.0480171778384643e-16,
+          -0.47880114166926613
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.19809942916536682,
+          4.853742616320997e-31,
+          2.828492504808364e-15
+        ],
+        [
+          4.726012547470444e-31,
+          -0.19809942916536682,
+          3.7255130837834176e-16
+        ],
+        [
+          2.828492504808364e-15,
+          3.7255130837834176e-16,
+          -0.4788011416692666
+        ]
+      ],
+      "Fz_top": -0.4788011416692651,
+      "Fz_bottom": 0.47880114166926535,
+      "reduced_residual_l2": 1.0854509191624176e-14,
+      "compression": 0.035,
+      "solve_seconds": 0.03591437201248482,
+      "initial_residual_l2": 1.0854509191624176e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.035,
+        "Fz": -0.478801141669267,
+        "energy": 0.008333459457304883,
+        "J": 0.965,
+        "first_piola_diagonal": [
+          -0.19116594914457927,
+          -0.19116594914457927,
+          -0.478801141669267
+        ],
+        "cauchy_diagonal": [
+          -0.19809942916536713,
+          -0.19809942916536713,
+          -0.478801141669267
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.010901599650562107,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.96,
+      "J_min": 0.9599999999999961,
+      "J_max": 0.9600000000000023,
+      "mean_first_piola": [
+        [
+          -0.21671419517761276,
+          -2.440538425527506e-30,
+          2.838305153705958e-15
+        ],
+        [
+          -2.4528643771715843e-30,
+          -0.21671419517761278,
+          3.738437690015314e-16
+        ],
+        [
+          3.118685175891219e-15,
+          4.1077366856134904e-16,
+          -0.5485120933799733
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.22574395331001323,
+          5.1358131850326295e-31,
+          2.838305153705952e-15
+        ],
+        [
+          4.4296388720906425e-31,
+          -0.22574395331001326,
+          3.7384376900153223e-16
+        ],
+        [
+          2.838305153705952e-15,
+          3.738437690015321e-16,
+          -0.5485120933799732
+        ]
+      ],
+      "Fz_top": -0.5485120933799722,
+      "Fz_bottom": 0.5485120933799726,
+      "reduced_residual_l2": 1.0847479508585199e-14,
+      "compression": 0.04,
+      "solve_seconds": 0.036463892029132694,
+      "initial_residual_l2": 1.0847479508585199e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.04,
+        "Fz": -0.5485120933799739,
+        "energy": 0.010901599650562342,
+        "J": 0.96,
+        "first_piola_diagonal": [
+          -0.21671419517761253,
+          -0.21671419517761253,
+          -0.5485120933799739
+        ],
+        "cauchy_diagonal": [
+          -0.22574395331001307,
+          -0.22574395331001307,
+          -0.5485120933799739
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.013819157319297351,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9549999999999991,
+      "J_min": 0.9549999999999961,
+      "J_max": 0.9550000000000023,
+      "mean_first_piola": [
+        [
+          -0.24182070356808016,
+          -2.397397594773232e-30,
+          2.8482033533332886e-15
+        ],
+        [
+          -2.4158865222393494e-30,
+          -0.24182070356808016,
+          3.751474978307516e-16
+        ],
+        [
+          3.1642577258932e-15,
+          4.1677619927356164e-16,
+          -0.6185692071872667
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.25321539640636687,
+          5.1627022592998205e-31,
+          2.848203353333286e-15
+        ],
+        [
+          5.098168481058573e-31,
+          -0.25321539640636687,
+          3.751474978307528e-16
+        ],
+        [
+          2.8482033533332862e-15,
+          3.7514749783075286e-16,
+          -0.6185692071872673
+        ]
+      ],
+      "Fz_top": -0.6185692071872658,
+      "Fz_bottom": 0.618569207187266,
+      "reduced_residual_l2": 1.0774295938793296e-14,
+      "compression": 0.045,
+      "solve_seconds": 0.03713829204207286,
+      "initial_residual_l2": 1.0774295938793296e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.045,
+        "Fz": -0.6185692071872675,
+        "energy": 0.013819157319297327,
+        "J": 0.955,
+        "first_piola_diagonal": [
+          -0.24182070356808022,
+          -0.24182070356808022,
+          -0.6185692071872675
+        ],
+        "cauchy_diagonal": [
+          -0.25321539640636676,
+          -0.25321539640636676,
+          -0.6185692071872675
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.017087879534578805,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9499999999999993,
+      "J_min": 0.9499999999999961,
+      "J_max": 0.9500000000000023,
+      "mean_first_piola": [
+        [
+          -0.26648496853181214,
+          -2.366582715663036e-30,
+          2.8581883033533786e-15
+        ],
+        [
+          -2.397397594773232e-30,
+          -0.26648496853181214,
+          3.7646265287809686e-16
+        ],
+        [
+          3.2100669918656334e-15,
+          4.2280990873005457e-16,
+          -0.6889790136172366
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.2805104931913813,
+          5.643988384393757e-31,
+          2.8581883033533754e-15
+        ],
+        [
+          4.6708869388086265e-31,
+          -0.2805104931913813,
+          3.764626528780979e-16
+        ],
+        [
+          2.8581883033533754e-15,
+          3.764626528780979e-16,
+          -0.688979013617237
+        ]
+      ],
+      "Fz_top": -0.6889790136172356,
+      "Fz_bottom": 0.6889790136172358,
+      "reduced_residual_l2": 1.078707511816094e-14,
+      "compression": 0.05,
+      "solve_seconds": 0.036862602981273085,
+      "initial_residual_l2": 1.078707511816094e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.05,
+        "Fz": -0.6889790136172371,
+        "energy": 0.017087879534578843,
+        "J": 0.95,
+        "first_piola_diagonal": [
+          -0.26648496853181236,
+          -0.26648496853181236,
+          -0.6889790136172371
+        ],
+        "cauchy_diagonal": [
+          -0.28051049319138144,
+          -0.28051049319138144,
+          -0.6889790136172371
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.020709546418403425,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9449999999999998,
+      "J_min": 0.9449999999999961,
+      "J_max": 0.9450000000000023,
+      "mean_first_piola": [
+        [
+          -0.290706473938777,
+          -2.4282124738834277e-30,
+          2.8682612266827085e-15
+        ],
+        [
+          -2.4220494980613885e-30,
+          -0.2907064739387772,
+          3.777893952184627e-16
+        ],
+        [
+          3.2561176330666e-15,
+          4.2887541061910545e-16,
+          -0.7597482033041751
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.30762589834791226,
+          5.869500782894434e-31,
+          2.868261226682704e-15
+        ],
+        [
+          5.347767379970484e-31,
+          -0.3076258983479124,
+          3.7778939521846357e-16
+        ],
+        [
+          2.868261226682704e-15,
+          3.777893952184636e-16,
+          -0.7597482033041753
+        ]
+      ],
+      "Fz_top": -0.7597482033041739,
+      "Fz_bottom": 0.7597482033041744,
+      "reduced_residual_l2": 1.0781484584201183e-14,
+      "compression": 0.055,
+      "solve_seconds": 0.03629511204781011,
+      "initial_residual_l2": 1.0781484584201183e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.055,
+        "Fz": -0.7597482033041758,
+        "energy": 0.02070954641840286,
+        "J": 0.945,
+        "first_piola_diagonal": [
+          -0.29070647393877697,
+          -0.29070647393877697,
+          -0.7597482033041758
+        ],
+        "cauchy_diagonal": [
+          -0.30762589834791215,
+          -0.30762589834791215,
+          -0.7597482033041758
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.024685971956205324,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.939999999999999,
+      "J_min": 0.9399999999999961,
+      "J_max": 0.9400000000000023,
+      "mean_first_piola": [
+        [
+          -0.31448469305170296,
+          -2.3850716431291536e-30,
+          2.878423370067931e-15
+        ],
+        [
+          -2.4343754497054668e-30,
+          -0.31448469305170307,
+          3.791278890655055e-16
+        ],
+        [
+          3.302414425134791e-15,
+          4.3497333395791705e-16,
+          -0.8308836318048873
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.3345581840975566,
+          5.179522233415891e-31,
+          2.878423370067928e-15
+        ],
+        [
+          4.917267943116352e-31,
+          -0.3345581840975568,
+          3.7912788906550684e-16
+        ],
+        [
+          2.878423370067929e-15,
+          3.7912788906550674e-16,
+          -0.830883631804888
+        ]
+      ],
+      "Fz_top": -0.8308836318048861,
+      "Fz_bottom": 0.8308836318048866,
+      "reduced_residual_l2": 1.0774070959944335e-14,
+      "compression": 0.06,
+      "solve_seconds": 0.037284277961589396,
+      "initial_residual_l2": 1.0774070959944335e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.06,
+        "Fz": -0.8308836318048877,
+        "energy": 0.024685971956205588,
+        "J": 0.94,
+        "first_piola_diagonal": [
+          -0.3144846930517031,
+          -0.3144846930517031,
+          -0.8308836318048877
+        ],
+        "cauchy_diagonal": [
+          -0.33455818409755655,
+          -0.33455818409755655,
+          -0.8308836318048877
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.02901900483385881,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9349999999999998,
+      "J_min": 0.9349999999999962,
+      "J_max": 0.9350000000000024,
+      "mean_first_piola": [
+        [
+          -0.3378190882567232,
+          -2.3912346189511927e-30,
+          2.888676004680028e-15
+        ],
+        [
+          -2.3480937881969183e-30,
+          -0.3378190882567233,
+          3.8047830184990183e-16
+        ],
+        [
+          3.3489622636298743e-15,
+          4.411043235589314e-16,
+          -0.9023923245845475
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.3613038377077255,
+          5.207220213273726e-31,
+          2.8886760046800236e-15
+        ],
+        [
+          5.273134393188583e-31,
+          -0.3613038377077255,
+          3.8047830184990257e-16
+        ],
+        [
+          2.8886760046800236e-15,
+          3.804783018499026e-16,
+          -0.9023923245845477
+        ]
+      ],
+      "Fz_top": -0.9023923245845464,
+      "Fz_bottom": 0.9023923245845465,
+      "reduced_residual_l2": 1.0669393364413521e-14,
+      "compression": 0.065,
+      "solve_seconds": 0.03505079197930172,
+      "initial_residual_l2": 1.0669393364413521e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.065,
+        "Fz": -0.902392324584548,
+        "energy": 0.029019004833858882,
+        "J": 0.935,
+        "first_piola_diagonal": [
+          -0.3378190882567231,
+          -0.3378190882567231,
+          -0.902392324584548
+        ],
+        "cauchy_diagonal": [
+          -0.3613038377077252,
+          -0.3613038377077252,
+          -0.902392324584548
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.0337105293000568,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9299999999999996,
+      "J_min": 0.9299999999999962,
+      "J_max": 0.9300000000000023,
+      "mean_first_piola": [
+        [
+          -0.3607091107857527,
+          -2.3727456914850753e-30,
+          2.8990204267265706e-15
+        ],
+        [
+          -2.4528643771715843e-30,
+          -0.3607091107857528,
+          3.8184080429998994e-16
+        ],
+        [
+          3.395766167700138e-15,
+          4.47269040512909e-16,
+          -0.9742814821811786
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.3878592589094116,
+          5.5665588070031096e-31,
+          2.899020426726567e-15
+        ],
+        [
+          5.765364478681792e-31,
+          -0.3878592589094117,
+          3.818408042999907e-16
+        ],
+        [
+          2.8990204267265667e-15,
+          3.8184080429999073e-16,
+          -0.9742814821811788
+        ]
+      ],
+      "Fz_top": -0.9742814821811778,
+      "Fz_bottom": 0.9742814821811782,
+      "reduced_residual_l2": 1.0790789829944618e-14,
+      "compression": 0.07,
+      "solve_seconds": 0.03610007499810308,
+      "initial_residual_l2": 1.0790789829944618e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.07,
+        "Fz": -0.9742814821811789,
+        "energy": 0.03371052930005761,
+        "J": 0.9299999999999999,
+        "first_piola_diagonal": [
+          -0.36070911078575246,
+          -0.36070911078575246,
+          -0.9742814821811789
+        ],
+        "cauchy_diagonal": [
+          -0.38785925890941125,
+          -0.38785925890941125,
+          -0.9742814821811789
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.03876246605497084,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9249999999999992,
+      "J_min": 0.9249999999999963,
+      "J_max": 0.9250000000000024,
+      "mean_first_piola": [
+        [
+          -0.38315420043028975,
+          -2.4158865222393494e-30,
+          2.9094579580827005e-15
+        ],
+        [
+          -2.4528643771715843e-30,
+          -0.3831542004302898,
+          3.832155705248801e-16
+        ],
+        [
+          3.442831283882662e-15,
+          4.534681626894644e-16,
+          -1.0465584855561276
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.414220757221935,
+          4.463993298125662e-31,
+          2.909457958082697e-15
+        ],
+        [
+          5.330141251493328e-31,
+          -0.41422075722193524,
+          3.8321557052488137e-16
+        ],
+        [
+          2.909457958082697e-15,
+          3.8321557052488133e-16,
+          -1.0465584855561285
+        ]
+      ],
+      "Fz_top": -1.0465584855561267,
+      "Fz_bottom": 1.0465584855561272,
+      "reduced_residual_l2": 1.0783834539516182e-14,
+      "compression": 0.075,
+      "solve_seconds": 0.035582726006396115,
+      "initial_residual_l2": 1.0783834539516182e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.075,
+        "Fz": -1.0465584855561287,
+        "energy": 0.03876246605496964,
+        "J": 0.925,
+        "first_piola_diagonal": [
+          -0.3831542004302896,
+          -0.3831542004302896,
+          -1.0465584855561287
+        ],
+        "cauchy_diagonal": [
+          -0.4142207572219347,
+          -0.4142207572219347,
+          -1.0465584855561287
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.044176773166147536,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9199999999999999,
+      "J_min": 0.9199999999999963,
+      "J_max": 0.9200000000000024,
+      "mean_first_piola": [
+        [
+          -0.405153785246354,
+          -2.298789981620605e-30,
+          2.9199899469415334e-15
+        ],
+        [
+          -2.397397594773232e-30,
+          -0.40515378524635404,
+          3.8460277810012186e-16
+        ],
+        [
+          3.49016289004162e-15,
+          4.597023852557933e-16,
+          -1.1192309016383593
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.4403845491808196,
+          5.493087145730551e-31,
+          2.919989946941529e-15
+        ],
+        [
+          5.560076013361412e-31,
+          -0.44038454918081954,
+          3.8460277810012275e-16
+        ],
+        [
+          2.9199899469415286e-15,
+          3.846027781001227e-16,
+          -1.1192309016383593
+        ]
+      ],
+      "Fz_top": -1.1192309016383584,
+      "Fz_bottom": 1.1192309016383586,
+      "reduced_residual_l2": 1.072714106521189e-14,
+      "compression": 0.08,
+      "solve_seconds": 0.03708898602053523,
+      "initial_residual_l2": 1.072714106521189e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.08,
+        "Fz": -1.11923090163836,
+        "energy": 0.04417677316614773,
+        "J": 0.92,
+        "first_piola_diagonal": [
+          -0.4051537852463537,
+          -0.4051537852463537,
+          -1.11923090163836
+        ],
+        "cauchy_diagonal": [
+          -0.4403845491808192,
+          -0.4403845491808192,
+          -1.11923090163836
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.049955447012624415,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9149999999999994,
+      "J_min": 0.9149999999999963,
+      "J_max": 0.9150000000000024,
+      "mean_first_piola": [
+        [
+          -0.42670728125019974,
+          -2.3850716431291536e-30,
+          2.9306177684846896e-15
+        ],
+        [
+          -2.3542567640189575e-30,
+          -0.42670728125019974,
+          3.860026081560204e-16
+        ],
+        [
+          3.5377663994504347e-15,
+          4.659724212143492e-16,
+          -1.1923064890705997
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.4663467554646994,
+          4.78219981819432e-31,
+          2.9306177684846864e-15
+        ],
+        [
+          4.984264599244784e-31,
+          -0.4663467554646995,
+          3.860026081560214e-16
+        ],
+        [
+          2.9306177684846864e-15,
+          3.8600260815602145e-16,
+          -1.1923064890706003
+        ]
+      ],
+      "Fz_top": -1.1923064890705983,
+      "Fz_bottom": 1.192306489070599,
+      "reduced_residual_l2": 1.0711249996213627e-14,
+      "compression": 0.085,
+      "solve_seconds": 0.03564648103201762,
+      "initial_residual_l2": 1.0711249996213627e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.085,
+        "Fz": -1.1923064890706003,
+        "energy": 0.049955447012623985,
+        "J": 0.915,
+        "first_piola_diagonal": [
+          -0.42670728125019985,
+          -0.42670728125019985,
+          -1.1923064890706003
+        ],
+        "cauchy_diagonal": [
+          -0.4663467554646993,
+          -0.4663467554646993,
+          -1.1923064890706003
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.056100523258301865,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.9099999999999993,
+      "J_min": 0.9099999999999963,
+      "J_max": 0.9100000000000024,
+      "mean_first_piola": [
+        [
+          -0.44781409210450573,
+          -2.33576783655284e-30,
+          2.9413428255736708e-15
+        ],
+        [
+          -2.3542567640189575e-30,
+          -0.44781409210450573,
+          3.8741524546870187e-16
+        ],
+        [
+          3.585647365023923e-15,
+          4.722790019602757e-16,
+          -1.2657932041659208
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.4921033979170396,
+          5.553450740738584e-31,
+          2.9413428255736676e-15
+        ],
+        [
+          5.553450740738584e-31,
+          -0.4921033979170397,
+          3.874152454687029e-16
+        ],
+        [
+          2.9413428255736676e-15,
+          3.8741524546870285e-16,
+          -1.2657932041659214
+        ]
+      ],
+      "Fz_top": -1.26579320416592,
+      "Fz_bottom": 1.26579320416592,
+      "reduced_residual_l2": 1.0793055997079444e-14,
+      "compression": 0.09,
+      "solve_seconds": 0.0366722010076046,
+      "initial_residual_l2": 1.0793055997079444e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.09,
+        "Fz": -1.2657932041659214,
+        "energy": 0.05610052325830166,
+        "J": 0.91,
+        "first_piola_diagonal": [
+          -0.4478140921045054,
+          -0.4478140921045054,
+          -1.2657932041659214
+        ],
+        "cauchy_diagonal": [
+          -0.4921033979170389,
+          -0.4921033979170389,
+          -1.2657932041659214
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.06261407785564173,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.905,
+      "J_min": 0.9049999999999963,
+      "J_max": 0.9050000000000022,
+      "mean_first_piola": [
+        [
+          -0.4684736087946566,
+          -2.341930812374879e-30,
+          2.9521665494628688e-15
+        ],
+        [
+          -2.3480937881969183e-30,
+          -0.4684736087946566,
+          3.8884087855402616e-16
+        ],
+        [
+          3.633811483706771e-15,
+          4.786228778594272e-16,
+          -1.3396992070836298
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.517650396458184,
+          5.311736067613857e-31,
+          2.9521665494628633e-15
+        ],
+        [
+          5.992727871154095e-31,
+          -0.517650396458184,
+          3.8884087855402705e-16
+        ],
+        [
+          2.9521665494628633e-15,
+          3.88840878554027e-16,
+          -1.3396992070836296
+        ]
+      ],
+      "Fz_top": -1.3396992070836284,
+      "Fz_bottom": 1.3396992070836287,
+      "reduced_residual_l2": 1.0675281611840814e-14,
+      "compression": 0.095,
+      "solve_seconds": 0.03612743300618604,
+      "initial_residual_l2": 1.0675281611840814e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.095,
+        "Fz": -1.3396992070836304,
+        "energy": 0.06261407785564196,
+        "J": 0.905,
+        "first_piola_diagonal": [
+          -0.46847360879465627,
+          -0.46847360879465627,
+          -1.3396992070836304
+        ],
+        "cauchy_diagonal": [
+          -0.5176503964581837,
+          -0.5176503964581837,
+          -1.3396992070836304
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.06949822808081105,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8999999999999991,
+      "J_min": 0.8999999999999962,
+      "J_max": 0.9000000000000022,
+      "mean_first_piola": [
+        [
+          -0.4886852092947721,
+          -2.3480937881969183e-30,
+          2.963090400535005e-15
+        ],
+        [
+          -2.2803010541544876e-30,
+          -0.4886852092947722,
+          3.902796997644541e-16
+        ],
+        [
+          3.68226460102502e-15,
+          4.850048188478639e-16,
+          -1.414032868233837
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.5429835658830806,
+          4.998858166765098e-31,
+          2.9630904005350024e-15
+        ],
+        [
+          5.820588276370319e-31,
+          -0.5429835658830806,
+          3.902796997644552e-16
+        ],
+        [
+          2.9630904005350024e-15,
+          3.9027969976445526e-16,
+          -1.4140328682338386
+        ]
+      ],
+      "Fz_top": -1.4140328682338361,
+      "Fz_bottom": 1.4140328682338361,
+      "reduced_residual_l2": 1.0702953058749814e-14,
+      "compression": 0.1,
+      "solve_seconds": 0.03717142902314663,
+      "initial_residual_l2": 1.0702953058749814e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.1,
+        "Fz": -1.4140328682338386,
+        "energy": 0.06949822808081126,
+        "J": 0.9,
+        "first_piola_diagonal": [
+          -0.4886852092947723,
+          -0.4886852092947723,
+          -1.4140328682338386
+        ],
+        "cauchy_diagonal": [
+          -0.5429835658830804,
+          -0.5429835658830804,
+          -1.4140328682338386
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.07675513360144352,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8949999999999994,
+      "J_min": 0.8949999999999962,
+      "J_max": 0.8950000000000022,
+      "mean_first_piola": [
+        [
+          -0.5084482582230808,
+          -2.3727456914850753e-30,
+          2.974115869059822e-15
+        ],
+        [
+          -2.3049529574426442e-30,
+          -0.5084482582230809,
+          3.9173190538897746e-16
+        ],
+        [
+          3.731012715807564e-15,
+          4.914256150537375e-16,
+          -1.4888027749204866
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.5680986125397554,
+          6.059685724463084e-31,
+          2.974115869059818e-15
+        ],
+        [
+          6.197405854564517e-31,
+          -0.5680986125397554,
+          3.9173190538897855e-16
+        ],
+        [
+          2.974115869059818e-15,
+          3.917319053889785e-16,
+          -1.4888027749204873
+        ]
+      ],
+      "Fz_top": -1.4888027749204853,
+      "Fz_bottom": 1.4888027749204857,
+      "reduced_residual_l2": 1.0920165850174899e-14,
+      "compression": 0.105,
+      "solve_seconds": 0.03643371496582404,
+      "initial_residual_l2": 1.0920165850174899e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.105,
+        "Fz": -1.4888027749204875,
+        "energy": 0.07675513360144316,
+        "J": 0.895,
+        "first_piola_diagonal": [
+          -0.5084482582230816,
+          -0.5084482582230816,
+          -1.4888027749204875
+        ],
+        "cauchy_diagonal": [
+          -0.5680986125397559,
+          -0.5680986125397559,
+          -1.4888027749204875
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.08438699757823137,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8899999999999999,
+      "J_min": 0.8899999999999963,
+      "J_max": 0.8900000000000022,
+      "mean_first_piola": [
+        [
+          -0.5277621064862542,
+          -2.3727456914850753e-30,
+          2.9852444759769075e-15
+        ],
+        [
+          -2.249486175044292e-30,
+          -0.5277621064862542,
+          3.93197695756228e-16
+        ],
+        [
+          3.780061985084999e-15,
+          4.978860774425347e-16,
+          -1.5640177382331335
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.5929911308834316,
+          5.9552350639928915e-31,
+          2.9852444759769024e-15
+        ],
+        [
+          6.509210418782928e-31,
+          -0.5929911308834316,
+          3.931976957562288e-16
+        ],
+        [
+          2.9852444759769024e-15,
+          3.931976957562288e-16,
+          -1.5640177382331333
+        ]
+      ],
+      "Fz_top": -1.5640177382331317,
+      "Fz_bottom": 1.5640177382331322,
+      "reduced_residual_l2": 1.0952994710946806e-14,
+      "compression": 0.11,
+      "solve_seconds": 0.036103492020629346,
+      "initial_residual_l2": 1.0952994710946806e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.11,
+        "Fz": -1.5640177382331342,
+        "energy": 0.08438699757823087,
+        "J": 0.89,
+        "first_piola_diagonal": [
+          -0.5277621064862545,
+          -0.5277621064862545,
+          -1.5640177382331342
+        ],
+        "cauchy_diagonal": [
+          -0.592991130883432,
+          -0.592991130883432,
+          -1.5640177382331342
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.09239606780162192,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8849999999999991,
+      "J_min": 0.8849999999999963,
+      "J_max": 0.8850000000000022,
+      "mean_first_piola": [
+        [
+          -0.5466260909122732,
+          -2.2679751025104093e-30,
+          2.9964777737035652e-15
+        ],
+        [
+          -2.2433231992222527e-30,
+          -0.5466260909122732,
+          3.9467727534088488e-16
+        ],
+        [
+          3.829418729173518e-15,
+          5.043870384867002e-16,
+          -1.6396868001982496
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.6176565999008741,
+          5.431775300780278e-31,
+          2.9964777737035625e-15
+        ],
+        [
+          6.476347474007254e-31,
+          -0.6176565999008742,
+          3.946772753408861e-16
+        ],
+        [
+          2.9964777737035625e-15,
+          3.94677275340886e-16,
+          -1.639686800198251
+        ]
+      ],
+      "Fz_top": -1.639686800198248,
+      "Fz_bottom": 1.6396868001982485,
+      "reduced_residual_l2": 1.0881287627243443e-14,
+      "compression": 0.115,
+      "solve_seconds": 0.03685463103465736,
+      "initial_residual_l2": 1.0881287627243443e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.115,
+        "Fz": -1.6396868001982514,
+        "energy": 0.09239606780162132,
+        "J": 0.885,
+        "first_piola_diagonal": [
+          -0.5466260909122733,
+          -0.5466260909122733,
+          -1.6396868001982514
+        ],
+        "cauchy_diagonal": [
+          -0.6176565999008738,
+          -0.6176565999008738,
+          -1.6396868001982514
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.10078463786494224,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8799999999999997,
+      "J_min": 0.8799999999999963,
+      "J_max": 0.8800000000000022,
+      "mean_first_piola": [
+        [
+          -0.5650395338713968,
+          -2.3172789090867225e-30,
+          3.0078173469686565e-15
+        ],
+        [
+          -2.3111159332646834e-30,
+          -0.565039533871397,
+          3.9617085287350353e-16
+        ],
+        [
+          3.879089436951953e-15,
+          5.109293528606913e-16,
+          -1.715819241201368
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.6420903793993148,
+          4.061961337253081e-31,
+          3.007817346968652e-15
+        ],
+        [
+          5.182502395805655e-31,
+          -0.6420903793993149,
+          3.961708528735044e-16
+        ],
+        [
+          3.007817346968652e-15,
+          3.9617085287350427e-16,
+          -1.7158192412013682
+        ]
+      ],
+      "Fz_top": -1.7158192412013669,
+      "Fz_bottom": 1.7158192412013673,
+      "reduced_residual_l2": 1.0658148518523244e-14,
+      "compression": 0.12,
+      "solve_seconds": 0.03659731795778498,
+      "initial_residual_l2": 1.0658148518523244e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.12,
+        "Fz": -1.7158192412013689,
+        "energy": 0.10078463786494174,
+        "J": 0.88,
+        "first_piola_diagonal": [
+          -0.565039533871397,
+          -0.565039533871397,
+          -1.7158192412013689
+        ],
+        "cauchy_diagonal": [
+          -0.6420903793993148,
+          -0.6420903793993148,
+          -1.7158192412013689
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.1095550483753355,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8749999999999998,
+      "J_min": 0.8749999999999963,
+      "J_max": 0.8750000000000022,
+      "mean_first_piola": [
+        [
+          -0.583001742884777,
+          -2.2371602234002135e-30,
+          3.0192648136734365e-15
+        ],
+        [
+          -2.2803010541544876e-30,
+          -0.583001742884777,
+          3.976786414538986e-16
+        ],
+        [
+          3.9290807713404216e-15,
+          5.17513898162594e-16,
+          -1.7924245876919356
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.6662877061540309,
+          5.564286742183925e-31,
+          3.019264813673432e-15
+        ],
+        [
+          6.268626836131257e-31,
+          -0.666287706154031,
+          3.9767864145389957e-16
+        ],
+        [
+          3.019264813673432e-15,
+          3.9767864145389957e-16,
+          -1.792424587691936
+        ]
+      ],
+      "Fz_top": -1.7924245876919342,
+      "Fz_bottom": 1.7924245876919351,
+      "reduced_residual_l2": 1.0786888172068411e-14,
+      "compression": 0.125,
+      "solve_seconds": 0.0367754339822568,
+      "initial_residual_l2": 1.0786888172068411e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.125,
+        "Fz": -1.792424587691937,
+        "energy": 0.10955504837533614,
+        "J": 0.875,
+        "first_piola_diagonal": [
+          -0.5830017428847774,
+          -0.5830017428847774,
+          -1.792424587691937
+        ],
+        "cauchy_diagonal": [
+          -0.6662877061540312,
+          -0.6662877061540312,
+          -1.792424587691937
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.11870968820395555,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.869999999999999,
+      "J_min": 0.8699999999999963,
+      "J_max": 0.8700000000000022,
+      "mean_first_piola": [
+        [
+          -0.6005120102202435,
+          -2.249486175044292e-30,
+          3.0308218257803805e-15
+        ],
+        [
+          -2.3234418849087617e-30,
+          -0.6005120102202435,
+          3.992008586682158e-16
+        ],
+        [
+          3.9793995749895e-15,
+          5.241415756634639e-16,
+          -1.8695126201833465
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.6902436899083266,
+          5.525426599069593e-31,
+          3.030821825780378e-15
+        ],
+        [
+          6.162975822039162e-31,
+          -0.6902436899083264,
+          3.9920085866821707e-16
+        ],
+        [
+          3.030821825780378e-15,
+          3.992008586682169e-16,
+          -1.8695126201833485
+        ]
+      ],
+      "Fz_top": -1.8695126201833454,
+      "Fz_bottom": 1.8695126201833456,
+      "reduced_residual_l2": 1.0738577959011547e-14,
+      "compression": 0.13,
+      "solve_seconds": 0.03659201296977699,
+      "initial_residual_l2": 1.0738577959011547e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.13,
+        "Fz": -1.8695126201833479,
+        "energy": 0.11870968820395582,
+        "J": 0.87,
+        "first_piola_diagonal": [
+          -0.6005120102202434,
+          -0.6005120102202434,
+          -1.8695126201833479
+        ],
+        "cauchy_diagonal": [
+          -0.6902436899083257,
+          -0.6902436899083257,
+          -1.8695126201833479
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.1282509957769261,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8649999999999999,
+      "J_min": 0.8649999999999963,
+      "J_max": 0.8650000000000022,
+      "mean_first_piola": [
+        [
+          -0.6175696124747637,
+          -2.2371602234002135e-30,
+          3.0424900702311065e-15
+        ],
+        [
+          -2.2741380783324484e-30,
+          -0.6175696124747638,
+          4.007377267098339e-16
+        ],
+        [
+          4.030052876189276e-15,
+          5.308133110856289e-16,
+          -1.9470933815612383
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.7139533092193799,
+          6.056103408940211e-31,
+          3.0424900702311014e-15
+        ],
+        [
+          6.69733788753388e-31,
+          -0.7139533092193802,
+          4.007377267098347e-16
+        ],
+        [
+          3.0424900702311014e-15,
+          4.007377267098347e-16,
+          -1.947093381561238
+        ]
+      ],
+      "Fz_top": -1.9470933815612372,
+      "Fz_bottom": 1.9470933815612372,
+      "reduced_residual_l2": 1.0732112801355886e-14,
+      "compression": 0.135,
+      "solve_seconds": 0.03647624503355473,
+      "initial_residual_l2": 1.0732112801355886e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.135,
+        "Fz": -1.947093381561239,
+        "energy": 0.1282509957769259,
+        "J": 0.865,
+        "first_piola_diagonal": [
+          -0.6175696124747645,
+          -0.6175696124747645,
+          -1.947093381561239
+        ],
+        "cauchy_diagonal": [
+          -0.7139533092193809,
+          -0.7139533092193809,
+          -1.947093381561239
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.13818146040864088,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8599999999999994,
+      "J_min": 0.8599999999999963,
+      "J_max": 0.8600000000000022,
+      "mean_first_piola": [
+        [
+          -0.6341738101430615,
+          -2.2803010541544876e-30,
+          3.0542712698945127e-15
+        ],
+        [
+          -2.2433231992222527e-30,
+          -0.6341738101430615,
+          4.0228947250424804e-16
+        ],
+        [
+          4.081047895008094e-15,
+          5.375300554112483e-16,
+          -2.025177185713809
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.7374114071430952,
+          6.091313312480564e-31,
+          3.0542712698945096e-15
+        ],
+        [
+          5.876325783804779e-31,
+          -0.7374114071430952,
+          4.022894725042491e-16
+        ],
+        [
+          3.0542712698945096e-15,
+          4.022894725042491e-16,
+          -2.0251771857138103
+        ]
+      ],
+      "Fz_top": -2.025177185713808,
+      "Fz_bottom": 2.0251771857138086,
+      "reduced_residual_l2": 1.0710321399652914e-14,
+      "compression": 0.14,
+      "solve_seconds": 0.03637583099771291,
+      "initial_residual_l2": 1.0710321399652914e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.14,
+        "Fz": -2.0251771857138103,
+        "energy": 0.13818146040864118,
+        "J": 0.86,
+        "first_piola_diagonal": [
+          -0.6341738101430612,
+          -0.6341738101430612,
+          -2.0251771857138103
+        ],
+        "cauchy_diagonal": [
+          -0.7374114071430944,
+          -0.7374114071430944,
+          -2.0251771857138103
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.14850362367904896,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8549999999999991,
+      "J_min": 0.8549999999999963,
+      "J_max": 0.8550000000000022,
+      "mean_first_piola": [
+        [
+          -0.6503238471718485,
+          -2.218671295934096e-30,
+          3.066167184546291e-15
+        ],
+        [
+          -2.212508320112057e-30,
+          -0.6503238471718485,
+          4.0385632783808507e-16
+        ],
+        [
+          4.132392049671329e-15,
+          5.442927857224834e-16,
+          -2.103774626498598
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.7606126867507007,
+          5.982771850634507e-31,
+          3.0661671845462886e-15
+        ],
+        [
+          5.189874376454031e-31,
+          -0.7606126867507007,
+          4.0385632783808635e-16
+        ],
+        [
+          3.0661671845462886e-15,
+          4.0385632783808645e-16,
+          -2.1037746264985993
+        ]
+      ],
+      "Fz_top": -2.1037746264985957,
+      "Fz_bottom": 2.1037746264985966,
+      "reduced_residual_l2": 1.0699982660238811e-14,
+      "compression": 0.145,
+      "solve_seconds": 0.03465953498380259,
+      "initial_residual_l2": 1.0699982660238811e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.145,
+        "Fz": -2.103774626498599,
+        "energy": 0.14850362367904904,
+        "J": 0.855,
+        "first_piola_diagonal": [
+          -0.6503238471718487,
+          -0.6503238471718487,
+          -2.103774626498599
+        ],
+        "cauchy_diagonal": [
+          -0.7606126867507002,
+          -0.7606126867507002,
+          -2.103774626498599
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.15922008085664902,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8500000000000001,
+      "J_min": 0.8499999999999963,
+      "J_max": 0.8500000000000022,
+      "mean_first_piola": [
+        [
+          -0.6660189504991096,
+          -2.2803010541544876e-30,
+          3.0781796118810747e-15
+        ],
+        [
+          -2.2248342717561352e-30,
+          -0.6660189504991099,
+          4.054385294924171e-16
+        ],
+        [
+          4.184092963191045e-15,
+          5.51102506074714e-16,
+          -2.182896587060916
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.7835517064695406,
+          5.292908647163038e-31,
+          3.078179611881069e-15
+        ],
+        [
+          6.162975822039154e-31,
+          -0.7835517064695406,
+          4.054385294924178e-16
+        ],
+        [
+          3.0781796118810683e-15,
+          4.0543852949241776e-16,
+          -2.182896587060915
+        ]
+      ],
+      "Fz_top": -2.1828965870609145,
+      "Fz_bottom": 2.1828965870609154,
+      "reduced_residual_l2": 1.0820641757818971e-14,
+      "compression": 0.15,
+      "solve_seconds": 0.0353121220250614,
+      "initial_residual_l2": 1.0820641757818971e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.15,
+        "Fz": -2.182896587060917,
+        "energy": 0.15922008085664954,
+        "J": 0.85,
+        "first_piola_diagonal": [
+          -0.6660189504991105,
+          -0.6660189504991105,
+          -2.182896587060917
+        ],
+        "cauchy_diagonal": [
+          -0.7835517064695419,
+          -0.7835517064695419,
+          -2.182896587060917
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.170333482368986,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8449999999999993,
+      "J_min": 0.8449999999999964,
+      "J_max": 0.8450000000000022,
+      "mean_first_piola": [
+        [
+          -0.6812583295778434,
+          -2.2371602234002135e-30,
+          3.09031038855848e-15
+        ],
+        [
+          -2.2864640299765268e-30,
+          -0.6812583295778434,
+          4.0703631938053946e-16
+        ],
+        [
+          4.236158470257927e-15,
+          5.579602484043028e-16,
+          -2.2625542495198965
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.8062228752400519,
+          6.053573884369826e-31,
+          3.090310388558477e-15
+        ],
+        [
+          5.761835383918268e-31,
+          -0.8062228752400518,
+          4.070363193805407e-16
+        ],
+        [
+          3.090310388558476e-15,
+          4.0703631938054054e-16,
+          -2.2625542495198974
+        ]
+      ],
+      "Fz_top": -2.262554249519895,
+      "Fz_bottom": 2.2625542495198956,
+      "reduced_residual_l2": 1.0725539515380582e-14,
+      "compression": 0.155,
+      "solve_seconds": 0.03709592798259109,
+      "initial_residual_l2": 1.0725539515380582e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.155,
+        "Fz": -2.262554249519898,
+        "energy": 0.17033348236898596,
+        "J": 0.845,
+        "first_piola_diagonal": [
+          -0.6812583295778436,
+          -0.6812583295778436,
+          -2.262554249519898
+        ],
+        "cauchy_diagonal": [
+          -0.8062228752400517,
+          -0.8062228752400517,
+          -2.262554249519898
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.1818465353225332,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8399999999999992,
+      "J_min": 0.8399999999999964,
+      "J_max": 0.8400000000000021,
+      "mean_first_piola": [
+        [
+          -0.6960411758836423,
+          -2.181693441001861e-30,
+          3.1025613912844022e-15
+        ],
+        [
+          -2.2001823684679786e-30,
+          -0.6960411758836423,
+          4.0864994469039276e-16
+        ],
+        [
+          4.288596624407517e-15,
+          5.648670734724843e-16,
+          -2.342759105038946
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.8286204474805272,
+          5.576025743749717e-31,
+          3.1025613912844e-15
+        ],
+        [
+          5.8695007828944385e-31,
+          -0.8286204474805272,
+          4.0864994469039384e-16
+        ],
+        [
+          3.1025613912844e-15,
+          4.0864994469039394e-16,
+          -2.3427591050389474
+        ]
+      ],
+      "Fz_top": -2.3427591050389442,
+      "Fz_bottom": 2.3427591050389447,
+      "reduced_residual_l2": 1.0637519127386909e-14,
+      "compression": 0.16,
+      "solve_seconds": 0.035753723001107574,
+      "initial_residual_l2": 1.0637519127386909e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.16,
+        "Fz": -2.3427591050389465,
+        "energy": 0.18184653532253317,
+        "J": 0.84,
+        "first_piola_diagonal": [
+          -0.6960411758836428,
+          -0.6960411758836428,
+          -2.3427591050389465
+        ],
+        "cauchy_diagonal": [
+          -0.8286204474805271,
+          -0.8286204474805271,
+          -2.3427591050389465
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.19376200507392283,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.835,
+      "J_min": 0.8349999999999964,
+      "J_max": 0.8350000000000021,
+      "mean_first_piola": [
+        [
+          -0.7103666624054712,
+          -2.1940193926459394e-30,
+          3.114934537928965e-15
+        ],
+        [
+          -2.2741380783324484e-30,
+          -0.7103666624054711,
+          4.102796580318113e-16
+        ],
+        [
+          4.34141570547334e-15,
+          5.718240718470473e-16,
+          -2.4235229642982707
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.8507385178508635,
+          5.683223213137904e-31,
+          3.1149345379289584e-15
+        ],
+        [
+          5.609415119460788e-31,
+          -0.8507385178508635,
+          4.1027965803181205e-16
+        ],
+        [
+          3.1149345379289584e-15,
+          4.102796580318121e-16,
+          -2.4235229642982703
+        ]
+      ],
+      "Fz_top": -2.42352296429827,
+      "Fz_bottom": 2.4235229642982694,
+      "reduced_residual_l2": 1.0817352258907112e-14,
+      "compression": 0.165,
+      "solve_seconds": 0.0360443820245564,
+      "initial_residual_l2": 1.0817352258907112e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.165,
+        "Fz": -2.423522964298272,
+        "energy": 0.19376200507392202,
+        "J": 0.835,
+        "first_piola_diagonal": [
+          -0.7103666624054712,
+          -0.7103666624054712,
+          -2.423522964298272
+        ],
+        "cauchy_diagonal": [
+          -0.8507385178508637,
+          -0.8507385178508637,
+          -2.423522964298272
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.2060827168545839,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8299999999999991,
+      "J_min": 0.8299999999999964,
+      "J_max": 0.8300000000000021,
+      "mean_first_piola": [
+        [
+          -0.7242339431189572,
+          -2.2371602234002135e-30,
+          3.1274317886825866e-15
+        ],
+        [
+          -2.1940193926459394e-30,
+          -0.7242339431189572,
+          4.119257175887944e-16
+        ],
+        [
+          4.39462422734026e-15,
+          5.788323649235533e-16,
+          -2.504857968388054
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.8725710158059734,
+          5.865964939049323e-31,
+          3.1274317886825842e-15
+        ],
+        [
+          6.162975822039162e-31,
+          -0.8725710158059734,
+          4.1192571758879537e-16
+        ],
+        [
+          3.1274317886825842e-15,
+          4.1192571758879537e-16,
+          -2.504857968388056
+        ]
+      ],
+      "Fz_top": -2.5048579683880523,
+      "Fz_bottom": 2.504857968388053,
+      "reduced_residual_l2": 1.0728076971646627e-14,
+      "compression": 0.17,
+      "solve_seconds": 0.036409850989002734,
+      "initial_residual_l2": 1.0728076971646627e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.17,
+        "Fz": -2.504857968388055,
+        "energy": 0.2060827168545834,
+        "J": 0.83,
+        "first_piola_diagonal": [
+          -0.7242339431189573,
+          -0.7242339431189573,
+          -2.504857968388055
+        ],
+        "cauchy_diagonal": [
+          -0.8725710158059726,
+          -0.8725710158059726,
+          -2.504857968388055
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.21881155745093894,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8249999999999995,
+      "J_min": 0.8249999999999964,
+      "J_max": 0.8250000000000021,
+      "mean_first_piola": [
+        [
+          -0.7376421524414881,
+          -2.181693441001861e-30,
+          3.140055147251727e-15
+        ],
+        [
+          -2.1508785618916654e-30,
+          -0.7376421524414881,
+          4.1358838727699994e-16
+        ],
+        [
+          4.448230946011973e-15,
+          5.858931059879425e-16,
+          -2.5867766001418455
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.8941116999290766,
+          6.49913813960493e-31,
+          3.140055147251722e-15
+        ],
+        [
+          7.39557098644699e-31,
+          -0.8941116999290769,
+          4.1358838727700093e-16
+        ],
+        [
+          3.140055147251722e-15,
+          4.1358838727700093e-16,
+          -2.5867766001418473
+        ]
+      ],
+      "Fz_top": -2.586776600141845,
+      "Fz_bottom": 2.586776600141845,
+      "reduced_residual_l2": 1.0950469938100143e-14,
+      "compression": 0.17500000000000002,
+      "solve_seconds": 0.03731220500776544,
+      "initial_residual_l2": 1.0950469938100143e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.17500000000000002,
+        "Fz": -2.5867766001418477,
+        "energy": 0.21881155745093916,
+        "J": 0.825,
+        "first_piola_diagonal": [
+          -0.7376421524414882,
+          -0.7376421524414882,
+          -2.5867766001418477
+        ],
+        "cauchy_diagonal": [
+          -0.8941116999290767,
+          -0.8941116999290767,
+          -2.5867766001418477
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.23195147694240772,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8199999999999998,
+      "J_min": 0.8199999999999965,
+      "J_max": 0.8200000000000022,
+      "mean_first_piola": [
+        [
+          -0.7505904046683796,
+          -2.1077377311373913e-30,
+          3.1528066620958897e-15
+        ],
+        [
+          -2.26181212668837e-30,
+          -0.7505904046683796,
+          4.1526793690667816e-16
+        ],
+        [
+          4.50224486800745e-15,
+          5.930074813224544e-16,
+          -2.6692916959307786
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.9153541520346091,
+          6.68908351416445e-31,
+          3.152806662095884e-15
+        ],
+        [
+          7.064874722825374e-31,
+          -0.9153541520346091,
+          4.1526793690667914e-16
+        ],
+        [
+          3.152806662095884e-15,
+          4.1526793690667914e-16,
+          -2.669291695930779
+        ]
+      ],
+      "Fz_top": -2.6692916959307773,
+      "Fz_bottom": 2.669291695930778,
+      "reduced_residual_l2": 1.0940524279190328e-14,
+      "compression": 0.18,
+      "solve_seconds": 0.036725380981806666,
+      "initial_residual_l2": 1.0940524279190328e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.18,
+        "Fz": -2.66929169593078,
+        "energy": 0.23195147694240836,
+        "J": 0.8200000000000001,
+        "first_piola_diagonal": [
+          -0.7505904046683796,
+          -0.7505904046683796,
+          -2.66929169593078
+        ],
+        "cauchy_diagonal": [
+          -0.9153541520346091,
+          -0.9153541520346091,
+          -2.66929169593078
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.2455054904995847,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8149999999999991,
+      "J_min": 0.8149999999999964,
+      "J_max": 0.8150000000000021,
+      "mean_first_piola": [
+        [
+          -0.7630777933893318,
+          -2.1878564168239003e-30,
+          3.165688427707601e-15
+        ],
+        [
+          -2.218671295934096e-30,
+          -0.7630777933893318,
+          4.169646423512597e-16
+        ],
+        [
+          4.556675259101767e-15,
+          6.001767113569198e-16,
+          -2.7524164579402877
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.9362917710298557,
+          5.520211472501335e-31,
+          3.1656884277075985e-15
+        ],
+        [
+          5.671450142980823e-31,
+          -0.9362917710298557,
+          4.1696464235126085e-16
+        ],
+        [
+          3.165688427707598e-15,
+          4.169646423512608e-16,
+          -2.7524164579402908
+        ]
+      ],
+      "Fz_top": -2.7524164579402863,
+      "Fz_bottom": 2.7524164579402868,
+      "reduced_residual_l2": 1.0899097383841452e-14,
+      "compression": 0.185,
+      "solve_seconds": 0.03721990104531869,
+      "initial_residual_l2": 1.0899097383841452e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.185,
+        "Fz": -2.7524164579402894,
+        "energy": 0.24550549049958587,
+        "J": 0.815,
+        "first_piola_diagonal": [
+          -0.7630777933893326,
+          -0.7630777933893326,
+          -2.7524164579402894
+        ],
+        "cauchy_diagonal": [
+          -0.936291771029856,
+          -0.936291771029856,
+          -2.7524164579402894
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.2594766802450456,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.81,
+      "J_min": 0.8099999999999965,
+      "J_max": 0.8100000000000022,
+      "mean_first_piola": [
+        [
+          -0.7751033908843621,
+          -2.0707598762051563e-30,
+          3.1787025859371e-15
+        ],
+        [
+          -2.175530465179822e-30,
+          -0.7751033908843621,
+          4.1867878572183643e-16
+        ],
+        [
+          4.611531653427695e-15,
+          6.074020518675631e-16,
+          -2.836164466952188
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.9569177665239034,
+          6.162975822039155e-31,
+          3.178702585937095e-15
+        ],
+        [
+          4.869511760623529e-31,
+          -0.9569177665239034,
+          4.1867878572183726e-16
+        ],
+        [
+          3.178702585937095e-15,
+          4.1867878572183707e-16,
+          -2.8361644669521873
+        ]
+      ],
+      "Fz_top": -2.8361644669521864,
+      "Fz_bottom": 2.836164466952187,
+      "reduced_residual_l2": 1.0891530797567497e-14,
+      "compression": 0.19,
+      "solve_seconds": 0.03720761998556554,
+      "initial_residual_l2": 1.0891530797567497e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.19,
+        "Fz": -2.836164466952189,
+        "energy": 0.259476680245047,
+        "J": 0.81,
+        "first_piola_diagonal": [
+          -0.7751033908843626,
+          -0.7751033908843626,
+          -2.836164466952189
+        ],
+        "cauchy_diagonal": [
+          -0.9569177665239045,
+          -0.9569177665239045,
+          -2.836164466952189
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.27386819717938765,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.8049999999999996,
+      "J_min": 0.8049999999999964,
+      "J_max": 0.805000000000002,
+      "mean_first_piola": [
+        [
+          -0.7866662474983646,
+          -2.1693674893577828e-30,
+          3.1918513273636305e-15
+        ],
+        [
+          -2.1447155860696262e-30,
+          -0.7866662474983646,
+          4.2041065554777894e-16
+        ],
+        [
+          4.666823862955297e-15,
+          6.146847952255955e-16,
+          -2.9205496956562365
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.9772251521718817,
+          6.737166116017961e-31,
+          3.1918513273636266e-15
+        ],
+        [
+          6.5074899984264395e-31,
+          -0.9772251521718817,
+          4.204106555477799e-16
+        ],
+        [
+          3.1918513273636262e-15,
+          4.204106555477799e-16,
+          -2.920549695656237
+        ]
+      ],
+      "Fz_top": -2.920549695656235,
+      "Fz_bottom": 2.9205496956562356,
+      "reduced_residual_l2": 1.0856677864996073e-14,
+      "compression": 0.195,
+      "solve_seconds": 0.03677437599981204,
+      "initial_residual_l2": 1.0856677864996073e-14,
+      "nonzero_seed": false,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 8.989179554014462e-16,
+      "analytic": {
+        "compression": 0.195,
+        "Fz": -2.920549695656238,
+        "energy": 0.27386819717938704,
+        "J": 0.8049999999999999,
+        "first_piola_diagonal": [
+          -0.786666247498364,
+          -0.786666247498364,
+          -2.920549695656238
+        ],
+        "cauchy_diagonal": [
+          -0.9772251521718808,
+          -0.9772251521718808,
+          -2.920549695656238
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    },
+    {
+      "energy": 0.2886832631751934,
+      "reference_volume": 0.9999999999999998,
+      "current_volume": 0.7999999999999992,
+      "J_min": 0.7999999999999976,
+      "J_max": 0.8000000000000019,
+      "mean_first_piola": [
+        [
+          -0.7977653909933968,
+          -8.258387601532469e-31,
+          1.9612854040481853e-15
+        ],
+        [
+          -7.08742219534503e-31,
+          -0.797765390993397,
+          4.662464598134075e-16
+        ],
+        [
+          2.8898272384523338e-15,
+          6.869840139633525e-16,
+          -3.0055865225165044
+        ]
+      ],
+      "mean_cauchy": [
+        [
+          -0.9972067387417471,
+          1.0708170490793044e-30,
+          1.9612854040481825e-15
+        ],
+        [
+          1.0708170490793044e-30,
+          -0.9972067387417471,
+          4.662464598134075e-16
+        ],
+        [
+          1.9612854040481825e-15,
+          4.662464598134075e-16,
+          -3.005586522516508
+        ]
+      ],
+      "Fz_top": -3.005586522516501,
+      "Fz_bottom": 3.0055865225165017,
+      "reduced_residual_l2": 8.898721073968774e-15,
+      "compression": 0.2,
+      "solve_seconds": 0.0996399549767375,
+      "initial_residual_l2": 0.10635140463252818,
+      "nonzero_seed": true,
+      "periodic_error": 0.0,
+      "loaded_face_error": 0.0,
+      "max_affine_displacement_error": 6.040703574622892e-16,
+      "analytic": {
+        "compression": 0.2,
+        "Fz": -3.0055865225165057,
+        "energy": 0.2886832631751929,
+        "J": 0.8,
+        "first_piola_diagonal": [
+          -0.7977653909933972,
+          -0.7977653909933972,
+          -3.0055865225165057
+        ],
+        "cauchy_diagonal": [
+          -0.9972067387417464,
+          -0.9972067387417464,
+          -3.0055865225165057
+        ]
+      },
+      "checks": {
+        "finite": true,
+        "positive_detF": true,
+        "reduced_equilibrium": true,
+        "top_bottom_balance": true,
+        "reaction_vs_first_piola": true,
+        "periodic": true,
+        "loaded_faces": true,
+        "affine_solution": true,
+        "analytic_force": true,
+        "analytic_energy": true,
+        "analytic_detF": true,
+        "nonzero_seed_exercised": true
+      }
+    }
+  ],
+  "material": {
+    "E0": 10.0,
+    "nu0": 0.3,
+    "mu": 3.846153846153846,
+    "kappa": 8.333333333333332,
+    "energy_reference": "isochoric Neo-Hookean plus quadratic (J-1) bulk"
+  },
+  "mesh": {
+    "cells": 64,
+    "Gauss_points": 512,
+    "reduced_dofs": 206,
+    "reference_min_map_det": 0.0019531249999999985,
+    "reference_volume": 0.9999999999999999
+  },
+  "work": {
+    "path_trapezoid": 0.28869078066370746,
+    "stored_energy": 0.2886832631751934,
+    "relative_gap": 2.6040610845918086e-05,
+    "uses_half_Fu": false
+  },
+  "runtime": {
+    "build_seconds": 0.6953828539699316,
+    "path_seconds": 4.819679255015217,
+    "wall_seconds": 5.515062393969856,
+    "peak_host_RSS_MiB": 998.4375,
+    "jax": "0.11.2",
+    "devices": [
+      "cpu:0"
+    ]
+  },
+  "displacement": {
+    "path": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d005.displacement.npz",
+    "sha256": "b5168bbfaa7d44751965b784689cc240aeebff3d8912a49e6588ace88be355bf"
+  },
+  "source_sha256": {
+    "hyperelastic_fem.py": "1373d82b81f4c60e8e2ea7d6fdf69e5649cdd4c03a89c01bd3f10d7aa5cd0c56",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "scripts/finite_strain_uniform.py": "bfb194695d760bc6d8f4c2cf8e2e9a3c255969087c8f28d91ce3c5543480bda9"
+  }
+}

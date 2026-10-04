@@ -1,0 +1,94 @@
+[
+  {
+    "label": "thin_gyroid",
+    "family": "gyroid",
+    "c": 0.25,
+    "volume_samples": [
+      0.16129684448242188,
+      0.1608428955078125,
+      0.16115188598632812,
+      0.16111373901367188
+    ],
+    "binary_vf_estimate": 0.1611013412475586,
+    "volume_replicate_std": 0.0001894942307448899,
+    "thickness_method": "sampled mid-surface normal, roots at both signed levels; not a rigorous global minimum",
+    "mid_surface_samples": 4096,
+    "thickness_min_sampled": 0.04616375270876462,
+    "thickness_quantiles": [
+      0.04631247257862271,
+      0.05325018857585634,
+      0.05649080437291502
+    ],
+    "thinnest_sample_position": [
+      0.7486773220413738,
+      0.7482837478802069,
+      0.7530389425536336
+    ],
+    "minimum_wall_cells_N48": 2.215860130020702,
+    "minimum_wall_cells_N64": 2.9544801733609356,
+    "G16_clipped_geometry_audit": {
+      "nodes": 16987,
+      "elements": 63552,
+      "volume": 0.16555309457363002,
+      "min_detJ": 1.9564902112631095e-08,
+      "mean_ratio_min": 0.02926299257349195,
+      "mean_ratio_p01": 0.05558473843417116,
+      "mean_ratio_median": 0.3749493875712916,
+      "connected_components": 3,
+      "periodic_connected_components": 1,
+      "boundary_triangles": 15072,
+      "periodic_cap_triangles": {
+        "0": 224,
+        "1": 224
+      },
+      "surface_G_residual_max": 0.05248717922159862,
+      "surface_G_residual_rms": 0.01433817603844798
+    }
+  },
+  {
+    "label": "primitive",
+    "family": "primitive",
+    "c": 0.6,
+    "volume_samples": [
+      0.3430900573730469,
+      0.3430328369140625,
+      0.3429374694824219,
+      0.3430747985839844
+    ],
+    "binary_vf_estimate": 0.3430337905883789,
+    "volume_replicate_std": 6.862038498856619e-05,
+    "thickness_method": "sampled mid-surface normal, roots at both signed levels; not a rigorous global minimum",
+    "mid_surface_samples": 4096,
+    "thickness_min_sampled": 0.11101644202146871,
+    "thickness_quantiles": [
+      0.11142190644590812,
+      0.15100429794857462,
+      0.20274584663192
+    ],
+    "thinnest_sample_position": [
+      0.7513424039664413,
+      0.25068738224501064,
+      0.2506550097906536
+    ],
+    "minimum_wall_cells_N48": 5.328789217030498,
+    "minimum_wall_cells_N64": 7.105052289373997,
+    "G16_clipped_geometry_audit": {
+      "nodes": 14904,
+      "elements": 57000,
+      "volume": 0.347518682599752,
+      "min_detJ": 6.432269135186569e-14,
+      "mean_ratio_min": 0.0009090445636604963,
+      "mean_ratio_p01": 0.0033388964543094044,
+      "mean_ratio_median": 0.37764174041269316,
+      "connected_components": 1,
+      "periodic_connected_components": 1,
+      "boundary_triangles": 11568,
+      "periodic_cap_triangles": {
+        "0": 224,
+        "1": 224
+      },
+      "surface_G_residual_max": 0.03110205285047163,
+      "surface_G_residual_rms": 0.00939055060600853
+    }
+  }
+]

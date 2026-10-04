@@ -1,0 +1,58 @@
+{
+  "N": 8,
+  "M": 64,
+  "route": "implicit",
+  "K": 2.3313357242456956,
+  "Vf": 0.3515257159090569,
+  "dK_dc": 8.07360401933171,
+  "spatial_direction_AD": -0.009592186343424406,
+  "build_seconds": 1.4640524160349742,
+  "forward_seconds_including_first_trace_compile": 3.84132792300079,
+  "adjoint_seconds_including_first_trace_compile": 2.474078930041287,
+  "memory": {
+    "built_rss_MiB": 1113.7578125,
+    "gpu_built": "450, 8188",
+    "forward_rss_MiB": 1211.80078125,
+    "forward_peak_MiB": 1209.91015625,
+    "gpu_forward": "454, 8188",
+    "adjoint_rss_MiB": 1251.30859375,
+    "adjoint_peak_MiB": 1249.4375,
+    "gpu_adjoint": "454, 8188",
+    "sampled_device_peak_MiB": 454
+  },
+  "envelope_relative_L2_error": 5.832429411610473e-17,
+  "forward_count": 9,
+  "adjoint_count": 1,
+  "total_seconds": 14.502308995986823,
+  "baseline": {
+    "values": [
+      2.3313357242456956,
+      0.3515257159090569,
+      0.020119551598054487
+    ],
+    "Fz_top": -0.023313357242456926,
+    "Fz_bottom": 0.02331335724245694,
+    "U_internal": 0.0001165667862122847,
+    "red_res": 9.364796264843545e-18,
+    "balance": 1.3877787807814457e-17,
+    "reaction_consistency_err": 3.122502256758253e-17,
+    "work_identity_err": 0.0,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-8": true,
+      "balance<=1e-8": true,
+      "reaction<=1e-6": true,
+      "work_identity<=1e-8": true
+    },
+    "status": "ok"
+  },
+  "directional_passed": true,
+  "source_sha256": {
+    "voxel_field.py": "720d805bba12892d9bb7e551b292cd0a01c8fa41eb2ac49888efb62d2a1c412c",
+    "geometry.py": "119aecac56b201282bbb9dee08213de3bc6d6a6eaa4c1b424d9f4b8831f03d12",
+    "design_fem.py": "f655ef168fa408f43b5dc7f778dae74049051eee3d42dac048f38cd875515135",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48"
+  }
+}

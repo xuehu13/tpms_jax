@@ -1,0 +1,69 @@
+{
+  "phase": "precision_resources_locked_after_measured_preflight",
+  "measured": [
+    {
+      "kind": "JAX_resource_preflight",
+      "tag": "N16_d005",
+      "N": 16,
+      "increment": 0.005,
+      "exit_code": 0,
+      "resource_stop": null,
+      "wall_seconds": 37.33768004499143,
+      "peak_sampled_host_RSS_GiB": 1.4176025390625,
+      "peak_device_total_used_GiB": 0.615234375,
+      "command": [
+        "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+        "/home/xuehu/projects/tpms_jax/scripts/finite_strain_gyroid.py",
+        "--N",
+        "16",
+        "--increment",
+        "0.005",
+        "--limit",
+        ".05",
+        "--out",
+        "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N16_d005.json"
+      ],
+      "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N16_d005.log",
+      "status": "ok",
+      "last_completed_compression": 0.05,
+      "failure": null
+    },
+    {
+      "kind": "JAX_resource_preflight",
+      "tag": "N32_d005",
+      "N": 32,
+      "increment": 0.005,
+      "exit_code": 0,
+      "resource_stop": null,
+      "wall_seconds": 859.7462907630252,
+      "peak_sampled_host_RSS_GiB": 2.635051727294922,
+      "peak_device_total_used_GiB": 1.396484375,
+      "command": [
+        "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+        "/home/xuehu/projects/tpms_jax/scripts/finite_strain_gyroid.py",
+        "--N",
+        "32",
+        "--increment",
+        "0.005",
+        "--limit",
+        ".05",
+        "--out",
+        "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N32_d005.json"
+      ],
+      "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N32_d005.log",
+      "status": "ok",
+      "last_completed_compression": 0.05,
+      "failure": null
+    }
+  ],
+  "RSS_cubic_extrapolation_GiB": {
+    "48": 5.939556666782924,
+    "64": 12.374645233154297
+  },
+  "estimate_limit": "Two-point estimate only; actual guarded execution decides. Same locked per-state/path and memory limits remain.",
+  "order": [
+    48,
+    64
+  ],
+  "Abaqus_started_yet": false
+}

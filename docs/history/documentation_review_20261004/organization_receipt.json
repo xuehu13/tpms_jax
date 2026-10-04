@@ -1,0 +1,870 @@
+{
+  "directories_or_packages": 10,
+  "files": [
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\hashes.json",
+      "sha256": "37829075ac90b9e7744d29e359b259024bfd0c8bc6826a3069e8e60523dd2f81",
+      "bytes": 1426,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\hashes.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\AGENTS.md",
+      "sha256": "84998c8290ac0fc338294dfc66442c0e32d3bba203523cf4ef7913886354a684",
+      "bytes": 2137,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\AGENTS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\README.md",
+      "sha256": "fb3d35ce9e3a03bec89dbfd1732a706fa0073944eedb6a9cf7597c5a00ac42c6",
+      "bytes": 1182,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\docs\\FILE_MAP.md",
+      "sha256": "394bd2581289b22877c78b0b6868ef766e6a6f7260630efe274b63e5afc2995f",
+      "bytes": 6186,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\docs\\FILE_MAP.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\docs\\PAPER_ROUTE.md",
+      "sha256": "e2bdbc06fbef36b7a09728af6ac79a582ea34aa75472289f17621f9da84031be",
+      "bytes": 1221,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\docs\\PAPER_ROUTE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\docs\\RESEARCH_BACKGROUND.md",
+      "sha256": "a0aa249b4e681d45ff1ffd0fd9edbb73cb78e1520e9ed5b3ed49a4bacaeb3168",
+      "bytes": 19968,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\docs\\RESEARCH_BACKGROUND.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\docs\\RESEARCH_PLAN.md",
+      "sha256": "13450205f73b453968212a59b652a94971e88a53dceb4b4f91d3a0190fe39374",
+      "bytes": 9982,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\docs\\RESEARCH_PLAN.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\docs\\RESEARCH_STATUS.md",
+      "sha256": "6053d74455edd1a7ee051387ac280789ee0f2073836c3151a59b8a19bde3a2ea",
+      "bytes": 4813,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\docs\\RESEARCH_STATUS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\formal\\validation\\README.md",
+      "sha256": "70f1e2a200e2b2d2fa2e37244549acbcd6ac0e4a54fec06e64623da6fcb9115a",
+      "bytes": 2081,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\formal\\validation\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\AGENTS.md",
+      "sha256": "9317a69665dcbb05c7d84a87e1388cb3417a8cbd1250978435f84e0cd6ee7df4",
+      "bytes": 2082,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\AGENTS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\FILE_MAP.md",
+      "sha256": "2c317e6499b05f8e9739d18ac8392d22cc23854a1867fde828d6ef984ccf3c84",
+      "bytes": 6187,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\FILE_MAP.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\PAPER_ROUTE.md",
+      "sha256": "e2bdbc06fbef36b7a09728af6ac79a582ea34aa75472289f17621f9da84031be",
+      "bytes": 1221,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\PAPER_ROUTE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\PROJECT_OVERVIEW.md",
+      "sha256": "9d7833428dbcf28e5fe91d12eaa020ff76734226003ea5c4b080a0e67b305524",
+      "bytes": 4790,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\PROJECT_OVERVIEW.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\RESEARCH_BACKGROUND.md",
+      "sha256": "aa0267b60862b72d5d72528f23fec578212299cb9bb75b79f8bcc504473ff949",
+      "bytes": 19969,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\RESEARCH_BACKGROUND.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\RESEARCH_PLAN.md",
+      "sha256": "82371cc9b963455a6fd832561e46f99820ab2c4aedf3cf54e7cb880c7cdbda45",
+      "bytes": 9959,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\RESEARCH_PLAN.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round2_planning_20261003\\before\\local\\START_HERE.md",
+      "sha256": "e5dc2c8430ea70906d599b28a58d1294e9595f0669478bd8e607668af1b2e814",
+      "bytes": 815,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round2_planning_20261003\\before\\local\\START_HERE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\receipt.json",
+      "sha256": "e97d838b4b4805562d4c53ffc2bdaa66e7e55b5c917ec651d0896cab6ffdbde9",
+      "bytes": 6595,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\receipt.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\AGENTS.md",
+      "sha256": "6c47f30ba533aeb1cefe7272d54fe17005b4fe2a23ebf11e3958b28147e34d25",
+      "bytes": 2342,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\AGENTS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\README.md",
+      "sha256": "f98a4d2eb4b996d23a2d60f103ec512664e0d194fd254850e6500de664225955",
+      "bytes": 1441,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\docs\\FILE_MAP.md",
+      "sha256": "aad60cb948b83ec27276f5aa36a1dcba8af3b61f14d2c9d259ca4ae98133a1fa",
+      "bytes": 7937,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\docs\\FILE_MAP.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\docs\\PAPER_ROUTE.md",
+      "sha256": "855f3780777aa94bf2a904bac1f6444763aa8dc3fe3ce93706daf77261f249c5",
+      "bytes": 2615,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\docs\\PAPER_ROUTE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\docs\\RESEARCH_BACKGROUND.md",
+      "sha256": "067e8437246b91017050d4f1eaf3210621f5476b2d9badded85a6d221198eec6",
+      "bytes": 21028,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\docs\\RESEARCH_BACKGROUND.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\docs\\RESEARCH_PLAN.md",
+      "sha256": "4539ec99d17b6bb8ec4e88eabacaa1878ebff4420473f273f8b19876ba0a73dd",
+      "bytes": 12242,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\docs\\RESEARCH_PLAN.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\docs\\RESEARCH_STATUS.md",
+      "sha256": "ffcf354dde6dd5762c2e8b6804ded60c0c33844ac64182b8ce0e1ae4184f8eb4",
+      "bytes": 2883,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\docs\\RESEARCH_STATUS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\formal\\validation\\README.md",
+      "sha256": "031a66519fef9acb96573c2d78e68bba9d8279c7dcb90abc8fb41deeecd23907",
+      "bytes": 2296,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\formal\\validation\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\AGENTS.md",
+      "sha256": "3dfcbc25185d7f9a1e59bcbb9d0daebe2322fda77adfaea0e91ad6336422fa59",
+      "bytes": 2304,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\AGENTS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\FILE_MAP.md",
+      "sha256": "c5660b16c52fac3908650e0085f703d8a89505d93d6201d8f296efb1eb572262",
+      "bytes": 7938,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\FILE_MAP.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\PAPER_ROUTE.md",
+      "sha256": "855f3780777aa94bf2a904bac1f6444763aa8dc3fe3ce93706daf77261f249c5",
+      "bytes": 2615,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\PAPER_ROUTE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\PROJECT_OVERVIEW.md",
+      "sha256": "58a23ac3aee9efb26afe771996bb94802f723f3f6228d0e8ac5a139e4df319d2",
+      "bytes": 2860,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\PROJECT_OVERVIEW.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\RESEARCH_BACKGROUND.md",
+      "sha256": "78e1d847751e054e7c86ef4018343a52cc79cd4278dca8198f5194b37c6c41d9",
+      "bytes": 21029,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\RESEARCH_BACKGROUND.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\RESEARCH_PLAN.md",
+      "sha256": "da1a4018c3cf7cadfb4897bac4dac51a1d45c92b1c41daf1cf4f9f5aacc7c692",
+      "bytes": 12220,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\RESEARCH_PLAN.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\round3_planning_20261003\\before\\local\\START_HERE.md",
+      "sha256": "95e6a64cc018fa19a3316ea973c49688f9d05734666c44d9d02d99b9772984fe",
+      "bytes": 938,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\round3_planning_20261003\\before\\local\\START_HERE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\check.json",
+      "sha256": "76f206876bc466363e6ec9b2557c3264b403c78cba59a67858d0e2e2435fb678",
+      "bytes": 820,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\check.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\AGENTS.md",
+      "sha256": "2643f9f69329f005cb59623ec6f457ad8cec12703bd644d7823adec8cc99758d",
+      "bytes": 1835,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\AGENTS.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\FILE_MAP.md",
+      "sha256": "926df10f22dcc36bf98c1e9e5f76e6be083a50c5612ce83e8bdb76f6b36dfb5c",
+      "bytes": 5807,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\FILE_MAP.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\formal_README.md",
+      "sha256": "784a771c107021345105af17f4c64556313c36912ce7cde29b97122327ce4f2d",
+      "bytes": 1121,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\formal_README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\PAPER_ROUTE.md",
+      "sha256": "e2bdbc06fbef36b7a09728af6ac79a582ea34aa75472289f17621f9da84031be",
+      "bytes": 1221,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\PAPER_ROUTE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\PROJECT_OVERVIEW.md",
+      "sha256": "5f5f575f9c39f0e859f5e2fa20012ff3f3ae3e4272be471eafeb2e445f4e8d0b",
+      "bytes": 5001,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\PROJECT_OVERVIEW.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\RESEARCH_BACKGROUND.md",
+      "sha256": "2f9d036ba1a1aac7a399fba97685dc5ed440f3e1c6f211cde82362655e56d928",
+      "bytes": 18462,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\RESEARCH_BACKGROUND.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\RESEARCH_PLAN.md",
+      "sha256": "17a2926fc287b7efb7a8a0aaefafd83c004c839f5d81767ca541f597a211ae8f",
+      "bytes": 7882,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\RESEARCH_PLAN.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\planning_snapshots_20261003\\route_review_20261003\\before\\START_HERE.md",
+      "sha256": "a252dd4679148ff1f881a1bc6ad8e585171b1d2d8d7ab489e87a4ebb5830dcf5",
+      "bytes": 718,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\route_review_20261003\\before\\START_HERE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\main_accuracy_linear_20261003.bundle",
+      "sha256": "03bd75fbe66bda2c5cfa6993f46baf287a82655dfad335e378946b35fc4da9ac",
+      "bytes": 1658353,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\main_accuracy_linear_20261003.bundle"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\main_accuracy_scope_20261003.bundle",
+      "sha256": "c87d2f3966f4723f5dbf8031932bd18fab451ccb600f19737d7158d5fd460337",
+      "bytes": 1654790,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\main_accuracy_scope_20261003.bundle"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\main_research_audit_20261002.bundle",
+      "sha256": "777e6d7f00e8c6199e9165b9ee654e643380f2b680b7e733ea4df128a0a80e40",
+      "bytes": 1635480,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\main_research_audit_20261002.bundle"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\main_research_plan_20261003.bundle",
+      "sha256": "f39ab02edc1dd2ca19ee46adc478b3cc8c51c5dff6f1744c41d992096d14cd3d",
+      "bytes": 1677611,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\main_research_plan_20261003.bundle"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\main_scope_correction_20261003.bundle",
+      "sha256": "0356e350c145fe635d6a4f814c1aa8e8c4e328b1d9e96a1df61f43f75937b67d",
+      "bytes": 1646456,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\main_scope_correction_20261003.bundle"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\tpms_jax_m4_near_term_plan_20261003.bundle",
+      "sha256": "09a21163d800e451b950d028ab66fbca67a07139184326022979e78b79db3d18",
+      "bytes": 1685909,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\tpms_jax_m4_near_term_plan_20261003.bundle"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified.zip",
+      "sha256": "1c11dd875c3aeae0650e85930a7b6b3d0240254ebe0cb0964292c22582e8b83d",
+      "bytes": 444974,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified.zip"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_discrete_full_tests.txt",
+      "sha256": "ddb19f4569fe465444c4cf06100d31ce842680afcab8857119280446ee6cf5aa",
+      "bytes": 190,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_discrete_full_tests.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_element_comparison.json",
+      "sha256": "7592a634b626190a564c007ad6a3a6f761a775e487346b1269bdd703a0cc5e13",
+      "bytes": 3579,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_element_comparison.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_runtime.json",
+      "sha256": "4020f5685c98cf0aacf107d5421349dec8242c9f9fcc5828e6fbdeed8c604a6e",
+      "bytes": 286,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_runtime.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline.zip",
+      "sha256": "260066cf4238d8dafb5ebdb4bebc62e259896624edcefc3fc4c4f218a36844e8",
+      "bytes": 24660,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline.zip"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified.zip",
+      "sha256": "2c9a11cc792652b122741ea2e8d195a3f01e6db29ef3d4d7153fa3911fdf5ea0",
+      "bytes": 6172,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified.zip"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_validation_progress.md",
+      "sha256": "69c95998f639755f399bc76c4b581e517c681a260bb740e9230f2ae26494fa75",
+      "bytes": 5820,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_validation_progress.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_before_after.csv",
+      "sha256": "17a10e26cb9d21344491c8ecf4d0774d9bd5a64566802f45f9dd5108c7a777f3",
+      "bytes": 834,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_before_after.csv"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_fix_tests.log",
+      "sha256": "d0489b928b948e57729bf4bc35a66739dc85a9740a5157269eb93b17b0f7d709",
+      "bytes": 100,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_fix_tests.log"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_fixed_results.csv",
+      "sha256": "4ecf1d11c23f298b45e266c3429cae189dfe6c5f1643d60733f808cb9418a344",
+      "bytes": 4728,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_fixed_results.csv"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_fixed_run.log",
+      "sha256": "55e5ee26995e2b49fe32bafd8b9a2101f6a7883b3b690d3fdd830c301eca4e1d",
+      "bytes": 23867,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_fixed_run.log"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_original_a71c3b1.csv",
+      "sha256": "1a5505c621f74e6dbd1926d8119c73cfff6059a7685116dfd941e02878e7299c",
+      "bytes": 4705,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_original_a71c3b1.csv"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_original_a71c3b1.log",
+      "sha256": "15f8eaff8d680312095342af3c156fe684ccb718bb19032d582739c30757fb30",
+      "bytes": 23866,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_original_a71c3b1.log"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_review_fix.patch",
+      "sha256": "03444ed3c25a93cfc5b3cf54a14b100f54ada46a50be7d50eea3834ca0ae96fc",
+      "bytes": 13065,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_review_fix.patch"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\m4_validation_summary.md",
+      "sha256": "a62c5106bce25c844984f3691a1bec5539416711d12361d603cfd8eea0041c52",
+      "bytes": 3465,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\m4_validation_summary.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\premerge_tests_20261002.txt",
+      "sha256": "157c40f4972c2755d94f15735c1d1d914498ee47eb817bf41d3171c89b24be50",
+      "bytes": 100,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\premerge_tests_20261002.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\README_START_HERE.md",
+      "sha256": "79667ffec9055b5f2bc93839a9482d54f09f58e61e6d1d5c077753679da63182",
+      "bytes": 535,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\README_START_HERE.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\uniform_xy_fixed.acceptance.json",
+      "sha256": "337884b2f284f1b38f9fe3a8965f54bfd413b2e3690533d274ee26932d74a127",
+      "bytes": 1650,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\uniform_xy_fixed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\discrete_gyroid_N4_fixed.expected.json",
+      "sha256": "93859105f453b4ea7743165518d63849b9fff45bf32e78bb9fa84c5f9b42dd9a",
+      "bytes": 25239,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\discrete_gyroid_N4_fixed.expected.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\discrete_gyroid_N4_fixed.inp",
+      "sha256": "4da0ea21081e61a71d26ad9191e2eaf7800cc2457835680f23718bbb41a8a4a2",
+      "bytes": 502376,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\discrete_gyroid_N4_fixed.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\discrete_gyroid_N4_fixed.quadrature.npz",
+      "sha256": "a1c3f0e1fe3971a090c60ed0032a5e76594768455aa2b4c81e9d8901bef5aaf1",
+      "bytes": 90748,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\discrete_gyroid_N4_fixed.quadrature.npz"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\README.md",
+      "sha256": "69c95998f639755f399bc76c4b581e517c681a260bb740e9230f2ae26494fa75",
+      "bytes": 5820,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\repository_state.json",
+      "sha256": "31fa1b9652d5de4dacf68f6eabb4d5a4da730418c6c44bec74059142227a25be",
+      "bytes": 310,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\repository_state.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.acceptance.json",
+      "sha256": "aa94a16e9917ed08c49cb790a4c1fae335d4ce7ff70ccfdff53d189b8750a5ee",
+      "bytes": 930,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.console.txt",
+      "sha256": "96908932aa89e736db50b67f741c1a2a1041c38005ba309b1c3274ef58aab707",
+      "bytes": 688,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.console.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.extract.txt",
+      "sha256": "aa94a16e9917ed08c49cb790a4c1fae335d4ce7ff70ccfdff53d189b8750a5ee",
+      "bytes": 930,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.extract.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.reference_summary.json",
+      "sha256": "78090341a9a0e22cc21febb47bd83ff210fcd1f1907a38c0ab54782838e7762e",
+      "bytes": 1886,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.reference_summary.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.sta",
+      "sha256": "a0aae4e9c39ec76c567f6cf7635cdfeeecc4617e213b93fc3039904c7d0890a9",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_fixed.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.acceptance.initial.json",
+      "sha256": "2d5c0d775ac243364ac22782851ba3c4b32cacc8dacc3e303eaa229d4a031120",
+      "bytes": 952,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.acceptance.initial.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.acceptance.json",
+      "sha256": "33ae69f9159e7b390eb7e8ebbdd87eb62e1f485d2264d0249b6ed75ca24b484a",
+      "bytes": 940,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.console.txt",
+      "sha256": "770ad7afed86882621b27db020997a79f30917ffcaa786193db3c12f7e9c3d8f",
+      "bytes": 702,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.console.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.extract.txt",
+      "sha256": "33ae69f9159e7b390eb7e8ebbdd87eb62e1f485d2264d0249b6ed75ca24b484a",
+      "bytes": 940,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.extract.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.reference_initial_summary.json",
+      "sha256": "c50e38f37abc0d7a8a9f4f6b3228b37a96fc58ceae6ac01664a43ab4b4c1787a",
+      "bytes": 1490,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.reference_initial_summary.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.reference_summary.json",
+      "sha256": "81b75af6bac9566694d43ab637a3975e18b4963113f77dc444126b439a178dc0",
+      "bytes": 1937,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.reference_summary.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.sta",
+      "sha256": "eff7497c84f7016be44724cc8e259b85ea65e21fb061dd81b8d784e281e1ab0a",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N16_relaxed_free.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.acceptance.json",
+      "sha256": "0baa0d626954a7c38e2928878e2f1746b4c65a5dc608e828690284fd5804f545",
+      "bytes": 935,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.console.txt",
+      "sha256": "eb8d5bdaa1b331b988a9a5204b1112366e9fbb05a0a94a98e543654dd949b117",
+      "bytes": 686,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.console.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.expected.json",
+      "sha256": "93859105f453b4ea7743165518d63849b9fff45bf32e78bb9fa84c5f9b42dd9a",
+      "bytes": 25239,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.expected.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.extract.txt",
+      "sha256": "0baa0d626954a7c38e2928878e2f1746b4c65a5dc608e828690284fd5804f545",
+      "bytes": 935,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.extract.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.inp",
+      "sha256": "4da0ea21081e61a71d26ad9191e2eaf7800cc2457835680f23718bbb41a8a4a2",
+      "bytes": 502376,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.quadrature.npz",
+      "sha256": "a1c3f0e1fe3971a090c60ed0032a5e76594768455aa2b4c81e9d8901bef5aaf1",
+      "bytes": 90748,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.quadrature.npz"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.reference_summary.json",
+      "sha256": "c6ab64254d6f72a51d87f30852aac0c6bf1d7d15089613955b0a4824e0e908a6",
+      "bytes": 1859,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.reference_summary.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.sta",
+      "sha256": "23b28c53db3d78196e307e9eb3f28e42b4e794d0b295ab21748e1196c11d7a85",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\discrete_gyroid_N4_fixed.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\full_tests.txt",
+      "sha256": "ddb19f4569fe465444c4cf06100d31ce842680afcab8857119280446ee6cf5aa",
+      "bytes": 190,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\full_tests.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\precision_diagnostic.json",
+      "sha256": "7dc8711ee3d01437a9be635b9609d3472be41210a90eeb7036fe78c315b3a4b5",
+      "bytes": 878,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\precision_diagnostic.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\README.md",
+      "sha256": "37e33b99005f9f48b506b93ea858ec7413e4698721f461ac8d6b85ecde6ddc38",
+      "bytes": 4331,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\run_manifest.json",
+      "sha256": "476fb0e310e54709a4ce0a3d49676710f20687c3fcffd38dfdcdd08a904a582c",
+      "bytes": 21204,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\run_manifest.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_discrete\\source_manifest.json",
+      "sha256": "1670e93e3ca8b1096be0bc38f7750fc0c9bc0fe6a0f3d3106980417e09371ce8",
+      "bytes": 3710,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_discrete\\source_manifest.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted_STIF1.mtx",
+      "sha256": "899a06ba3fed5191e8c0cfce68e12464ecf66bf3fbfbf4b50a383796d509fb53",
+      "bytes": 10200,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted_STIF1.mtx"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted.console.txt",
+      "sha256": "fc30f020330e384ca50e97b0faf4cf123643047a55ab3a011d62e3a13bd688fa",
+      "bytes": 668,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted.console.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted.inp",
+      "sha256": "341a92a7c136c016c6625b67a98c7deb46cab6685333ea5a506b0d76d117d404",
+      "bytes": 511,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted.sta",
+      "sha256": "3c51cc3af5c75a8a38ff6206ea3d327acdc6856aa6c4f0d5943654fe3c949c71",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_distorted.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular_STIF1.mtx",
+      "sha256": "12918ff1b8dc4914be028aa9751b6135c9fa2db062abddd92e0ae9ef39eb12e1",
+      "bytes": 10200,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular_STIF1.mtx"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular.console.txt",
+      "sha256": "9e6639ed499476693a090ae714f2711ba07c1b9330cd1af72fd6897fb2bc6af4",
+      "bytes": 664,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular.console.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular.inp",
+      "sha256": "20d7fafcb91d4e49e9ecdfd62560dc4afebf83ea0ed4ba13096b9d1c593e710d",
+      "bytes": 415,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular.sta",
+      "sha256": "d59ec4bf069178596380305d56a3a7880d94d2b559940f5e7778b95797d2ce0e",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\c3d8_regular.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\comparison.console.txt",
+      "sha256": "69bec9c363f880e0a1ec9d49bc9a2d9a0896731b67a2ac7a21dd7f567f7b0777",
+      "bytes": 5305,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\comparison.console.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\comparison.json",
+      "sha256": "7817de220753f9024a916e938c51a964335b0be16cb2a4503f91feb2d9a0fb59",
+      "bytes": 3579,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\comparison.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\comparison.matrices.npz",
+      "sha256": "c984b9fe7d17cc439cca8ce77be11bad01ec362da00ed60c937d5a78fed540f3",
+      "bytes": 38954,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\comparison.matrices.npz"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\manifest.json",
+      "sha256": "8328022070b2dfed968662d6e15dcfc19830ab2d1ff404ae91f1a57430a36dad",
+      "bytes": 1704,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\manifest.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\README.md",
+      "sha256": "1ad766f121a1344661cb795325a077f873e90860f1fdc41c0b450b3d94033dd9",
+      "bytes": 2976,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\abaqus_element\\run_manifest.json",
+      "sha256": "a7d7604b2f8cfce9a24092ba8ce9bc8fdf524a94d7f70ced78fa02d596af22a6",
+      "bytes": 3621,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\abaqus_element\\run_manifest.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\abaqus_element_comparison.py",
+      "sha256": "863677defd52b89eb239c4862bc0397e85782b07676f2214d6d3deb41c2890dd",
+      "bytes": 12610,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\abaqus_element_comparison.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\capture_abaqus_comparison.py",
+      "sha256": "314af8676010efa7294a108ccec226e8d223b59c0aba5aade586ac60bcd17c1c",
+      "bytes": 6607,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\capture_abaqus_comparison.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\extract_abaqus_discrete.py",
+      "sha256": "f65e2568905f24608230f659a165449d6cf6374903aeee7c799c3081f07e02a4",
+      "bytes": 4661,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\extract_abaqus_discrete.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\extract_uniform_baseline.py",
+      "sha256": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+      "bytes": 6031,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\extract_uniform_baseline.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\prepare_abaqus_discrete.py",
+      "sha256": "06498713451d4587d5b8c993209ddd5b3d61e83f2c48d4d07f2e74ef76ec9c35",
+      "bytes": 8944,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\prepare_abaqus_discrete.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\prepare_uniform_baseline.py",
+      "sha256": "865d162dab3c847282de97d02a314ffba983964014a83ac45426d666416ddeab",
+      "bytes": 7884,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\prepare_uniform_baseline.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_comparison_verified\\scripts\\run_abaqus_discrete.ps1",
+      "sha256": "90e78e426328e3d97d220d4c44cf1da5f218b695d4dbc2a4a09d01e110204ff5",
+      "bytes": 3690,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_comparison_verified\\scripts\\run_abaqus_discrete.ps1"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\expected.json",
+      "sha256": "d37315c5b2df930dd5730813e01b5f098a7997264f3f4727502bde82de6bcd53",
+      "bytes": 2308,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\expected.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\full_tests.txt",
+      "sha256": "53c0437d820e9990a4f62417b8b5450bcee9a427d895801dfb999c8f0edbcfaf",
+      "bytes": 100,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\full_tests.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\offline_tests.txt",
+      "sha256": "d9fbe6c5107ab4f085df9faa896dd7f4f797f380d994966d9098ce80b5dc817c",
+      "bytes": 98,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\offline_tests.txt"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\README.md",
+      "sha256": "3a615faa36c78f20e88f928b9a69969b6d4b18c11f39b5fa502a9a7d5a9aa0a1",
+      "bytes": 5148,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\runtime.json",
+      "sha256": "4020f5685c98cf0aacf107d5421349dec8242c9f9fcc5828e6fbdeed8c604a6e",
+      "bytes": 286,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\runtime.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\uniform_xy_fixed.inp",
+      "sha256": "6ffcc1c36059b0292b849426fcde1b974ba344250d7ae0e5d25040133bd6414f",
+      "bytes": 10890,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\uniform_xy_fixed.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\uniform_xy_relaxed_free.inp",
+      "sha256": "33ab0ac0403ae273153f06d85b9f1d21293a4b207290d6499634987ddbdd49bf",
+      "bytes": 10864,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\uniform_xy_relaxed_free.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\uniform_xy_relaxed_prescribed.inp",
+      "sha256": "56dbe1b3871c93e272d04be0fc77464b10b81d3a12b06a5e761f6c1ab25cb5f5",
+      "bytes": 10898,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\uniform_xy_relaxed_prescribed.inp"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\scripts\\extract_uniform_baseline.py",
+      "sha256": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+      "bytes": 6031,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\scripts\\extract_uniform_baseline.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\scripts\\prepare_uniform_baseline.py",
+      "sha256": "865d162dab3c847282de97d02a314ffba983964014a83ac45426d666416ddeab",
+      "bytes": 7884,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\scripts\\prepare_uniform_baseline.py"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\README.md",
+      "sha256": "d28aa3ca412f5cbf8a28c1c80a15d0ea476f52ba11acbc6974393fa52504ec9d",
+      "bytes": 1701,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\run_manifest.json",
+      "sha256": "eb7f5fab98c171373eb6a5cd837028630fa2785765e7318244ce9df58aec1c78",
+      "bytes": 2366,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\run_manifest.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\summary.csv",
+      "sha256": "a304bb7f532587603fab9d8978f0eed344e0ffb4ab360f8a57fbb053fc33cbe2",
+      "bytes": 934,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\summary.csv"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\uniform_xy_fixed.acceptance.json",
+      "sha256": "337884b2f284f1b38f9fe3a8965f54bfd413b2e3690533d274ee26932d74a127",
+      "bytes": 1650,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\uniform_xy_fixed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\uniform_xy_fixed.sta",
+      "sha256": "a19cbbc8047ea61c9aaa322a9d2c5f71037699c880951716d8fc7e3bc8388d23",
+      "bytes": 447,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\uniform_xy_fixed.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_free.acceptance.json",
+      "sha256": "4315a40f5afe5daa24a505dfd9b7bb9d1e6a1d72b93622fa1360c1999eca896c",
+      "bytes": 1659,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_free.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_free.sta",
+      "sha256": "505902926c8ba69bf9a2c99e902745bc4b829cd5c9eeda17297864b13e13481d",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_free.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_prescribed.acceptance.json",
+      "sha256": "ff930009ae9ab99a9bdc1f90f78a3fc228435e1765767c381010cd9385a6eedb",
+      "bytes": 1714,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_prescribed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_prescribed.sta",
+      "sha256": "fb6580159dea1b296e5b74df29b77299bc6da3a3f58aebd892235f624e391039",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_baseline\\verified\\uniform_xy_relaxed_prescribed.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\README.md",
+      "sha256": "d28aa3ca412f5cbf8a28c1c80a15d0ea476f52ba11acbc6974393fa52504ec9d",
+      "bytes": 1701,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\README.md"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\run_manifest.json",
+      "sha256": "eb7f5fab98c171373eb6a5cd837028630fa2785765e7318244ce9df58aec1c78",
+      "bytes": 2366,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\run_manifest.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\summary.csv",
+      "sha256": "a304bb7f532587603fab9d8978f0eed344e0ffb4ab360f8a57fbb053fc33cbe2",
+      "bytes": 934,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\summary.csv"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\uniform_xy_fixed.acceptance.json",
+      "sha256": "337884b2f284f1b38f9fe3a8965f54bfd413b2e3690533d274ee26932d74a127",
+      "bytes": 1650,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\uniform_xy_fixed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\uniform_xy_fixed.sta",
+      "sha256": "a19cbbc8047ea61c9aaa322a9d2c5f71037699c880951716d8fc7e3bc8388d23",
+      "bytes": 447,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\uniform_xy_fixed.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\uniform_xy_relaxed_free.acceptance.json",
+      "sha256": "4315a40f5afe5daa24a505dfd9b7bb9d1e6a1d72b93622fa1360c1999eca896c",
+      "bytes": 1659,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\uniform_xy_relaxed_free.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\uniform_xy_relaxed_free.sta",
+      "sha256": "505902926c8ba69bf9a2c99e902745bc4b829cd5c9eeda17297864b13e13481d",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\uniform_xy_relaxed_free.sta"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\uniform_xy_relaxed_prescribed.acceptance.json",
+      "sha256": "ff930009ae9ab99a9bdc1f90f78a3fc228435e1765767c381010cd9385a6eedb",
+      "bytes": 1714,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\uniform_xy_relaxed_prescribed.acceptance.json"
+    },
+    {
+      "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\early_exports_20261002\\abaqus_uniform_verified\\uniform_xy_relaxed_prescribed.sta",
+      "sha256": "fb6580159dea1b296e5b74df29b77299bc6da3a3f58aebd892235f624e391039",
+      "bytes": 446,
+      "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\outputs\\abaqus_uniform_verified\\uniform_xy_relaxed_prescribed.sta"
+    }
+  ],
+  "operation": "reversible archive; no deletion"
+}

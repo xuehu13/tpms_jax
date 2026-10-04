@@ -1,0 +1,51 @@
+{
+  "moves": [
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN_ROUND1_COMPLETED.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/completed_plans/RESEARCH_PLAN_ROUND1_COMPLETED.md",
+      "sha256": "13450205f73b453968212a59b652a94971e88a53dceb4b4f91d3a0190fe39374"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN_ROUND2_COMPLETED.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/completed_plans/RESEARCH_PLAN_ROUND2_COMPLETED.md",
+      "sha256": "4539ec99d17b6bb8ec4e88eabacaa1878ebff4420473f273f8b19876ba0a73dd"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN_ROUND3_COMPLETED.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/completed_plans/RESEARCH_PLAN_ROUND3_COMPLETED.md",
+      "sha256": "4a93e2274eadd8d0850a4efacd2b71db1027c80b8ed8b7a27058458dc300fb7f"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN_ROUND4_COMPLETED.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/completed_plans/RESEARCH_PLAN_ROUND4_COMPLETED.md",
+      "sha256": "ca0bca0c4afd1fea52b1c8ea7e9cd0e03f42e67b67dbcb209db780e434fc943f"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/review_20261003_verification.json",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/review_20261003/review_20261003_verification.json",
+      "sha256": "5df9338b5f870aec85e2a0c78322ee69185d40dc236934b61ea97265227df293"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/review_20261003_literature.json",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/review_20261003/review_20261003_literature.json",
+      "sha256": "3978581d9b79a6323f98dcb3be95036a4e35b3b79d2db6fc533a8711419085be"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/review_20261003_review_manifest.json",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/review_20261003/review_20261003_review_manifest.json",
+      "sha256": "58ca800d62636f7a31ce4f9a409f24b1cd71b1a0b093be3fde108b739bdb67b1"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/review_20261003_organization_receipt.json",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/review_20261003/review_20261003_organization_receipt.json",
+      "sha256": "3f4c30036b48dd48e2318bcf50fb0e4ca8ea90a905212b588b03b91dc445d5c3"
+    },
+    {
+      "original": "/home/xuehu/projects/tpms_jax/docs/planning_round4_20261003_receipt.json",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/review_20261003/planning_round4_20261003_receipt.json",
+      "sha256": "1dd7d55722489a415fcf08ee96f48df5510c9149516de5359f6b9a3a7f2c9ddb"
+    }
+  ],
+  "count": 9,
+  "bytes_preserved": true
+}

@@ -1,0 +1,57 @@
+{
+  "origin": [
+    0,
+    7,
+    19
+  ],
+  "permutation": [
+    1,
+    2,
+    0
+  ],
+  "det": 0.0,
+  "tet_node_ids": [
+    822,
+    731,
+    821,
+    821
+  ],
+  "tet_points": [
+    [
+      0.0052083333333,
+      0.1614583333334,
+      0.40625
+    ],
+    [
+      0.0,
+      0.1458333333333,
+      0.3958333333333
+    ],
+    [
+      0.0,
+      0.1666666666667,
+      0.4166666666667
+    ],
+    [
+      0.0,
+      0.1666666666667,
+      0.4166666666667
+    ]
+  ],
+  "polygon_node_ids": [
+    731,
+    821,
+    821,
+    819
+  ],
+  "original_tetra_G": [
+    -0.02064809354253938,
+    -0.07830271786072907,
+    -0.25000000000000006,
+    -0.18901447320306908
+  ],
+  "threshold": 0.25,
+  "module_sha256": "0ab36f204780d873b1993ce43d90aff05331ed49eef2cc5d5a5f9f4cf618a7ef",
+  "criterion": "abs(mapping determinant)<1e-20; rejection message alone does not distinguish zero from tiny positive volume",
+  "new_FEM_or_Abaqus_solves": 0
+}

@@ -1,0 +1,9 @@
+{
+  "links_checked": 47,
+  "reading_copies_synchronized": 5,
+  "all_source_and_experiment_hashes_match": true,
+  "transport_dirty_files_match_original_hashes": true,
+  "git_diff_check_passed": true,
+  "N64_adjoint_not_run": true,
+  "documents_updated_only_after_compute": true
+}

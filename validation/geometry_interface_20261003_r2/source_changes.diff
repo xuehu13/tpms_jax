@@ -1,0 +1,367 @@
+diff --git a/binary_gyroid.py b/binary_gyroid.py
+index 884dd4d..943d15f 100644
+--- a/binary_gyroid.py
++++ b/binary_gyroid.py
+@@ -228,7 +228,7 @@ def quadratic_nodes(points,cells):
+     return np.array(coordinates),np.array(result,dtype=int)
+ 
+ 
+-def remesh_domain(points, cells, refinement=0):
++def remesh_domain(points, cells, refinement=0, c=C):
+     """Remesh only the volume; preserve the prescribed closed triangle skin.
+ 
+     Optional uniform subdivision refines the SAME planar domain. Geometry N
+@@ -279,9 +279,9 @@ def remesh_domain(points, cells, refinement=0):
+         metadata = {'gmsh_version':gmsh.__version__, 'warnings':warnings,
+                     'refinement':refinement, 'identical_tetrahedra_removed':duplicate_count}
+         # This also detects asymmetric boundary recovery/Steiner insertion.
+-        audit_linear(xyz,result)
+-        before = audit_linear(points,cells)['volume']
+-        after = audit_linear(xyz,result)['volume']
++        audit_linear(xyz,result,c)
++        before = audit_linear(points,cells,c)['volume']
++        after = audit_linear(xyz,result,c)['volume']
+         if abs(before-after) > 1e-10:
+             raise ValueError('Volume mesher changed the prescribed binary domain')
+         return xyz,result,metadata
+diff --git a/design_fem.py b/design_fem.py
+index f600815..db5ba7a 100644
+--- a/design_fem.py
++++ b/design_fem.py
+@@ -28,7 +28,7 @@ def width_basis(xyz):
+ 
+ 
+ class GyroidDesign:
+-    def __init__(self, N, beta=20., emin_ratio=.001, eps_z=-.01):
++    def __init__(self, N, beta=20., emin_ratio=.001, eps_z=-.01, *, solver_options=None, adjoint_options=None):
+         if N < 2 or not np.all(np.isfinite([beta, emin_ratio, eps_z])) or beta <= 0 or not 0 < emin_ratio < 1 or eps_z == 0:
+             raise ValueError('Expected N>=2, beta>0, 0<Emin/Es<1 and nonzero finite strain')
+         self.N, self.beta, self.eps_z = N, beta, eps_z
+@@ -44,7 +44,9 @@ class GyroidDesign:
+         self.volume = self.weights.sum()
+         # ad_wrapper expects set_params(theta), not set_params(H, rho, ...).
+         self.problem.set_params = self._set_design
+-        self._predict = ad_wrapper(self.problem, dict(SOLVER_OPTIONS), dict(ADJOINT_OPTIONS))
++        self._predict = ad_wrapper(self.problem,
++                                   dict(SOLVER_OPTIONS if solver_options is None else solver_options),
++                                   dict(ADJOINT_OPTIONS if adjoint_options is None else adjoint_options))
+ 
+     @staticmethod
+     def validate_theta(theta):
+@@ -98,9 +100,12 @@ class GyroidDesign:
+             # implicit_vjp traces set_params; restore concrete state for diagnostics.
+             self._set_design(theta)
+ 
+-    def forward(self, theta):
++    def forward(self, theta, *, precomputed=None):
++        """Validate a forward solution; precomputed reuses an AD/FD solve without repeating it."""
+         theta = self.validate_theta(theta)
+-        values, w = self._outputs(theta)
++        values, w = self._outputs(theta) if precomputed is None else precomputed
++        if precomputed is not None:
++            self._set_design(theta)
+         rho, sigma, U = self._fields(theta, w)
+         avg = jnp.sum(sigma*self.weights[..., None, None], axis=(0, 1))/self.volume
+         residual = np.asarray(self.problem.compute_residual([w])[0])
+diff --git a/geometry.py b/geometry.py
+index a5844c8..169da62 100644
+--- a/geometry.py
++++ b/geometry.py
+@@ -20,7 +20,7 @@ Three distinct concepts live in this module and must not be conflated:
+ import jax
+ import jax.numpy as jnp
+ 
+-__all__ = ["gyroid", "solid_mask", "density"]
++__all__ = ["gyroid", "solid_mask", "density", "project_field"]
+ 
+ 
+ def gyroid(xyz, L=1.0):
+@@ -98,5 +98,9 @@ def density(xyz, c, beta, L=1.0):
+         ``xyz``, ``c`` and ``L``. This is a design field for FEM/optimization,
+         NOT a physical mass density.
+     """
+-    g = gyroid(xyz, L)
++    return project_field(gyroid(xyz, L), c, beta)
++
++
++def project_field(g, c, beta):
++    """Project a signed implicit field with fixed Gyroid amplitude convention."""
+     return jax.nn.sigmoid(beta * (g + c)) - jax.nn.sigmoid(beta * (g - c))
+diff --git a/scripts/capture_binary_projection_reference.py b/scripts/capture_binary_projection_reference.py
+index b4207de..7282087 100644
+--- a/scripts/capture_binary_projection_reference.py
++++ b/scripts/capture_binary_projection_reference.py
+@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(ROOT))
+ from scripts.m4_numerical_study import C_CALIB, E_S, EPS_Z, evaluate_case
+ from fem import NU
++import numpy as np
+ import jax
+ 
+ 
+@@ -24,6 +25,8 @@ if __name__ == "__main__":
+     geometry = parser.add_mutually_exclusive_group()
+     geometry.add_argument("--c", type=float, default=C_CALIB)
+     geometry.add_argument("--target-vf", type=float)
++    parser.add_argument("--voxel-M", type=int, help="Sample the continuous Gyroid at periodic cell centres")
++    parser.add_argument("--field-kind", choices=("occupancy", "implicit"), default="occupancy")
+     parser.add_argument("--out", required=True, type=Path)
+     args = parser.parse_args()
+     if args.N < 2 or not all(map(math.isfinite, (args.beta, args.emin_ratio, args.c))) or args.beta <= 0 or args.c < 0 or not 0 < args.emin_ratio < 1:
+@@ -41,8 +44,67 @@ if __name__ == "__main__":
+         for key, value in petsc_options.items():
+             PETSc.Options()[key] = value
+         solver_options = {"petsc_solver": {"ksp_type": "cg", "pc_type": "gamg"}}
++    rho_quad = None
++    voxel_record = None
++    if args.voxel_M is not None:
++        if args.voxel_M < 2 or args.target_vf is not None:
++            parser.error("voxel-M>=2; no volume calibration on array route")
++        from voxel_field import sample_gyroid, sample_implicit, periodic_trilinear
++        from geometry import density, project_field
++        values = sample_implicit(args.voxel_M) if args.field_kind == "implicit" else sample_gyroid(args.voxel_M, args.c, args.beta)
++        input_path = args.out.with_suffix('.input.npy')
++        if input_path.exists():
++            parser.error("Array input file already exists")
++        input_path.parent.mkdir(parents=True, exist_ok=True)
++        np.save(input_path, np.asarray(values))
++        voxel_record = {"M": args.voxel_M, "axis_order": "xyz", "sampling": "(i+.5)/M",
++                        "map": "periodic_trilinear", "post_projection": args.field_kind == "implicit", "field_kind": args.field_kind,
++                        "input_min": float(values.min()), "input_max": float(values.max()),
++                        "input_file": str(input_path), "input_sha256": hashlib.sha256(input_path.read_bytes()).hexdigest()}
++        def rho_quad(problem):
++            problem.projection_c, problem.projection_calibration = args.c, None
++            projected = periodic_trilinear(values, problem.physical_quad_points)
++            if args.field_kind == "implicit":
++                projected = project_field(projected, args.c, args.beta)
++            reference = density(problem.physical_quad_points, args.c, args.beta)
++            weights = np.asarray(problem.JxW)[:, 0, :]
++            error = np.asarray(projected-reference)
++            voxel_record.update(weighted_L1_field_error=float(np.sum(np.abs(error)*weights)/weights.sum()),
++                                maximum_field_error=float(np.abs(error).max()),
++                                projected_volume_difference=float(np.sum(error*weights)/weights.sum()),
++                                projected_min=float(projected.min()), projected_max=float(projected.max()),
++                                analytic_transition_fraction=float(np.mean((np.asarray(reference)>.05)&(np.asarray(reference)<.95))),
++                                mapped_transition_fraction=float(np.mean((np.asarray(projected)>.05)&(np.asarray(projected)<.95))))
++            return projected
+     row = evaluate_case(args.N, args.beta, args.emin_ratio, args.lateral,
+-                        solver_options=solver_options, c=args.c, target_vf=args.target_vf)
++                        solver_options=solver_options, c=args.c, target_vf=args.target_vf,
++                        include_problem=True, include_solution=True, rho_quad=rho_quad)
++    if "_problem" in row:
++        problem = row.pop("_problem")
++        sol_list = row.pop("_sol_list")
++        points = np.asarray(problem.fe.points)
++        w = np.asarray(sol_list[0])
++        maximum = 0.0
++        pair_count = 0
++        for axis in (0, 1):
++            others = [d for d in range(3) if d != axis]
++            low = np.flatnonzero(np.isclose(points[:, axis], 0., atol=1e-10))
++            high = np.flatnonzero(np.isclose(points[:, axis], 1., atol=1e-10))
++            low = low[np.lexsort((points[low, others[1]], points[low, others[0]]))]
++            high = high[np.lexsort((points[high, others[1]], points[high, others[0]]))]
++            if len(low) != len(high) or not np.allclose(points[low][:, others], points[high][:, others], atol=1e-12, rtol=0):
++                raise ValueError("Periodic face coordinate pairing failed")
++            maximum = max(maximum, float(np.max(np.abs(w[high] - w[low]))))
++            pair_count += len(low)
++        loaded = np.isclose(points[:, 2], 0., atol=1e-10) | np.isclose(points[:, 2], 1., atol=1e-10)
++        row["max_periodic_fluctuation_error"] = maximum
++        row["periodic_face_pair_count"] = pair_count
++        row["max_loaded_face_fluctuation_error"] = float(np.max(np.abs(w[loaded, 2])))
++        row["checks"]["periodic_fluctuation<=1e-10"] = maximum <= 1e-10
++        row["checks"]["loaded_face_fluctuation<=1e-10"] = row["max_loaded_face_fluctuation_error"] <= 1e-10
++        row["status"] = "ok" if all(row["checks"].values()) else "check_failed"
++        row["macro_equilibrium_solves_expected"] = 1 if args.lateral == "fixed" else 4
++        del problem, sol_list, points, w
+     if row["status"] == "ok" and args.lateral == "relaxed_free":
+         row["checks"]["zero_lateral_stress<=1e-08"] = max(abs(row["sigma_xx"]), abs(row["sigma_yy"])) <= 1e-8
+         row["status"] = "ok" if all(row["checks"].values()) else "check_failed"
+@@ -52,11 +114,14 @@ if __name__ == "__main__":
+     row["calibration"] = row.pop("_projection_calibration", None)
+     row["model"] = {"c": row.pop("_projection_c", args.c), "E_s": E_S, "nu": NU, "eps_z": EPS_Z,
+                     "cell_size": 1., "periodic_axes": [0, 1], "interpolation_power": 1}
++    row["input_representation"] = {"type": "analytic_Gauss"} if voxel_record is None else {"type": "signed_implicit_array" if args.field_kind == "implicit" else "continuous_voxel_array", **voxel_record}
+     row["runtime"] = {"jax_version": jax.__version__, "devices": [str(d) for d in jax.devices()],
+                       "peak_host_rss_MiB": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024}
+     names = ("scripts/capture_binary_projection_reference.py", "scripts/m4_numerical_study.py",
+              "fem.py", "density_fem.py", "geometry.py", "pbc.py")
+     row["source_sha256"] = {name: hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in names}
++    if voxel_record is not None:
++        row["source_sha256"]["voxel_field.py"] = hashlib.sha256((ROOT/"voxel_field.py").read_bytes()).hexdigest()
+     args.out.parent.mkdir(parents=True, exist_ok=True)
+     with args.out.open("x") as stream:
+         stream.write(json.dumps(row, indent=2, allow_nan=row["status"] != "ok")+"\n")
+diff --git a/scripts/estimate_binary_volume.py b/scripts/estimate_binary_volume.py
+index 10987c1..31476a7 100644
+--- a/scripts/estimate_binary_volume.py
++++ b/scripts/estimate_binary_volume.py
+@@ -7,12 +7,12 @@ from scipy.stats import qmc
+ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+ from binary_gyroid import C,gyroid_numpy
+ 
+-def estimate(power=21,replicates=8):
++def estimate(power=21,replicates=8,c=C):
+     fractions=[]
+     for seed in range(replicates):
+         xyz=qmc.Sobol(3,scramble=True,seed=20261002+seed).random_base2(power)
+-        fractions.append(float(np.mean(np.abs(gyroid_numpy(xyz)) <= C)))
+-    return {'c':C,'method':'replicated scrambled Sobol, direct analytic |G|<=c',
++        fractions.append(float(np.mean(np.abs(gyroid_numpy(xyz)) <= c)))
++    return {'c':c,'method':'replicated scrambled Sobol, direct analytic |G|<=c',
+             'power':power,'replicates':replicates,'samples_per_replicate':2**power,
+             'fractions':fractions,'mean':float(np.mean(fractions)),
+             'replicate_std':float(np.std(fractions,ddof=1)),
+diff --git a/scripts/m4_numerical_study.py b/scripts/m4_numerical_study.py
+index 17d217c..0178365 100644
+--- a/scripts/m4_numerical_study.py
++++ b/scripts/m4_numerical_study.py
+@@ -62,7 +62,7 @@ def rho_fn_factory(beta, c=C_CALIB, target_vf=None):
+ 
+ 
+ def solve_case(N, beta, emin_ratio, lateral, solver_options=None,
+-               c=C_CALIB, target_vf=None):
++               c=C_CALIB, target_vf=None, rho_quad=None):
+     """One build + one solve (fixed) or one build + four solves (relaxed).
+ 
+     The relaxed path creates NO temporary problem: the callable rho_quad is
+@@ -70,12 +70,13 @@ def solve_case(N, beta, emin_ratio, lateral, solver_options=None,
+     physical_quad_points of the single Problem instance it builds.
+     """
+     E_min = emin_ratio * E_S
++    rho_quad = rho_fn_factory(beta, c, target_vf) if rho_quad is None else rho_quad
+     H_fixed = onp.diag(onp.array([0.0, 0.0, EPS_Z]))
+     pins = lambda pts: xy_compression_fixed_dofs(pts, N, N, N)
+     if lateral == "fixed":
+         t0 = time.perf_counter()
+         problem = make_density_problem(
+-            N, N, N, H_macro=jnp.asarray(H_fixed), rho_quad=rho_fn_factory(beta, c, target_vf),
++            N, N, N, H_macro=jnp.asarray(H_fixed), rho_quad=rho_quad,
+             E_min=E_min, periodic_axes=(0, 1), fixed_class=None,
+             fixed_dofs=pins)
+         t1 = time.perf_counter()
+@@ -84,7 +85,7 @@ def solve_case(N, beta, emin_ratio, lateral, solver_options=None,
+         return problem, sol_list, H_fixed, 0.0, 0.0, t1 - t0, t2 - t1
+     extra_options = {} if solver_options is None else {"solver_options": solver_options}
+     out = solve_lateral_relaxation(
+-        N, N, N, rho_quad=rho_fn_factory(beta, c, target_vf), eps_z=EPS_Z, h=0.01,
++        N, N, N, rho_quad=rho_quad, eps_z=EPS_Z, h=0.01,
+         E_s=E_S, E_min=E_min, cell_size=1.0, periodic_axes=(0, 1),
+         fixed_class=None, fixed_dofs=pins, **extra_options)
+     return (out["problem"], out["sol_list"], out["H_final"],
+@@ -95,7 +96,7 @@ def evaluate_case(N, beta, emin_ratio, lateral,
+                   tol_res=TOL_RES, tol_balance=TOL_BALANCE,
+                   tol_reaction=TOL_REACTION, tol_work=TOL_WORK,
+                   include_problem=False, solver_options=None,
+-                  c=C_CALIB, target_vf=None):
++                  c=C_CALIB, target_vf=None, include_solution=False, rho_quad=None):
+     """Run one case and apply the numerical consistency checks.
+ 
+     status=ok requires finite values AND the residual/balance/reaction/
+@@ -106,6 +107,8 @@ def evaluate_case(N, beta, emin_ratio, lateral,
+                lateral=lateral, status="")
+     try:
+         options = {} if solver_options is None else {"solver_options": solver_options}
++        if rho_quad is not None:
++            options["rho_quad"] = rho_quad
+         if c != C_CALIB or target_vf is not None:
+             options.update(c=c, target_vf=target_vf)
+         problem, sol_list, H_used, eps_x, eps_y, t_build, t_solve = \
+@@ -168,6 +171,8 @@ def evaluate_case(N, beta, emin_ratio, lateral,
+         row["status"] = "ok" if all(checks.values()) else "check_failed"
+         if include_problem:
+             row["_problem"] = problem
++        if include_solution:
++            row["_sol_list"] = sol_list
+         row["_projection_c"] = float(problem.projection_c)
+         row["_projection_calibration"] = problem.projection_calibration
+     except Exception as exc:
+diff --git a/scripts/prepare_abaqus_binary.py b/scripts/prepare_abaqus_binary.py
+index 618d3cb..77c6dd3 100644
+--- a/scripts/prepare_abaqus_binary.py
++++ b/scripts/prepare_abaqus_binary.py
+@@ -84,7 +84,7 @@ def uniform_domain(n=2):
+     return points,np.array(cells)
+ 
+ 
+-def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_mesh=None):
++def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_mesh=None, c=C):
+     if n < 4 or refinement not in (0,1) or lateral not in ('fixed','relaxed_free'):
+         raise ValueError('Require geometry N>=4, refinement 0/1, and supported lateral condition')
+     output.mkdir(parents=True,exist_ok=True)
+@@ -95,7 +95,7 @@ def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_me
+     else:
+         if cached_mesh:
+             saved = np.load(cached_mesh)
+-            if 'geometry_N' not in saved or 'c' not in saved or int(saved['geometry_N']) != n or float(saved['c']) != C:
++            if 'geometry_N' not in saved or 'c' not in saved or int(saved['geometry_N']) != n or float(saved['c']) != c:
+                 raise ValueError('Cached mesh must record matching geometry_N and c')
+             points,cells = saved['points'],saved['cells']
+             metadata = {'mesher':'cached boundary-preserving mesh', 'cache_sha256':hashlib.sha256(Path(cached_mesh).read_bytes()).hexdigest()}
+@@ -105,12 +105,12 @@ def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_me
+             if cached_refinement > refinement:
+                 raise ValueError('Cached FE refinement exceeds requested level')
+             if refinement > cached_refinement:
+-                points,cells,metadata = remesh_domain(points,cells,refinement)
++                points,cells,metadata = remesh_domain(points,cells,refinement,c=c)
+         else:
+-            points,cells = linear_domain(n)
+-            points,cells,metadata = remesh_domain(points,cells,refinement)
++            points,cells = linear_domain(n, c)
++            points,cells,metadata = remesh_domain(points,cells,refinement,c=c)
+         prefix = f'binary_gyroid_G{n}_R{refinement}_C3D10'
+-    audit = audit_linear(points,cells)
++    audit = audit_linear(points,cells,c)
+     if uniform:
+         # Surface G residuals have no geometric meaning for this patch test.
+         audit.pop('surface_G_residual_max'); audit.pop('surface_G_residual_rms')
+@@ -142,7 +142,7 @@ def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_me
+     np.savez_compressed(output/(job+'.mesh.npz'),points=points,cells=cells)
+     manifest = {'case':job,'model':'uniform' if uniform else 'binary_sheet_gyroid',
+                 'geometry_N':n if not uniform else None,'fe_refinement':refinement,
+-                'c':C,'E_s':10.,'nu':.3,'gross_volume':1.,'lateral':lateral,
++                'c':c,'E_s':10.,'nu':.3,'gross_volume':1.,'lateral':lateral,
+                 'geometry':audit,'meshing':metadata,'nodes':len(points),'elements':len(cells),
+                 'controls':list(controls),'equations':len(equations),'periodic_pairs':len(pairs),
+                 'input_sha256':hashlib.sha256(inp.read_bytes()).hexdigest(),
+@@ -168,5 +168,6 @@ if __name__ == '__main__':
+     parser.add_argument('--lateral',choices=('fixed','relaxed_free'),default='fixed')
+     parser.add_argument('--uniform',action='store_true')
+     parser.add_argument('--cached-mesh',type=Path)
++    parser.add_argument('--c',type=float,default=C)
+     args=parser.parse_args()
+-    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh)
++    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh,args.c)
+diff --git a/scripts/prepare_binary_lateral_pair.py b/scripts/prepare_binary_lateral_pair.py
+index 2c299df..03df4dd 100644
+--- a/scripts/prepare_binary_lateral_pair.py
++++ b/scripts/prepare_binary_lateral_pair.py
+@@ -20,7 +20,7 @@ def prepare_pair(expected_path,output):
+     np.savez_compressed(cache,points=mesh['points'][:fixed['geometry']['nodes']],
+                         cells=mesh['cells'][:,:4],geometry_N=fixed['geometry_N'],
+                         c=fixed['c'],fe_refinement=fixed['fe_refinement'])
+-    result=prepare(output,fixed['geometry_N'],fixed['fe_refinement'],'relaxed_free',cached_mesh=cache)
++    result=prepare(output,fixed['geometry_N'],fixed['fe_refinement'],'relaxed_free',cached_mesh=cache,c=fixed['c'])
+     paired=np.load(output/(result['case']+'.mesh.npz'))
+     if not np.array_equal(paired['points'],mesh['points']) or not np.array_equal(paired['cells'],mesh['cells']):
+         raise ValueError('Paired mesh differs from source fixed-lateral mesh')
+diff --git a/tests/test_abaqus_binary.py b/tests/test_abaqus_binary.py
+index ef0998b..f2f2795 100644
+--- a/tests/test_abaqus_binary.py
++++ b/tests/test_abaqus_binary.py
+@@ -120,3 +120,15 @@ def test_bulk_reader_preserves_label_ip_pairs_under_permutation():
+     np.testing.assert_array_equal(observed_labels,labels)
+     np.testing.assert_array_equal(observed_ips,ips)
+     np.testing.assert_array_equal(observed,expected)
++
++
++@pytest.mark.parametrize('c',[.48,.60])
++def test_threshold_specific_binary_cache_and_manifest(tmp_path,c):
++    points,cells=binary.linear_domain(4,c=c)
++    cache=tmp_path/'mesh.npz'
++    np.savez(cache,points=points,cells=cells,geometry_N=4,c=c,fe_refinement=0)
++    manifest=prepare.prepare(tmp_path/'case',n=4,cached_mesh=cache,c=c)
++    assert manifest['c'] == c
++    assert manifest['geometry']['volume'] == pytest.approx(binary.audit_linear(points,cells,c)['volume'])
++    with pytest.raises(ValueError,match='matching geometry_N and c'):
++        prepare.prepare(tmp_path/'wrong',n=4,cached_mesh=cache,c=binary.C)

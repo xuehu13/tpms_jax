@@ -1,0 +1,21 @@
+{
+  "c": 0.48,
+  "method": "replicated scrambled Sobol, direct analytic |G|<=c",
+  "power": 21,
+  "replicates": 8,
+  "samples_per_replicate": 2097152,
+  "fractions": [
+    0.3104672431945801,
+    0.31046438217163086,
+    0.3104429244995117,
+    0.31047868728637695,
+    0.3104057312011719,
+    0.31038808822631836,
+    0.3105301856994629,
+    0.3105659484863281
+  ],
+  "mean": 0.3104678988456726,
+  "replicate_std": 5.913766078990429e-05,
+  "standard_error_of_mean": 2.090832048402556e-05,
+  "deterministic_error_bound": false
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "prepare",
+    "case": "ax035_G32",
+    "seconds": 34.38649303501006,
+    "exit_code": 0,
+    "theta": [
+      0.5410380367934704,
+      0.035,
+      0.0,
+      0.0
+    ],
+    "directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/learning_bridge_20261003_r3/ax035/G32"
+  },
+  {
+    "kind": "analysis_and_datacheck_extract",
+    "case": "ax035_G32",
+    "seconds": 0.569191949965898,
+    "exit_code": 1,
+    "Abaqus_analysis_count": 0,
+    "datacheck_count": 0,
+    "status": null
+  },
+  {
+    "kind": "native_analysis_datacheck_extract_failed",
+    "case": "ax035_G32",
+    "seconds": 110.0,
+    "time_method": "conservative interval from 13:41:20 UTC before logged start 13:41:34 to failed extraction log mtime",
+    "Abaqus_analysis_count": 1,
+    "datacheck_count": 1,
+    "solver_completed": true,
+    "extraction_reason": "shared helper missing, fixed by copying unchanged helper; no rerun analysis"
+  },
+  {
+    "kind": "extract_only",
+    "case": "ax035_G32",
+    "seconds": 4.076564060000237,
+    "exit_code": 0,
+    "Abaqus_analysis_count": 0,
+    "datacheck_count": 0,
+    "status": "ok"
+  },
+  {
+    "kind": "prepare",
+    "case": "ax035_G48",
+    "seconds": 67.56662048900034,
+    "exit_code": 1,
+    "theta": [
+      0.5410380367934704,
+      0.035,
+      0.0,
+      0.0
+    ],
+    "directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/learning_bridge_20261003_r3/ax035/G48"
+  }
+]

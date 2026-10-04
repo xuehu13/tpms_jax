@@ -1,0 +1,23 @@
+{
+  "anchor_count": 2,
+  "N": [
+    48,
+    64
+  ],
+  "G": [
+    32,
+    48
+  ],
+  "beta": 40,
+  "eta": 0.0001,
+  "target_Vf": 0.3505280533,
+  "c0_calibration": "Geometric N64 eight-Gauss uniform weights only, no force or Abaqus fitting",
+  "max_JAX_forward": 4,
+  "max_Abaqus_analysis": 4,
+  "background_mesh_relative_tolerance": 0.01,
+  "binary_mesh_relative_tolerance": 0.01,
+  "reference_relative_tolerance": 0.02,
+  "binary_volume_absolute_tolerance": 0.003,
+  "physical_span_rule": ">3 times max relevant absolute mesh changes",
+  "locked_before_solves": true
+}

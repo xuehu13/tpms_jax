@@ -1,4 +1,4 @@
-"""Fixed-lateral Gyroid design derivatives using installed JAX-FEM's adjoint.
+"""Fixed-lateral Gyroid responses, general adjoint and stationary K/Vf derivatives.
 
 theta = (c0, ax, ay, az) controls a periodic positive level-set width.
 This adapter owns one ordinary density problem. Its instance set_params is
@@ -28,7 +28,7 @@ def width_basis(xyz):
 
 
 class GyroidDesign:
-    def __init__(self, N, beta=20., emin_ratio=.001, eps_z=-.01):
+    def __init__(self, N, beta=20., emin_ratio=.001, eps_z=-.01, *, solver_options=None, adjoint_options=None):
         if N < 2 or not np.all(np.isfinite([beta, emin_ratio, eps_z])) or beta <= 0 or not 0 < emin_ratio < 1 or eps_z == 0:
             raise ValueError('Expected N>=2, beta>0, 0<Emin/Es<1 and nonzero finite strain')
         self.N, self.beta, self.eps_z = N, beta, eps_z
@@ -44,7 +44,9 @@ class GyroidDesign:
         self.volume = self.weights.sum()
         # ad_wrapper expects set_params(theta), not set_params(H, rho, ...).
         self.problem.set_params = self._set_design
-        self._predict = ad_wrapper(self.problem, dict(SOLVER_OPTIONS), dict(ADJOINT_OPTIONS))
+        self._predict = ad_wrapper(self.problem,
+                                   dict(SOLVER_OPTIONS if solver_options is None else solver_options),
+                                   dict(ADJOINT_OPTIONS if adjoint_options is None else adjoint_options))
 
     @staticmethod
     def validate_theta(theta):
@@ -53,8 +55,12 @@ class GyroidDesign:
             raise ValueError('Expected four finite parameters and positive width everywhere')
         return jnp.asarray(theta)
 
+    def density_at(self, theta, points):
+        """Pure geometry map, also used by chunked stationary sensitivities."""
+        return density(points, width_basis(points) @ theta, self.beta)
+
     def density_field(self, theta):
-        return density(self.points, self.basis @ theta, self.beta)
+        return self.density_at(theta, self.points)
 
     def _set_design(self, theta):
         DensityLinearElasticityPeriodic.set_params(
@@ -85,6 +91,63 @@ class GyroidDesign:
         """Differentiable Eapp, Vf, Qw; call outside jit/vmap with validated theta."""
         return self._outputs(theta)[0]
 
+
+    def stationary_jacobian(self, theta, w, chunk_cells=2048):
+        """First derivatives of (Eapp, Vf) for this fixed displacement problem.
+
+        U is stationary on admissible fluctuations. No extra equilibrium or
+        adjoint solve is required. This rule does not apply to Qw/stress losses.
+        Small quadrature chunks avoid retaining a full density reverse tape.
+        """
+        theta = self.validate_theta(theta)
+        nodal = np.asarray(w)
+        weights = np.asarray(self.weights)
+        volume = float(self.volume)
+        jac = np.zeros((2,) + theta.shape, dtype=np.float64)
+        if not hasattr(self, '_stationary_pullback'):
+            def pull(t, points, cot_k, cot_v):
+                _, back = jax.vjp(lambda q: self.density_at(q, points), t)
+                return jnp.stack((back(cot_k)[0], back(cot_v)[0]))
+            self._stationary_pullback = jax.jit(pull)
+        lam1 = NU/((1+NU)*(1-2*NU))
+        mu1 = 1/(2*(1+NU))
+        for start in range(0, self.problem.fe.num_cells, chunk_cells):
+            stop = min(start+chunk_cells, self.problem.fe.num_cells)
+            cells = self.problem.fe.cells[start:stop]
+            shape = np.asarray(self.problem.fe.shape_grads[start:stop])
+            grad = np.einsum('civ,cqid->cqvd', nodal[cells], shape)
+            eps = .5*(grad+np.swapaxes(grad,-1,-2)) + np.asarray(self.H)
+            psi1 = .5*lam1*np.trace(eps,axis1=-2,axis2=-1)**2 + mu1*np.sum(eps*eps,axis=(-1,-2))
+            cot_k = 2*(self.E_s-self.E_min)*psi1*weights[start:stop]/(volume*self.eps_z**2)
+            cot_v = weights[start:stop]/volume
+            part = self._stationary_pullback(theta, self.points[start:stop], jnp.asarray(cot_k), jnp.asarray(cot_v))
+            jac += np.asarray(part)
+        return jnp.asarray(jac)
+
+    def stationary_outputs(self, theta):
+        """One forward solve plus chunked (Eapp,Vf) derivatives and its solution."""
+        theta = self.validate_theta(theta)
+        values, w = self._outputs(theta)
+        return values[:2], self.stationary_jacobian(theta,w), w
+
+    def stationary_observables(self):
+        """Custom VJP callable for staged, first-order reverse use outside jit/vmap.
+
+        The backward combines saved geometry sensitivities; it never invokes
+        the installed general adjoint. Geometry/network reverse steps can then
+        be evaluated separately from the equilibrium solver.
+        """
+        @jax.custom_vjp
+        def value(theta):
+            return self._outputs(theta)[0][:2]
+        def forward(theta):
+            values, jac, _ = self.stationary_outputs(theta)
+            return values, jac
+        def backward(jac, cotangent):
+            return (jnp.tensordot(cotangent,jac,axes=1),)
+        value.defvjp(forward,backward)
+        return value
+
     def derivatives(self, theta):
         theta = self.validate_theta(theta)
         try:
@@ -98,9 +161,12 @@ class GyroidDesign:
             # implicit_vjp traces set_params; restore concrete state for diagnostics.
             self._set_design(theta)
 
-    def forward(self, theta):
+    def forward(self, theta, *, precomputed=None):
+        """Validate a forward solution; precomputed reuses an AD/FD solve without repeating it."""
         theta = self.validate_theta(theta)
-        values, w = self._outputs(theta)
+        values, w = self._outputs(theta) if precomputed is None else precomputed
+        if precomputed is not None:
+            self._set_design(theta)
         rho, sigma, U = self._fields(theta, w)
         avg = jnp.sum(sigma*self.weights[..., None, None], axis=(0, 1))/self.volume
         residual = np.asarray(self.problem.compute_residual([w])[0])

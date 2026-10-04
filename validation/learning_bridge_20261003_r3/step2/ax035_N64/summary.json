@@ -1,0 +1,50 @@
+{
+  "label": "ax035",
+  "N": 64,
+  "theta": [
+    0.5410380367934704,
+    0.035,
+    0.0,
+    0.0
+  ],
+  "K": 1.9771525651196775,
+  "Vf": 0.35052805333812903,
+  "passed": true,
+  "checks": {
+    "theta": [
+      0.5410380367934704,
+      0.035,
+      0.0,
+      0.0
+    ],
+    "values": [
+      1.9771525651196775,
+      0.35052805333812903,
+      0.022942699571722493
+    ],
+    "Fz_top": -0.01977152565119791,
+    "Fz_bottom": 0.019771525651197577,
+    "U_internal": 9.885762825598347e-05,
+    "red_res": 3.4667364465224004e-17,
+    "balance": -3.3306690738754696e-16,
+    "reaction_consistency_err": 1.1345091532888318e-15,
+    "work_identity_err": 1.3552527156068805e-20,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-8": true,
+      "balance<=1e-8": true,
+      "reaction<=1e-6": true,
+      "work_identity<=1e-8": true,
+      "periodic": true,
+      "flat_loaded_face": true,
+      "K_reaction": true
+    },
+    "status": "ok"
+  },
+  "seconds": 96.73812527500559,
+  "forward_count": 1,
+  "general_adjoint_count": 0,
+  "peak_host_rss_MiB": 12437.44140625,
+  "sampled_min_available_host_MiB": 2076.09375,
+  "sampled_device_peak_MiB": 5066
+}

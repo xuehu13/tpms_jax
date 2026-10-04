@@ -32,7 +32,7 @@ def von_mises(stress):
                    +3*np.sum(stress[:, 3:]**2, axis=1))
 
 
-def diagnose(odb_path, expected_path, out):
+def diagnose(odb_path, expected_path, out, nodal_out=None):
     from odbAccess import openOdb
     from abaqusConstants import INTEGRATION_POINT
     manifest = json.loads(expected_path.read_text())
@@ -141,6 +141,15 @@ def diagnose(odb_path, expected_path, out):
                   "stress_peaks": peaks(np.argsort(vm_e)[-20:][::-1]),
                   "worst_quality": peaks(np.argsort(quality)[:20]),
                   "local_stress_convergence_claim": False}
+        if nodal_out is not None:
+            physical = region(odb, "PHYSICAL", "nodeSets")
+            _, labels, _, u = read_field(frame.fieldOutputs["U"].getSubset(region=physical), nodal=True)
+            if not np.array_equal(labels, np.arange(1,len(mesh["points"])+1)):
+                raise ValueError("Incomplete nodal field")
+            take = np.unique(np.linspace(0,len(labels)-1,min(4096,len(labels))).astype(int))
+            nodal_out.parent.mkdir(parents=True,exist_ok=True)
+            np.savez_compressed(nodal_out, points=mesh["points"][take], u=u[take], labels=labels[take])
+            result["nodal_sample"] = {"points":len(take), "path":str(nodal_out), "sha256":hashlib.sha256(nodal_out.read_bytes()).hexdigest()}
     finally:
         odb.close()
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -155,5 +164,6 @@ if __name__ == "__main__":
     p.add_argument("odb", type=Path)
     p.add_argument("--expected", required=True, type=Path)
     p.add_argument("--out", required=True, type=Path)
+    p.add_argument("--nodal-out", type=Path)
     a = p.parse_args()
-    diagnose(a.odb, a.expected, a.out)
+    diagnose(a.odb, a.expected, a.out, a.nodal_out)

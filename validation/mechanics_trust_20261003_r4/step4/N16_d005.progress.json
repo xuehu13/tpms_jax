@@ -1,0 +1,1070 @@
+[
+  {
+    "energy": 0.0,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9999999999999988,
+    "J_min": 1.0,
+    "J_max": 1.0,
+    "mean_first_piola": [
+      [
+        1.567935620471851e-16,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.567935620471851e-16,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.567935620471851e-16
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        1.567935620471851e-16,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.567935620471851e-16,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.567935620471851e-16
+      ]
+    ],
+    "Fz_top": 1.406905719477358e-16,
+    "Fz_bottom": -1.4069057194773578e-16,
+    "reduced_residual_l2": 5.419870772446949e-17,
+    "compression": 0.0,
+    "solve_seconds": 2.8449262289796025,
+    "Newton_corrections": 0,
+    "detF_by_occupancy": {
+      "all_min": 1.0,
+      "all_max": 1.0,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 1.0,
+        "p01": 1.0,
+        "max": 1.0
+      },
+      "void": {
+        "points": 19872,
+        "min": 1.0,
+        "p01": 1.0,
+        "max": 1.0
+      },
+      "transition": {
+        "points": 3168,
+        "min": 1.0,
+        "p01": 1.0,
+        "max": 1.0
+      }
+    },
+    "energy_projected_material": 0.0,
+    "energy_uniform_floor": 0.0,
+    "energy_pure_void_rho_le005": 0.0,
+    "pure_void_energy_fraction": 0.0,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1209.87890625,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 1.0499398408532586e-08,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9998999999999989,
+    "J_min": 0.9992531711869764,
+    "J_max": 1.0001807734922659,
+    "mean_first_piola": [
+      [
+        -8.317372260129912e-05,
+        7.549065416527543e-15,
+        2.4410116891214205e-13
+      ],
+      [
+        7.542624128010368e-15,
+        -7.156142154186977e-05,
+        -1.9467200981696395e-13
+      ],
+      [
+        2.44146055834995e-13,
+        -1.9470477727991103e-13,
+        -0.00020998982426075546
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -8.318204080538261e-05,
+        7.546083021345508e-15,
+        2.441010185525378e-13
+      ],
+      [
+        7.546083206652497e-15,
+        -7.15685783997065e-05,
+        -1.9467196915689008e-13
+      ],
+      [
+        2.441010188702069e-13,
+        -1.9467196972604727e-13,
+        -0.00020998982426075532
+      ]
+    ],
+    "Fz_top": -0.00020998982422207262,
+    "Fz_bottom": 0.0002099898242574888,
+    "reduced_residual_l2": 1.58019657387225e-14,
+    "compression": 0.0001,
+    "solve_seconds": 3.387696851976216,
+    "Newton_corrections": 2,
+    "detF_by_occupancy": {
+      "all_min": 0.9992531711869764,
+      "all_max": 1.0001807734922659,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9999002363300248,
+        "p01": 0.999917493578427,
+        "max": 1.0000144053686932
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.9992531711869764,
+        "p01": 0.99954352936183,
+        "max": 1.0001807734922659
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9998642440486054,
+        "p01": 0.9998853562483497,
+        "max": 1.000017438212497
+      }
+    },
+    "energy_projected_material": 1.0482462035582811e-08,
+    "energy_uniform_floor": 1.693637294977353e-11,
+    "energy_pure_void_rho_le005": 8.200330773099502e-11,
+    "pure_void_energy_fraction": 0.007810286317390631,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1441.2265625,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 2.627096118941489e-05,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9949999999999989,
+    "J_min": 0.9626454806305291,
+    "J_max": 1.0090565308663704,
+    "mean_first_piola": [
+      [
+        -0.004169991120417492,
+        4.781636512522092e-16,
+        2.1096344885850768e-14
+      ],
+      [
+        5.860366852168335e-16,
+        -0.0035853900439880727,
+        -2.896301938787406e-14
+      ],
+      [
+        2.1374768003745046e-14,
+        -2.937775975313471e-14,
+        -0.010512912612669427
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.004190945849665763,
+        5.484397870721554e-16,
+        2.1075167223384317e-14
+      ],
+      [
+        5.484517051236745e-16,
+        -0.003603407079385062,
+        -2.894681508574208e-14
+      ],
+      [
+        2.1075248947166164e-14,
+        -2.8946814234452684e-14,
+        -0.010512912612669421
+      ]
+    ],
+    "Fz_top": -0.010512912612679202,
+    "Fz_bottom": 0.01051291261263104,
+    "reduced_residual_l2": 1.5396096806229352e-14,
+    "compression": 0.005,
+    "solve_seconds": 2.567801800032612,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.9626454806305291,
+      "all_max": 1.0090565308663704,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.994988160175124,
+        "p01": 0.9958542651598636,
+        "max": 1.00072794512691
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.9626454806305291,
+        "p01": 0.9770126752400962,
+        "max": 1.0090565308663704
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.99318978438381,
+        "p01": 0.9942552981228798,
+        "max": 1.0008872325368554
+      }
+    },
+    "energy_projected_material": 2.6228363307848788e-05,
+    "energy_uniform_floor": 4.259788156609748e-08,
+    "energy_pure_void_rho_le005": 2.060906635536906e-07,
+    "pure_void_energy_fraction": 0.007844808648901996,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.00010517323195623332,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9899999999999988,
+    "J_min": 0.9252795297137434,
+    "J_max": 1.0181478662769021,
+    "mean_first_piola": [
+      [
+        -0.008362661643137329,
+        -2.554888538144204e-16,
+        1.65934567518747e-14
+      ],
+      [
+        -1.4512384891897396e-16,
+        -0.00718541500175808,
+        1.8734737407808734e-14
+      ],
+      [
+        1.697261580412004e-14,
+        1.8960264165179928e-14,
+        -0.021052286642652296
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.00844713297286594,
+        -1.770384418645051e-16,
+        1.6570948742152743e-14
+      ],
+      [
+        -1.7703159715382022e-16,
+        -0.007257994951270875,
+        1.8737980722631436e-14
+      ],
+      [
+        1.6571003499838222e-14,
+        1.8737992700875136e-14,
+        -0.02105228664265228
+      ]
+    ],
+    "Fz_top": -0.021052286642630105,
+    "Fz_bottom": 0.021052286642609226,
+    "reduced_residual_l2": 9.900885424526849e-15,
+    "compression": 0.01,
+    "solve_seconds": 2.303613317955751,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.9252795297137434,
+      "all_max": 1.0181478662769021,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9899277485239221,
+        "p01": 0.9916664832506716,
+        "max": 1.0014716942511315
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.9252795297137434,
+        "p01": 0.9536859871564908,
+        "max": 1.0181478662769021
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9863347935736011,
+        "p01": 0.9884856175751746,
+        "max": 1.0018059116391398
+      }
+    },
+    "energy_projected_material": 0.00010500176652035895,
+    "energy_uniform_floor": 1.7146543587437136e-07,
+    "energy_pure_void_rho_le005": 8.288386306924363e-07,
+    "pure_void_energy_fraction": 0.007880699444867762,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.00023683550931669696,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9849999999999988,
+    "J_min": 0.8879267041543644,
+    "J_max": 1.0272712809977937,
+    "mean_first_piola": [
+      [
+        -0.012577384196471338,
+        1.3386508698406978e-15,
+        -8.812126917924501e-14
+      ],
+      [
+        1.4535627475970054e-15,
+        -0.01079960129693357,
+        1.1250846581418672e-13
+      ],
+      [
+        -9.087958792626538e-14,
+        1.1583707829206627e-13,
+        -0.03161666758188948
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.012768917965960696,
+        1.473159701864681e-15,
+        -8.808251074023706e-14
+      ],
+      [
+        1.4731149854045214e-15,
+        -0.010964062230389492,
+        1.1245078354122561e-13
+      ],
+      [
+        -8.808251074023706e-14,
+        1.1245070270762455e-13,
+        -0.03161666758188947
+      ]
+    ],
+    "Fz_top": -0.03161666758187571,
+    "Fz_bottom": 0.03161666758184366,
+    "reduced_residual_l2": 1.1905295073967008e-14,
+    "compression": 0.015,
+    "solve_seconds": 2.2525703579885885,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.8879267041543644,
+      "all_max": 1.0272712809977937,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9848183339012013,
+        "p01": 0.9874360704752083,
+        "max": 1.002231455845175
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.8879267041543644,
+        "p01": 0.9302390013021,
+        "max": 1.0272712809977937
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9794365914943314,
+        "p01": 0.982691858219118,
+        "max": 1.002756282202646
+      }
+    },
+    "energy_projected_material": 0.0002364472364536123,
+    "energy_uniform_floor": 3.8827286308470227e-07,
+    "energy_pure_void_rho_le005": 1.8750915035469207e-06,
+    "pure_void_energy_fraction": 0.007917273507493947,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.0004213790597987345,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9799999999999989,
+    "J_min": 0.850613614525834,
+    "J_max": 1.036423686836372,
+    "mean_first_piola": [
+      [
+        -0.016813485090684702,
+        5.368352518162623e-15,
+        -2.3706259394754045e-13
+      ],
+      [
+        6.043051530100353e-15,
+        -0.014427453222534303,
+        1.5194157645384236e-13
+      ],
+      [
+        -2.4635805548345355e-13,
+        1.5782327328968847e-13,
+        -0.04220453759613072
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.017156617439473745,
+        5.9385099631492135e-15,
+        -2.3697329441003377e-13
+      ],
+      [
+        5.938482304930528e-15,
+        -0.014721891043402512,
+        1.518508998827729e-13
+      ],
+      [
+        -2.3697334972647117e-13,
+        1.5185101397292497e-13,
+        -0.04220453759613072
+      ]
+    ],
+    "Fz_top": -0.04220453759621233,
+    "Fz_bottom": 0.04220453759606155,
+    "reduced_residual_l2": 1.5028253154272455e-14,
+    "compression": 0.02,
+    "solve_seconds": 2.5806314459769055,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.850613614525834,
+      "all_max": 1.036423686836372,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9796595048968869,
+        "p01": 0.9831624453493615,
+        "max": 1.0030074388243448
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.850613614525834,
+        "p01": 0.9066161233782916,
+        "max": 1.036423686836372
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9724968591622613,
+        "p01": 0.976821418483662,
+        "max": 1.0037385547118194
+      }
+    },
+    "energy_projected_material": 0.0004206842861295435,
+    "energy_uniform_floor": 6.947736691910105e-07,
+    "energy_pure_void_rho_le005": 3.3518780101549745e-06,
+    "pure_void_energy_fraction": 0.007954543378961332,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.0006589174006809897,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9749999999999989,
+    "J_min": 0.813369105381067,
+    "J_max": 1.0456015857786738,
+    "mean_first_piola": [
+      [
+        -0.021070242428551333,
+        8.93626535616866e-16,
+        -2.3503909322292213e-13
+      ],
+      [
+        2.3608502305871887e-15,
+        -0.018068452806316273,
+        1.1657811014816938e-13
+      ],
+      [
+        -2.4598354494802274e-13,
+        1.2166839869040735e-13,
+        -0.05281431468826849
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.021610505054923523,
+        1.9093495258862373e-15,
+        -2.3504713577903746e-13
+      ],
+      [
+        1.9093425758723113e-15,
+        -0.01853174646801718,
+        1.1660333392058685e-13
+      ],
+      [
+        -2.3504702457881466e-13,
+        1.166032366203919e-13,
+        -0.0528143146882685
+      ]
+    ],
+    "Fz_top": -0.0528143146883729,
+    "Fz_bottom": 0.052814314688186426,
+    "reduced_residual_l2": 1.4892581036312223e-14,
+    "compression": 0.025,
+    "solve_seconds": 2.240701459988486,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.813369105381067,
+      "all_max": 1.0456015857786738,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9744508716310619,
+        "p01": 0.9788450289727397,
+        "max": 1.0037998522597782
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.813369105381067,
+        "p01": 0.8828149693186903,
+        "max": 1.0456015857786738
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9655173980657239,
+        "p01": 0.970846886746928,
+        "max": 1.004752901941166
+      }
+    },
+    "energy_projected_material": 0.0006578245903668977,
+    "energy_uniform_floor": 1.0928103140919857e-06,
+    "energy_pure_void_rho_le005": 5.266411373846845e-06,
+    "pure_void_energy_fraction": 0.007992521321191428,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.0009495559772884627,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9699999999999989,
+    "J_min": 0.7762244671979337,
+    "J_max": 1.054801017549152,
+    "mean_first_piola": [
+      [
+        -0.025346884180025706,
+        -9.805294054997262e-15,
+        -2.0716349642679902e-13
+      ],
+      [
+        -8.026158947530014e-15,
+        -0.02172205974380191,
+        1.4022027693149694e-13
+      ],
+      [
+        -2.1873453569243334e-13,
+        1.4723246967852776e-13,
+        -0.06344435195977934
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.026130808433015188,
+        -9.022504138249195e-15,
+        -2.0717840476553778e-13
+      ],
+      [
+        -9.022539067442896e-15,
+        -0.0223938760245388,
+        1.4027072038066003e-13
+      ],
+      [
+        -2.0717851653895762e-13,
+        1.402707937319668e-13,
+        -0.06344435195977932
+      ]
+    ],
+    "Fz_top": -0.06344435195983035,
+    "Fz_bottom": 0.06344435195976879,
+    "reduced_residual_l2": 1.5986105353979786e-14,
+    "compression": 0.03,
+    "solve_seconds": 2.5724558790097944,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.7762244671979337,
+      "all_max": 1.054801017549152,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9691920676691302,
+        "p01": 0.9744832452490152,
+        "max": 1.0046089050636249
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.7762244671979337,
+        "p01": 0.8588413597206667,
+        "max": 1.054801017549152
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9585001334778966,
+        "p01": 0.9647978745504111,
+        "max": 1.005799455448957
+      }
+    },
+    "energy_projected_material": 0.0009479716569054508,
+    "energy_uniform_floor": 1.5843203830120564e-06,
+    "energy_pure_void_rho_le005": 7.6260921663524134e-06,
+    "pure_void_energy_fraction": 0.008031219168489007,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.001293391836869977,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9649999999999987,
+    "J_min": 0.7392136887340592,
+    "J_max": 1.0640175008758779,
+    "mean_first_piola": [
+      [
+        -0.029642586223058334,
+        -1.1778880822099783e-14,
+        -2.005915507481695e-13
+      ],
+      [
+        -9.62930093734855e-15,
+        -0.02538771140813682,
+        1.6759643599686457e-13
+      ],
+      [
+        -2.1341923454182313e-13,
+        1.778171319498543e-13,
+        -0.0740929369845257
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.03071770593062921,
+        -1.0899967555990748e-14,
+        -2.0063138731332938e-13
+      ],
+      [
+        -1.0899855203434013e-14,
+        -0.02630850923123078,
+        1.6762913689315048e-13
+      ],
+      [
+        -2.006314996658861e-13,
+        1.6762899996347197e-13,
+        -0.07409293698452563
+      ]
+    ],
+    "Fz_top": -0.07409293698455105,
+    "Fz_bottom": 0.07409293698450747,
+    "reduced_residual_l2": 1.6733799038545715e-14,
+    "compression": 0.035,
+    "solve_seconds": 2.5262925059651025,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.7392136887340592,
+      "all_max": 1.0640175008758779,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9638827520718761,
+        "p01": 0.9700765210460174,
+        "max": 1.0054348056440192
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.7392136887340592,
+        "p01": 0.8347027441809374,
+        "max": 1.0640175008758779
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9514471176848205,
+        "p01": 0.9587046368480573,
+        "max": 1.0068783018435201
+      }
+    },
+    "energy_projected_material": 0.0012912204935580486,
+    "energy_uniform_floor": 2.17134331192843e-06,
+    "energy_pure_void_rho_le005": 1.0438510421063841e-05,
+    "pure_void_energy_fraction": 0.008070648138869622,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.0016905132996591324,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9599999999999989,
+    "J_min": 0.7023737609604048,
+    "J_max": 1.0732459676461037,
+    "mean_first_piola": [
+      [
+        -0.033956470353907614,
+        -1.0202870991647696e-14,
+        -1.7520804685561296e-13
+      ],
+      [
+        -7.985257420572998e-15,
+        -0.029064822946829487,
+        1.6105228993956395e-13
+      ],
+      [
+        -1.8788415918555313e-13,
+        1.7261876200354665e-13,
+        -0.08475829131131012
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.03537132328531922,
+        -9.271537937350857e-15,
+        -1.752591353654823e-13
+      ],
+      [
+        -9.271481468487707e-15,
+        -0.030275857236281647,
+        1.6106013501754924e-13
+      ],
+      [
+        -1.752594741786612e-13,
+        1.610602056036282e-13,
+        -0.08475829131131005
+      ]
+    ],
+    "Fz_top": -0.08475829131132309,
+    "Fz_bottom": 0.08475829131128645,
+    "reduced_residual_l2": 1.4862315191870686e-14,
+    "compression": 0.04,
+    "solve_seconds": 2.6520603030221537,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.7023737609604048,
+      "all_max": 1.0732459676461037,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9585226115969558,
+        "p01": 0.9656242862850978,
+        "max": 1.0062777615279035
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.7023737609604048,
+        "p01": 0.8104084371912693,
+        "max": 1.0732459676461037
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9443605331075637,
+        "p01": 0.9525998689514618,
+        "max": 1.0079894788081865
+      }
+    },
+    "energy_projected_material": 0.0016876572719780184,
+    "energy_uniform_floor": 2.8560276811140045e-06,
+    "energy_pure_void_rho_le005": 1.3711446702061972e-05,
+    "pure_void_energy_fraction": 0.008110818592688201,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.0021409996278088225,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9549999999999987,
+    "J_min": 0.6657450466410446,
+    "J_max": 1.0824806889920202,
+    "mean_first_piola": [
+      [
+        -0.03828760226854865,
+        4.265820552698535e-15,
+        -2.4016173164748164e-13
+      ],
+      [
+        6.865601837047217e-15,
+        -0.03275278747685103,
+        9.068502784641286e-14
+      ],
+      [
+        -2.6113161112617553e-13,
+        9.82495470614257e-14,
+        -0.09543857011424009
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.040091730124133,
+        6.3939545920820615e-15,
+        -2.4016003382093826e-13
+      ],
+      [
+        6.394039738849535e-15,
+        -0.03429611254120603,
+        9.072923079736736e-14
+      ],
+      [
+        -2.401600905854499e-13,
+        9.072918467620164e-14,
+        -0.09543857011424016
+      ]
+    ],
+    "Fz_top": -0.09543857011437284,
+    "Fz_bottom": 0.09543857011413942,
+    "reduced_residual_l2": 1.5013518457663837e-14,
+    "compression": 0.045,
+    "solve_seconds": 2.2971650639665313,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.6657450466410446,
+      "all_max": 1.0824806889920202,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9531113630711727,
+        "p01": 0.9611756196143119,
+        "max": 1.007137978951858
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.6657450466410446,
+        "p01": 0.785969884967783,
+        "max": 1.0824806889920202
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.937242695298163,
+        "p01": 0.9464430474753054,
+        "max": 1.0091329708628407
+      }
+    },
+    "energy_projected_material": 0.002137358988747525,
+    "energy_uniform_floor": 3.640639061297311e-06,
+    "energy_pure_void_rho_le005": 1.7452871714860758e-05,
+    "pure_void_energy_fraction": 0.008151739723898349,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 0.002644920692993827,
+    "reference_volume": 0.9999999999999988,
+    "current_volume": 0.9499999999999988,
+    "J_min": 0.6293717329525443,
+    "J_max": 1.0917151921828017,
+    "mean_first_piola": [
+      [
+        -0.04263498951907248,
+        4.6384337343274906e-15,
+        -2.008192874145001e-13
+      ],
+      [
+        6.225556637047555e-15,
+        -0.03645097639179949,
+        1.2525666403607e-13
+      ],
+      [
+        -2.2116889483031504e-13,
+        1.3843514144263134e-13,
+        -0.10613186201366771
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -0.0448789363358647,
+        6.1715498163306205e-15,
+        -2.0068399610235557e-13
+      ],
+      [
+        6.171621145420915e-15,
+        -0.038369448833473506,
+        1.2508107357113601e-13
+      ],
+      [
+        -2.006842243554445e-13,
+        1.2508095231168252e-13,
+        -0.1061318620136677
+      ]
+    ],
+    "Fz_top": -0.10613186201374335,
+    "Fz_bottom": 0.1061318620135734,
+    "reduced_residual_l2": 1.3885859039491624e-14,
+    "compression": 0.05,
+    "solve_seconds": 2.530639924982097,
+    "Newton_corrections": 3,
+    "detF_by_occupancy": {
+      "all_min": 0.6293717329525443,
+      "all_max": 1.0917151921828017,
+      "finite": true,
+      "solid": {
+        "points": 9728,
+        "min": 0.9476487559549354,
+        "p01": 0.9567150399425207,
+        "max": 1.008015662415922
+      },
+      "void": {
+        "points": 19872,
+        "min": 0.6293717329525443,
+        "p01": 0.7614009668044397,
+        "max": 1.0917151921828017
+      },
+      "transition": {
+        "points": 3168,
+        "min": 0.9300960557836875,
+        "p01": 0.9402340290436048,
+        "max": 1.0103087048387243
+      }
+    },
+    "energy_projected_material": 0.0026403931246467005,
+    "energy_uniform_floor": 4.527568347126816e-06,
+    "energy_pure_void_rho_le005": 2.1670943897218688e-05,
+    "pure_void_energy_fraction": 0.00819341916550587,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 1462.87109375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "seconds": 0.058736676000989974,
+    "used_MiB": 211,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 1.1087362529942766,
+    "used_MiB": 338,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 2.1644290589611046,
+    "used_MiB": 950,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 3.1868772009620443,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 4.208724847994745,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 5.231670087960083,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 5.614376793964766,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 6.664249374996871,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 12.26940328697674,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 13.288448811974376,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 14.312748271971941,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 15.339969257998746,
+    "used_MiB": 966,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 20.18118609499652,
+    "used_MiB": 1478,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 21.20219821500359,
+    "used_MiB": 1478,
+    "total_MiB": 8188
+  },
+  {
+    "seconds": 22.248543514986522,
+    "used_MiB": 1478,
+    "total_MiB": 8188
+  }
+]

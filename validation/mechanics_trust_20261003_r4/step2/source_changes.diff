@@ -1,0 +1,439 @@
+--- before/geometry.py
++++ after/geometry.py
+@@ -20,7 +20,7 @@
+ import jax
+ import jax.numpy as jnp
+ 
+-__all__ = ["gyroid", "solid_mask", "density", "project_field"]
++__all__ = ["primitive", "gyroid", "solid_mask", "density", "project_field"]
+ 
+ 
+ def gyroid(xyz, L=1.0):
+@@ -102,5 +102,10 @@
+ 
+ 
+ def project_field(g, c, beta):
+-    """Project a signed implicit field with fixed Gyroid amplitude convention."""
++    """Project a signed implicit field with the stated implicit-field amplitude convention."""
+     return jax.nn.sigmoid(beta * (g + c)) - jax.nn.sigmoid(beta * (g - c))
++
++
++def primitive(xyz, L=1.0):
++    """Schwarz Primitive nodal approximation: cos(X)+cos(Y)+cos(Z)."""
++    return jnp.sum(jnp.cos(2*jnp.pi*jnp.asarray(xyz)/L), axis=-1)
+--- before/binary_gyroid.py
++++ after/binary_gyroid.py
+@@ -1,4 +1,4 @@
+-"""Conforming piecewise-linear binary Gyroid domain, with matched periodic caps.
++"""Conforming piecewise-linear binary Gyroid/Primitive domain, with matched periodic caps.
+ 
+ Freudenthal background tetrahedra are CLIPPED at both signed levels. Void is
+ absent. Cut polyhedra are triangulated consistently and filled by tetrahedra.
+@@ -15,6 +15,14 @@
+ def gyroid_numpy(xyz):
+     x,y,z = np.moveaxis(2*np.pi*np.asarray(xyz),-1,0)
+     return np.sin(x)*np.cos(y)+np.sin(y)*np.cos(z)+np.sin(z)*np.cos(x)
++
++
++def implicit_numpy(xyz, family="gyroid"):
++    if family == "gyroid":
++        return gyroid_numpy(xyz)
++    if family == "primitive":
++        return np.cos(2*np.pi*np.asarray(xyz)).sum(axis=-1)
++    raise ValueError("Unsupported implicit family")
+ 
+ 
+ def width_numpy(xyz, c=C):
+@@ -59,7 +67,7 @@
+     return list(points[np.argsort(angles)])
+ 
+ 
+-def linear_domain(n, c=C, origins=None):
++def linear_domain(n, c=C, origins=None, family="gyroid"):
+     if n < 4:
+         raise ValueError("Require n>=4")
+     variable = np.asarray(c).ndim != 0
+@@ -67,8 +75,14 @@
+     lattice = integers/n
+     # Opposite planes sample identical periodic coordinates, bit for bit.
+     periodic_points = (integers % n)/n
+-    values = gyroid_numpy(periodic_points)
++    values = implicit_numpy(periodic_points, family)
+     widths = width_numpy(periodic_points,c)
++    # Analytic isolevels can differ by a few ulps at lattice vertices. Snap
++    # only arithmetic equality globally so every adjacent tetrahedron agrees.
++    equality_tol = 16*np.finfo(float).eps*np.maximum(1, np.maximum(np.abs(values), widths))
++    for sign in (-1,1):
++        on_level = np.abs(values-sign*widths) <= equality_tol
++        values[on_level] = sign*widths[on_level]
+     levels = (-1,1) if variable else (-c,c)
+     coordinates, tags, tets, intersections = [], {}, [], {}
+     def node(point):
+@@ -97,7 +111,9 @@
+                 original_ids[1],original_ids[2] = original_ids[2],original_ids[1]
+             g = tetra[:,3]
+             local_width = tetra[:,4] if variable else c
+-            if np.min(g-local_width) > 0 or np.max(g+local_width) < 0:
++            # A point/edge/face-only contact with the closed band has zero
++            # 3D measure; it does not generate a material volume element.
++            if np.min(g-local_width) >= 0 or np.max(g+local_width) <= 0:
+                 continue
+             if np.all(np.abs(g) <= local_width):
+                 tets.append([node(p[:3]) for p in tetra])
+@@ -157,7 +173,12 @@
+                 raise ValueError("Degenerate clipped tetrahedron")
+             center = node(np.array([coordinates[i] for i in unique]).mean(axis=0))
+             for polygon in polygons:
+-                ids = [node(p[:3]) for p in polygon]
++                # An isolevel passing through a lattice vertex can produce
++                # the same clipped polygon vertex twice after node canonicalization.
++                # Keep its first cyclic occurrence; zero-area faces have no volume.
++                ids = list(dict.fromkeys(node(p[:3]) for p in polygon))
++                if len(ids) < 3:
++                    continue
+                 # Lexicographic physical coordinates are invariant under the
+                 # periodic translation; node insertion order is irrelevant.
+                 anchor = min(range(len(ids)),key=lambda i:tuple(coordinates[ids[i]]))
+@@ -183,7 +204,7 @@
+     return faces[first[counts == 1]]
+ 
+ 
+-def audit_linear(points,cells,c=C):
++def audit_linear(points,cells,c=C,family="gyroid"):
+     xyz = points[cells]
+     determinants = np.linalg.det(np.transpose(xyz[:,1:]-xyz[:,0,None,:],(0,2,1)))
+     if determinants.min() <= 0:
+@@ -233,7 +254,7 @@
+             caps |= np.all(points[boundary,axis] == plane,axis=1)
+     free_surface = boundary[~caps]
+     sample = np.r_[points[np.unique(free_surface)],points[free_surface].mean(axis=1)]
+-    residual = np.abs(np.abs(gyroid_numpy(sample))-width_numpy(sample,c))
++    residual = np.abs(np.abs(implicit_numpy(sample,family))-width_numpy(sample,c))
+     lengths = np.sum((xyz[:,np.array(TET_EDGES)[:,0]]-xyz[:,np.array(TET_EDGES)[:,1]])**2,axis=(1,2))
+     quality = 12*(3*determinants/6)**(2/3)/lengths
+     return {"nodes":len(points),"elements":len(cells),"volume":float(determinants.sum()/6),
+@@ -261,7 +282,7 @@
+     return np.array(coordinates),np.array(result,dtype=int)
+ 
+ 
+-def remesh_domain(points, cells, refinement=0, c=C):
++def remesh_domain(points, cells, refinement=0, c=C, family="gyroid"):
+     """Remesh only the volume; preserve the prescribed closed triangle skin.
+ 
+     Optional uniform subdivision refines the SAME planar domain. Geometry N
+@@ -312,9 +333,9 @@
+         metadata = {'gmsh_version':gmsh.__version__, 'warnings':warnings,
+                     'refinement':refinement, 'identical_tetrahedra_removed':duplicate_count}
+         # This also detects asymmetric boundary recovery/Steiner insertion.
+-        audit_linear(xyz,result,c)
+-        before = audit_linear(points,cells,c)['volume']
+-        after = audit_linear(xyz,result,c)['volume']
++        audit_linear(xyz,result,c,family)
++        before = audit_linear(points,cells,c,family)['volume']
++        after = audit_linear(xyz,result,c,family)['volume']
+         if abs(before-after) > 1e-10:
+             raise ValueError('Volume mesher changed the prescribed binary domain')
+         return xyz,result,metadata
+--- before/scripts/prepare_abaqus_binary.py
++++ after/scripts/prepare_abaqus_binary.py
+@@ -1,4 +1,4 @@
+-"""Generate binary sheet-Gyroid C3D10 inputs. No jobs are submitted here."""
++"""Generate binary Gyroid/Primitive sheet-solid C3D10 inputs. No jobs are submitted here."""
+ import argparse
+ import hashlib
+ import itertools
+@@ -48,7 +48,10 @@
+         equations.append([(int(label),3,1.0),(controls[2],3,-1.0)])
+     anchor = lookup.get((0,0,0))
+     if anchor is None:
+-        raise ValueError('Expected solid corner for displacement anchor')
++        if lateral != "fixed":
++            raise ValueError("Non-corner anchor currently supports fixed macro lateral strain only")
++        # With zero macro lateral strain this fixes only the rigid translation.
++        anchor = int(bottom[np.lexsort((points[bottom-1,1], points[bottom-1,0]))][0])
+     bcs = [(int(label),3,0.0) for label in bottom]
+     bcs += [(anchor,1,0.0),(anchor,2,0.0),(controls[2],3,-0.01)]
+     if lateral == 'fixed':
+@@ -84,9 +87,11 @@
+     return points,np.array(cells)
+ 
+ 
+-def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_mesh=None, c=C):
++def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_mesh=None, c=C, family="gyroid"):
+     if n < 4 or refinement not in (0,1) or lateral not in ('fixed','relaxed_free'):
+         raise ValueError('Require geometry N>=4, refinement 0/1, and supported lateral condition')
++    if family not in ("gyroid", "primitive") or (family == "primitive" and (uniform or np.asarray(c).ndim != 0)):
++        raise ValueError("Primitive requires scalar threshold and nonuniform geometry")
+     output.mkdir(parents=True,exist_ok=True)
+     if uniform:
+         points,cells = uniform_domain()
+@@ -97,6 +102,9 @@
+             saved = np.load(cached_mesh)
+             if 'geometry_N' not in saved or 'c' not in saved or int(saved['geometry_N']) != n or not np.array_equal(np.asarray(saved['c']),np.asarray(c)):
+                 raise ValueError('Cached mesh must record matching geometry_N and c')
++            cached_family = str(saved["family"]) if "family" in saved else "gyroid"
++            if cached_family != family:
++                raise ValueError("Cached mesh family mismatch")
+             points,cells = saved['points'],saved['cells']
+             metadata = {'mesher':'cached boundary-preserving mesh', 'cache_sha256':hashlib.sha256(Path(cached_mesh).read_bytes()).hexdigest()}
+             # Refine an already meshed volume through Gmsh, if requested.
+@@ -105,12 +113,12 @@
+             if cached_refinement > refinement:
+                 raise ValueError('Cached FE refinement exceeds requested level')
+             if refinement > cached_refinement:
+-                points,cells,metadata = remesh_domain(points,cells,refinement,c=c)
++                points,cells,metadata = remesh_domain(points,cells,refinement,c=c,family=family)
+         else:
+-            points,cells = linear_domain(n, c)
+-            points,cells,metadata = remesh_domain(points,cells,refinement,c=c)
+-        prefix = f'binary_gyroid_G{n}_R{refinement}_C3D10'
+-    audit = audit_linear(points,cells,c)
++            points,cells = linear_domain(n, c, family=family)
++            points,cells,metadata = remesh_domain(points,cells,refinement,c=c,family=family)
++        prefix = f'binary_{family}_G{n}_R{refinement}_C3D10'
++    audit = audit_linear(points,cells,c,family)
+     if uniform:
+         # Surface G residuals have no geometric meaning for this patch test.
+         audit.pop('surface_G_residual_max'); audit.pop('surface_G_residual_rms')
+@@ -140,7 +148,7 @@
+     inp = output/(job+'.inp')
+     inp.write_text('\n'.join(lines)+'\n',encoding='ascii')
+     np.savez_compressed(output/(job+'.mesh.npz'),points=points,cells=cells)
+-    manifest = {'case':job,'model':'uniform' if uniform else 'binary_sheet_gyroid',
++    manifest = {'case':job,'model':'uniform' if uniform else 'binary_sheet_'+family,'family':family,
+                 'geometry_N':n if not uniform else None,'fe_refinement':refinement,
+                 'c':float(c) if np.asarray(c).ndim == 0 else np.asarray(c).tolist(),'E_s':10.,'nu':.3,'gross_volume':1.,'lateral':lateral,
+                 'geometry':audit,'meshing':metadata,'nodes':len(points),'elements':len(cells),
+@@ -168,8 +176,9 @@
+     parser.add_argument('--lateral',choices=('fixed','relaxed_free'),default='fixed')
+     parser.add_argument('--uniform',action='store_true')
+     parser.add_argument('--cached-mesh',type=Path)
++    parser.add_argument('--family',choices=('gyroid','primitive'),default='gyroid')
+     geometry=parser.add_mutually_exclusive_group()
+     geometry.add_argument('--c',type=float,default=C)
+     geometry.add_argument('--width-parameters',nargs=4,type=float)
+     args=parser.parse_args()
+-    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh,args.c if args.width_parameters is None else np.array(args.width_parameters))
++    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh,args.c if args.width_parameters is None else np.array(args.width_parameters),args.family)
+--- before/scripts/m4_numerical_study.py
++++ after/scripts/m4_numerical_study.py
+@@ -138,7 +138,7 @@
+         rho_o = onp.asarray(problem.rho)
+         X_q = onp.asarray(problem.physical_quad_points)
+         vf_binary_ref = float(onp.sum(
+-            (onp.abs(onp.asarray(gyroid(X_q))) <= problem.projection_c) * JxW) / V)
++            (onp.abs(onp.asarray(getattr(problem, "geometry_field", gyroid)(X_q))) <= problem.projection_c) * JxW) / V)
+ 
+         row.update(cells=problem.fe.num_cells,
+                    quads=problem.fe.num_cells * problem.fe.num_quads,
+--- before/scripts/capture_binary_projection_reference.py
++++ after/scripts/capture_binary_projection_reference.py
+@@ -25,6 +25,8 @@
+     geometry = parser.add_mutually_exclusive_group()
+     geometry.add_argument("--c", type=float, default=C_CALIB)
+     geometry.add_argument("--target-vf", type=float)
++    parser.add_argument("--family", choices=("gyroid", "primitive"), default="gyroid")
++    parser.add_argument("--field-out", type=Path, help="Optional uniform-grid total displacement for mode comparison")
+     parser.add_argument("--voxel-M", type=int, help="Sample the continuous Gyroid at periodic cell centres")
+     parser.add_argument("--field-kind", choices=("occupancy", "implicit"), default="occupancy")
+     parser.add_argument("--out", required=True, type=Path)
+@@ -33,6 +35,10 @@
+         parser.error("Expected finite beta>0, c>=0, 0<emin-ratio<1 and N>=2")
+     if args.target_vf is not None and (not math.isfinite(args.target_vf) or not 0 < args.target_vf < 1):
+         parser.error("Expected finite 0<target-vf<1")
++    if args.family == "primitive" and (args.voxel_M is not None or args.target_vf is not None):
++        parser.error("Primitive currently supports direct analytic input without volume calibration")
++    if args.field_out is not None and args.field_out.exists():
++        parser.error("Field output already exists")
+     if args.out.exists():
+         parser.error("Output already exists; choose a new path")
+     solver_options = None
+@@ -46,6 +52,12 @@
+         solver_options = {"petsc_solver": {"ksp_type": "cg", "pc_type": "gamg"}}
+     rho_quad = None
+     voxel_record = None
++    if args.family == "primitive":
++        from geometry import primitive, project_field
++        def rho_quad(problem):
++            problem.projection_c, problem.projection_calibration = args.c, None
++            problem.geometry_field = primitive
++            return project_field(primitive(problem.physical_quad_points), args.c, args.beta)
+     if args.voxel_M is not None:
+         if args.voxel_M < 2 or args.target_vf is not None:
+             parser.error("voxel-M>=2; no volume calibration on array route")
+@@ -104,6 +116,14 @@
+         row["checks"]["loaded_face_fluctuation<=1e-10"] = row["max_loaded_face_fluctuation_error"] <= 1e-10
+         row["status"] = "ok" if all(row["checks"].values()) else "check_failed"
+         row["macro_equilibrium_solves_expected"] = 1 if args.lateral == "fixed" else 4
++        if args.field_out is not None:
++            indices = np.rint(points*args.N).astype(int)
++            grid = np.empty((args.N+1, args.N+1, args.N+1, 3))
++            H = np.diag([row["eps_x"], row["eps_y"], EPS_Z])
++            grid[indices[:,0], indices[:,1], indices[:,2]] = w + points@H.T
++            args.field_out.parent.mkdir(parents=True, exist_ok=True)
++            np.savez_compressed(args.field_out, total_u=grid, N=args.N, H=H)
++            row["displacement_field"] = {"path": str(args.field_out), "sha256": hashlib.sha256(args.field_out.read_bytes()).hexdigest()}
+         del problem, sol_list, points, w
+     if row["status"] == "ok" and args.lateral == "relaxed_free":
+         row["checks"]["zero_lateral_stress<=1e-08"] = max(abs(row["sigma_xx"]), abs(row["sigma_yy"])) <= 1e-8
+@@ -113,7 +133,7 @@
+     row["petsc_options"] = petsc_options
+     row["calibration"] = row.pop("_projection_calibration", None)
+     row["model"] = {"c": row.pop("_projection_c", args.c), "E_s": E_S, "nu": NU, "eps_z": EPS_Z,
+-                    "cell_size": 1., "periodic_axes": [0, 1], "interpolation_power": 1}
++                    "cell_size": 1., "periodic_axes": [0, 1], "interpolation_power": 1, "family": args.family}
+     row["input_representation"] = {"type": "analytic_Gauss"} if voxel_record is None else {"type": "signed_implicit_array" if args.field_kind == "implicit" else "continuous_voxel_array", **voxel_record}
+     row["runtime"] = {"jax_version": jax.__version__, "devices": [str(d) for d in jax.devices()],
+                       "peak_host_rss_MiB": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024}
+--- before/scripts/run_abaqus_binary.ps1
++++ after/scripts/run_abaqus_binary.ps1
+@@ -4,7 +4,8 @@
+  [Parameter(Mandatory=$true)][string[]]$Cases,
+  [int]$Cpus=2,
+  [string]$Memory='8gb',
+- [switch]$ExtractOnly
++ [switch]$ExtractOnly,
++ [switch]$QualityDiagnostics
+ )
+ $ErrorActionPreference='Stop'
+ $root=(Resolve-Path -LiteralPath $PackageDirectory).Path
+@@ -34,7 +35,7 @@
+ Push-Location -LiteralPath $jobRoot
+ try{
+  foreach($case in $Cases){
+-  if($case -notmatch '^binary_(uniform_C3D10|gyroid_G[0-9]+_R[01]_C3D10)_(fixed|relaxed_free)$'){throw 'Invalid case name'}
++  if($case -notmatch '^binary_(uniform_C3D10|(gyroid|primitive)_G[0-9]+_R[01]_C3D10)_(fixed|relaxed_free)$'){throw 'Invalid case name'}
+   $inputPath=Join-Path $root ($case+'.inp');$expectedPath=Join-Path $root ($case+'.expected.json')
+   $expected=Get-Content -LiteralPath $expectedPath -Raw | ConvertFrom-Json
+   if((Get-FileHash -LiteralPath $inputPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $expected.input_sha256){throw 'Input hash mismatch'}
+@@ -52,6 +53,10 @@
+   & $AbaqusCommand python (Join-Path $root 'scripts\extract_abaqus_binary.py') ($case+'.odb') --expected $expectedPath 2>&1 | Tee-Object -FilePath ($case+'.extract.txt')
+   $report=Get-Content -LiteralPath ($case+'.acceptance.json') -Raw | ConvertFrom-Json
+   if($report.status -ne 'ok'){throw 'Physical consistency acceptance failed'}
++  if($QualityDiagnostics){
++   & $AbaqusCommand python (Join-Path $root 'scripts\abaqus_mesh_quality.py') ($case+'.odb') --expected $expectedPath --out ($case+'.quality.json') --nodal-out ($case+'.nodal.npz') 2>&1 | Tee-Object -FilePath ($case+'.quality.console.txt')
++   if($LASTEXITCODE -ne 0){throw 'Quality extraction failed'}
++  }
+   Write-Output "$case passed physical consistency; convergence assessed separately"
+  }
+ }finally{Pop-Location}
+--- before/scripts/abaqus_mesh_quality.py
++++ after/scripts/abaqus_mesh_quality.py
+@@ -32,7 +32,7 @@
+                    +3*np.sum(stress[:, 3:]**2, axis=1))
+ 
+ 
+-def diagnose(odb_path, expected_path, out):
++def diagnose(odb_path, expected_path, out, nodal_out=None):
+     from odbAccess import openOdb
+     from abaqusConstants import INTEGRATION_POINT
+     manifest = json.loads(expected_path.read_text())
+@@ -141,6 +141,15 @@
+                   "stress_peaks": peaks(np.argsort(vm_e)[-20:][::-1]),
+                   "worst_quality": peaks(np.argsort(quality)[:20]),
+                   "local_stress_convergence_claim": False}
++        if nodal_out is not None:
++            physical = region(odb, "PHYSICAL", "nodeSets")
++            _, labels, _, u = read_field(frame.fieldOutputs["U"].getSubset(region=physical), nodal=True)
++            if not np.array_equal(labels, np.arange(1,len(mesh["points"])+1)):
++                raise ValueError("Incomplete nodal field")
++            take = np.unique(np.linspace(0,len(labels)-1,min(4096,len(labels))).astype(int))
++            nodal_out.parent.mkdir(parents=True,exist_ok=True)
++            np.savez_compressed(nodal_out, points=mesh["points"][take], u=u[take], labels=labels[take])
++            result["nodal_sample"] = {"points":len(take), "path":str(nodal_out), "sha256":hashlib.sha256(nodal_out.read_bytes()).hexdigest()}
+     finally:
+         odb.close()
+     out.parent.mkdir(parents=True, exist_ok=True)
+@@ -155,5 +164,6 @@
+     p.add_argument("odb", type=Path)
+     p.add_argument("--expected", required=True, type=Path)
+     p.add_argument("--out", required=True, type=Path)
++    p.add_argument("--nodal-out", type=Path)
+     a = p.parse_args()
+-    diagnose(a.odb, a.expected, a.out)
++    diagnose(a.odb, a.expected, a.out, a.nodal_out)
+--- before/tests/test_abaqus_binary.py
++++ after/tests/test_abaqus_binary.py
+@@ -132,3 +132,82 @@
+     assert manifest['geometry']['volume'] == pytest.approx(binary.audit_linear(points,cells,c)['volume'])
+     with pytest.raises(ValueError,match='matching geometry_N and c'):
+         prepare.prepare(tmp_path/'wrong',n=4,cached_mesh=cache,c=binary.C)
++
++
++
++def test_primitive_physical_definition_and_independent_jax_field():
++    from geometry import primitive
++    points = np.array([[0,0,0],[.25,.25,.25],[.5,.5,.5],[.125,.25,.375]])
++    expected = np.array([3.,0.,-3.,0.])
++    np.testing.assert_allclose(binary.implicit_numpy(points,"primitive"),expected,atol=1e-14)
++    import jax
++    jax.config.update("jax_enable_x64", True)
++    np.testing.assert_allclose(primitive(points),expected,atol=1e-14)
++    np.testing.assert_allclose(binary.implicit_numpy(points+1,"primitive"),expected,atol=1e-14)
++
++
++def test_primitive_fixed_translation_anchor_is_on_solid_bottom():
++    points,cells = binary.linear_domain(8,c=.6,family="primitive")
++    audit = binary.audit_linear(points,cells,.6,"primitive")
++    assert audit["periodic_connected_components"] == 1
++    assert .25 < audit["volume"] < .4
++    points,cells = binary.quadratic_nodes(points,cells)
++    _,_,bcs,_,_,bottom = prepare.constraints(points,"fixed")
++    anchors = [label for label,comp,value in bcs if comp in (1,2) and label <= len(points)]
++    assert len(set(anchors)) == 1 and anchors[0] in bottom
++    assert not np.any(np.all(points==0,axis=1))
++    with pytest.raises(ValueError,match="fixed macro lateral"):
++        prepare.constraints(points,"relaxed_free")
++
++
++def test_primitive_cache_cannot_be_reused_as_gyroid(tmp_path):
++    points,cells = binary.linear_domain(4,c=.6,family="primitive")
++    cache=tmp_path/"primitive.npz"
++    np.savez(cache,points=points,cells=cells,geometry_N=4,c=.6,fe_refinement=0,family="primitive")
++    report=prepare.prepare(tmp_path/"p",n=4,c=.6,cached_mesh=cache,family="primitive")
++    assert report["model"] == "binary_sheet_primitive"
++    assert report["case"] == "binary_primitive_G4_R0_C3D10_fixed"
++    with pytest.raises(ValueError,match="family mismatch"):
++        prepare.prepare(tmp_path/"g",n=4,c=.6,cached_mesh=cache)
++
++
++
++def test_isolevel_at_lattice_vertex_preserves_closed_positive_cut_domain():
++    # G=-.25000000000000006 at a vertex. The cut previously repeated one node
++    # in a polygon and generated a zero-volume tetrahedron.
++    points,cells=binary.linear_domain(48,c=.25,origins=[(0,7,19)])
++    xyz=points[cells]
++    det=np.linalg.det(np.transpose(xyz[:,1:]-xyz[:,:1],(0,2,1)))
++    assert np.all(det>0)
++    surface=binary.boundary_faces(cells)
++    edges=np.sort(surface[:,((0,1),(1,2),(2,0))].reshape(-1,2),axis=1)
++    _,counts=np.unique(edges,axis=0,return_counts=True)
++    assert np.all(counts==2)
++    # All eight cube vertices lie in/on the threshold band: exact volume is one cube.
++    corners=np.array([(x,y,z) for x in (0,1) for y in (7,8) for z in (19,20)])/48
++    assert np.max(np.abs(binary.gyroid_numpy(corners)))<=.25+1e-14
++    np.testing.assert_allclose(det.sum()/6,1/48**3,rtol=1e-10)
++
++
++
++def test_isolevel_vertex_contact_has_no_volume_and_nearby_cut_survives(monkeypatch):
++    # The known G48 vertex differs from the exact .25 isolevel by only ulps.
++    # Its cell is exterior except for this vertex; no volumetric solid exists.
++    corners=np.array([(x,y,z) for x in (0,1) for y in (8,9) for z in (44,45)])/48
++    assert np.min(binary.gyroid_numpy(corners))>=.25-4e-15
++    _,cells=binary.linear_domain(48,c=.25,origins=[(0,8,44)])
++    assert cells.size==0
++    # Exact isolated contact is empty; a finite cut just below it is retained.
++    def affine(xyz,family):
++        return .25+np.asarray(xyz).sum(axis=-1)
++    monkeypatch.setattr(binary,'implicit_numpy',affine)
++    _,cells=binary.linear_domain(8,c=.25,origins=[(0,0,0)])
++    assert cells.size==0
++    def finite_cut(xyz,family):
++        return .25-1e-3+np.asarray(xyz).sum(axis=-1)
++    monkeypatch.setattr(binary,'implicit_numpy',finite_cut)
++    points,cells=binary.linear_domain(8,c=.25,origins=[(0,0,0)])
++    xyz=points[cells]
++    det=np.linalg.det(np.transpose(xyz[:,1:]-xyz[:,:1],(0,2,1)))
++    assert np.all(det>0)
++    np.testing.assert_allclose(det.sum()/6,1e-9/6,rtol=1e-8)

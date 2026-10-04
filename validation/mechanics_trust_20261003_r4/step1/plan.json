@@ -1,0 +1,37 @@
+{
+  "stage": "round4_step1_reference_audit",
+  "question": "Do the existing small-strain comparisons represent the same physical problem, with a usable independent solid reference?",
+  "comparison_points": [
+    {"c": 0.48, "lateral": "fixed"},
+    {"c": 0.541062, "lateral": "fixed"},
+    {"c": 0.6, "lateral": "fixed"},
+    {"c": 0.541062, "lateral": "relaxed_free"}
+  ],
+  "locked_definition": {
+    "solid": "sheet Gyroid |G|<=c, trigonometric implicit function, not constant physical shell thickness",
+    "L": 1.0,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "periodic_axes": [0, 1],
+    "axial_faces": "flat imposed uz, lateral face motion remains free",
+    "background": "analytic G at eight physical HEX8 Gauss points; beta40; Emin/Es=1e-4; linear modulus interpolation",
+    "reference": "binary fitted C3D10 solid, no void elements, same implicit threshold and macro boundary",
+    "primary_output": "Eapp=2U/(Vgross*eps_z^2); k=|Fz|/|uz|; report separately outside unit cube"
+  },
+  "working_criteria": {
+    "background_vs_reference_relative_stiffness": 0.02,
+    "reference_response_sensitivity": 0.01,
+    "interpretation": "working screening criteria, not rigorous true-error bounds"
+  },
+  "budget": {
+    "new_FEM_solves_initial": 0,
+    "new_Abaqus_jobs_initial": 0,
+    "training_and_gradients": 0,
+    "audit": "original input/hash/completion checks, raw mesh topology and straight-sided quadratic mapping checks, recomputation from stored responses",
+    "conditional_calculation": "Only if an explicit reference gap remains; at most one targeted constant-threshold baseline comparison, separately lock inputs and budget before submission"
+  },
+  "completion": "audited comparison definition, reference sensitivity/quality table, decision on whether step2 is scientifically supported",
+  "frozen_rounds": ["near_term_20261003", "geometry_interface_20261003_r2", "learning_bridge_20261003_r3"],
+  "excluded": ["historical stopped M32", "occupancy interpolation", "generic N64 adjoint", "ax035 G48", "training", "finite-strain execution"]
+}

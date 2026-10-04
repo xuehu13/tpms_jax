@@ -20,7 +20,7 @@ Three distinct concepts live in this module and must not be conflated:
 import jax
 import jax.numpy as jnp
 
-__all__ = ["gyroid", "solid_mask", "density"]
+__all__ = ["primitive", "gyroid", "solid_mask", "density", "project_field"]
 
 
 def gyroid(xyz, L=1.0):
@@ -98,5 +98,14 @@ def density(xyz, c, beta, L=1.0):
         ``xyz``, ``c`` and ``L``. This is a design field for FEM/optimization,
         NOT a physical mass density.
     """
-    g = gyroid(xyz, L)
+    return project_field(gyroid(xyz, L), c, beta)
+
+
+def project_field(g, c, beta):
+    """Project a signed implicit field with the stated implicit-field amplitude convention."""
     return jax.nn.sigmoid(beta * (g + c)) - jax.nn.sigmoid(beta * (g - c))
+
+
+def primitive(xyz, L=1.0):
+    """Schwarz Primitive nodal approximation: cos(X)+cos(Y)+cos(Z)."""
+    return jnp.sum(jnp.cos(2*jnp.pi*jnp.asarray(xyz)/L), axis=-1)

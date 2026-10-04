@@ -1,0 +1,45 @@
+{
+  "N": 64,
+  "case": "fd_c_0.0005_-1",
+  "K": 1.9795254958834099,
+  "Vf": 0.35090384482462283,
+  "baseline_checks": {
+    "values": [
+      1.9795254958834099,
+      0.35090384482462283,
+      0.026096166574619307
+    ],
+    "Fz_top": -0.019795254958833407,
+    "Fz_bottom": 0.019795254958832907,
+    "U_internal": 9.897627479417008e-05,
+    "red_res": 4.310264794957436e-17,
+    "balance": -4.996003610813204e-16,
+    "reaction_consistency_err": 6.869504964868156e-16,
+    "work_identity_err": 2.710505431213761e-20,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-8": true,
+      "balance<=1e-8": true,
+      "reaction<=1e-6": true,
+      "work_identity<=1e-8": true,
+      "periodic": true,
+      "loaded_face": true,
+      "K_reaction": true
+    },
+    "status": "ok"
+  },
+  "phases": {
+    "built_rss_MiB": 3715.98046875,
+    "solve_seconds": 93.23771418799879,
+    "post_value_rss_MiB": 7471.796875,
+    "post_value_peak_MiB": 12432.25
+  },
+  "forward_count": 1,
+  "general_adjoint_count": 0,
+  "start_host_available_MiB": 13259.39453125,
+  "passed": true,
+  "total_seconds": 96.88553939800477,
+  "peak_host_rss_MiB": 12432.25,
+  "sampled_host_available_min_MiB": 2015.6640625,
+  "sampled_device_peak_MiB": 5066
+}

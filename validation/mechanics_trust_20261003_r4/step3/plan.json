@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-04",
+  "stage": "round4_step3_locked_before_FEM",
+  "question": "Correct finite-strain kinematics/material/PBC/equilibrium/energy extraction, isolated from TPMS interfaces and voids",
+  "material": {
+    "E0": 10.0,
+    "nu0": 0.3,
+    "mu": 3.846153846153846,
+    "kappa": 8.333333333333332,
+    "C10": 1.923076923076923,
+    "D1": 0.24000000000000005,
+    "W_reference": "mu/2*(J^(-2/3)*tr(F.T F)-3)+kappa/2*(J-1)^2",
+    "J": "det(F)>0",
+    "temperature_or_plasticity": false
+  },
+  "model": {
+    "L": 1.0,
+    "reference_volume": 1.0,
+    "initial_axial_area": 1.0,
+    "full_solid": true,
+    "void_or_contact": false,
+    "H": "diag(0,0,-compression)",
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "macro_lateral": "fixed",
+    "flat_axial_faces": true,
+    "free_fluctuations": "all unconstrained interior/side components; no full affine Dirichlet field"
+  },
+  "JAX_paths": [
+    {
+      "N": 2,
+      "increment": 0.01
+    },
+    {
+      "N": 4,
+      "increment": 0.01
+    },
+    {
+      "N": 4,
+      "increment": 0.005
+    }
+  ],
+  "Abaqus_paths": [
+    {
+      "N": 4,
+      "increment": 0.01
+    },
+    {
+      "N": 4,
+      "increment": 0.005
+    }
+  ],
+  "path": "zero, 0.0001 small-strain point, then all uniform increments to 0.20; base22 / half42 stored states",
+  "solver": "installed JAX-FEM Newton + scipy sparse linear solver; XY projection and pins reused; reduced-coordinate initial guess",
+  "seed": "nonzero constraint-compatible fluctuation at zero and 20% to exercise Newton; subsequent points use continuation; no new solver implementation",
+  "reference": "native full-integration C3D8, N4, NLGEOM=YES; NEO HOOKE constants exactly matched; one direct increment per named load step",
+  "outputs": [
+    "uncorrected top/bottom nodal reaction",
+    "mean first Piola stress per reference volume",
+    "mean Cauchy stress per current volume",
+    "stored energy per reference volume",
+    "min/max detF",
+    "full physical displacement",
+    "reduced equilibrium",
+    "constraint errors",
+    "cost"
+  ],
+  "criteria": {
+    "path_force_difference_over_reference_max": 0.01,
+    "path_energy_difference_over_reference_max": 0.01,
+    "grid_or_step_path_change": 0.001,
+    "work_vs_stored_energy_relative_final": 0.001,
+    "small_strain_tangent_relative": 0.001,
+    "JAX_analytic_force_energy_relative_max": 1e-07,
+    "reduced_residual_l2": 1e-09,
+    "JAX_constraint_error": 1e-10,
+    "Abaqus_displacement_error": 1e-07,
+    "positive_detF": true
+  },
+  "budget": {
+    "scientific_JAX_paths": 3,
+    "equilibrium_states_including_zero": 86,
+    "Abaqus_analyses": 2,
+    "datachecks": 2,
+    "JAX_path_timeout_s": 180,
+    "Abaqus_each_timeout_s": 600,
+    "Abaqus_cpus": 2,
+    "Abaqus_memory": "2gb",
+    "target_background_N_gt4": false,
+    "maintenance_checks_counted_separately": true,
+    "TPMS_or_training_runs": 0
+  },
+  "stop": "No TPMS finite-strain claim before full-solid checks pass. Preserve failed runs; repair implementation only, no material fitting/relaxed thresholds/extra sweep",
+  "sources": {
+    "JAX_FEM": "https://deepmodeling.github.io/jax-fem/learn/hyperelasticity/example.html",
+    "Abaqus_energy": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEMATRefMap/simamat-c-hyperelastic.htm"
+  }
+}

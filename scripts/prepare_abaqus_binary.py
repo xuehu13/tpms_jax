@@ -1,4 +1,4 @@
-"""Generate binary sheet-Gyroid C3D10 inputs. No jobs are submitted here."""
+"""Generate binary Gyroid/Primitive sheet-solid C3D10 inputs. No jobs are submitted here."""
 import argparse
 import hashlib
 import itertools
@@ -48,7 +48,10 @@ def constraints(points, lateral):
         equations.append([(int(label),3,1.0),(controls[2],3,-1.0)])
     anchor = lookup.get((0,0,0))
     if anchor is None:
-        raise ValueError('Expected solid corner for displacement anchor')
+        if lateral != "fixed":
+            raise ValueError("Non-corner anchor currently supports fixed macro lateral strain only")
+        # With zero macro lateral strain this fixes only the rigid translation.
+        anchor = int(bottom[np.lexsort((points[bottom-1,1], points[bottom-1,0]))][0])
     bcs = [(int(label),3,0.0) for label in bottom]
     bcs += [(anchor,1,0.0),(anchor,2,0.0),(controls[2],3,-0.01)]
     if lateral == 'fixed':
@@ -84,9 +87,11 @@ def uniform_domain(n=2):
     return points,np.array(cells)
 
 
-def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_mesh=None):
+def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_mesh=None, c=C, family="gyroid"):
     if n < 4 or refinement not in (0,1) or lateral not in ('fixed','relaxed_free'):
         raise ValueError('Require geometry N>=4, refinement 0/1, and supported lateral condition')
+    if family not in ("gyroid", "primitive") or (family == "primitive" and (uniform or np.asarray(c).ndim != 0)):
+        raise ValueError("Primitive requires scalar threshold and nonuniform geometry")
     output.mkdir(parents=True,exist_ok=True)
     if uniform:
         points,cells = uniform_domain()
@@ -95,8 +100,11 @@ def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_me
     else:
         if cached_mesh:
             saved = np.load(cached_mesh)
-            if 'geometry_N' not in saved or 'c' not in saved or int(saved['geometry_N']) != n or float(saved['c']) != C:
+            if 'geometry_N' not in saved or 'c' not in saved or int(saved['geometry_N']) != n or not np.array_equal(np.asarray(saved['c']),np.asarray(c)):
                 raise ValueError('Cached mesh must record matching geometry_N and c')
+            cached_family = str(saved["family"]) if "family" in saved else "gyroid"
+            if cached_family != family:
+                raise ValueError("Cached mesh family mismatch")
             points,cells = saved['points'],saved['cells']
             metadata = {'mesher':'cached boundary-preserving mesh', 'cache_sha256':hashlib.sha256(Path(cached_mesh).read_bytes()).hexdigest()}
             # Refine an already meshed volume through Gmsh, if requested.
@@ -105,12 +113,12 @@ def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_me
             if cached_refinement > refinement:
                 raise ValueError('Cached FE refinement exceeds requested level')
             if refinement > cached_refinement:
-                points,cells,metadata = remesh_domain(points,cells,refinement)
+                points,cells,metadata = remesh_domain(points,cells,refinement,c=c,family=family)
         else:
-            points,cells = linear_domain(n)
-            points,cells,metadata = remesh_domain(points,cells,refinement)
-        prefix = f'binary_gyroid_G{n}_R{refinement}_C3D10'
-    audit = audit_linear(points,cells)
+            points,cells = linear_domain(n, c, family=family)
+            points,cells,metadata = remesh_domain(points,cells,refinement,c=c,family=family)
+        prefix = f'binary_{family}_G{n}_R{refinement}_C3D10'
+    audit = audit_linear(points,cells,c,family)
     if uniform:
         # Surface G residuals have no geometric meaning for this patch test.
         audit.pop('surface_G_residual_max'); audit.pop('surface_G_residual_rms')
@@ -140,9 +148,9 @@ def prepare(output, n=8, refinement=0, lateral='fixed', uniform=False, cached_me
     inp = output/(job+'.inp')
     inp.write_text('\n'.join(lines)+'\n',encoding='ascii')
     np.savez_compressed(output/(job+'.mesh.npz'),points=points,cells=cells)
-    manifest = {'case':job,'model':'uniform' if uniform else 'binary_sheet_gyroid',
+    manifest = {'case':job,'model':'uniform' if uniform else 'binary_sheet_'+family,'family':family,
                 'geometry_N':n if not uniform else None,'fe_refinement':refinement,
-                'c':C,'E_s':10.,'nu':.3,'gross_volume':1.,'lateral':lateral,
+                'c':float(c) if np.asarray(c).ndim == 0 else np.asarray(c).tolist(),'E_s':10.,'nu':.3,'gross_volume':1.,'lateral':lateral,
                 'geometry':audit,'meshing':metadata,'nodes':len(points),'elements':len(cells),
                 'controls':list(controls),'equations':len(equations),'periodic_pairs':len(pairs),
                 'input_sha256':hashlib.sha256(inp.read_bytes()).hexdigest(),
@@ -168,5 +176,9 @@ if __name__ == '__main__':
     parser.add_argument('--lateral',choices=('fixed','relaxed_free'),default='fixed')
     parser.add_argument('--uniform',action='store_true')
     parser.add_argument('--cached-mesh',type=Path)
+    parser.add_argument('--family',choices=('gyroid','primitive'),default='gyroid')
+    geometry=parser.add_mutually_exclusive_group()
+    geometry.add_argument('--c',type=float,default=C)
+    geometry.add_argument('--width-parameters',nargs=4,type=float)
     args=parser.parse_args()
-    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh)
+    prepare(args.output,args.n,args.refinement,args.lateral,args.uniform,args.cached_mesh,args.c if args.width_parameters is None else np.array(args.width_parameters),args.family)

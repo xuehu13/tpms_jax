@@ -1,0 +1,20 @@
+{
+  "N": 32,
+  "M": 64,
+  "route": "implicit",
+  "directions": [
+    "unit c",
+    "unit L2 g*(1+.4*cos(2pi*x))"
+  ],
+  "steps": [
+    0.001,
+    0.0005
+  ],
+  "fixed": true,
+  "beta": 40,
+  "eta": 0.0001,
+  "max_forwards": 1,
+  "max_adjoint": 1,
+  "normalization": "unit discrete L2",
+  "input_sha256": "bebd2630d610eb6b4412e145169bd0a7024f2f0ba9d1d83ea46f9eba8e62d663"
+}

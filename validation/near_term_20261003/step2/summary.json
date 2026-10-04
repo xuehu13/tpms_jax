@@ -1,0 +1,61 @@
+{
+  "stage": 2,
+  "cases": [
+    {
+      "M": 64,
+      "N": 64,
+      "return_code": 0,
+      "wall_seconds": 108.29415328497998,
+      "result": "validation/near_term_20261003/step2/M64_N64_fixed.json",
+      "log": "validation/near_term_20261003/step2/M64_N64_fixed.console.txt",
+      "macro_equilibrium_solves_observed": 1,
+      "linear_solves_observed": 1,
+      "status": "ok",
+      "Fz": -0.02003438478003116,
+      "K": 2.003438478003116,
+      "Vf": 0.3506270682309954,
+      "input_representation": {
+        "type": "continuous_voxel_array",
+        "M": 64,
+        "axis_order": "xyz",
+        "sampling": "(i+.5)/M",
+        "map": "periodic_trilinear",
+        "post_projection": false,
+        "input_file": "/home/xuehu/projects/tpms_jax/validation/near_term_20261003/step2/M64_N64_fixed.input.npy",
+        "input_sha256": "cb81a2e85b8690cce37927ff1d3bfd2a6d8fc9ec1406e93c82f99e286dc77ff0",
+        "weighted_L1_field_error": 0.018249639089707066,
+        "maximum_field_error": 0.18675020256434488,
+        "projected_volume_difference": 9.901493709597787e-05
+      },
+      "checks": {
+        "finite": true,
+        "red_res<=1e-08": true,
+        "balance<=1e-08": true,
+        "reaction<=1e-06": true,
+        "work_identity<=1e-08": true,
+        "periodic_fluctuation<=1e-10": true,
+        "loaded_face_fluctuation<=1e-10": true
+      },
+      "mapping_relative_response_difference": 0.013637570805720032,
+      "binary_relative_response_difference": 0.026146072744451656,
+      "peak_host_rss_MiB": 12457.50390625,
+      "criteria": {
+        "numerical_consistency": true,
+        "mapping_response_difference<=1percent": false,
+        "binary_response_difference<=2percent": false
+      },
+      "passed": false
+    }
+  ],
+  "new_high_resolution_cases": 1,
+  "no_volume_calibration": true,
+  "no_extra_projection": true,
+  "analytic_reference": "validation/projection_effects_20261002/N64_beta40_emin4_fixed_c.json",
+  "analytic_reference_sha256": "80e477039200c14ee3dfe75e7c727f1fc16d9954245cb70ce2b1d48c0857d2ea",
+  "binary_reference": "validation/abaqus_binary/binary_gyroid_G48_R0_C3D10_fixed.acceptance.json",
+  "binary_reference_sha256": "a9d912e19f7ab39985c0be130f8cc7edf1192437b1eb2a7b3af3574950a83d27",
+  "array_route_passed_M": [],
+  "M32_skipped_if_M64_failed": true,
+  "array_route_feasibility_claim": "Only the recorded representation and physical case",
+  "new_Abaqus_jobs": 0
+}

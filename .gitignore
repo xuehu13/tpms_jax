@@ -34,3 +34,17 @@ results/
 .DS_Store
 
 !validation/abaqus_binary/binary_uniform_C3D10_*.mesh.npz
+
+# Local frozen evidence stays in place; publish one maintained implementation.
+validation/**/source_*/
+validation/**/*.dat
+validation/**/*.msg
+validation/**/*.sta
+validation/**/*.prt
+validation/**/*.com
+validation/**/*.sim
+validation/**/*.lck
+# One-time review tools and old PDF exports are local archives.
+docs/history/**/*.py
+docs/history/**/*.pdf
+validation/**/*.console.txt

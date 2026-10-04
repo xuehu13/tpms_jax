@@ -1,0 +1,317 @@
+[
+  {
+    "id": "paper_02",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Gen-Porous  An INR-based generative framework for multiscale TPMS-like porous structure design and optimization.pdf",
+    "pages": 15,
+    "sha256": "0c292c02ac0572bc281cfcd87724521716ce62127883dc4ed7543edd803f644b",
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "13th January 2026",
+      "/ElsevierWebPDFSpecifications": "7.0.1",
+      "/robots": "noindex",
+      "/ModDate": "D:20260113095042Z",
+      "/Author": "Shengfa Wang",
+      "/doi": "10.1016/j.cad.2025.104020",
+      "/Title": "Gen-Porous: An INR-based generative framework for multiscale TPMS-like porous structure design and optimization",
+      "/Keywords": "TPMS,Porous structures,Topology optimization,Implicit neural representation,Meshfree",
+      "/CreationDate": "D:20260113094709Z",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/Subject": "Computer-Aided Design, 192 (2026) 104020. doi:10.1016/j.cad.2025.104020",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_02.txt",
+    "review_pages": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_03",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Geometrically non-linear topology optimization via geometry projection.pdf",
+    "pages": 15,
+    "sha256": "90b2b02f62880b449ce17e11d4406c037540a97385d057c32986b51995e1c688",
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "18th January 2025",
+      "/ElsevierWebPDFSpecifications": "7.0.1",
+      "/robots": "noindex",
+      "/ModDate": "D:20250118104825Z",
+      "/Author": "Jingyu Hu",
+      "/doi": "10.1016/j.cma.2024.117636",
+      "/Title": "Geometrically non-linear topology optimization via geometry projection",
+      "/Keywords": "Geometry-based topology optimization,Geometry projection method,Geometrically non-linear structures,Hyperelastic material behavior",
+      "/CreationDate": "D:20250118102220Z",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/Subject": "Computer Methods in Applied Mechanics and Engineering, 435 (2025) 117636. doi:10.1016/j.cma.2024.117636",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_03.txt",
+    "review_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_05",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\JAX-FEM  A differentiable GPU-accelerated 3D finite element solver for automatic inverse design and mechanistic data science.pdf",
+    "pages": 15,
+    "sha256": "0c3942eb9867efebd19021ac08ecdea77211feedde59da205198c9f90abfed6c",
+    "metadata": {},
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_05.txt",
+    "review_pages": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_09",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Projection-Based Implicit Modeling Method (PIMM) for Functionally Graded Lattice Optimization.pdf",
+    "pages": 10,
+    "sha256": "859588bdd97977ee20082af1155396d651b40e0e4a7adb7ca9a9caae0a06f393",
+    "metadata": {
+      "/Author": "Hao Deng ",
+      "/CreationDate": "D:20210507152257+05'30'",
+      "/Creator": "Springer",
+      "/CrossMarkDomains[1]": "springer.com",
+      "/CrossMarkDomains[2]": "springerlink.com",
+      "/CrossmarkDomainExclusive": "true",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/ModDate": "D:20210613122833+05'30'",
+      "/Subject": "JOM, https://doi.org/10.1007/s11837-021-04659-1",
+      "/Title": "Projection-Based Implicit Modeling Method (PIMM) for Functionally Graded Lattice Optimization",
+      "/doi": "10.1007/s11837-021-04659-1",
+      "/robots": "noindex"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_09.txt",
+    "review_pages": [
+      3,
+      4,
+      5
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_12",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Style- Constrained Inverse Design of MicrostructuresWith Tailored Mechanical Properties UsingUnconditional Diffusion Models.pdf",
+    "pages": 30,
+    "sha256": "9ccbff875fddbcfc3b2acd2bb24dc9ea6415534a55cf8d47d4ae382f716d35ad",
+    "metadata": {
+      "/Keywords": "architected microstructures | differentiable programming | diffusion models | inverse design",
+      "/Creator": "LaTeX with hyperref package",
+      "/ModDate": "D:20260928232700-07'00'",
+      "/CreationDate": "D:20260625192840+05'30'",
+      "/Producer": "Acrobat Distiller 25.0 (Windows); modified using iText 4.2.0 by 1T3XT",
+      "/Subject": "Numerical Meth Engineering 2026.127:e70376",
+      "/WPS-PROCLEVEL": "3",
+      "/WPS-JOURNALDOI": "10.1002/(ISSN)1097-0207",
+      "/Author": "Xu Weipeng | Xie Ziyuan | Lin Haoju | Wang Xinyu | Mou Guangjin | Xue Tianju",
+      "/Title": "Style‐Constrained Inverse Design of Microstructures With Tailored Mechanical Properties Using Unconditional Diffusion Models",
+      "/WPS-ARTICLEDOI": "10.1002/nme.70376"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_12.txt",
+    "review_pages": [
+      5,
+      6,
+      7,
+      22,
+      23,
+      24
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_13",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Three-dimensional generative adversarial network for inverse design of hybrid TPMS.pdf",
+    "pages": 14,
+    "sha256": "af67cc2ab5328adc1d902cbd42a12683ec6034229924ef9a4f2046cee4bbecc0",
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "16th February 2026",
+      "/ElsevierWebPDFSpecifications": "7.0.1",
+      "/robots": "noindex",
+      "/ModDate": "D:20260216104941Z",
+      "/Author": "Yuhao Zhai",
+      "/doi": "10.1016/j.ijmecsci.2026.111353",
+      "/Title": "Three-dimensional generative adversarial network for inverse design of hybrid TPMS",
+      "/Keywords": "Hybrid TPMS,Inverse design,Quasi-static compression,Crashworthiness,3D-cGAN",
+      "/CreationDate": "D:20260216092712Z",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/Subject": "International Journal of Mechanical Sciences, 313 (2026) 111353. doi:10.1016/j.ijmecsci.2026.111353",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_13.txt",
+    "review_pages": [
+      3,
+      4
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_16",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Design- and Voxel-Based Analysis of a Topology–Density Dual-Gradient TPMS Absorber for Impact-Load Mitigation.pdf",
+    "pages": 29,
+    "sha256": "249185bb3729932887621d5fb960c39b9efd4725fabfc382208c25e4a0ed9eda",
+    "metadata": {
+      "/Keywords": "triply periodic minimal surface; topology--density dual gradient; voxel-based finite element modeling; impact energy absorption; peak-stress mitigation; aerospace buffer",
+      "/Creator": "LaTeX with hyperref",
+      "/ModDate": "D:20260920061106+02'00'",
+      "/Trapped": "/False",
+      "/CreationDate": "D:20260920110032+08'00'",
+      "/Producer": "luahbtex-1.24.0; modified using OpenPDF 1.4.2",
+      "/Subject": "Triply periodic minimal surface (TPMS) lattices are promising lightweight impact absorbers, but high-fidelity finite element modeling is costly, and uniform designs can develop high stress peaks during densification. This study presents a voxel-based finite element framework and a topology--density dual-gradient (TDDG) TPMS absorber. A convergence study selected a voxel size of 0.33 mm, yielding a 1.11% relative-density error and converged mechanical responses. Compared with a converged C3D4 tetrahedral model, the C3D8R voxel model reduced wall-clock time from 4222 to 497 s. Following validation against quasi-static compression tests, P, G, and IWP topologies at 20%, 30%, and 40% relative densities were screened. IWP20 and P40 were assigned to the impact- and support-facing regions and connected by normalized sigmoid interpolation. Under a 125 J impact, simulations predicted that TDDG-IWP20-P40 reduced peak nominal impact stress by 32.2% and 24.6% relative to U-P30 and DG-P20-P40, respectively, while maintaining comparable SEA. Additional simulations at 62.5 and 160 J confirmed lower peak stress than U-P30, with the added benefit over density-only grading becoming more pronounced at higher impact energy. Progressive crushing and delayed densification demonstrate the potential of TDDG TPMS absorbers for impact-load mitigation and future aerospace buffer designs.",
+      "/Author": "Wenying Xu, Jiawei Xu, Yonglin Chen, Dongyu Fan, Yongbin Wang, Tao Yu, Siyu Chen and Weidong Yang",
+      "/Title": "Design- and Voxel-Based Analysis of a Topology--Density Dual-Gradient TPMS Absorber for Impact-Load Mitigation",
+      "/PTEX.FullBanner": "This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_16.txt",
+    "review_pages": [
+      5,
+      6,
+      10,
+      11,
+      12
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_17",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+    "pages": 18,
+    "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0",
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "20th December 2023",
+      "/ElsevierWebPDFSpecifications": "7.0",
+      "/robots": "noindex",
+      "/ModDate": "D:20231220104723Z",
+      "/Author": "Na Qiu",
+      "/doi": "10.1016/j.ijmecsci.2023.108657",
+      "/Keywords": "Triply periodic minimal surface,Selective laser melting,Finite elements,Energy absorption,Mechanical property",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/CreationDate": "D:20231220100103Z",
+      "/Title": "Experimental and numerical studies on mechanical properties of TPMS structures",
+      "/Subject": "International Journal of Mechanical Sciences, 261 (2024) 108657. doi:10.1016/j.ijmecsci.2023.108657",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_17.txt",
+    "review_pages": [
+      8,
+      10,
+      11,
+      12
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_18",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\A condition number-based numerical stabilization methodfor geometrically nonlinear topology optimization.pdf",
+    "pages": 32,
+    "sha256": "3e467437a22f9964817f198cd8e0f2fa1beecdd2401d368a1e94b1bec40ef95e",
+    "metadata": {
+      "/Keywords": "",
+      "/Creator": "LaTeX with hyperref package",
+      "/ModDate": "D:20260928233923-07'00'",
+      "/CreationDate": "D:20241024112839+05'30'",
+      "/Producer": "Acrobat Distiller 11.0 (Windows); modified using iText 4.2.0 by 1T3XT",
+      "/Subject": "Numerical Meth Engineering 2024.125:e7574",
+      "/WPS-PROCLEVEL": "3",
+      "/WPS-JOURNALDOI": "10.1002/(ISSN)1097-0207",
+      "/Author": "",
+      "/Title": "A condition number‐based numerical stabilization method for geometrically nonlinear topology optimization",
+      "/WPS-ARTICLEDOI": "10.1002/nme.7574"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_18.txt",
+    "review_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_20",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Level-set topology optimisation with unfitted finite elements and automatic shape differentiation.pdf",
+    "pages": 22,
+    "sha256": "5d0ed164ac91b9b6cd9fe3032c0584ed4c364727bd6fce1447cd4e99f43e9780",
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "8th August 2025",
+      "/ElsevierWebPDFSpecifications": "7.0.1",
+      "/robots": "noindex",
+      "/ModDate": "D:20250808135841Z",
+      "/Author": "Zachary J. Wegert",
+      "/doi": "10.1016/j.cma.2025.118203",
+      "/Title": "Level-set topology optimisation with unfitted finite elements and automatic shape differentiation",
+      "/Keywords": "Shape calculus,Automatic differentiation,Unfitted finite element methods,CutFEM,Memory-distributed computing",
+      "/CreationDate": "D:20250808135701Z",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/Subject": "Computer Methods in Applied Mechanics and Engineering, 445 (2025) 118203. doi:10.1016/j.cma.2025.118203",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_20.txt",
+    "review_pages": [
+      1,
+      2,
+      3,
+      11
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  },
+  {
+    "id": "paper_22",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Sensitivity analysis of any hyperelastic evaluation functions coupled with adjoint method and automatic differentiation.pdf",
+    "pages": 19,
+    "sha256": "7746a579d9bbe5cbcaa97fb1272036b9a9a62e52b5168311142c069187f98a1e",
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "9th November 2025",
+      "/ElsevierWebPDFSpecifications": "7.0.1",
+      "/robots": "noindex",
+      "/ModDate": "D:20251109000705Z",
+      "/Author": "S. Ogawa",
+      "/doi": "10.1016/j.finel.2025.104440",
+      "/Title": "Sensitivity analysis of any hyperelastic evaluation functions coupled with adjoint method and automatic differentiation",
+      "/Keywords": "Topology optimization,Automatic differentiation,Sensitivity analysis,Hyperelasticity,Multimaterial",
+      "/CreationDate": "D:20251108170134Z",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/Subject": "Finite Elements in Analysis & Design, 252 (2025) 104440. doi:10.1016/j.finel.2025.104440",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    },
+    "text_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\tmp\\research_questions_20261003\\paper_22.txt",
+    "review_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coverage": "selected method/results pages; not a full systematic review"
+  }
+]

@@ -1,35 +1,47 @@
-# 两篇论文与本研究的方法关系
+# 文献阅读记录与方法关系
 
-2026-10-03。论文事实依据用户提供的 PDF 正文和流程图；公开代码说明于同日核对。本文只保留与路线选择有关的信息，研究顺序见 [研究主规划](RESEARCH_PLAN.md)。论文中的任务、数据规模和参数不自动成为本项目要求。
+更新2026-10-04；首次核查2026-10-03；用户目录 `C:\Users\xuehu\Desktop\tpms优化`。23篇PDF身份/哈希复核，重点阅读/检索下面11篇方法和结果，另补官方文档和原始研究；不是全目录系统综述。页码为本地PDF页码，范围表示定位核查，不表示逐字精读全部内容。
 
-## 无条件扩散 + 可导力学
+解释集中在 [综合报告](TPMS_RESEARCH_REVIEW.md)相关方法与文献章节。本页是来源索引，不另立任务；文献结果不是项目验证。
 
-Xu 等（2026），*Style-Constrained Inverse Design of Microstructures With Tailored Mechanical Properties Using Unconditional Diffusion Models*，[DOI: 10.1002/nme.70376](https://doi.org/10.1002/nme.70376)。用户 PDF 共 30 页，方法与流程已核查 §2.2–2.3、图1，以及三维示例和限制部分。
-
-核心方法：用几何图像/体素训练无条件扩散先验；冻结网络，通过确定性生成映射、几何投影及有限元的可导链，按力学目标优化输入噪声。几何先验训练与在线力学引导分开，不要求每个先验训练样本都有性能标签。
-
-该论文使用 JAX/Flax 与 JAX-FEM；其三维示例几何是挤出/平滑 MNIST，不是 TPMS。它支持本研究考虑扩散先验与可导 FEM 的组合，但不直接证明 TPMS 真实孔隙背景模型的精度、周期性或连通性。
-
-作者 [genopt 仓库](https://github.com/CMSL-HKUST/genopt) 提供网络、FEM 和优化辅助代码；README 展示的微结构入口主要为二维。当前只核查公开目录/说明，未克隆、运行或验证其三维代码。后续复用先核查实际实现、许可证及当前环境兼容性。
-
-**本研究中的用途：** 阶段 3–5 暂定首条路线的方法参考。先验证 TPMS 的前向与体素梯度，再训练 TPMS 几何先验并接入力学引导。网络、数据和算例数量由本项目评估确定。
-
-## 混合 TPMS + 条件生成
-
-Zhai 等（2026），*Three-dimensional generative adversarial network for inverse design of hybrid TPMS*，[DOI: 10.1016/j.ijmecsci.2026.111353](https://doi.org/10.1016/j.ijmecsci.2026.111353)。用户 PDF 共 14 页，已核查 §2.1–2.5、图1–3，以及训练与验证部分。
-
-核心方法：G/D/P/I-WP 隐式函数及权重组合构造几何，Abaqus 获取压缩性能标签，32³ 体素用于条件生成，并重建生成几何进行验证。FE 使用 nTopology 输出的体网格，文中列为 C3D6；32³ 是网络表示，不是规则 HEX8 有限元网格。其力学任务含弹塑性与摩擦接触，不能由当前线弹性结论覆盖。
-
-**本研究中的用途：** 阶段 2–3 的形态族、参数元数据和数据组织参考，以及阶段 6 的独立几何复核参考。条件生成是后续可选择路线；不因两篇论文分别采用扩散和 GAN，就必须训练两套系统或复制其样本量。
-
-## 本项目仍需自己验证的环节
-
-| 环节 | 当前基础 | 待完成阶段 |
+| 原始研究 | 本地核查范围 | 可借鉴与不可外推之处 |
 | --- | --- | --- |
-| 实际 TPMS 背景精度 | Gyroid 解析场、同离散/二值对照 | 阶段 1 收口，并对新增代表构型检查 |
-| 多构型与体素输入 | 目前主要为 Gyroid，材料入口为 rho[e,q] | 阶段 2 统一族/参数与数组映射 |
-| 可导链 | 小网格固定横向四参数梯度 | 阶段 2 体素方向导数；阶段 5 生成网络全链 |
-| 模型训练 | 尚无训练实现 | 阶段 3 定义任务和数据；阶段 4 训练一个主模型 |
-| 性能驱动设计 | 尚未运行优化/逆向设计 | 阶段 5 闭环与轻量基线；阶段 6 Abaqus 复核 |
+| [JAX-FEM，2023](https://doi.org/10.1016/j.cpc.2023.108802) | 第3-5、7页 | 本构/隐式导数框架；不证明TPMS软孔隙精度，跨平台加速比不套用 |
+| [PIMM，2021](https://doi.org/10.1007/s11837-021-04659-1) | 第3-5页；第4页视觉复核 | TPMS隐式投影/固定背景先例；单元中心密度、投影公式与我们不同 |
+| [Qiu等TPMS比较，2024](https://doi.org/10.1016/j.ijmecsci.2023.108657) | 第8、10-12页§4；第12页图11/表5视觉复核 | 壳/贴体/体素优劣依赖壁厚和用途；一两层体素薄壁会失真，不支持体素普遍更快更准 |
+| [TPMS Voxel Absorber，2026](https://doi.org/10.3390/ma19183904) | 第5-6、10-12页；第6页视觉复核 | 实体C3D8R、弹塑性/接触，66.7%压缩；孔隙无单元，不认证当前软孔隙 |
+| [几何非线性投影，2025](https://doi.org/10.1016/j.cma.2024.117636) | 第1-4页 | 非线性、低刚度区和能量插值；项目未实现这些处理 |
+| [条件数稳定化，2024](https://doi.org/10.1002/nme.7574) | 第1-4页 | 虚拟孔隙畸变的专门稳定化，不是已实现能力 |
+| [非贴体/自动形状微分，2025](https://doi.org/10.1016/j.cma.2025.118203) | 第1-3、11页 | CutFEM/ghost penalty/孤立域，不是当前常规八点光滑背景 |
+| [Style-Constrained，2026](https://doi.org/10.1002/nme.70376) | 第5-7页§2.2-2.3、第22-24页§3.5；第22页视觉及作者预印本互证 | 几何先验+冻结模型力学引导；3D软硬两相拉伸/剪切，不是真实孔隙TPMS压溃 |
+| [Hybrid TPMS GAN，2026](https://doi.org/10.1016/j.ijmecsci.2026.111353) | 第3-4页§2.1-2.5 | 性能条件构型生成；32³是网络表示，FEM是C3D6楔形实体，未反传Abaqus |
+| [Gen-Porous，2026](https://doi.org/10.1016/j.cad.2025.104020) | 第4-7页，重点第7页正文/视觉 | 已补正文：INR潜空间+神经无网格线弹性/占据；不是JAX-FEM大压缩认证 |
+| [超弹性伴随+AD，2025](https://doi.org/10.1016/j.finel.2025.104440) | 第1-4页定位，灵敏度验证检索 | 伴随/AD与不同目标；专用K/Vf规则不能直接覆盖全部目标 |
 
-这些是本研究的待做工作，不能用论文成功或仓库名称代替本项目证据。创新贡献在相关文献和实际对照完成后再表述。
+补充：[有限应变能量插值（2014）](https://doi.org/10.1016/j.cma.2014.03.021)及[DTU作者摘要](https://orbit.dtu.dk/en/publications/interpolation-scheme-for-fictitious-domain-techniques-and-topolog/)、[FCM综述](https://arxiv.org/abs/1807.01285)、[JAX-FEM超弹性](https://deepmodeling.github.io/jax-fem/learn/hyperelasticity/example.html)与[梯度官方示例](https://deepmodeling.github.io/jax-fem/learn/compute_gradients/example.html)。本地 improved voxel/minimum Jacobian 论文及[作者预印本](https://arxiv.org/abs/2506.04028)仅补查摘要/方法线索，其中MJ=0.3不作为项目通用质量阈值。
+
+Style的[作者预印本](https://arxiv.org/html/2601.06469v1)和[代码](https://github.com/CMSL-HKUST/genopt)只作方法参考，项目未运行/复现。旧DDIM/custom_vjp等来源保留在整理前快照，不新增训练工作。不同版本、几何和边界条件不能省略。
+
+本次文件名/指纹/定位页在Windows `work/documentation_review_20261003/literature_ledger.json`，全目录身份索引仍在 `tmp/research_questions_20261003/index.json`；源PDF不改。正式副本在 `docs/history/review_20261003/review_20261003_literature.json`。页码和版本按本地文件及发行资料记录，网页抓取时间不等于发表时间。
+
+
+## 2026-10-04补查：成本与有限应变问题
+
+再次核对23篇原PDF的身份/哈希，不是全目录系统综述。补读Hu等几何非线性投影第1-4页、Thillaithevan等周期微结构非线性逆设计第4/5/7/8页、Scherz等条件数稳定化第1-4页；视觉复核各自第2/8/2页。定位/指纹在Windows `work/documentation_review_20261004/literature_ledger.json`，WSL副本在`docs/history/documentation_review_20261004/`。
+
+新增重点：[周期微结构目标非线性响应，2024](https://doi.org/10.1007/s00158-024-03761-7)，作者[研究记录](https://research.birmingham.ac.uk/en/publications/inverse-design-of-periodic-microstructures-with-targeted-nonlinea/)及本地正文。文中二维周期单胞、修正St. Venant-Kirchhoff超弹性、SIMP/软孔隙及AD支持路线的理论可行性；第8页讨论孔隙刚度影响复核、收敛失败时插入中间应变，不能直接认证三维TPMS或解决本项目已观测的线性方程成本。本地PDF元数据有2025年生成/更新日期，出版年仍按原论文2024年记录。
+
+Hu等能量过渡和Scherz等稳定化针对低刚度域的非线性问题，改变能量时需要独立验证。目前超时没有被归因于负J或畸变，因此不据此直接安装稳定化。Scherz论文的局部变形梯度条件数与全局切线矩阵条件数须分开。
+
+实际安装代码核查：PETSc 3.25.1，当前GMRES/GAMG；KSP对象每次建立，缩减矩阵没有显式弹性近零模态/块信息。这些是候选原因，尚无新性能实验。新增原始文档：[GAMG](https://petsc.org/release/manualpages/PC/PCGAMG/)、[近零模态](https://petsc.org/release/manualpages/Mat/MatSetNearNullSpace/)、[CG条件](https://petsc.org/release/manualpages/KSP/KSPCG/)、[性能分析](https://petsc.org/release/manual/profiling/)、[真实残差](https://petsc.org/release/manualpages/KSP/KSPMonitorTrueResidual/)。2026-10-04网页release为3.26；启用前核对本机接口，本次不升级环境。
+
+本次判断及其推理见综合报告第6节；这是用户薄壁纠正之前的判断，已被新主规划替换，不推导当前待办。扩散/GAN/INR仍是长期参考，训练没有启动。
+
+
+## 2026-10-04薄壁目标纠正后补查
+
+本次重读Qiu第11～13页（第12/13页视觉复核），明确薄壁一两层二值体素遗漏特征与壳的优势；它不认证当前光滑背景，也不能推出体素普遍不适用。重读Style期刊版第14～22页方法/案例，视觉复核第15页：2D超弹性为软/硬两相拉伸，2D塑性采用小应变J2，3D为软/硬两相拉伸/剪切；支持生成器与伴随连接，不证明薄壁孔隙大压缩。
+
+核对Thillaithevan原论文：实际是修正St. Venant-Kirchhoff模型，不是此前文档误写的Neo-Hookean，已更正活动报告/文献表述，历史原字节不改。补读Ogawa等静态超弹性伴随/AD，支持通用损失需专门伴随，而非复用线性K的驻值规则。
+
+原PDF身份和选页文本在`work/thin_tpms_feasibility_20261004/literature_reading.json`及同目录缓存；原PDF未改。官方[JAX-FEM超弹性](https://deepmodeling.github.io/jax-fem/learn/hyperelasticity/example.html)、[塑性](https://deepmodeling.github.io/jax-fem/learn/plasticity/example.html)示例是能力线索，不能代表项目已有有限应变塑性/接触认证。当前安装basis.py支持实体HEX8/HEX20/HEX27等，但本项目只维护已用HEX8，无壳单元；更高阶只是候选，不在本次自动实现。

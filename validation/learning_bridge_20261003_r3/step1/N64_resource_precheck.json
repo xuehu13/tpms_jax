@@ -1,0 +1,9 @@
+{
+  "host_available_MiB": 13746.734375,
+  "estimated_N64_peak_MiB": 12601.265625,
+  "host_headroom_MiB": 1145.46875,
+  "device_free_at_start_MiB": 7977,
+  "extra_stationary_workspace_MiB": 128,
+  "method": "Reuse observed N64 forward peak plus fixed-size chunk workspace; no extra adjoint matrix. Device checked again after construction and sampled during execution. Estimate is not a rigorous peak bound.",
+  "allowed": true
+}

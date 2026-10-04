@@ -1,0 +1,568 @@
+{
+  "stage": "round4_step1_completed",
+  "decision": "qualified_global_reference_usable_for_step2",
+  "no_targeted_new_solve_needed": true,
+  "reason": "Original definitions/hashes/completion and actual G48 constraints/topology pass; existing independent response and quality sensitivity sufficient for bounded global-stiffness screening",
+  "comparisons": [
+    {
+      "label": "c048",
+      "c": 0.48,
+      "lateral": "fixed",
+      "background_record": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c048_N64_analytic.json",
+      "K_background": 1.670837488128052,
+      "K_reference": 1.648851893444029,
+      "difference": 0.013333880848510163,
+      "background_grid_indicator": 0.003317774597900538,
+      "reference_G32_G48_indicator": 0.005760033148799325,
+      "vf_smooth": 0.31052074863793555,
+      "vf_binary_same_gauss": 0.30999755859375,
+      "vf_fitted_mesh": 0.3113819626394792,
+      "analytic_binary_volume_sampling": {
+        "c": 0.48,
+        "method": "replicated scrambled Sobol, direct analytic |G|<=c",
+        "power": 21,
+        "replicates": 8,
+        "samples_per_replicate": 2097152,
+        "fractions": [
+          0.3104672431945801,
+          0.31046438217163086,
+          0.3104429244995117,
+          0.31047868728637695,
+          0.3104057312011719,
+          0.31038808822631836,
+          0.3105301856994629,
+          0.3105659484863281
+        ],
+        "mean": 0.3104678988456726,
+        "replicate_std": 5.913766078990429e-05,
+        "standard_error_of_mean": 2.090832048402556e-05,
+        "deterministic_error_bound": false
+      }
+    },
+    {
+      "label": "baseline",
+      "c": 0.541062,
+      "lateral": "fixed",
+      "background_record": "/home/xuehu/projects/tpms_jax/validation/projection_effects_20261002/N64_beta40_emin4_fixed_c.json",
+      "K_background": 1.9764840370021242,
+      "K_reference": 1.952391161450546,
+      "difference": 0.012340188804008986,
+      "background_grid_indicator": 0.003689021327148743,
+      "reference_G32_G48_indicator": 0.006044370157091037,
+      "vf_smooth": 0.3505280532938994,
+      "vf_binary_same_gauss": 0.34992980957031244,
+      "vf_fitted_mesh": 0.35148289497700164,
+      "analytic_binary_volume_sampling": {
+        "c": 0.541062,
+        "method": "replicated scrambled Sobol, direct analytic |G|<=c",
+        "power": 21,
+        "replicates": 8,
+        "samples_per_replicate": 2097152,
+        "fractions": [
+          0.35045671463012695,
+          0.3504934310913086,
+          0.35048770904541016,
+          0.35050058364868164,
+          0.350405216217041,
+          0.35044288635253906,
+          0.3504652976989746,
+          0.350555419921875
+        ],
+        "mean": 0.35047590732574463,
+        "replicate_std": 4.463515281887194e-05,
+        "standard_error_of_mean": 1.5780909618761093e-05,
+        "deterministic_error_bound": false
+      }
+    },
+    {
+      "label": "c060",
+      "c": 0.6,
+      "lateral": "fixed",
+      "background_record": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c060_N64_analytic.json",
+      "K_background": 2.2957430604171267,
+      "K_reference": 2.2699069739112328,
+      "difference": 0.011382002347601195,
+      "background_grid_indicator": 0.0037133762009777895,
+      "reference_G32_G48_indicator": 0.006141565194843032,
+      "vf_smooth": 0.3893261277040227,
+      "vf_binary_same_gauss": 0.38952636718749994,
+      "vf_fitted_mesh": 0.39039905951767406,
+      "analytic_binary_volume_sampling": {
+        "c": 0.6,
+        "method": "replicated scrambled Sobol, direct analytic |G|<=c",
+        "power": 21,
+        "replicates": 8,
+        "samples_per_replicate": 2097152,
+        "fractions": [
+          0.38926124572753906,
+          0.3892178535461426,
+          0.38921165466308594,
+          0.38924694061279297,
+          0.38927698135375977,
+          0.389157772064209,
+          0.38921308517456055,
+          0.38922834396362305
+        ],
+        "mean": 0.3892267346382141,
+        "replicate_std": 3.659633659293922e-05,
+        "standard_error_of_mean": 1.2938758885726355e-05,
+        "deterministic_error_bound": false
+      }
+    },
+    {
+      "label": "baseline",
+      "c": 0.541062,
+      "lateral": "relaxed_free",
+      "background_record": "/home/xuehu/projects/tpms_jax/validation/near_term_20261003/step1/N64_relaxed_free.json",
+      "K_background": 1.5201780425567433,
+      "K_reference": 1.5014077872352554,
+      "difference": 0.012501770325870035,
+      "background_grid_indicator": 0.0037708225792964572,
+      "reference_G32_G48_indicator": 0.006142330340160454,
+      "vf_smooth": 0.3505280532938994,
+      "vf_binary_same_gauss": 0.34992980957031244,
+      "vf_fitted_mesh": 0.35148289497700164,
+      "analytic_binary_volume_sampling": {
+        "c": 0.541062,
+        "method": "replicated scrambled Sobol, direct analytic |G|<=c",
+        "power": 21,
+        "replicates": 8,
+        "samples_per_replicate": 2097152,
+        "fractions": [
+          0.35045671463012695,
+          0.3504934310913086,
+          0.35048770904541016,
+          0.35050058364868164,
+          0.350405216217041,
+          0.35044288635253906,
+          0.3504652976989746,
+          0.350555419921875
+        ],
+        "mean": 0.35047590732574463,
+        "replicate_std": 4.463515281887194e-05,
+        "standard_error_of_mean": 1.5780909618761093e-05,
+        "deterministic_error_bound": false
+      }
+    }
+  ],
+  "reference_packages": [
+    {
+      "label": "baseline",
+      "G": 24,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 67254,
+      "K_reaction": 1.9813273544906234,
+      "K_energy": 1.9813274569844053,
+      "mesh_volume": 0.35462710619322957,
+      "distorted_fraction": 0.16471882713295863,
+      "minimum_corner_mapping_detJ": 8.232702772899286e-11,
+      "periodic_error": 7.969868200265825e-39,
+      "checks_passed": true
+    },
+    {
+      "label": "baseline",
+      "G": 24,
+      "refinement": 0,
+      "lateral": "relaxed_free",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 67254,
+      "K_reaction": 1.524823472458649,
+      "K_energy": 1.5248235240034091,
+      "mesh_volume": 0.3546271061932296,
+      "distorted_fraction": 0.16471882713295863,
+      "minimum_corner_mapping_detJ": 8.232702772899286e-11,
+      "periodic_error": 3.4924596548080444e-10,
+      "checks_passed": true
+    },
+    {
+      "label": "baseline",
+      "G": 24,
+      "refinement": 1,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 538032,
+      "K_reaction": 1.9755339691534781,
+      "K_energy": 1.9755340482347024,
+      "mesh_volume": 0.35462710619322957,
+      "distorted_fraction": 0.20645240431795878,
+      "minimum_corner_mapping_detJ": 1.0290878466113776e-11,
+      "periodic_error": 7.950465821728784e-39,
+      "checks_passed": true
+    },
+    {
+      "label": "baseline",
+      "G": 24,
+      "refinement": 1,
+      "lateral": "relaxed_free",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 538032,
+      "K_reaction": 1.520683929786472,
+      "K_energy": 1.5206839404933419,
+      "mesh_volume": 0.35462710619322957,
+      "distorted_fraction": 0.20645240431795878,
+      "minimum_corner_mapping_detJ": 1.0290878466113776e-11,
+      "periodic_error": 3.4924596548080444e-10,
+      "checks_passed": true
+    },
+    {
+      "label": "baseline",
+      "G": 32,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 134110,
+      "K_reaction": 1.964192136321786,
+      "K_energy": 1.9641922849986968,
+      "mesh_volume": 0.3527285720725992,
+      "distorted_fraction": 0.15181567370069346,
+      "minimum_corner_mapping_detJ": 4.776127361489567e-16,
+      "periodic_error": 7.915870565241533e-39,
+      "checks_passed": true
+    },
+    {
+      "label": "baseline",
+      "G": 32,
+      "refinement": 0,
+      "lateral": "relaxed_free",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 134110,
+      "K_reaction": 1.5106299298397436,
+      "K_energy": 1.5106298762934591,
+      "mesh_volume": 0.3527285720725992,
+      "distorted_fraction": 0.15181567370069346,
+      "minimum_corner_mapping_detJ": 4.776127361489567e-16,
+      "periodic_error": 3.4924596548080444e-10,
+      "checks_passed": true
+    },
+    {
+      "label": "baseline",
+      "G": 48,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 388464,
+      "K_reaction": 1.952391161450546,
+      "K_energy": 1.9523912632975537,
+      "mesh_volume": 0.35148289497700164,
+      "distorted_fraction": 0.07371339429136291,
+      "minimum_corner_mapping_detJ": 3.4796179019880065e-16,
+      "periodic_error": 7.873408419175562e-39,
+      "checks_passed": true,
+      "actual_input_audit": {
+        "actual_INP_matches_mesh": true,
+        "material_and_small_strain": true,
+        "complete_XY_periodic_and_flat_load_constraints": true,
+        "fixed_or_zero_lateral_control_loading": true,
+        "no_duplicate_or_reused_eliminated_dofs": true,
+        "equations": 29640,
+        "boundary_rows": 4282
+      }
+    },
+    {
+      "label": "baseline",
+      "G": 48,
+      "refinement": 0,
+      "lateral": "relaxed_free",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002",
+      "c": 0.541062,
+      "elements": 388464,
+      "K_reaction": 1.5014077872352554,
+      "K_energy": 1.5014077451243726,
+      "mesh_volume": 0.35148289497700164,
+      "distorted_fraction": 0.07371339429136291,
+      "minimum_corner_mapping_detJ": 3.4796179019880065e-16,
+      "periodic_error": 3.4924596548080444e-10,
+      "checks_passed": true,
+      "actual_input_audit": {
+        "actual_INP_matches_mesh": true,
+        "material_and_small_strain": true,
+        "complete_XY_periodic_and_flat_load_constraints": true,
+        "fixed_or_zero_lateral_control_loading": true,
+        "no_duplicate_or_reused_eliminated_dofs": true,
+        "equations": 29640,
+        "boundary_rows": 4280
+      }
+    },
+    {
+      "label": "c048",
+      "G": 32,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c048/G32",
+      "c": 0.48,
+      "elements": 132953,
+      "K_reaction": 1.6583493350077272,
+      "K_energy": 1.6583492847632288,
+      "mesh_volume": 0.31248673439819813,
+      "distorted_fraction": 0.12461546561566869,
+      "minimum_corner_mapping_detJ": 1.3516314810425743e-14,
+      "periodic_error": 6.82532825226078e-39,
+      "checks_passed": true
+    },
+    {
+      "label": "c048",
+      "G": 48,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c048/G48",
+      "c": 0.48,
+      "elements": 355115,
+      "K_reaction": 1.648851893444029,
+      "K_energy": 1.6488518313457137,
+      "mesh_volume": 0.3113819626394792,
+      "distorted_fraction": 0.09692634780282444,
+      "minimum_corner_mapping_detJ": 5.254396853867291e-15,
+      "periodic_error": 6.790832487964496e-39,
+      "checks_passed": true,
+      "actual_input_audit": {
+        "actual_INP_matches_mesh": true,
+        "material_and_small_strain": true,
+        "complete_XY_periodic_and_flat_load_constraints": true,
+        "fixed_or_zero_lateral_control_loading": true,
+        "no_duplicate_or_reused_eliminated_dofs": true,
+        "equations": 26896,
+        "boundary_rows": 3882
+      }
+    },
+    {
+      "label": "c060",
+      "G": 32,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c060/G32",
+      "c": 0.6,
+      "elements": 146934,
+      "K_reaction": 2.2838477555777374,
+      "K_energy": 2.2838478182672466,
+      "mesh_volume": 0.39183698055164073,
+      "distorted_fraction": 0.07747015666898063,
+      "minimum_corner_mapping_detJ": 2.2289314866908618e-12,
+      "periodic_error": 9.019939612298413e-39,
+      "checks_passed": true
+    },
+    {
+      "label": "c060",
+      "G": 48,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c060/G48",
+      "c": 0.6,
+      "elements": 396884,
+      "K_reaction": 2.2699069739112328,
+      "K_energy": 2.269907082855272,
+      "mesh_volume": 0.39039905951767406,
+      "distorted_fraction": 0.08252537265296661,
+      "minimum_corner_mapping_detJ": 1.2153335153008327e-13,
+      "periodic_error": 8.973046560488247e-39,
+      "checks_passed": true,
+      "actual_input_audit": {
+        "actual_INP_matches_mesh": true,
+        "material_and_small_strain": true,
+        "complete_XY_periodic_and_flat_load_constraints": true,
+        "fixed_or_zero_lateral_control_loading": true,
+        "no_duplicate_or_reused_eliminated_dofs": true,
+        "equations": 31656,
+        "boundary_rows": 4570
+      }
+    },
+    {
+      "label": "relocated",
+      "G": 24,
+      "refinement": 0,
+      "lateral": "fixed",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002",
+      "c": 0.541062,
+      "elements": 67254,
+      "K_reaction": 1.9811979006498583,
+      "K_energy": 1.9811979449330832,
+      "mesh_volume": 0.3546271060890219,
+      "distorted_fraction": 0.1546525113747881,
+      "minimum_corner_mapping_detJ": 8.232702772899286e-11,
+      "periodic_error": 7.969292266596988e-39,
+      "checks_passed": true
+    },
+    {
+      "label": "relocated",
+      "G": 24,
+      "refinement": 0,
+      "lateral": "relaxed_free",
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mesh_quality_20261002",
+      "c": 0.541062,
+      "elements": 67254,
+      "K_reaction": 1.5247433787154416,
+      "K_energy": 1.5247433429469164,
+      "mesh_volume": 0.3546271060890219,
+      "distorted_fraction": 0.1546525113747881,
+      "minimum_corner_mapping_detJ": 8.232702772899286e-11,
+      "periodic_error": 2.6193447411060333e-10,
+      "checks_passed": true
+    }
+  ],
+  "raw_G48_mesh_audits": {
+    "289b4be171668b19539513f10fff6b6945ad1f112f3606191f518d87b7309bc4": {
+      "topology": {
+        "nodes": 98382,
+        "elements": 388464,
+        "volume": 0.35148289495878443,
+        "min_detJ": 3.4796179019880065e-16,
+        "mean_ratio_min": 7.987166235575487e-05,
+        "mean_ratio_p01": 0.03874810430045097,
+        "mean_ratio_median": 0.7281550166147837,
+        "connected_components": 3,
+        "periodic_connected_components": 1,
+        "boundary_triangles": 132000,
+        "periodic_cap_triangles": {
+          "0": 1856,
+          "1": 1856
+        },
+        "surface_G_residual_max": 0.008189864954796122,
+        "surface_G_residual_rms": 0.0019927441575299494
+      },
+      "midside_midpoint_error": 0.0,
+      "mapping": "straight-sided C3D10: constant positive geometric Jacobian, within floating precision"
+    },
+    "c6cd0c19d4af98d7e1df11860f1a1f0d38be53fda833a6fbf626d198390947c3": {
+      "topology": {
+        "nodes": 93314,
+        "elements": 355115,
+        "volume": 0.31138196265328205,
+        "min_detJ": 5.254396853867291e-15,
+        "mean_ratio_min": 0.0003370003770728329,
+        "mean_ratio_p01": 0.018320777516200645,
+        "mean_ratio_median": 0.7027833441258077,
+        "connected_components": 3,
+        "periodic_connected_components": 1,
+        "boundary_triangles": 132192,
+        "periodic_cap_triangles": {
+          "0": 1664,
+          "1": 1664
+        },
+        "surface_G_residual_max": 0.00786761903526001,
+        "surface_G_residual_rms": 0.0018638824090629479
+      },
+      "midside_midpoint_error": 0.0,
+      "mapping": "straight-sided C3D10: constant positive geometric Jacobian, within floating precision"
+    },
+    "be3525ec10f7065228f8b2aa6e47e04db421ba60f7cc1183b12bcfac8d426a3b": {
+      "topology": {
+        "nodes": 99428,
+        "elements": 396884,
+        "volume": 0.39039905956752124,
+        "min_detJ": 1.2153335153008327e-13,
+        "mean_ratio_min": 0.0007301953682196972,
+        "mean_ratio_p01": 0.0444873051428122,
+        "mean_ratio_median": 0.7364097158526639,
+        "connected_components": 3,
+        "periodic_connected_components": 1,
+        "boundary_triangles": 130560,
+        "periodic_cap_triangles": {
+          "0": 2000,
+          "1": 2000
+        },
+        "surface_G_residual_max": 0.008194243073339824,
+        "surface_G_residual_rms": 0.002126997501925451
+      },
+      "midside_midpoint_error": 0.0,
+      "mapping": "straight-sided C3D10: constant positive geometric Jacobian, within floating precision"
+    }
+  },
+  "quality_energy_volume_evidence": {
+    "fixed": {
+      "Abaqus_distorted": {
+        "elements": 28635,
+        "element_fraction": 0.07371339429136291,
+        "volume_fraction": 0.009699737011807145,
+        "energy_fraction": 0.011731272246348233
+      },
+      "low_quality": {
+        "0.05": {
+          "elements": 4773,
+          "element_fraction": 0.01228685283578401,
+          "volume_fraction": 4.416225704660791e-05,
+          "energy_fraction": 5.989636802062899e-05
+        },
+        "0.1": {
+          "elements": 9218,
+          "element_fraction": 0.02372935458626797,
+          "volume_fraction": 0.0002865972545921622,
+          "energy_fraction": 0.0003841386422344261
+        },
+        "0.2": {
+          "elements": 20363,
+          "element_fraction": 0.05241927179867375,
+          "volume_fraction": 0.00215601851793818,
+          "energy_fraction": 0.0027699926169031924
+        }
+      },
+      "local_stress_convergence_claim": false
+    },
+    "relaxed_free": {
+      "Abaqus_distorted": {
+        "elements": 28635,
+        "element_fraction": 0.07371339429136291,
+        "volume_fraction": 0.009699737011807145,
+        "energy_fraction": 0.012338995602132972
+      },
+      "low_quality": {
+        "0.05": {
+          "elements": 4773,
+          "element_fraction": 0.01228685283578401,
+          "volume_fraction": 4.416225704660791e-05,
+          "energy_fraction": 7.046687719799618e-05
+        },
+        "0.1": {
+          "elements": 9218,
+          "element_fraction": 0.02372935458626797,
+          "volume_fraction": 0.0002865972545921622,
+          "energy_fraction": 0.0004283123139733084
+        },
+        "0.2": {
+          "elements": 20363,
+          "element_fraction": 0.05241927179867375,
+          "volume_fraction": 0.00215601851793818,
+          "energy_fraction": 0.0030026074797565253
+        }
+      },
+      "local_stress_convergence_claim": false
+    }
+  },
+  "reference_sensitivities": {
+    "fixed": {
+      "fixed_geometry_FE_refinement": 0.0029325668035096973,
+      "G24_quality_relocation": 6.533692702097471e-05,
+      "quality_scope": "G24 sensitivity, not a direct G48 repaired-mesh bound"
+    },
+    "relaxed_free": {
+      "fixed_geometry_FE_refinement": 0.0027221584913823104,
+      "G24_quality_relocation": 5.2526567602040135e-05,
+      "quality_scope": "G24 sensitivity, not a direct G48 repaired-mesh bound"
+    }
+  },
+  "limitations": [
+    "No rigorous true-error bound",
+    "No local stress certification",
+    "G32-to-G48 varies geometric boundary and FE mesh together",
+    "Quality repair performed only at G24; tiny positive G48 Jacobians remain",
+    "Two off-baseline anchors lack their own fixed-geometry refinement/quality repair",
+    "Independent fitted-solid reference is an approximation of the analytic domain",
+    "No validation of other families, thin walls, large strain or old shell/platen problem"
+  ],
+  "operations": {
+    "new_FEM_solves": 0,
+    "new_Abaqus_jobs": 0,
+    "new_ODB_extractions": 0,
+    "new_training_or_gradient_solves": 0,
+    "numerical_source_changes": 0,
+    "mesh_and_stored_result_audit": true
+  },
+  "elapsed_s": 50.90641122404486
+}

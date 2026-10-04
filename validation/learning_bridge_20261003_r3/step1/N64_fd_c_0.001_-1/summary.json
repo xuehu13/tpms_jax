@@ -1,0 +1,45 @@
+{
+  "N": 64,
+  "case": "fd_c_0.001_-1",
+  "K": 1.9769104737798215,
+  "Vf": 0.3505743799516457,
+  "baseline_checks": {
+    "values": [
+      1.9769104737798215,
+      0.3505743799516457,
+      0.026134304116920536
+    ],
+    "Fz_top": -0.01976910473779757,
+    "Fz_bottom": 0.019769104737797073,
+    "U_internal": 9.884552368899066e-05,
+    "red_res": 4.316141086029013e-17,
+    "balance": -4.961309141293668e-16,
+    "reaction_consistency_err": 6.487865800153259e-16,
+    "work_identity_err": 0.0,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-8": true,
+      "balance<=1e-8": true,
+      "reaction<=1e-6": true,
+      "work_identity<=1e-8": true,
+      "periodic": true,
+      "loaded_face": true,
+      "K_reaction": true
+    },
+    "status": "ok"
+  },
+  "phases": {
+    "built_rss_MiB": 3718.60546875,
+    "solve_seconds": 93.22695881902473,
+    "post_value_rss_MiB": 7468.65234375,
+    "post_value_peak_MiB": 12428.5625
+  },
+  "forward_count": 1,
+  "general_adjoint_count": 0,
+  "start_host_available_MiB": 13476.78515625,
+  "passed": true,
+  "total_seconds": 97.11918511800468,
+  "peak_host_rss_MiB": 12428.5625,
+  "sampled_host_available_min_MiB": 2053.8359375,
+  "sampled_device_peak_MiB": 5066
+}

@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-04",
+  "stage": "round4_step2_inputs_locked_before_mechanics",
+  "cases": [
+    {
+      "label": "thin_gyroid",
+      "family": "gyroid",
+      "c": 0.25
+    },
+    {
+      "label": "primitive",
+      "family": "primitive",
+      "c": 0.6
+    }
+  ],
+  "material": {
+    "E_s": 10.0,
+    "nu": 0.3,
+    "emin_ratio": 0.0001,
+    "interpolation_power": 1
+  },
+  "loading": {
+    "L": 1.0,
+    "eps_z": -0.01,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "lateral": "fixed",
+    "flat_axial_faces": true
+  },
+  "background": {
+    "N": [
+      48,
+      64
+    ],
+    "beta": 40,
+    "input": "direct analytic at physical Gauss points",
+    "solver": "PETSc CG/GAMG"
+  },
+  "reference": {
+    "G": [
+      32,
+      48
+    ],
+    "element": "C3D10",
+    "void": "absent",
+    "fe_refinement": 0,
+    "surface": "piecewise-planar approximation of the same signed thresholds"
+  },
+  "budget": {
+    "base_background_solves": 4,
+    "base_Abaqus_analyses": 4,
+    "datachecks": 4,
+    "conditional_extra_background_solves_max": 1,
+    "conditional": "If reference valid but global stiffness precision fails, one N64 Emin/Es=1e-5 test on the first failing case to distinguish soft-void contribution",
+    "no_N96_or_parameter_sweep": true,
+    "time_limit_each_forward_s": 1200,
+    "time_limit_each_geometry_or_Abaqus_s": 1800,
+    "Abaqus_cpus": 2,
+    "Abaqus_memory": "8gb"
+  },
+  "criteria": {
+    "background_vs_reference_K_relative": 0.02,
+    "background_grid_relative": 0.01,
+    "reference_G32_G48_relative": 0.01,
+    "mode_check": "aligned translation, representative displacement/warp comparison; normalized RMS and correlation are diagnostics, visible incompatible modes prevent acceptance",
+    "reference_quality": "positive mapping and valid topology mandatory; report distortion energy/volume shares; no rigorous/local-stress claim"
+  },
+  "stop": "Invalid fine reference stops that geometry before mechanics; failed global precision is a reported limit, not a reason to fit c/beta/material",
+  "precheck_sha256": "d9b2be1ca89fc0989edb4585bf138a0bb7b77dbee7cb5070fc0248ed1c48dcb1",
+  "source_sha256": {
+    "binary_gyroid.py": "0ab36f204780d873b1993ce43d90aff05331ed49eef2cc5d5a5f9f4cf618a7ef",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "voxel_field.py": "2c32e630b043956ec6cf5b60877c4ea464dcca4de633e93c2e8244daba22cbe3",
+    "design_fem.py": "205cad66542a42cfaf3d9ba17f2db3da0d5c08781be26574ff8ad727afc17825",
+    "volume.py": "31540f866b297615f9fd1a3ae038bd2e2303c258b898dc3e73312ab68e97119d",
+    "geometry.py": "144d9ba017d5fc230cbcca0c91504a9106e5249b8b52511dd5edcf148b14028c",
+    "scripts/estimate_binary_volume.py": "eee2d15e1078d19eaa36a0d9a6359a77639eaff2911e4434a3b20bdeab1d9aef",
+    "scripts/m1_volume.py": "b3881505fb5f2b01c75392e9e2606eda22e37d0a4356edd2559d63d67619bf5a",
+    "scripts/capture_abaqus_binary.py": "524365b6391186e6a8bcb07f904787ca84e105c7d4780f9ce15de63d11d2175e",
+    "scripts/plot_abaqus_binary.py": "9aedcab16c22e4e1fb54942c981685f4e8af52a72edf069160bae643e4b8910f",
+    "scripts/prepare_abaqus_discrete.py": "06498713451d4587d5b8c993209ddd5b3d61e83f2c48d4d07f2e74ef76ec9c35",
+    "scripts/capture_m4_evidence.py": "b7fddd19fcdc3c310a5f41bb04d2c9997c52cc2d2edf9e6c6c31bdd7cc108d9f",
+    "scripts/m2_linear_cube.py": "eeacc3b2d95ed2ff8a551b721fe5ae148e9a7339b5b87e4849af9b7bac693b71",
+    "scripts/prepare_uniform_baseline.py": "865d162dab3c847282de97d02a314ffba983964014a83ac45426d666416ddeab",
+    "scripts/abaqus_element_comparison.py": "863677defd52b89eb239c4862bc0397e85782b07676f2214d6d3deb41c2890dd",
+    "scripts/m3_gyroid_first.py": "8f06a96bca6f7715784f6b79a896520cb211186e140c3c910154d2b12e4e074c",
+    "scripts/prepare_abaqus_binary.py": "0fd3e86c40854f226439dfe358adbcedee49e0e2b3db1e45471ee9a6a0c8dd97",
+    "scripts/m2_xy_periodic_cube.py": "c005890e2726cfb05f89ae8aa0d122d050038c184b0af5753f166fc414bb80d7",
+    "scripts/extract_abaqus_binary.py": "5838cc631cd94c6be74c4b16cfc07b11d26bbe77d75104f0b3880cf82038bbd5",
+    "scripts/prepare_binary_lateral_pair.py": "5ed44b9742c8498ef471d575f57bd027c9a37041101cef418b9492641f246df4",
+    "scripts/m3_lateral_relaxation.py": "411ff58d0c3edd30e7f7a1d3f4c54fb16197edc46ca37ece9f06833da36bd98c",
+    "scripts/check_design_gradients.py": "c1144a9b26c133d8b1b8e2c5fd1cebd7aff80ae000d8ce9e8c464f4feb3b0771",
+    "scripts/capture_binary_projection_reference.py": "f5960b7fd4ce561c5fdf0cb169b5802bef2388911fb7175a7de6790545da5bcb",
+    "scripts/extract_abaqus_discrete.py": "f65e2568905f24608230f659a165449d6cf6374903aeee7c799c3081f07e02a4",
+    "scripts/m4_numerical_study.py": "6fb59f67991a7c0792f3b8c6b3e61b604c94f3328938f33125fba76b78e66235",
+    "scripts/abaqus_mesh_quality.py": "eb0d32f9d0f4f03a52655d82022f61b246a315ac38c947aa73282334b748dcaf",
+    "scripts/capture_abaqus_comparison.py": "314af8676010efa7294a108ccec226e8d223b59c0aba5aade586ac60bcd17c1c",
+    "scripts/extract_uniform_baseline.py": "d6e2b14ac9fe24cf9f6599ae2e7242e8803037a6861019025fe7bb4434b38762",
+    "scripts/m2_periodic_cube.py": "b98102cf50ba6c82ad3c5b777dfce00282d0320e7215d3bc97ac9537da03d7aa",
+    "scripts/run_abaqus_binary.ps1": "fd438e3dec1b8e4e375b87af5400c5b810d594cd0a5e0e33892e83a383852886",
+    "scripts/run_abaqus_discrete.ps1": "90e78e426328e3d97d220d4c44cf1da5f218b695d4dbc2a4a09d01e110204ff5"
+  }
+}

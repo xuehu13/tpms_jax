@@ -1,0 +1,22 @@
+{
+  "all_four_questions_closed": true,
+  "not_all_capabilities_passed": true,
+  "step1_fixed_passed": true,
+  "step1_macro_free_passed": true,
+  "step2_M64_array_passed": false,
+  "step2_M32_not_run": true,
+  "step3_full_chain_passed_as_diagnostic_only": true,
+  "new_high_resolution_cases": 4,
+  "high_resolution_macro_solves": 10,
+  "small_forward_solves": 9,
+  "small_scalar_adjoint_solves": 1,
+  "research_linear_solves_total": 20,
+  "new_Abaqus_jobs": 0,
+  "regression_tests_passed": 127,
+  "regression_seconds": 87.63,
+  "innovation_proven": false,
+  "training_ready": false,
+  "capability_domain": "One Gyroid, linear global axial response, fixed definitions and recorded working targets",
+  "preferred_next_question": "Choose a TPMS geometry representation that preserves physical response and remains differentiable",
+  "next_round_started": false
+}

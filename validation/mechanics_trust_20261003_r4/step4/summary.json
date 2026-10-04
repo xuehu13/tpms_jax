@@ -1,0 +1,428 @@
+{
+  "stage": "step4_resource_boundary",
+  "cases": [
+    {
+      "tag": "N16_d005",
+      "N": 16,
+      "status": "ok",
+      "kind": "JAX_resource_preflight",
+      "stored_states": 12,
+      "last_completed_compression": 0.05,
+      "record": {
+        "kind": "JAX_resource_preflight",
+        "tag": "N16_d005",
+        "N": 16,
+        "increment": 0.005,
+        "exit_code": 0,
+        "resource_stop": null,
+        "wall_seconds": 37.33768004499143,
+        "peak_sampled_host_RSS_GiB": 1.4176025390625,
+        "peak_device_total_used_GiB": 0.615234375,
+        "command": [
+          "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+          "/home/xuehu/projects/tpms_jax/scripts/finite_strain_gyroid.py",
+          "--N",
+          "16",
+          "--increment",
+          "0.005",
+          "--limit",
+          ".05",
+          "--out",
+          "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N16_d005.json"
+        ],
+        "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N16_d005.log",
+        "status": "ok",
+        "last_completed_compression": 0.05,
+        "failure": null,
+        "saved_equilibrium_states": 12,
+        "last_attempted_compression": 0.05
+      },
+      "last_response": {
+        "Fz_top": -0.10613186201374335,
+        "energy": 0.002644920692993827,
+        "J_min": 0.6293717329525443,
+        "detF_by_occupancy": {
+          "all_min": 0.6293717329525443,
+          "all_max": 1.0917151921828017,
+          "finite": true,
+          "solid": {
+            "points": 9728,
+            "min": 0.9476487559549354,
+            "p01": 0.9567150399425207,
+            "max": 1.008015662415922
+          },
+          "void": {
+            "points": 19872,
+            "min": 0.6293717329525443,
+            "p01": 0.7614009668044397,
+            "max": 1.0917151921828017
+          },
+          "transition": {
+            "points": 3168,
+            "min": 0.9300960557836875,
+            "p01": 0.9402340290436048,
+            "max": 1.0103087048387243
+          }
+        },
+        "pure_void_energy_fraction": 0.00819341916550587,
+        "energy_uniform_floor": 4.527568347126816e-06,
+        "energy_projected_material": 0.0026403931246467005
+      },
+      "maximum_completed_state_seconds": 3.387696851976216,
+      "maximum_reduced_residual_l2": 1.6733799038545715e-14,
+      "maximum_balance_error": 2.3342439092743916e-13,
+      "maximum_reaction_Piola_error": 1.327549181695531e-13,
+      "maximum_void_energy_fraction": 0.00819341916550587,
+      "all_completed_checks_pass": true,
+      "work": {
+        "path_trapezoid": 0.0026450033314235175,
+        "stored_energy": 0.002644920692993827,
+        "relative_gap": 3.124419946098935e-05,
+        "uses_half_Fu": false,
+        "checked_interval_end": 0.05
+      },
+      "runtime": {
+        "build_seconds": 2.402039519045502,
+        "path_seconds": 31.45899733196711,
+        "wall_seconds": 33.86103718000231,
+        "peak_host_RSS_MiB": 1462.87109375,
+        "devices": [
+          "cuda:0"
+        ]
+      },
+      "Newton_profile": [
+        {
+          "count": 2,
+          "wall_seconds": 3.029,
+          "linear_seconds": 0.932,
+          "linear_percent": 30.8
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.455,
+          "linear_seconds": 1.719,
+          "linear_percent": 70.0
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.203,
+          "linear_seconds": 1.489,
+          "linear_percent": 67.6
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.143,
+          "linear_seconds": 1.431,
+          "linear_percent": 66.8
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.473,
+          "linear_seconds": 1.754,
+          "linear_percent": 70.9
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.133,
+          "linear_seconds": 1.423,
+          "linear_percent": 66.7
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.463,
+          "linear_seconds": 1.772,
+          "linear_percent": 71.9
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.412,
+          "linear_seconds": 1.698,
+          "linear_percent": 70.4
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.539,
+          "linear_seconds": 1.821,
+          "linear_percent": 71.7
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.185,
+          "linear_seconds": 1.476,
+          "linear_percent": 67.5
+        },
+        {
+          "count": 3,
+          "wall_seconds": 2.414,
+          "linear_seconds": 1.702,
+          "linear_percent": 70.5
+        }
+      ],
+      "failure": null
+    },
+    {
+      "tag": "N32_d005",
+      "N": 32,
+      "status": "ok",
+      "kind": "JAX_resource_preflight",
+      "stored_states": 12,
+      "last_completed_compression": 0.05,
+      "record": {
+        "kind": "JAX_resource_preflight",
+        "tag": "N32_d005",
+        "N": 32,
+        "increment": 0.005,
+        "exit_code": 0,
+        "resource_stop": null,
+        "wall_seconds": 859.7462907630252,
+        "peak_sampled_host_RSS_GiB": 2.635051727294922,
+        "peak_device_total_used_GiB": 1.396484375,
+        "command": [
+          "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+          "/home/xuehu/projects/tpms_jax/scripts/finite_strain_gyroid.py",
+          "--N",
+          "32",
+          "--increment",
+          "0.005",
+          "--limit",
+          ".05",
+          "--out",
+          "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N32_d005.json"
+        ],
+        "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N32_d005.log",
+        "status": "ok",
+        "last_completed_compression": 0.05,
+        "failure": null,
+        "saved_equilibrium_states": 12,
+        "last_attempted_compression": 0.05
+      },
+      "last_response": {
+        "Fz_top": -0.10082044736125023,
+        "energy": 0.0025159896782545985,
+        "J_min": 0.7268845952971084,
+        "detF_by_occupancy": {
+          "all_min": 0.7268845952971084,
+          "all_max": 1.0518424480428163,
+          "finite": true,
+          "solid": {
+            "points": 79264,
+            "min": 0.9368407333444009,
+            "p01": 0.9614624738337233,
+            "max": 1.0071292418281415
+          },
+          "void": {
+            "points": 157056,
+            "min": 0.7268845952971084,
+            "p01": 0.8358423275935097,
+            "max": 1.0518424480428163
+          },
+          "transition": {
+            "points": 25824,
+            "min": 0.8756913164418465,
+            "p01": 0.9252515797250488,
+            "max": 1.0211322211543112
+          }
+        },
+        "pure_void_energy_fraction": 0.005861515980381343,
+        "energy_uniform_floor": 3.253116206241511e-06,
+        "energy_projected_material": 0.0025127365620483564
+      },
+      "maximum_completed_state_seconds": 106.5351053950144,
+      "maximum_reduced_residual_l2": 9.558926768142404e-15,
+      "maximum_balance_error": 5.931886926102692e-15,
+      "maximum_reaction_Piola_error": 1.0037706343196673e-14,
+      "maximum_void_energy_fraction": 0.005861515980381343,
+      "all_completed_checks_pass": true,
+      "work": {
+        "path_trapezoid": 0.002516033960643995,
+        "stored_energy": 0.0025159896782545985,
+        "relative_gap": 1.760038595513389e-05,
+        "uses_half_Fu": false,
+        "checked_interval_end": 0.05
+      },
+      "runtime": {
+        "build_seconds": 2.0257123589981347,
+        "path_seconds": 855.6903134650202,
+        "wall_seconds": 857.7160261350218,
+        "peak_host_RSS_MiB": 2768.0703125,
+        "devices": [
+          "cuda:0"
+        ]
+      },
+      "Newton_profile": [
+        {
+          "count": 2,
+          "wall_seconds": 42.011,
+          "linear_seconds": 35.728,
+          "linear_percent": 85.0
+        },
+        {
+          "count": 3,
+          "wall_seconds": 68.192,
+          "linear_seconds": 63.442,
+          "linear_percent": 93.0
+        },
+        {
+          "count": 3,
+          "wall_seconds": 80.194,
+          "linear_seconds": 75.494,
+          "linear_percent": 94.1
+        },
+        {
+          "count": 3,
+          "wall_seconds": 106.403,
+          "linear_seconds": 101.596,
+          "linear_percent": 95.5
+        },
+        {
+          "count": 3,
+          "wall_seconds": 86.943,
+          "linear_seconds": 82.173,
+          "linear_percent": 94.5
+        },
+        {
+          "count": 3,
+          "wall_seconds": 86.074,
+          "linear_seconds": 81.475,
+          "linear_percent": 94.7
+        },
+        {
+          "count": 3,
+          "wall_seconds": 83.022,
+          "linear_seconds": 78.326,
+          "linear_percent": 94.3
+        },
+        {
+          "count": 3,
+          "wall_seconds": 68.021,
+          "linear_seconds": 63.385,
+          "linear_percent": 93.2
+        },
+        {
+          "count": 3,
+          "wall_seconds": 72.224,
+          "linear_seconds": 67.572,
+          "linear_percent": 93.6
+        },
+        {
+          "count": 3,
+          "wall_seconds": 67.441,
+          "linear_seconds": 62.667,
+          "linear_percent": 92.9
+        },
+        {
+          "count": 3,
+          "wall_seconds": 83.911,
+          "linear_seconds": 79.174,
+          "linear_percent": 94.4
+        }
+      ],
+      "failure": null
+    },
+    {
+      "tag": "N48_d005",
+      "N": 48,
+      "status": "resource_stopped",
+      "kind": "JAX_precision_path",
+      "stored_states": 2,
+      "last_completed_compression": 0.0001,
+      "record": {
+        "kind": "JAX_precision_path",
+        "tag": "N48_d005",
+        "N": 48,
+        "increment": 0.005,
+        "exit_code": 15,
+        "resource_stop": "state_timeout",
+        "wall_seconds": 618.8282176249777,
+        "peak_sampled_host_RSS_GiB": 5.534343719482422,
+        "peak_device_total_used_GiB": 2.5703125,
+        "command": [
+          "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+          "/home/xuehu/projects/tpms_jax/scripts/finite_strain_gyroid.py",
+          "--N",
+          "48",
+          "--increment",
+          "0.005",
+          "--limit",
+          ".05",
+          "--out",
+          "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N48_d005.json"
+        ],
+        "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step4/N48_d005.log",
+        "status": "resource_stopped",
+        "saved_equilibrium_states": 2,
+        "last_completed_compression": 0.0001,
+        "last_attempted_compression": 0.005
+      },
+      "last_response": {
+        "Fz_top": -0.00019838092827231617,
+        "energy": 9.918989839614051e-09,
+        "J_min": 0.9994194134837932,
+        "detF_by_occupancy": {
+          "all_min": 0.9994194134837932,
+          "all_max": 1.0000651384319847,
+          "finite": true,
+          "solid": {
+            "points": 267616,
+            "min": 0.9998720258305309,
+            "p01": 0.9999285033870199,
+            "max": 1.0000157272233294
+          },
+          "void": {
+            "points": 531264,
+            "min": 0.9994194134837932,
+            "p01": 0.9997300910897334,
+            "max": 1.0000651384319847
+          },
+          "transition": {
+            "points": 85856,
+            "min": 0.9997159795725999,
+            "p01": 0.999864292367014,
+            "max": 1.0000325626025286
+          }
+        },
+        "pure_void_energy_fraction": 0.005594496679149197,
+        "energy_uniform_floor": 1.1795292983237228e-11,
+        "energy_projected_material": 9.907194546630816e-09
+      },
+      "maximum_completed_state_seconds": 297.82524758100044,
+      "maximum_reduced_residual_l2": 5.811979702142552e-15,
+      "maximum_balance_error": 3.3079469068456047e-14,
+      "maximum_reaction_Piola_error": 4.9851507470666245e-14,
+      "maximum_void_energy_fraction": 0.005594496679149197,
+      "all_completed_checks_pass": true,
+      "work": {
+        "path_trapezoid": 9.919046413609134e-09,
+        "stored_energy": 9.918989839614051e-09,
+        "relative_gap": 5.703604499781749e-06,
+        "uses_half_Fu": false,
+        "checked_interval_end": 0.0001,
+        "partial_path_only": true
+      },
+      "runtime": null,
+      "Newton_profile": [
+        {
+          "count": 2,
+          "wall_seconds": 297.346,
+          "linear_seconds": 280.586,
+          "linear_percent": 94.4
+        }
+      ],
+      "failure": null
+    }
+  ],
+  "budget_counts": {
+    "JAX_paths_attempted": 3,
+    "saved_equilibrium_states": 26,
+    "preflight_paths": 2,
+    "failure_diagnostic_paths": 0,
+    "precision_paths_attempted": 1,
+    "Abaqus_analyses": 0,
+    "datachecks": 0,
+    "training": 0,
+    "design_gradient": 0
+  },
+  "TPMS_finite_strain_verified_interval": null,
+  "important": "A successful coarse continuation is implementation/feasibility evidence only; no independent nonlinear reference or mesh convergence yet",
+  "research_decision": "Identify and resolve measured numerical/resource bottleneck in a separately bounded next stage before extending compression or training"
+}

@@ -1,0 +1,17 @@
+{
+  "source_inputs": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step3/N32/inputs.npz",
+  "sha256": "bebd2630d610eb6b4412e145169bd0a7024f2f0ba9d1d83ea46f9eba8e62d663",
+  "directions": [
+    "c",
+    "spatial"
+  ],
+  "steps": [
+    0.001,
+    0.0005
+  ],
+  "max_remaining_forward": 8,
+  "nonzero_relative_tolerance": 0.001,
+  "near_zero_AD": 1e-08,
+  "near_zero_absolute_tolerance_scale": 1e-07,
+  "locked_before_FD": true
+}

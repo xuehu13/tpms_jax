@@ -1,0 +1,9 @@
+{
+  "max_large_forward": 10,
+  "max_small_forward": 9,
+  "max_adjoint": 3,
+  "max_abaqus": 4,
+  "jax_seconds": 5400,
+  "case_seconds": 1200,
+  "abaqus_case_seconds": 1800
+}

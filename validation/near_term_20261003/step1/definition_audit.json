@@ -1,0 +1,325 @@
+{
+  "source_agreement_with_reused_N64_fixed": {
+    "scripts/capture_binary_projection_reference.py": true,
+    "scripts/m4_numerical_study.py": true,
+    "fem.py": true,
+    "density_fem.py": true,
+    "geometry.py": true,
+    "pbc.py": true
+  },
+  "reused_N64_fixed": "/home/xuehu/projects/tpms_jax/validation/projection_effects_20261002/N64_beta40_emin4_fixed_c.json",
+  "reused_result_sha256": "80e477039200c14ee3dfe75e7c727f1fc16d9954245cb70ce2b1d48c0857d2ea",
+  "installed_jax_fem_sha256": {
+    "solver.py": "25f967772090fbbe3d37050a67712ca18449b7f9f65a31aeb6a3afce661d39c7",
+    "problem.py": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2",
+    "fe.py": "2d05679123b3fe10e483b37c218a2e9008c40e8118e9e1a1f97d1817003e2032"
+  },
+  "references": {
+    "fixed": {
+      "case": "binary_gyroid_G48_R0_C3D10_fixed",
+      "definition": {
+        "case": "binary_gyroid_G48_R0_C3D10_fixed",
+        "model": "binary_sheet_gyroid",
+        "geometry_N": 48,
+        "fe_refinement": 0,
+        "c": 0.541062,
+        "E_s": 10.0,
+        "nu": 0.3,
+        "gross_volume": 1.0,
+        "lateral": "fixed",
+        "geometry": {
+          "nodes": 98382,
+          "elements": 388464,
+          "volume": 0.35148289495878443,
+          "min_detJ": 3.4796179019880065e-16,
+          "mean_ratio_min": 7.987166235575487e-05,
+          "mean_ratio_p01": 0.03874810430045097,
+          "mean_ratio_median": 0.7281550166147837,
+          "connected_components": 3,
+          "periodic_connected_components": 1,
+          "boundary_triangles": 132000,
+          "periodic_cap_triangles": {
+            "0": 1856,
+            "1": 1856
+          },
+          "surface_G_residual_max": 0.008189864954796122,
+          "surface_G_residual_rms": 0.0019927441575299494
+        },
+        "meshing": {
+          "gmsh_version": "4.15.2",
+          "warnings": [
+            "Warning: 299 ill-shaped tets are still in the mesh",
+            "Warning: 240 ill-shaped tets are still in the mesh"
+          ],
+          "refinement": 0,
+          "identical_tetrahedra_removed": 1
+        },
+        "nodes": 651229,
+        "elements": 388464,
+        "controls": [
+          651230,
+          651231,
+          651232
+        ],
+        "equations": 29640,
+        "periodic_pairs": 8511,
+        "input_sha256": "82a7d040a38a57830c8cc727d52f442d66bd469d6a19705d86e1d7d1949f423b",
+        "mesh_sha256": "289b4be171668b19539513f10fff6b6945ad1f112f3606191f518d87b7309bc4",
+        "relative_tolerance": 1e-06,
+        "displacement_tolerance": 1e-08,
+        "convergence_claim": false
+      },
+      "acceptance": {
+        "case": "binary_gyroid_G48_R0_C3D10_fixed",
+        "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G48_R0_C3D10_fixed.odb",
+        "measured": {
+          "volume_solid": 0.35148289497700164,
+          "gross_volume": 1.0,
+          "sigma_gross": [
+            -0.00787426447208915,
+            -0.006807899998158609,
+            -0.0195239115835804,
+            -9.389634844018626e-07,
+            9.233656998705166e-14,
+            -2.323232305465447e-13
+          ],
+          "sigma_solid_average": [
+            -0.022402980584885594,
+            -0.019369079108683414,
+            -0.055547259518440854,
+            -2.671434365144003e-06,
+            2.627057285194304e-13,
+            -6.609801895530255e-13
+          ],
+          "macro_displacements": [
+            7.873408419175562e-39,
+            6.807851257813721e-39,
+            -0.009999999776482582
+          ],
+          "macro_RF": [
+            -0.007874264381825924,
+            -0.006807900033891201,
+            -0.01952391117811203
+          ],
+          "bottom_RFz": 0.019523911571670535,
+          "ALLSE": 9.76195588009432e-05,
+          "IP_energy": 9.761955792113182e-05,
+          "macro_energy": 9.761955573593485e-05,
+          "control_work": 9.761955370859304e-05,
+          "integration_points": 1553856,
+          "max_periodic_error": 7.873408419175562e-39,
+          "max_loaded_face_error": 3.170017385995601e-41,
+          "max_coordinate_error": 2.980224433901668e-08,
+          "max_analytic_affine_error": null
+        },
+        "checks": {
+          "positive_volume": true,
+          "mesh_volume": true,
+          "ODB_coordinates": true,
+          "energy_IP_vs_ALLSE": true,
+          "energy_work_vs_ALLSE": true,
+          "energy_macro_vs_ALLSE": true,
+          "control_RF_vs_gross_stress": true,
+          "top_bottom_balance": true,
+          "periodic_displacement": true,
+          "loaded_face_displacement": true,
+          "fixed_lateral_strain": true,
+          "finite_outputs": true
+        },
+        "status": "ok",
+        "convergence_claim": false,
+        "input_sha256": "82a7d040a38a57830c8cc727d52f442d66bd469d6a19705d86e1d7d1949f423b"
+      },
+      "diagnostics": {
+        "case": "binary_gyroid_G48_R0_C3D10_fixed",
+        "errors": 0,
+        "warning_messages": 2,
+        "distorted_elements": 28635,
+        "quality_warning": true,
+        "out_of_core_solver": true,
+        "convergence_claim": false,
+        "warning_text": [
+          " ***WARNING: 28635 elements are distorted. Either the isoparametric angles are ",
+          " ***WARNING: THE MEMORY LIMIT IS INSUFFICENT TO RUN THE PURE THREAD-BASED "
+        ]
+      },
+      "completion": {
+        "sta": {
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_fixed.sta",
+          "sha256": "ba0e9b13aa196b8e21f58a3af1f0a5d8637272eec4243db13febc18ba981b887",
+          "success_phrase": true
+        },
+        "dat": {
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_fixed.dat",
+          "sha256": "37d6d31a2b3d91ff3ad0e086db4256e23bb895987df07af3fd97cf2677e70784",
+          "success_phrase": false
+        },
+        "msg": {
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_fixed.msg",
+          "sha256": "2c9243b243e710efe446b7bb5add32cba2789e6fd1b9237ea370e3e81a0413dc",
+          "success_phrase": false
+        }
+      },
+      "input_hash_verified_against_original": true,
+      "acceptance_sha256": "a9d912e19f7ab39985c0be130f8cc7edf1192437b1eb2a7b3af3574950a83d27"
+    },
+    "relaxed_free": {
+      "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+      "definition": {
+        "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+        "model": "binary_sheet_gyroid",
+        "geometry_N": 48,
+        "fe_refinement": 0,
+        "c": 0.541062,
+        "E_s": 10.0,
+        "nu": 0.3,
+        "gross_volume": 1.0,
+        "lateral": "relaxed_free",
+        "geometry": {
+          "nodes": 98382,
+          "elements": 388464,
+          "volume": 0.35148289495878443,
+          "min_detJ": 3.4796179019880065e-16,
+          "mean_ratio_min": 7.987166235575487e-05,
+          "mean_ratio_p01": 0.03874810430045097,
+          "mean_ratio_median": 0.7281550166147837,
+          "connected_components": 3,
+          "periodic_connected_components": 1,
+          "boundary_triangles": 132000,
+          "periodic_cap_triangles": {
+            "0": 1856,
+            "1": 1856
+          },
+          "surface_G_residual_max": 0.008189864954796122,
+          "surface_G_residual_rms": 0.0019927441575299494
+        },
+        "meshing": {
+          "mesher": "cached boundary-preserving mesh",
+          "cache_sha256": "6b51c352c4289a5a77ec596c220639658f425144f260e6da350f28761c925096"
+        },
+        "nodes": 651229,
+        "elements": 388464,
+        "controls": [
+          651230,
+          651231,
+          651232
+        ],
+        "equations": 29640,
+        "periodic_pairs": 8511,
+        "input_sha256": "a4460ece0b4aab46f81b62f94b077426441d8c47585871e4517274696aff01e5",
+        "mesh_sha256": "289b4be171668b19539513f10fff6b6945ad1f112f3606191f518d87b7309bc4",
+        "relative_tolerance": 1e-06,
+        "displacement_tolerance": 1e-08,
+        "convergence_claim": false
+      },
+      "acceptance": {
+        "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+        "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_gyroid_20261002\\work\\binary_gyroid_G48_R0_C3D10_relaxed_free.odb",
+        "measured": {
+          "volume_solid": 0.35148289497700164,
+          "gross_volume": 1.0,
+          "sigma_gross": [
+            -1.9908466707801925e-14,
+            -1.2535474769188738e-13,
+            -0.015014077337025472,
+            1.7758833119277022e-06,
+            -1.7210696240926098e-13,
+            -4.310249445479661e-13
+          ],
+          "sigma_solid_average": [
+            -5.6641352942949284e-14,
+            -3.5664537160503827e-13,
+            -0.042716381228190006,
+            5.052545478902757e-06,
+            -4.896595677024975e-13,
+            -1.2263041835255427e-12
+          ],
+          "macro_displacements": [
+            0.0036478815600275993,
+            0.0024051410146057606,
+            -0.009999999776482582
+          ],
+          "macro_RF": [
+            0.0,
+            0.0,
+            -0.01501407753676176
+          ],
+          "bottom_RFz": 0.0150140773463404,
+          "ALLSE": 7.507038390031084e-05,
+          "IP_energy": 7.507038668403096e-05,
+          "macro_energy": 7.50703850069864e-05,
+          "control_work": 7.507038600585488e-05,
+          "integration_points": 1553856,
+          "max_periodic_error": 3.4924596548080444e-10,
+          "max_loaded_face_error": 2.6752188982425083e-41,
+          "max_coordinate_error": 2.980224433901668e-08,
+          "max_analytic_affine_error": null
+        },
+        "checks": {
+          "positive_volume": true,
+          "mesh_volume": true,
+          "ODB_coordinates": true,
+          "energy_IP_vs_ALLSE": true,
+          "energy_work_vs_ALLSE": true,
+          "energy_macro_vs_ALLSE": true,
+          "control_RF_vs_gross_stress": true,
+          "top_bottom_balance": true,
+          "periodic_displacement": true,
+          "loaded_face_displacement": true,
+          "zero_lateral_stress": true,
+          "finite_outputs": true
+        },
+        "status": "ok",
+        "convergence_claim": false,
+        "input_sha256": "a4460ece0b4aab46f81b62f94b077426441d8c47585871e4517274696aff01e5"
+      },
+      "diagnostics": {
+        "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+        "errors": 0,
+        "warning_messages": 2,
+        "distorted_elements": 28635,
+        "quality_warning": true,
+        "out_of_core_solver": true,
+        "convergence_claim": false,
+        "warning_text": [
+          " ***WARNING: 28635 elements are distorted. Either the isoparametric angles are ",
+          " ***WARNING: THE MEMORY LIMIT IS INSUFFICENT TO RUN THE PURE THREAD-BASED "
+        ]
+      },
+      "completion": {
+        "sta": {
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_relaxed_free.sta",
+          "sha256": "36b7afa33649e4f9f90335ca5ce982bcf55d59cf9bb400795ceafe96f98e363e",
+          "success_phrase": true
+        },
+        "dat": {
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_relaxed_free.dat",
+          "sha256": "b43e336313374757b99eb22b88f211fb7402f4313f2a8e45ff110b3fd5b2b620",
+          "success_phrase": false
+        },
+        "msg": {
+          "path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/binary_gyroid_20261002/work/binary_gyroid_G48_R0_C3D10_relaxed_free.msg",
+          "sha256": "7deae6500d6838a1371732cfb3f50e8b92fe20d3869237bb05a049a2671607e9",
+          "success_phrase": false
+        }
+      },
+      "input_hash_verified_against_original": true,
+      "acceptance_sha256": "9c8480cff4875bcf0dd21cde32b67431d5d30a91946f4f27cd3dfff730f9f4c8"
+    }
+  },
+  "model": {
+    "L": 1.0,
+    "c": 0.541062,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "beta": 40.0,
+    "emin_ratio": 0.0001,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "rigorous_error_bound": false
+}

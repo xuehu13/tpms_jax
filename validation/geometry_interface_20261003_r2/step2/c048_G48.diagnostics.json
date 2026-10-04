@@ -1,0 +1,9 @@
+{
+  "out_of_core_solver": true,
+  "convergence_claim": false,
+  "case": "binary_gyroid_G48_R0_C3D10_fixed",
+  "distorted_elements": 34420,
+  "warning_messages": 2,
+  "quality_warning": true,
+  "errors": 0
+}

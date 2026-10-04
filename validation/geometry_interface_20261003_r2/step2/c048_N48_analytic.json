@@ -1,0 +1,85 @@
+{
+  "study": "",
+  "N": 48,
+  "beta": 40.0,
+  "emin_ratio": 0.0001,
+  "lateral": "fixed",
+  "status": "ok",
+  "cells": 110592,
+  "quads": 884736,
+  "n_red": 334078,
+  "vf_int": 0.31043766356754054,
+  "vf_binary_ref": 0.30935329861111116,
+  "Fz_top": -0.016763809503033834,
+  "Fz_bottom": 0.01676380950303554,
+  "sigma_xx": -0.006875094673699287,
+  "sigma_yy": -0.005908874868379695,
+  "sigma_zz": -0.016763809503036645,
+  "U_internal": 8.381904751517963e-05,
+  "U_macro": 8.381904751518297e-05,
+  "eps_x": 0.0,
+  "eps_y": 0.0,
+  "red_res": 6.209090316552923e-17,
+  "balance": 1.7069679003611782e-15,
+  "reaction_consistency_err": 2.8102520310824275e-15,
+  "work_identity_err": 3.333921680392926e-18,
+  "t_build": 2.68,
+  "t_solve": 33.47,
+  "checks": {
+    "finite": true,
+    "red_res<=1e-08": true,
+    "balance<=1e-08": true,
+    "reaction<=1e-06": true,
+    "work_identity<=1e-08": true,
+    "periodic_fluctuation<=1e-10": true,
+    "loaded_face_fluctuation<=1e-10": true
+  },
+  "max_periodic_fluctuation_error": 0.0,
+  "periodic_face_pair_count": 4802,
+  "max_loaded_face_fluctuation_error": 0.0,
+  "macro_equilibrium_solves_expected": 1,
+  "solver": "PETSc CG/GAMG; same FEM operator and checks",
+  "solver_options": {
+    "petsc_solver": {
+      "ksp_type": "cg",
+      "pc_type": "gamg"
+    }
+  },
+  "petsc_options": {
+    "ksp_rtol": 1e-11,
+    "ksp_atol": 1e-13,
+    "ksp_max_it": 5000,
+    "ksp_error_if_not_converged": true
+  },
+  "calibration": null,
+  "model": {
+    "c": 0.48,
+    "E_s": 10.0,
+    "nu": 0.3,
+    "eps_z": -0.01,
+    "cell_size": 1.0,
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "interpolation_power": 1
+  },
+  "input_representation": {
+    "type": "analytic_Gauss"
+  },
+  "runtime": {
+    "jax_version": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "peak_host_rss_MiB": 5927.0625
+  },
+  "source_sha256": {
+    "scripts/capture_binary_projection_reference.py": "35abf1b1e3863bfdbea69055b2a675cc03770f0693ee280f59681e63ba2e3b81",
+    "scripts/m4_numerical_study.py": "29d5ca22b04927fc0dcb4f853c2f8333d63458a596d9c7384519476dc612bc4b",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "geometry.py": "119aecac56b201282bbb9dee08213de3bc6d6a6eaa4c1b424d9f4b8831f03d12",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "original_non_markdown_entries": 319,
+  "intentionally_changed": [
+    "design_fem.py",
+    "scripts/capture_binary_projection_reference.py",
+    "scripts/m4_numerical_study.py"
+  ],
+  "all_other_original_entries_unchanged": true,
+  "original_M4_csv_sha256": "dc6c3c18881d75737cb99678e60376bc30f54b93f54504ea84a9ff8141bd0fb4",
+  "transport_dirty_files_unchanged": true,
+  "installed_jax_fem_unchanged": true
+}

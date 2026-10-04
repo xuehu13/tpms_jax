@@ -1,0 +1,8 @@
+method,N,lateral,beta,eta,c,Fz,K,Vf,volume_definition,source,status
+JAX_analytic,64,fixed,40.0,0.0001,0.541062,-0.01976484037002124,1.9764840370021242,0.3505280532938994,projected_phi_Gauss_JxW,validation/projection_effects_20261002/N64_beta40_emin4_fixed_c.json,reused_ok
+Abaqus_binary_C3D10,24,fixed,,,0.541062,-0.01981327310204506,1.981327310204506,0.35462710619322957,mesh_solid_IVOL,validation/abaqus_binary/binary_gyroid_G24_R0_C3D10_fixed.acceptance.json,ok
+Abaqus_binary_C3D10,24,relaxed_free,,,0.541062,-0.015248234383761883,1.5248234383761883,0.3546271061932296,mesh_solid_IVOL,validation/abaqus_binary/binary_gyroid_G24_R0_C3D10_relaxed_free.acceptance.json,ok
+Abaqus_binary_C3D10,32,fixed,,,0.541062,-0.019641920924186707,1.9641920924186707,0.3527285720725992,mesh_solid_IVOL,validation/abaqus_binary/binary_gyroid_G32_R0_C3D10_fixed.acceptance.json,ok
+Abaqus_binary_C3D10,32,relaxed_free,,,0.541062,-0.015106298960745335,1.5106298960745335,0.3527285720725992,mesh_solid_IVOL,validation/abaqus_binary/binary_gyroid_G32_R0_C3D10_relaxed_free.acceptance.json,ok
+Abaqus_binary_C3D10,48,fixed,,,0.541062,-0.01952391117811203,1.952391117811203,0.35148289497700164,mesh_solid_IVOL,validation/abaqus_binary/binary_gyroid_G48_R0_C3D10_fixed.acceptance.json,ok
+Abaqus_binary_C3D10,48,relaxed_free,,,0.541062,-0.01501407753676176,1.501407753676176,0.35148289497700164,mesh_solid_IVOL,validation/abaqus_binary/binary_gyroid_G48_R0_C3D10_relaxed_free.acceptance.json,ok

@@ -4,7 +4,8 @@ param(
  [Parameter(Mandatory=$true)][string[]]$Cases,
  [int]$Cpus=2,
  [string]$Memory='8gb',
- [switch]$ExtractOnly
+ [switch]$ExtractOnly,
+ [switch]$QualityDiagnostics
 )
 $ErrorActionPreference='Stop'
 $root=(Resolve-Path -LiteralPath $PackageDirectory).Path
@@ -34,7 +35,7 @@ function Assert-Logs([string]$Name,[bool]$Datacheck) {
 Push-Location -LiteralPath $jobRoot
 try{
  foreach($case in $Cases){
-  if($case -notmatch '^binary_(uniform_C3D10|gyroid_G[0-9]+_R[01]_C3D10)_(fixed|relaxed_free)$'){throw 'Invalid case name'}
+  if($case -notmatch '^binary_(uniform_C3D10|(gyroid|primitive)_G[0-9]+_R[01]_C3D10)_(fixed|relaxed_free)$'){throw 'Invalid case name'}
   $inputPath=Join-Path $root ($case+'.inp');$expectedPath=Join-Path $root ($case+'.expected.json')
   $expected=Get-Content -LiteralPath $expectedPath -Raw | ConvertFrom-Json
   if((Get-FileHash -LiteralPath $inputPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $expected.input_sha256){throw 'Input hash mismatch'}
@@ -52,6 +53,10 @@ try{
   & $AbaqusCommand python (Join-Path $root 'scripts\extract_abaqus_binary.py') ($case+'.odb') --expected $expectedPath 2>&1 | Tee-Object -FilePath ($case+'.extract.txt')
   $report=Get-Content -LiteralPath ($case+'.acceptance.json') -Raw | ConvertFrom-Json
   if($report.status -ne 'ok'){throw 'Physical consistency acceptance failed'}
+  if($QualityDiagnostics){
+   & $AbaqusCommand python (Join-Path $root 'scripts\abaqus_mesh_quality.py') ($case+'.odb') --expected $expectedPath --out ($case+'.quality.json') --nodal-out ($case+'.nodal.npz') 2>&1 | Tee-Object -FilePath ($case+'.quality.console.txt')
+   if($LASTEXITCODE -ne 0){throw 'Quality extraction failed'}
+  }
   Write-Output "$case passed physical consistency; convergence assessed separately"
  }
 }finally{Pop-Location}

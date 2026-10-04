@@ -1,0 +1,37 @@
+{
+  "theta": [
+    0.5410380367934704,
+    0.035,
+    0.0,
+    0.0
+  ],
+  "G": 32,
+  "directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/learning_bridge_20261003_r3/ax035/G32",
+  "expected_file": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/learning_bridge_20261003_r3/ax035/G32/binary_gyroid_G32_R0_C3D10_fixed.expected.json",
+  "source_sha256": {
+    "binary_gyroid.py": "94beab9d756f527ac44f51f42172bb77cd7a0e1d184833182794a0b28f666d22",
+    "scripts/prepare_abaqus_binary.py": "fdc7f0aa803115ef56c7103d31c4e9a5cd265eb690d2dbc96c3013615f5a9f06",
+    "scripts/extract_abaqus_binary.py": "5838cc631cd94c6be74c4b16cfc07b11d26bbe77d75104f0b3880cf82038bbd5",
+    "scripts/run_abaqus_binary.ps1": "ff11fbdd94d0d188b455f36a0ffb2538f4a23dedd37cdd2d00468d1696894a5c"
+  },
+  "geometry": {
+    "nodes": 38335,
+    "elements": 135969,
+    "volume": 0.3527377477642391,
+    "min_detJ": 3.491777231055686e-17,
+    "mean_ratio_min": 5.577297906581135e-05,
+    "mean_ratio_p01": 0.014666656533205912,
+    "mean_ratio_median": 0.6588773610015124,
+    "connected_components": 3,
+    "periodic_connected_components": 1,
+    "boundary_triangles": 59680,
+    "periodic_cap_triangles": {
+      "0": 1024,
+      "1": 928
+    },
+    "surface_G_residual_max": 0.01822465646129723,
+    "surface_G_residual_rms": 0.004394497300625239
+  },
+  "prepare_seconds": 34.38649303501006,
+  "case": "binary_gyroid_G32_R0_C3D10_fixed"
+}

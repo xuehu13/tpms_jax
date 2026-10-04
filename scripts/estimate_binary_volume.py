@@ -7,12 +7,12 @@ from scipy.stats import qmc
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from binary_gyroid import C,gyroid_numpy
 
-def estimate(power=21,replicates=8):
+def estimate(power=21,replicates=8,c=C):
     fractions=[]
     for seed in range(replicates):
         xyz=qmc.Sobol(3,scramble=True,seed=20261002+seed).random_base2(power)
-        fractions.append(float(np.mean(np.abs(gyroid_numpy(xyz)) <= C)))
-    return {'c':C,'method':'replicated scrambled Sobol, direct analytic |G|<=c',
+        fractions.append(float(np.mean(np.abs(gyroid_numpy(xyz)) <= c)))
+    return {'c':c,'method':'replicated scrambled Sobol, direct analytic |G|<=c',
             'power':power,'replicates':replicates,'samples_per_replicate':2**power,
             'fractions':fractions,'mean':float(np.mean(fractions)),
             'replicate_std':float(np.std(fractions,ddof=1)),

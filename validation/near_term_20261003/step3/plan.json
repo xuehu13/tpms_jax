@@ -1,0 +1,23 @@
+{
+  "N": 8,
+  "M": 8,
+  "beta_input": 40.0,
+  "eta": 0.0001,
+  "c": 0.541062,
+  "lateral": "fixed",
+  "map": "periodic_trilinear",
+  "steps": [
+    0.001,
+    0.0005
+  ],
+  "directions": [
+    "phi*(1-phi)*(1+.4*cos(2pi*x))",
+    "phi*(1-phi)*(.35+cos(2pi*(x+y)))"
+  ],
+  "direction_normalization": "unit discrete L2 norm",
+  "meaning": "Diagnostic only: distinguish correct derivative implementation from insufficient forward representation",
+  "relative_derivative_target": 0.001,
+  "near_zero_rule": "|AD| <= 1e-8*max(|K_baseline|,1); use absolute error <=1e-7*max(|K_baseline|,1)",
+  "max_forward_solves": 9,
+  "max_scalar_adjoint_solves": 1
+}

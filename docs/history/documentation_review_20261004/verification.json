@@ -1,0 +1,23 @@
+{
+  "numerical_and_environment_unchanged": 59,
+  "frozen_evidence_unchanged": 842,
+  "archived_moves_hash_checked": 144,
+  "historical_reading_reports_unchanged": 7,
+  "transport_dirty_files_unchanged": 4,
+  "relative_links_checked": 225,
+  "relative_links_failed": [],
+  "HEAD": "5e1d03d505d8e205009700ac8102d949dc463fa0",
+  "current_docs_synced": true,
+  "report_pdf_identical": true,
+  "PDF_pages": 9,
+  "active_plan_status_map_lines_before": 217,
+  "active_plan_status_map_lines_after": 194,
+  "FEM_solves_added": 0,
+  "Abaqus_jobs_added": 0,
+  "tests_rerun": 0,
+  "packages_changed": 0,
+  "next_stage": "round5 planned, not started; conditional steps 2-4",
+  "scientific_results_not_deleted": true,
+  "local_pdf_identities_rechecked": 23,
+  "new_mechanics_section_readings": 3
+}

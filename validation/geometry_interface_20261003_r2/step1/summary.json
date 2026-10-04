@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "M": 64,
+      "K": 1.9821422289231987,
+      "mapping_relative": 0.0028627561949130216,
+      "binary_relative": 0.015238294643211255,
+      "seconds": 101.40646816900698,
+      "passed": true
+    },
+    {
+      "M": 32,
+      "K": 1.9950657389258253,
+      "mapping_relative": 0.009401392359275175,
+      "binary_relative": 0.021857618960315784,
+      "seconds": 99.05209656700026,
+      "passed": false
+    }
+  ],
+  "passed_M": [
+    64
+  ],
+  "selected_M": 64,
+  "stopped": true,
+  "no_more_candidates": true
+}

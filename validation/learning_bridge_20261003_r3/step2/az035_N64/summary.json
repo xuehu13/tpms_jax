@@ -1,0 +1,50 @@
+{
+  "label": "az035",
+  "N": 64,
+  "theta": [
+    0.5410380367934704,
+    0.0,
+    0.0,
+    0.035
+  ],
+  "K": 1.982495474061545,
+  "Vf": 0.350528053338129,
+  "passed": true,
+  "checks": {
+    "theta": [
+      0.5410380367934704,
+      0.0,
+      0.0,
+      0.035
+    ],
+    "values": [
+      1.982495474061545,
+      0.350528053338129,
+      0.02183953487961102
+    ],
+    "Fz_top": -0.019824954740617753,
+    "Fz_bottom": 0.019824954740618975,
+    "U_internal": 9.912477370307682e-05,
+    "red_res": 5.209718493734937e-17,
+    "balance": 1.2212453270876722e-15,
+    "reaction_consistency_err": 2.3037127760972e-15,
+    "work_identity_err": 0.0,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-8": true,
+      "balance<=1e-8": true,
+      "reaction<=1e-6": true,
+      "work_identity<=1e-8": true,
+      "periodic": true,
+      "flat_loaded_face": true,
+      "K_reaction": true
+    },
+    "status": "ok"
+  },
+  "seconds": 97.2782346640015,
+  "forward_count": 1,
+  "general_adjoint_count": 0,
+  "peak_host_rss_MiB": 12430.61328125,
+  "sampled_min_available_host_MiB": 1839.765625,
+  "sampled_device_peak_MiB": 5066
+}

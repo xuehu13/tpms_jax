@@ -1,0 +1,37 @@
+{
+  "phase": "round4_step1_complete_step2_not_started",
+  "before_formal_documents": {
+    "/home/xuehu/projects/tpms_jax/AGENTS.md": "8151e44d8afdb72246fa90d44131a00c84c98b238e003ee3b82779c668f3cfc5",
+    "/home/xuehu/projects/tpms_jax/README.md": "ab4d5b44e62efaf0594ed2e0a4b680c4fa3319e0a2a5fcb8e4cb462339b69924",
+    "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md": "0faf5f6c7f231b231d46dee65d076f1b1bf14bf8872f4aa5e36d8cd199bf8831",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_BACKGROUND.md": "ac3d6a828336cc272423ba57d92870b7f1b8eb7748f4cec81f2eb39f42f14050",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md": "c047b8f98a9dd6cd73f727ddfb92a0e82e768154b6d38fdc54406a164ba3e79b",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md": "d9afc5dbefbfcf67d354e12a5b34d9da15e33af9d66c5bd37f1cc7a8da46385f",
+    "/home/xuehu/projects/tpms_jax/validation/README.md": "b8070396f4e2deb953c308af6b796830df9c832814f05fb659061c348af39727"
+  },
+  "after_active_document_sha256": {
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_BACKGROUND.md": "53da49d926418a9754d80eb43999536f2ce7478e718afaee707d0238afbc5e24",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_PLAN.md": "57a4ca8875469d6db720f0729e25aeceb762680981e567c9c27420f1f382f779",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/PROJECT_OVERVIEW.md": "45d347401802391c2a359888398a36155d0f2578d4133268a47b7563d5bba8ac",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/FILE_MAP.md": "d5ac509a22c398d4d5fa1c323c1a5c63f28ae83d30dc9eab5bddec11e14356a7",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/AGENTS.md": "9f2d6e7dd1fca57102ecaffe0f8adc3ca2eb092dd94f22b2c1b1e94fbb63b060",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/ROUND4_STEP1_REPORT.md": "e93a82f3b72daf162698dbaa1fb2f906993e175157609979098bcf4fcfd9a2f6",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/START_HERE.md": "d87fbd82ee99a5a5dd3995fc4b8afe410daf4d5ccbea17a0eb7ec0e96efd6282",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_BACKGROUND.md": "fa0e8986d0dfc5db6f7739b26f9dc6c56948aefa13749bce07761d0435979eff",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md": "ea2acc209a67670c21f5c0350b94e49dd9eb3ee105f15f05fefd6371ff227338",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md": "a4063c3163f3a69a06655988b01dcda3ffe4c2e3839ca8b91aa4d9713e714abf",
+    "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md": "d5ac509a22c398d4d5fa1c323c1a5c63f28ae83d30dc9eab5bddec11e14356a7",
+    "/home/xuehu/projects/tpms_jax/AGENTS.md": "eba647610664580a85677db1cf4d749fb3ada4402adacf2ae2d9d1823225368e",
+    "/home/xuehu/projects/tpms_jax/docs/ROUND4_STEP1_REPORT.md": "e93a82f3b72daf162698dbaa1fb2f906993e175157609979098bcf4fcfd9a2f6",
+    "/home/xuehu/projects/tpms_jax/README.md": "51502b2bfab9413719479a082285b82777584e6d09623877b624a9365bc99c1e",
+    "/home/xuehu/projects/tpms_jax/validation/README.md": "74f6eb17504f93768fd1419a9091a0954a21569dbe38d9dd47e7c58e86b1a0f9",
+    "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step1/README.md": "5154f67de25d4958ab8663c063049e0a949c42969be3802421d86ff5d2b01e5e"
+  },
+  "relative_links_checked": 101,
+  "frozen_files_unchanged": 338,
+  "source_environment_CSV_unchanged": 54,
+  "original_reference_artifacts_unchanged": 112,
+  "new_FEM_or_Abaqus_jobs": 0,
+  "git_diff_check": true,
+  "HEAD_unchanged": "5e1d03d505d8e205009700ac8102d949dc463fa0"
+}

@@ -20,7 +20,7 @@ def prepare_pair(expected_path,output):
     np.savez_compressed(cache,points=mesh['points'][:fixed['geometry']['nodes']],
                         cells=mesh['cells'][:,:4],geometry_N=fixed['geometry_N'],
                         c=fixed['c'],fe_refinement=fixed['fe_refinement'])
-    result=prepare(output,fixed['geometry_N'],fixed['fe_refinement'],'relaxed_free',cached_mesh=cache)
+    result=prepare(output,fixed['geometry_N'],fixed['fe_refinement'],'relaxed_free',cached_mesh=cache,c=fixed['c'])
     paired=np.load(output/(result['case']+'.mesh.npz'))
     if not np.array_equal(paired['points'],mesh['points']) or not np.array_equal(paired['cells'],mesh['cells']):
         raise ValueError('Paired mesh differs from source fixed-lateral mesh')

@@ -1,0 +1,90 @@
+[
+  {
+    "direction": "c",
+    "h": 0.001,
+    "response": "K",
+    "AD": 5.235176446802837,
+    "FD": 5.235175286218086,
+    "abs_error": 1.1605847509699174e-06,
+    "relative_error": 2.2168971051180055e-07,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "c",
+    "h": 0.001,
+    "response": "Vf",
+    "AD": 0.6589709834901618,
+    "FD": 0.6589707066084749,
+    "abs_error": 2.7688168691142323e-07,
+    "relative_error": 4.2017280555351945e-07,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "c",
+    "h": 0.0005,
+    "response": "K",
+    "AD": 5.235176446802837,
+    "FD": 5.235176156657806,
+    "abs_error": 2.901450306680431e-07,
+    "relative_error": 5.5422206608764245e-08,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "c",
+    "h": 0.0005,
+    "response": "Vf",
+    "AD": 0.6589709834901618,
+    "FD": 0.6589709142666988,
+    "abs_error": 6.922346296178716e-08,
+    "relative_error": 1.0504781651409488e-07,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "spatial",
+    "h": 0.001,
+    "response": "K",
+    "AD": -0.006218097822960735,
+    "FD": -0.006218097823196267,
+    "abs_error": 2.35532079950751e-13,
+    "relative_error": 3.787847773655688e-11,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "spatial",
+    "h": 0.001,
+    "response": "Vf",
+    "AD": -0.0007739790938603543,
+    "FD": -0.0007739790938710023,
+    "abs_error": 1.0647949535980139e-14,
+    "relative_error": 1.3757412338971138e-11,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "spatial",
+    "h": 0.0005,
+    "response": "K",
+    "AD": -0.006218097822960735,
+    "FD": -0.0062180978228632,
+    "abs_error": 9.753482743679598e-14,
+    "relative_error": 1.5685637346624273e-11,
+    "near_zero": false,
+    "passed": true
+  },
+  {
+    "direction": "spatial",
+    "h": 0.0005,
+    "response": "Vf",
+    "AD": -0.0007739790938603543,
+    "FD": -0.0007739790938710023,
+    "abs_error": 1.0647949535980139e-14,
+    "relative_error": 1.3757412338971138e-11,
+    "near_zero": false,
+    "passed": true
+  }
+]

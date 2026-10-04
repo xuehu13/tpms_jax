@@ -1,0 +1,58 @@
+{
+  "N": 32,
+  "M": 64,
+  "route": "implicit",
+  "K": 2.004604669123636,
+  "Vf": 0.3508697029255083,
+  "dK_dc": 5.3007567506667455,
+  "spatial_direction_AD": -0.006292108728745211,
+  "build_seconds": 1.7655592020018958,
+  "forward_seconds_including_first_trace_compile": 11.529043974005617,
+  "adjoint_seconds_including_first_trace_compile": 6.9950661869952455,
+  "memory": {
+    "built_rss_MiB": 1442.6953125,
+    "gpu_built": "966, 8188",
+    "forward_rss_MiB": 2022.39453125,
+    "forward_peak_MiB": 2601.8125,
+    "gpu_forward": "966, 8188",
+    "adjoint_rss_MiB": 2150.51953125,
+    "adjoint_peak_MiB": 2736.27734375,
+    "gpu_adjoint": "1478, 8188",
+    "sampled_device_peak_MiB": 1478
+  },
+  "envelope_relative_L2_error": 3.3572062031055425e-14,
+  "forward_count": 1,
+  "adjoint_count": 1,
+  "total_seconds": 23.265703157987446,
+  "baseline": {
+    "values": [
+      2.004604669123636,
+      0.3508697029255083,
+      0.024573997251763867
+    ],
+    "Fz_top": -0.020046046691237048,
+    "Fz_bottom": 0.020046046691238526,
+    "U_internal": 0.00010023023345618159,
+    "red_res": 1.5104291515438684e-16,
+    "balance": 1.4779844015322396e-15,
+    "reaction_consistency_err": 6.869504964868156e-16,
+    "work_identity_err": 1.3552527156068805e-20,
+    "checks": {
+      "finite": true,
+      "red_res<=1e-8": true,
+      "balance<=1e-8": true,
+      "reaction<=1e-6": true,
+      "work_identity<=1e-8": true
+    },
+    "status": "ok"
+  },
+  "directional_passed": true,
+  "source_sha256": {
+    "voxel_field.py": "720d805bba12892d9bb7e551b292cd0a01c8fa41eb2ac49888efb62d2a1c412c",
+    "geometry.py": "119aecac56b201282bbb9dee08213de3bc6d6a6eaa4c1b424d9f4b8831f03d12",
+    "design_fem.py": "f655ef168fa408f43b5dc7f778dae74049051eee3d42dac048f38cd875515135",
+    "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48"
+  }
+}

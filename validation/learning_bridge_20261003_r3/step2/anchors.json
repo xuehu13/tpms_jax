@@ -1,0 +1,38 @@
+[
+  {
+    "label": "ax035",
+    "theta": [
+      0.5410380367934704,
+      0.035,
+      0.0,
+      0.0
+    ],
+    "projected_N64_Vf": 0.350528053338129,
+    "Vf_target": 0.3505280533,
+    "geometric_volume_absolute_error": 3.8128999957365295e-11,
+    "binary_Gauss_Vf": 0.3504791259765625,
+    "global_min_c": 0.5060380367934704,
+    "global_max_c": 0.5760380367934704,
+    "definition": "|G|<=c0+ax*cos(2pi*x)+ay*cos(2pi*y)+az*cos(2pi*z)",
+    "base_material": "single homogeneous E=10 nu=.3",
+    "geometry_only_volume_root": true
+  },
+  {
+    "label": "az035",
+    "theta": [
+      0.5410380367934704,
+      0.0,
+      0.0,
+      0.035
+    ],
+    "projected_N64_Vf": 0.350528053338129,
+    "Vf_target": 0.3505280533,
+    "geometric_volume_absolute_error": 3.8128999957365295e-11,
+    "binary_Gauss_Vf": 0.3504791259765625,
+    "global_min_c": 0.5060380367934704,
+    "global_max_c": 0.5760380367934704,
+    "definition": "|G|<=c0+ax*cos(2pi*x)+ay*cos(2pi*y)+az*cos(2pi*z)",
+    "base_material": "single homogeneous E=10 nu=.3",
+    "geometry_only_volume_root": true
+  }
+]

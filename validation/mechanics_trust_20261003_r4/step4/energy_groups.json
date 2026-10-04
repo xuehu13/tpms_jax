@@ -1,0 +1,389 @@
+{
+  "definition": "Group actual weighted W by reference Gauss occupancy. These are diagnostic regions, not exact binary solid/void boundaries.",
+  "cases": {
+    "N16_d005": {
+      "rows": [
+        {
+          "compression": 0.0,
+          "energy": 0.0,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0,
+            "void_rho_le005": 0.0,
+            "transition": 0.0
+          },
+          "fractions": {
+            "solid_rho_ge095": null,
+            "void_rho_le005": null,
+            "transition": null
+          }
+        },
+        {
+          "compression": 0.0001,
+          "energy": 1.0499398398826199e-08,
+          "energy_by_region": {
+            "solid_rho_ge095": 8.315921828828015e-09,
+            "void_rho_le005": 8.200330776721517e-11,
+            "transition": 2.1014732622309696e-09
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7920379352170988,
+            "void_rho_le005": 0.0078102863280607475,
+            "transition": 0.2001517784548406
+          }
+        },
+        {
+          "compression": 0.005,
+          "energy": 2.6270961189413423e-05,
+          "energy_by_region": {
+            "solid_rho_ge095": 2.080113602753628e-05,
+            "void_rho_le005": 2.0609066355367215e-07,
+            "transition": 5.2637344983234705e-06
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7917919667103253,
+            "void_rho_le005": 0.007844808648901733,
+            "transition": 0.200363224640773
+          }
+        },
+        {
+          "compression": 0.01,
+          "energy": 0.00010517323195623316,
+          "energy_by_region": {
+            "solid_rho_ge095": 8.324868550941457e-05,
+            "void_rho_le005": 8.288386306924524e-07,
+            "transition": 2.109570781612613e-05
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7915387210317709,
+            "void_rho_le005": 0.007880699444867927,
+            "transition": 0.2005805795233611
+          }
+        },
+        {
+          "compression": 0.015,
+          "energy": 0.00023683550931670154,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0001874039574395224,
+            "void_rho_le005": 1.8750915035469335e-06,
+            "transition": 4.755646037363222e-05
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7912831905156663,
+            "void_rho_le005": 0.007917273507493848,
+            "transition": 0.20079953597683992
+          }
+        },
+        {
+          "compression": 0.02,
+          "energy": 0.00042137905979873426,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.00033332152667583134,
+            "void_rho_le005": 3.3518780101549466e-06,
+            "transition": 8.4705655112748e-05
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7910253699721995,
+            "void_rho_le005": 0.00795454337896127,
+            "transition": 0.2010200866488393
+          }
+        },
+        {
+          "compression": 0.025,
+          "energy": 0.0006589174006809878,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0005210489854599197,
+            "void_rho_le005": 5.266411373846826e-06,
+            "transition": 0.00013260200384722132
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7907652536136065,
+            "void_rho_le005": 0.007992521321191421,
+            "transition": 0.20124222506520212
+          }
+        },
+        {
+          "compression": 0.03,
+          "energy": 0.0009495559772884567,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0007506266918188384,
+            "void_rho_le005": 7.626092166352432e-06,
+            "transition": 0.00019130319330326584
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.79050283476949,
+            "void_rho_le005": 0.008031219168489078,
+            "transition": 0.20146594606202098
+          }
+        },
+        {
+          "compression": 0.035,
+          "energy": 0.0012933918368699705,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0010220875148964663,
+            "void_rho_le005": 1.0438510421063833e-05,
+            "transition": 0.0002608658115524405
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7902381055457524,
+            "void_rho_le005": 0.008070648138869655,
+            "transition": 0.20169124631537805
+          }
+        },
+        {
+          "compression": 0.04,
+          "energy": 0.0016905132996591354,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0013354565772145549,
+            "void_rho_le005": 1.371144670206192e-05,
+            "transition": 0.0003413452757425184
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7899710564145387,
+            "void_rho_le005": 0.008110818592688156,
+            "transition": 0.20191812499277298
+          }
+        },
+        {
+          "compression": 0.045,
+          "energy": 0.0021409996278088147,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0016907509938027402,
+            "void_rho_le005": 1.7452871714860677e-05,
+            "transition": 0.0004327957622912137
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7897016757229065,
+            "void_rho_le005": 0.00815173972389834,
+            "transition": 0.20214658455319506
+          }
+        },
+        {
+          "compression": 0.05,
+          "energy": 0.0026449206929938167,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0020879796080588526,
+            "void_rho_le005": 2.167094389721864e-05,
+            "transition": 0.0005352701410377454
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.7894299491057496,
+            "void_rho_le005": 0.008193419165505884,
+            "transition": 0.20237663172874454
+          }
+        }
+      ],
+      "actual_reference_Gauss_mapping": true,
+      "saved_displacement_sha256": "9588e8092223aa436b40b4fde2c26cd10a98e70fa8dd65a836c577ccf2674ce7"
+    },
+    "N32_d005": {
+      "rows": [
+        {
+          "compression": 0.0,
+          "energy": 0.0,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0,
+            "void_rho_le005": 0.0,
+            "transition": 0.0
+          },
+          "fractions": {
+            "solid_rho_ge095": null,
+            "void_rho_le005": null,
+            "transition": null
+          }
+        },
+        {
+          "compression": 0.0001,
+          "energy": 1.0013214795663682e-08,
+          "energy_by_region": {
+            "solid_rho_ge095": 8.151676841529164e-09,
+            "void_rho_le005": 5.64064417180372e-11,
+            "transition": 1.8051315124164804e-09
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8140918783705035,
+            "void_rho_le005": 0.005633200013093153,
+            "transition": 0.18027492161640335
+          }
+        },
+        {
+          "compression": 0.005,
+          "energy": 2.5048513999752755e-05,
+          "energy_by_region": {
+            "solid_rho_ge095": 2.0384814030127796e-05,
+            "void_rho_le005": 1.416246587038618e-07,
+            "transition": 4.522075310921096e-06
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8138133076608459,
+            "void_rho_le005": 0.005654014394037895,
+            "transition": 0.18053267794511607
+          }
+        },
+        {
+          "compression": 0.01,
+          "energy": 0.00010025468951121351,
+          "energy_by_region": {
+            "solid_rho_ge095": 8.155985541728853e-05,
+            "void_rho_le005": 5.690049724192732e-07,
+            "transition": 1.8125829121505705e-05
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8135265872841393,
+            "void_rho_le005": 0.0056755945800982185,
+            "transition": 0.18079781813576237
+          }
+        },
+        {
+          "compression": 0.015,
+          "energy": 0.0002257035644485454,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.00018355057588545503,
+            "void_rho_le005": 1.2859518413513255e-06,
+            "transition": 4.086703672173905e-05
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.81323738211188,
+            "void_rho_le005": 0.0056975256216854715,
+            "transition": 0.18106509226643466
+          }
+        },
+        {
+          "compression": 0.02,
+          "energy": 0.0004014720324419401,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0003263749615345386,
+            "void_rho_le005": 2.296345506187369e-06,
+            "transition": 7.280072540121404e-05
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8129456977348433,
+            "void_rho_le005": 0.005719814384628301,
+            "transition": 0.18133448788052828
+          }
+        },
+        {
+          "compression": 0.025,
+          "energy": 0.0006276285118179466,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0005100432770583693,
+            "void_rho_le005": 3.6041367913649663e-06,
+            "transition": 0.00011398109796821234
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8126515406080137,
+            "void_rho_le005": 0.005742468233199708,
+            "transition": 0.1816059911587865
+          }
+        },
+        {
+          "compression": 0.03,
+          "energy": 0.0009042326093240277,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0007345578072432484,
+            "void_rho_le005": 5.213348679002022e-06,
+            "transition": 0.00016446145340177735
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8123549180474456,
+            "void_rho_le005": 0.005765495100756582,
+            "transition": 0.18187958685179792
+          }
+        },
+        {
+          "compression": 0.035,
+          "energy": 0.001231334778922137,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0009999125960373347,
+            "void_rho_le005": 7.128078295394065e-06,
+            "transition": 0.00022429410458940803
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8120558382283489,
+            "void_rho_le005": 0.005788903568234879,
+            "transition": 0.182155258203416
+          }
+        },
+        {
+          "compression": 0.04,
+          "energy": 0.0016089759760167229,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0013060931835162943,
+            "void_rho_le005": 9.352499403906143e-06,
+            "transition": 0.0002935302930965224
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8117543101853744,
+            "void_rho_le005": 0.005812702951015931,
+            "transition": 0.1824329868636097
+          }
+        },
+        {
+          "compression": 0.045,
+          "energy": 0.0020371873075262447,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0016530763411089265,
+            "void_rho_le005": 1.189086551096918e-05,
+            "transition": 0.0003722201009063489
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8114503438155897,
+            "void_rho_le005": 0.005836903394714476,
+            "transition": 0.18271275278969587
+          }
+        },
+        {
+          "compression": 0.05,
+          "energy": 0.0025159896782545937,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0020408298054900133,
+            "void_rho_le005": 1.4747513705563808e-05,
+            "transition": 0.0004604123590590168
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8111439498852749,
+            "void_rho_le005": 0.005861515980381341,
+            "transition": 0.18299453413434374
+          }
+        }
+      ],
+      "actual_reference_Gauss_mapping": true,
+      "saved_displacement_sha256": "e951abca3fa6286bddfff6d4c4df8196b0c1d2279ef2c0026b92ea8db62b53cb"
+    },
+    "N48_d005": {
+      "rows": [
+        {
+          "compression": 0.0,
+          "energy": 0.0,
+          "energy_by_region": {
+            "solid_rho_ge095": 0.0,
+            "void_rho_le005": 0.0,
+            "transition": 0.0
+          },
+          "fractions": {
+            "solid_rho_ge095": null,
+            "void_rho_le005": null,
+            "transition": null
+          }
+        },
+        {
+          "compression": 0.0001,
+          "energy": 9.918989839739728e-09,
+          "energy_by_region": {
+            "solid_rho_ge095": 8.093386485416858e-09,
+            "void_rho_le005": 5.549175572646599e-11,
+            "transition": 1.7701115985964034e-09
+          },
+          "fractions": {
+            "solid_rho_ge095": 0.8159486617267496,
+            "void_rho_le005": 0.00559449667990809,
+            "transition": 0.1784568415933422
+          }
+        }
+      ],
+      "actual_reference_Gauss_mapping": true,
+      "saved_displacement_sha256": "37b38963103cba445d0f8e6f79f9b9f46314820b79592861b6f651d43f4ed2a0"
+    }
+  },
+  "postprocessing_seconds": 10.567275592009537,
+  "FEM_solves": 0
+}

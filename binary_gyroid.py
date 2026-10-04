@@ -1,4 +1,4 @@
-"""Conforming piecewise-linear binary Gyroid domain, with matched periodic caps.
+"""Conforming piecewise-linear binary Gyroid/Primitive domain, with matched periodic caps.
 
 Freudenthal background tetrahedra are CLIPPED at both signed levels. Void is
 absent. Cut polyhedra are triangulated consistently and filled by tetrahedra.
@@ -17,17 +17,41 @@ def gyroid_numpy(xyz):
     return np.sin(x)*np.cos(y)+np.sin(y)*np.cos(z)+np.sin(z)*np.cos(x)
 
 
+def implicit_numpy(xyz, family="gyroid"):
+    if family == "gyroid":
+        return gyroid_numpy(xyz)
+    if family == "primitive":
+        return np.cos(2*np.pi*np.asarray(xyz)).sum(axis=-1)
+    raise ValueError("Unsupported implicit family")
+
+
+def width_numpy(xyz, c=C):
+    """Constant c or existing periodic (c0, ax, ay, az) wall-width geometry."""
+    q = np.asarray(c,dtype=float)
+    if not np.isfinite(q).all():
+        raise ValueError('Nonfinite wall width')
+    if q.ndim == 0:
+        if not 0 < q < 1.5:
+            raise ValueError('Require 0<c<1.5')
+        return np.full(np.asarray(xyz).shape[:-1],float(q))
+    if q.shape != (4,) or q[0] <= np.abs(q[1:]).sum() or q[0]+np.abs(q[1:]).sum() >= 1.5:
+        raise ValueError('Require four parameters with positive bounded periodic width')
+    return q[0]+np.cos(2*np.pi*np.asarray(xyz))@q[1:]
+
+
 def clip_polygon(polygon, level, greater):
     result = []
     for a,b in zip(polygon,polygon[1:]+polygon[:1]):
-        inside_a = a[3] >= level if greater else a[3] <= level
-        inside_b = b[3] >= level if greater else b[3] <= level
+        level_a = level(a) if callable(level) else level
+        level_b = level(b) if callable(level) else level
+        inside_a = a[3] >= level_a if greater else a[3] <= level_a
+        inside_b = b[3] >= level_b if greater else b[3] <= level_b
         if inside_a:
             result.append(a)
         if inside_a != inside_b:
-            t = (level-a[3])/(b[3]-a[3])
+            t = (level_a-a[3])/((b[3]-a[3])-(level_b-level_a))
             point = a+t*(b-a)
-            point[3] = level
+            point[3] = level(point) if callable(level) else level
             result.append(point)
     return result
 
@@ -43,13 +67,23 @@ def ordered_polygon(vertices, normal):
     return list(points[np.argsort(angles)])
 
 
-def linear_domain(n, c=C, origins=None):
-    if n < 4 or not 0 < c < 1.5:
-        raise ValueError("Require n>=4 and 0<c<1.5")
+def linear_domain(n, c=C, origins=None, family="gyroid"):
+    if n < 4:
+        raise ValueError("Require n>=4")
+    variable = np.asarray(c).ndim != 0
     integers = np.array(list(itertools.product(range(n+1),repeat=3)))
     lattice = integers/n
     # Opposite planes sample identical periodic coordinates, bit for bit.
-    values = gyroid_numpy((integers % n)/n)
+    periodic_points = (integers % n)/n
+    values = implicit_numpy(periodic_points, family)
+    widths = width_numpy(periodic_points,c)
+    # Analytic isolevels can differ by a few ulps at lattice vertices. Snap
+    # only arithmetic equality globally so every adjacent tetrahedron agrees.
+    equality_tol = 16*np.finfo(float).eps*np.maximum(1, np.maximum(np.abs(values), widths))
+    for sign in (-1,1):
+        on_level = np.abs(values-sign*widths) <= equality_tol
+        values[on_level] = sign*widths[on_level]
+    levels = (-1,1) if variable else (-c,c)
     coordinates, tags, tets, intersections = [], {}, [], {}
     def node(point):
         key = tuple(np.rint(np.asarray(point)*1e13).astype(np.int64))
@@ -58,7 +92,7 @@ def linear_domain(n, c=C, origins=None):
             coordinates.append(np.array(key,dtype=float)/1e13)
         return tags[key]
     def vertex(i):
-        return np.r_[lattice[i],values[i]]
+        return np.r_[lattice[i],values[i],widths[i]] if variable else np.r_[lattice[i],values[i]]
     def index(p):
         return (p[0]*(n+1)+p[1])*(n+1)+p[2]
     if origins is None:
@@ -76,28 +110,39 @@ def linear_domain(n, c=C, origins=None):
                 tetra[[1,2]] = tetra[[2,1]]
                 original_ids[1],original_ids[2] = original_ids[2],original_ids[1]
             g = tetra[:,3]
-            if g.min() > c or g.max() < -c:
+            local_width = tetra[:,4] if variable else c
+            # A point/edge/face-only contact with the closed band has zero
+            # 3D measure; it does not generate a material volume element.
+            if np.min(g-local_width) >= 0 or np.max(g+local_width) <= 0:
                 continue
-            if np.max(np.abs(g)) <= c:
+            if np.all(np.abs(g) <= local_width):
                 tets.append([node(p[:3]) for p in tetra])
                 continue
             # Compute each isosurface/background-edge intersection ONCE, in
             # canonical endpoint order. Opposite polygon traversal directions
             # otherwise differ by floating roundoff at the node-hash boundary,
             # causing duplicate vertices and nonmanifold cells (G48 regression).
-            candidates = {-c:[], c:[]}
+            candidates = {level:[] for level in levels}
             for a,b in TET_EDGES:
                 lo,hi = sorted((original_ids[a],original_ids[b]))
-                for level in (-c,c):
-                    if min(values[lo],values[hi]) < level < max(values[lo],values[hi]):
+                for level in levels:
+                    f_lo = values[lo]-level*widths[lo] if variable else values[lo]-level
+                    f_hi = values[hi]-level*widths[hi] if variable else values[hi]-level
+                    if min(f_lo,f_hi) < 0 < max(f_lo,f_hi):
                         key = (lo,hi,level)
                         if key not in intersections:
-                            fraction = (level-values[lo])/(values[hi]-values[lo])
-                            intersections[key] = np.r_[lattice[lo]+fraction*(lattice[hi]-lattice[lo]),level]
+                            fraction = -f_lo/(f_hi-f_lo)
+                            xyz = lattice[lo]+fraction*(lattice[hi]-lattice[lo])
+                            if variable:
+                                cw = widths[lo]+fraction*(widths[hi]-widths[lo])
+                                intersections[key] = np.r_[xyz,level*cw,cw]
+                            else:
+                                intersections[key] = np.r_[xyz,level]
                         candidates[level].append(intersections[key])
             def canonical(point):
-                if point[3] in candidates and candidates[point[3]]:
-                    choices = np.array(candidates[point[3]])
+                cut_levels = [level for level in levels if point[3] == (level*point[4] if variable else level)]
+                if cut_levels and candidates[cut_levels[0]]:
+                    choices = np.array(candidates[cut_levels[0]])
                     distances = np.sum((choices[:,:3]-point[:3])**2,axis=1)
                     selected = np.argmin(distances)
                     if distances[selected] > 1e-24:
@@ -106,16 +151,20 @@ def linear_domain(n, c=C, origins=None):
                 return point
             polygons = []
             for face in FACES:
-                polygon = clip_polygon(list(tetra[list(face)]),-c,True)
-                polygon = clip_polygon(polygon,c,False)
+                lower = (lambda p:-p[4]) if variable else -c
+                upper = (lambda p:p[4]) if variable else c
+                polygon = clip_polygon(list(tetra[list(face)]),lower,True)
+                polygon = clip_polygon(polygon,upper,False)
                 if len(polygon) >= 3:
                     polygons.append([canonical(point) for point in polygon])
-            gradient = np.linalg.solve(tetra[1:,:3]-tetra[0,:3],g[1:]-g[0])
-            for level,normal in ((-c,-gradient),(c,gradient)):
+            for level in levels:
+                signed = g-level*local_width if variable else g
+                gradient = np.linalg.solve(tetra[1:,:3]-tetra[0,:3],signed[1:]-signed[0])
+                normal = -gradient if level == levels[0] else gradient
                 vertices = {}
                 for polygon in polygons:
                     for p in polygon:
-                        if p[3] == level:
+                        if p[3] == (level*p[4] if variable else level):
                             vertices[tuple(np.rint(p[:3]*1e13).astype(np.int64))] = p
                 if len(vertices) >= 3:
                     polygons.append(ordered_polygon(list(vertices.values()),normal))
@@ -124,7 +173,12 @@ def linear_domain(n, c=C, origins=None):
                 raise ValueError("Degenerate clipped tetrahedron")
             center = node(np.array([coordinates[i] for i in unique]).mean(axis=0))
             for polygon in polygons:
-                ids = [node(p[:3]) for p in polygon]
+                # An isolevel passing through a lattice vertex can produce
+                # the same clipped polygon vertex twice after node canonicalization.
+                # Keep its first cyclic occurrence; zero-area faces have no volume.
+                ids = list(dict.fromkeys(node(p[:3]) for p in polygon))
+                if len(ids) < 3:
+                    continue
                 # Lexicographic physical coordinates are invariant under the
                 # periodic translation; node insertion order is irrelevant.
                 anchor = min(range(len(ids)),key=lambda i:tuple(coordinates[ids[i]]))
@@ -150,7 +204,7 @@ def boundary_faces(cells):
     return faces[first[counts == 1]]
 
 
-def audit_linear(points,cells,c=C):
+def audit_linear(points,cells,c=C,family="gyroid"):
     xyz = points[cells]
     determinants = np.linalg.det(np.transpose(xyz[:,1:]-xyz[:,0,None,:],(0,2,1)))
     if determinants.min() <= 0:
@@ -200,7 +254,7 @@ def audit_linear(points,cells,c=C):
             caps |= np.all(points[boundary,axis] == plane,axis=1)
     free_surface = boundary[~caps]
     sample = np.r_[points[np.unique(free_surface)],points[free_surface].mean(axis=1)]
-    residual = np.abs(np.abs(gyroid_numpy(sample))-c)
+    residual = np.abs(np.abs(implicit_numpy(sample,family))-width_numpy(sample,c))
     lengths = np.sum((xyz[:,np.array(TET_EDGES)[:,0]]-xyz[:,np.array(TET_EDGES)[:,1]])**2,axis=(1,2))
     quality = 12*(3*determinants/6)**(2/3)/lengths
     return {"nodes":len(points),"elements":len(cells),"volume":float(determinants.sum()/6),
@@ -228,7 +282,7 @@ def quadratic_nodes(points,cells):
     return np.array(coordinates),np.array(result,dtype=int)
 
 
-def remesh_domain(points, cells, refinement=0):
+def remesh_domain(points, cells, refinement=0, c=C, family="gyroid"):
     """Remesh only the volume; preserve the prescribed closed triangle skin.
 
     Optional uniform subdivision refines the SAME planar domain. Geometry N
@@ -279,9 +333,9 @@ def remesh_domain(points, cells, refinement=0):
         metadata = {'gmsh_version':gmsh.__version__, 'warnings':warnings,
                     'refinement':refinement, 'identical_tetrahedra_removed':duplicate_count}
         # This also detects asymmetric boundary recovery/Steiner insertion.
-        audit_linear(xyz,result)
-        before = audit_linear(points,cells)['volume']
-        after = audit_linear(xyz,result)['volume']
+        audit_linear(xyz,result,c,family)
+        before = audit_linear(points,cells,c,family)['volume']
+        after = audit_linear(xyz,result,c,family)['volume']
         if abs(before-after) > 1e-10:
             raise ValueError('Volume mesher changed the prescribed binary domain')
         return xyz,result,metadata

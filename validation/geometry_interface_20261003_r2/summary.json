@@ -1,0 +1,234 @@
+{
+  "status": "round_closed_with_explicit_limits",
+  "stages_completed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "selected_array_M": 64,
+  "M32_array_passed": false,
+  "anchors": [
+    {
+      "label": "c048",
+      "c": 0.48,
+      "K_N48": 1.6763809503033833,
+      "K_N64": 1.670837488128052,
+      "K_M64_N64": 1.6754550261973133,
+      "K_G32": 1.658349297940731,
+      "K_G48": 1.6488518565893173,
+      "background_relative_change": 0.003317774597900538,
+      "reference_relative_change": 0.0057600331487992935,
+      "analytic_binary_relative": 0.013333903498287893,
+      "mapping_relative": 0.0027636069348878256,
+      "mapped_binary_relative": 0.01613436010135271,
+      "vf_analytic_N64": 0.31052074863793555,
+      "vf_mapped_N64": 0.31114145543480465,
+      "vf_binary_estimate": 0.3104678988456726,
+      "checks": {
+        "background_grid<=1pct": true,
+        "reference_grid<=1pct": true,
+        "analytic_vs_binary<=2pct": true,
+        "mapped_vs_analytic<=1pct": true,
+        "mapped_vs_binary<=2pct": true
+      },
+      "analytic_anchor_passed": true,
+      "array_anchor_passed": true
+    },
+    {
+      "label": "c0",
+      "c": 0.541062,
+      "K_N48": 1.983775328767394,
+      "K_N64": 1.9764840370021242,
+      "K_G32": 1.9641920924186707,
+      "K_G48": 1.952391117811203,
+      "K_M64_N64": 1.9821422289231987,
+      "vf_analytic_N64": 0.3505280532938994,
+      "background_relative_change": 0.003689021327148767,
+      "reference_relative_change": 0.006044370157091139,
+      "analytic_binary_relative": 0.012340211431576043,
+      "mapping_relative": 0.0028627561949130216,
+      "mapped_binary_relative": 0.015238294643211255,
+      "analytic_anchor_passed": true,
+      "array_anchor_passed": true
+    },
+    {
+      "label": "c060",
+      "c": 0.6,
+      "K_N48": 2.3042680180612396,
+      "K_N64": 2.2957430604171267,
+      "K_M64_N64": 2.302504671809808,
+      "K_G32": 2.2838477045297623,
+      "K_G48": 2.269906923174858,
+      "background_relative_change": 0.0037133762009777895,
+      "reference_relative_change": 0.006141565194843134,
+      "analytic_binary_relative": 0.011382024953751107,
+      "mapping_relative": 0.00294528229629183,
+      "mapped_binary_relative": 0.014360830526635171,
+      "vf_analytic_N64": 0.3893261277040227,
+      "vf_mapped_N64": 0.39010935316081274,
+      "vf_binary_estimate": 0.3892267346382141,
+      "checks": {
+        "background_grid<=1pct": true,
+        "reference_grid<=1pct": true,
+        "analytic_vs_binary<=2pct": true,
+        "mapped_vs_analytic<=1pct": true,
+        "mapped_vs_binary<=2pct": true
+      },
+      "analytic_anchor_passed": true,
+      "array_anchor_passed": true
+    }
+  ],
+  "physical_variations": [
+    {
+      "from": "c048",
+      "to": "c0",
+      "delta_c": 0.06106200000000006,
+      "delta_K_analytic": 0.30564654887407205,
+      "delta_K_binary": 0.3035392612218857,
+      "delta_K_mapped": 0.30668720272588534,
+      "slope_analytic": 5.005511592710225,
+      "slope_binary": 4.971000969864816,
+      "slope_mapped": 5.02255416995652,
+      "max_absolute_mesh_change_indicator": 0.011800974607467651,
+      "screening_threshold": 0.035402923822402954,
+      "same_sign": true,
+      "resolved_direction": true,
+      "claim": "Finite physical trend only, not exact continuum shape derivative or confidence interval"
+    },
+    {
+      "from": "c0",
+      "to": "c060",
+      "delta_c": 0.058937999999999935,
+      "delta_K_analytic": 0.31925902341500256,
+      "delta_K_binary": 0.3175158053636551,
+      "delta_K_mapped": 0.3203624428866094,
+      "slope_analytic": 5.4168621842445095,
+      "slope_binary": 5.387285034504996,
+      "slope_mapped": 5.435583882836367,
+      "max_absolute_mesh_change_indicator": 0.013940781354904175,
+      "screening_threshold": 0.041822344064712524,
+      "same_sign": true,
+      "resolved_direction": true,
+      "claim": "Finite physical trend only, not exact continuum shape derivative or confidence interval"
+    }
+  ],
+  "small_derivative_max_relative": 3.959462958276216e-05,
+  "N32_cost": {
+    "N": 32,
+    "M": 64,
+    "route": "implicit",
+    "K": 2.004604669123636,
+    "Vf": 0.3508697029255083,
+    "dK_dc": 5.3007567506667455,
+    "spatial_direction_AD": -0.006292108728745211,
+    "build_seconds": 1.7655592020018958,
+    "forward_seconds_including_first_trace_compile": 11.529043974005617,
+    "adjoint_seconds_including_first_trace_compile": 6.9950661869952455,
+    "memory": {
+      "built_rss_MiB": 1442.6953125,
+      "gpu_built": "966, 8188",
+      "forward_rss_MiB": 2022.39453125,
+      "forward_peak_MiB": 2601.8125,
+      "gpu_forward": "966, 8188",
+      "adjoint_rss_MiB": 2150.51953125,
+      "adjoint_peak_MiB": 2736.27734375,
+      "gpu_adjoint": "1478, 8188",
+      "sampled_device_peak_MiB": 1478
+    },
+    "envelope_relative_L2_error": 3.3572062031055425e-14,
+    "forward_count": 1,
+    "adjoint_count": 1,
+    "total_seconds": 23.265703157987446,
+    "baseline": {
+      "values": [
+        2.004604669123636,
+        0.3508697029255083,
+        0.024573997251763867
+      ],
+      "Fz_top": -0.020046046691237048,
+      "Fz_bottom": 0.020046046691238526,
+      "U_internal": 0.00010023023345618159,
+      "red_res": 1.5104291515438684e-16,
+      "balance": 1.4779844015322396e-15,
+      "reaction_consistency_err": 6.869504964868156e-16,
+      "work_identity_err": 1.3552527156068805e-20,
+      "checks": {
+        "finite": true,
+        "red_res<=1e-8": true,
+        "balance<=1e-8": true,
+        "reaction<=1e-6": true,
+        "work_identity<=1e-8": true
+      },
+      "status": "ok"
+    },
+    "directional_passed": true,
+    "source_sha256": {
+      "voxel_field.py": "720d805bba12892d9bb7e551b292cd0a01c8fa41eb2ac49888efb62d2a1c412c",
+      "geometry.py": "119aecac56b201282bbb9dee08213de3bc6d6a6eaa4c1b424d9f4b8831f03d12",
+      "design_fem.py": "f655ef168fa408f43b5dc7f778dae74049051eee3d42dac048f38cd875515135",
+      "density_fem.py": "ef028492461800555e09c5d0c9f6fb7dc5ba5cc9e7089d9a07cdeff8430a00e5",
+      "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+      "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48"
+    }
+  },
+  "N64_gradient_executed": false,
+  "N64_resource_gate": {
+    "decision": "skip_N64",
+    "available_host_MiB": 13757.07421875,
+    "total_host_MiB": 15800.65234375,
+    "known_max_N64_forward_peak_MiB": 12473.265625,
+    "N32_adjoint_added_host_MiB": 134.46484375,
+    "scale_factor": 8,
+    "estimated_N64_forward_plus_adjoint_peak_MiB": 13548.984375,
+    "minimum_host_headroom_MiB": 1024,
+    "estimated_host_headroom_MiB": 208.08984375,
+    "N32_device_peak_MiB": 1478,
+    "required_device_headroom_MiB": 512,
+    "GPU_N64_projection": "Not certified; host gate fails first",
+    "estimate_is_exact_bound": false,
+    "method": "Observed N64 peak + N32 adjoint peak/RSS increment times element-count ratio; conservative planning estimate, not an OOM proof",
+    "forward_evidence": [
+      {
+        "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step1/M64_N64.json",
+        "rss_MiB": 12473.265625
+      },
+      {
+        "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step1/M32_N64.json",
+        "rss_MiB": 12433.80078125
+      },
+      {
+        "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c060_N64_M64.json",
+        "rss_MiB": 12472.125
+      },
+      {
+        "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c048_N64_M64.json",
+        "rss_MiB": 12470.23046875
+      },
+      {
+        "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c060_N64_analytic.json",
+        "rss_MiB": 12428.52734375
+      },
+      {
+        "file": "/home/xuehu/projects/tpms_jax/validation/geometry_interface_20261003_r2/step2/c048_N64_analytic.json",
+        "rss_MiB": 12432.87890625
+      }
+    ],
+    "N64_new_cost_forward_used": 0,
+    "N64_adjoint_used": 0
+  },
+  "counts": {
+    "large_forward": 9,
+    "small_forward": 9,
+    "primary_K_adjoint": 2,
+    "abaqus_analysis": 4,
+    "abaqus_datacheck": 4,
+    "jax_case_wall_seconds": 709.1331836489262,
+    "jax_budget_seconds": 5400,
+    "regression_tests": 130
+  },
+  "training_executed": false,
+  "nonlinear_executed": false,
+  "next_minimum_problem": "Target-scale stiffness-gradient access, then small geometry-prior + performance-guidance comparison; current round stops before implementing either",
+  "next_problem_prerequisite": "N64 gradient cost is unresolved; stationary-energy route may reduce cost but is only checked here at N8/N32, requires target-scale verification before use"
+}

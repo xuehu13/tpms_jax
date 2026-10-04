@@ -1,0 +1,130 @@
+[
+  {
+    "kind": "JAX_path",
+    "label": "N2_d010",
+    "command": [
+      "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/scripts/finite_strain_uniform.py",
+      "capture",
+      "--N",
+      "2",
+      "--increment",
+      "0.01",
+      "--out",
+      "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N2_d010.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 6.329479678999633,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N2_d010.log"
+  },
+  {
+    "kind": "JAX_path",
+    "label": "N4_d010",
+    "command": [
+      "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/scripts/finite_strain_uniform.py",
+      "capture",
+      "--N",
+      "4",
+      "--increment",
+      "0.01",
+      "--out",
+      "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d010.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 5.638103728007991,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d010.log"
+  },
+  {
+    "kind": "JAX_path",
+    "label": "N4_d005",
+    "command": [
+      "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/scripts/finite_strain_uniform.py",
+      "capture",
+      "--N",
+      "4",
+      "--increment",
+      "0.005",
+      "--out",
+      "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d005.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 6.704715010011569,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d005.log"
+  },
+  {
+    "kind": "Abaqus_input_preparation",
+    "label": "N4_d010",
+    "command": [
+      "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/scripts/finite_strain_uniform.py",
+      "prepare",
+      "--N",
+      "4",
+      "--increment",
+      "0.01",
+      "--out",
+      "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mechanics_trust_20261004_r4/step3_uniform/N4_d010"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.11460014001931995,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d010.prepare.log"
+  },
+  {
+    "kind": "Abaqus_analysis_and_datacheck",
+    "label": "N4_d010",
+    "command": [
+      "/mnt/c/Users/xuehu/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell/pwsh.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\mechanics_trust_20261004_r4\\step3_uniform\\N4_d010\\scripts\\run_locked_uniform.ps1",
+      "-PackageDirectory",
+      "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\mechanics_trust_20261004_r4\\step3_uniform\\N4_d010",
+      "-Case",
+      "uniform_finite_N4_d010"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 50.88809017301537,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d010.abaqus.log"
+  },
+  {
+    "kind": "Abaqus_input_preparation",
+    "label": "N4_d005",
+    "command": [
+      "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/scripts/finite_strain_uniform.py",
+      "prepare",
+      "--N",
+      "4",
+      "--increment",
+      "0.005",
+      "--out",
+      "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/mechanics_trust_20261004_r4/step3_uniform/N4_d005"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.21422816498670727,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d005.prepare.log"
+  },
+  {
+    "kind": "Abaqus_analysis_and_datacheck",
+    "label": "N4_d005",
+    "command": [
+      "/mnt/c/Users/xuehu/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell/pwsh.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\mechanics_trust_20261004_r4\\step3_uniform\\N4_d005\\scripts\\run_locked_uniform.ps1",
+      "-PackageDirectory",
+      "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\mechanics_trust_20261004_r4\\step3_uniform\\N4_d005",
+      "-Case",
+      "uniform_finite_N4_d005"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 42.85682969697518,
+    "log": "/home/xuehu/projects/tpms_jax/validation/mechanics_trust_20261003_r4/step3/N4_d005.abaqus.log"
+  }
+]

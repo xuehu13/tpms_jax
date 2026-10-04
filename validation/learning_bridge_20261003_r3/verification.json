@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "frozen_experiment_files_checked": {
+    "near_term_20261003": 37,
+    "geometry_interface_20261003_r2": 136
+  },
+  "changed_existing_numerical_files": [
+    "voxel_field.py",
+    "design_fem.py",
+    "binary_gyroid.py",
+    "scripts/prepare_abaqus_binary.py"
+  ],
+  "new_test_file": "tests/test_stationary_width.py",
+  "old_experiments_CSV_transport_environment_unchanged": true,
+  "relative_links_checked": 87,
+  "reading_copies_synchronized": true,
+  "git_diff_check_passed": true,
+  "HEAD_unchanged": true,
+  "completed_Abaqus_case_hashes_and_checks_passed": true,
+  "no_pending_lock_or_training_stage": true,
+  "research_counts_and_stop_conditions_match": true
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "family": "gyroid",
+    "c": 0.25,
+    "samples": 4096,
+    "method": "Reuse round4 step2 normal-line root method, Sobol projection; not area weighted or a global bound",
+    "thickness_over_L_min": 0.04616375270876462,
+    "thickness_over_L_quantiles_01_50_99": [
+      0.04631247257862271,
+      0.05325018857585634,
+      0.05649080437291502
+    ],
+    "thickness_over_L_max": 0.05656629878848207,
+    "normal_gradient_norm_quantiles": [
+      8.885883096548918,
+      9.441653427906228,
+      10.881798885477913
+    ],
+    "one_interface_10_to_90_width_over_L_first_order_beta40_quantiles": [
+      0.010095870179463074,
+      0.011635804015419946,
+      0.01236356900863108
+    ]
+  },
+  {
+    "family": "gyroid",
+    "c": 0.541062,
+    "samples": 4096,
+    "method": "Reuse round4 step2 normal-line root method, Sobol projection; not area weighted or a global bound",
+    "thickness_over_L_min": 0.10173736346062014,
+    "thickness_over_L_quantiles_01_50_99": [
+      0.10207761924442622,
+      0.11775551181696642,
+      0.12480214895704109
+    ],
+    "thickness_over_L_max": 0.12496572170373951,
+    "normal_gradient_norm_quantiles": [
+      8.885883096548918,
+      9.441653427906228,
+      10.881798885477913
+    ],
+    "one_interface_10_to_90_width_over_L_first_order_beta40_quantiles": [
+      0.010095870179463074,
+      0.011635804015419946,
+      0.01236356900863108
+    ]
+  }
+]

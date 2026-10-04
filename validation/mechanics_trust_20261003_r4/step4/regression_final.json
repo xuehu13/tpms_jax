@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 58.21665516705252,
+  "maintenance_not_research_paths": true
+}

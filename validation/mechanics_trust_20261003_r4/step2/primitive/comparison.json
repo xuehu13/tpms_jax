@@ -1,0 +1,59 @@
+{
+  "label": "primitive",
+  "family": "primitive",
+  "c": 0.6,
+  "status": "global_stiffness_screen_passed",
+  "K_N48": 1.8009297911866908,
+  "K_N64": 1.798745882138877,
+  "K_G32": 1.7901933220817146,
+  "K_G48": 1.78505223509041,
+  "background_grid_indicator": 0.0012141287268532144,
+  "reference_grid_indicator": 0.0028800764987384564,
+  "model_difference": 0.007671286463935562,
+  "vf_background": 0.3429859132188673,
+  "vf_same_gauss_binary": 0.3428497314453125,
+  "vf_reference": 0.34346193889923726,
+  "reference_quality": {
+    "quality_min": 8.665956835822955e-05,
+    "quality_count_p01": 0.020207722774700895,
+    "Abaqus_distorted": {
+      "elements": 32464,
+      "element_fraction": 0.10621403121902064,
+      "volume_fraction": 0.010777199908864655,
+      "energy_fraction": 0.013750843969174557
+    },
+    "low_quality": {
+      "0.05": {
+        "elements": 6335,
+        "element_fraction": 0.02072652438924642,
+        "volume_fraction": 8.021236731429748e-05,
+        "energy_fraction": 0.00010858864272735055
+      },
+      "0.1": {
+        "elements": 12713,
+        "element_fraction": 0.041593733947985746,
+        "volume_fraction": 0.0003773165867170972,
+        "energy_fraction": 0.00048521133867020536
+      },
+      "0.2": {
+        "elements": 24018,
+        "element_fraction": 0.07858084653211057,
+        "volume_fraction": 0.0029787754263246088,
+        "energy_fraction": 0.0038733562861533303
+      }
+    }
+  },
+  "mode_diagnostics": {
+    "sample_nodes": 4096,
+    "rms_displacement_difference_over_axial_displacement": 0.0004908533868253172,
+    "warp_rms_reference": 0.0005431695591601989,
+    "warp_difference_relative_rms": 0.009036835340777044,
+    "warp_flattened_correlation": 0.9999819313717326,
+    "translation_alignment": "only free global x/y translations; axial fields unshifted"
+  },
+  "checks": {
+    "background_grid<=1pct": true,
+    "reference_grid<=1pct": true,
+    "model_difference<=2pct": true
+  }
+}

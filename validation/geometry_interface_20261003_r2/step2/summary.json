@@ -1,0 +1,160 @@
+{
+  "anchors": [
+    {
+      "label": "c048",
+      "c": 0.48,
+      "K_N48": 1.6763809503033833,
+      "K_N64": 1.670837488128052,
+      "K_M64_N64": 1.6754550261973133,
+      "K_G32": 1.658349297940731,
+      "K_G48": 1.6488518565893173,
+      "background_relative_change": 0.003317774597900538,
+      "reference_relative_change": 0.0057600331487992935,
+      "analytic_binary_relative": 0.013333903498287893,
+      "mapping_relative": 0.0027636069348878256,
+      "mapped_binary_relative": 0.01613436010135271,
+      "vf_analytic_N64": 0.31052074863793555,
+      "vf_mapped_N64": 0.31114145543480465,
+      "vf_binary_estimate": 0.3104678988456726,
+      "checks": {
+        "background_grid<=1pct": true,
+        "reference_grid<=1pct": true,
+        "analytic_vs_binary<=2pct": true,
+        "mapped_vs_analytic<=1pct": true,
+        "mapped_vs_binary<=2pct": true
+      },
+      "analytic_anchor_passed": true,
+      "array_anchor_passed": true
+    },
+    {
+      "label": "c060",
+      "c": 0.6,
+      "K_N48": 2.3042680180612396,
+      "K_N64": 2.2957430604171267,
+      "K_M64_N64": 2.302504671809808,
+      "K_G32": 2.2838477045297623,
+      "K_G48": 2.269906923174858,
+      "background_relative_change": 0.0037133762009777895,
+      "reference_relative_change": 0.006141565194843134,
+      "analytic_binary_relative": 0.011382024953751107,
+      "mapping_relative": 0.00294528229629183,
+      "mapped_binary_relative": 0.014360830526635171,
+      "vf_analytic_N64": 0.3893261277040227,
+      "vf_mapped_N64": 0.39010935316081274,
+      "vf_binary_estimate": 0.3892267346382141,
+      "checks": {
+        "background_grid<=1pct": true,
+        "reference_grid<=1pct": true,
+        "analytic_vs_binary<=2pct": true,
+        "mapped_vs_analytic<=1pct": true,
+        "mapped_vs_binary<=2pct": true
+      },
+      "analytic_anchor_passed": true,
+      "array_anchor_passed": true
+    }
+  ],
+  "abaqus": [
+    {
+      "label": "c048",
+      "G": 32,
+      "K": 1.658349297940731,
+      "seconds": 113.5622014,
+      "diagnostics": {
+        "distorted_elements": 16568,
+        "case": "binary_gyroid_G32_R0_C3D10_fixed",
+        "errors": 0,
+        "convergence_claim": false,
+        "out_of_core_solver": false,
+        "warning_messages": 1,
+        "quality_warning": true
+      },
+      "elements": 132953,
+      "mesh_volume": 0.3124867343822034,
+      "minimum_detJ": 1.3516314810425743e-14,
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c048/G32",
+      "files_sha256": {
+        "odb": "be7157b36e7f33f21bbe5cd090f612b11d5c3786e5c04396afa32d7d8841874d",
+        "sta": "ef785527a6329c18545ffc4b8bd74b9d7520b2dce680c745e0c60072d2dd3030",
+        "dat": "ebe6b73740b5857f651aa15d915081c7d64642c001d512f56e44d7c5b7711327",
+        "msg": "2a2bd22823ea600b6ee862aa2339e9bb123326cae537d4463007ba340f1c1754"
+      }
+    },
+    {
+      "label": "c048",
+      "G": 48,
+      "K": 1.6488518565893173,
+      "seconds": 293.2800214,
+      "diagnostics": {
+        "out_of_core_solver": true,
+        "convergence_claim": false,
+        "case": "binary_gyroid_G48_R0_C3D10_fixed",
+        "distorted_elements": 34420,
+        "warning_messages": 2,
+        "quality_warning": true,
+        "errors": 0
+      },
+      "elements": 355115,
+      "mesh_volume": 0.31138196265328205,
+      "minimum_detJ": 5.254396853867291e-15,
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c048/G48",
+      "files_sha256": {
+        "odb": "ac5088fcb7b14d8c7fc78303dcf8070a3e8e599fdccf85ee27ede4ff961f1fbc",
+        "sta": "15f5fed217e2a6ec0f81f1d02f7d327426ecc4acc7a06e8dc201b34c55639cd6",
+        "dat": "a28fd951e4733c386f287f42b8fd869b6effda1695b26168fb421010610ddbc7",
+        "msg": "60aed551e871e5f0308f4bbdb52be6eef2ee12074488afbed26860c1f4112f3b"
+      }
+    },
+    {
+      "label": "c060",
+      "G": 32,
+      "K": 2.2838477045297623,
+      "seconds": 102.6666186,
+      "diagnostics": {
+        "case": "binary_gyroid_G32_R0_C3D10_fixed",
+        "warning_messages": 1,
+        "errors": 0,
+        "quality_warning": true,
+        "convergence_claim": false,
+        "out_of_core_solver": false,
+        "distorted_elements": 11383
+      },
+      "elements": 146934,
+      "mesh_volume": 0.3918369804732947,
+      "minimum_detJ": 2.2289314866908618e-12,
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c060/G32",
+      "files_sha256": {
+        "odb": "4c4fff45faff4dd0b8e880454a8b7602803bcfe3e816167dbb317189632a9f39",
+        "sta": "f8c123073558374e542cb9a0bbb51d3e4398d29702b98d71fe0a6f384265861e",
+        "dat": "44841ba1bddadcae21e34fb5ca89a99ca8506a9f186af1d4a9f48443e9cf0e12",
+        "msg": "de9ed6235807e135691157092c9b685afa2b6de8c9578561878114de35de7f79"
+      }
+    },
+    {
+      "label": "c060",
+      "G": 48,
+      "K": 2.269906923174858,
+      "seconds": 380.1314331,
+      "diagnostics": {
+        "case": "binary_gyroid_G48_R0_C3D10_fixed",
+        "errors": 0,
+        "convergence_claim": false,
+        "distorted_elements": 32753,
+        "quality_warning": true,
+        "warning_messages": 2,
+        "out_of_core_solver": true
+      },
+      "elements": 396884,
+      "mesh_volume": 0.39039905956752124,
+      "minimum_detJ": 1.2153335153008327e-13,
+      "package": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_interface_20261003_r2/c060/G48",
+      "files_sha256": {
+        "odb": "2cd6969622ba8f4c60d5173c83253cd32292351773ce9638633b6ebaa30b901d",
+        "sta": "ece9d881e4d657f0df0f03b8a554c877b6a422a96d05b63baf16cda833df7ce5",
+        "dat": "6dc6ec55efe4d9a8076acbdc168042844b5319b1aa72f85d7d9f36131aac2be6",
+        "msg": "00fc16a6b4f6a8d5b276a28e66c23e5a56971b9bbab553fd3c76cec5905cc184"
+      }
+    }
+  ],
+  "all_consistency_passed": true,
+  "quality_limits": "Only global response; distorted elements and tiny positive Jacobians retained, not rigorous error bounds"
+}

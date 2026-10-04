@@ -1,0 +1,98 @@
+{
+  "stage": 1,
+  "new_cases": 3,
+  "reused_cases": 1,
+  "comparisons": [
+    {
+      "lateral": "fixed",
+      "Fz48": -0.01983775328767394,
+      "Fz64": -0.01976484037002124,
+      "K64": 1.9764840370021242,
+      "Abaqus_G48_Fz": -0.01952391117811203,
+      "background_grid_indicator": 0.0036890213271487146,
+      "difference_to_binary_reference": 0.012340211431575952,
+      "reference_G32_to_G48_indicator": 0.006044370157091039,
+      "reference_G24_FE_indicator": 0.0029325668035097272,
+      "reference_G24_relocation_indicator": 6.533692702100277e-05,
+      "projected_vf64": 0.3505280532938994,
+      "mesh_vf_G48": 0.35148289497700164,
+      "analytic_binary_vf_estimate": 0.35047590732574463,
+      "eps_x": 0.0,
+      "eps_y": 0.0,
+      "checks": {
+        "numerical_consistency": true,
+        "background_grid<=1percent": true,
+        "reference_geometry_change<=1percent": true,
+        "reference_FE_change<=1percent": true,
+        "response_difference<=2percent": true,
+        "reference_original_inputs_and_completion_verified": true
+      },
+      "working_criteria_passed": true,
+      "reference_warning": {
+        "case": "binary_gyroid_G48_R0_C3D10_fixed",
+        "errors": 0,
+        "warning_messages": 2,
+        "distorted_elements": 28635,
+        "quality_warning": true,
+        "out_of_core_solver": true,
+        "convergence_claim": false,
+        "warning_text": [
+          " ***WARNING: 28635 elements are distorted. Either the isoparametric angles are ",
+          " ***WARNING: THE MEMORY LIMIT IS INSUFFICENT TO RUN THE PURE THREAD-BASED "
+        ]
+      },
+      "reference_quality_assessment": "Global sensitivity screening supports provisional reference; low-quality G48 elements remain, no rigorous error or local-stress claim"
+    },
+    {
+      "lateral": "relaxed_free",
+      "Fz48": -0.01525910364244167,
+      "Fz64": -0.015201780425567434,
+      "K64": 1.5201780425567433,
+      "Abaqus_G48_Fz": -0.01501407753676176,
+      "background_grid_indicator": 0.003770822579296489,
+      "difference_to_binary_reference": 0.012501792957048802,
+      "reference_G32_to_G48_indicator": 0.006142330340160495,
+      "reference_G24_FE_indicator": 0.0027221584913823117,
+      "reference_G24_relocation_indicator": 5.252656760196735e-05,
+      "projected_vf64": 0.3505280532938994,
+      "mesh_vf_G48": 0.35148289497700164,
+      "analytic_binary_vf_estimate": 0.35047590732574463,
+      "eps_x": 0.0036458189659931885,
+      "eps_y": 0.002425765274021065,
+      "checks": {
+        "numerical_consistency": true,
+        "background_grid<=1percent": true,
+        "reference_geometry_change<=1percent": true,
+        "reference_FE_change<=1percent": true,
+        "response_difference<=2percent": true,
+        "reference_original_inputs_and_completion_verified": true
+      },
+      "working_criteria_passed": true,
+      "reference_warning": {
+        "case": "binary_gyroid_G48_R0_C3D10_relaxed_free",
+        "errors": 0,
+        "warning_messages": 2,
+        "distorted_elements": 28635,
+        "quality_warning": true,
+        "out_of_core_solver": true,
+        "convergence_claim": false,
+        "warning_text": [
+          " ***WARNING: 28635 elements are distorted. Either the isoparametric angles are ",
+          " ***WARNING: THE MEMORY LIMIT IS INSUFFICENT TO RUN THE PURE THREAD-BASED "
+        ]
+      },
+      "reference_quality_assessment": "Global sensitivity screening supports provisional reference; low-quality G48 elements remain, no rigorous error or local-stress claim"
+    }
+  ],
+  "fixed_passed": true,
+  "free_passed": true,
+  "proceed_to_step2": true,
+  "macro_equilibrium_solves_observed_new": 9,
+  "linear_solves_observed_new": 9,
+  "new_Abaqus_jobs": 0,
+  "rigorous_error_bound": false,
+  "physical_domain": "single_Gyroid_small_strain_global_axial_response_XY_periodic_flat_faces",
+  "innovation_proven": false,
+  "basis_for_feasibility": "Observed independent response agreement and grid sensitivity under recorded definitions",
+  "reference_warning_resolved": false
+}

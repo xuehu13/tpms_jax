@@ -1,0 +1,114 @@
+[
+  {
+    "step": 1,
+    "case": "N32_baseline",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 15.07337799295783,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_baseline",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 100.00824207399273,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_c_0.001_-1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 97.11918511800468,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_c_0.001_1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 96.41680061497027,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_c_0.0005_-1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 96.88553939800477,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_c_0.0005_1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 97.76138319796883,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_spatial_0.001_-1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 96.71084470301867,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_spatial_0.001_1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 96.64611043798504,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_spatial_0.0005_-1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 98.47497358801775,
+    "passed": true
+  },
+  {
+    "step": 1,
+    "case": "N64_fd_spatial_0.0005_1",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 97.78371464001248,
+    "passed": true
+  },
+  {
+    "step": 2,
+    "case": "ax035_N48",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 36.03255367500242,
+    "passed": true
+  },
+  {
+    "step": 2,
+    "case": "ax035_N64",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 96.73812527500559,
+    "passed": true
+  },
+  {
+    "step": 2,
+    "case": "az035_N48",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 36.14478113100631,
+    "passed": true
+  },
+  {
+    "step": 2,
+    "case": "az035_N64",
+    "forward_count": 1,
+    "general_adjoint_count": 0,
+    "seconds": 97.2782346640015,
+    "passed": true
+  }
+]

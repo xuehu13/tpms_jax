@@ -1,0 +1,180 @@
+[
+  {
+    "energy": 0.0,
+    "reference_volume": 0.999999999999997,
+    "current_volume": 0.999999999999997,
+    "J_min": 1.0,
+    "J_max": 1.0,
+    "mean_first_piola": [
+      [
+        1.556964582183526e-16,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.556964582183526e-16,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.556964582183526e-16
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        1.556964582183526e-16,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.556964582183526e-16,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.556964582183526e-16
+      ]
+    ],
+    "Fz_top": 1.3350372134019317e-16,
+    "Fz_bottom": -1.335037213401932e-16,
+    "reduced_residual_l2": 1.708743324524841e-17,
+    "compression": 0.0,
+    "solve_seconds": 5.697788028977811,
+    "Newton_corrections": 0,
+    "detF_by_occupancy": {
+      "all_min": 1.0,
+      "all_max": 1.0,
+      "finite": true,
+      "solid": {
+        "points": 267616,
+        "min": 1.0,
+        "p01": 1.0,
+        "max": 1.0
+      },
+      "void": {
+        "points": 531264,
+        "min": 1.0,
+        "p01": 1.0,
+        "max": 1.0
+      },
+      "transition": {
+        "points": 85856,
+        "min": 1.0,
+        "p01": 1.0,
+        "max": 1.0
+      }
+    },
+    "energy_projected_material": 0.0,
+    "energy_uniform_floor": 0.0,
+    "energy_pure_void_rho_le005": 0.0,
+    "pure_void_energy_fraction": 0.0,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 2399.83984375,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  },
+  {
+    "energy": 9.918989839614051e-09,
+    "reference_volume": 0.999999999999997,
+    "current_volume": 0.999899999999997,
+    "J_min": 0.9994194134837932,
+    "J_max": 1.0000651384319847,
+    "mean_first_piola": [
+      [
+        -7.965131330588635e-05,
+        1.2183951498939268e-14,
+        3.9184827251601616e-13
+      ],
+      [
+        1.2167721116825124e-14,
+        -6.888972892001508e-05,
+        -4.4529866730086607e-13
+      ],
+      [
+        3.91916396834865e-13,
+        -4.4536969543394654e-13,
+        -0.00019838092822246467
+      ]
+    ],
+    "mean_cauchy": [
+      [
+        -7.965927923381706e-05,
+        1.2176615014411057e-14,
+        3.9184834856914894e-13
+      ],
+      [
+        1.217661486881271e-14,
+        -6.889661858186425e-05,
+        -4.4529870639206513e-13
+      ],
+      [
+        3.918483486220938e-13,
+        -4.4529870634904745e-13,
+        -0.00019838092822246464
+      ]
+    ],
+    "Fz_top": -0.00019838092827231617,
+    "Fz_bottom": 0.0001983809282392367,
+    "reduced_residual_l2": 5.811979702142552e-15,
+    "compression": 0.0001,
+    "solve_seconds": 297.82524758100044,
+    "Newton_corrections": 2,
+    "detF_by_occupancy": {
+      "all_min": 0.9994194134837932,
+      "all_max": 1.0000651384319847,
+      "finite": true,
+      "solid": {
+        "points": 267616,
+        "min": 0.9998720258305309,
+        "p01": 0.9999285033870199,
+        "max": 1.0000157272233294
+      },
+      "void": {
+        "points": 531264,
+        "min": 0.9994194134837932,
+        "p01": 0.9997300910897334,
+        "max": 1.0000651384319847
+      },
+      "transition": {
+        "points": 85856,
+        "min": 0.9997159795725999,
+        "p01": 0.999864292367014,
+        "max": 1.0000325626025286
+      }
+    },
+    "energy_projected_material": 9.907194546630816e-09,
+    "energy_uniform_floor": 1.1795292983237228e-11,
+    "energy_pure_void_rho_le005": 5.549175571823544e-11,
+    "pure_void_energy_fraction": 0.005594496679149197,
+    "periodic_error": 0.0,
+    "loaded_face_error": 0.0,
+    "host_RSS_peak_MiB": 6112.5390625,
+    "checks": {
+      "finite": true,
+      "positive_detF": true,
+      "soft_domain_not_severely_collapsed": true,
+      "reduced_equilibrium": true,
+      "balance": true,
+      "macro_reaction_vs_Piola": true,
+      "energy_partition": true,
+      "periodic": true,
+      "flat_axial_faces": true,
+      "small_strain_limit": true
+    }
+  }
+]
