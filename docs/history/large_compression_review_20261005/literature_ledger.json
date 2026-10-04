@@ -1,0 +1,194 @@
+{
+  "identity_checked": [
+    {
+      "id": "paper_01",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Data-driven lightweight and robust design of hybrid TPMS structures.pdf",
+      "sha256": "96905649fcbda80e451e93a1d122bd4dc2178cce626966f00030581120794f47"
+    },
+    {
+      "id": "paper_02",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Gen-Porous  An INR-based generative framework for multiscale TPMS-like porous structure design and optimization.pdf",
+      "sha256": "0c292c02ac0572bc281cfcd87724521716ce62127883dc4ed7543edd803f644b"
+    },
+    {
+      "id": "paper_03",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Geometrically non-linear topology optimization via geometry projection.pdf",
+      "sha256": "90b2b02f62880b449ce17e11d4406c037540a97385d057c32986b51995e1c688"
+    },
+    {
+      "id": "paper_04",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour.pdf",
+      "sha256": "e8db9aa5fcca053f9c2b5bca6cd1c0d7de23472e296ea50c5a9d04f5fc7c82f6"
+    },
+    {
+      "id": "paper_05",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\JAX-FEM  A differentiable GPU-accelerated 3D finite element solver for automatic inverse design and mechanistic data science.pdf",
+      "sha256": "0c3942eb9867efebd19021ac08ecdea77211feedde59da205198c9f90abfed6c"
+    },
+    {
+      "id": "paper_06",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Microstructure topology optimization by targeting prescribed nonlinear stress-strain relationships.pdf",
+      "sha256": "3dbf60e6a2cf41caf04c631845dcbf8509af9fe45bf5ae18eafb712aa76a5774"
+    },
+    {
+      "id": "paper_07",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Multimaterial topology optimization for finite strain elastoplasticity  Theory, methods, and applications.pdf",
+      "sha256": "9cff0beb5fd788214ff88cb92a1fc9baab331d38bba252f7f667581b7689057f"
+    },
+    {
+      "id": "paper_08",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Multiscale topology optimization with embedded TPMS architected materials.pdf",
+      "sha256": "8707243791eb5473f68922aa84f8987aff1f98ef6197c9a9678c4fbd1da085cb"
+    },
+    {
+      "id": "paper_09",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Projection-Based Implicit Modeling Method (PIMM) for Functionally Graded Lattice Optimization.pdf",
+      "sha256": "859588bdd97977ee20082af1155396d651b40e0e4a7adb7ca9a9caae0a06f393"
+    },
+    {
+      "id": "paper_10",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Shape Optimization and Sensitivity Analysis for Triply Periodic Minimal Surface Lattice Structures Under Periodic Boundary Conditions.pdf",
+      "sha256": "097eea6e2f5c33b7eaada075b35b56732932a2032607b6326120cde6759a5420"
+    },
+    {
+      "id": "paper_11",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Stress-constrained topology optimization of multi-scale structures made of triply periodic minimal surface (TPMS) lattices.pdf",
+      "sha256": "f9148d6bc83197f5ca30404267cf8d7be773d36bb2649806f1fb9a64d60f4f9f"
+    },
+    {
+      "id": "paper_12",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Style- Constrained Inverse Design of MicrostructuresWith Tailored Mechanical Properties UsingUnconditional Diffusion Models.pdf",
+      "sha256": "9ccbff875fddbcfc3b2acd2bb24dc9ea6415534a55cf8d47d4ae382f716d35ad"
+    },
+    {
+      "id": "paper_13",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Three-dimensional generative adversarial network for inverse design of hybrid TPMS.pdf",
+      "sha256": "af67cc2ab5328adc1d902cbd42a12683ec6034229924ef9a4f2046cee4bbecc0"
+    },
+    {
+      "id": "paper_14",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\A voxel-based method of multiscale mechanical property optimization for the design of graded TPMS structures.pdf",
+      "sha256": "45fa80c61b569075fce5b6e9a3ee2ed4a0cd22382a5389d9a7268760e1456980"
+    },
+    {
+      "id": "paper_15",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\An improved finite element modeling method for triply periodic minimal surface structures based on element size and minimum Jacobian.pdf",
+      "sha256": "07f46f02e195517eb9e02cf1d51c48b37f9397e5736c244e285830783b92a28e"
+    },
+    {
+      "id": "paper_16",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Design- and Voxel-Based Analysis of a Topology–Density Dual-Gradient TPMS Absorber for Impact-Load Mitigation.pdf",
+      "sha256": "249185bb3729932887621d5fb960c39b9efd4725fabfc382208c25e4a0ed9eda"
+    },
+    {
+      "id": "paper_17",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+      "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0"
+    },
+    {
+      "id": "paper_18",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\A condition number-based numerical stabilization methodfor geometrically nonlinear topology optimization.pdf",
+      "sha256": "3e467437a22f9964817f198cd8e0f2fa1beecdd2401d368a1e94b1bec40ef95e"
+    },
+    {
+      "id": "paper_19",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Data-driven multiscale nonlinear topology optimization of functionally graded soft composites under large deformations.pdf",
+      "sha256": "7c23ea26e7106d6108dd1c35da6e808ed1ff09f4dce5a4fef88116fd394f64fa"
+    },
+    {
+      "id": "paper_20",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Level-set topology optimisation with unfitted finite elements and automatic shape differentiation.pdf",
+      "sha256": "5d0ed164ac91b9b6cd9fe3032c0584ed4c364727bd6fce1447cd4e99f43e9780"
+    },
+    {
+      "id": "paper_21",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Leveraging automatic differentiation in modern machine learning frameworks for (neural) topology optimization.pdf",
+      "sha256": "7b2318618f576d29a7340c63e29eb3840652261be1071621ee95ddee2a8aa4d7"
+    },
+    {
+      "id": "paper_22",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Sensitivity analysis of any hyperelastic evaluation functions coupled with adjoint method and automatic differentiation.pdf",
+      "sha256": "7746a579d9bbe5cbcaa97fb1272036b9a9a62e52b5168311142c069187f98a1e"
+    },
+    {
+      "id": "paper_23",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\Topology optimization via implicit neural representations.pdf",
+      "sha256": "a5974614d26a6429cb5fcbace7e0677eb4ef64c287ad64f1f40162cc8cab81b9"
+    }
+  ],
+  "selected_reading": [
+    {
+      "id": "paper_03",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Geometrically non-linear topology optimization via geometry projection.pdf",
+      "pages_read": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_page": 2,
+      "sha256": "90b2b02f62880b449ce17e11d4406c037540a97385d057c32986b51995e1c688"
+    },
+    {
+      "id": "paper_04",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour.pdf",
+      "pages_read": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "visual_page": 4,
+      "sha256": "e8db9aa5fcca053f9c2b5bca6cd1c0d7de23472e296ea50c5a9d04f5fc7c82f6"
+    },
+    {
+      "id": "paper_07",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Multimaterial topology optimization for finite strain elastoplasticity  Theory, methods, and applications.pdf",
+      "pages_read": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "visual_page": 3,
+      "sha256": "9cff0beb5fd788214ff88cb92a1fc9baab331d38bba252f7f667581b7689057f"
+    },
+    {
+      "id": "paper_16",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Design- and Voxel-Based Analysis of a Topology–Density Dual-Gradient TPMS Absorber for Impact-Load Mitigation.pdf",
+      "pages_read": [
+        5,
+        6,
+        10,
+        11,
+        12
+      ],
+      "visual_page": 6,
+      "sha256": "249185bb3729932887621d5fb960c39b9efd4725fabfc382208c25e4a0ed9eda"
+    },
+    {
+      "id": "paper_17",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+      "pages_read": [
+        11,
+        12,
+        13
+      ],
+      "visual_page": 12,
+      "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0"
+    },
+    {
+      "id": "paper_18",
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\固定背景网格、非线性求解、自动微分\\A condition number-based numerical stabilization methodfor geometrically nonlinear topology optimization.pdf",
+      "pages_read": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_page": 2,
+      "sha256": "3e467437a22f9964817f198cd8e0f2fa1beecdd2401d368a1e94b1bec40ef95e"
+    }
+  ],
+  "scope": "Six focused mechanics papers and selected sections; not a complete systematic review. Prior cached reading remains separate."
+}

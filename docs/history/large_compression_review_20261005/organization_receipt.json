@@ -1,0 +1,504 @@
+{
+  "moved_items": [
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\repository_cleanup_20261004\\transport.git",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\repository_cleanup_20261004\\transport.git",
+      "files": {
+        "config": {
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598",
+          "bytes": 210
+        },
+        "description": {
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+          "bytes": 73
+        },
+        "FETCH_HEAD": {
+          "sha256": "5c87fd9b0856b046c6d944fa0036119ab7a16daa1a44cb1ec1c8b6ecb0c53339",
+          "bytes": 201
+        },
+        "HEAD": {
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+          "bytes": 23
+        },
+        "hooks\\applypatch-msg.sample": {
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+          "bytes": 478
+        },
+        "hooks\\commit-msg.sample": {
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+          "bytes": 896
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+          "bytes": 4726
+        },
+        "hooks\\post-update.sample": {
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+          "bytes": 189
+        },
+        "hooks\\pre-applypatch.sample": {
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+          "bytes": 424
+        },
+        "hooks\\pre-commit.sample": {
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+          "bytes": 1649
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+          "bytes": 416
+        },
+        "hooks\\pre-push.sample": {
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+          "bytes": 1374
+        },
+        "hooks\\pre-rebase.sample": {
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+          "bytes": 4898
+        },
+        "hooks\\pre-receive.sample": {
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+          "bytes": 544
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+          "bytes": 1492
+        },
+        "hooks\\push-to-checkout.sample": {
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+          "bytes": 2783
+        },
+        "hooks\\sendemail-validate.sample": {
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+          "bytes": 2308
+        },
+        "hooks\\update.sample": {
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+          "bytes": 3650
+        },
+        "info\\exclude": {
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+          "bytes": 240
+        },
+        "objects\\pack\\pack-4ba8e63153d7ebacd86fa37ef05423231d10b992.idx": {
+          "sha256": "c819be3cba7c12171ec037df13e0f4f984003c592e77dac1c45ad90992e7ae73",
+          "bytes": 18600
+        },
+        "objects\\pack\\pack-4ba8e63153d7ebacd86fa37ef05423231d10b992.pack": {
+          "sha256": "7cff6657e4a251f84b3efaeb041d4e7993257e9334b2fef84aab021c6ba6fef2",
+          "bytes": 1698651
+        },
+        "objects\\pack\\pack-4ba8e63153d7ebacd86fa37ef05423231d10b992.rev": {
+          "sha256": "b77a0fb6422e847d226fa8252436e2c79de131a56e526f5d7c3dc2624021e81a",
+          "bytes": 2556
+        },
+        "objects\\pack\\pack-f726abe2d760b2b486bad9c5e3ca7138d4f7a370.idx": {
+          "sha256": "77a61ec7ee5e53eb76df8a12e57f3ea39e0293012c2dab9e5605b2ad1a5f3acc",
+          "bytes": 13504
+        },
+        "objects\\pack\\pack-f726abe2d760b2b486bad9c5e3ca7138d4f7a370.pack": {
+          "sha256": "847adde13652e5e0ee0d8322375136bef6bf3151acd4d20466488a7603c6d3fe",
+          "bytes": 1498252
+        },
+        "objects\\pack\\pack-f726abe2d760b2b486bad9c5e3ca7138d4f7a370.rev": {
+          "sha256": "debeb280a462a82030c1438b20f14315b7dd57f1023d056d4ce3de321adaa3c2",
+          "bytes": 1828
+        },
+        "refs\\heads\\main": {
+          "sha256": "00cf7f45368cffb4ff9c4e19c0b02a01ef4a36b3f56bb0ad634ded1ac1f95d35",
+          "bytes": 41
+        },
+        "refs\\remotes\\origin\\main": {
+          "sha256": "00cf7f45368cffb4ff9c4e19c0b02a01ef4a36b3f56bb0ad634ded1ac1f95d35",
+          "bytes": 41
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\repository_cleanup_20261004\\tpms_jax_cleanup.bundle",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\repository_cleanup_20261004\\tpms_jax_cleanup.bundle",
+      "files": {
+        "tpms_jax_cleanup.bundle": {
+          "sha256": "a9d84d545ae79acd0a85dd04dbf78c6cd62a5159b58e45f6c92b437b572bbcf1",
+          "bytes": 1471795
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thin_target_step2_20261004\\transport.git",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\thin_target_step2_20261004\\transport.git",
+      "files": {
+        "config": {
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598",
+          "bytes": 210
+        },
+        "description": {
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+          "bytes": 73
+        },
+        "FETCH_HEAD": {
+          "sha256": "49926bbca4418c92f44b94b9efbc5f21c7d24d2194476caa931fdeb04c6a2eb6",
+          "bytes": 200
+        },
+        "HEAD": {
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+          "bytes": 23
+        },
+        "hooks\\applypatch-msg.sample": {
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+          "bytes": 478
+        },
+        "hooks\\commit-msg.sample": {
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+          "bytes": 896
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+          "bytes": 4726
+        },
+        "hooks\\post-update.sample": {
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+          "bytes": 189
+        },
+        "hooks\\pre-applypatch.sample": {
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+          "bytes": 424
+        },
+        "hooks\\pre-commit.sample": {
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+          "bytes": 1649
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+          "bytes": 416
+        },
+        "hooks\\pre-push.sample": {
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+          "bytes": 1374
+        },
+        "hooks\\pre-rebase.sample": {
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+          "bytes": 4898
+        },
+        "hooks\\pre-receive.sample": {
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+          "bytes": 544
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+          "bytes": 1492
+        },
+        "hooks\\push-to-checkout.sample": {
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+          "bytes": 2783
+        },
+        "hooks\\sendemail-validate.sample": {
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+          "bytes": 2308
+        },
+        "hooks\\update.sample": {
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+          "bytes": 3650
+        },
+        "info\\exclude": {
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+          "bytes": 240
+        },
+        "objects\\pack\\pack-852ff62505295b8d5f7020931089f2d2b3b2a32a.idx": {
+          "sha256": "39c843b515ee35e909eca9ab6929c05eea2b43656e8a79955c63039448014c2d",
+          "bytes": 31648
+        },
+        "objects\\pack\\pack-852ff62505295b8d5f7020931089f2d2b3b2a32a.pack": {
+          "sha256": "94300639b349d7ce17f8919f955bb6a49b903e43fd0c7f4bb5912343ad2c05d2",
+          "bytes": 4100898
+        },
+        "objects\\pack\\pack-852ff62505295b8d5f7020931089f2d2b3b2a32a.rev": {
+          "sha256": "acee4d14c9607a51569ba4df6417b81d9d80ea984bac33ddf8c66bc1aad6f306",
+          "bytes": 4420
+        },
+        "objects\\pack\\pack-ba68d1ff46f12b6458f67c7e525b024b4e0fafee.idx": {
+          "sha256": "222ca604e2bfd9e00da5b60ffa20a232d6b6f5c3326a3615c12e91aad08ce58b",
+          "bytes": 2556
+        },
+        "objects\\pack\\pack-ba68d1ff46f12b6458f67c7e525b024b4e0fafee.pack": {
+          "sha256": "6ff059de569b4c3cf29cc3f246870ebea354c88da28cc2b8be392a1c930acc7d",
+          "bytes": 3822815
+        },
+        "objects\\pack\\pack-ba68d1ff46f12b6458f67c7e525b024b4e0fafee.rev": {
+          "sha256": "a7b244a6dd1495f6893d566dfdeb12d9d38d7c739c4af20f4ff0d69b899ab510",
+          "bytes": 264
+        },
+        "refs\\heads\\main": {
+          "sha256": "94fb424babe440243f551b61338775ef0289936e6270be39fd5d3456e1c009d3",
+          "bytes": 41
+        },
+        "refs\\remotes\\origin\\main": {
+          "sha256": "94fb424babe440243f551b61338775ef0289936e6270be39fd5d3456e1c009d3",
+          "bytes": 41
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thin_target_step2_20261004\\tpms_jax_cleanup.bundle",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\thin_target_step2_20261004\\tpms_jax_cleanup.bundle",
+      "files": {
+        "tpms_jax_cleanup.bundle": {
+          "sha256": "ba1e64d3327e4e9f277221127f0e165814466af7792f2afb40418c77fda43058",
+          "bytes": 3779935
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thin_target_step3_20261004\\transport.git",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\thin_target_step3_20261004\\transport.git",
+      "files": {
+        "config": {
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598",
+          "bytes": 210
+        },
+        "description": {
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+          "bytes": 73
+        },
+        "FETCH_HEAD": {
+          "sha256": "2fe8aca8f05af475249dbe3088bb2d344bfd3667afab94f507227f1dc74ed210",
+          "bytes": 200
+        },
+        "HEAD": {
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+          "bytes": 23
+        },
+        "hooks\\applypatch-msg.sample": {
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+          "bytes": 478
+        },
+        "hooks\\commit-msg.sample": {
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+          "bytes": 896
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+          "bytes": 4726
+        },
+        "hooks\\post-update.sample": {
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+          "bytes": 189
+        },
+        "hooks\\pre-applypatch.sample": {
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+          "bytes": 424
+        },
+        "hooks\\pre-commit.sample": {
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+          "bytes": 1649
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+          "bytes": 416
+        },
+        "hooks\\pre-push.sample": {
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+          "bytes": 1374
+        },
+        "hooks\\pre-rebase.sample": {
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+          "bytes": 4898
+        },
+        "hooks\\pre-receive.sample": {
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+          "bytes": 544
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+          "bytes": 1492
+        },
+        "hooks\\push-to-checkout.sample": {
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+          "bytes": 2783
+        },
+        "hooks\\sendemail-validate.sample": {
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+          "bytes": 2308
+        },
+        "hooks\\update.sample": {
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+          "bytes": 3650
+        },
+        "info\\exclude": {
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+          "bytes": 240
+        },
+        "objects\\pack\\pack-6a2737a29721986f21f3b5e85fec9861455b45bd.idx": {
+          "sha256": "8fd92d9fefc791e9ce0df94432d57f80a3a97f680b19d05829f48fe3936ff449",
+          "bytes": 32768
+        },
+        "objects\\pack\\pack-6a2737a29721986f21f3b5e85fec9861455b45bd.pack": {
+          "sha256": "451f51b69cad986c9dcb1cbc5a05f16fbccab2f2b001dac1dd62f8e866fd6703",
+          "bytes": 7872802
+        },
+        "objects\\pack\\pack-6a2737a29721986f21f3b5e85fec9861455b45bd.rev": {
+          "sha256": "a41931158f9757d87067840cf98bc8f2889724993b1398279890f16bbeb8073e",
+          "bytes": 4580
+        },
+        "objects\\pack\\pack-bcb41d060a69cd8033d7496425adc6f6b4a56d53.idx": {
+          "sha256": "2abb6c5ae1febd2f6645d64b34660dfbd665370b9061e512bb84d7565bb105a8",
+          "bytes": 3732
+        },
+        "objects\\pack\\pack-bcb41d060a69cd8033d7496425adc6f6b4a56d53.pack": {
+          "sha256": "acce6c8533aacd82f6271cee16e9c6b8156b0c01fb32458e30c938b43dece18f",
+          "bytes": 3185034
+        },
+        "objects\\pack\\pack-bcb41d060a69cd8033d7496425adc6f6b4a56d53.rev": {
+          "sha256": "16b3b2de474fa44d13a17a82bcaf12871174f866b0bc021bc179d60c39511890",
+          "bytes": 432
+        },
+        "refs\\heads\\main": {
+          "sha256": "0da52341cec1998822e3d384f97dfc984ade51b80115977c2bb88df79c7681ef",
+          "bytes": 41
+        },
+        "refs\\remotes\\origin\\main": {
+          "sha256": "0da52341cec1998822e3d384f97dfc984ade51b80115977c2bb88df79c7681ef",
+          "bytes": 41
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thin_target_step3_20261004\\tpms_jax_cleanup.bundle",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\thin_target_step3_20261004\\tpms_jax_cleanup.bundle",
+      "files": {
+        "tpms_jax_cleanup.bundle": {
+          "sha256": "5e770cbb986fa968667ff20c44e46d88ebc1ab54b62525e8ad4b585c23e4ad1f",
+          "bytes": 3132786
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thin_target_step4_20261005\\transport.git",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\thin_target_step4_20261005\\transport.git",
+      "files": {
+        "config": {
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598",
+          "bytes": 210
+        },
+        "description": {
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+          "bytes": 73
+        },
+        "FETCH_HEAD": {
+          "sha256": "96b25214d4bac8c19be437f075b899f27a207cca159592d8bd28829da4ba28bd",
+          "bytes": 200
+        },
+        "HEAD": {
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+          "bytes": 23
+        },
+        "hooks\\applypatch-msg.sample": {
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+          "bytes": 478
+        },
+        "hooks\\commit-msg.sample": {
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+          "bytes": 896
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+          "bytes": 4726
+        },
+        "hooks\\post-update.sample": {
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+          "bytes": 189
+        },
+        "hooks\\pre-applypatch.sample": {
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+          "bytes": 424
+        },
+        "hooks\\pre-commit.sample": {
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+          "bytes": 1649
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+          "bytes": 416
+        },
+        "hooks\\pre-push.sample": {
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+          "bytes": 1374
+        },
+        "hooks\\pre-rebase.sample": {
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+          "bytes": 4898
+        },
+        "hooks\\pre-receive.sample": {
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+          "bytes": 544
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+          "bytes": 1492
+        },
+        "hooks\\push-to-checkout.sample": {
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+          "bytes": 2783
+        },
+        "hooks\\sendemail-validate.sample": {
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+          "bytes": 2308
+        },
+        "hooks\\update.sample": {
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+          "bytes": 3650
+        },
+        "info\\exclude": {
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+          "bytes": 240
+        },
+        "objects\\pack\\pack-e1a521d20f189c3abeeb65183c233ed358b6ab4d.idx": {
+          "sha256": "829a779fc8e1184f72e28fa65f50a132842128c1f8dc613d45ac4abb452d2064",
+          "bytes": 34952
+        },
+        "objects\\pack\\pack-e1a521d20f189c3abeeb65183c233ed358b6ab4d.pack": {
+          "sha256": "b9836883fba31476b93ab2c431c1e32e55f08d00985864c3c229348e1b3be013",
+          "bytes": 10561078
+        },
+        "objects\\pack\\pack-e1a521d20f189c3abeeb65183c233ed358b6ab4d.rev": {
+          "sha256": "4d29b5e6082894ba165af572a40430da68de6cdfc12bd186a35b6a283d0fd1a2",
+          "bytes": 4892
+        },
+        "objects\\pack\\pack-f39dbb3663494215b7035b686af32499b8b4fe79.idx": {
+          "sha256": "e2aefe56c379b9e446b710e49a0f1c0823e791bf0f5da9682246153b9a16a834",
+          "bytes": 3564
+        },
+        "objects\\pack\\pack-f39dbb3663494215b7035b686af32499b8b4fe79.pack": {
+          "sha256": "851c54dc2f565f97fc7148cc6f5861f193307f78bc0e87f465594865078159ea",
+          "bytes": 1218205
+        },
+        "objects\\pack\\pack-f39dbb3663494215b7035b686af32499b8b4fe79.rev": {
+          "sha256": "21cc2ecfc2b0f48ca59c1b277334ed2c83990f565f31bad008047f19b8518237",
+          "bytes": 408
+        },
+        "refs\\heads\\main": {
+          "sha256": "95ef1b2924e8dfaf1a3db20c4120395c8c878a20b3c2582593be4fcf89d7bdef",
+          "bytes": 41
+        },
+        "refs\\remotes\\origin\\main": {
+          "sha256": "95ef1b2924e8dfaf1a3db20c4120395c8c878a20b3c2582593be4fcf89d7bdef",
+          "bytes": 41
+        }
+      }
+    },
+    {
+      "original_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thin_target_step4_20261005\\tpms_jax_cleanup.bundle",
+      "archive_absolute_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005\\thin_target_step4_20261005\\tpms_jax_cleanup.bundle",
+      "files": {
+        "tpms_jax_cleanup.bundle": {
+          "sha256": "bde6d34dd5214df34f25e68b720c67adba93e9011b16a69474ece4030d6ba1e1",
+          "bytes": 1168833
+        }
+      }
+    }
+  ],
+  "file_count": 112,
+  "bytes": 43778409,
+  "purpose": "Completed Git transport only; no maintained checkout, scientific result or original run path moved.",
+  "old_receipt_paths": "Historical receipts identify original paths; this map resolves their new storage location."
+}

@@ -1,0 +1,20 @@
+{
+  "pages": 10,
+  "source_sha256": "a8beb4e34b2cf0529c0d08fdbbb96f303adad893872aaa57aab40e304383120f",
+  "pdf_sha256": "0ca966ba6a0afab1ec5ec1f9443b329e381fb90fc10db820b0959fe618564d99",
+  "missing_source_glyphs": [],
+  "visual_inspection_pending": false,
+  "visual_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "visual_result": "All 10 final rendered pages inspected on three contact sheets; detailed table/body pages additionally inspected individually. No clipped text, overlapping tables, missing glyphs or broken page furniture."
+}

@@ -45,3 +45,20 @@ Hu等能量过渡和Scherz等稳定化针对低刚度域的非线性问题，改
 核对Thillaithevan原论文：实际是修正St. Venant-Kirchhoff模型，不是此前文档误写的Neo-Hookean，已更正活动报告/文献表述，历史原字节不改。补读Ogawa等静态超弹性伴随/AD，支持通用损失需专门伴随，而非复用线性K的驻值规则。
 
 原PDF身份和选页文本在`work/thin_tpms_feasibility_20261004/literature_reading.json`及同目录缓存；原PDF未改。官方[JAX-FEM超弹性](https://deepmodeling.github.io/jax-fem/learn/hyperelasticity/example.html)、[塑性](https://deepmodeling.github.io/jax-fem/learn/plasticity/example.html)示例是能力线索，不能代表项目已有有限应变塑性/接触认证。当前安装basis.py支持实体HEX8/HEX20/HEX27等，但本项目只维护已用HEX8，无壳单元；更高阶只是候选，不在本次自动实现。
+
+## 2026-10-05：大压缩、Explicit与接触的针对性补充
+
+本次核对桌面目录23份PDF的路径/哈希，重点读6篇相关章节并检查选定页面，不声称全面精读。原PDF未修改。账本/摘录在work/large_compression_review_20261005/literature_ledger.json及paper_*_selected.txt，页码为PDF页序。
+
+| 本地编号 | 读取页 | 主线用途与限制 |
+| --- | --- | --- |
+| 03 几何投影非线性 | 2、3、4、5 | 虚域和非线性投影；不是薄壁/接触认证 |
+| 04 周期微结构非线性逆设计 | 4、5、7、8 | 周期、隐式AD与软域处理；主要二维、修改SVK |
+| 07 有限应变弹塑性 | 3、4、5、6 | 内变量/路径灵敏度；正式刊CMA449（2026）118445，DOI含2025 |
+| 16 体素TPMS吸能 | 5、6、10、11、12 | Explicit/接触/塑性至约66.7%；空体素删除后实体C3D8R，非全背景软孔隙 |
+| 17 体素/壳TPMS比较 | 11、12、13 | 薄壁一两层体素风险；不能直接认定本N64失败或通过 |
+| 18 空域稳定化 | 2、3、4、5 | 变形梯度F条件指标；不是全局K条件数，稳定化需单独验证偏差 |
+
+主文提供结果解释和近旁引用，不另维护第二份研究路线。新增主来源包括 [JAX-FEM Explicit](https://github.com/deepmodeling/jax-fem/tree/main/applications/explicit_dynamics)、[TMC源码](https://github.com/deepmodeling/jax-fem/blob/main/applications/third_medium_contact/example.py)、[Abaqus显式理论](https://docs.software.vt.edu/abaqusv2025/English/SIMACAETHERefMap/simathe-c-expdynamic.htm)、[准静态能量](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEGSARefMap/simagsa-c-qsienergybal.htm)、[TMC自接触优化](https://link.springer.com/article/10.1007/s00466-023-02396-7)、[DiffIPC](https://huangzizhou.github.io/research/diffipc.html)。Abaqus可访问公开文档为2025版，2026实际作业设置尚未新验证。
+
+本机官方只读checkout为9a79b4bb47460a90a6fafe26f1fbd58d2d3fed08，安装版0.0.12源码另核对。Explicit是示例式中央差分，不是当前TPMS命令选项；动态松弛人工质量不同于物理质量且周期未覆盖。官方TMC二维硬阈值/旋转历史不认证连续形态或全路径导数。[2026旋转TMC](https://doi.org/10.1016/j.cma.2026.118801)本次只取得摘要并结合源码，不声称全文阅读。本次没有运行官方示例或新增FEM。
