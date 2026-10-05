@@ -1,0 +1,6 @@
+{
+  "Gauss_rows": 8,
+  "maximum_occupancy_absolute_difference": 2.830177336932138e-08,
+  "native_Gauss_order": "x fastest, then y, then z",
+  "mapping_pass_single_precision": true
+}

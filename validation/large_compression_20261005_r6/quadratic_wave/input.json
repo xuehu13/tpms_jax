@@ -1,0 +1,38 @@
+{
+  "N": 8,
+  "role": "small known periodic P-wave integration check; not TPMS accuracy evidence",
+  "method": "physical central difference; existing JAX-FEM NH residual",
+  "dt_seconds": 2.693411273035421e-07,
+  "element_type": "HEX27",
+  "element_degree": 2,
+  "nodes": 4913,
+  "elements": 512,
+  "Gauss_points_per_cell": 27,
+  "mass_lumping": "HRZ_positive_diagonal_scaling",
+  "negative_unmodified_row_mass_entries": 0,
+  "cell_mass_conservation_error": 4.440892098500626e-16,
+  "cell_size_mm": 10.0,
+  "solid_density_tonne_per_mm3": 1e-09,
+  "void_mass_floor": 0.0001,
+  "mass_model": "rho_s*(eta+(1-eta)*phi); numerical void mass, not a second physical material",
+  "affine_inertia_included": true,
+  "no_mass_scaling": true,
+  "no_contact": true,
+  "no_damping": true,
+  "source_sha256": {
+    "hyperelastic_fem.py": "aea700f190532b714f7aabb2caa6c985567f0735010e091d1e7661842ca4053e",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "experiment_sha256": "6d416649a913eb937a3401f9671629543e7d00342a0ef417faac1398ee89b367",
+  "source_case": "/home/xuehu/projects/tpms_jax/validation/thin_target_20261004_r5",
+  "load_time_seconds": 0.02,
+  "devices": [
+    "cuda:0"
+  ],
+  "wave_reference": "continuum P-wave frequency; finite Q2 spatial approximation remains",
+  "total_steps": 320,
+  "adaptive_block_rejection": false,
+  "minimum_dt_seconds": 2.693411273035421e-07
+}

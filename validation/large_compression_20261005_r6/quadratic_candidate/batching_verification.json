@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "relative_residual_difference": 2.6199086820438884e-15,
+  "relative_energy_difference": 8.881784197001252e-16,
+  "J_min": 0.9530187605198401,
+  "cell_mass_conservation_error": 2.220446049250313e-16,
+  "scope": "same JAX-FEM cell kernel/scatter, memory batching equivalence; not target accuracy"
+}

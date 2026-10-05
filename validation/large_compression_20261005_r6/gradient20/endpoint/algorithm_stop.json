@@ -1,0 +1,18 @@
+{
+  "status": "algorithm_stop",
+  "reason": "residual stagnation in thickness-minus Newton; try same-model energy line search",
+  "not_a_budget_stop": true,
+  "not_a_physical_infeasibility_claim": true,
+  "last_checked": {
+    "iteration": 7,
+    "residual_l2": 4.687034394483287e-07,
+    "J_min": 0.03597119719612787,
+    "energy_N_mm": 3.7171518777604224
+  },
+  "full_progress_preserved": true,
+  "central_equilibrium_preserved": true,
+  "adjoint_linear_solve_completed": true,
+  "gradient_difference_check_completed": false,
+  "pid": 2025350,
+  "stopped_at_unix_time": 1791196766.23716
+}

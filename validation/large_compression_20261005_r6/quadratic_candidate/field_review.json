@@ -1,0 +1,33 @@
+{
+  "scope": "saved-state recovery, not a new mechanical solve or contact certification",
+  "Gauss_detF_stats": {
+    "solid": {
+      "points": 116453,
+      "min": 0.8464369453068774,
+      "p01": 0.8993683286488555
+    },
+    "void": {
+      "points": 732249,
+      "min": 0.03537778119925201,
+      "p01": 0.4337640769090957
+    },
+    "transition": {
+      "points": 36034,
+      "min": 0.6653365454587037,
+      "p01": 0.8179660977172479
+    }
+  },
+  "minimum_recovered_J": 0.03537778119925201,
+  "energy_N_mm": 3.758891998139007,
+  "relative_energy_recovery_difference": 8.881784197001252e-16,
+  "uniform_floor_energy_fraction": 0.032116476018807676,
+  "fluctuation_vector_cosine": 0.9998528143059443,
+  "area_weighted_relative_fluctuation_difference": 0.01798436944516854,
+  "gauge_translation_alignment_mm": [
+    0.03211391981434397,
+    0.005348708971520001,
+    -0.42827258800706575
+  ],
+  "interpolation": "exact installed HEX27 basis at the original midsurface nodes",
+  "field_sha256": "5480fc471a5edd36298a1cb926bf79636c7ce2dd02d1e0ed853330e79b6abc5d"
+}

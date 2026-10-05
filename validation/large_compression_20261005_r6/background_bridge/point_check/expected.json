@@ -1,0 +1,22 @@
+{
+  "role": "material point check",
+  "N": 64,
+  "L_mm": 10.0,
+  "compression": 0.2,
+  "nodes": 8,
+  "elements": 1,
+  "eta": 0.0001,
+  "full_Gauss_field_exact_export": true,
+  "field_binary_sha256": "ae72a5e586d92b45d21c603682f46d29a66f4a687b7898e1691fd1fdbd48366d",
+  "source_Gauss_sha256": "b1f1bf51585074f6bb01da4875a697c1b8ff3c8f350885a4cf529414b6759f49",
+  "shell_model_reused": false,
+  "native_formulation": "C3D8 has native volumetric treatment; not assumed identical to general JAX HEX8",
+  "input_sha256": "06c133621280365337ddd06197d496ba57cb0e7197bfb9a29d0c1580e7cdfcb2",
+  "adapter_sha256": "eb41a08fd46cbbb51cd9c500e805e96944ba00a7553308c610852c4474d7e4fd",
+  "audit_element_labels": [
+    1
+  ],
+  "mean_scale": 0.5055552233588518,
+  "energy_N_mm": 0.0005567372573642612,
+  "internal_macro_Fz_N": -0.000579639421735835
+}

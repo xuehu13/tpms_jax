@@ -1,0 +1,19 @@
+{
+  "existing_related_tests_passed": 14,
+  "seconds": 13.91,
+  "scope": "density/full Neo-Hookean and XYZ; not a full repeated test suite",
+  "thickness_input": {
+    "status": "pass",
+    "unperturbed_occupancy_max_absolute_difference": 2.220446049250313e-16,
+    "Q2_actual_cache_required": true,
+    "thickness_on_wave_rejected": true,
+    "invalid_runs_create_no_output": true,
+    "scope": "input/mathematical occupancy checks, not a scientific forward or gradient"
+  },
+  "CLI_guard": {
+    "status": "pass",
+    "returncode": 2,
+    "output_not_created": true,
+    "scope": "Q2 CLI rejects missing actual cache before allocating a target Problem"
+  }
+}

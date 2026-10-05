@@ -1,0 +1,6 @@
+{
+  "residual_l2": 2.960442884043839e-06,
+  "diagonal_min": 1.4987946999442398e-05,
+  "diagonal_seconds": 22.773102820967324,
+  "status": "cost_probe_not_gradient_validation"
+}

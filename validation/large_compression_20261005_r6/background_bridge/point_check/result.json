@@ -1,0 +1,54 @@
+{
+  "status": "complete_prescribed_state",
+  "scope": "material point check",
+  "independent_equilibrium": false,
+  "internal_macro_Fz_N": -0.0005796394179924391,
+  "energy_N_mm": 0.000556737242732197,
+  "work_N_mm": 0.0005796393961645663,
+  "relative_force_difference": 6.458145795917858e-09,
+  "relative_energy_difference": 2.62818122820363e-08,
+  "Gauss_occupancy_audit": [
+    {
+      "element": 1,
+      "point": 1,
+      "phi": 0.9190050363540649
+    },
+    {
+      "element": 1,
+      "point": 2,
+      "phi": 0.9989697337150574
+    },
+    {
+      "element": 1,
+      "point": 3,
+      "phi": 0.13246393203735352
+    },
+    {
+      "element": 1,
+      "point": 4,
+      "phi": 0.9375357627868652
+    },
+    {
+      "element": 1,
+      "point": 5,
+      "phi": 0.08599111437797546
+    },
+    {
+      "element": 1,
+      "point": 6,
+      "phi": 0.8792465925216675
+    },
+    {
+      "element": 1,
+      "point": 7,
+      "phi": 0.0010563130490481853
+    },
+    {
+      "element": 1,
+      "point": 8,
+      "phi": 0.08977766335010529
+    }
+  ],
+  "final_step_time": 1.0,
+  "odb_sha256": "b26fc3108641f8463ccd397c5dd1ba339e262d9363a4ab979901848e19d738a4"
+}

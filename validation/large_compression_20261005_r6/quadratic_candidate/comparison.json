@@ -1,0 +1,62 @@
+{
+  "candidate_completed_20": true,
+  "element": "HEX27",
+  "cells_per_axis": 32,
+  "same_node_count_as_HEX8_N64": true,
+  "unchanged_target_thickness_mm": 0.5,
+  "old_HEX8_terminal_force_relative_difference": 0.2240949010208526,
+  "independent_Abaqus_background_equilibrium": false,
+  "reference_quality_certified": false,
+  "no_contact_diagnostic": true,
+  "gradient20_certified": false,
+  "input_sha256": "b9ea8ca4824ede7b476f62354cd71051860871ab4fe9c85e2c6e268d07ca679a",
+  "result_sha256": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+  "hold_mean_Fz_N": -2.0034410420448174,
+  "terminal_force_relative_difference": 0.09391243917778813,
+  "curve_RMS_over_Standard_peak": 0.05708946083301684,
+  "input_work_relative_difference": 0.06864280027416791,
+  "input_work_N_mm": 3.7585997080910394,
+  "terminal_energy_N_mm": 3.758891998139004,
+  "terminal_KE_over_U": 1.740977773992439e-06,
+  "energy_work_gap": 7.950678938886166e-05,
+  "loading_time_fraction_KE_below_5pct": 0.968421052631603,
+  "minimum_observed_J": 0.03459447633859989,
+  "body_seconds": 935.226560058014,
+  "compile_seconds": 5.5444305700366385,
+  "peak_RSS_GiB": 4.575653076171875,
+  "rejected_blocks": 1,
+  "terminal_dt": 1.3466364693640205e-07,
+  "response_target_only_pass": true,
+  "physical_replacement_certified": false,
+  "hold_min_max_Fz_N": [
+    -2.007341401602647,
+    -2.000644292143451
+  ],
+  "response_at_compressions": [
+    {
+      "compression": 0.01,
+      "HEX27_Fz_magnitude_N": 0.3956883920947591,
+      "shell_Fz_magnitude_N": 0.36943723478252233
+    },
+    {
+      "compression": 0.05,
+      "HEX27_Fz_magnitude_N": 1.702802568494709,
+      "shell_Fz_magnitude_N": 1.6103992253526205
+    },
+    {
+      "compression": 0.1,
+      "HEX27_Fz_magnitude_N": 2.3880968769606032,
+      "shell_Fz_magnitude_N": 2.2387674044908055
+    },
+    {
+      "compression": 0.15,
+      "HEX27_Fz_magnitude_N": 2.2386978170482696,
+      "shell_Fz_magnitude_N": 2.0904140550078156
+    },
+    {
+      "compression": 0.2,
+      "HEX27_Fz_magnitude_N": 2.0049180023906428,
+      "shell_Fz_magnitude_N": 1.8314424753189087
+    }
+  ]
+}

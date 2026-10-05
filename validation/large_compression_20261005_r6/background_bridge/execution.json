@@ -1,0 +1,45 @@
+{
+  "status": "native_saved_state_comparison_complete",
+  "tests": [
+    {
+      "native_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/background_bridge_20261005/point_check",
+      "job": "bridge_import",
+      "independent_equilibrium": false,
+      "input_sha256": "06c133621280365337ddd06197d496ba57cb0e7197bfb9a29d0c1580e7cdfcb2",
+      "compiled_standardU_sha256": "4cae263b141d727777757bd63de9970d258abc4e354ab85bb5fe34186a354efa",
+      "unchanged_Abaqus_default_DLL_sha256": "f4980cbf391aca23b7d8ce97b278179c4b4329798ad10b7877f28ee20f6da5dc",
+      "status": "complete_prescribed_state",
+      "Gauss_mapping_audit": {
+        "Gauss_rows": 8,
+        "maximum_occupancy_absolute_difference": 2.830177336932138e-08,
+        "native_Gauss_order": "x fastest, then y, then z",
+        "mapping_pass_single_precision": true
+      }
+    },
+    {
+      "native_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/background_bridge_20261005/saved20",
+      "job": "bridge_saved20",
+      "independent_equilibrium": false,
+      "input_sha256": "ce0b043122508bda660c42822d156e58aa99454a48f274cfe94a6c039b9fbada",
+      "compiled_standardU_sha256": "4cae263b141d727777757bd63de9970d258abc4e354ab85bb5fe34186a354efa",
+      "unchanged_Abaqus_default_DLL_sha256": "f4980cbf391aca23b7d8ce97b278179c4b4329798ad10b7877f28ee20f6da5dc",
+      "status": "complete_prescribed_state",
+      "Gauss_mapping_audit": {
+        "Gauss_rows": 32,
+        "maximum_occupancy_absolute_difference": 2.830177336932138e-08,
+        "native_Gauss_order": "x fastest, then y, then z",
+        "mapping_pass_single_precision": true
+      }
+    }
+  ],
+  "method": "native Abaqus/Standard C3D8, UHYPER energy, SDVINI frozen initial Gauss occupancy",
+  "compiler": "MSVC; precompiled usub_lib_dir with default exports forwarded to unchanged installed DLL copy",
+  "implementation_scope": "validated on installed Abaqus 2026 Windows x64; not a portable user-subroutine compiler workflow",
+  "failed_attempts": "Earlier link attempts require missing Intel libraries; retained in work history and native diagnostic files. Not scientific response failures.",
+  "main_analysis_wall_seconds": 124,
+  "all_DOFs_prescribed": true,
+  "force_difference_vs_saved_JAX": 0.01130718656774421,
+  "energy_difference_vs_saved_JAX": 0.010802136150539043,
+  "work_warning": "Single prescribed deformation increment: ALLWK is not the physical compression-path work and is not used for energy certification.",
+  "inference": "No large constitutive/unit/material-point discrepancy at this common state; independent solver path and shell/solid approximation remain untested by this bridge."
+}

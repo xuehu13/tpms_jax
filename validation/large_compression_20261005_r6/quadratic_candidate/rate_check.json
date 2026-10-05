@@ -1,0 +1,41 @@
+{
+  "fast": {
+    "hold_mean_Fz_N": -2.0034410420448174,
+    "work_N_mm": 3.7585997080910394,
+    "loading_time_fraction_KE_below_5pct": 0.968421052631603,
+    "terminal_KE_over_U": 1.740977773992439e-06,
+    "energy_work_gap": 7.950678938886166e-05,
+    "body_seconds": 935.226560058014,
+    "rejected_blocks": 1,
+    "minimum_observed_J": 0.03459447633859989,
+    "peak_RSS_GiB": 4.575653076171875
+  },
+  "slow": {
+    "hold_mean_Fz_N": -2.004589392344613,
+    "work_N_mm": 3.7588217436037032,
+    "loading_time_fraction_KE_below_5pct": 1.0,
+    "terminal_KE_over_U": 6.004147171616703e-07,
+    "energy_work_gap": 1.9617855763224794e-05,
+    "body_seconds": 1851.315908028977,
+    "rejected_blocks": 1,
+    "minimum_observed_J": 0.03453516339271022,
+    "peak_RSS_GiB": 4.586334228515625
+  },
+  "rate_force_relative_difference": 0.0005728606088514221,
+  "rate_curve_RMS_over_Standard_peak": 0.006066921034624352,
+  "rate_work_relative_difference": 5.9070508741654315e-05,
+  "rate_check_limit": 0.02,
+  "rate_targets_pass": true,
+  "slow_terminal_force_relative_difference": 0.09453945771794836,
+  "slow_curve_RMS_over_Standard_peak": 0.05872738901050182,
+  "slow_input_work_relative_difference": 0.0687059292771055,
+  "response_target_slow_pass": true,
+  "reference_quality_certified": false,
+  "physical_replacement_certified": false,
+  "gradient20_certified": false,
+  "scope": "same Q2 geometry/material/XYZ, loading time doubled; no contact elastic diagnostics",
+  "hashes": {
+    "T0p004_compact": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+    "T0p008_compact": "cd85d937d395a5de376718c7953a502da38d8a78b89ec398696cb262c133cbb1"
+  }
+}

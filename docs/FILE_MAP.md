@@ -21,7 +21,7 @@
 | 正式路径 | 用途 |
 | --- | --- |
 | fem.py、density_fem.py、pbc.py | 共享HEX8/实际Gauss场/周期约束 |
-| hyperelastic_fem.py | 当前Neo-Hookean静力有限应变；无Explicit/接触/塑性 |
+| hyperelastic_fem.py | 共享Neo-Hookean实体内力，HEX8基础/HEX27可选；显式复用此核，接触/塑性未实现 |
 | surface_distance.py | 周期中面距离/恒厚表示；厚度AD不等于形态AD |
 | geometry.py、volume.py、voxel_field.py | 隐式几何、用料、周期数组插值 |
 | design_fem.py | 已核对参数梯度和专用刚度/用料规则 |
@@ -80,6 +80,7 @@
 | 正式docs/history/large_compression_review_20261005/ | 本次小型身份/核对/整理收据；不复制全部文献或大缓存 |
 | work/forward20_plan_20261005/ | 最新直接20%规划调整，仅文档同步/收据，无力学作业 |
 | work/forward20_step1_20261005/ | 本轮实际执行、旧源快照、调度、分析和发布收据；维护入口只在正式WSL/scripts/ |
-| [工作目录说明](history/README.md) | 阅读副本、已完成工具、历史归档的分工 |
+| work/background_bridge_20261005/ | 第3步原生保存状态桥接、二次候选、必要资源处理与分析；梯度入口有前向门槛，科学数据在正式同轮background_bridge和quadratic_candidate |
+| Windows工作目录说明（阅读工作区work/README.md） | 阅读副本、已完成工具、历史归档的分工 |
 
 旧Git收据中的旧路径不改，新work/large_compression_review_20261005/organization_receipt.json记录旧新绝对路径与哈希。历史数据、原始结果、停止日志不删除或重写；活动说明精简，正文集中到综合报告。未来新计算进新目录，不覆盖薄壁已完成记录。

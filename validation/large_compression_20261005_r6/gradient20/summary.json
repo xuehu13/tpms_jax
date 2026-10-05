@@ -1,0 +1,125 @@
+{
+  "status": "perturbed_equilibrium_not_converged",
+  "compression": 0.2,
+  "central_thickness_mm": 0.5,
+  "central": {
+    "Fz_N": -2.0044657633265714,
+    "residual_l2": 3.5473022316022486e-09,
+    "J_min": 0.035363884762221416,
+    "energy_N_mm": 3.7588219072673774
+  },
+  "central_equilibrium_pass": true,
+  "candidate_adjoint_dFz_dt_N_per_mm": -10.844935804150893,
+  "candidate_adjoint_is_validated": false,
+  "local_endpoint_difference_check_pass": false,
+  "same_loading_path_design_perturbations_checked": false,
+  "gradient20_certified": false,
+  "physical_replacement_certified": false,
+  "first_residual_attempt": {
+    "stop": {
+      "status": "algorithm_stop",
+      "reason": "residual stagnation in thickness-minus Newton; try same-model energy line search",
+      "not_a_budget_stop": true,
+      "not_a_physical_infeasibility_claim": true,
+      "last_checked": {
+        "iteration": 7,
+        "residual_l2": 4.687034394483287e-07,
+        "J_min": 0.03597119719612787,
+        "energy_N_mm": 3.7171518777604224
+      },
+      "full_progress_preserved": true,
+      "central_equilibrium_preserved": true,
+      "adjoint_linear_solve_completed": true,
+      "gradient_difference_check_completed": false,
+      "pid": 2025350,
+      "stopped_at_unix_time": 1791196766.23716
+    },
+    "guard_elapsed_seconds": 4901.0847499370575,
+    "central_Newton_linear_seconds": 1377.2065689769806,
+    "adjoint_linear_seconds": 282.14433305495186
+  },
+  "energy_retry": {
+    "failure": {
+      "type": "RuntimeError",
+      "message": "Newton direction is not an energy descent direction",
+      "elapsed_seconds": 2873.648016148014,
+      "linear_solves": [
+        {
+          "role": "adjoint",
+          "iterations": 2218,
+          "info": 0,
+          "relative_true_linear_residual": 9.980898262811411e-08,
+          "seconds": 284.3536812000093
+        },
+        {
+          "role": "minus_Newton0",
+          "iterations": 2677,
+          "info": 0,
+          "relative_true_linear_residual": 9.990053759322043e-08,
+          "seconds": 342.69100812397664
+        },
+        {
+          "role": "minus_Newton1",
+          "iterations": 2517,
+          "info": 0,
+          "relative_true_linear_residual": 9.896421504121876e-08,
+          "seconds": 322.36989426100627
+        },
+        {
+          "role": "minus_Newton2",
+          "iterations": 2287,
+          "info": 0,
+          "relative_true_linear_residual": 9.970740302671837e-08,
+          "seconds": 292.3530282260035
+        },
+        {
+          "role": "minus_Newton3",
+          "iterations": 2595,
+          "info": 0,
+          "relative_true_linear_residual": 9.964471575459736e-08,
+          "seconds": 332.0894626759691
+        },
+        {
+          "role": "minus_Newton4",
+          "iterations": 2813,
+          "info": 0,
+          "relative_true_linear_residual": 9.960152180346036e-08,
+          "seconds": 359.8847024089773
+        },
+        {
+          "role": "minus_Newton5",
+          "iterations": 2464,
+          "info": 0,
+          "relative_true_linear_residual": 9.962113909917155e-08,
+          "seconds": 313.7249034529668
+        },
+        {
+          "role": "minus_Newton6",
+          "iterations": 3456,
+          "info": 0,
+          "relative_true_linear_residual": 9.988400188651318e-08,
+          "seconds": 442.1188208599924
+        }
+      ]
+    },
+    "result": null,
+    "last_checked_minus": {
+      "iteration": 6,
+      "residual_l2": 1.5127049302066098e-06,
+      "J_min": 0.03597073606611817,
+      "energy_N_mm": 3.7171517189834344
+    },
+    "minus_thickness_mm": 0.4975,
+    "guard_elapsed_seconds": 3137.076386451721
+  },
+  "not_budget_stop": true,
+  "interpretation": "Central equilibrium and its adjoint solved; perturbation verification determines derivative validity. A stopped Newton trial does not prove lack of a physical equilibrium or derivative.",
+  "next_focus": "Remain in step4: actual plus/minus complete explicit loading paths, then assess branch consistency and derivative method; no additional mesh sweep or training.",
+  "source_sha256": {
+    "gradient20/endpoint/central.json": "3dbe09d40849d712bb7386148372c701a170c1bcecf9b90e88072ead582f332f",
+    "gradient20/endpoint/algorithm_stop.json": "9ecc5a2dc3126dfcf0f9f973ba762051ffa53999fc201f650d4315f41921e331",
+    "gradient20/endpoint_energy/adjoint.json": "bfd422bd0126fd3b696663e86dce65e239515a576af686d4a8aa002ede5bc67e",
+    "gradient20/endpoint_energy/minus_progress.json": "e398cf26aabece8f27b0befcf7a770e0a653ea5eab325a2d1c06c4809d0920a8",
+    "gradient20/endpoint_energy/input.json": "7b0c56029c759104d07e701bbe0dd0430d8d2cca29181d061b99bbdd63d44860"
+  }
+}

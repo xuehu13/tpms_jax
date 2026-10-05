@@ -1,0 +1,93 @@
+{
+  "attempts": [
+    {
+      "attempt": "T0p004",
+      "guard_state": "stopped",
+      "returncode": 15,
+      "guard_reason": "memory_protection",
+      "guard_elapsed_seconds": 43.252689599990845,
+      "peak_sampled_RSS_GiB": 12.245044708251953,
+      "resource_receipt_sha256": "a4747fea9b370d8ea95f9207e074832697b50538dcd384c98876c1565b2a1609",
+      "scientific_result_completed": false,
+      "log_sha256": "2ce87cb41ad894496554080cfc0c72adaea19057377a85a494df1e123c8e015a",
+      "preparation_failure_tail": "[0]PETSC ERROR: or try https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html on NVIDIA CUDA systems to find memory corruption errors\n[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run \n[0]PETSC ERROR: to get more information on the crash.\nAbort(59) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 0"
+    },
+    {
+      "attempt": "T0p004_compact",
+      "guard_state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "guard_elapsed_seconds": 1025.2359519004822,
+      "peak_sampled_RSS_GiB": 4.552154541015625,
+      "resource_receipt_sha256": "499dfe561e9825773b54c580ada14146d0d3a344af526d8dfc92f2822e9818ee",
+      "scientific_result_completed": true,
+      "result_sha256": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+      "log_sha256": "7416787c2ccc0f954563276b17dec9420444fd0d94f4ace90c7adef997c2eda7",
+      "preparation_failure_tail": null
+    },
+    {
+      "attempt": "T0p004_runtime_geometry",
+      "guard_state": "stopped",
+      "returncode": 1,
+      "guard_reason": null,
+      "guard_elapsed_seconds": 10.001765251159668,
+      "peak_sampled_RSS_GiB": 4.541542053222656,
+      "resource_receipt_sha256": "bef5586a70f0dd85014e37380de35ffaed50875ff4c1b660c0950c69d38cc723",
+      "scientific_result_completed": false,
+      "log_sha256": "9a7a5de0582286eef70385aa28e0b6e93f0e361fb25b033430c4634fd73cd138",
+      "preparation_failure_tail": "E1005 16:08:47.824317 1970419 cuda_device_allocator.cc:367] [0] Failed to synchronize before device memory deallocation: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory\n=== Source Location Trace: ===\nexternal/xla+/xla/stream_executor/cuda/cuda_status.cc:45\n"
+    },
+    {
+      "attempt": "T0p008_compact",
+      "guard_state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "guard_elapsed_seconds": 2025.5445446968079,
+      "peak_sampled_RSS_GiB": 4.515892028808594,
+      "resource_receipt_sha256": "cae3bec7fbb211914140763a2e52e78567829bb9a2303157bddcff87245ef573",
+      "scientific_result_completed": true,
+      "result_sha256": "cd85d937d395a5de376718c7953a502da38d8a78b89ec398696cb262c133cbb1",
+      "log_sha256": "0b2f9004abc2c04d07f6981ec8462938173e811e26e83ba2a8e7070c790e986f",
+      "preparation_failure_tail": null
+    },
+    {
+      "attempt": "probe",
+      "guard_state": "stopped",
+      "returncode": 15,
+      "guard_reason": "memory_protection",
+      "guard_elapsed_seconds": 48.30534386634827,
+      "peak_sampled_RSS_GiB": 12.369121551513672,
+      "resource_receipt_sha256": "d5a38ef70f0b94902742b05bff093281f3a23f6bfed77a41365ba780f69c6c91",
+      "scientific_result_completed": false,
+      "log_sha256": "56e963efa8c042801083f855b4981ed823f2abe7d67f6dd96070bbf1bd36d675",
+      "preparation_failure_tail": "[0]PETSC ERROR: or try https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html on NVIDIA CUDA systems to find memory corruption errors\n[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run \n[0]PETSC ERROR: to get more information on the crash.\nAbort(59) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 0"
+    },
+    {
+      "attempt": "probe_masked_tail",
+      "guard_state": "stopped",
+      "returncode": 1,
+      "guard_reason": null,
+      "guard_elapsed_seconds": 10.003148317337036,
+      "peak_sampled_RSS_GiB": 4.582477569580078,
+      "resource_receipt_sha256": "3a71e890f67cbd9cbc4654e6ac146ff906f67587258d38509caff0ecdbcfdc81",
+      "scientific_result_completed": false,
+      "log_sha256": "2b3185da015fd010c5544798f53839bd2dd401e25a1eaa5fdca436be84d8b6d6",
+      "preparation_failure_tail": "  File \"/home/xuehu/projects/tpms_jax/scripts/thin_target_explicit.py\", line 118, in field\n    assert np.array_equal(np.asarray(p.fe.JxW),qw)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError"
+    },
+    {
+      "attempt": "probe_ready",
+      "guard_state": "completed",
+      "returncode": 0,
+      "guard_reason": null,
+      "guard_elapsed_seconds": 50.872079372406006,
+      "peak_sampled_RSS_GiB": 11.511123657226562,
+      "resource_receipt_sha256": "fea7f22e7eacc13bc54c844cf476a97a3df6e3e8d440b68e7d914db9028e6ad0",
+      "scientific_result_completed": true,
+      "result_sha256": "8a147e8b7d53c872f73d29b6f33ef8e6d4552726c1544ceda02255d3be6242df",
+      "log_sha256": "e86d07e5dd6aef8120e89cdd4a216853d71d89a478d4a3bdf21fd48d9ff8a1e3",
+      "preparation_failure_tail": null
+    }
+  ],
+  "scope": "actual guards/preparation stops; no failure is silently counted as a successful response",
+  "large_arrays_and_full_logs_remain_local": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "prepared",
+  "native_root": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/background_bridge_20261005",
+  "tests": [
+    "point_check",
+    "saved20"
+  ],
+  "source_preserved": true,
+  "scope": "same Gauss occupancy and prescribed deformation; no independent solution path"
+}

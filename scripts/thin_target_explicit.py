@@ -25,25 +25,75 @@ class ExplicitXYZ:
         self.ids=jnp.asarray(p.class_ids,dtype=jnp.int32);self.pin=p.fixed_class_id
         self.nc=int(np.max(p.class_ids))+1;self.scale=p.stiffness_scale
         # m_norm = rho*L^2 integral N_i*(eta+(1-eta)*phi) dV_norm.
-        cellmass=np.einsum('qn,cq,cq->cn',np.asarray(p.fe.shape_vals),
-                           np.asarray(p.fe.JxW),np.asarray(self.scale))*density*L**2
+        shapes=np.asarray(p.fe.shape_vals);weights=np.asarray(p.fe.JxW)
+        rowmass=np.einsum('qn,cq,cq->cn',shapes,weights,np.asarray(self.scale))
+        self.mass_lumping='row_sum'
+        if getattr(p,'element_degree',1)==2:
+            # HRZ diagonal scaling: positive lumped mass, conserving each
+            # cell's integrated material mass. Row sums can be negative in Q2.
+            diag=np.einsum('qn,cq,cq->cn',shapes**2,weights,np.asarray(self.scale))
+            total=np.sum(weights*np.asarray(self.scale),axis=1)
+            cellmass=diag*(total/diag.sum(axis=1))[:,None]
+            self.mass_lumping='HRZ_positive_diagonal_scaling'
+        else:cellmass=rowmass
+        self.negative_row_mass_entries=int(np.sum(rowmass<=0))
+        self.mass_conservation_error=float(np.max(np.abs(
+            cellmass.sum(axis=1)/np.sum(weights*np.asarray(self.scale),axis=1)-1)))
+        if not np.isfinite(cellmass).all() or np.min(cellmass)<=0:
+            raise ValueError('Nonpositive/nonfinite lumped material mass')
+        cellmass*=density*L**2
         nodem=np.zeros(len(p.fe.points));np.add.at(nodem,np.asarray(p.fe.cells).ravel(),cellmass.ravel())
         self.nodem=jnp.asarray(nodem)
         self.mass=jnp.zeros(self.nc).at[self.ids].add(self.nodem)
         self.reduce=lambda r:jnp.zeros((self.nc,3)).at[self.ids].add(r)
-        self.force=jax.jit(self._force)
+        self.kernel_geometry=None
+        if getattr(p,'element_degree',1)==2:
+            # These regular Cartesian cells have the same reference map.
+            # Verify it before retaining one kernel pattern, rather than
+            # repeated GPU copies of several large geometric arrays.
+            grad0=np.asarray(p.shape_grads[0]);weight0=np.asarray(p.JxW[0])
+            gerror=0.;werror=0.;norm=np.max(np.abs(grad0))
+            for start in range(0,p.fe.num_cells,512):
+                gerror=max(gerror,float(np.max(np.abs(np.asarray(p.shape_grads[start:start+512])-grad0)))/norm)
+                werror=max(werror,float(np.max(np.abs(np.asarray(p.JxW[start:start+512])/weight0-1))))
+            if gerror>5e-12 or werror>5e-12:
+                raise ValueError('Compact Q2 geometry requires identical Cartesian reference maps')
+            self.common_geometry_relative_errors={'gradient':gerror,'weight':werror}
+            self.kernel_geometry=(jnp.asarray(p.physical_quad_points),jnp.asarray(grad0),
+                                  jnp.asarray(weight0),jnp.asarray(p.v_grads_JxW[0]),self.scale)
+            del p.shape_grads,p.v_grads_JxW,p.fe.shape_grads,p.fe.v_grads_JxW
+            compiled_force=jax.jit(self._force)
+            self.force=lambda q,h:compiled_force(q,h,self.kernel_geometry)
+            self.stats=jax.jit(self._quadratic_stats)
+            self.device_cells=jnp.asarray(p.fe.cells)
+        else:self.force=jax.jit(self._force)
         self.cp=math.sqrt((KAPPA+4*MU/3)/(density*L**2))
         self.dt_estimate=.2/(round(self.nc**(1/3))*self.cp)
         # These COO indices are only used for tangent assembly, never here.
         del p.I,p.J
 
-    def _force(self,q,h):
+    def _force(self,q,h,geometry=None):
         H=jnp.zeros((3,3)).at[2,2].set(h)
         internal=[jnp.broadcast_to(H,(*self.scale.shape,3,3)),self.scale]
+        if geometry is not None:
+            # The installed JAX-FEM cell kernel and residual scatter are
+            # unchanged. Only execute its batches through one compiled map.
+            coords,grads,weights,vgrads,scale=geometry
+            cells=q[self.ids][self.p.fe.cells].reshape((self.p.fe.num_cells,-1))
+            inputs=[cells,coords,jnp.broadcast_to(H,(*scale.shape,3,3)),scale]
+            batch=math.gcd(self.p.fe.num_cells,2048)
+            packed=[x.reshape((-1,batch,*x.shape[1:])) for x in inputs]
+            def kernel(x):
+                return self.p.kernel(x[0],x[1],jnp.broadcast_to(grads,(batch,*grads.shape)),
+                    jnp.broadcast_to(weights,(batch,*weights.shape)),
+                    jnp.broadcast_to(vgrads,(batch,*vgrads.shape)),x[2],x[3])
+            values=jax.lax.map(kernel,packed).reshape(cells.shape)
+            return self.p.compute_residual_vars_helper(values,[])[0]
         return self.p.compute_residual_vars([q[self.ids]],internal,[])[0]
 
-    def acceleration(self,q,h,hdd):
-        r=self._force(q,h);gd=self.points*jnp.array([0.,0.,hdd])
+    def acceleration(self,q,h,hdd,geometry=None):
+        if geometry is None:geometry=self.kernel_geometry
+        r=self._force(q,h,geometry);gd=self.points*jnp.array([0.,0.,hdd])
         acc=-(self.reduce(r)+self.reduce(self.nodem[:,None]*gd))/self.mass[:,None]
         return acc.at[self.pin].set(0.)
 
@@ -55,18 +105,39 @@ class ExplicitXYZ:
             hd=-.2*(30*s**2-60*s**3+30*s**4)/load_time
             hdd=-.2*(60*s-180*s**2+120*s**3)/load_time**2
             return jnp.array([h,hd,hdd])
-        def one(carry,_):
-            q,vhalf,t=carry;h,_,hdd=motion(t)
-            vhalf=(vhalf+dt*self.acceleration(q,h,hdd)).at[self.pin].set(0.)
-            q=(q+dt*vhalf).at[self.pin].set(0.)
-            return (q,vhalf,t+dt),None
-        return jax.jit(lambda state:jax.lax.scan(one,state,None,length=steps)[0]),motion
+        def advance(state,count,geometry):
+            # A masked tail reuses the same compiled block. Recompiling large
+            # constants for each short tail needlessly multiplies host memory.
+            def active(carry):
+                q,vhalf,t=carry;h,_,hdd=motion(t)
+                vhalf=(vhalf+dt*self.acceleration(q,h,hdd,geometry)).at[self.pin].set(0.)
+                q=(q+dt*vhalf).at[self.pin].set(0.)
+                return q,vhalf,t+dt
+            def one(carry,k):
+                return jax.lax.cond(k<count,active,lambda c:c,carry),None
+            return jax.lax.scan(one,state,jnp.arange(steps))[0]
+        compiled=jax.jit(advance)
+        return lambda state,count=steps:compiled(state,count,self.kernel_geometry),motion
+
+    @staticmethod
+    def _quadratic_stats(w,h,grads,cells,weights,scale):
+        H=jnp.zeros((3,3)).at[2,2].set(h)
+        F=jnp.eye(3)+H+jnp.einsum('cni,qnj->cqij',w[cells],grads)
+        J=jnp.linalg.det(F)
+        W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(scale.shape)
+        return jnp.min(J),jnp.sum(W*scale*weights)
 
     def observe(self,state,dt,motion):
         q,vhalf,t=state;h,hd,hdd=motion(t)
         H=jnp.zeros((3,3)).at[2,2].set(h)
-        w=q[self.ids];F=jnp.eye(3)+H+self.p.fe.sol_to_grad(w)
-        J=jnp.linalg.det(F);minJ=float(J.min())
+        w=q[self.ids]
+        if self.kernel_geometry is None:
+            F=jnp.eye(3)+H+self.p.fe.sol_to_grad(w)
+            J=jnp.linalg.det(F);minJ=float(J.min())
+        else:
+            minJ,U_norm=self.stats(w,h,self.kernel_geometry[1],self.device_cells,
+                                   self.kernel_geometry[2][0],self.scale)
+            minJ=float(minJ)
         if not np.isfinite(np.asarray(q)).all() or not math.isfinite(minJ) or minJ<=0:
             raise ValueError('Nonfinite displacement or nonpositive reference Gauss detF')
         r=self.force(q,h)
@@ -75,8 +146,10 @@ class ExplicitXYZ:
         velocity=(vhalf+.5*dt*acc)[self.ids]+self.points*jnp.array([0.,0.,hd])
         fullacc=acc[self.ids]+self.points*jnp.array([0.,0.,hdd])
         weights=jnp.asarray(self.p.fe.JxW)
-        W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(self.scale.shape)
-        U=float(jnp.sum(W*self.scale*weights))*self.L**3
+        if self.kernel_geometry is None:
+            W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(self.scale.shape)
+            U_norm=jnp.sum(W*self.scale*weights)
+        U=float(U_norm)*self.L**3
         KE=float(.5*jnp.sum(self.nodem[:,None]*velocity**2))*self.L**3
         qstatic=float(jnp.sum(r[:,2]*self.points[:,2]))*self.L**2
         qdynamic=float(jnp.sum((r[:,2]+self.nodem*fullacc[:,2])*self.points[:,2]))*self.L**2
@@ -86,19 +159,48 @@ class ExplicitXYZ:
 def run(a):
     a.output.mkdir(parents=True,exist_ok=False);started=time.perf_counter()
     if a.action=='wave':
-        N=8;p=make_density_hyperelastic_problem(N,rho_quad=1.,eta=1e-4,periodic_axes=(0,1,2))
+        N=8;p=make_density_hyperelastic_problem(N,rho_quad=1.,eta=1e-4,periodic_axes=(0,1,2),element_degree=a.element_degree)
         cfg={'N':N,'role':'small known periodic P-wave integration check; not TPMS accuracy evidence'}
     else:
-        cfg=json.loads((a.case/'step2/diagnostic_xyz/input.json').read_text());N=cfg['N']
-        with np.load(a.case/'gauss_field.npz') as f:rho=f['rho'];qp=f['physical_quad_points'];qw=f['JxW']
+        source=json.loads((a.case/'step2/diagnostic_xyz/input.json').read_text())
+        cfg={k:source[k] for k in ('case_id','N','cell_size_mm','thickness_mm',
+                                  'E_MPa','nu','eta','interface_10_90_mm')}
+        cfg.update(source_linear_case_input_sha256=sha(a.case/'step2/diagnostic_xyz/input.json'),
+                   mechanical_periodic_axes=[0,1,2],target_compression=.2,
+                   bc='XYZ periodic fluctuation; macro Hzz from zero to -0.2, lateral strain zero')
+        N=a.cells or cfg['N']
+        field_path=a.gauss_field or a.case/'gauss_field.npz'
+        with np.load(field_path) as f:
+            rho=f['rho'];qp=f['physical_quad_points'];qw=f['JxW']
+            if a.thickness_mm is not None:
+                # Only the declared physical thickness changes; keep distance,
+                # interface width, material and eta. Used for path derivatives.
+                from scipy.special import expit
+                ell_normal=.005/(2*np.log(9))  # 0.05 mm / L=10 mm
+                rho=expit((a.thickness_mm/20-f['distance'])/ell_normal)
+                cfg['base_cached_thickness_mm']=cfg['thickness_mm']
+                cfg['thickness_mm']=a.thickness_mm
+                cfg['physical_thickness_override_mm']=a.thickness_mm
+                cfg['occupancy_override']='same actual Gauss distance, same 0.05 mm interface; thickness perturbation only'
+        cfg['evaluated_occupancy_sha256']=hashlib.sha256(np.ascontiguousarray(rho).tobytes()).hexdigest()
         def field(p):
             assert np.array_equal(np.asarray(p.physical_quad_points),qp)
-            assert np.array_equal(np.asarray(p.fe.JxW),qw)
+            actual_weights=np.asarray(p.fe.JxW)
+            weight_error=float(np.max(np.abs(actual_weights/qw-1)))
+            if a.element_degree==1:assert np.array_equal(actual_weights,qw)
+            else:assert weight_error<5e-12, 'Quadrature weights differ beyond roundoff'
+            cfg['Gauss_weight_relative_max_difference']=weight_error
             return rho
-        p=make_density_hyperelastic_problem(N,rho_quad=field,eta=cfg['eta'],periodic_axes=(0,1,2))
+        p=make_density_hyperelastic_problem(N,rho_quad=field,eta=cfg['eta'],periodic_axes=(0,1,2),element_degree=a.element_degree)
+        cfg.update(N=N,Gauss_field_path=str(field_path),Gauss_field_sha256=sha(field_path))
         del rho,qp,qw
     ex=ExplicitXYZ(p);dt=ex.dt_estimate*(.25 if a.action=='wave' else 1.)
     cfg.update(method='physical central difference; existing JAX-FEM NH residual',dt_seconds=dt,
+        element_type=p.fe.ele_type,element_degree=a.element_degree,nodes=len(p.fe.points),
+        elements=p.fe.num_cells,Gauss_points_per_cell=p.fe.num_quads,
+        mass_lumping=ex.mass_lumping,negative_unmodified_row_mass_entries=ex.negative_row_mass_entries,
+        cell_mass_conservation_error=ex.mass_conservation_error,
+        common_reference_geometry_errors=getattr(ex,'common_geometry_relative_errors',None),
         cell_size_mm=10.,solid_density_tonne_per_mm3=1e-9,void_mass_floor=p.eta,
         mass_model='rho_s*(eta+(1-eta)*phi); numerical void mass, not a second physical material',
         affine_inertia_included=True,no_mass_scaling=True,no_contact=True,no_damping=True,
@@ -110,7 +212,9 @@ def run(a):
     if wave:
         xyz=np.zeros((ex.nc,3));xyz[np.asarray(ex.ids)]=np.asarray(p.fe.points)%1.
         q=q.at[:,0].set(1e-7*jnp.sin(2*jnp.pi*jnp.asarray(xyz[:,0]))).at[ex.pin].set(0.)
-        omega=2*ex.cp*N*math.sin(math.pi/N);end=2*math.pi/omega
+        omega=2*ex.cp*N*math.sin(math.pi/N) if a.element_degree==1 else 2*math.pi*ex.cp
+        cfg['wave_reference']='HEX8 discrete frequency' if a.element_degree==1 else 'continuum P-wave frequency; finite Q2 spatial approximation remains'
+        end=2*math.pi/omega
     else:end=a.load_time*1.1
     steps=32 if a.action=='probe' else math.ceil(end/dt)
     if a.action!='probe':dt=end/steps
@@ -119,10 +223,12 @@ def run(a):
     cfg.update(dt_seconds=dt,total_steps=steps,adaptive_block_rejection=a.adaptive,
                minimum_dt_seconds=dt/16 if a.adaptive else dt)
     write(a.output/'input.json',cfg)
-    acc0=ex.acceleration(q,0.,0.);state=(q,-.5*dt*acc0,jnp.asarray(0.))
+    # The target starts from the undeformed, exactly stress-free state.
+    acc0=ex.acceleration(q,0.,0.) if wave else jnp.zeros_like(q)
+    state=(q,-.5*dt*acc0,jnp.asarray(0.))
     chunk=8 if a.action=='probe' else min(128,max(1,steps//100))
     advance,motion=ex.block(dt,chunk,a.load_time,wave)
-    t0=time.perf_counter();warm=advance(state);jax.block_until_ready(warm)
+    t0=time.perf_counter();warm=advance(state,chunk);jax.block_until_ready(warm)
     compile_seconds=time.perf_counter()-t0
     # Warm result is discarded; then every measured step belongs to this path.
     path=[ex.observe(state,dt,motion)];mode=[];walk=time.perf_counter();done=0
@@ -134,9 +240,8 @@ def run(a):
         while float(state[2])<end-1e-12*end:
             remaining=math.ceil((end-float(state[2]))/dt-1e-9)
             remain=min(chunk,remaining)
-            local_dt=(end-float(state[2]))/remain if remaining<=chunk else dt
-            fn=advance if remain==chunk and local_dt==dt else ex.block(local_dt,remain,a.load_time,wave)[0]
-            prior=state;trial=fn(prior);jax.block_until_ready(trial)
+            local_dt=dt
+            prior=state;trial=advance(prior,remain);jax.block_until_ready(trial)
             try:row=ex.observe(trial,local_dt,motion)
             except ValueError as invalid:
                 record={'time':float(prior[2]),'attempted_end_time':float(trial[2]),'dt':local_dt,
@@ -192,4 +297,15 @@ if __name__=='__main__':
     p.add_argument('--case',type=Path,default=ROOT/'validation/thin_target_20261004_r5')
     p.add_argument('--output',type=Path,required=True);p.add_argument('--load-time',type=float,default=.02)
     p.add_argument('--adaptive',action='store_true',help='Reject invalid blocks and halve dt, keeping the previous valid state; no detF clipping')
-    a=p.parse_args();assert a.load_time>0;run(a)
+    p.add_argument('--element-degree',type=int,choices=(1,2),default=1)
+    p.add_argument('--cells',type=int,help='Cells per axis; periodic node levels also include midside nodes in Q2')
+    p.add_argument('--gauss-field',type=Path,help='Actual Gauss cache for the selected element/quadrature')
+    p.add_argument('--thickness-mm',type=float,help='Physical thickness perturbation at cached distances; interface/material unchanged')
+    a=p.parse_args()
+    if a.load_time<=0:p.error('--load-time must be positive')
+    if a.cells is not None and a.cells<=0:p.error('--cells must be positive')
+    if a.thickness_mm is not None and (a.thickness_mm<=0 or a.action=='wave'):
+        p.error('--thickness-mm must be positive and is only for a target/probe')
+    if a.element_degree==2 and a.action!='wave' and (a.cells is None or a.gauss_field is None):
+        p.error('HEX27 target/probe requires --cells and its actual --gauss-field cache')
+    run(a)

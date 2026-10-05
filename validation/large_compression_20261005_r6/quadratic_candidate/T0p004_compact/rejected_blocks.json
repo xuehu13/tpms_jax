@@ -1,0 +1,19 @@
+[
+  {
+    "time": 0.00244764644671588,
+    "attempted_end_time": 0.0024821203403315962,
+    "dt": 2.693272938728041e-07,
+    "reason": "Nonfinite displacement or nonpositive reference Gauss detF",
+    "last_valid": {
+      "time": 0.00244764644671588,
+      "compression": 0.14058631476796868,
+      "Fz_N": -2.2867891496325057,
+      "internal_macro_Fz_N": -2.2928743032447034,
+      "energy_N_mm": 2.4777908591352653,
+      "KE_N_mm": 0.012218888730422643,
+      "KE_over_U": 0.004931364035577629,
+      "J_min": 0.07074370485370542,
+      "dt_seconds": 2.693272938728041e-07
+    }
+  }
+]

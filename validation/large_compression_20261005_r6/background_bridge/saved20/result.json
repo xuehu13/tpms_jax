@@ -1,0 +1,174 @@
+{
+  "status": "complete_prescribed_state",
+  "scope": "native operator at saved JAX20; not independent equilibrium",
+  "independent_equilibrium": false,
+  "internal_macro_Fz_N": -2.2196632878156333,
+  "energy_N_mm": 4.107049465179443,
+  "work_N_mm": 2.2856414318084717,
+  "relative_force_difference": 0.01130718656774421,
+  "relative_energy_difference": 0.010802136150539043,
+  "Gauss_occupancy_audit": [
+    {
+      "element": 1,
+      "point": 1,
+      "phi": 1.3132969207652186e-41
+    },
+    {
+      "element": 1,
+      "point": 2,
+      "phi": 2.937101963046316e-39
+    },
+    {
+      "element": 1,
+      "point": 3,
+      "phi": 2.506208290460292e-40
+    },
+    {
+      "element": 1,
+      "point": 4,
+      "phi": 4.6295395212534215e-38
+    },
+    {
+      "element": 1,
+      "point": 5,
+      "phi": 2.6442544060763228e-39
+    },
+    {
+      "element": 1,
+      "point": 6,
+      "phi": 4.508961431774278e-37
+    },
+    {
+      "element": 1,
+      "point": 7,
+      "phi": 5.708593428904254e-38
+    },
+    {
+      "element": 1,
+      "point": 8,
+      "phi": 8.293670832676324e-36
+    },
+    {
+      "element": 131072,
+      "point": 1,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 2,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 3,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 4,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 5,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 6,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 7,
+      "phi": 0.0
+    },
+    {
+      "element": 131072,
+      "point": 8,
+      "phi": 0.0
+    },
+    {
+      "element": 227889,
+      "point": 1,
+      "phi": 0.9190050363540649
+    },
+    {
+      "element": 227889,
+      "point": 2,
+      "phi": 0.9989697337150574
+    },
+    {
+      "element": 227889,
+      "point": 3,
+      "phi": 0.13246393203735352
+    },
+    {
+      "element": 227889,
+      "point": 4,
+      "phi": 0.9375357627868652
+    },
+    {
+      "element": 227889,
+      "point": 5,
+      "phi": 0.08599111437797546
+    },
+    {
+      "element": 227889,
+      "point": 6,
+      "phi": 0.8792465925216675
+    },
+    {
+      "element": 227889,
+      "point": 7,
+      "phi": 0.0010563130490481853
+    },
+    {
+      "element": 227889,
+      "point": 8,
+      "phi": 0.08977766335010529
+    },
+    {
+      "element": 262144,
+      "point": 1,
+      "phi": 2.3090119653666465e-39
+    },
+    {
+      "element": 262144,
+      "point": 2,
+      "phi": 1.3601703543968837e-39
+    },
+    {
+      "element": 262144,
+      "point": 3,
+      "phi": 5.433108240166938e-38
+    },
+    {
+      "element": 262144,
+      "point": 4,
+      "phi": 3.208300860040955e-40
+    },
+    {
+      "element": 262144,
+      "point": 5,
+      "phi": 1.4845636190749977e-39
+    },
+    {
+      "element": 262144,
+      "point": 6,
+      "phi": 5.931696399486951e-42
+    },
+    {
+      "element": 262144,
+      "point": 7,
+      "phi": 4.000847245493785e-40
+    },
+    {
+      "element": 262144,
+      "point": 8,
+      "phi": 1.6955711418330287e-42
+    }
+  ],
+  "final_step_time": 1.0,
+  "odb_sha256": "20f13fd685f3f363b534f22577f0081f6eef712bbfb79efab2282ec689a4d1a6"
+}

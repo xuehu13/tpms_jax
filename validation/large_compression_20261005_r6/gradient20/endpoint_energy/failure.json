@@ -1,0 +1,63 @@
+{
+  "type": "RuntimeError",
+  "message": "Newton direction is not an energy descent direction",
+  "elapsed_seconds": 2873.648016148014,
+  "linear_solves": [
+    {
+      "role": "adjoint",
+      "iterations": 2218,
+      "info": 0,
+      "relative_true_linear_residual": 9.980898262811411e-08,
+      "seconds": 284.3536812000093
+    },
+    {
+      "role": "minus_Newton0",
+      "iterations": 2677,
+      "info": 0,
+      "relative_true_linear_residual": 9.990053759322043e-08,
+      "seconds": 342.69100812397664
+    },
+    {
+      "role": "minus_Newton1",
+      "iterations": 2517,
+      "info": 0,
+      "relative_true_linear_residual": 9.896421504121876e-08,
+      "seconds": 322.36989426100627
+    },
+    {
+      "role": "minus_Newton2",
+      "iterations": 2287,
+      "info": 0,
+      "relative_true_linear_residual": 9.970740302671837e-08,
+      "seconds": 292.3530282260035
+    },
+    {
+      "role": "minus_Newton3",
+      "iterations": 2595,
+      "info": 0,
+      "relative_true_linear_residual": 9.964471575459736e-08,
+      "seconds": 332.0894626759691
+    },
+    {
+      "role": "minus_Newton4",
+      "iterations": 2813,
+      "info": 0,
+      "relative_true_linear_residual": 9.960152180346036e-08,
+      "seconds": 359.8847024089773
+    },
+    {
+      "role": "minus_Newton5",
+      "iterations": 2464,
+      "info": 0,
+      "relative_true_linear_residual": 9.962113909917155e-08,
+      "seconds": 313.7249034529668
+    },
+    {
+      "role": "minus_Newton6",
+      "iterations": 3456,
+      "info": 0,
+      "relative_true_linear_residual": 9.988400188651318e-08,
+      "seconds": 442.1188208599924
+    }
+  ]
+}

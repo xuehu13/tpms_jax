@@ -1,0 +1,86 @@
+[
+  {
+    "role": "central_Newton0",
+    "iterations": 2891,
+    "info": 0,
+    "relative_true_linear_residual": 9.830412324278892e-08,
+    "seconds": 366.54927605600096
+  },
+  {
+    "role": "central_Newton1",
+    "iterations": 2811,
+    "info": 0,
+    "relative_true_linear_residual": 9.997029659048638e-08,
+    "seconds": 357.9190307229874
+  },
+  {
+    "role": "central_Newton2",
+    "iterations": 2580,
+    "info": 0,
+    "relative_true_linear_residual": 9.877323063571114e-08,
+    "seconds": 328.20110938698053
+  },
+  {
+    "role": "central_Newton3",
+    "iterations": 2551,
+    "info": 0,
+    "relative_true_linear_residual": 9.935392042004383e-08,
+    "seconds": 324.53715281101177
+  },
+  {
+    "role": "adjoint",
+    "iterations": 2217,
+    "info": 0,
+    "relative_true_linear_residual": 9.98268554970841e-08,
+    "seconds": 282.14433305495186
+  },
+  {
+    "role": "minus_Newton0",
+    "iterations": 2677,
+    "info": 0,
+    "relative_true_linear_residual": 9.969664472695904e-08,
+    "seconds": 340.769320982974
+  },
+  {
+    "role": "minus_Newton1",
+    "iterations": 2517,
+    "info": 0,
+    "relative_true_linear_residual": 9.987651355167843e-08,
+    "seconds": 321.6249931919738
+  },
+  {
+    "role": "minus_Newton2",
+    "iterations": 2287,
+    "info": 0,
+    "relative_true_linear_residual": 9.930412181372603e-08,
+    "seconds": 292.73512614599895
+  },
+  {
+    "role": "minus_Newton3",
+    "iterations": 2595,
+    "info": 0,
+    "relative_true_linear_residual": 9.917852843350417e-08,
+    "seconds": 330.8972822329961
+  },
+  {
+    "role": "minus_Newton4",
+    "iterations": 2812,
+    "info": 0,
+    "relative_true_linear_residual": 9.964601160923993e-08,
+    "seconds": 357.7240502749919
+  },
+  {
+    "role": "minus_Newton5",
+    "iterations": 2853,
+    "info": 0,
+    "relative_true_linear_residual": 9.944240156574991e-08,
+    "seconds": 365.85793207999086
+  },
+  {
+    "role": "minus_Newton6",
+    "iterations": 2937,
+    "info": 0,
+    "relative_true_linear_residual": 9.971099171936374e-08,
+    "seconds": 375.4253618440125
+  }
+]

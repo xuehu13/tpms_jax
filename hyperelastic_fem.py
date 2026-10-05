@@ -1,4 +1,4 @@
-"""Matched compressible Neo-Hookean material on existing periodic HEX8 kinematics.
+"""Matched compressible Neo-Hookean material on periodic HEX8/HEX27 kinematics.
 
 Energy and weak form use the reference configuration. No contact, plasticity,
 void stabilization, or new equilibrium solver is implemented here.
@@ -33,19 +33,42 @@ class PeriodicHyperelasticity(PeriodicLinearElasticityCube):
         return stress
 
 
-def _make_periodic_problem(n, problem_type, periodic_axes=(0,1)):
+def _make_periodic_problem(n, problem_type, periodic_axes=(0,1),
+                           element_degree=1, quadrature_order=None):
     """One mesh/constraint definition for full and density-weighted solids."""
-    meshio_mesh = box_mesh(n,n,n,1.,1.,1.)
-    mesh = Mesh(meshio_mesh.points,meshio_mesh.cells_dict[get_meshio_cell_type(ELE_TYPE)])
-    problem = problem_type(mesh,vec=3,dim=3,ele_type=ELE_TYPE,
+    if element_degree == 1:
+        meshio_mesh = box_mesh(n,n,n,1.,1.,1.)
+        mesh = Mesh(meshio_mesh.points,meshio_mesh.cells_dict[get_meshio_cell_type(ELE_TYPE)])
+        ele_type = ELE_TYPE
+    elif element_degree == 2:
+        # Reuse installed Basix/JAX-FEM basis and its mesh node convention.
+        import basix
+        from jax_fem.basis import get_elements
+        family, cell, _, _, degree, order = get_elements('HEX27')
+        local = np.rint(2*basix.create_element(family,cell,degree).points[order]).astype(int)
+        levels = 2*n+1
+        points = np.indices((levels,)*3).reshape(3,-1).T/(2*n)
+        origins = 2*np.indices((n,)*3).reshape(3,-1).T
+        indices = origins[:,None,:]+local[None,:,:]
+        cells = (indices[...,0]*levels+indices[...,1])*levels+indices[...,2]
+        mesh = Mesh(points,cells); ele_type = 'HEX27'
+        # 3x3x3 volume points, rather than the library's expensive default.
+        if quadrature_order is None: quadrature_order = 4
+    else:
+        raise ValueError('Supported element degrees are 1 (HEX8) and 2 (HEX27)')
+    problem = problem_type(mesh,vec=3,dim=3,ele_type=ele_type,
+                           quadrature_order=quadrature_order,
                            dirichlet_bc_info=[[],[],[]])
     periodic_axes=tuple(periodic_axes)
     if periodic_axes not in ((0,1),(0,1,2)):
         raise ValueError('Supported periodic axes are XY or XYZ')
-    fixed=xy_compression_fixed_dofs(problem.fe.points,n,n,n) if periodic_axes==(0,1) else ()
+    nodes_per_axis=n*element_degree
+    fixed=xy_compression_fixed_dofs(problem.fe.points,nodes_per_axis,nodes_per_axis,nodes_per_axis) if periodic_axes==(0,1) else ()
     gauge=None if periodic_axes==(0,1) else (0,0,0)
     problem.P_mat,problem.class_ids,problem.fixed_class_id = periodic_p_mat(
-        problem.fe.points,n,n,n,periodic_axes=periodic_axes,fixed_class=gauge,fixed_dofs=fixed)
+        problem.fe.points,nodes_per_axis,nodes_per_axis,nodes_per_axis,
+        periodic_axes=periodic_axes,fixed_class=gauge,fixed_dofs=fixed)
+    problem.element_degree=element_degree
     return problem
 
 
@@ -153,7 +176,8 @@ class DensityHyperelasticity(PeriodicHyperelasticity):
 
 
 def make_density_hyperelastic_problem(n,c=.541062,beta=40.,eta=1e-4,
-                                      rho_quad=None,periodic_axes=(0,1)):
+                                      rho_quad=None,periodic_axes=(0,1),
+                                      element_degree=1,quadrature_order=None):
     """Shared background with optional actual-Gauss input and XY/XYZ constraints.
 
     Without rho_quad, preserve the historical Gyroid c/beta field. Otherwise
@@ -161,7 +185,8 @@ def make_density_hyperelastic_problem(n,c=.541062,beta=40.,eta=1e-4,
     c/beta are unused. Geometry is fixed in reference/material coordinates.
     """
     from geometry import density
-    problem=_make_periodic_problem(n,DensityHyperelasticity,periodic_axes)
+    problem=_make_periodic_problem(n,DensityHyperelasticity,periodic_axes,
+                                   element_degree,quadrature_order)
     if rho_quad is None:rho=density(problem.physical_quad_points,c,beta)
     else:rho=rho_quad(problem) if callable(rho_quad) else rho_quad
     problem.set_params(jnp.zeros((3,3)),rho,eta)

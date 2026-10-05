@@ -1,0 +1,5 @@
+{
+  "dFz_dt_N_per_mm": -10.844935804150893,
+  "gradient_check_pass": false,
+  "status": "adjoint_computed; independent perturbations pending"
+}
