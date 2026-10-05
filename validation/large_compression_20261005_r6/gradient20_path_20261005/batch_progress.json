@@ -1,0 +1,19 @@
+{
+  "records": [
+    {
+      "path": "adaptive_minus",
+      "thickness_mm": 0.4975,
+      "returncode": 0,
+      "wall_seconds": 1025.109682559967,
+      "result_present": true
+    },
+    {
+      "path": "adaptive_plus",
+      "thickness_mm": 0.5025,
+      "returncode": 0,
+      "wall_seconds": 1025.1255512237549,
+      "result_present": true
+    }
+  ],
+  "active": null
+}

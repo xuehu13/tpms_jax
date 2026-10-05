@@ -1,0 +1,7 @@
+{
+  "purpose": "Supplementary transient diagnostics; acceptance targets remain the defined hold force and three-point loss",
+  "relative_difference_denominator": "max(abs(independent difference),1e-8 N/mm); compression>=1%",
+  "max_observed_instantaneous_derivative_relative_difference": 52.36376840925914,
+  "RMS_instantaneous_derivative_difference_over_max_FD": 7.770308323500445,
+  "hold_and_loss_acceptance_status": "path_gradient_not_passed"
+}

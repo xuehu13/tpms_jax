@@ -1,0 +1,52 @@
+{
+  "status": "block_probe_pass",
+  "mass_equivalence_relative_max": 1.2212453270876722e-15,
+  "class_mass_equivalence_relative_max": 1.1102230246251565e-15,
+  "records": [
+    {
+      "case": "initial",
+      "steps": 32,
+      "old_default_state_max_absolute_difference": 3.671040793400138e-18,
+      "old_default_q_v_time_absolute_differences": [
+        3.308722450212111e-24,
+        3.671040793400138e-18,
+        0.0
+      ],
+      "old_default_displacement_scaled_state_error": 3.308722450212111e-24,
+      "old_default_force_absolute_difference_N": 0.0,
+      "force_N": -1.0801995464236946e-05,
+      "block_derivative_N_per_mm": -3.245408102734921e-05,
+      "independent_block_difference_N_per_mm": -3.245400865876138e-05,
+      "derivative_relative_difference": 2.2298813249287242e-06,
+      "J_min": 0.9999995828898574,
+      "cold_JVP_seconds": 5.998933574010152,
+      "warm_JVP_seconds": 4.184021966008004,
+      "estimated_full_path_JVP_seconds": 3083.8856903207743
+    },
+    {
+      "case": "saved20_fixed_initial_state",
+      "steps": 32,
+      "old_default_state_max_absolute_difference": 2.1354047419208655e-09,
+      "old_default_q_v_time_absolute_differences": [
+        1.0547118733938987e-15,
+        2.1354047419208655e-09,
+        0.0
+      ],
+      "old_default_displacement_scaled_state_error": 1.0547118733938987e-15,
+      "old_default_force_absolute_difference_N": 0.0,
+      "force_N": -2.0068036967612297,
+      "block_derivative_N_per_mm": -7.123118894251826,
+      "independent_block_difference_N_per_mm": -7.123133468375009,
+      "derivative_relative_difference": 2.0460269694031206e-06,
+      "J_min": 0.03535394158804755,
+      "cold_JVP_seconds": 5.197430179978255,
+      "warm_JVP_seconds": 4.161638236022554,
+      "estimated_full_path_JVP_seconds": 3067.387482338374
+    }
+  ],
+  "body_seconds": 46.39400107797701,
+  "peak_RSS_GiB": 4.602897644042969,
+  "total_lumped_mass_derivative_per_mm": 3.072587941887857e-08,
+  "scope": "Actual target Q2 fixed-state local blocks; not complete 20% path gradient certification",
+  "gradient20_certified": false
+}

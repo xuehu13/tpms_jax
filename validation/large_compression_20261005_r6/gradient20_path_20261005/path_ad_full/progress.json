@@ -1,0 +1,10 @@
+{
+  "block": 185,
+  "blocks": 185,
+  "steps": 23586,
+  "compression": 0.2,
+  "wall_seconds": 2985.9960140030016,
+  "J_min": 0.03537778119934744,
+  "Fz_N": -2.0068610278835055,
+  "instantaneous_total_derivative_N_per_mm": 437.5698800654282
+}

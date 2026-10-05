@@ -1,0 +1,10 @@
+{
+  "steps": 165,
+  "remaining_steps_estimate": 1,
+  "compression": -0.0,
+  "dt": 5.360297977994402e-07,
+  "rejected_blocks": 0,
+  "elapsed_seconds": 249.7251891240012,
+  "J_min": 0.9999994343145557,
+  "KE_over_U": 1.4414350488310855e-07
+}

@@ -1,0 +1,19 @@
+{
+  "state": "plus",
+  "macro_compression": 0.2,
+  "thickness_mm": 0.5025,
+  "graph_rings_excluded": 5,
+  "broad_candidate_pairs": 1030482,
+  "nonlocal_exact_pairs": 40,
+  "minimum_distance_in_candidates_mm": 0.5964074008506254,
+  "minimum_pair": [
+    3044,
+    16187
+  ],
+  "envelope_overlap_candidates": 0,
+  "closest_candidates": [],
+  "periodic_images_included": true,
+  "contact_certified": false,
+  "scope": "Five-ring excluded midsurface triangle proximity and approximate mapped normal halfwidth; no exact contact/offset or path-wide certification",
+  "elapsed_seconds": 1.9549956750124693
+}

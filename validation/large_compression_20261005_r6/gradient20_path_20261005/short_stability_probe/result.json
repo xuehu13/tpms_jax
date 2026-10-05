@@ -1,0 +1,45 @@
+{
+  "status": "same_duration_local_tangent_probe_complete",
+  "records": [
+    {
+      "dt_factor": 1.0,
+      "steps": 64,
+      "physical_duration_seconds": 8.618473403929731e-06,
+      "time": 0.004408618473406774,
+      "q_tangent_mass_norm_growth": 1.0572146821213575,
+      "same_duration_displacement_scaled_q_vhalf_mass_norm_growth": 0.9980114872432405,
+      "max_q_tangent_after": 3925.5236992519035,
+      "max_vhalf_tangent_after": 621357060.263857,
+      "instantaneous_Fz_N": -2.0073573943461307,
+      "instantaneous_total_derivative_N_per_mm": -663.4276698887772,
+      "J_min": 0.035353013816787154,
+      "body_seconds": 13.812079255993012
+    },
+    {
+      "dt_factor": 0.5,
+      "steps": 128,
+      "physical_duration_seconds": 8.618473403929731e-06,
+      "time": 0.004408618473406774,
+      "q_tangent_mass_norm_growth": 1.0570974076000481,
+      "same_duration_displacement_scaled_q_vhalf_mass_norm_growth": 0.9984171483795439,
+      "max_q_tangent_after": 3925.267999518189,
+      "max_vhalf_tangent_after": 621932383.1019901,
+      "instantaneous_Fz_N": -2.0073572011433427,
+      "instantaneous_total_derivative_N_per_mm": -664.6378883550085,
+      "J_min": 0.035353015003237995,
+      "body_seconds": 17.08620292902924
+    }
+  ],
+  "void_node_indicator": {
+    "nodal_mass_fraction_definition": "occupied/reference-full HRZ class mass, not exact Gauss solid/void classification",
+    "mass_fraction_at_maximum_q_tangent_node": 0.0008568720685916662,
+    "q_tangent_mass_norm_fraction_in_nodes_with_mass_fraction_below_0p001": 0.2455126275782335
+  },
+  "body_seconds": 40.172150127007626,
+  "peak_RSS_GiB": 4.5860748291015625,
+  "scope": "Continuation from an already amplified tangent; neither full-path half-step certification nor proof of physical instability",
+  "inputs_sha256": {
+    "path_ad_full/field.npz": "c4309e5d2cb3cb36072eef4e453a106c1a68282c30393aeb8e6e4b44eef8280d",
+    "path_ad_full/tangent_field.npz": "ed9b44d2ececa0c27e06a16497326538a79e74fdc9d558d0bf415de7a7edba9e"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "paths": {
+    "minus": {
+      "thickness_mm": 0.4975,
+      "hold_mean_Fz_N": -1.9767252736135659,
+      "force_at_compression_N": {
+        "0.1": -2.361556204993487,
+        "0.15": -2.2097066963754965,
+        "0.2": -1.9785605901173793
+      },
+      "work_N_mm": 3.716928340407282,
+      "terminal_KE_over_U": 3.7628758844360103e-07,
+      "energy_work_gap": 8.017798939473159e-05,
+      "minimum_observed_J": 0.034996430959196294,
+      "rejections": 1,
+      "initial_dt": 2.693272938728041e-07,
+      "terminal_dt": 1.3466364693640205e-07,
+      "body_seconds": 927.4899420239963,
+      "peak_RSS_GiB": 4.5748291015625,
+      "result_sha256": "9033f70af9c50e20d0ab611cbfd450758ee5b46cfc9a37a8dc5d7d7457a7d633"
+    },
+    "center": {
+      "thickness_mm": 0.5,
+      "hold_mean_Fz_N": -2.0034410420448174,
+      "force_at_compression_N": {
+        "0.1": -2.3880968769606032,
+        "0.15": -2.2386978170482696,
+        "0.2": -2.0049180023906428
+      },
+      "work_N_mm": 3.7585997080910394,
+      "terminal_KE_over_U": 1.740977773992439e-06,
+      "energy_work_gap": 7.950678938886166e-05,
+      "minimum_observed_J": 0.03459447633859989,
+      "rejections": 1,
+      "initial_dt": 2.693272938728041e-07,
+      "terminal_dt": 1.3466364693640205e-07,
+      "body_seconds": 935.226560058014,
+      "peak_RSS_GiB": 4.575653076171875,
+      "result_sha256": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1"
+    },
+    "plus": {
+      "thickness_mm": 0.5025,
+      "hold_mean_Fz_N": -2.0307130309687045,
+      "force_at_compression_N": {
+        "0.1": -2.4147979834971296,
+        "0.15": -2.2679859219861562,
+        "0.2": -2.031450299766837
+      },
+      "work_N_mm": 3.800566832838872,
+      "terminal_KE_over_U": 2.6000488941790715e-06,
+      "energy_work_gap": 7.902923237584873e-05,
+      "minimum_observed_J": 0.03446548308754194,
+      "rejections": 1,
+      "initial_dt": 2.693272938728041e-07,
+      "terminal_dt": 1.3466364693640205e-07,
+      "body_seconds": 926.5947678780067,
+      "peak_RSS_GiB": 4.580787658691406,
+      "result_sha256": "0bc6e4646e9bac48bfa0aeba29b1caca4608f0e910819048aa7021894e5b0df5"
+    }
+  },
+  "endpoint_mode": {
+    "minus": {
+      "vector_cosine": 0.9999992924278767,
+      "relative_fluctuation_difference": 0.0015862977591174715
+    },
+    "plus": {
+      "vector_cosine": 0.9999993026715085,
+      "relative_fluctuation_difference": 0.0015787511790012591
+    }
+  },
+  "adaptive_path_hold_force_central_difference_N_per_mm": -10.797551471027722,
+  "adaptive_right_difference_N_per_mm": -10.908795569554819,
+  "adaptive_left_difference_N_per_mm": -10.686307372500625,
+  "one_sided_difference_relative_spread": 0.0206054305599913,
+  "midpoint_force_relative_deviation": 0.00013881628681899905,
+  "branch_screen_same_mode": true,
+  "positive_observed_volume_and_finite": true,
+  "accepted_schedule_hashes": {
+    "minus": "e22ff252f4f5f07c2d7402974e6386b5b00da94c31dca73a6776300bf4fc995b",
+    "center": "e22ff252f4f5f07c2d7402974e6386b5b00da94c31dca73a6776300bf4fc995b",
+    "plus": "e22ff252f4f5f07c2d7402974e6386b5b00da94c31dca73a6776300bf4fc995b"
+  },
+  "all_accepted_schedules_identical": true,
+  "gradient20_certified": false,
+  "difference_scope": "Independent adaptive full-path perturbations; response/branch evidence, not a common-grid AD check",
+  "curve_differences_N_per_mm": {
+    "0.1": -10.648355700728551,
+    "0.15": -11.655845122131936,
+    "0.2": -10.577941929891566
+  }
+}

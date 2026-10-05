@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "case": "initial",
+      "steps": 32,
+      "old_default_state_max_absolute_difference": 1.0268434534020586e-13,
+      "old_default_force_absolute_difference_N": 0.0,
+      "force_N": -1.0801995464236951e-05,
+      "block_derivative_N_per_mm": -3.245408102734923e-05,
+      "independent_block_difference_N_per_mm": -3.245400863298109e-05,
+      "derivative_relative_difference": 2.2306756912854345e-06,
+      "J_min": 0.9999995828898574,
+      "cold_JVP_seconds": 5.979013334028423,
+      "warm_JVP_seconds": 4.163956784992479,
+      "estimated_full_path_JVP_seconds": 3069.096397838519
+    },
+    {
+      "case": "saved20_fixed_initial_state",
+      "steps": 32,
+      "old_default_state_max_absolute_difference": 2.4813378018961885e-09,
+      "old_default_force_absolute_difference_N": 1.3322676295501878e-15,
+      "force_N": -2.0068036967612173,
+      "block_derivative_N_per_mm": -7.123118894251782,
+      "independent_block_difference_N_per_mm": -7.12313346836968,
+      "derivative_relative_difference": 2.0460262275034047e-06,
+      "J_min": 0.035353941588048665,
+      "cold_JVP_seconds": 5.13345229299739,
+      "warm_JVP_seconds": 4.150441299017984,
+      "estimated_full_path_JVP_seconds": 3059.134639957443
+    }
+  ],
+  "gradient20_certified": false
+}

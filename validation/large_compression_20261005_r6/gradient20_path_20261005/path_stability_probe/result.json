@@ -1,0 +1,169 @@
+{
+  "status": "local_tangent_probe_complete",
+  "terminal_dt_seconds": 1.3466364693640205e-07,
+  "symmetry_relative_difference": 2.0649006676189267e-14,
+  "power_history": [
+    {
+      "iteration": 1,
+      "rayleigh_per_s2": 2049613316240.0034,
+      "dt_squared_rayleigh": 0.03716829826427388,
+      "relative_eigen_residual": 0.754301501970983
+    },
+    {
+      "iteration": 2,
+      "rayleigh_per_s2": 10650727705804.277,
+      "dt_squared_rayleigh": 0.1931434680699273,
+      "relative_eigen_residual": 0.6897358701525874
+    },
+    {
+      "iteration": 3,
+      "rayleigh_per_s2": 32699561374224.125,
+      "dt_squared_rayleigh": 0.5929835840926854,
+      "relative_eigen_residual": 0.545331012030652
+    },
+    {
+      "iteration": 4,
+      "rayleigh_per_s2": 67198578677606.555,
+      "dt_squared_rayleigh": 1.2185990378938814,
+      "relative_eigen_residual": 0.6043509829874562
+    },
+    {
+      "iteration": 5,
+      "rayleigh_per_s2": 154375867622247.7,
+      "dt_squared_rayleigh": 2.799497957554192,
+      "relative_eigen_residual": 0.4121042907934182
+    },
+    {
+      "iteration": 6,
+      "rayleigh_per_s2": 198931398111879.88,
+      "dt_squared_rayleigh": 3.6074812163669385,
+      "relative_eigen_residual": 0.14837319524166637
+    },
+    {
+      "iteration": 7,
+      "rayleigh_per_s2": 204922833180697.56,
+      "dt_squared_rayleigh": 3.7161316841914602,
+      "relative_eigen_residual": 0.0506866110639599
+    },
+    {
+      "iteration": 8,
+      "rayleigh_per_s2": 205642942565496.2,
+      "dt_squared_rayleigh": 3.7291903622284464,
+      "relative_eigen_residual": 0.01884974109981268
+    },
+    {
+      "iteration": 9,
+      "rayleigh_per_s2": 205744908309411.72,
+      "dt_squared_rayleigh": 3.731039439394643,
+      "relative_eigen_residual": 0.00757384825275271
+    },
+    {
+      "iteration": 10,
+      "rayleigh_per_s2": 205761691837369.22,
+      "dt_squared_rayleigh": 3.7313437968888628,
+      "relative_eigen_residual": 0.0032457160651570565
+    },
+    {
+      "iteration": 11,
+      "rayleigh_per_s2": 205764832864209.7,
+      "dt_squared_rayleigh": 3.731400757205005,
+      "relative_eigen_residual": 0.001481266708418691
+    },
+    {
+      "iteration": 12,
+      "rayleigh_per_s2": 205765500875252.06,
+      "dt_squared_rayleigh": 3.7314128711161856,
+      "relative_eigen_residual": 0.000722478282033763
+    },
+    {
+      "iteration": 13,
+      "rayleigh_per_s2": 205765663320754.06,
+      "dt_squared_rayleigh": 3.731415816951296,
+      "relative_eigen_residual": 0.0003758721170402949
+    },
+    {
+      "iteration": 14,
+      "rayleigh_per_s2": 205765708159642.22,
+      "dt_squared_rayleigh": 3.7314166300730474,
+      "relative_eigen_residual": 0.00020618562674459866
+    },
+    {
+      "iteration": 15,
+      "rayleigh_per_s2": 205765721849645.44,
+      "dt_squared_rayleigh": 3.7314168783316424,
+      "relative_eigen_residual": 0.0001173363345780913
+    },
+    {
+      "iteration": 16,
+      "rayleigh_per_s2": 205765726324469.47,
+      "dt_squared_rayleigh": 3.731416959479434,
+      "relative_eigen_residual": 6.828784223884134e-05
+    },
+    {
+      "iteration": 17,
+      "rayleigh_per_s2": 205765727848238.28,
+      "dt_squared_rayleigh": 3.7314169871119116,
+      "relative_eigen_residual": 4.0246552422473895e-05
+    },
+    {
+      "iteration": 18,
+      "rayleigh_per_s2": 205765728379065.03,
+      "dt_squared_rayleigh": 3.731416996738082,
+      "relative_eigen_residual": 2.3880968368524645e-05
+    },
+    {
+      "iteration": 19,
+      "rayleigh_per_s2": 205765728566247.66,
+      "dt_squared_rayleigh": 3.7314170001325073,
+      "relative_eigen_residual": 1.4220466360528521e-05
+    },
+    {
+      "iteration": 20,
+      "rayleigh_per_s2": 205765728632673.25,
+      "dt_squared_rayleigh": 3.731417001337089,
+      "relative_eigen_residual": 8.483438072286237e-06
+    },
+    {
+      "iteration": 21,
+      "rayleigh_per_s2": 205765728656323.22,
+      "dt_squared_rayleigh": 3.7314170017659647,
+      "relative_eigen_residual": 5.065701431898366e-06
+    },
+    {
+      "iteration": 22,
+      "rayleigh_per_s2": 205765728664757.75,
+      "dt_squared_rayleigh": 3.731417001918919,
+      "relative_eigen_residual": 3.0263388142487385e-06
+    },
+    {
+      "iteration": 23,
+      "rayleigh_per_s2": 205765728667768.28,
+      "dt_squared_rayleigh": 3.731417001973513,
+      "relative_eigen_residual": 1.8084368033141672e-06
+    },
+    {
+      "iteration": 24,
+      "rayleigh_per_s2": 205765728668843.5,
+      "dt_squared_rayleigh": 3.731417001993011,
+      "relative_eigen_residual": 1.080797705600504e-06
+    }
+  ],
+  "max_observed_positive_Rayleigh_per_s2": 205765728668843.5,
+  "dt_squared_positive_Rayleigh": 3.731417001993011,
+  "positive_frequency_dt_upper_limit_from_lower_bound_seconds": 1.3942590573301114e-07,
+  "existing_dt_violates_local_central_difference_positive_mode_limit": false,
+  "actual_path_tangent_Rayleigh_per_s2": 133239332433.1398,
+  "actual_path_tangent_dt_squared_Rayleigh": 0.002416201733843431,
+  "scope": "Local saved-state Rayleigh estimates, not global spectrum/stability or a full-path derivative certificate",
+  "body_seconds": 10.166772275988478,
+  "peak_RSS_GiB": 4.594753265380859,
+  "inputs_sha256": {
+    "path_ad_full/field.npz": "c4309e5d2cb3cb36072eef4e453a106c1a68282c30393aeb8e6e4b44eef8280d",
+    "path_ad_full/tangent_field.npz": "ed9b44d2ececa0c27e06a16497326538a79e74fdc9d558d0bf415de7a7edba9e",
+    "path_ad_full/result.json": "0cf26b3f6bc5df18c6b2d2b389633a16e26adde130c76571972eada38585c5c3"
+  },
+  "sources_sha256": {
+    "scripts/thin_target_explicit.py": "636319f60897deed8d4dd796a242cb3e2428f19f03a628a3f33bf901e402e379",
+    "hyperelastic_fem.py": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164"
+  }
+}

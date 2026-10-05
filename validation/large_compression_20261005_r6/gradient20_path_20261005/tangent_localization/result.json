@@ -1,0 +1,37 @@
+{
+  "status": "saved_tangent_localization_complete",
+  "groups": {
+    "soft_phi_lt_0p01": {
+      "volume": 0.8166088580431108,
+      "AD_strain_square_integral": 21987474.774859466,
+      "FD_strain_square_integral": 35.035136852578844,
+      "AD_squared_strain_fraction": 0.9993464945905487,
+      "FD_squared_strain_fraction": 0.9938249800087665,
+      "AD_Gauss_strain_sensitivity_RMS_per_mm": 5188.963715341919,
+      "FD_Gauss_strain_sensitivity_RMS_per_mm": 6.550053780222756
+    },
+    "interface": {
+      "volume": 0.04685171935783981,
+      "AD_strain_square_integral": 12231.409849397069,
+      "FD_strain_square_integral": 0.15437563011972827,
+      "AD_squared_strain_fraction": 0.0005559263481621617,
+      "FD_squared_strain_fraction": 0.00437909970676443,
+      "AD_Gauss_strain_sensitivity_RMS_per_mm": 510.94657553277705,
+      "FD_Gauss_strain_sensitivity_RMS_per_mm": 1.815208869938649
+    },
+    "solid_phi_ge_0p9": {
+      "volume": 0.13653942259904944,
+      "AD_strain_square_integral": 2146.9201725955086,
+      "FD_strain_square_integral": 0.06331126124656675,
+      "AD_squared_strain_fraction": 9.757906128912298e-05,
+      "FD_squared_strain_fraction": 0.0017959202844691497,
+      "AD_Gauss_strain_sensitivity_RMS_per_mm": 125.39462394697792,
+      "FD_Gauss_strain_sensitivity_RMS_per_mm": 0.6809440849106849
+    }
+  },
+  "Gauss_min_J": 0.03537778119935067,
+  "J_reconstruction_absolute_difference": 3.2335245592207684e-15,
+  "phi_at_maximum_AD_Gauss_strain": 9.538717378135254e-11,
+  "scope": "Reference-volume-weighted strain sensitivity, not energy fraction or definitive causal diagnosis",
+  "body_seconds": 3.989692325994838
+}

@@ -22,6 +22,7 @@ def write(p,v):p.write_text(json.dumps(v,indent=2,allow_nan=False)+'\n')
 class ExplicitXYZ:
     def __init__(self,p,L=10.,density=1e-9):
         self.p=p;self.L=L;self.points=jnp.asarray(p.fe.points)
+        self.mass_density_factor=density*L**2
         self.ids=jnp.asarray(p.class_ids,dtype=jnp.int32);self.pin=p.fixed_class_id
         self.nc=int(np.max(p.class_ids))+1;self.scale=p.stiffness_scale
         # m_norm = rho*L^2 integral N_i*(eta+(1-eta)*phi) dV_norm.
@@ -63,6 +64,7 @@ class ExplicitXYZ:
                                   jnp.asarray(weight0),jnp.asarray(p.v_grads_JxW[0]),self.scale)
             del p.shape_grads,p.v_grads_JxW,p.fe.shape_grads,p.fe.v_grads_JxW
             compiled_force=jax.jit(self._force)
+            self.force_for_geometry=compiled_force
             self.force=lambda q,h:compiled_force(q,h,self.kernel_geometry)
             self.stats=jax.jit(self._quadratic_stats)
             self.device_cells=jnp.asarray(p.fe.cells)
@@ -91,10 +93,29 @@ class ExplicitXYZ:
             return self.p.compute_residual_vars_helper(values,[])[0]
         return self.p.compute_residual_vars([q[self.ids]],internal,[])[0]
 
-    def acceleration(self,q,h,hdd,geometry=None):
+    def material_fields(self,scale):
+        """Traceable Q2 HRZ mass using the original cell mass convention.
+
+        scale must include the declared void floor. No mass scaling or extra
+        mechanics is introduced; this interface is not gradient certification.
+        """
+        if self.kernel_geometry is None:
+            raise ValueError('Design-dependent mass currently requires HEX27')
+        weights=jnp.asarray(self.p.fe.JxW)
+        shapes=jnp.asarray(self.p.fe.shape_vals)
+        diag=jnp.einsum('qn,cq,cq->cn',shapes**2,weights,scale)
+        total=jnp.sum(weights*scale,axis=1)
+        cellmass=diag*(total/diag.sum(axis=1))[:,None]*self.mass_density_factor
+        nodem=jnp.zeros(len(self.points)).at[self.device_cells.ravel()].add(cellmass.ravel())
+        mass=jnp.zeros(self.nc).at[self.ids].add(nodem)
+        return scale,nodem,mass
+
+    def acceleration(self,q,h,hdd,geometry=None,nodem=None,mass=None):
         if geometry is None:geometry=self.kernel_geometry
+        if nodem is None:nodem=self.nodem
+        if mass is None:mass=self.mass
         r=self._force(q,h,geometry);gd=self.points*jnp.array([0.,0.,hdd])
-        acc=-(self.reduce(r)+self.reduce(self.nodem[:,None]*gd))/self.mass[:,None]
+        acc=-(self.reduce(r)+self.reduce(nodem[:,None]*gd))/mass[:,None]
         return acc.at[self.pin].set(0.)
 
     def block(self,dt,steps,load_time,wave=False):
@@ -105,19 +126,24 @@ class ExplicitXYZ:
             hd=-.2*(30*s**2-60*s**3+30*s**4)/load_time
             hdd=-.2*(60*s-180*s**2+120*s**3)/load_time**2
             return jnp.array([h,hd,hdd])
-        def advance(state,count,geometry):
+        def advance(state,count,geometry,nodem=None,mass=None):
             # A masked tail reuses the same compiled block. Recompiling large
             # constants for each short tail needlessly multiplies host memory.
             def active(carry):
                 q,vhalf,t=carry;h,_,hdd=motion(t)
-                vhalf=(vhalf+dt*self.acceleration(q,h,hdd,geometry)).at[self.pin].set(0.)
+                vhalf=(vhalf+dt*self.acceleration(q,h,hdd,geometry,nodem,mass)).at[self.pin].set(0.)
                 q=(q+dt*vhalf).at[self.pin].set(0.)
                 return q,vhalf,t+dt
             def one(carry,k):
                 return jax.lax.cond(k<count,active,lambda c:c,carry),None
             return jax.lax.scan(one,state,jnp.arange(steps))[0]
         compiled=jax.jit(advance)
-        return lambda state,count=steps:compiled(state,count,self.kernel_geometry),motion
+        def apply(state,count=steps,material=None):
+            if material is None:
+                # Preserve the original default constant-mass compilation.
+                return compiled(state,count,self.kernel_geometry)
+            return compiled(state,count,*material)
+        return apply,motion
 
     @staticmethod
     def _quadratic_stats(w,h,grads,cells,weights,scale):
@@ -127,34 +153,35 @@ class ExplicitXYZ:
         W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(scale.shape)
         return jnp.min(J),jnp.sum(W*scale*weights)
 
-    def observe(self,state,dt,motion):
+    def observables(self,state,dt,motion,material=None):
+        """JAX scalar response; caller handles finite/positive-volume protection."""
+        geometry,nodem,mass=(self.kernel_geometry,self.nodem,self.mass) if material is None else material
         q,vhalf,t=state;h,hd,hdd=motion(t)
-        H=jnp.zeros((3,3)).at[2,2].set(h)
-        w=q[self.ids]
-        if self.kernel_geometry is None:
-            F=jnp.eye(3)+H+self.p.fe.sol_to_grad(w)
-            J=jnp.linalg.det(F);minJ=float(J.min())
+        H=jnp.zeros((3,3)).at[2,2].set(h);w=q[self.ids]
+        if geometry is None:
+            F=jnp.eye(3)+H+self.p.fe.sol_to_grad(w);minJ=jnp.linalg.det(F).min()
+            W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(self.scale.shape)
+            U_norm=jnp.sum(W*self.scale*jnp.asarray(self.p.fe.JxW))
+            r=self.force(q,h)
         else:
-            minJ,U_norm=self.stats(w,h,self.kernel_geometry[1],self.device_cells,
-                                   self.kernel_geometry[2][0],self.scale)
-            minJ=float(minJ)
-        if not np.isfinite(np.asarray(q)).all() or not math.isfinite(minJ) or minJ<=0:
-            raise ValueError('Nonfinite displacement or nonpositive reference Gauss detF')
-        r=self.force(q,h)
+            minJ,U_norm=self.stats(w,h,geometry[1],self.device_cells,geometry[2][0],geometry[4])
+            r=self.force_for_geometry(q,h,geometry)
         gd=self.points*jnp.array([0.,0.,hdd])
-        acc=(-(self.reduce(r)+self.reduce(self.nodem[:,None]*gd))/self.mass[:,None]).at[self.pin].set(0.)
+        acc=(-(self.reduce(r)+self.reduce(nodem[:,None]*gd))/mass[:,None]).at[self.pin].set(0.)
         velocity=(vhalf+.5*dt*acc)[self.ids]+self.points*jnp.array([0.,0.,hd])
         fullacc=acc[self.ids]+self.points*jnp.array([0.,0.,hdd])
-        weights=jnp.asarray(self.p.fe.JxW)
-        if self.kernel_geometry is None:
-            W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(self.scale.shape)
-            U_norm=jnp.sum(W*self.scale*weights)
-        U=float(U_norm)*self.L**3
-        KE=float(.5*jnp.sum(self.nodem[:,None]*velocity**2))*self.L**3
-        qstatic=float(jnp.sum(r[:,2]*self.points[:,2]))*self.L**2
-        qdynamic=float(jnp.sum((r[:,2]+self.nodem*fullacc[:,2])*self.points[:,2]))*self.L**2
-        return {'time':float(t),'compression':float(-h),'Fz_N':qdynamic,'internal_macro_Fz_N':qstatic,
-                'energy_N_mm':U,'KE_N_mm':KE,'KE_over_U':KE/max(U,1e-30),'J_min':minJ}
+        U=U_norm*self.L**3;KE=.5*jnp.sum(nodem[:,None]*velocity**2)*self.L**3
+        qstatic=jnp.sum(r[:,2]*self.points[:,2])*self.L**2
+        qdynamic=jnp.sum((r[:,2]+nodem*fullacc[:,2])*self.points[:,2])*self.L**2
+        return {'time':t,'compression':-h,'Fz_N':qdynamic,'internal_macro_Fz_N':qstatic,
+                'energy_N_mm':U,'KE_N_mm':KE,'KE_over_U':KE/jnp.maximum(U,1e-30),'J_min':minJ}
+
+    def observe(self,state,dt,motion,material=None):
+        values=self.observables(state,dt,motion,material)
+        row={k:float(v) for k,v in values.items()}
+        if not np.isfinite(np.asarray(state[0])).all() or not math.isfinite(row['J_min']) or row['J_min']<=0:
+            raise ValueError('Nonfinite displacement or nonpositive reference Gauss detF')
+        return row
 
 def run(a):
     a.output.mkdir(parents=True,exist_ok=False);started=time.perf_counter()

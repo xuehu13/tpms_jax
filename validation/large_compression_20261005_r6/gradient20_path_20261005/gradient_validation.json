@@ -1,0 +1,56 @@
+{
+  "status": "path_gradient_not_passed",
+  "same_accepted_schedule": true,
+  "central_primal_hold_force_relative_difference": 4.529709940470639e-14,
+  "central_primal_curve_RMS_over_peak_difference": 3.438689351707848e-14,
+  "central_time_grid_max_absolute_difference_seconds": 0.0,
+  "all_observed_states_finite_and_positive_Gauss_volume": true,
+  "central_primal_equivalence_limit": 1e-06,
+  "gradient_relative_limit": 0.01,
+  "hold_force_JVP_N_per_mm": 76.09366764383117,
+  "hold_force_independent_difference_N_per_mm": -10.797551471027722,
+  "hold_gradient_relative_difference": 8.047307701936658,
+  "compression_samples": [
+    0.1,
+    0.15,
+    0.2
+  ],
+  "force_N": [
+    -2.388096876960569,
+    -2.2386978170482927,
+    -2.003441042044908
+  ],
+  "target_Abaqus_force_N": [
+    -2.2387674044908055,
+    -2.0904140550078156,
+    -1.8314455255218174
+  ],
+  "sample_JVP_N_per_mm": [
+    -10.648857924439591,
+    -11.656391303894765,
+    76.09366764383117
+  ],
+  "sample_differences_N_per_mm": [
+    -10.648355700728551,
+    -11.655845122131936,
+    -10.797551471027722
+  ],
+  "sample_derivative_relative_differences": [
+    4.7164437886457506e-05,
+    4.685904429114644e-05,
+    8.047307701936658
+  ],
+  "loss_definition": "0.5 sum(((signed F at 10%,15%,20% - frozen Abaqus reference)/Standard peak)^2); 20% uses hold mean",
+  "loss": 0.0072383166862133785,
+  "loss_total_derivative_per_mm": -1.9145041267519132,
+  "loss_independent_difference_per_mm": 1.0153861349383324,
+  "loss_derivative_relative_difference": 2.8854936667696247,
+  "gradient20_certified_for_local_thickness_discrete_path": false,
+  "physical_shape_gradient_or_contact_certified": false,
+  "independent_Abaqus20_thickness_derivative_checked": false,
+  "scope": "Local thickness derivative of the declared XYZ elastic explicit discrete path; no rejected-control derivative or training",
+  "hashes": {
+    "path_ad_full/result.json": "0cf26b3f6bc5df18c6b2d2b389633a16e26adde130c76571972eada38585c5c3",
+    "path_comparison.json": "417df7b5f9ad1906e8a0f1add46aab3a2d59299a6d70ce0b1626885839a0b9e2"
+  }
+}

@@ -4,7 +4,7 @@
 
 | 入口 | 用途/边界 |
 | --- | --- |
-| thin_target_explicit.py、extract_thin_explicit.py | 新NH/XYZ物理显式与只读ODB提取；wave/probe/target，目标减步到20%；前向及可追踪Q2材料/HRZ接口；20%局部路径证据见新报告，接触未认证 |
+| thin_target_explicit.py、extract_thin_explicit.py | 新NH/XYZ物理显式与只读ODB提取；wave/probe/target，目标减步到20%；当前前向入口，20%设计梯度/接触未认证 |
 | thin_thickness_gradient.py | 第4步保存状态反力伴随、厚度扰动与两点诊断损失；复用原求解器，形态/任意目标/训练未认证 |
 | thin_target_finite.py、extract_thin_finite.py | 静力分段XYZ压缩/只读ODB；原结果冻结，新输出/上一状态参数支持独立续算；本轮15%线性求解阻塞 |
 | thin_target_linear.py、extract_thin_shell.py | 本轮两组弹性对照/模式，唯一XYZ边界诊断开关与只读ODB提取；复用既有FEM，不能自动转为大变形 |
@@ -18,8 +18,10 @@
 
 `DensityHyperelasticity.set_params`验证具体输入；`_set_params_jax`仅为已验证输入的可追踪字段更新。其固定状态残差导数检查不等于平衡解伴随、薄壁有效梯度或训练完成。本轮专项反力伴随已复用同一求解器完成厚度检查，任意损失/形态接口以后实际需要再验证，不搭通用框架。
 
-## 当前任务与证据
+## 当前阅读与任务（2026-10-05整理）
 
-正负完整路径及JVP已执行，10%/15%导数核对通过，20%保载与损失导数未通过。20%保载JVP为+76.093668N/mm，独立差分为-10.797551N/mm，符号不一致；不能用于20%逆设计。完整JVP运行快照在validation/large_compression_20261005_r6/gradient20_path_20261005/path_ad_full/experiment.py，调用唯一ExplicitXYZ。它固定已接受时间网格，不对回退控制求导。旧Newton候选/停止记录冻结，不冒充新路径证据。
+HEX27大压缩前向及必要速率工作目标已通过：慢路径对壳反力/曲线/功差9.45%/5.87%/6.87%。20%中心平衡和候选伴随完成，减薄重平衡两次未过；正扰动、完整扰动路径及有效20%总梯度未执行/认证。当前CLI是前向，不是有效路径AD。
 
-当前四项只收口原大压缩第4步；不自动启动形态求导、训练或新网格轮次。详见[新执行记录](../docs/GRADIENT20_PROGRESS_REPORT.md)、[状态](../docs/RESEARCH_STATUS.md)和[唯一主规划](../docs/RESEARCH_PLAN.md)。
+唯一下一项为原第4步的四项任务：完整厚度扰动路径、同路径总导数、一个曲线损失和成本、限定替代结论。旧下一步不自动恢复；本次零科学作业、未改求解器或科学结果。
+
+最新解释见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)，执行只看[主规划](../docs/RESEARCH_PLAN.md)。

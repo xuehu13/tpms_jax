@@ -1,0 +1,19 @@
+{
+  "purpose": "Original step4: local thickness full loading paths and branch evidence",
+  "base_thickness_mm": 0.5,
+  "perturbed_thicknesses_mm": [
+    0.4975,
+    0.5025
+  ],
+  "load_time_seconds": 0.004,
+  "hold_fraction": 0.1,
+  "element": "HEX27",
+  "cells_per_axis": 32,
+  "baseline": "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/quadratic_candidate/T0p004_compact",
+  "baseline_result_sha256": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+  "explicit_source_sha256": "620efa1f2832115be089081e73a53e0dfb2014c3464d49dfa0c5594b37ab1d63",
+  "fixed_physics": "same midsurface, interface, eta, NH, XYZ; no contact/plasticity/damping/mass scaling",
+  "gradient_certified": false,
+  "guard": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/background_bridge_20261005/run_quadratic_guarded.py",
+  "new_output_only": true
+}
