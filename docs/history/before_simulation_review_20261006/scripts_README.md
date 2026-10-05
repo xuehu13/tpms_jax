@@ -1,6 +1,6 @@
 # 程序入口与范围
 
-唯一维护FEM在正式根目录，不从validation/source_*或Windows归档执行。当前[唯一主规划](../docs/RESEARCH_PLAN.md)将仿真误差与三维参照优先，训练后置；新四步尚未执行。下面各入口是功能/历史范围索引，不是批量待办。
+维护FEM只有根目录的一套实现；不从validation/source_*或Windows历史副本执行。当前研究任务只看 [唯一主规划](../docs/RESEARCH_PLAN.md)。5%目标第1步通过；第2步原XY平端未过、XYZ周期诊断通过；用户已统一XYZ；第3步1%/5%通过、10%未接受，第4步1%/5%厚度总梯度及两点损失通过，四步限定收口；下面历史入口不是批量待办。
 
 | 入口 | 用途/边界 |
 | --- | --- |
@@ -20,6 +20,6 @@
 
 ## 当前任务与证据
 
-HEX27前向20%约10%工作目标通过；原完整JVP的10%/15%导数通过，20%保载/损失导数未过，不能用于20%逆设计。本轮只调查/整理，求解代码未改。当前改进顺序见[唯一规划](../docs/RESEARCH_PLAN.md)，不是持续重跑梯度或启动训练。
+正负完整路径及JVP已执行，10%/15%导数核对通过，20%保载与损失导数未通过。20%保载JVP为+76.093668N/mm，独立差分为-10.797551N/mm，符号不一致；不能用于20%逆设计。完整JVP运行快照在validation/large_compression_20261005_r6/gradient20_path_20261005/path_ad_full/experiment.py，调用唯一ExplicitXYZ。它固定已接受时间网格，不对回退控制求导。旧Newton候选/停止记录冻结，不冒充新路径证据。
 
-前向证据见[冻结报告](../docs/FORWARD20_PROGRESS_REPORT.md)，导数失败见[冻结记录](../docs/GRADIENT20_PROGRESS_REPORT.md)。能量插值尚未实现，原默认NH、HRZ与科学原件保留。
+当前四项只收口原大压缩第4步；不自动启动形态求导、训练或新网格轮次。详见[新执行记录](../docs/GRADIENT20_PROGRESS_REPORT.md)、[状态](../docs/RESEARCH_STATUS.md)和[唯一主规划](../docs/RESEARCH_PLAN.md)。

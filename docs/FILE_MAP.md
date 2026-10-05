@@ -1,86 +1,81 @@
-# 文件地图
+# 文件地图：活动入口、正式程序与冻结证据
 
-更新：2026-10-05。本Windows目录是阅读入口与历史材料；正式维护和计算只在WSL `/home/xuehu/projects/tpms_jax`。当前任务是原大压缩第4步的梯度验证，不是新开网格扫描或训练。
+更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本次不改源码或科学原件。
 
-## 唯一活动入口
+## 现在读哪些文件
 
-| Windows阅读文件 | 正式仓库位置 | 职责 |
-| --- | --- | --- |
-| [阅读入口](../README.md) | README.md | 进入当前解释与任务 |
-| [背景](RESEARCH_BACKGROUND.md) | docs/RESEARCH_BACKGROUND.md | 长期问题、固定研究输入与证据约定 |
-| [规划](RESEARCH_PLAN.md) | docs/RESEARCH_PLAN.md | 原第4步的四项执行任务 |
-| [状态](RESEARCH_STATUS.md) | docs/RESEARCH_STATUS.md | 完成、未完成及实际成本 |
-| [综合说明](TPMS_RESEARCH_REVIEW.md) | docs/TPMS_RESEARCH_REVIEW.md | 最新方法、数字解释、疑虑与判断 |
-| [当前梯度执行](GRADIENT20_PROGRESS_REPORT.md) | docs/GRADIENT20_PROGRESS_REPORT.md | 本轮完整路径/梯度与成本 |
-| [前向冻结记录](FORWARD20_PROGRESS_REPORT.md) | docs/FORWARD20_PROGRESS_REPORT.md | 截至51136a5的冻结证据；其当时下一步不是活动计划 |
-| [文献索引](PAPER_ROUTE.md) | docs/PAPER_ROUTE.md | 阅读范围和可借鉴边界 |
-| [历史说明](history/README.md) | docs/history/README.md（正式历史独立保存） | 旧报告/规划/传输材料 |
-| AGENTS.md | AGENTS.md | 简洁工作约定 |
+| Windows名称 | 用途；正式仓库位置 |
+| --- | --- |
+| START_HERE.md | 阅读入口；README.md |
+| RESEARCH_BACKGROUND.md | 长期目标/边界；docs同名 |
+| RESEARCH_PLAN.md | 唯一活动四步，尚未执行；docs同名 |
+| RESEARCH_STATUS.md | 事实状态；docs/RESEARCH_STATUS.md |
+| TPMS_RESEARCH_REVIEW.md | 方法、符号、误差因素、客观可行性；docs同名 |
+| PAPER_ROUTE.md | 来源与阅读范围；docs同名 |
+| FORWARD20_PROGRESS_REPORT.md | 冻结前向执行证据；docs同名，不当最新计划 |
+| GRADIENT20_PROGRESS_REPORT.md | 冻结正负路径/AD失败证据；docs同名，下一项只看主规划 |
+| AGENTS.md | 工作约定；正式根同名 |
 
-`output/pdf/TPMS_RESEARCH_REVIEW.pdf`是前次调查快照，本版Markdown才是最新综合说明；本次不新增重复PDF。Windows文件地图不意味着所有本机大数据都已上传GitHub。
+## 唯一正式程序
 
-## 正式程序
-
-以下路径相对于WSL正式仓库；不从Windows `work/tpms_jax`旧阅读副本运行。
+以下为WSL仓库相对路径。源码由现有模块分工维护，不从Windows旧副本、validation/source_*或归档调度器运行。
 
 | 路径 | 用途 |
 | --- | --- |
-| hyperelastic_fem.py | 唯一共享Neo-Hookean材料核/残差组装；默认HEX8，可选HEX27，规则参考几何和批处理 |
-| pbc.py、fem.py、density_fem.py | 周期自由度/既有线性背景材料场 |
-| surface_distance.py | 周期中面距离、恒厚表示；不是已认证形态AD |
-| geometry.py、volume.py、voxel_field.py、design_fem.py | 几何/积分用料/周期占据及已验证的专用梯度 |
-| scripts/thin_target_explicit.py | 当前XYZ物理显式前向，中央差分/HRZ质量/块回退；材料/HRZ质量/响应可追踪，完整路径调用保存在本轮experiment.py，CLI厚度开关本身不是AD |
-| scripts/thin_target_finite.py、scripts/thin_thickness_gradient.py | 旧静力路径及厚度伴随；不冒充20%有效梯度 |
-| scripts/extract_thin_explicit.py、scripts/extract_thin_finite.py | Abaqus只读结果提取 |
-| scripts/README.md、pixi.toml、pixi.lock、tests/ | 入口说明、锁定环境与维护检验 |
+| hyperelastic_fem.py | 唯一共享NH材料能/内力，HEX8/HEX27与周期参考几何 |
+| pbc.py、fem.py、density_fem.py | 周期自由度与线弹性背景组装 |
+| surface_distance.py | 周期中面距离、恒厚占据，未认证形态AD |
+| geometry.py、volume.py、voxel_field.py、design_fem.py | 原几何/用料/场及专用已验证梯度，历史范围见报告 |
+| scripts/thin_target_explicit.py | 当前XYZ中央差分/HRZ/回退减步、可追踪占据质量及响应 |
+| scripts/thin_target_finite.py、thin_thickness_gradient.py | 原静力与厚度伴随入口，旧候选不冒充20%有效梯度 |
+| scripts/extract_thin_explicit.py、extract_thin_finite.py | Abaqus只读提取 |
+| scripts/README.md、pixi.toml、pixi.lock、tests/ | 入口说明、锁定环境及维护检验 |
 
-## 当前科学结果
+## 当前主要结果
 
-实验根：`/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6`。本次不改原输入、JSON、NPZ或日志。
+根：`/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6`。
 
-| 相对目录/文件 | 内容及判断 |
+| 相对位置 | 内容 |
 | --- | --- |
-| static/a0p150000、static/a0p200000 | 15%线性迭代阻塞；20%静力仅准备，不能叫20%求解失败 |
-| abaqus/standard、explicit_T0p020、explicit_T0p040 | 三条无接触壳20%参考及提取，参考能量质量尚非严格通过 |
-| explicit/N64_T0p004、N64_T0p004_adaptive | HEX8第一次保护停止及回退减步完成20%的原基准 |
-| background_bridge/ | 原生C3D8同Gauss占据/指定保存位移桥接；非独立平衡曲线 |
-| quadratic_candidate/T0p004_compact | 当前HEX27快路径；主体15.59分钟 |
-| quadratic_candidate/T0p008_compact | 慢路径速率复核；主体30.86分钟 |
-| quadratic_candidate/rate_check.json、rate_response.png | 速率及约10%响应目标通过；前向记录冻结；最新厚度路径导数见gradient20_path_20261005，严格替代未认证 |
-| quadratic_wave/、quadratic_wave_runtime_geometry/ | 二次质量/波基础；不是TPMS实体精度证据 |
-| gradient20/probe、endpoint、endpoint_energy | 中心平衡、候选伴随与两次减薄重平衡停止；当时的失败/候选冻结，不是本轮活动状态 |
-| gradient20_path_20261005/ | 正负完整路径、同网格JVP、独立导数/曲线损失、原源码及运行快照；最新说明见新执行记录 |
-| README.md、status.json | 本轮入口与原始执行状态；最新解释只在活动文档 |
+| quadratic_candidate/T0p004_compact、T0p008_compact | HEX27快/慢完整20%，主体15.59/30.86分钟，场/日志本机 |
+| quadratic_candidate/rate_check.json、comparison.json、field_review.json | 约10%响应与速率通过，实体/软域及模式摘要；未认证严格替代 |
+| background_bridge/ | C3D8同Gauss占据/保存位移桥接，非独立平衡曲线 |
+| gradient20_path_20261005/adaptive_minus、adaptive_plus | 厚度正负完整路径 |
+| gradient20_path_20261005/path_ad_full、gradient_validation.json | 完整JVP、10%/15%通过、20%未过、损失核对 |
+| gradient20_path_20261005/path_stability_probe、short_stability_probe、tangent_localization | 局部高频/半步和Gauss敏感性定位，非唯一因果证明 |
+| gradient20_path_20261005/evidence_manifest.json | 精选结果与本机大场/日志哈希、源码/环境追溯 |
+| gradient20/endpoint* | 旧中心平衡/伴随候选、两次减薄Newton停止，冻结 |
+| explicit/N64_T0p004*、static/a0p150000 | 原HEX8改善前基准与静力迭代阻塞 |
+| abaqus/standard、explicit_T0p020、explicit_T0p040 | 三条壳参考摘要，能量质量仍有边界 |
 
-原薄壁四步：`validation/thin_target_20261004_r5`；其根、step2/diagnostic_xyz、step3_xyz、step4_thickness_a01及_a05保留几何、小变形、有限应变、1%/5%梯度结果。对应阅读报告已移到[历史报告](history/scientific_reports_20261005/)。第一至第四轮历史实验仍在validation各日期目录，旧失败/条件项不自动成为待办。最终M4 CSV仍在正式`results/m4_numerical_study.csv`，Git忽略。
+目标薄壁基础在`validation/thin_target_20261004_r5`；第一至第四轮各日期实验冻结。早期M4最终CSV为`results/m4_numerical_study.csv`，Git忽略。原JSON中的阶段状态不自动覆盖最新解释或生成待办。
 
-## Abaqus和用户资料
+## Abaqus与用户资料
 
-命令：`E:/ABAQUS/2026/Commands/abaqus.bat`。计算包根：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus`；大ODB和原日志仍在那里，work/通常是作业目录，不搬动。
+命令`E:/ABAQUS/2026/Commands/abaqus.bat`；作业包根`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus`。
 
-| 包根相对位置 | 内容 |
+| 包根相对位置 | 用途 |
 | --- | --- |
-| large_compression_20261005_r6_standard、_explicit_T0p020、_explicit_T0p040 | 当前纯弹性XYZ壳20%原始作业 |
-| background_bridge_20261005/point_check、saved20 | 原生C3D8单元点检及保存20%状态桥接 |
-| thin_target_20261004_r5_step2、_step2_xyz、_step3_xyz_01、_05、_05_refined、_10 | 旧薄壁小变形/有限应变壳结果 |
-| thin_target_20261005_r5_step4_t0p498000、_t0p502000 | 1%下独立壳厚扰动，不能当20%梯度验证 |
-| uniform1001、element_comparison_20261002、discrete_comparison_verified_20261002及其他日期包 | 冻结完整体/单元/二值与历史诊断 |
+| large_compression_20261005_r6_standard、_explicit_T0p020、_explicit_T0p040 | 当前壳20%原始INP/ODB/日志 |
+| background_bridge_20261005/point_check、saved20 | 同Gauss材料场桥接，SDVINI/UHYPER |
+| thin_target_20261004_r5_step2*、_step3_xyz_* | 原薄壁小变形/有限应变 |
+| thin_target_20261005_r5_step4_t0p498000、_t0p502000 | 1%独立壳厚扰动，非20%梯度 |
+| uniform1001及其他日期包 | 均匀体/材料场/二值等历史验证 |
 
-用户中面参考：`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus`。原厚0.328595mm、塑性/摩擦压板只作背景资料，当前不照搬。文献原件在`C:/Users/xuehu/Desktop/tpms优化`，未移动或改写。
+用户中面`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus`，原件不改。文献`C:/Users/xuehu/Desktop/tpms优化`，未移动或改写。大ODB和正式场仍在原位置，GitHub不含全部本机数据。
 
-## 整理与追溯
+## 本次规范化与历史映射
 
-| 本工作区位置 | 内容 |
+| 位置 | 内容 |
 | --- | --- |
-| history/before_feasibility_review_20261005/ | 本次修改前9份活动说明的原字节副本 |
-| history/scientific_reports_20261005/ | 从根目录移入的11份旧阶段报告；内部相对链接仍按原根目录上下文解释 |
-| history/git_transport/completed_20261005_later/ | 本次6项已发布bare仓库/bundle；旧发布收据保持原文 |
-| history/git_transport/completed_20261005/及更早历史目录 | 前次归档，不恢复为活动源码 |
-| history/before_gradient_path_20261005/ | 本轮修改前活动文档原字节；正式仓库独立保存 |
-| work/gradient_path_20261005/ | 本轮调度/审阅/文档/发布工具，不维护第二套FEM |
-| work/feasibility_review_20261005/ | 本次文档工具、文献/整理/同步/发布收据，零科学作业 |
-| work/background_bridge_20261005/、forward20_step1_20261005/ | 已完成调度/分析工具及收据，正式入口只在WSL/scripts |
-| work/large_compression_review_20261005/ | 前次23PDF身份及6篇选页摘录/预览，本次复用 |
-| work/tpms_jax及历史缓存/source_at_run | 旧副本/运行源码快照；只读追溯，不维护第二套FEM |
+| history/before_simulation_review_20261006/ | Windows活动说明修改前原字节；正式仓库独立保存在docs/history同名目录 |
+| history/reading_checkout_20261006/tpms_jax/ | 原work/tpms_jax旧阅读代码副本，包括原Git/结果字节；不是正式运行入口 |
+| history/git_transport/completed_20261006/ | 原work/gradient_path_20261005已发布transport.git和bundle；旧收据原路径按本表解释 |
+| history/rendered_reports_20261005/TPMS_RESEARCH_REVIEW.pdf | 原output/pdf旧PDF，冻结快照 |
+| 正式docs/history/rendered_reports_20261005/TPMS_RESEARCH_REVIEW.pdf | 原docs根旧PDF；最新解释只看Markdown |
+| work/README.md | 完成调度器/摘录与当前整理工具的分类，不维护第二套FEM |
+| work/simulation_review_20261006/ | 本次阅读、文档同步、归档/校验/发布工具与收据，零科学作业 |
+| work/gradient_path_20261005/及其他日期work目录 | 已完成调度、诊断、发布收据，不自动重新运行 |
+| history/scientific_reports_20261005/、其他before_* | 旧阶段和原说明；内部链接按原根目录上下文解释 |
 
-本次旧新路径与SHA256：[整理收据](history/feasibility_review_20261005/windows_organization_receipt.json)。原始计算、停止日志、用户PDF和Abaqus作业不删除；已完成工具不重跑。正式仓库独立归档其修改前文件，不能拿Windows副本覆盖原历史。
+本次归档均核对原字节哈希，路径收据`work/simulation_review_20261006/organization_receipt.json`。旧阅读副本/传输包可恢复，但不恢复成活动程序。科学原件、失败日志、用户论文和ODB不删除，归档报告不自动更新。本次没有新增重复PDF、框架或新求解器。
