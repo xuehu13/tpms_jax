@@ -1,0 +1,36 @@
+{
+  "status": "cleanup_rejected",
+  "checks": {
+    "closed_manifold": false,
+    "nondegenerate_faces": true,
+    "opposite_node_sets_match": true,
+    "bounded_vertex_motion": true
+  },
+  "weld_radius_mm": 0.003,
+  "maximum_vertex_motion_mm": 0.004543288731226007,
+  "points": 171284,
+  "triangles": 342588,
+  "surface_minimum_edge_mm": 0.00037397565703496444,
+  "surface_minimum_altitude_mm": 4.021611828223337e-08,
+  "surface_altitude_quantiles_mm": [
+    4.021611828223337e-08,
+    0.0029592725178111496,
+    0.032711478759637716,
+    0.10017330723881583
+  ],
+  "boundary_distance_residual_quantiles_mm": [
+    -0.009297664977782977,
+    -0.0033407195491086034,
+    1.244847295486795e-05,
+    0.004121895806089374,
+    0.01150364156276873
+  ],
+  "periodic_unmatched_nodes": [
+    0,
+    0,
+    0
+  ],
+  "body_seconds": 1.2209834439563565,
+  "input_sha256": "e1b578ba742265469399b24fc06b1160a4089fe77b2cfecf33a4561216811435",
+  "scope": "Small-edge geometric repair, not thickness tuning or precision certification; meshing and Jacobian gates remain."
+}

@@ -1,0 +1,61 @@
+Info    : Classifying surfaces (angle: 45)...
+Info    : Splitting triangulations to make them parametrizable:
+Info    :  - Level 0 partition with 357812 triangles split in 2 parts because too many triangles (357812 vs. 250000)
+Info    :  - Level 1 partition with 178749 triangles split in 2 parts because poincare characteristic 8 is not 0
+Info    :  - Level 2 partition with 89499 triangles split in 2 parts because poincare characteristic 4 is not 0
+Info    :  - Level 3 partition with 44820 triangles split in 2 parts because parametrized triangles are too small (5.83772e-10)
+Info    :  - Level 4 partition with 22401 triangles split in 2 parts because parametrized triangles are too small (7.23182e-10)
+Info    :  - Level 5 partition with 11228 triangles split in 2 parts because parametrized triangles are too small (6.12111e-10)
+Info    :  - Level 6 partition with 5624 triangles split in 2 parts because parametrized triangles are too small (1.5493e-09)
+Info    :  - Level 7 partition with 2774 triangles split in 2 parts because parametrized triangles are too small (4.93449e-10)
+Info    :  - Level 8 partition with 1363 triangles split in 2 parts because parametrized triangles are too small (1.09265e-09)
+Info    :  - Level 9 partition with 694 triangles split in 2 parts because parametrized triangles are too small (2.83494e-09)
+Info    :  - Level 10 partition with 344 triangles split in 2 parts because parametrized triangles are too small (5.13367e-09)
+Info    :  - Level 11 partition with 171 triangles split in 2 parts because parametrized triangles are too small (4.27579e-10)
+Info    :  - Level 12 partition with 87 triangles split in 2 parts because parametrized triangles are too small (1.99134e-09)
+Info    :  - Level 7 partition with 2850 triangles split in 2 parts because parametrized triangles are too small (5.60549e-09)
+Info    :  - Level 6 partition with 5604 triangles split in 2 parts because parametrized triangles are too small (4.30531e-09)
+Info    :  - Level 7 partition with 2829 triangles split in 2 parts because parametrized triangles are too small (7.81753e-09)
+Info    :  - Level 8 partition with 1389 triangles split in 2 parts because parametrized triangles are too small (6.4745e-09)
+Info    :  - Level 9 partition with 703 triangles split in 2 parts because parametrized triangles are too small (9.46849e-09)
+Info    :  - Level 5 partition with 11173 triangles split in 2 parts because parametrized triangles are too small (3.63579e-10)
+Info    :  - Level 6 partition with 5603 triangles split in 2 parts because parametrized triangles are too small (9.82913e-09)
+Info    :  - Level 6 partition with 5570 triangles split in 2 parts because parametrized triangles are too small (4.13761e-10)
+Info    :  - Level 7 partition with 2766 triangles split in 2 parts because parametrized triangles are too small (6.34305e-09)
+Info    :  - Level 7 partition with 2804 triangles split in 2 parts because parametrized triangles are too small (8.65801e-10)
+... full raw log retained locally ...
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43516 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43517 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43518 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43519 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43520 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43521 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43522 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43523 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43524 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43525 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning
+Info    :  - Level 43526 partition with 2 triangles split in 2 parts because parametrized triangles are too small (4.04176e-12)
+Warning : Partitioning face 1 with 2 triangles that all have the same partition - changing tolerance to 1.03
+Warning : Tolerance too large - aborting partitioning

@@ -1,0 +1,8 @@
+{
+  "status": "mesh_attempt_stopped",
+  "stage": "classify_reparametrize",
+  "reason": "Same two-triangle parametrization partition repeatedly split above level 18000 without progress; terminated to prevent indefinite work",
+  "log_path": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/simulation_error_20261006/mesh_reference.log",
+  "log_sha256": "f0fe198570b1b48fce9daf8b26e8b168bf75c20d9f979a0baec12d28111ec3f7",
+  "scientific_scope": "Meshing implementation failure, not failure of JAX forward or proof of impossible solid reference"
+}

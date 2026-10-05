@@ -1,0 +1,61 @@
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 6.60401e-06s, CPU 3e-06s)
+Info    : Meshing 2D...
+Info    : Done meshing 2D (Wall 0.000418855s, CPU 1.1e-05s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Tetrahedrizing 178898 nodes...
+Info    : Done tetrahedrizing 178906 nodes (Wall 2.71234s, CPU 2.92002s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    :  - Added 253 Steiner points
+Info    : Done reconstructing mesh (Wall 5.79776s, CPU 6.13013s)
+Info    : Found volume 1
+Info    : It. 0 - 0 nodes created - worst tet radius 18224.3 (nodes removed 0 0)
+Info    : It. 500 - 0 nodes created - worst tet radius 86.3188 (nodes removed 0 500)
+Info    : It. 1000 - 0 nodes created - worst tet radius 45.1959 (nodes removed 0 1000)
+Info    : It. 1500 - 0 nodes created - worst tet radius 32.579 (nodes removed 0 1500)
+Info    : It. 2000 - 0 nodes created - worst tet radius 25.8096 (nodes removed 0 2000)
+Info    : It. 2500 - 0 nodes created - worst tet radius 21.9299 (nodes removed 0 2500)
+Info    : It. 3000 - 0 nodes created - worst tet radius 19.3104 (nodes removed 0 3000)
+Info    : It. 3500 - 0 nodes created - worst tet radius 17.3133 (nodes removed 0 3500)
+Info    : It. 4000 - 0 nodes created - worst tet radius 15.8516 (nodes removed 0 4000)
+Info    : It. 4500 - 0 nodes created - worst tet radius 14.6039 (nodes removed 0 4500)
+... full raw log retained locally ...
+Info    : 1145 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 6.02734e+12 
+Info    : Total badness = 6.02724e+12 
+Info    : CombineImprove 
+Info    : 319 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 3.04931e+12 
+Info    : Total badness = 3.0492e+12 
+Info    : SplitImprove 
+Info    : badmax = 1e+24 
+Info    : 338 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 3.0492e+12 
+Info    : Total badness = 3.04913e+12 
+Info    : SwapImprove  
+Info    : 34351 swaps performed 
+Info    : SwapImprove2  
+Info    : 483 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 1.30541e+13 
+Info    : Total badness = 1.30541e+13 
+Info    : CombineImprove 
+Info    : 174 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 1.30541e+13 
+Info    : Total badness = 1.30541e+13 
+Info    : SplitImprove 
+Info    : badmax = 1e+24 
+Info    : 173 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 1.30541e+13 
+Info    : Total badness = 1.30541e+13 
+Info    : SwapImprove  
+timeout: the monitored command dumped core

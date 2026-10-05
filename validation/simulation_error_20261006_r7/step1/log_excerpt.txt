@@ -1,0 +1,61 @@
+       __       ___      ___   ___                _______  _______ .___  ___. 
+      |  |     /   \     \  \ /  /               |   ____||   ____||   \/   | 
+      |  |    /  ^  \     \  V  /      ______    |  |__   |  |__   |  \  /  | 
+.--.  |  |   /  /_\  \     >   <      |______|   |   __|  |   __|  |  |\/|  | 
+|  `--'  |  /  _____  \   /  .  \                |  |     |  |____ |  |  |  | 
+ \______/  /__/     \__\ /__/ \__\               |__|     |_______||__|  |__| 
+                                                                              
+
+Curves recovered
+Warning: 27-node hexahedron is rarely used in practice and not recommended.
+Warning: 27-node hexahedron is rarely used in practice and not recommended.
+Both Gauss fields recovered
+{
+  "status": "step1_diagnostics_complete",
+  "body_seconds": 18.183308693987783,
+  "slow_field": {
+    "totals": {
+      "U": 3.7588932267317046,
+      "U_dev": 2.9142090052194596,
+      "U_vol": 0.8446842215122442,
+      "F": -2.00467523838205,
+      "floor_U": 0.12073260614891737,
+      "floor_F": -0.04039176526569576
+    },
+    "groups": {
+... full raw log retained locally ...
+      },
+      "Q2_slow": {
+        "early": {
+          "RMS_over_Standard_peak": 0.019174486891307338,
+          "mean_excess_force_N": 0.03776477781100552
+        },
+        "peak_region": {
+          "RMS_over_Standard_peak": 0.058329270579566724,
+          "mean_excess_force_N": 0.12941461467823018
+        },
+        "post_peak": {
+          "RMS_over_Standard_peak": 0.07336625552749657,
+          "mean_excess_force_N": 0.1657123383103744
+        },
+        "whole_RMS_over_Standard_peak": 0.05872224378728692
+      },
+      "shell_standard": {
+        "early": {
+          "RMS_over_Standard_peak": 0.0003595156404587,
+          "mean_excess_force_N": 0.0004940873760868458
+        },
+        "peak_region": {
+          "RMS_over_Standard_peak": 0.004986201888286006,
+          "mean_excess_force_N": 0.009829259413943716
+        },
+        "post_peak": {
+          "RMS_over_Standard_peak": 0.012931577129303455,
+          "mean_excess_force_N": 0.028879034552988746
+        },
+        "whole_RMS_over_Standard_peak": 0.008720212269665985
+      }
+    },
+    "scope": "Loading-only diagnostic. Early fit uses 0.2%-1%; dynamic effects may affect it. Hold means and endpoint forces are separate."
+  }
+}

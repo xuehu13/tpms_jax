@@ -1,0 +1,9 @@
+{
+  "status": "mesh_attempt_failed_before_quadratic_reference",
+  "stage": "Netgen_optimization",
+  "process_exit": "segmentation_fault",
+  "reported_illegal_tetrahedra": 4283,
+  "reported_worst_quality": 5.70569e-08,
+  "raw_log_sha256": "11dd9cc5786eb86528a5105c1f545bc4abe25c8bc29dffdfdf63838290e19f02",
+  "scope": "No accepted volume mesh or Abaqus result. An optimizer crash is not a JAX simulation failure."
+}

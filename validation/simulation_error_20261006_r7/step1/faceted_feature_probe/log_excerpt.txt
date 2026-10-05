@@ -1,0 +1,30 @@
+{
+  "status": "flagged_feature_profiles_complete",
+  "rows": [
+    {
+      "facet_index": 3163,
+      "sharp_width_mm": 0.5060565080948617,
+      "sharp_width_over_target": 1.0121130161897234,
+      "smooth_M0_mm": 0.5060565072429595,
+      "smooth_central_M2_mm3": 0.011023517563850454,
+      "smooth_bending_ratio_vs_nominal_t3_over_12": 1.0582576861296438
+    },
+    {
+      "facet_index": 7650,
+      "sharp_width_mm": 0.5052719563576833,
+      "sharp_width_over_target": 1.0105439127153666,
+      "smooth_M0_mm": 0.505271957240258,
+      "smooth_central_M2_mm3": 0.01097279709534913,
+      "smooth_bending_ratio_vs_nominal_t3_over_12": 1.0533885211535166
+    },
+    {
+      "facet_index": 16190,
+      "sharp_width_mm": 0.5052719563152381,
+      "sharp_width_over_target": 1.0105439126304763,
+      "smooth_M0_mm": 0.5052719576892366,
+      "smooth_central_M2_mm3": 0.01097279717407798,
+      "smooth_bending_ratio_vs_nominal_t3_over_12": 1.0533885287114861
+    }
+  ],
+  "scope": "Deliberately selected worst faceting indicators; no surface-wide weighting or global force correction."
+}

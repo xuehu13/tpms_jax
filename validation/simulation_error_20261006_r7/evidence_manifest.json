@@ -1,0 +1,223 @@
+{
+  "base_commit": "68af5b4df87a3170edb345c92c5e2161874573b3",
+  "protected_previous_sha256": {
+    "hyperelastic_fem.py": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+    "scripts/thin_target_explicit.py": "636319f60897deed8d4dd796a242cb3e2428f19f03a628a3f33bf901e402e379",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "docs/FORWARD20_PROGRESS_REPORT.md": "6a176f008e3a8b2fd9f5ad9e8433c573b69ebc9a762ec9a0b1158123d48acd28",
+    "docs/GRADIENT20_PROGRESS_REPORT.md": "5e57e564428b463c901a57b4b73d825a50651afb6dcb1c74ebe46726b142096f",
+    "validation/large_compression_20261005_r6/quadratic_candidate/T0p004_compact/result.json": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+    "validation/large_compression_20261005_r6/quadratic_candidate/T0p008_compact/result.json": "cd85d937d395a5de376718c7953a502da38d8a78b89ec398696cb262c133cbb1",
+    "validation/large_compression_20261005_r6/quadratic_candidate/rate_check.json": "7552866a8f972b0b35354af865e6f9030ff8e6b151ff87908d227b183dc866ec",
+    "validation/large_compression_20261005_r6/quadratic_candidate/field_review.json": "898bb35ced658d3a7c2ee79b48124211b5973688d092a5518bec671069ec69eb",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/gradient_validation.json": "86a2c69155354181255c9a9048bdb1ab7bdfd1833c56338ece0fb86a16da154a",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/path_ad_full/result.json": "0cf26b3f6bc5df18c6b2d2b389633a16e26adde130c76571972eada38585c5c3",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/evidence_manifest.json": "29755a3b94b2b6f34447791c83c65e8b24779c492cb398e780baf4905b3e2dd6",
+    "validation/large_compression_20261005_r6/gradient20/summary.json": "cde880e10b9a6dd85864bf6208e26fa59834745391a08a46a32b53c6d6c181e9",
+    "validation/large_compression_20261005_r6/status.json": "dc8bb37b36bfd93b63106fd46003e5c5922140458ffe97dc6eb57e15bdc6bb93"
+  },
+  "step1_status": "complete",
+  "step2_status": "surface_ready_volume_mesh_not_accepted",
+  "step3_status": "not_started",
+  "step4_status": "not_started",
+  "new_forward_FEM_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "training_jobs": 0,
+  "solver_edits": 0,
+  "artifacts": [
+    {
+      "path": "validation/simulation_error_20261006_r7/.gitignore",
+      "bytes": 6,
+      "sha256": "28b5ea1e7c18ff9db30c40bce0738975e8eb200c5bb00b508261e39e30f443fe",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/README.md",
+      "bytes": 758,
+      "sha256": "96d118bf44766be559a8b04548d42178c42101c7031fdc382b664e8349889c9c",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/curves.csv",
+      "bytes": 50054,
+      "sha256": "8b66b490fc5326e0f205b6d0f5a9f7c814c213bc42b96a9ebae22e026c39c310",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/curves.png",
+      "bytes": 106326,
+      "sha256": "35ea66331b3fc21c4272ebf907c0f629cd5639f2184f8f77a4f9e0ac8f22bd29",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/experiment.py",
+      "bytes": 12701,
+      "sha256": "d23835a57c4cfc1d47be431f05e92c6bd8c198b58cd1eaf1f026286218bd7fdd",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/faceted_feature_probe/experiment.py",
+      "bytes": 1861,
+      "sha256": "1b2a35efd2b58bf241b259aa388a6eb955c45dbb68b75714e1f3eb560804b093",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/faceted_feature_probe/log_excerpt.txt",
+      "bytes": 1092,
+      "sha256": "776054a954c1198d7a8538c962a579316efbb595c7cecc7d872b9287723fb17e",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/faceted_feature_probe/result.json",
+      "bytes": 1092,
+      "sha256": "776054a954c1198d7a8538c962a579316efbb595c7cecc7d872b9287723fb17e",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/faceted_feature_probe/run.log",
+      "bytes": 1092,
+      "sha256": "776054a954c1198d7a8538c962a579316efbb595c7cecc7d872b9287723fb17e",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/log_excerpt.txt",
+      "bytes": 2346,
+      "sha256": "3a406f03002bc1560b256be59d70d739b3ac11556f98ee7165dbc1f0e4b0dfb9",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/manifest.json",
+      "bytes": 2246,
+      "sha256": "0cf9136c834bb7732ff4609aa43bb851dc0068955c7cf053d5236dd0ac517e58",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/normal_profiles.npz",
+      "bytes": 1883422,
+      "sha256": "39f7134de8801022c979b743900771772e086ba631aa3741304ff7ed4b1da195",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/result.json",
+      "bytes": 44983,
+      "sha256": "10e2a28c28215e12a0c67e8ec3aff1a34e7a7d4cad2120e93c99357c9b5fb1b6",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step1/run.log",
+      "bytes": 7827,
+      "sha256": "803bf3cb8d40ed1b1913ef2567ddf1b8e013d2cdd999342fea11e5edf38ca1cc",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/geometry.json",
+      "bytes": 872,
+      "sha256": "716331c1d2ee8d98cf65e49b7ea6365ecc2d85bf2be8f91ec65b2f49f1916406",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/geometry_experiment.py",
+      "bytes": 7305,
+      "sha256": "1f2a6bcb0349e0c7c52010f219c7bee8a7faf1b22a278ccd9e583c019631ba31",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/log_excerpt.txt",
+      "bytes": 897,
+      "sha256": "d8af0647d8c2c52eb4ae9536eccd8ec9bcb93230479a4239bb3f9147b52dbbb8",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_attempt/experiment.py",
+      "bytes": 4588,
+      "sha256": "eee221ec1814966d5e680ce9c2ef507169e4d0fb4b937db2987672f9a48d550f",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_attempt/log_excerpt.txt",
+      "bytes": 6393,
+      "sha256": "0ae97180f671ae634e922cf8fb1d52ee6257cd8a4497501846b7c49ec193d177",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_attempt/result.json",
+      "bytes": 588,
+      "sha256": "1d3f809e1387510016b4906d71d4ac4f53c7d7f10928747515e1bc6e19f69732",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_attempt/run.log",
+      "bytes": 12666562,
+      "sha256": "f0fe198570b1b48fce9daf8b26e8b168bf75c20d9f979a0baec12d28111ec3f7",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_direct/experiment.py",
+      "bytes": 4775,
+      "sha256": "1db64e5cbc876df70f280dea767e8bdeee19e0553f2eaf99054d8d94bdcbeac7",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_direct/log_excerpt.txt",
+      "bytes": 2627,
+      "sha256": "8d33ffe71e1b3eb730be673a1aaa86255dd81cc3ae65aeaede1073f5c43bf849",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_direct/result.json",
+      "bytes": 415,
+      "sha256": "52fbd0eda860972ecdb3ca5bb0d19caf977ac2195698cab0715040ef05c3c8aa",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/mesh_direct/run.log",
+      "bytes": 21000,
+      "sha256": "11dd9cc5786eb86528a5105c1f545bc4abe25c8bc29dffdfdf63838290e19f02",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/run.log",
+      "bytes": 897,
+      "sha256": "d8af0647d8c2c52eb4ae9536eccd8ec9bcb93230479a4239bb3f9147b52dbbb8",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/sharp_surface.npz",
+      "bytes": 4231372,
+      "sha256": "e1b578ba742265469399b24fc06b1160a4089fe77b2cfecf33a4561216811435",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/sharp_surface.stl",
+      "bytes": 17890684,
+      "sha256": "bb61247b760bf4d665d83c5d7982da89113df4c2f1683543c22f78ed26f51aad",
+      "local_only": true
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/surface_cleanup/experiment.py",
+      "bytes": 3603,
+      "sha256": "3910a9f19aef368383c971863f4eb1953ea644293cc67cbfe1d8a03a5f04d605",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/surface_cleanup/log_excerpt.txt",
+      "bytes": 1058,
+      "sha256": "6eb95bf9c5a486930610fdb77ba1f45a597c1fa6beaf28a0d725902a07ae52c5",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/surface_cleanup/result.json",
+      "bytes": 1058,
+      "sha256": "6eb95bf9c5a486930610fdb77ba1f45a597c1fa6beaf28a0d725902a07ae52c5",
+      "local_only": false
+    },
+    {
+      "path": "validation/simulation_error_20261006_r7/step2/surface_cleanup/run.log",
+      "bytes": 1058,
+      "sha256": "6eb95bf9c5a486930610fdb77ba1f45a597c1fa6beaf28a0d725902a07ae52c5",
+      "local_only": true
+    }
+  ]
+}

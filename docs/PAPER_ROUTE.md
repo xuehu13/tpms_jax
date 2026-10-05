@@ -21,3 +21,5 @@
 [JAX-FEM显式示例](https://github.com/deepmodeling/jax-fem/tree/main/applications/explicit_dynamics)是弹性波基础，[JAX JVP/VJP](https://docs.jax.dev/en/latest/notebooks/autodiff_cookbook.html)与[checkpoint](https://docs.jax.dev/en/latest/gradient-checkpointing.html)是AD工具依据；本项目完整单向JVP已执行，20%未过，多变量反向成本未验证。
 
 用户[Style-Constrained扩散](https://doi.org/10.1002/nme.70376)与[Hybrid TPMS GAN](https://doi.org/10.1016/j.ijmecsci.2026.111353)是长期生成/逆设计动机，本次额外核查原作者预印本/出版商摘要，未重读全文、未复现网络，不将它们冒充当前薄壁前向证明。前次23PDF索引和六篇选页仍在work/large_compression_review_20261005；历史阅读记录不更新成当前任务。
+
+本轮第2步核查[Gmsh 4.15.2官方手册](https://gmsh.info/doc/texinfo/)的离散曲面重新参数化与setPeriodic接口，实际安装版本4.15.2；核对上述Abaqus实体库的C3D10/C3D10M使用建议。没有重读23篇论文。Gmsh网格尝试失败见执行报告，软件功能说明不认证生成网格质量。

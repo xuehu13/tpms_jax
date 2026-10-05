@@ -1,0 +1,26 @@
+Distance sample complete
+{
+  "status": "closed_periodic_surface_ready_not_volume_reference",
+  "sampling_intervals": 80,
+  "points": 178898,
+  "triangles": 357812,
+  "closed_edge_multiplicity": 2,
+  "periodic_cap_unmatched_nodes_by_axis": [
+    0,
+    0,
+    0
+  ],
+  "volume_mm3": 151.68803148809528,
+  "distance_band_boundary_centroid_error_mm_quantiles": [
+    -0.009297664977783414,
+    -0.0033101261386757784,
+    7.990543236559289e-06,
+    0.004096019642902045,
+    0.011503641562768709
+  ],
+  "thickness_target_mm": 0.5,
+  "input_sha256": "b1f1bf51585074f6bb01da4875a697c1b8ff3c8f350885a4cf529414b6759f49",
+  "source_sha256": "1f2a6bcb0349e0c7c52010f219c7bee8a7faf1b22a278ccd9e583c019631ba31",
+  "body_seconds": 2.1568410319741815,
+  "scope": "Clipped sharp distance band with sampled linear surface approximation. No material solve; quadratic volume mesh and quality gates outstanding."
+}

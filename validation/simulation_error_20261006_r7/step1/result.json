@@ -1,0 +1,1411 @@
+{
+  "status": "step1_diagnostics_complete",
+  "curves": {
+    "summary": {
+      "Q2_fast": {
+        "early_secant_fit_N_per_compression": 40.52139882778502,
+        "peak_N": 2.390680464085573,
+        "peak_compression": 0.10318311216977075,
+        "loading_work_N_mm": 3.7585997074101614,
+        "loading_endpoint_N": 2.0038249754886244,
+        "hold_mean_magnitude_N": null
+      },
+      "Q2_slow": {
+        "early_secant_fit_N_per_compression": 38.8756575099377,
+        "peak_N": 2.397300454739191,
+        "peak_compression": 0.10802775870296627,
+        "loading_work_N_mm": 3.758821743138082,
+        "loading_endpoint_N": 2.0047168439294,
+        "hold_mean_magnitude_N": null
+      },
+      "shell_slow": {
+        "early_secant_fit_N_per_compression": 37.18671608723018,
+        "peak_N": 2.243082284927368,
+        "peak_compression": 0.10554772615432739,
+        "loading_work_N_mm": 3.5171712260885912,
+        "loading_endpoint_N": 1.8314424753189087,
+        "hold_mean_magnitude_N": 1.8314455255218174
+      },
+      "shell_standard": {
+        "early_secant_fit_N_per_compression": 37.125222758657095,
+        "peak_N": 2.2589142322540283,
+        "peak_compression": 0.10700000524520874,
+        "loading_work_N_mm": 3.547335097397315,
+        "loading_endpoint_N": 1.8665707111358643,
+        "hold_mean_magnitude_N": null
+      }
+    },
+    "phase_comparison": {
+      "Q2_fast": {
+        "early": {
+          "RMS_over_Standard_peak": 0.024323151895013485,
+          "mean_excess_force_N": 0.04994439383315985
+        },
+        "peak_region": {
+          "RMS_over_Standard_peak": 0.0611237644173628,
+          "mean_excess_force_N": 0.13708253164101666
+        },
+        "post_peak": {
+          "RMS_over_Standard_peak": 0.0669643988135846,
+          "mean_excess_force_N": 0.15123922920494978
+        },
+        "whole_RMS_over_Standard_peak": 0.05708737033864
+      },
+      "Q2_slow": {
+        "early": {
+          "RMS_over_Standard_peak": 0.019174486891307338,
+          "mean_excess_force_N": 0.03776477781100552
+        },
+        "peak_region": {
+          "RMS_over_Standard_peak": 0.058329270579566724,
+          "mean_excess_force_N": 0.12941461467823018
+        },
+        "post_peak": {
+          "RMS_over_Standard_peak": 0.07336625552749657,
+          "mean_excess_force_N": 0.1657123383103744
+        },
+        "whole_RMS_over_Standard_peak": 0.05872224378728692
+      },
+      "shell_standard": {
+        "early": {
+          "RMS_over_Standard_peak": 0.0003595156404587,
+          "mean_excess_force_N": 0.0004940873760868458
+        },
+        "peak_region": {
+          "RMS_over_Standard_peak": 0.004986201888286006,
+          "mean_excess_force_N": 0.009829259413943716
+        },
+        "post_peak": {
+          "RMS_over_Standard_peak": 0.012931577129303455,
+          "mean_excess_force_N": 0.028879034552988746
+        },
+        "whole_RMS_over_Standard_peak": 0.008720212269665985
+      }
+    },
+    "scope": "Loading-only diagnostic. Early fit uses 0.2%-1%; dynamic effects may affect it. Hold means and endpoint forces are separate."
+  },
+  "fields": {
+    "T0p004_compact": {
+      "totals": {
+        "U": 3.758891998139012,
+        "U_dev": 2.914137008113318,
+        "U_vol": 0.8447549900256949,
+        "F": -2.006860210433094,
+        "floor_U": 0.12072236471551957,
+        "floor_F": -0.04038729720421032
+      },
+      "groups": {
+        "soft_phi_lt_0p01": {
+          "points": 722318,
+          "volume_mm3": 816.6088580431099,
+          "U_N_mm": 0.133773441916306,
+          "Fz_N": -0.043020342682574035,
+          "absolute_Pzz_integral_N": 0.050946190854903574,
+          "J_min": 0.03537778119925446,
+          "energy_fraction": 0.03558853033887002,
+          "signed_force_fraction": 0.02143664140577582
+        },
+        "interface_0p01_to_0p9": {
+          "points": 41556,
+          "volume_mm3": 46.851719357839784,
+          "U_N_mm": 0.7030228161122813,
+          "Fz_N": -0.22420717792766165,
+          "absolute_Pzz_integral_N": 0.5860254006667474,
+          "J_min": 0.46387503947667164,
+          "energy_fraction": 0.18702926725756966,
+          "signed_force_fraction": 0.11172037631822707
+        },
+        "solid_phi_ge_0p9": {
+          "points": 120862,
+          "volume_mm3": 136.53942259904926,
+          "U_N_mm": 2.9220957401104264,
+          "Fz_N": -1.7396326898228585,
+          "absolute_Pzz_integral_N": 3.342932124616538,
+          "J_min": 0.8451659496336795,
+          "energy_fraction": 0.7773822024035607,
+          "signed_force_fraction": 0.8668429822759971
+        }
+      },
+      "relative_energy_record_error": 2.220446049250313e-15,
+      "relative_internal_force_record_error": 4.3150686565297757e-14,
+      "shared_kernel_absolute_stress_error_MPa": 2.2737367544323206e-13,
+      "shared_kernel_absolute_energy_error_MPa": 4.263256414560601e-14,
+      "weight_max_error": 1.691948312140465e-19,
+      "saved_time": 0.004400000000002831,
+      "J_min": 0.03537778119925446,
+      "floor_force_fraction": 0.0201246190413504,
+      "floor_energy_fraction": 0.032116476018807655,
+      "scope": "Exact saved-state decomposition. Signed force contributions can cancel. Neither fractions nor floor removal estimate reequilibrated error."
+    },
+    "T0p008_compact": {
+      "totals": {
+        "U": 3.7588932267317046,
+        "U_dev": 2.9142090052194596,
+        "U_vol": 0.8446842215122442,
+        "F": -2.00467523838205,
+        "floor_U": 0.12073260614891737,
+        "floor_F": -0.04039176526569576
+      },
+      "groups": {
+        "soft_phi_lt_0p01": {
+          "points": 722318,
+          "volume_mm3": 816.6088580431099,
+          "U_N_mm": 0.13377521355931485,
+          "Fz_N": -0.04302200027160804,
+          "absolute_Pzz_integral_N": 0.05094333848435445,
+          "J_min": 0.03538056051523443,
+          "energy_fraction": 0.03558899002716025,
+          "signed_force_fraction": 0.021460832881006
+        },
+        "interface_0p01_to_0p9": {
+          "points": 41556,
+          "volume_mm3": 46.851719357839784,
+          "U_N_mm": 0.7031240972563885,
+          "Fz_N": -0.22399107107024147,
+          "absolute_Pzz_integral_N": 0.585966551293273,
+          "J_min": 0.5839455186132408,
+          "energy_fraction": 0.18705615053283736,
+          "signed_force_fraction": 0.1117343431901828
+        },
+        "solid_phi_ge_0p9": {
+          "points": 120862,
+          "volume_mm3": 136.53942259904926,
+          "U_N_mm": 2.9219939159160013,
+          "Fz_N": -1.7376621670402002,
+          "absolute_Pzz_integral_N": 3.342492903677692,
+          "J_min": 0.8451252499617236,
+          "energy_fraction": 0.7773548594400024,
+          "signed_force_fraction": 0.8668048239288111
+        }
+      },
+      "relative_energy_record_error": 2.4424906541753444e-15,
+      "relative_internal_force_record_error": 4.275466462599731e-14,
+      "shared_kernel_absolute_stress_error_MPa": 1.1368683772161603e-13,
+      "shared_kernel_absolute_energy_error_MPa": 9.947598300641403e-14,
+      "weight_max_error": 1.691948312140465e-19,
+      "saved_time": 0.008800000000000458,
+      "J_min": 0.03538056051523443,
+      "floor_force_fraction": 0.02014878245231157,
+      "floor_energy_fraction": 0.03211919010902376,
+      "scope": "Exact saved-state decomposition. Signed force contributions can cancel. Neither fractions nor floor removal estimate reequilibrated error."
+    }
+  },
+  "thickness": {
+    "same_Gauss_geometry_moments": {
+      "smooth": {
+        "M0_mm3": 151.63381488928417,
+        "M2_distance_mm5": 3.219137118169441
+      },
+      "sharp_on_same_Gauss": {
+        "M0_mm3": 151.53861340181314,
+        "M2_distance_mm5": 3.148397976728188
+      },
+      "scope": "Global unsigned-distance second moment includes curvature and varying surface area; it is not an exact bending stiffness."
+    },
+    "normal_profiles": {
+      "distance_sharp": {
+        "membrane_ratio_vs_t": [
+          0.9995,
+          0.9995,
+          1.0,
+          1.0005000000000002,
+          1.0005000000000002
+        ],
+        "bending_ratio_vs_t3_over_12": [
+          0.9985005,
+          0.9985005,
+          0.9999997500000003,
+          1.0015005000000003,
+          1.0015005000000003
+        ],
+        "M0_mean_mm": 0.4999843750000001,
+        "M2_mean_mm3": 0.010415691569010418
+      },
+      "distance_smooth": {
+        "membrane_ratio_vs_t": [
+          0.9999999989557415,
+          0.9999999989557418,
+          0.9999999989557418,
+          0.999999998955742,
+          0.9999999989557439
+        ],
+        "bending_ratio_vs_t3_over_12": [
+          1.0204432819920999,
+          1.0204432819921,
+          1.0204432819921005,
+          1.020443281992101,
+          1.0204432819921065
+        ],
+        "M0_mean_mm": 0.499999999477871,
+        "M2_mean_mm3": 0.010629617520751047
+      }
+    },
+    "normal_profile_samples": [
+      {
+        "facet_index": 87,
+        "center": [
+          0.9142269719954209,
+          0.10939224884255039,
+          0.9298720915363402
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 267,
+        "center": [
+          0.7540875587061033,
+          0.6408571297794505,
+          0.5990447300512177
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 452,
+        "center": [
+          0.2614251410546851,
+          0.8926696774774007,
+          0.3901449212849742
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 645,
+        "center": [
+          0.06428173883016851,
+          0.5936404430149385,
+          0.19486284897215234
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787077,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 829,
+        "center": [
+          0.9946058078037665,
+          0.4344262295081967,
+          0.15262548103332887
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 1014,
+        "center": [
+          0.9302174169219951,
+          0.4337966443794865,
+          0.8980059074958358
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 1195,
+        "center": [
+          0.6204113866044362,
+          0.1584122335529967,
+          0.5268316328369516
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 1380,
+        "center": [
+          0.3329836146790919,
+          0.43192880268584394,
+          0.7131019951066073
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 1564,
+        "center": [
+          0.7341653184426441,
+          0.898010372178914,
+          0.8507125870963681
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 1748,
+        "center": [
+          0.95275547387284,
+          0.013211476040972739,
+          0.8608766531392763
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 1933,
+        "center": [
+          0.9717547880492954,
+          0.7166967133117366,
+          0.1141771510236091
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 2120,
+        "center": [
+          0.24621389691033327,
+          0.7204300773489306,
+          0.07005584936961047
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 2304,
+        "center": [
+          0.3893629218496133,
+          0.4211484651501755,
+          0.4464755308835626
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 2485,
+        "center": [
+          0.3785646867147814,
+          0.27840087183869416,
+          0.8100391373862843
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 2668,
+        "center": [
+          0.8258263823254864,
+          0.446842045537483,
+          0.07606451940423614
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 2848,
+        "center": [
+          0.8436935791677992,
+          0.18852459016393439,
+          0.00497761341262858
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 3038,
+        "center": [
+          0.6184123076075477,
+          0.838133799503426,
+          0.4721412833429999
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 3227,
+        "center": [
+          0.13079111625697934,
+          0.9940815259327053,
+          0.09310299812313412
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778711,
+        "distance_smooth_M2_mm3": 0.010629617520751054
+      },
+      {
+        "facet_index": 3411,
+        "center": [
+          0.5943847949241423,
+          0.7245924371166192,
+          0.7776626278247175
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 3592,
+        "center": [
+          0.6570723302062286,
+          0.3789837186416935,
+          0.20398770707979288
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778712,
+        "distance_smooth_M2_mm3": 0.010629617520751065
+      },
+      {
+        "facet_index": 3775,
+        "center": [
+          0.004981111677180531,
+          0.8278688524590154,
+          0.1559041715129422
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778712,
+        "distance_smooth_M2_mm3": 0.010629617520751068
+      },
+      {
+        "facet_index": 3962,
+        "center": [
+          0.009614033517271518,
+          0.180327868852459,
+          0.13809511361045929
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787194,
+        "distance_smooth_M2_mm3": 0.01062961752075111
+      },
+      {
+        "facet_index": 4147,
+        "center": [
+          0.37329674426008747,
+          0.5916828033411106,
+          0.2647743227661187
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 4329,
+        "center": [
+          0.42115600389693103,
+          0.6852424703130398,
+          0.24979038852357927
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 4513,
+        "center": [
+          0.28901725579781906,
+          0.8887672738776137,
+          0.16206654064273926
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 4693,
+        "center": [
+          0.07478841687879334,
+          0.5044194107255255,
+          0.13860061256500575
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 4870,
+        "center": [
+          0.464704024825726,
+          0.715536278826206,
+          0.30201099653557567
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 5052,
+        "center": [
+          0.4402424078888804,
+          0.7348052134987064,
+          0.2669578677677566
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 5239,
+        "center": [
+          0.8914551909168428,
+          0.4601904025575667,
+          0.16215668322545945
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 5423,
+        "center": [
+          0.4304722671509626,
+          0.10085710003470498,
+          0.41096251348503526
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.01062961752075105
+      },
+      {
+        "facet_index": 5603,
+        "center": [
+          0.052477898034482016,
+          0.20180658946896526,
+          0.08734115547528702
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 5785,
+        "center": [
+          0.5479966955385436,
+          0.39654480887863497,
+          0.3122062426238156
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 5966,
+        "center": [
+          0.15846259587427433,
+          0.82091678068325,
+          0.0071744856858329984
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751053
+      },
+      {
+        "facet_index": 6145,
+        "center": [
+          0.15891799106227553,
+          0.42974756533979036,
+          0.7836957494334258
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 6324,
+        "center": [
+          0.3530186813908614,
+          0.17559704083395047,
+          0.8242429855740818
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 6507,
+        "center": [
+          0.06655354642686945,
+          0.2685421169213395,
+          0.7579468620373944
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 6691,
+        "center": [
+          0.7437538349106442,
+          0.5738984284832934,
+          0.7758918784015051
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 6879,
+        "center": [
+          0.14614263087149446,
+          0.5819672131147536,
+          0.9945882450800919
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 7061,
+        "center": [
+          0.6033740634772072,
+          0.8635555541005706,
+          0.4543281486903446
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 7248,
+        "center": [
+          0.44539978710950595,
+          0.8604073817790437,
+          0.29300955765159903
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.01062961752075105
+      },
+      {
+        "facet_index": 7435,
+        "center": [
+          0.9626255507321563,
+          0.5524018301191793,
+          0.8362152509810724
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 7617,
+        "center": [
+          0.9080290032994857,
+          0.22795780785198813,
+          0.9528423847058143
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.01062961752075105
+      },
+      {
+        "facet_index": 7802,
+        "center": [
+          0.9335719623190334,
+          0.8301946767933464,
+          0.7697051395777468
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 7994,
+        "center": [
+          0.38415175891784986,
+          0.495824515420417,
+          0.6103000619424663
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 8178,
+        "center": [
+          0.5785831765015534,
+          0.811121189885661,
+          0.7510728331789845
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751049
+      },
+      {
+        "facet_index": 8361,
+        "center": [
+          0.7699838015921318,
+          0.9127354902666026,
+          0.6840050311897822
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 8544,
+        "center": [
+          0.6838699087556317,
+          0.7637517363075222,
+          0.5244688278076789
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 8730,
+        "center": [
+          0.6416803510405567,
+          0.9937597989962449,
+          0.45204125270082257
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778711,
+        "distance_smooth_M2_mm3": 0.010629617520751056
+      },
+      {
+        "facet_index": 8913,
+        "center": [
+          0.41881982661188716,
+          0.3092188160667525,
+          0.4404285141367656
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 9095,
+        "center": [
+          0.08419585720608007,
+          0.2420662633766526,
+          0.7333466588473735
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 9287,
+        "center": [
+          0.8951664523068205,
+          0.4360719770670875,
+          0.1905120750986745
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 9469,
+        "center": [
+          0.9698887057467352,
+          0.7578422515390972,
+          0.11137865877984587
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751049
+      },
+      {
+        "facet_index": 9657,
+        "center": [
+          0.15528452619617347,
+          0.44002769826322435,
+          0.8104943268575312
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787077,
+        "distance_smooth_M2_mm3": 0.010629617520751039
+      },
+      {
+        "facet_index": 9843,
+        "center": [
+          0.44229176755526817,
+          0.2615079504642471,
+          0.7306626659150256
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 10028,
+        "center": [
+          0.6065198506626065,
+          0.8519276556425064,
+          0.4593080178541249
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 10216,
+        "center": [
+          0.6870872975389886,
+          0.9065624957473654,
+          0.5528103977197484
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 10400,
+        "center": [
+          0.9753180315106901,
+          0.7521307825545174,
+          0.8162222990294662
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 10576,
+        "center": [
+          0.19677664443656825,
+          0.3655361953781185,
+          0.9536956844708196
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 10759,
+        "center": [
+          0.12796765995683426,
+          0.773224043715846,
+          0.9830345339578791
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778712,
+        "distance_smooth_M2_mm3": 0.010629617520751065
+      },
+      {
+        "facet_index": 10936,
+        "center": [
+          0.6489503743859739,
+          0.0743328956068436,
+          0.27847832986444016
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 11114,
+        "center": [
+          0.9218868588472712,
+          0.9467835657540912,
+          0.8256297140432296
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 11291,
+        "center": [
+          0.7593268593232062,
+          0.6149584864714308,
+          0.6253776560808825
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 11472,
+        "center": [
+          0.3482596470415929,
+          0.7155917475630816,
+          0.4985479884472885
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778708,
+        "distance_smooth_M2_mm3": 0.010629617520751039
+      },
+      {
+        "facet_index": 11655,
+        "center": [
+          0.8913190205933383,
+          0.5674054938876315,
+          0.8044348061906824
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778708,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 11835,
+        "center": [
+          0.9893212617632018,
+          0.11475409836065571,
+          0.15933892854771878
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778711,
+        "distance_smooth_M2_mm3": 0.010629617520751054
+      },
+      {
+        "facet_index": 12014,
+        "center": [
+          0.6698658389859999,
+          0.5592247019912363,
+          0.6828785071955652
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 12199,
+        "center": [
+          0.12349254882411305,
+          0.8841146912529337,
+          0.2591185403920892
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751049
+      },
+      {
+        "facet_index": 12385,
+        "center": [
+          0.1312530319189642,
+          0.025758018040322617,
+          0.873288232676893
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 12568,
+        "center": [
+          0.8015681423452957,
+          0.6358430339238542,
+          0.6494767923212975
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 12753,
+        "center": [
+          0.2976155284687743,
+          0.9312241440701081,
+          0.28132089556952045
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 12939,
+        "center": [
+          0.6718761414521016,
+          0.10337394877501506,
+          0.2120353900781168
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 13126,
+        "center": [
+          0.7327352445998715,
+          0.9176749396729939,
+          0.8047063662850208
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 13314,
+        "center": [
+          0.018292868482560523,
+          0.6901060185481679,
+          0.8724383088816466
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787127,
+        "distance_smooth_M2_mm3": 0.010629617520751068
+      },
+      {
+        "facet_index": 13504,
+        "center": [
+          0.9294511159976274,
+          0.5758277986885519,
+          0.8122707955098448
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 13691,
+        "center": [
+          0.4631266774242584,
+          0.20577435386881837,
+          0.3952936272083345
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 13878,
+        "center": [
+          0.27873235191105916,
+          0.18404850505888085,
+          0.8974114486090756
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 14059,
+        "center": [
+          0.9776434781865396,
+          0.8215566109264808,
+          0.8225771371840178
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751049
+      },
+      {
+        "facet_index": 14241,
+        "center": [
+          0.7834603437947015,
+          0.6081150847462918,
+          0.9184684742515508
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 14428,
+        "center": [
+          0.7119374002964677,
+          0.5673656598982881,
+          0.6796627286535258
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 14619,
+        "center": [
+          0.0680634190419913,
+          0.2233525481218767,
+          0.7564393742936661
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 14810,
+        "center": [
+          0.3683547091505465,
+          0.4748827681781784,
+          0.44691198468153853
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      },
+      {
+        "facet_index": 15004,
+        "center": [
+          0.7306402447138938,
+          0.3777173534025459,
+          0.41285955784230177
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 15194,
+        "center": [
+          0.9382114430834761,
+          0.9218422768166591,
+          0.8152347082394615
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 15383,
+        "center": [
+          0.3188270856352916,
+          0.9045327590867389,
+          0.4570642320554328
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 15576,
+        "center": [
+          0.37665654469743687,
+          0.8714612355362478,
+          0.23032824900798587
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 15770,
+        "center": [
+          0.06806341874669135,
+          0.7766474518946765,
+          0.24356062591271951
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 15970,
+        "center": [
+          0.6044531533485485,
+          0.6989407194386953,
+          0.7852707366454229
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 16168,
+        "center": [
+          0.5798890871825148,
+          0.15760160284930422,
+          0.258291510297224
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 16376,
+        "center": [
+          0.5184467470490558,
+          0.4084561391727466,
+          0.3367908243206145
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778708,
+        "distance_smooth_M2_mm3": 0.01062961752075104
+      },
+      {
+        "facet_index": 16581,
+        "center": [
+          0.4445138886428219,
+          0.24369468593084267,
+          0.41728939815366556
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 16785,
+        "center": [
+          0.39489970313362127,
+          0.34824645824415484,
+          0.7666256474777664
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 16994,
+        "center": [
+          0.23584383544348184,
+          0.07881821615208778,
+          0.8386251458111992
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.499999999477871,
+        "distance_smooth_M2_mm3": 0.010629617520751047
+      },
+      {
+        "facet_index": 17210,
+        "center": [
+          0.5810707578536012,
+          0.2745319591409107,
+          0.23852847652737155
+        ],
+        "distance_sharp_M0_mm": 0.5002500000000001,
+        "distance_sharp_M2_mm3": 0.010432296875000004,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 17428,
+        "center": [
+          0.3113724797110428,
+          0.3968996227964166,
+          0.803976640216626
+        ],
+        "distance_sharp_M0_mm": 0.49975,
+        "distance_sharp_M2_mm3": 0.010401046875,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751044
+      },
+      {
+        "facet_index": 17646,
+        "center": [
+          0.19134478993536574,
+          0.8685179399168662,
+          0.33967743850138826
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.49999999947787094,
+        "distance_smooth_M2_mm3": 0.010629617520751046
+      },
+      {
+        "facet_index": 17869,
+        "center": [
+          0.4237181082528079,
+          0.7512923183235695,
+          0.5614991286200707
+        ],
+        "distance_sharp_M0_mm": 0.5,
+        "distance_sharp_M2_mm3": 0.010416664062500003,
+        "distance_smooth_M0_mm": 0.4999999994778709,
+        "distance_smooth_M2_mm3": 0.010629617520751042
+      }
+    ],
+    "flat_wall": {
+      "ell_mm": 0.011377990332835467,
+      "M0_mm": 0.4999999994778709,
+      "M2_mm3": 0.010629617520751044,
+      "analytic_M2_mm3": 0.010629617633352113,
+      "membrane_ratio": 0.9999999989557418,
+      "bending_ratio": 1.0204432819921003
+    },
+    "scope": "Initial one-dimensional normal profiles; not nonlinear force predictions. Central second moments remove profile centroid shift; no curved-coordinate Jacobian used."
+  },
+  "body_seconds": 18.183308693987783,
+  "protected_inputs_unchanged": true,
+  "new_mechanical_jobs": 0,
+  "training_jobs": 0
+}
