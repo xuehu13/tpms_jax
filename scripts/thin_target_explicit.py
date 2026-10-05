@@ -20,11 +20,14 @@ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def write(p,v):p.write_text(json.dumps(v,indent=2,allow_nan=False)+'\n')
 
 class ExplicitXYZ:
-    def __init__(self,p,L=10.,density=1e-9):
+    def __init__(self,p,L=10.,density=1e-9,force_batch_cells=2048):
+        if not isinstance(force_batch_cells,int) or force_batch_cells<1:
+            raise ValueError('Expected positive integer FEM batch size')
+        self.force_batch_cells=force_batch_cells
         self.p=p;self.L=L;self.points=jnp.asarray(p.fe.points)
         self.mass_density_factor=density*L**2
         self.ids=jnp.asarray(p.class_ids,dtype=jnp.int32);self.pin=p.fixed_class_id
-        self.nc=int(np.max(p.class_ids))+1;self.scale=p.stiffness_scale
+        self.nc=int(np.max(p.class_ids))+1;self.scale=jax.device_put(p.stiffness_scale,jax.devices()[0])
         # m_norm = rho*L^2 integral N_i*(eta+(1-eta)*phi) dV_norm.
         shapes=np.asarray(p.fe.shape_vals);weights=np.asarray(p.fe.JxW)
         rowmass=np.einsum('qn,cq,cq->cn',shapes,weights,np.asarray(self.scale))
@@ -60,7 +63,7 @@ class ExplicitXYZ:
             if gerror>5e-12 or werror>5e-12:
                 raise ValueError('Compact Q2 geometry requires identical Cartesian reference maps')
             self.common_geometry_relative_errors={'gradient':gerror,'weight':werror}
-            self.kernel_geometry=(jnp.asarray(p.physical_quad_points),jnp.asarray(grad0),
+            self.kernel_geometry=(jax.device_put(p.physical_quad_points,jax.devices()[0]),jnp.asarray(grad0),
                                   jnp.asarray(weight0),jnp.asarray(p.v_grads_JxW[0]),self.scale)
             del p.shape_grads,p.v_grads_JxW,p.fe.shape_grads,p.fe.v_grads_JxW
             compiled_force=jax.jit(self._force)
@@ -83,7 +86,7 @@ class ExplicitXYZ:
             coords,grads,weights,vgrads,scale=geometry
             cells=q[self.ids][self.p.fe.cells].reshape((self.p.fe.num_cells,-1))
             inputs=[cells,coords,jnp.broadcast_to(H,(*scale.shape,3,3)),scale]
-            batch=math.gcd(self.p.fe.num_cells,2048)
+            batch=math.gcd(self.p.fe.num_cells,self.force_batch_cells)
             packed=[x.reshape((-1,batch,*x.shape[1:])) for x in inputs]
             def kernel(x):
                 return self.p.kernel(x[0],x[1],jnp.broadcast_to(grads,(batch,*grads.shape)),
@@ -101,7 +104,7 @@ class ExplicitXYZ:
         """
         if self.kernel_geometry is None:
             raise ValueError('Design-dependent mass currently requires HEX27')
-        weights=jnp.asarray(self.p.fe.JxW)
+        weights=jax.device_put(self.p.fe.JxW,self.points.device)
         shapes=jnp.asarray(self.p.fe.shape_vals)
         diag=jnp.einsum('qn,cq,cq->cn',shapes**2,weights,scale)
         total=jnp.sum(weights*scale,axis=1)
@@ -185,8 +188,14 @@ class ExplicitXYZ:
 
 def run(a):
     a.output.mkdir(parents=True,exist_ok=False);started=time.perf_counter()
+    def build_problem(*args,**kwargs):
+        if not a.geometry_on_cpu:return make_density_hyperelastic_problem(*args,**kwargs)
+        # Installed JAX-FEM reference maps use a large broadcast temporary.
+        # Construct on CPU, then reuse exactly the same compact GPU kernel.
+        with jax.default_device(jax.devices('cpu')[0]):
+            return make_density_hyperelastic_problem(*args,**kwargs)
     if a.action=='wave':
-        N=8;p=make_density_hyperelastic_problem(N,rho_quad=1.,eta=1e-4,periodic_axes=(0,1,2),element_degree=a.element_degree)
+        N=8;p=build_problem(N,rho_quad=1.,eta=1e-4,periodic_axes=(0,1,2),element_degree=a.element_degree,quadrature_order=a.quadrature_order)
         cfg={'N':N,'role':'small known periodic P-wave integration check; not TPMS accuracy evidence'}
     else:
         source=json.loads((a.case/'step2/diagnostic_xyz/input.json').read_text())
@@ -196,35 +205,64 @@ def run(a):
                    mechanical_periodic_axes=[0,1,2],target_compression=.2,
                    bc='XYZ periodic fluctuation; macro Hzz from zero to -0.2, lateral strain zero')
         N=a.cells or cfg['N']
-        field_path=a.gauss_field or a.case/'gauss_field.npz'
-        with np.load(field_path) as f:
-            rho=f['rho'];qp=f['physical_quad_points'];qw=f['JxW']
+        if a.surface_geometry is not None:
+            # Reevaluate exactly the same geometric material definition at this
+            # Problem's own Gauss points; a changed rule cannot reuse old phi.
+            from scipy.special import expit
+            from surface_distance import PeriodicSurfaceDistance
+            with np.load(a.surface_geometry) as f:
+                surface=PeriodicSurfaceDistance(f['surface_vertices'],f['surface_triangles'])
             if a.thickness_mm is not None:
-                # Only the declared physical thickness changes; keep distance,
-                # interface width, material and eta. Used for path derivatives.
-                from scipy.special import expit
-                ell_normal=.005/(2*np.log(9))  # 0.05 mm / L=10 mm
-                rho=expit((a.thickness_mm/20-f['distance'])/ell_normal)
                 cfg['base_cached_thickness_mm']=cfg['thickness_mm']
                 cfg['thickness_mm']=a.thickness_mm
                 cfg['physical_thickness_override_mm']=a.thickness_mm
-                cfg['occupancy_override']='same actual Gauss distance, same 0.05 mm interface; thickness perturbation only'
-        cfg['evaluated_occupancy_sha256']=hashlib.sha256(np.ascontiguousarray(rho).tobytes()).hexdigest()
-        def field(p):
-            assert np.array_equal(np.asarray(p.physical_quad_points),qp)
-            actual_weights=np.asarray(p.fe.JxW)
-            weight_error=float(np.max(np.abs(actual_weights/qw-1)))
-            if a.element_degree==1:assert np.array_equal(actual_weights,qw)
-            else:assert weight_error<5e-12, 'Quadrature weights differ beyond roundoff'
-            cfg['Gauss_weight_relative_max_difference']=weight_error
-            return rho
-        p=make_density_hyperelastic_problem(N,rho_quad=field,eta=cfg['eta'],periodic_axes=(0,1,2),element_degree=a.element_degree)
+            def field(p):
+                distance=surface.query(np.asarray(p.physical_quad_points))
+                ell=cfg['interface_10_90_mm']/cfg['cell_size_mm']/(2*np.log(9))
+                rho=expit((cfg['thickness_mm']/cfg['cell_size_mm']/2-distance)/ell)
+                np.savez_compressed(a.output/'gauss_field.npz',
+                    physical_quad_points=np.asarray(p.physical_quad_points),
+                    JxW=np.asarray(p.fe.JxW),distance=distance,rho=rho)
+                cfg['evaluated_occupancy_sha256']=hashlib.sha256(np.ascontiguousarray(rho).tobytes()).hexdigest()
+                print('Actual-point geometric occupancy evaluated',flush=True)
+                return rho
+            cfg.update(surface_geometry_path=str(a.surface_geometry),
+                       surface_geometry_sha256=sha(a.surface_geometry))
+        else:
+            field_path=a.gauss_field or a.case/'gauss_field.npz'
+            with np.load(field_path) as f:
+                rho=f['rho'];qp=f['physical_quad_points'];qw=f['JxW']
+                if a.thickness_mm is not None:
+                    # Only the declared physical thickness changes; keep distance,
+                    # interface width, material and eta. Used for path derivatives.
+                    from scipy.special import expit
+                    ell_normal=.005/(2*np.log(9))  # 0.05 mm / L=10 mm
+                    rho=expit((a.thickness_mm/20-f['distance'])/ell_normal)
+                    cfg['base_cached_thickness_mm']=cfg['thickness_mm']
+                    cfg['thickness_mm']=a.thickness_mm
+                    cfg['physical_thickness_override_mm']=a.thickness_mm
+                    cfg['occupancy_override']='same actual Gauss distance, same 0.05 mm interface; thickness perturbation only'
+            cfg['evaluated_occupancy_sha256']=hashlib.sha256(np.ascontiguousarray(rho).tobytes()).hexdigest()
+            def field(p):
+                assert np.array_equal(np.asarray(p.physical_quad_points),qp)
+                actual_weights=np.asarray(p.fe.JxW)
+                weight_error=float(np.max(np.abs(actual_weights/qw-1)))
+                if a.element_degree==1:assert np.array_equal(actual_weights,qw)
+                else:assert weight_error<5e-12, 'Quadrature weights differ beyond roundoff'
+                cfg['Gauss_weight_relative_max_difference']=weight_error
+                return rho
+        p=build_problem(N,rho_quad=field,eta=cfg['eta'],periodic_axes=(0,1,2),element_degree=a.element_degree,quadrature_order=a.quadrature_order)
+        if a.surface_geometry is not None:
+            field_path=a.output/'gauss_field.npz'
+            del surface
+        else:del rho,qp,qw
         cfg.update(N=N,Gauss_field_path=str(field_path),Gauss_field_sha256=sha(field_path))
-        del rho,qp,qw
-    ex=ExplicitXYZ(p);dt=ex.dt_estimate*(.25 if a.action=='wave' else 1.)
+    ex=ExplicitXYZ(p,force_batch_cells=a.force_batch_cells);dt=ex.dt_estimate*(.25 if a.action=='wave' else 1.)
     cfg.update(method='physical central difference; existing JAX-FEM NH residual',dt_seconds=dt,
         element_type=p.fe.ele_type,element_degree=a.element_degree,nodes=len(p.fe.points),
         elements=p.fe.num_cells,Gauss_points_per_cell=p.fe.num_quads,
+        quadrature_order=p.fe.quadrature_order,force_batch_cells=ex.force_batch_cells,
+        reference_geometry_on_cpu=a.geometry_on_cpu,
         mass_lumping=ex.mass_lumping,negative_unmodified_row_mass_entries=ex.negative_row_mass_entries,
         cell_mass_conservation_error=ex.mass_conservation_error,
         common_reference_geometry_errors=getattr(ex,'common_geometry_relative_errors',None),
@@ -326,13 +364,23 @@ if __name__=='__main__':
     p.add_argument('--adaptive',action='store_true',help='Reject invalid blocks and halve dt, keeping the previous valid state; no detF clipping')
     p.add_argument('--element-degree',type=int,choices=(1,2),default=1)
     p.add_argument('--cells',type=int,help='Cells per axis; periodic node levels also include midside nodes in Q2')
-    p.add_argument('--gauss-field',type=Path,help='Actual Gauss cache for the selected element/quadrature')
+    p.add_argument('--geometry-on-cpu',action='store_true',help='Avoid large GPU reference-map temporaries; same installed FEM, compact geometry transferred to default device')
+    p.add_argument('--force-batch-cells',type=int,default=2048,help='Memory/compilation batching only; same cell kernel and residual scatter')
+    p.add_argument('--quadrature-order',type=int,help='Basix quadrature degree; defaults remain unchanged (HEX27: 4, 27 points)')
+    field_source=p.add_mutually_exclusive_group()
+    field_source.add_argument('--gauss-field',type=Path,help='Actual Gauss cache for the selected element/quadrature')
+    field_source.add_argument('--surface-geometry',type=Path,help='NPZ midsurface vertices/triangles; evaluate occupancy at this Problem actual Gauss points')
     p.add_argument('--thickness-mm',type=float,help='Physical thickness perturbation at cached distances; interface/material unchanged')
     a=p.parse_args()
     if a.load_time<=0:p.error('--load-time must be positive')
+    if a.force_batch_cells<1:p.error('--force-batch-cells must be positive')
     if a.cells is not None and a.cells<=0:p.error('--cells must be positive')
     if a.thickness_mm is not None and (a.thickness_mm<=0 or a.action=='wave'):
         p.error('--thickness-mm must be positive and is only for a target/probe')
-    if a.element_degree==2 and a.action!='wave' and (a.cells is None or a.gauss_field is None):
-        p.error('HEX27 target/probe requires --cells and its actual --gauss-field cache')
+    if a.quadrature_order is not None and a.quadrature_order<1:
+        p.error('--quadrature-order must be positive')
+    if a.action=='wave' and a.surface_geometry is not None:
+        p.error('--surface-geometry is only for a target/probe')
+    if a.element_degree==2 and a.action!='wave' and (a.cells is None or (a.gauss_field is None and a.surface_geometry is None)):
+        p.error('HEX27 target/probe requires --cells and --gauss-field or --surface-geometry')
     run(a)

@@ -1,6 +1,6 @@
 # 文件地图：活动入口、正式程序与冻结证据
 
-更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本轮新增误差诊断与参照几何/网格尝试；共享求解源码和原科学文件不改。
+更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本轮执行JAX积分单因素改进；只维护一个显式入口，共享材料/FEM核和原科学文件冻结。
 
 ## 现在读哪些文件
 
@@ -8,10 +8,11 @@
 | --- | --- |
 | START_HERE.md | 阅读入口；README.md |
 | RESEARCH_BACKGROUND.md | 长期目标/边界；docs同名 |
-| RESEARCH_PLAN.md | 唯一活动四步：1完成、2体网格未过、3/4未执行；docs同名 |
-| RESEARCH_STATUS.md | 事实状态；docs/RESEARCH_STATUS.md |
+| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；积分因素试完、候选未采纳、下一项虚域核验证；docs同名 |
+| PROJECT_OVERVIEW.md | 事实状态；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 方法、符号、误差因素、客观可行性；docs同名 |
-| SIMULATION_ERROR_PROGRESS.md | 本轮误差定位/三维参照准备，说明未完成项；docs同名 |
+| SIMULATION_ERROR_PROGRESS.md | 冻结的定位/参照网格尝试；其后续建议已被主规划调整；docs同名 |
+| JAX_INTEGRATION_PROGRESS.md | 本轮27/125点探针、64点新路径及资源处理；docs同名 |
 | PAPER_ROUTE.md | 来源与阅读范围；docs同名 |
 | FORWARD20_PROGRESS_REPORT.md | 冻结前向执行证据；docs同名，不当最新计划 |
 | GRADIENT20_PROGRESS_REPORT.md | 冻结正负路径/AD失败证据；docs同名，下一项只看主规划 |
@@ -31,6 +32,22 @@
 | scripts/thin_target_finite.py、thin_thickness_gradient.py | 原静力与厚度伴随入口，旧候选不冒充20%有效梯度 |
 | scripts/extract_thin_explicit.py、extract_thin_finite.py | Abaqus只读提取 |
 | scripts/README.md、pixi.toml、pixi.lock、tests/ | 入口说明、锁定环境及维护检验 |
+
+## 本轮JAX单因素改进
+
+根：`/home/xuehu/projects/tpms_jax/validation/jax_improvement_20261006_r8`。
+
+| 位置 | 内容 |
+| --- | --- |
+| integration_probe/ | 原快/慢保存场27和125点采样；源/输入哈希、结果；负J点不计总材料响应 |
+| source_before/、source_change.json | 原显式入口字节和有意源码变化 |
+| uniform_q6/ | 已知周期波64点动态检查，通过 |
+| device_transfer_probe/ | 实际点几何/CPU到GPU小模型接口检查，不算独立物理案例 |
+| T0p004_q6/ | GPU参考几何显存不足，未开始时间推进；resource_failure.json |
+| T0p004_q6_cpu_geometry/ | 64点代表薄壁完整20%及保载；未采纳，实际场/输入/源码/结果 |
+| candidate_probe/ | 新20%保存场64/125点复查，125点仍有44软域负J |
+
+Windows辅助执行/日志：`work/jax_improvement_20261006`，不是第二套FEM。旧r6/r7科学证据均保留原路径/字节。
 
 ## 当前主要结果
 
@@ -95,3 +112,5 @@ Windows工具及日志在`work/simulation_error_20261006`，是本轮调度/诊�
 | history/scientific_reports_20261005/、其他before_* | 旧阶段和原说明；内部链接按原根目录上下文解释 |
 
 本次归档均核对原字节哈希，路径收据`work/simulation_review_20261006/organization_receipt.json`。旧阅读副本/传输包可恢复，但不恢复成活动程序。科学原件、失败日志、用户论文和ODB不删除，归档报告不自动更新。本次没有新增重复PDF、框架或新求解器。
+
+最新路线讨论工具与收据在work/jax_route_revision_20261006，零科学计算；原r7失败体网格仍在原位但不再是近期前置任务。正式活跃步骤只看RESEARCH_PLAN.md，科学文件位置不变。

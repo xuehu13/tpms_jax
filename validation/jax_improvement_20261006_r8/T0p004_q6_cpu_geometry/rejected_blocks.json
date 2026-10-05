@@ -1,0 +1,36 @@
+[
+  {
+    "time": 0.0021373814041744333,
+    "attempted_end_time": 0.0021718552977901496,
+    "dt": 2.693272938728041e-07,
+    "reason": "Nonfinite displacement or nonpositive reference Gauss detF",
+    "last_valid": {
+      "time": 0.0021373814041744333,
+      "compression": 0.11283905010584126,
+      "Fz_N": -2.4521727297270606,
+      "internal_macro_Fz_N": -2.45404453607963,
+      "energy_N_mm": 1.8558081765314922,
+      "KE_N_mm": 0.01647404522959174,
+      "KE_over_U": 0.00887701942362478,
+      "J_min": 0.12703286432862873,
+      "dt_seconds": 2.693272938728041e-07
+    }
+  },
+  {
+    "time": 0.003223309053071245,
+    "attempted_end_time": 0.003240545999879131,
+    "dt": 1.3466364693640205e-07,
+    "reason": "Nonfinite displacement or nonpositive reference Gauss detF",
+    "last_valid": {
+      "time": 0.003223309053071245,
+      "compression": 0.18929152632126495,
+      "Fz_N": -2.107869023534149,
+      "internal_macro_Fz_N": -2.1180318453455587,
+      "energy_N_mm": 3.6299813776202314,
+      "KE_N_mm": 0.0018931317395493347,
+      "KE_over_U": 0.0005215265706928908,
+      "J_min": 0.057098660016333916,
+      "dt_seconds": 1.3466364693640205e-07
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "file": "/home/xuehu/projects/tpms_jax/scripts/thin_target_explicit.py",
+  "before_sha256": "636319f60897deed8d4dd796a242cb3e2428f19f03a628a3f33bf901e402e379",
+  "after_sha256": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a",
+  "purpose": "Expose existing quadrature support and actual-point geometric occupancy; FEM/material/time stepping unchanged",
+  "operational_change": "Optional FEM batch size and CPU reference preprocessing; original defaults preserved; same FEM/physics"
+}

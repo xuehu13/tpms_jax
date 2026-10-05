@@ -1,0 +1,3 @@
+# Local telemetry and one-time source-edit tool; results/manifest remain canonical.
+**/progress.json
+patch_entry.py

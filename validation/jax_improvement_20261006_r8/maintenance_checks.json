@@ -1,0 +1,29 @@
+{
+  "status": "maintenance_checks_pass",
+  "tests": 5,
+  "command": "JAX_PLATFORMS=cpu python -m pytest -q tests/test_explicit_quadrature.py tests/test_xyz_hyperelastic.py",
+  "test_log_sha256": "e9c22d831c828a7b922e520c97eb7c8a259acc985918565db693116088c5f2de",
+  "current_entry_sha256": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a",
+  "current_entry_equals_forward_snapshot": true,
+  "unchanged_protected_sha256": {
+    "hyperelastic_fem.py": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "docs/FORWARD20_PROGRESS_REPORT.md": "6a176f008e3a8b2fd9f5ad9e8433c573b69ebc9a762ec9a0b1158123d48acd28",
+    "docs/GRADIENT20_PROGRESS_REPORT.md": "5e57e564428b463c901a57b4b73d825a50651afb6dcb1c74ebe46726b142096f",
+    "validation/large_compression_20261005_r6/quadratic_candidate/T0p004_compact/result.json": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+    "validation/large_compression_20261005_r6/quadratic_candidate/T0p008_compact/result.json": "cd85d937d395a5de376718c7953a502da38d8a78b89ec398696cb262c133cbb1",
+    "validation/large_compression_20261005_r6/quadratic_candidate/rate_check.json": "7552866a8f972b0b35354af865e6f9030ff8e6b151ff87908d227b183dc866ec",
+    "validation/large_compression_20261005_r6/quadratic_candidate/field_review.json": "898bb35ced658d3a7c2ee79b48124211b5973688d092a5518bec671069ec69eb",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/gradient_validation.json": "86a2c69155354181255c9a9048bdb1ab7bdfd1833c56338ece0fb86a16da154a",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/path_ad_full/result.json": "0cf26b3f6bc5df18c6b2d2b389633a16e26adde130c76571972eada38585c5c3",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/evidence_manifest.json": "29755a3b94b2b6f34447791c83c65e8b24779c492cb398e780baf4905b3e2dd6",
+    "validation/large_compression_20261005_r6/gradient20/summary.json": "cde880e10b9a6dd85864bf6208e26fa59834745391a08a46a32b53c6d6c181e9",
+    "validation/large_compression_20261005_r6/status.json": "dc8bb37b36bfd93b63106fd46003e5c5922140458ffe97dc6eb57e15bdc6bb93",
+    "docs/SIMULATION_ERROR_PROGRESS.md": "6d778fdeaed1cc4c575030503946943cc4ef98fcd232ae5c00a45abab5103251",
+    "validation/simulation_error_20261006_r7/evidence_manifest.json": "b4c0ab52d8aa33ea50e000f34f1d099e654c2fa19b08dd8f4beac32d4d1d4ae9"
+  },
+  "original_entry_preserved_sha256": "636319f60897deed8d4dd796a242cb3e2428f19f03a628a3f33bf901e402e379",
+  "actual_point_device_transfer_probe": "completed; small interface check, not an independent physical case",
+  "uniform_q6_wave_check": "integration_check_pass; mathematical/time integration check, not thin-wall certification"
+}

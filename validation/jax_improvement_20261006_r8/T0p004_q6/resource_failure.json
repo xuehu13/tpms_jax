@@ -1,0 +1,7 @@
+{
+  "status": "reference_geometry_GPU_OOM",
+  "scientific_failure": false,
+  "entered_time_integration": false,
+  "reason": "Installed FE get_shape_grads broadcast allocation 3.81GiB exhausted 8GiB GPU",
+  "retry": "Same problem/reference geometry on CPU, compact geometry to GPU; new output directory"
+}

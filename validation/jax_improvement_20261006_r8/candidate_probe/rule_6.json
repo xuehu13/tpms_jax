@@ -1,0 +1,36 @@
+{
+  "points_per_cell": 64,
+  "Vf": 0.15152705185236914,
+  "distance_square_occupancy_moment_mm5": 3.2089829448757885,
+  "states": {
+    "T0p004_q6_cpu_geometry": {
+      "J_min": 0.05448792310018352,
+      "nonpositive_points": 0,
+      "nonpositive_cells": 0,
+      "invalid_reference_volume_fraction": 0.0,
+      "invalid_occupied_volume_mm3": 0.0,
+      "invalid_phi_max": 0.0,
+      "invalid_phi_min": null,
+      "worst_point": {
+        "cell_index": 16908,
+        "position_mm": [
+          5.021697451313429,
+          5.209372038060134,
+          4.040802548686571
+        ],
+        "phi": 7.216545595872246e-11,
+        "distance_mm": 0.5156995087649027
+      },
+      "valid_domain_energy_N_mm": 3.8550625160900167,
+      "valid_domain_internal_Fz_N": -2.0768355191822883,
+      "nonpositive_by_phi": {
+        "soft_lt_0p01": 0,
+        "interface": 0,
+        "solid_ge_0p9": 0
+      },
+      "total_material_response_defined": true,
+      "total_energy_N_mm": 3.8550625160900167,
+      "total_internal_Fz_N": -2.0768355191822883
+    }
+  }
+}

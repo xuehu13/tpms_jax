@@ -1,0 +1,65 @@
+{
+  "points_per_cell": 125,
+  "Vf": 0.15162795798250328,
+  "distance_square_occupancy_moment_mm5": 3.2152647322921175,
+  "states": {
+    "T0p004_compact": {
+      "J_min": -2.072829818356467,
+      "nonpositive_points": 3378,
+      "nonpositive_cells": 961,
+      "invalid_reference_volume_fraction": 0.0003608177827519534,
+      "invalid_occupied_volume_mm3": 1.0908578848944839e-06,
+      "invalid_phi_max": 0.00015010447265510502,
+      "invalid_phi_min": 9.529945992268426e-42,
+      "worst_point": {
+        "cell_index": 31775,
+        "position_mm": [
+          9.985340600927918,
+          0.014659399072083742,
+          9.927885829704014
+        ],
+        "phi": 2.8355299588408647e-41,
+        "distance_mm": 1.3122919582473824
+      },
+      "valid_domain_energy_N_mm": 4.081936593039686,
+      "valid_domain_internal_Fz_N": -2.346104978788911,
+      "nonpositive_by_phi": {
+        "soft_lt_0p01": 3378,
+        "interface": 0,
+        "solid_ge_0p9": 0
+      },
+      "total_material_response_defined": false,
+      "total_energy_N_mm": null,
+      "total_internal_Fz_N": null
+    },
+    "T0p008_compact": {
+      "J_min": -2.0120277252102983,
+      "nonpositive_points": 3359,
+      "nonpositive_cells": 959,
+      "invalid_reference_volume_fraction": 0.00035746635249677853,
+      "invalid_occupied_volume_mm3": 1.1055372590086632e-06,
+      "invalid_phi_max": 0.00015010447265510502,
+      "invalid_phi_min": 9.529945992268426e-42,
+      "worst_point": {
+        "cell_index": 31775,
+        "position_mm": [
+          9.985340600927918,
+          0.014659399072083742,
+          9.927885829704014
+        ],
+        "phi": 2.8355299588408647e-41,
+        "distance_mm": 1.3122919582473824
+      },
+      "valid_domain_energy_N_mm": 4.081635068359204,
+      "valid_domain_internal_Fz_N": -2.1286554077173383,
+      "nonpositive_by_phi": {
+        "soft_lt_0p01": 3359,
+        "interface": 0,
+        "solid_ge_0p9": 0
+      },
+      "total_material_response_defined": false,
+      "total_energy_N_mm": null,
+      "total_internal_Fz_N": null
+    }
+  }
+}

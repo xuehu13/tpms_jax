@@ -1,3 +1,5 @@
+> 最新2026-10-06路线：复杂三维参照后置，JAX侧受控改进优先；只按docs/RESEARCH_PLAN.md执行。下文为已完成证据/功能索引，不继承旧后续次序。本次零科学计算。
+
 # 程序入口与范围
 
 唯一维护FEM在正式根目录，不从validation/source_*或Windows归档执行。当前[唯一主规划](../docs/RESEARCH_PLAN.md)将仿真误差与三维参照优先，训练后置；第1步已完成、第2步体网格未通过、第3/4步未执行。下面各入口是功能/历史范围索引，不是批量待办。
@@ -20,8 +22,20 @@
 
 ## 当前任务与证据
 
-HEX27前向20%约10%工作目标通过；原完整JVP的10%/15%导数通过，20%保载/损失导数未过，不能用于20%逆设计。本轮新增保存场/厚度诊断和有限次参照网格尝试，共享求解代码未改。当前改进顺序见[唯一规划](../docs/RESEARCH_PLAN.md)，不是持续重跑梯度或启动训练。
+唯一活动步骤见[主规划](../docs/RESEARCH_PLAN.md)。积分单因素试验已完成且未采纳，下一项先核对虚域模型，最新结果见[执行记录](../docs/JAX_INTEGRATION_PROGRESS.md)。原20%对壳约10%一致性保留，新增125点软孔隙翻转限制另述；训练与完整20%AD后置。
 
-前向证据见[冻结报告](../docs/FORWARD20_PROGRESS_REPORT.md)，导数失败见[冻结记录](../docs/GRADIENT20_PROGRESS_REPORT.md)。能量插值尚未实现，原默认NH、HRZ与科学原件保留。
+`thin_target_explicit.py`仍复用同一材料/FEM内力和中央差分/HRZ。新增`--quadrature-order`暴露已有Basix支持，`--surface-geometry`在新Problem自身Gauss点计算同一中面距离占据；它与`--gauss-field`互斥。改变规则不能复用旧规则的占据数组。`--geometry-on-cpu`和`--force-batch-cells`用于实际参考预处理显存/编译开销，默认行为保留，未增加物理稳定化。
 
-本轮实际执行见[误差定位与三维参照准备](../docs/SIMULATION_ERROR_PROGRESS.md)。新证据在validation/simulation_error_20261006_r7，不覆盖原r6。
+本轮64点代表命令（WSL仓库内）：
+
+```sh
+.pixi/envs/default/bin/python scripts/thin_target_explicit.py target \
+  --element-degree 2 --cells 32 --quadrature-order 6 \
+  --surface-geometry validation/thin_target_20261004_r5/gauss_field.npz \
+  --geometry-on-cpu --force-batch-cells 128 --adaptive --load-time 0.004 \
+  --output validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry
+```
+
+输出拒绝覆盖已有目录，复现请使用新目录。高阶参考映射GPU预处理曾显存不足，原失败日志保留；CPU预处理沿用原Problem，不维护第二套FEM。材料、厚度、界面、η和加载未改。能量插值尚未实现。
+
+旧前向/梯度/诊断分别见[前向报告](../docs/FORWARD20_PROGRESS_REPORT.md)、[梯度报告](../docs/GRADIENT20_PROGRESS_REPORT.md)、[冻结定位](../docs/SIMULATION_ERROR_PROGRESS.md)；旧建议不生成新任务。
