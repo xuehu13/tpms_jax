@@ -1,0 +1,26 @@
+{
+  "research_round": 6,
+  "step": 1,
+  "status": "started",
+  "source_case": "/home/xuehu/projects/tpms_jax/validation/thin_target_20261004_r5",
+  "target": "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6",
+  "target_thickness_mm": 0.5,
+  "cell_size_mm": 10.0,
+  "N": 64,
+  "eta": 0.0001,
+  "periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "material": "matched elastic Neo-Hookean E=10 MPa, nu=0.3",
+  "existing_source_Gauss_sha256": "b1f1bf51585074f6bb01da4875a697c1b8ff3c8f350885a4cf529414b6759f49",
+  "previous10_input_sha256": "6a88b112426a028d9a82cda7974493de482305e94536c808d6e8fe212f0b0177",
+  "previous10_field_sha256": "c92c4b67471d5285388ba51f56428a671fae41c67c659f500fff9173430bcdc7",
+  "new_compression_targets": [
+    0.15,
+    0.2
+  ],
+  "no_accuracy_gate_at10": true,
+  "no_contact_or_plasticity_in_initial_diagnostic": true
+}

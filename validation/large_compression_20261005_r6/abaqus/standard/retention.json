@@ -1,0 +1,51 @@
+{
+  "directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard",
+  "files": {
+    "extract_thin_finite.py": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\extract_thin_finite.py",
+      "bytes": 5527,
+      "sha256": "916dc6ccbacc0241af3dce670a5d3d13e9982242a9bf4162b8baa39fab82225f"
+    },
+    "input.json": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\input.json",
+      "bytes": 3258,
+      "sha256": "185f529dbfcc1886efc01884a133a63e5e5593fa52e238df2bb691208a1914f8"
+    },
+    "shell.json": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\shell.json",
+      "bytes": 34543,
+      "sha256": "be60ac6509f94d7bf35701ff1b0b067cbc2f3becbeba0c8c837455991b81d4a6"
+    },
+    "shell_field.npz": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\shell_field.npz",
+      "bytes": 373576,
+      "sha256": "76f0127e398a779248ad3018ec34a9dc816ac8289cc6e921dabbc4f1baf718cc"
+    },
+    "thin_shell.dat": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\thin_shell.dat",
+      "bytes": 30574,
+      "sha256": "44d8134bff15f83aeb48ad95c64ef19922f90c57bf38ea4908e7bad22d5f1028"
+    },
+    "thin_shell.inp": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\thin_shell.inp",
+      "bytes": 1121166,
+      "sha256": "6de5baa6821fd367ee238dd8e322a1e6ec503a0da8d0c829886dd60e2c5f1b64"
+    },
+    "thin_shell.msg": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\thin_shell.msg",
+      "bytes": 382731,
+      "sha256": "3b6edbf23c4e2e52a243079971721e77a7bb43c9f35d40a40a2b4cda3d15a5aa"
+    },
+    "thin_shell.odb": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\thin_shell.odb",
+      "bytes": 178628152,
+      "sha256": "465766568b41e8e0c07169dc1aeda446064b8c7bdf2ef87647981fe7b6cbd01f"
+    },
+    "thin_shell.sta": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_standard\\thin_shell.sta",
+      "bytes": 14794,
+      "sha256": "e65018e60c6f2acde185732d886bdb237ceac0ad011a38cc8a57c9bd38b8ddf0"
+    }
+  },
+  "odb_kept_at_original_location": true
+}

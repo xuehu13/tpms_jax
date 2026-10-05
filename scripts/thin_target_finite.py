@@ -18,12 +18,12 @@ def tag(a):return 'a'+format(a,'.6f').replace('.','p')
 def state(case,a):return base(case)/tag(a)
 
 
-def prepare(case,a):
-    if a not in (.01,.05,.10,.20):raise ValueError('Locked observation positions: 1,5,10,20 percent')
+def prepare(case,a,output=None):
+    if a not in (.01,.05,.10,.15,.20):raise ValueError('Locked observation positions: 1,5,10,20 percent')
     old=case/'step2/diagnostic_xyz';cfg=json.loads((old/'input.json').read_text())
     assert json.loads((old/'comparison.json').read_text())['stiffness_work_screen_pass']
     assert cfg['N']==64 and cfg['thickness_mm']==.5 and cfg['eta']==1e-4
-    out=state(case,a);out.mkdir(parents=True,exist_ok=False)
+    out=state(case,a) if output is None else Path(output);out.mkdir(parents=True,exist_ok=False)
     E=cfg['E_MPa'];nu=cfg['nu'];mu=E/(2*(1+nu));kappa=E/(3*(1-2*nu))
     prefix=(old/'thin_shell.inp').read_text().split('*Step,',1)[0]
     prefix=prefix.replace('matched linear elastic shell','matched Neo-Hookean finite-strain shell')
@@ -31,7 +31,7 @@ def prepare(case,a):
     assert elastic in prefix
     prefix=prefix.replace(elastic,f'*Hyperelastic, Neo Hooke\n{mu/2:.16g}, {2/kappa:.16g}')
     # Separate jobs retain lower checkpoints; no unrequested higher load occurs.
-    targets=[x for x in (.01,.05,.10,.20) if x<=a]
+    targets=[x for x in (.01,.05,.10,.15,.20) if x<=a]
     lines=[prefix.rstrip()]
     for i,target in enumerate(targets):
         dt=.1 if target==.01 else .02
@@ -61,13 +61,13 @@ def prepare(case,a):
     print(json.dumps({k:cfg[k] for k in ('compression','macro_F','material','shell_inp_sha256')},indent=2))
 
 
-def capture(case,a,previous=None):
+def capture(case,a,previous=None,output=None,previous_state=None):
     os.environ.setdefault('XLA_PYTHON_CLIENT_PREALLOCATE','false')
     import jax;import jax.numpy as jnp
     from petsc4py import PETSc
     from fem import solve
     from hyperelastic_fem import make_density_hyperelastic_problem,reduced_guess,finite_response,neo_hookean_energy
-    out=state(case,a);cfg=json.loads((out/'input.json').read_text());assert not (out/'jax.json').exists()
+    out=state(case,a) if output is None else Path(output);cfg=json.loads((out/'input.json').read_text());assert not (out/'jax.json').exists()
     for n,h in cfg['source_sha256'].items():assert sha(ROOT/n)==h,n
     for n,h in cfg['input_sha256'].items():assert sha(case/n)==h,n
     start=time.perf_counter();N=cfg['N'];L=cfg['cell_size_mm'];H=np.diag([0.,0.,-a])
@@ -85,7 +85,7 @@ def capture(case,a,previous=None):
             total=f['total_u'];oldH=f['H'];oldw=total[grididx[:,0],grididx[:,1],grididx[:,2]]-points@oldH.T
         predictor=oldw*(a/abs(oldH[2,2]));seed='scaled frozen linear XYZ fluctuation'
     else:
-        prev=state(case,previous);assert json.loads((prev/'jax.json').read_text())['status']=='ok'
+        prev=state(case,previous) if previous_state is None else Path(previous_state);assert json.loads((prev/'jax.json').read_text())['status']=='ok'
         with np.load(prev/'jax_field.npz') as f:oldw=f['w']
         predictor=oldw*(a/previous);seed=f'scaled previous converged state {previous}'
     initial=p.detF_stats(jnp.asarray(predictor))
@@ -121,7 +121,7 @@ def capture(case,a,previous=None):
                 'reduced_residual_l2_le_1e-8':r['reduced_residual_l2']<=1e-8,
                 'relative_force_balance_le_1e-6':balance<=1e-6,'relative_macro_reaction_vs_P_le_1e-6':ferr<=1e-6,
                 'energy_partition':abs(mat+floor-energy)<=1e-10*max(1.,energy),'XYZ_periodic_le_1e-10':per<=1e-10}
-        result={'status':'ok' if all(checks.values()) else 'check_failed','compression':a,'checks':checks,
+        result={'status':'ok' if all(checks.values()) else 'check_failed','compression':a,'checks':checks,'previous_state_directory':str(prev) if previous is not None else None,
                 'Fz_N':r['Fz_top']*L**2,'energy_N_mm':energy*L**3,'secant_stiffness_N_per_mm':-r['Fz_top']*L/a,
                 'finite_response_normalized':r,'detF_by_occupancy':stats,'periodic_error_over_L':per,
                 'energy_material_N_mm':mat*L**3,'energy_uniform_floor_N_mm':floor*L**3,
@@ -189,6 +189,8 @@ def compare(case,a):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=('prepare','jax','compare'))
     p.add_argument('case',type=Path);p.add_argument('--compression',type=float,required=True);p.add_argument('--previous',type=float)
+    p.add_argument('--output',type=Path);p.add_argument('--previous-state',type=Path)
     a=p.parse_args();c=a.case.resolve()
-    if a.action=='jax':capture(c,a.compression,a.previous)
-    else:{'prepare':prepare,'compare':compare}[a.action](c,a.compression)
+    if a.action=='jax':capture(c,a.compression,a.previous,a.output,a.previous_state)
+    elif a.action=='prepare':prepare(c,a.compression,a.output)
+    else:compare(c,a.compression)

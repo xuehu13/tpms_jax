@@ -1,0 +1,44 @@
+{
+  "compression": 0.2,
+  "state_is_static_equilibrium": false,
+  "detF_by_occupancy": {
+    "all_min": 0.17878564853164897,
+    "all_max": 2.128567098003014,
+    "finite": true,
+    "solid": {
+      "points": 275886,
+      "min": 0.82284689413217,
+      "p01": 0.9012043635044883,
+      "max": 1.0819323364929923
+    },
+    "void": {
+      "points": 1736142,
+      "min": 0.17878564853164897,
+      "p01": 0.5650771440778328,
+      "max": 2.128567098003014
+    },
+    "transition": {
+      "points": 85124,
+      "min": 0.6846637407972469,
+      "p01": 0.8389941465131078,
+      "max": 1.143005955784569
+    }
+  },
+  "energy_N_mm": 4.063158672003222,
+  "uniform_floor_energy_N_mm": 0.10515995240901248,
+  "uniform_floor_energy_fraction": 0.025881330486452903,
+  "low_occupancy_le_0p05_energy_fraction": 0.03283282594317731,
+  "postprocess_only_no_forward_solve": true,
+  "uniform_floor_internal_macro_Fz_N": -0.03923989540960452,
+  "material_occupancy_internal_macro_Fz_N": -2.20580857430674,
+  "total_internal_macro_Fz_N": -2.2450484697163446,
+  "force_partition_scope": "exact stress decomposition at the saved state; not a causal error partition or a re-equilibrated eta sensitivity",
+  "fluctuation_vector_cosine": 0.999632813693573,
+  "area_weighted_relative_fluctuation_error": 0.03335057233048638,
+  "gauge_translation_removed_mm": [
+    0.03211037574502016,
+    0.005347039361115505,
+    -0.4300218022673699
+  ],
+  "mode_scope": "midsurface translations; no rotation/scale fitting, no contact certification"
+}

@@ -56,3 +56,9 @@ validation/thin_target_20261004_r5/step3_xyz/attempt*/thin_shell.inp
 validation/.thin_step4_process.lock
 validation/thin_target_20261004_r5/step4_thickness_a*/attempt*/thin_shell.inp
 validation/**/thread_observation.txt
+
+# This round keeps raw telemetry and repeated decks locally, with one canonical Explicit deck.
+validation/large_compression_20261005_r6/**/*.resource.json
+validation/large_compression_20261005_r6/**/jax.progress.json
+validation/large_compression_20261005_r6/**/*.inp
+!validation/large_compression_20261005_r6/abaqus/explicit_T0p020/thin_shell.inp

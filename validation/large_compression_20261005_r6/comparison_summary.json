@@ -1,0 +1,38 @@
+{
+  "target": 0.2,
+  "candidate_completed_20": true,
+  "reference_quality_pass": false,
+  "reference_scope": "three no-contact elastic shell diagnostics, not strictly certified",
+  "explicit_loading_rate_hold_force_relative_difference": 8.460320505943031e-06,
+  "explicit_loading_rate_curve_RMS_over_Standard_peak": 0.0003528018027259271,
+  "Standard_vs_slow_Explicit_terminal_relative_difference": 0.019178940964700075,
+  "Standard_peak_force_N": 2.2589142322540283,
+  "Standard_peak_compression": 0.10700000524520874,
+  "source_sha256": {
+    "abaqus/standard/shell.json": "be60ac6509f94d7bf35701ff1b0b067cbc2f3becbeba0c8c837455991b81d4a6",
+    "abaqus/explicit_T0p020/shell.json": "71ef739fd7edb7cf48cd1ee56e9c9c2984115a90adb81e35b6da2ab088ea2377",
+    "abaqus/explicit_T0p040/shell.json": "6947cf50626c9a7e49eb0390d912134e7112517a591751d37f880eecc8d1208f",
+    "explicit/N64_T0p004_adaptive/result.json": "182b4cc1bc483af51806fb981f5b8cb8f4312e3ec6d422428050586c222fa25e"
+  },
+  "JAX20_hold_mean_Fz_N": -2.2418631292887126,
+  "JAX20_final_Fz_N": -2.2452668169029777,
+  "JAX20_hold_min_max_Fz_N": [
+    -2.2452668169029777,
+    -2.239522515441227
+  ],
+  "JAX20_energy_N_mm": 4.063158672003222,
+  "JAX_input_work_N_mm": 4.062851591152569,
+  "JAX_energy_work_gap": 7.60907804627599e-05,
+  "JAX_loading_time_fraction_KE_below_5pct": 0.9789473684210659,
+  "JAX_terminal_KE_over_U": 5.081509213093513e-07,
+  "terminal_force_relative_difference_vs_slow_Explicit": 0.2240949010208526,
+  "curve_RMS_difference_over_Standard_peak": 0.13468268398143665,
+  "input_work_relative_difference_vs_slow_Explicit": 0.15514751201658838,
+  "response_target_only_pass": false,
+  "physical_replacement_certified": false,
+  "gradient20_certified": false,
+  "minimum_observed_J": 0.17853650668439308,
+  "body_seconds": 1113.94721437298,
+  "rejected_blocks": 1,
+  "terminal_dt": 1.3466364693640205e-07
+}

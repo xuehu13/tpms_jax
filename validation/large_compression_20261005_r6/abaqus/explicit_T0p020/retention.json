@@ -1,0 +1,56 @@
+{
+  "directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020",
+  "files": {
+    "extract_thin_explicit.py": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\extract_thin_explicit.py",
+      "bytes": 6023,
+      "sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb"
+    },
+    "input.json": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\input.json",
+      "bytes": 3788,
+      "sha256": "1606c8490e07471dd816fb782a97d22aa4dcee2fe5ec8aa41751d17b60105569"
+    },
+    "shell.json": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\shell.json",
+      "bytes": 395896,
+      "sha256": "71ef739fd7edb7cf48cd1ee56e9c9c2984115a90adb81e35b6da2ab088ea2377"
+    },
+    "shell_field.npz": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\shell_field.npz",
+      "bytes": 373453,
+      "sha256": "b7b3654bad246ac2e33eb0c7435f24ab08e042b32ac68b4d92c1846f919ec602"
+    },
+    "thin_shell.dat": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\thin_shell.dat",
+      "bytes": 6256,
+      "sha256": "cfabcc447e6afa0c82540551e39dc309e726c61a6de02f685d11de88f549cf7d"
+    },
+    "thin_shell.inp": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\thin_shell.inp",
+      "bytes": 1154800,
+      "sha256": "ff07142562d5c9b27d5988daede773525e20d7658880ef129e06413bf1003126"
+    },
+    "thin_shell.mdl": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\thin_shell.mdl",
+      "bytes": 1393956,
+      "sha256": "7c73e5f42110fb1ccc9ea503eba3c37ef6ad4fd6aceac3f3dfde2b3bf1322e63"
+    },
+    "thin_shell.msg": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\thin_shell.msg",
+      "bytes": 548,
+      "sha256": "6bf740dd3cd20e1e682e73bc5c445dfe8cd0858e70045abddd972e9b03b35aea"
+    },
+    "thin_shell.odb": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\thin_shell.odb",
+      "bytes": 94481364,
+      "sha256": "7c2a528bf45efcbf0a593616dc9434337b27e9c1418916ef29f64810b8898a86"
+    },
+    "thin_shell.sta": {
+      "path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\large_compression_20261005_r6_explicit_T0p020\\thin_shell.sta",
+      "bytes": 10866,
+      "sha256": "038834539861c9a88e65ba568d26f3c9b627edb1933139f22b19b3608880c4fe"
+    }
+  },
+  "odb_kept_at_original_location": true
+}

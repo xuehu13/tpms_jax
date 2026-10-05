@@ -1,0 +1,27 @@
+{
+  "N": 8,
+  "role": "small known periodic P-wave integration check; not TPMS accuracy evidence",
+  "method": "physical central difference; existing JAX-FEM NH residual",
+  "dt_seconds": 5.360297977994402e-07,
+  "cell_size_mm": 10.0,
+  "solid_density_tonne_per_mm3": 1e-09,
+  "void_mass_floor": 0.0001,
+  "mass_model": "rho_s*(eta+(1-eta)*phi); numerical void mass, not a second physical material",
+  "affine_inertia_included": true,
+  "no_mass_scaling": true,
+  "no_contact": true,
+  "no_damping": true,
+  "source_sha256": {
+    "hyperelastic_fem.py": "3330f974328e40627971db3024ad4deca8058e7c4723d0e848ea2587ee942132",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "experiment_sha256": "f7ef4cfc16ca1de7f96758f65e2b479086acf34ac5443b3fe77b743af0978242",
+  "source_case": "/home/xuehu/projects/tpms_jax/validation/thin_target_20261004_r5",
+  "load_time_seconds": 0.02,
+  "devices": [
+    "cuda:0"
+  ],
+  "total_steps": 165
+}

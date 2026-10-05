@@ -1,0 +1,16 @@
+{
+  "type": "ValueError",
+  "message": "Nonfinite displacement or nonpositive reference Gauss detF",
+  "completed_steps": 10240,
+  "body_seconds": 514.6056843299884,
+  "last_valid": {
+    "time": 0.0027234375956416102,
+    "compression": 0.1621385546274918,
+    "Fz_N": -2.424575538765475,
+    "internal_macro_Fz_N": -2.4328036029529505,
+    "energy_N_mm": 3.1757820133968053,
+    "KE_N_mm": 0.007785512198488564,
+    "KE_over_U": 0.0024515260070262844,
+    "J_min": 0.27765996511688207
+  }
+}

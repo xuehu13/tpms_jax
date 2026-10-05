@@ -1,0 +1,30 @@
+{
+  "type": "Error",
+  "message": "error code 91\n[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094\n[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1001\n[0] KSPSolve() has not converged, reason DIVERGED_ITS",
+  "attempted_compression": 0.15,
+  "previous_converged": 0.1,
+  "trial_detF": {
+    "all_min": 0.3241674955031924,
+    "all_max": 1.254354887874786,
+    "finite": true,
+    "solid": {
+      "points": 275886,
+      "min": 0.8668471102910768,
+      "p01": 0.9214376840111974,
+      "max": 1.0582151749044977
+    },
+    "void": {
+      "points": 1736142,
+      "min": 0.3241674955031924,
+      "p01": 0.6831746339989733,
+      "max": 1.254354887874786
+    },
+    "transition": {
+      "points": 85124,
+      "min": 0.7681681735864911,
+      "p01": 0.8771102616089367,
+      "max": 1.1012590382544523
+    }
+  },
+  "body_seconds": 1112.4193016670179
+}

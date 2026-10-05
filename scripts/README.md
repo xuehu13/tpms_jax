@@ -4,8 +4,9 @@
 
 | 入口 | 用途/边界 |
 | --- | --- |
+| thin_target_explicit.py、extract_thin_explicit.py | 新NH/XYZ物理显式与只读ODB提取；wave/probe/target，目标减步到20%；当前前向入口，20%设计梯度/接触未认证 |
 | thin_thickness_gradient.py | 第4步保存状态反力伴随、厚度扰动与两点诊断损失；复用原求解器，形态/任意目标/训练未认证 |
-| thin_target_finite.py、extract_thin_finite.py | 第3步分段XYZ压缩/只读ODB；1%/5%通过、10%未接受，20%未提交 |
+| thin_target_finite.py、extract_thin_finite.py | 静力分段XYZ压缩/只读ODB；原结果冻结，新输出/上一状态参数支持独立续算；本轮15%线性求解阻塞 |
 | thin_target_linear.py、extract_thin_shell.py | 本轮两组弹性对照/模式，唯一XYZ边界诊断开关与只读ODB提取；复用既有FEM，不能自动转为大变形 |
 | prepare_thin_target.py | 第1步周期三角距离/恒厚占据及真实N64 Gauss检查，拒绝覆盖完成目录；没有位移求解 |
 | m1_volume.py、m2_*_cube.py、m3_gyroid_first.py／m3_lateral_relaxation.py、m4_numerical_study.py | 早期几何/线性基准，参数名c不是恒定物理厚度 |
@@ -19,4 +20,4 @@
 
 ## 2026-10-05状态更新
 
-目标薄壁四步按限定范围完成；1%/5%前向及厚度梯度通过，10%差14.19%/壳质量未过，20%未提交。上述为冻结历史。唯一下一轮是docs/RESEARCH_PLAN的大压缩四步，均未启动；本次仅调查/整理，无新求解或维护测试。当前TPMS仍静力弹性，无物理Explicit、接触或塑性；官方示例不作本项目认证。新实验届时新目录，不修改旧输入/结果。
+JAX显式减步在同一N64薄壁上完成20%及保载；平均反力幅值2.241863N，对慢Explicit差22.41%，整段曲线RMS/参考特征峰值差13.47%，输入功差15.51%。实际主体耗时18.57分钟，1次无效块被拒绝，终态动能/弹性储能0.00005%，能量与输入功差0.008%。 维护一套内力实现，新增显式入口未修改核心FEM/材料/周期/环境。20%设计参数求导接口未完成。新实验见validation/large_compression_20261005_r6；旧薄壁结果冻结。
