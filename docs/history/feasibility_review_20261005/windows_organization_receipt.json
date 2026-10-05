@@ -1,0 +1,542 @@
+{
+  "active_snapshots": [
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\AGENTS.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\AGENTS.md",
+      "sha256": "e15581660bf1e423077879a64d9bd477f9052051a20e598e2fc57ac8a517f3e7"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\START_HERE.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "sha256": "1c68b1efbebd370b28588b5d545b61db532a64a2fd8cfbd652f3d172029726e1"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\RESEARCH_BACKGROUND.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_BACKGROUND.md",
+      "sha256": "7d5cf6fe6228bf7f1caeeac0a6452f64de16b375896e958ab9a1ee518442f413"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\RESEARCH_PLAN.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "sha256": "799cb0c00d70d06742df0d3a27992587e7c81a551563bffa21b899b28e5e0bfc"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\PROJECT_OVERVIEW.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "sha256": "802bf18832b1bd090724ef8846447ba6b11bf567c603c212c61915eea6fd0a51"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\FILE_MAP.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "sha256": "15308b7b2762a6b853f5e83b77ceb7b70d35f29115103997293ae21e9de03e3d"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\TPMS_RESEARCH_REVIEW.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "sha256": "a8beb4e34b2cf0529c0d08fdbbb96f303adad893872aaa57aab40e304383120f"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\FORWARD20_PROGRESS_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FORWARD20_PROGRESS_REPORT.md",
+      "sha256": "7504318879d8868d141f6b78136e383059651b1110b6bb9da5d7ed969b11b988"
+    },
+    {
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\before_feasibility_review_20261005\\PAPER_ROUTE.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PAPER_ROUTE.md",
+      "sha256": "b89132c0f46277d3b181bd8f4b3eb5f8631164e0568ed941fba8945f2c1b00da"
+    }
+  ],
+  "historical_reports_moved": [
+    {
+      "files": {
+        "file": {
+          "bytes": 11342,
+          "sha256": "d2908cdf9ee3cd92c7dc170fdf6f43834b65c3398168bbc8533e5650956d8ae7"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\NEAR_TERM_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\NEAR_TERM_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 8778,
+          "sha256": "f798aba23ac067482879935803f2b77c8536ced0ef115bc71f4006bbdf75887f"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\ROUND2_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\ROUND2_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 6606,
+          "sha256": "fa2f4bbc80faa9ca0ca5346e4cfb6060a6e74ea7d7a905355a71ba6520f7ce57"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\ROUND3_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\ROUND3_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 9693,
+          "sha256": "e93a82f3b72daf162698dbaa1fb2f906993e175157609979098bcf4fcfd9a2f6"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\ROUND4_STEP1_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\ROUND4_STEP1_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 14552,
+          "sha256": "23053433decbd4b6525287966da8a223554d8563c81324aa0015a39b0b78f99b"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\ROUND4_STEP2_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\ROUND4_STEP2_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 13074,
+          "sha256": "96eef01bedf5fa04aa04e224a3e33fae86feaed7346d74af792ae9704d86371e"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\ROUND4_STEP3_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\ROUND4_STEP3_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 13139,
+          "sha256": "ebb0ac263ecb304bee0366585bb1a9ec99cb844456d84ff961b97f30c7905680"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\ROUND4_STEP4_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\ROUND4_STEP4_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 4788,
+          "sha256": "be8e15c0457810fdfa22c06524f5975f317a29b4e4aa6cce6353f9acfea57724"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\THIN_TARGET_STEP1_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\THIN_TARGET_STEP1_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 10185,
+          "sha256": "f4ebf88762d1392696cd8652ac3ba689105377b89addba851ffcb95414f13358"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\THIN_TARGET_STEP2_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\THIN_TARGET_STEP2_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 8907,
+          "sha256": "0d5c2647b2423b20f80b5dd4a6090af7514e8325432c54185f4e3c2eacda8dcc"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\THIN_TARGET_STEP3_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\THIN_TARGET_STEP3_REPORT.md"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 7744,
+          "sha256": "2074b4fa529f0285742e5c19c17eba6096440e34c8c9a0257516088bf1ce6abb"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\scientific_reports_20261005\\THIN_TARGET_STEP4_REPORT.md",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\THIN_TARGET_STEP4_REPORT.md"
+    }
+  ],
+  "completed_transport_moved": [
+    {
+      "files": {
+        "config": {
+          "bytes": 210,
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598"
+        },
+        "description": {
+          "bytes": 73,
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+        },
+        "FETCH_HEAD": {
+          "bytes": 207,
+          "sha256": "f755606605d8536f684495924247410b2e456de03f82bbf9239b30af881609a8"
+        },
+        "HEAD": {
+          "bytes": 23,
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+        },
+        "hooks\\applypatch-msg.sample": {
+          "bytes": 478,
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+        },
+        "hooks\\commit-msg.sample": {
+          "bytes": 896,
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "bytes": 4726,
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+        },
+        "hooks\\post-update.sample": {
+          "bytes": 189,
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+        },
+        "hooks\\pre-applypatch.sample": {
+          "bytes": 424,
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+        },
+        "hooks\\pre-commit.sample": {
+          "bytes": 1649,
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "bytes": 416,
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+        },
+        "hooks\\pre-push.sample": {
+          "bytes": 1374,
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+        },
+        "hooks\\pre-rebase.sample": {
+          "bytes": 4898,
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+        },
+        "hooks\\pre-receive.sample": {
+          "bytes": 544,
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "bytes": 1492,
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+        },
+        "hooks\\push-to-checkout.sample": {
+          "bytes": 2783,
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+        },
+        "hooks\\sendemail-validate.sample": {
+          "bytes": 2308,
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+        },
+        "hooks\\update.sample": {
+          "bytes": 3650,
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+        },
+        "info\\exclude": {
+          "bytes": 240,
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+        },
+        "objects\\pack\\pack-50dec7fa100339ada79a02bbfb5570bc9dbe68a9.idx": {
+          "bytes": 2136,
+          "sha256": "1d9dec159e30ea1efed2734b4a16d5fafcc567c8c58f2ee0770ad5f83a4a2d1a"
+        },
+        "objects\\pack\\pack-50dec7fa100339ada79a02bbfb5570bc9dbe68a9.pack": {
+          "bytes": 421296,
+          "sha256": "ad9bb358aee9fbb3d69d2363989a78c11348486ee3d29a29e0e9deb983413b4d"
+        },
+        "objects\\pack\\pack-50dec7fa100339ada79a02bbfb5570bc9dbe68a9.rev": {
+          "bytes": 204,
+          "sha256": "4a6e9d12480c5f51ba6aa93d5942b5fed514746fb768ad4a83ed09faa2a3ea65"
+        },
+        "objects\\pack\\pack-e3e756956646d29022f9c885c68f41aac0c1a999.idx": {
+          "bytes": 37024,
+          "sha256": "dc4058cec487b8a07f9edae21ca9f200d40a39b141ccccaef57171b280dd8039"
+        },
+        "objects\\pack\\pack-e3e756956646d29022f9c885c68f41aac0c1a999.pack": {
+          "bytes": 11273955,
+          "sha256": "efaddb6b35a1ddcad3d6a05172358690ca9f04f13009315f891d5965d4840aa1"
+        },
+        "objects\\pack\\pack-e3e756956646d29022f9c885c68f41aac0c1a999.rev": {
+          "bytes": 5188,
+          "sha256": "d84f9148a4e73a948de25d00629deba665e7c9c689a74d74ca7a0787f196dd82"
+        },
+        "refs\\heads\\main": {
+          "bytes": 41,
+          "sha256": "435a74fd3774abb84202d4105e43bea63455a32f35231230cd2e6b7918a5666c"
+        },
+        "refs\\remotes\\origin\\main": {
+          "bytes": 41,
+          "sha256": "435a74fd3774abb84202d4105e43bea63455a32f35231230cd2e6b7918a5666c"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005_later\\large_compression_review_20261005\\transport.git",
+      "published_commit": "493ae537510b8ac49a9f82d01f3776f5903fbb17",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\large_compression_review_20261005\\transport.git"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 403669,
+          "sha256": "6f87bf311fad26717e77856341190bf34a7f56fbb1d41ad39e171bac8beafb71"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005_later\\large_compression_review_20261005\\tpms_jax_cleanup.bundle",
+      "published_commit": "493ae537510b8ac49a9f82d01f3776f5903fbb17",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\large_compression_review_20261005\\tpms_jax_cleanup.bundle"
+    },
+    {
+      "files": {
+        "config": {
+          "bytes": 210,
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598"
+        },
+        "description": {
+          "bytes": 73,
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+        },
+        "FETCH_HEAD": {
+          "bytes": 198,
+          "sha256": "54ba13aef1b36aaced56b65bb81a71c051b2c2353853a46e673983c9d556c862"
+        },
+        "HEAD": {
+          "bytes": 23,
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+        },
+        "hooks\\applypatch-msg.sample": {
+          "bytes": 478,
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+        },
+        "hooks\\commit-msg.sample": {
+          "bytes": 896,
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "bytes": 4726,
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+        },
+        "hooks\\post-update.sample": {
+          "bytes": 189,
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+        },
+        "hooks\\pre-applypatch.sample": {
+          "bytes": 424,
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+        },
+        "hooks\\pre-commit.sample": {
+          "bytes": 1649,
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "bytes": 416,
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+        },
+        "hooks\\pre-push.sample": {
+          "bytes": 1374,
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+        },
+        "hooks\\pre-rebase.sample": {
+          "bytes": 4898,
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+        },
+        "hooks\\pre-receive.sample": {
+          "bytes": 544,
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "bytes": 1492,
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+        },
+        "hooks\\push-to-checkout.sample": {
+          "bytes": 2783,
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+        },
+        "hooks\\sendemail-validate.sample": {
+          "bytes": 2308,
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+        },
+        "hooks\\update.sample": {
+          "bytes": 3650,
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+        },
+        "info\\exclude": {
+          "bytes": 240,
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+        },
+        "objects\\pack\\pack-026dfff82b42b15a69a7f2e220fc0e10f6e9c188.idx": {
+          "bytes": 3312,
+          "sha256": "70f224e08b814178d1234d553ec20d11d8ff34b7115e2386eee943282f1dd4e2"
+        },
+        "objects\\pack\\pack-026dfff82b42b15a69a7f2e220fc0e10f6e9c188.pack": {
+          "bytes": 1542280,
+          "sha256": "c5ab8fea5ba089f7a9cf730481d574e7ec5017b57e5b4570711930f32ac43156"
+        },
+        "objects\\pack\\pack-026dfff82b42b15a69a7f2e220fc0e10f6e9c188.rev": {
+          "bytes": 372,
+          "sha256": "a5940e8d3588916ff82ba899a219af7231723fbc05f06e83f90962a807efb2f4"
+        },
+        "objects\\pack\\pack-39e7289e73b4cc8f5e435fff352ebdb8f8e63842.idx": {
+          "bytes": 37752,
+          "sha256": "05ac0a812c18c077fc486cec1b77726375dd6fb89d5aeae1f861c9bdd79b463c"
+        },
+        "objects\\pack\\pack-39e7289e73b4cc8f5e435fff352ebdb8f8e63842.pack": {
+          "bytes": 11647546,
+          "sha256": "585945881497e4cc5ed663a9ca2b8487a41b98300607e955b07b2d66bb915fa3"
+        },
+        "objects\\pack\\pack-39e7289e73b4cc8f5e435fff352ebdb8f8e63842.rev": {
+          "bytes": 5292,
+          "sha256": "27ebe42a829ffb4504dc33669f2c1224992ab8196e0dd02bbc77c9842972e5a1"
+        },
+        "refs\\heads\\main": {
+          "bytes": 41,
+          "sha256": "959c557a095e51da4f30ade2c0e3ad5c8b2dc1e92c27147e7daaeaf29398cf19"
+        },
+        "refs\\remotes\\origin\\main": {
+          "bytes": 41,
+          "sha256": "959c557a095e51da4f30ade2c0e3ad5c8b2dc1e92c27147e7daaeaf29398cf19"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005_later\\forward20_step1_20261005\\transport.git",
+      "published_commit": "44c9935ac03a7519effcda0f9fe0d425d83a2220",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\forward20_step1_20261005\\transport.git"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 1514807,
+          "sha256": "2adf355a5b395b825319bcbf71eb7927f0d8ad636143785a5749f19da272f371"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005_later\\forward20_step1_20261005\\tpms_jax_cleanup.bundle",
+      "published_commit": "44c9935ac03a7519effcda0f9fe0d425d83a2220",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\forward20_step1_20261005\\tpms_jax_cleanup.bundle"
+    },
+    {
+      "files": {
+        "config": {
+          "bytes": 210,
+          "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598"
+        },
+        "description": {
+          "bytes": 73,
+          "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+        },
+        "FETCH_HEAD": {
+          "bytes": 200,
+          "sha256": "a82633d0941c3a4443828c86a140396bc6cc3051dce6a59d671cd34414e51ff0"
+        },
+        "HEAD": {
+          "bytes": 23,
+          "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+        },
+        "hooks\\applypatch-msg.sample": {
+          "bytes": 478,
+          "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+        },
+        "hooks\\commit-msg.sample": {
+          "bytes": 896,
+          "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+        },
+        "hooks\\fsmonitor-watchman.sample": {
+          "bytes": 4726,
+          "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+        },
+        "hooks\\post-update.sample": {
+          "bytes": 189,
+          "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+        },
+        "hooks\\pre-applypatch.sample": {
+          "bytes": 424,
+          "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+        },
+        "hooks\\pre-commit.sample": {
+          "bytes": 1649,
+          "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+        },
+        "hooks\\pre-merge-commit.sample": {
+          "bytes": 416,
+          "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+        },
+        "hooks\\pre-push.sample": {
+          "bytes": 1374,
+          "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+        },
+        "hooks\\pre-rebase.sample": {
+          "bytes": 4898,
+          "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+        },
+        "hooks\\pre-receive.sample": {
+          "bytes": 544,
+          "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+        },
+        "hooks\\prepare-commit-msg.sample": {
+          "bytes": 1492,
+          "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+        },
+        "hooks\\push-to-checkout.sample": {
+          "bytes": 2783,
+          "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+        },
+        "hooks\\sendemail-validate.sample": {
+          "bytes": 2308,
+          "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+        },
+        "hooks\\update.sample": {
+          "bytes": 3650,
+          "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+        },
+        "info\\exclude": {
+          "bytes": 240,
+          "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+        },
+        "objects\\pack\\pack-6d034ad8c198544b4574efa7216ef7d131de5679.idx": {
+          "bytes": 39600,
+          "sha256": "186ae7a9198cf0628e18a0929c4b104013b35bceeaf77298fc4b07f428aafdd2"
+        },
+        "objects\\pack\\pack-6d034ad8c198544b4574efa7216ef7d131de5679.pack": {
+          "bytes": 12889875,
+          "sha256": "de0c006484c57aaa52c20e159dee7487ee26c2f3fa2be7bafa085729fae56235"
+        },
+        "objects\\pack\\pack-6d034ad8c198544b4574efa7216ef7d131de5679.rev": {
+          "bytes": 5556,
+          "sha256": "5630534fcfc26b64bfa124e6e8d984b9699a30d3c6d99c772db31d4dec49f877"
+        },
+        "objects\\pack\\pack-ab6735c9b27f3bfdc66797ad8d1a0283ee71548b.idx": {
+          "bytes": 4320,
+          "sha256": "49c9bb149c17ad8e9cad0ef94b5b59e5e98883d66e9ead7f981473147cded6da"
+        },
+        "objects\\pack\\pack-ab6735c9b27f3bfdc66797ad8d1a0283ee71548b.pack": {
+          "bytes": 372001,
+          "sha256": "9beab327fb07c82568de83d7b9fde40cdf62376f5098a25fb781f0db2b8cc011"
+        },
+        "objects\\pack\\pack-ab6735c9b27f3bfdc66797ad8d1a0283ee71548b.rev": {
+          "bytes": 516,
+          "sha256": "2cd5eb401e387db26bc6773e948970e2871fc8c18922feb32dc68c268d823f39"
+        },
+        "refs\\heads\\main": {
+          "bytes": 41,
+          "sha256": "fb05e71628e8e21941a9d1e6f82a441a4696780cc7a555cad31e09075b37ec25"
+        },
+        "refs\\remotes\\origin\\main": {
+          "bytes": 41,
+          "sha256": "fb05e71628e8e21941a9d1e6f82a441a4696780cc7a555cad31e09075b37ec25"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005_later\\background_bridge_20261005\\transport.git",
+      "published_commit": "51136a581a230be2aba913d47adf57def865e281",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\background_bridge_20261005\\transport.git"
+    },
+    {
+      "files": {
+        "file": {
+          "bytes": 335510,
+          "sha256": "2d3e9e706980d53bad44c5b19aefbe55170539a1e5a61c9744f2e059d04053f9"
+        }
+      },
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\git_transport\\completed_20261005_later\\background_bridge_20261005\\tpms_jax_cleanup.bundle",
+      "published_commit": "51136a581a230be2aba913d47adf57def865e281",
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\background_bridge_20261005\\tpms_jax_cleanup.bundle"
+    }
+  ],
+  "scope": "Documents and completed Git transport only; no scientific arrays, jobs, source snapshots or user PDFs changed"
+}

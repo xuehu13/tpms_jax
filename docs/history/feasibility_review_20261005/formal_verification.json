@@ -1,0 +1,22 @@
+{
+  "changed_active_markdown": [
+    "AGENTS.md",
+    "README.md",
+    "docs/FILE_MAP.md",
+    "docs/FORWARD20_PROGRESS_REPORT.md",
+    "docs/PAPER_ROUTE.md",
+    "docs/RESEARCH_BACKGROUND.md",
+    "docs/RESEARCH_PLAN.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/TPMS_RESEARCH_REVIEW.md",
+    "scripts/README.md",
+    "validation/README.md",
+    "validation/large_compression_20261005_r6/README.md"
+  ],
+  "local_links_checked": 79,
+  "broken_links": [],
+  "protected_scientific_hashes_verified": 144,
+  "new_scientific_jobs": 0,
+  "mechanics_source_modified": false,
+  "git_diff_stat": " AGENTS.md                                          |  32 +--\n README.md                                          |  10 +-\n docs/FILE_MAP.md                                   | 132 +++++----\n docs/FORWARD20_PROGRESS_REPORT.md                  |   4 +-\n docs/PAPER_ROUTE.md                                |  81 ++----\n docs/RESEARCH_BACKGROUND.md                        |  38 +--\n docs/RESEARCH_PLAN.md                              |  67 ++---\n docs/RESEARCH_STATUS.md                            |  47 ++--\n docs/ROUND2_REPORT.md                              |  87 ------\n docs/ROUND3_REPORT.md                              |  60 -----\n docs/ROUND4_STEP1_REPORT.md                        |  90 -------\n docs/ROUND4_STEP2_REPORT.md                        | 149 -----------\n docs/ROUND4_STEP3_REPORT.md                        | 132 ---------\n docs/ROUND4_STEP4_REPORT.md                        | 123 ---------\n docs/TPMS_RESEARCH_REVIEW.md                       | 296 ++++++---------------\n docs/history/README.md                             |   5 +\n scripts/README.md                                  |   8 +-\n validation/README.md                               |   8 +-\n validation/large_compression_20261005_r6/README.md |   5 +\n 19 files changed, 262 insertions(+), 1112 deletions(-)\n"
+}
