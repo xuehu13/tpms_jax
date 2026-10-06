@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-06",
+  "archived_Windows_tool_directories": 31,
+  "archived_files_verified": 1341,
+  "moves": [
+    {
+      "old": "work/__pycache__",
+      "new": "history/completed_tools_20261006/__pycache__",
+      "file_count": 2
+    },
+    {
+      "old": "work/archive_20261002",
+      "new": "history/completed_tools_20261006/archive_20261002",
+      "file_count": 103
+    },
+    {
+      "old": "work/archive_20261003",
+      "new": "history/completed_tools_20261006/archive_20261003",
+      "file_count": 4
+    },
+    {
+      "old": "work/archive_20261003_documentation",
+      "new": "history/completed_tools_20261006/archive_20261003_documentation",
+      "file_count": 51
+    },
+    {
+      "old": "work/background_bridge_20261005",
+      "new": "history/completed_tools_20261006/background_bridge_20261005",
+      "file_count": 47
+    },
+    {
+      "old": "work/documentation_review_20261003",
+      "new": "history/completed_tools_20261006/documentation_review_20261003",
+      "file_count": 114
+    },
+    {
+      "old": "work/documentation_review_20261004",
+      "new": "history/completed_tools_20261006/documentation_review_20261004",
+      "file_count": 75
+    },
+    {
+      "old": "work/feasibility_review_20261005",
+      "new": "history/completed_tools_20261006/feasibility_review_20261005",
+      "file_count": 46
+    },
+    {
+      "old": "work/forward20_plan_20261005",
+      "new": "history/completed_tools_20261006/forward20_plan_20261005",
+      "file_count": 2
+    },
+    {
+      "old": "work/forward20_step1_20261005",
+      "new": "history/completed_tools_20261006/forward20_step1_20261005",
+      "file_count": 33
+    },
+    {
+      "old": "work/gradient_path_20261005",
+      "new": "history/completed_tools_20261006/gradient_path_20261005",
+      "file_count": 49
+    },
+    {
+      "old": "work/jax_improvement_20261006",
+      "new": "history/completed_tools_20261006/jax_improvement_20261006",
+      "file_count": 26
+    },
+    {
+      "old": "work/jax_route_revision_20261006",
+      "new": "history/completed_tools_20261006/jax_route_revision_20261006",
+      "file_count": 2
+    },
+    {
+      "old": "work/large_compression_review_20261005",
+      "new": "history/completed_tools_20261006/large_compression_review_20261005",
+      "file_count": 69
+    },
+    {
+      "old": "work/mechanics_trust_20261003_r4",
+      "new": "history/completed_tools_20261006/mechanics_trust_20261003_r4",
+      "file_count": 13
+    },
+    {
+      "old": "work/mechanics_trust_20261004_r4_step2",
+      "new": "history/completed_tools_20261006/mechanics_trust_20261004_r4_step2",
+      "file_count": 25
+    },
+    {
+      "old": "work/mechanics_trust_20261004_r4_step3",
+      "new": "history/completed_tools_20261006/mechanics_trust_20261004_r4_step3",
+      "file_count": 20
+    },
+    {
+      "old": "work/mechanics_trust_20261004_r4_step4",
+      "new": "history/completed_tools_20261006/mechanics_trust_20261004_r4_step4",
+      "file_count": 17
+    },
+    {
+      "old": "work/objective_path_20261006",
+      "new": "history/completed_tools_20261006/objective_path_20261006",
+      "file_count": 44
+    },
+    {
+      "old": "work/objective_virtual_20261006",
+      "new": "history/completed_tools_20261006/objective_virtual_20261006",
+      "file_count": 58
+    },
+    {
+      "old": "work/planning_round4_20261003",
+      "new": "history/completed_tools_20261006/planning_round4_20261003",
+      "file_count": 16
+    },
+    {
+      "old": "work/repository_cleanup_20261004",
+      "new": "history/completed_tools_20261006/repository_cleanup_20261004",
+      "file_count": 54
+    },
+    {
+      "old": "work/simulation_error_20261006",
+      "new": "history/completed_tools_20261006/simulation_error_20261006",
+      "file_count": 22
+    },
+    {
+      "old": "work/simulation_review_20261006",
+      "new": "history/completed_tools_20261006/simulation_review_20261006",
+      "file_count": 34
+    },
+    {
+      "old": "work/thin_target_20261004_r5",
+      "new": "history/completed_tools_20261006/thin_target_20261004_r5",
+      "file_count": 80
+    },
+    {
+      "old": "work/thin_target_step2_20261004",
+      "new": "history/completed_tools_20261006/thin_target_step2_20261004",
+      "file_count": 60
+    },
+    {
+      "old": "work/thin_target_step3_20261004",
+      "new": "history/completed_tools_20261006/thin_target_step3_20261004",
+      "file_count": 76
+    },
+    {
+      "old": "work/thin_target_step4_20261005",
+      "new": "history/completed_tools_20261006/thin_target_step4_20261005",
+      "file_count": 58
+    },
+    {
+      "old": "work/thin_tpms_feasibility_20261004",
+      "new": "history/completed_tools_20261006/thin_tpms_feasibility_20261004",
+      "file_count": 70
+    },
+    {
+      "old": "work/virtual_kernel_20261006",
+      "new": "history/completed_tools_20261006/virtual_kernel_20261006",
+      "file_count": 24
+    },
+    {
+      "old": "work/void_continuation_20261006",
+      "new": "history/completed_tools_20261006/void_continuation_20261006",
+      "file_count": 47
+    }
+  ],
+  "full_receipt_Windows": "work/research_synthesis_20261006/organization_receipt.json",
+  "full_receipt_sha256": "908381a56c98662d72b39b1baaa8e9a271a2cd4159a4baacb8c6926c55b4bdf8",
+  "scientific_data_moved": false,
+  "files_deleted": 0
+}

@@ -1,0 +1,51 @@
+{
+  "base_commit": "5b232e772ff601a9be5489c424826df41915ea0b",
+  "code_and_science_files_unchanged": 1082,
+  "latest_frozen_evidence_files_verified": 157,
+  "Windows_archived_tool_directories": 31,
+  "Windows_archived_files_verified": 1341,
+  "active_document_links_pass": true,
+  "diff_check_pass": true,
+  "source_code_changed": false,
+  "new_forward_paths": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "tests_rerun": false,
+  "tests_reason": "Documentation and moves only; byte hashes verify solver/test/scientific evidence unchanged.",
+  "current_next_action": "Step 3: fixed candidate, matched .45/.55 mm shell and JAX, reuse .50 mm.",
+  "gradient20_certified": false,
+  "before_after_char_counts": {
+    "START_HERE.md": {
+      "before": 888,
+      "after": 433
+    },
+    "PROJECT_OVERVIEW.md": {
+      "before": 1069,
+      "after": 927
+    },
+    "AGENTS.md": {
+      "before": 2356,
+      "after": 2182
+    },
+    "RESEARCH_BACKGROUND.md": {
+      "before": 1585,
+      "after": 1075
+    },
+    "RESEARCH_PLAN.md": {
+      "before": 2300,
+      "after": 2301
+    },
+    "FILE_MAP.md": {
+      "before": 8854,
+      "after": 2849
+    },
+    "TPMS_RESEARCH_REVIEW.md": {
+      "before": 11679,
+      "after": 7759
+    },
+    "PAPER_ROUTE.md": {
+      "before": 2702,
+      "after": 2476
+    }
+  }
+}

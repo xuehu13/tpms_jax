@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-06",
+  "local_reading": [
+    {
+      "source": "C:\\Users\\xuehu\\Desktop\\tpms优化\\JAX-FEM  A differentiable GPU-accelerated 3D finite element solver for automatic inverse design and mechanistic data science.pdf",
+      "sha256": "0c3942eb9867efebd19021ac08ecdea77211feedde59da205198c9f90abfed6c",
+      "pages_read": [
+        3,
+        4,
+        5
+      ],
+      "visual_page": 4,
+      "page_count": 15
+    },
+    {
+      "source": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+      "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0",
+      "pages_read": [
+        11,
+        12,
+        13
+      ],
+      "visual_page": 12,
+      "page_count": 18
+    },
+    {
+      "source": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Geometrically non-linear topology optimization via geometry projection.pdf",
+      "sha256": "90b2b02f62880b449ce17e11d4406c037540a97385d057c32986b51995e1c688",
+      "pages_read": [
+        5,
+        6,
+        7
+      ],
+      "visual_page": 5,
+      "page_count": 15
+    },
+    {
+      "source": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour.pdf",
+      "sha256": "e8db9aa5fcca053f9c2b5bca6cd1c0d7de23472e296ea50c5a9d04f5fc7c82f6",
+      "pages_read": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "visual_page": 5,
+      "page_count": 16
+    }
+  ],
+  "scope": "Four focused original method/comparison sections; not a complete review of 23 PDFs.",
+  "source_PDFs_edited": false,
+  "visual_pages_checked": true,
+  "primary_web_checked": [
+    "https://arxiv.org/abs/2212.00964",
+    "https://link.springer.com/article/10.1007/s00158-026-04332-8",
+    "https://arxiv.org/abs/2601.06469",
+    "https://docs.jax.dev/en/latest/notebooks/autodiff_cookbook.html",
+    "https://github.com/deepmodeling/jax-fem/tree/main/applications/explicit_dynamics"
+  ],
+  "not_fetched_this_round": [
+    "Wang2014 full text (403); reused past abstract and locally read Hu formula",
+    "Abaqus quasistatic energy webpage unavailable; reused existing reading",
+    "Qiu DOI web inaccessible; original local PDF read"
+  ]
+}
