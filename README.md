@@ -2,6 +2,6 @@
 
 依次读[研究背景](docs/RESEARCH_BACKGROUND.md)、[唯一主规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。想完整了解方法、数字及可行性，读[综合说明](docs/TPMS_RESEARCH_REVIEW.md)。
 
-当前第1/2步完成：薄壁20%前向慢路径对壳反力差6.85%，材料域修复与必要速率检查通过。第3步匹配0.45/0.55mm已完成，0.50mm复用；两点均通过原前向门槛，三个采样厚度最大反力/曲线/功差8.28%/7.48%/7.31%。 第4步已收口，下一阶段只建议diverse_04的一个匹配几何工况，尚未提交新作业。20%完整路径梯度仍未认证，训练后置；只执行主规划，不恢复历史报告的待办。
+上一轮四步已完成并冻结：同diverse_28中面三个采样厚度至20%，最大反力/曲线/功差8.28%/7.48%/7.31%。当前唯一近期四步为diverse_04单一几何匹配前向，均未执行，下一项仅第1步建立双方输入。20%新核完整路径梯度仍未认证，训练后置；新计划不会自动启动AD、其他构型或材料扫描。
 
 正式程序仅WSL `/home/xuehu/projects/tpms_jax`。Windows是阅读和历史，work仅放当前实验/整理收据；已完成工具归档，不作为运行入口。最新科学细节见[厚度执行报告](docs/THICKNESS_RANGE_PROGRESS.md)，核修复见[冻结执行报告](docs/VOID_CONTINUATION_PROGRESS.md)，论文阅读范围见[来源索引](docs/PAPER_ROUTE.md)。

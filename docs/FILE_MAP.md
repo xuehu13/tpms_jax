@@ -7,7 +7,7 @@
 | 文件 | 唯一用途；正式仓库对应 |
 | --- | --- |
 | RESEARCH_BACKGROUND.md | 长期问题与边界；docs同名 |
-| RESEARCH_PLAN.md | 四步已完成；唯一有限后续建议；docs同名 |
+| RESEARCH_PLAN.md | 新几何迁移唯一四步；当前第1步待执行，旧四步只作完成依据；docs同名 |
 | RESEARCH_STATUS.md | 完成/未完成事实；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 当前完整方法、数字解释、进度及可行性；docs同名 |
 | PAPER_ROUTE.md | 文献及实际阅读范围；docs同名 |
@@ -51,7 +51,7 @@ r12的`T0p004/`、`T0p008/`含完整输入、结果、最终field.npz及运行�
 
 ## Windows历史与整理回执
 
-所有已完成`work/<旧目录名>/`移动到`history/completed_tools_20261006/<旧目录名>/`，目录内部原字节保留，包括日志、摘录、transport.git和发布收据。旧脚本中的旧绝对路径仅作历史上下文，不能直接重跑；恢复定位先看`Windows history/completed_tools_20261006/README.md`（Windows归档索引）。完整逐文件映射/哈希在`work/research_synthesis_20261006/organization_receipt.json`，后续可将本轮收据整体归档。
+已完成`work/<旧目录名>/`移动到`history/completed_tools_20261006/<旧目录名>/`，目录内部原字节保留，包括日志、摘录、transport.git和发布收据。此次补归档`research_synthesis_20261006`、`thickness_range_20261006`、`forward_scope_20261006`三个目录，143个文件哈希一致。旧脚本中的旧绝对路径仅作历史上下文，不能直接重跑；恢复定位先看`Windows history/completed_tools_20261006/README.md`（Windows归档索引）。早期完整映射/哈希现位于`history/completed_tools_20261006/research_synthesis_20261006/organization_receipt.json`；此次映射/哈希在`work/geometry_plan_20261006/organization_receipt.json`。
 
 本次改写前活动说明在`history/before_research_synthesis_20261006/`。正式仓库备份/整理收据在`docs/history/research_synthesis_20261006/`。科学结果、用户论文、ODB和WSL运行源码没有移动或删除。
 
@@ -59,6 +59,8 @@ r12的`T0p004/`、`T0p008/`含完整输入、结果、最终field.npz及运行�
 
 ## 当前新增证据
 
-r13新原生作业：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040`及同名`t0p55`目录。ODB留该处；正式实验各厚度`abaqus/explicit_T0p040/`有提取和retention.json。各厚度`T0p004/`含场/完整结果、`analysis/`含27/125点/模式与comparison.json；一份规范INP和厚度单行差异可复现两侧输入。Windows `work/thickness_range_20261006`仅本轮一次性准备/报告/发布收据，不是FEM入口。
+r13原生作业：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040`及同名`t0p55`目录。ODB留该处；正式实验各厚度`abaqus/explicit_T0p040/`有提取和retention.json。各厚度`T0p004/`含场/完整结果、`analysis/`含27/125点/模式与comparison.json；一份规范INP和厚度单行差异可复现两侧输入。Windows `history/completed_tools_20261006/thickness_range_20261006`仅完成工具/发布收据，不是FEM入口。
 
-第4步收口仅更新现有综合说明/唯一规划，不新增重复长报告或PDF。WSL r14下`forward_scope.json`为范围，`geometry_inventory.json`为只读原中面筛选，`geometry_candidate.json`为单一diverse_04候选，`gradient_gate_proposal.json`仅未来方案，`decision.json`/输入与验证收据为依据。Windows `work/forward_scope_20261006`为本次一次性收口/发布工具，非活动FEM。用户原中面位置为`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/abaqus/ingredients/shell_mesh.inc`，未改。
+旧第4步收口未新增重复长报告或PDF。WSL r14下`forward_scope.json`为范围，`geometry_inventory.json`为只读原中面筛选，`geometry_candidate.json`为单一diverse_04候选，`gradient_gate_proposal.json`仅未来方案，`decision.json`/输入与验证收据为依据。Windows `history/completed_tools_20261006/forward_scope_20261006`为完成的收口/发布工具，非活动FEM。用户原中面位置为`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/abaqus/ingredients/shell_mesh.inc`，未改。
+
+当前`work/geometry_plan_20261006`只放这次状态/规划/归档与发布收据，不是实验或求解器；正式对应`docs/history/geometry_plan_20261006/receipt.json`。新几何实验将按唯一规划在执行时建独立日期r15目录，当前不存在新场、INP、ODB或计算结果。

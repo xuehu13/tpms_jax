@@ -1,0 +1,66 @@
+{
+  "base_commit": "3629cd76a5875fab3f5eee6067e50b6fb7b916e5",
+  "work_kind": "status_and_bounded_next_plan_only",
+  "active_plan": "docs/RESEARCH_PLAN.md",
+  "new_plan_steps": 4,
+  "new_plan_completed_steps": 0,
+  "next_only": "step 1 matched inputs; diverse_04 t.5mm",
+  "new_FEM_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "new_training_jobs": 0,
+  "changed_old_files": [
+    "AGENTS.md",
+    "README.md",
+    "docs/FILE_MAP.md",
+    "docs/RESEARCH_BACKGROUND.md",
+    "docs/RESEARCH_PLAN.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/TPMS_RESEARCH_REVIEW.md",
+    "scripts/README.md",
+    "validation/README.md"
+  ],
+  "old_tracked_files_verified_unchanged": 1264,
+  "kernel_and_frozen_tracked_scientific_bytes_unchanged": true,
+  "existing_source_and_original_input_hashes_verified": 21,
+  "archived_Windows_tool_directories": 3,
+  "archived_files_verified": 143,
+  "deleted_files": 0,
+  "Windows_archive_receipt_sha256": "8c7b3f406daeb11b0a6a7f4bd3c175c7abe2ea780c915af9e5376ae414512536",
+  "archive_mapping": [
+    {
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\research_synthesis_20261006",
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261006\\research_synthesis_20261006",
+      "name": "research_synthesis_20261006",
+      "file_count": 56
+    },
+    {
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\thickness_range_20261006",
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261006\\thickness_range_20261006",
+      "name": "thickness_range_20261006",
+      "file_count": 50
+    },
+    {
+      "original": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\forward_scope_20261006",
+      "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261006\\forward_scope_20261006",
+      "name": "forward_scope_20261006",
+      "file_count": 37
+    }
+  ],
+  "local_markdown_links_checked": 158,
+  "broken_links": [],
+  "git_diff_check": "pass",
+  "new_geometry_curve_gate": "Both legacy RMS/2.258914N and RMS/new matched shell loading peak <=10%; predeclared for new geometry only, old results untouched",
+  "gradient_status": "r14 bounded future proposal only; full repaired-kernel 20% path unverified",
+  "documentation_sha256": {
+    "AGENTS.md": "9977c0f7f176674c447852c85bafb17f007b6cc8d6fb5f5a9ab5dd5291f2a0b2",
+    "README.md": "6cd5a95f3e7406b1a188d558eb9f1ca01ae591cec02dfe4004586d7a1f70dff7",
+    "docs/FILE_MAP.md": "74d6eb975e56e21b46745768da5d1d982edd7314b54937b4d07df9fc1846101a",
+    "docs/RESEARCH_BACKGROUND.md": "e6bb6a0b3a7c8cd07cb83d3ca8245f841c0df5b62883763f74eb9ed4f515e177",
+    "docs/RESEARCH_PLAN.md": "401d5b1bc215022cc43c8680c65411d29158ee12847154218b21702446257578",
+    "docs/RESEARCH_STATUS.md": "2f6ce4652c932448f18b4830e3d4b135092e21cecac47dfaa6a0e5c358f2ef5d",
+    "docs/TPMS_RESEARCH_REVIEW.md": "d6f898babb5008594e5c10aab84a57839f35606c9fa921881fc0cb5b4b253556",
+    "scripts/README.md": "a84bab63269cd77e309047ba4d5641b648e4bf5cc39f385beb6fa1047db9b7a3",
+    "validation/README.md": "42417c586896a406e3452814ec91959e3fdbf59822846139b4e23b87580cfca8"
+  }
+}

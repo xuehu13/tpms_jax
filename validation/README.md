@@ -1,6 +1,6 @@
 # 验证证据索引
 
-当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。四步已完成，r13匹配厚度、r14只读范围收口。下一阶段仅看[主规划](../docs/RESEARCH_PLAN.md)的diverse_04单一几何建议，尚未提交新作业。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
+当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。旧四步已完成，r13匹配厚度、r14只读范围收口。新的唯一近期四步围绕diverse_04单一几何，均待执行，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第1步输入匹配，尚无新实验或作业。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
 
 
 方法、符号和结果解释见 [综合报告](../docs/TPMS_RESEARCH_REVIEW.md)，当前事实见 [状态](../docs/RESEARCH_STATUS.md)，执行只看 [主规划](../docs/RESEARCH_PLAN.md)。原四轮均已按判据/停止条件收口；子目录保留冻结记录，其中历史“下一步”不是自动待办。
