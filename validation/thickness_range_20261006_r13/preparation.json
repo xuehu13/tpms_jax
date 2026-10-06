@@ -1,0 +1,22 @@
+{
+  "t0p45": {
+    "native_job_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040",
+    "input_sha256": "c3cf12992362fe4528127ec7f43de23240c1123183e5d9402e8d9d63cfa33817",
+    "deck_sha256": "de9ed352617be524516c3d1f36ba6acb7e749cf97f4da1c244f42003c532fdf9",
+    "thickness_mm": 0.45,
+    "only_deck_change": "0.5, 5 -> 0.45, 5",
+    "source_mesh_unchanged": true,
+    "PBC_unchanged": true,
+    "material_unchanged": true
+  },
+  "t0p55": {
+    "native_job_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p55_explicit_T0p040",
+    "input_sha256": "3185aa8be02b37a4908402bf338c2c188d5ffdcf1db19b37cb4717d5bae3d6a2",
+    "deck_sha256": "af2d0e7511d7dedf26ab9442ee81c2213646ff22566fc0d988c1f6c1dcff545c",
+    "thickness_mm": 0.55,
+    "only_deck_change": "0.5, 5 -> 0.55, 5",
+    "source_mesh_unchanged": true,
+    "PBC_unchanged": true,
+    "material_unchanged": true
+  }
+}

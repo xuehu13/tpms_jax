@@ -1,0 +1,6 @@
+{
+  "initial_preparation_issue": "The existing native deck uses CRLF. Initial strict byte match stopped before generating a deck or submitting jobs; corrected to retain source line endings.",
+  "scientific_constants_changed": false,
+  "deck_mutation_verified": "Only the thickness line; inverse substitution recovers original bytes.",
+  "initial_script_sha256": "77709be5318d1059cdd98eda5d5e0bd505948712707da120b97ec047a4e59935"
+}

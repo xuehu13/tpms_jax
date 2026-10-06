@@ -1,0 +1,87 @@
+{
+  "thickness_mm": 0.45,
+  "candidate_completed_20": true,
+  "changed_factor": "Physical wall thickness in both models",
+  "last_accepted_compression": 0.2,
+  "curve_RMS_over_Standard_peak": 0.03554596740810805,
+  "curve_RMS_denominator_N": 2.2589142322540283,
+  "maximum_absolute_curve_difference_N": 0.10416535957502804,
+  "common_range": [
+    0.001,
+    0.2
+  ],
+  "rejected_blocks": 0,
+  "body_seconds": 642.3245572679443,
+  "minimum_monitored_actual_J": -1.5756333256285895,
+  "minimum_monitored_required_positive_J": 0.5006683461048312,
+  "monitored_invalid_material_points": 0,
+  "reference_quality_certified": false,
+  "shell_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": true,
+    "terminal_KE_below_5pct": true,
+    "artificial_energy_le_5pct_work": true
+  },
+  "shell_energy_drift": 0.011744061125489955,
+  "shell_loading_fraction_KE_below_5pct": 1.0,
+  "physical_replacement_certified": false,
+  "gradient20_certified": false,
+  "rate_check_this_thickness_completed": false,
+  "sampling_is_everywhere_certificate": false,
+  "hold_mean_Fz_N": -1.4798991565029254,
+  "shell_hold_mean_Fz_N": -1.3857340035231218,
+  "terminal_force_difference_vs_shell": 0.06795326717854655,
+  "hold_min_max_Fz_N": [
+    -1.4830349633569793,
+    -1.4766397582418016
+  ],
+  "input_work_N_mm": 2.9611299393571144,
+  "shell_input_work_N_mm": 2.8084840480517625,
+  "input_work_difference_vs_shell": 0.0543517031585925,
+  "energy_work_gap": 8.492605947692315e-05,
+  "loading_time_fraction_KE_below_5pct": 0.9578947368421071,
+  "terminal_KE_over_U": 9.132866272319707e-07,
+  "terminal_energy_N_mm": 2.9613787118668875,
+  "peak_magnitude_N": 1.8866949062888758,
+  "peak_compression": 0.09349317632830366,
+  "shell_peak_magnitude_N": 1.789782166481018,
+  "shell_peak_compression": 0.09647756814956665,
+  "peak_magnitude_difference": 0.05414778492200689,
+  "initial_dt_seconds": 2.693272938728041e-07,
+  "terminal_dt_seconds": 2.693272938728041e-07,
+  "peak_RSS_GiB": 4.5745086669921875,
+  "response_target_only_pass": true,
+  "response_at_compressions": [
+    {
+      "compression": 0.01,
+      "candidate_force_magnitude_N": 0.3448629411131511,
+      "shell_force_magnitude_N": 0.3231540866425676
+    },
+    {
+      "compression": 0.05,
+      "candidate_force_magnitude_N": 1.4446334396305058,
+      "shell_force_magnitude_N": 1.3723850071383208
+    },
+    {
+      "compression": 0.1,
+      "candidate_force_magnitude_N": 1.8824186438015242,
+      "shell_force_magnitude_N": 1.7883393161264396
+    },
+    {
+      "compression": 0.15,
+      "candidate_force_magnitude_N": 1.6928471523437378,
+      "shell_force_magnitude_N": 1.6072622009686643
+    },
+    {
+      "compression": 0.2,
+      "candidate_force_magnitude_N": 1.4833306183475512,
+      "shell_force_magnitude_N": 1.3857314586639404
+    }
+  ]
+}

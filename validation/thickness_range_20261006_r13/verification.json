@@ -1,0 +1,22 @@
+{
+  "old_tracked_files_preserved": 1200,
+  "solver_source_unchanged": true,
+  "prior_evidence_unchanged": true,
+  "matched_thickness_inputs_verified": true,
+  "canonical_shell_deck_change_only": true,
+  "new_complete_JAX_paths": 2,
+  "new_complete_Abaqus_jobs": 2,
+  "new_full_AD_jobs": 0,
+  "link_check_passed": true,
+  "helper_syntax_passed": true,
+  "response_and_domain_gates_reported_separately": true,
+  "core_tests_reused": "No solver changes; r12 45 targeted checks unchanged.",
+  "per_case_pass": {
+    "t0p45": true,
+    "t0p55": true
+  },
+  "strict_shell_quality_pass": {
+    "t0p45": false,
+    "t0p55": false
+  }
+}

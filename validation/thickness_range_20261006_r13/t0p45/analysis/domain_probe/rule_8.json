@@ -1,0 +1,57 @@
+{
+  "points_per_cell": 125,
+  "Vf": 0.1365003843373985,
+  "raw_J_min": -3.080941070962444,
+  "raw_nonpositive_points": 14005,
+  "raw_nonpositive_cells": 2186,
+  "raw_nonpositive_phi_max": 0.004497226309625826,
+  "required_positive_J_min": 0.1646214481050578,
+  "invalid_material_points": 0,
+  "candidate_energy_N_mm": 3.2820118063399457,
+  "candidate_internal_Fz_N": -1.5370560897796754,
+  "continued_NH_points": 15,
+  "domain_bins": {
+    "deep_void_le_0p001": {
+      "points": 3343096,
+      "raw_J_min": -3.080941070962444,
+      "raw_nonpositive_points": 13992,
+      "reference_volume_mm3": 816.3043725704449,
+      "candidate_energy_N_mm": 0.10389470743849517,
+      "candidate_internal_Fz_N": -0.0260440589852135
+    },
+    "blend_lt_0p01": {
+      "points": 63518,
+      "raw_J_min": -0.06369685929648118,
+      "raw_nonpositive_points": 13,
+      "reference_volume_mm3": 15.414727789472156,
+      "candidate_energy_N_mm": 0.010199067669601894,
+      "candidate_internal_Fz_N": -0.0011188426006591297
+    },
+    "NH_0p01_to_0p05": {
+      "points": 46349,
+      "raw_J_min": 0.1646214481050578,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 11.297863238308029,
+      "candidate_energy_N_mm": 0.03642090522222356,
+      "candidate_internal_Fz_N": -0.005688759127908758
+    },
+    "transition_0p05_to_0p95": {
+      "points": 166693,
+      "raw_J_min": 0.3804103416662955,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 40.46538925222498,
+      "candidate_energy_N_mm": 0.972777430823469,
+      "candidate_internal_Fz_N": -0.259621217856602
+    },
+    "solid_ge_0p95": {
+      "points": 476344,
+      "raw_J_min": 0.7822203272877444,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 116.51764714955056,
+      "candidate_energy_N_mm": 2.1587196951861563,
+      "candidate_internal_Fz_N": -1.244583211209292
+    }
+  },
+  "candidate_full_energy_defined": true,
+  "new_solve": false
+}

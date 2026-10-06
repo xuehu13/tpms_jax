@@ -1,0 +1,54 @@
+{
+  "files": {
+    "extract_thin_explicit.py": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/extract_thin_explicit.py",
+      "bytes": 6023,
+      "sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb"
+    },
+    "input.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/input.json",
+      "bytes": 3012,
+      "sha256": "c3cf12992362fe4528127ec7f43de23240c1123183e5d9402e8d9d63cfa33817"
+    },
+    "shell.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/shell.json",
+      "bytes": 396276,
+      "sha256": "cf9f3517f48de7a3fb50d584df6c4ee14835e50bab9144f06e2d8b1a3784b1c9"
+    },
+    "shell_field.npz": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/shell_field.npz",
+      "bytes": 373541,
+      "sha256": "bb96b0fd56089d23931d6d0fe7c3a9160fde296fb7cf287d0852db46d6098b94"
+    },
+    "thin_shell.dat": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/thin_shell.dat",
+      "bytes": 6256,
+      "sha256": "96164db55886cfeff64173343931a5405a11c1fc2f0a6a0ad808ee3eb7439ae8"
+    },
+    "thin_shell.inp": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/thin_shell.inp",
+      "bytes": 1154815,
+      "sha256": "de9ed352617be524516c3d1f36ba6acb7e749cf97f4da1c244f42003c532fdf9"
+    },
+    "thin_shell.msg": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/thin_shell.msg",
+      "bytes": 548,
+      "sha256": "6bf740dd3cd20e1e682e73bc5c445dfe8cd0858e70045abddd972e9b03b35aea"
+    },
+    "thin_shell.odb": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/thin_shell.odb",
+      "bytes": 94481364,
+      "sha256": "dce615ca2318674b9f9519b249bd962dc2518092cee399b959def9159d1bea26"
+    },
+    "thin_shell.sta": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040/thin_shell.sta",
+      "bytes": 10866,
+      "sha256": "68bdfd8c9d587b4279e685c1a53a5fbe0b5c5d5e849b8249e3be4896433452c5"
+    }
+  },
+  "native_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040",
+  "ODB_retained_native": true,
+  "command": "abaqus job=thin_shell input=thin_shell.inp cpus=4 double=both interactive",
+  "last_reported_solver_elapsed_HHMMSS": "00:16:29",
+  "physical_change_only": "shell section thickness; unchanged nodes/elements, XYZ equations, NH, density, loading and hold"
+}

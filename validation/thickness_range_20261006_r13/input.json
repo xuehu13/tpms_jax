@@ -1,0 +1,64 @@
+{
+  "research_question": "Does the frozen candidate retain its response agreement at adjacent physical wall thicknesses?",
+  "main_plan_step": 3,
+  "new_thicknesses_mm": [
+    0.45,
+    0.55
+  ],
+  "reuse_thickness_mm": 0.5,
+  "baseline_commit": "dd66775a58fe329ae9f0d11ee2b333d08362093f",
+  "fixed": {
+    "midsurface": "diverse_28",
+    "L_mm": 10.0,
+    "XYZ_periodic": true,
+    "lateral_macro_strain": 0.0,
+    "solid": "compressible Neo-Hookean",
+    "E_MPa": 10.0,
+    "nu": 0.3,
+    "eta": 0.0001,
+    "interface_10_90_mm": 0.05,
+    "JAX": "HEX27 N32 / 27 Gauss / HRZ / existing explicit",
+    "candidate": "objective_void with frozen occupancy-dependent C2 continuation",
+    "phi_bounds": [
+      0.001,
+      0.01
+    ],
+    "maximum_continuation_J": 0.1,
+    "JAX_load_seconds": 0.004,
+    "shell_load_seconds": 0.04,
+    "hold_fraction": 0.1
+  },
+  "gates": {
+    "hold_force_difference": 0.1,
+    "curve_RMS_over_fixed_Standard_peak": 0.1,
+    "fixed_curve_denominator_N": 2.2589142322540283,
+    "input_work_difference": 0.1,
+    "JAX_energy_work_gap": 0.01,
+    "terminal_KE_over_U": 0.05,
+    "loading_fraction_KE_below_5pct": 0.95,
+    "shell_global_energy_drift": 0.01,
+    "required_actual_J": "strictly positive for phi>=.01",
+    "final_material_probe_points_per_cell": [
+      27,
+      125
+    ]
+  },
+  "notes": [
+    "Thickness changes occupancy AND HRZ mass and shell section simultaneously.",
+    "Different loading times are the established quasistatic choices, not identical dynamic histories.",
+    "No full AD, training, contact, plasticity, mesh or numerical parameter scan.",
+    "Thickness range is not a local derivative certificate; shell is a conditional reference."
+  ],
+  "reused_baseline": "validation/void_continuation_20261006_r12",
+  "solver_source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "Gauss_cache_sha256": "5594df90ac1620a7225b52d974ec5b39a72746a125eb5fd9ed45b101a1d7f8d9",
+  "original_shell_deck_sha256": "3fd8b87d2f097aade4a68ee75e1d3f3016833da4508bf1b5028da38ebf128e86",
+  "original_shell_input_sha256": "6aed0e36622e05cb0369c09b5d62105cab574d4315d3f825e5fc9890e580bb27"
+}

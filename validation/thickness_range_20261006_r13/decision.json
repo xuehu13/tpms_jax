@@ -1,0 +1,26 @@
+{
+  "main_plan_step": 3,
+  "completed_matched_thicknesses_mm": [
+    0.45,
+    0.55
+  ],
+  "reused_thickness_mm": 0.5,
+  "fixed_candidate": "objective_void+C2, HEX27 N32/27 points, HRZ, XYZ periodic zero lateral strain",
+  "all_new_cases_meet_scoped_engineering_targets": true,
+  "maximum_hold_force_difference": 0.08278280478076483,
+  "maximum_curve_RMS_over_fixed_Standard_peak": 0.07478002717450971,
+  "maximum_work_difference": 0.0731338667202428,
+  "all_new_shell_quality_gates_pass": false,
+  "new_JAX_paths": 2,
+  "new_Abaqus_jobs": 2,
+  "new_full_AD_jobs": 0,
+  "new_training_jobs": 0,
+  "solver_changed": false,
+  "numerical_constants_retuned": false,
+  "thickness_range_is_derivative_certificate": false,
+  "gradient20_certified": false,
+  "scope": "Same diverse_28 midsurface, t=.45/.50/.55mm, L10mm, NH E10 nu.3, no contact/plasticity, XYZ 0-20%",
+  "actual_virtual_folds_retained": true,
+  "everywhere_in_time_domain_certified": false,
+  "next_action": "Main plan step 4: consolidate scope and choose a bounded next test; no broad sweep or training."
+}

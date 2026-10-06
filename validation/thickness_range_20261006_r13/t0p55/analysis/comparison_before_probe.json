@@ -1,0 +1,87 @@
+{
+  "thickness_mm": 0.55,
+  "candidate_completed_20": true,
+  "changed_factor": "Physical wall thickness in both models",
+  "last_accepted_compression": 0.2,
+  "curve_RMS_over_Standard_peak": 0.07478002717450971,
+  "curve_RMS_denominator_N": 2.2589142322540283,
+  "maximum_absolute_curve_difference_N": 0.2114890560015117,
+  "common_range": [
+    0.001,
+    0.2
+  ],
+  "rejected_blocks": 0,
+  "body_seconds": 644.0833797639934,
+  "minimum_monitored_actual_J": -2.955760812454581,
+  "minimum_monitored_required_positive_J": 0.3361723047979359,
+  "monitored_invalid_material_points": 0,
+  "reference_quality_certified": false,
+  "shell_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": true,
+    "terminal_KE_below_5pct": true,
+    "artificial_energy_le_5pct_work": true
+  },
+  "shell_energy_drift": 0.014824834111954274,
+  "shell_loading_fraction_KE_below_5pct": 1.0,
+  "physical_replacement_certified": false,
+  "gradient20_certified": false,
+  "rate_check_this_thickness_completed": false,
+  "sampling_is_everywhere_certificate": false,
+  "hold_mean_Fz_N": -2.5431358682532257,
+  "shell_hold_mean_Fz_N": -2.34870359690293,
+  "terminal_force_difference_vs_shell": 0.08278280478076483,
+  "hold_min_max_Fz_N": [
+    -2.5478447866208382,
+    -2.5396730442976074
+  ],
+  "input_work_N_mm": 4.604560089338692,
+  "shell_input_work_N_mm": 4.29076020442011,
+  "input_work_difference_vs_shell": 0.0731338667202428,
+  "energy_work_gap": 7.638689630415752e-05,
+  "loading_time_fraction_KE_below_5pct": 0.9789473684210536,
+  "terminal_KE_over_U": 3.102575294663251e-07,
+  "terminal_energy_N_mm": 4.604910388684642,
+  "peak_magnitude_N": 2.960063249947605,
+  "peak_compression": 0.11603230333416191,
+  "shell_peak_magnitude_N": 2.751532793045044,
+  "shell_peak_compression": 0.1145664095878601,
+  "peak_magnitude_difference": 0.07578701494296447,
+  "initial_dt_seconds": 2.693272938728041e-07,
+  "terminal_dt_seconds": 2.693272938728041e-07,
+  "peak_RSS_GiB": 4.584148406982422,
+  "response_target_only_pass": true,
+  "response_at_compressions": [
+    {
+      "compression": 0.01,
+      "candidate_force_magnitude_N": 0.44683816494240247,
+      "shell_force_magnitude_N": 0.416081617824541
+    },
+    {
+      "compression": 0.05,
+      "candidate_force_magnitude_N": 1.9642261185452492,
+      "shell_force_magnitude_N": 1.8509072154704467
+    },
+    {
+      "compression": 0.1,
+      "candidate_force_magnitude_N": 2.9275340823955696,
+      "shell_force_magnitude_N": 2.7179542569382997
+    },
+    {
+      "compression": 0.15,
+      "candidate_force_magnitude_N": 2.8356682087600062,
+      "shell_force_magnitude_N": 2.636639676730789
+    },
+    {
+      "compression": 0.2,
+      "candidate_force_magnitude_N": 2.545872899742221,
+      "shell_force_magnitude_N": 2.348700761795044
+    }
+  ]
+}

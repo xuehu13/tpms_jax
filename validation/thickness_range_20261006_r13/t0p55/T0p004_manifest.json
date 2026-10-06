@@ -1,0 +1,45 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "scripts/thin_target_explicit.py",
+    "target",
+    "--material-model",
+    "objective_void",
+    "--element-degree",
+    "2",
+    "--cells",
+    "32",
+    "--quadrature-order",
+    "4",
+    "--gauss-field",
+    "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/quadratic_candidate/gauss_field.npz",
+    "--thickness-mm",
+    "0.55",
+    "--adaptive",
+    "--load-time",
+    ".004",
+    "--force-batch-cells",
+    "2048",
+    "--output",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p55/T0p004"
+  ],
+  "input_sha256": {
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/input.json": "bfb2ee07191bfd50a0b6bff7937428f330cd99f5d7db2faac18702c6bcd010a1",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/preparation.json": "6eccc7d6e9c3cf39f584c4f41f683673a8da1f843b5aeaac422f20789eae3b34",
+    "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/quadratic_candidate/gauss_field.npz": "5594df90ac1620a7225b52d974ec5b39a72746a125eb5fd9ed45b101a1d7f8d9"
+  },
+  "source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "environment_override": {
+    "JAX_PLATFORMS": "cuda"
+  },
+  "new_full_AD_jobs": 0,
+  "role": "Matched physical thickness, frozen candidate; thickness changes occupancy and mass",
+  "launcher_sha256": "b7dc3e6beef0aeda26790447eda33f0903284597d7459d16f654e2335f28a087"
+}

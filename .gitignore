@@ -62,3 +62,9 @@ validation/large_compression_20261005_r6/**/*.resource.json
 validation/large_compression_20261005_r6/**/jax.progress.json
 validation/large_compression_20261005_r6/**/*.inp
 !validation/large_compression_20261005_r6/abaqus/explicit_T0p020/thin_shell.inp
+
+# Matched physical thickness: publish one canonical deck; complete pair stays local.
+validation/thickness_range_20261006_r13/**/*.inp
+!validation/thickness_range_20261006_r13/t0p45/abaqus/explicit_T0p040/thin_shell.inp
+validation/thickness_range_20261006_r13/**/progress.json
+validation/thickness_range_20261006_r13/**/extract_thin_explicit.py

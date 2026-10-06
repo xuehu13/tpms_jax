@@ -11,6 +11,7 @@ Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_befor
 
 | 目录 | 已完成范围 |
 | --- | --- |
+| [thickness_range_20261006_r13](thickness_range_20261006_r13/README.md) | 固定C²候选，0.45/0.55mm匹配壳与完整20%，0.50mm复用；反力/曲线/功、峰值/模式与27/125点见decision |
 | [void_continuation_20261006_r12](void_continuation_20261006_r12/README.md) | C²混合虚域、45项核/回归、原6点局部AD/FD、快慢20%及新场125点；完整范围判断看decision |
 | [objective_path_20261006_r11](objective_path_20261006_r11/README.md) | 一次20%客观虚域路径、35项检查；6.81%反力差，125点6个混合尾部材料域失败，未采纳默认 |
 | [objective_virtual_20261006_r10](objective_virtual_20261006_r10/README.md) | 客观虚域纯核与原场验证通过；28项检查，无新路径/AD，下一项只看主规划 |
@@ -45,4 +46,4 @@ Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_befor
 
 ## 当前任务
 
-当前第1/2步完成，第3步固定C²候选做匹配厚度，任务只看[唯一规划](../docs/RESEARCH_PLAN.md)。前向与完整设计梯度分别评价，原20%AD符号失败保留；不从上表冻结范围恢复扫描、接触或训练。本次仅阅读/规范化，没有新增科学作业。
+当前第1/2/3步已执行，第4步收口范围/未来关口，任务只看[唯一规划](../docs/RESEARCH_PLAN.md)。前向与完整设计梯度分别评价，原20%AD符号失败保留；不从上表冻结范围恢复扫描、接触或训练。本次新增两条JAX前向及两个匹配壳Explicit，无完整AD/训练；详见r13。

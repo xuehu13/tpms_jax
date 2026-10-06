@@ -1,6 +1,6 @@
 # 程序入口与范围
 
-唯一维护FEM在正式根目录。本页为现有功能/历史入口索引，不生成待办。当前C²候选的代表20%前向/材料域/速率通过，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第3步匹配厚度；方法、数字和可行性看[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。默认NH保持，研究候选明确选择objective_void，完整20%AD/训练后置。
+唯一维护FEM在正式根目录。本页为现有功能/历史入口索引，不生成待办。当前C²候选的代表20%前向/材料域/速率通过，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第4步范围收口；方法、数字和可行性看[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。默认NH保持，研究候选明确选择objective_void，完整20%AD/训练后置。
 
 | 入口 | 用途/边界 |
 | --- | --- |
@@ -36,3 +36,5 @@
 代表新保存场27/125点材料域已检查，具体门槛看报告；有限采样不证明处处有效。慢路径只将load-time改为0.008，其他物理输入/算法相同。大场留本机；省略material-model即默认原NH。旧64点命令和资源处理见冻结[JAX积分报告](../docs/JAX_INTEGRATION_PROGRESS.md)，不作为当前活动任务。
 
 旧前向/梯度/诊断分别见[前向报告](../docs/FORWARD20_PROGRESS_REPORT.md)、[梯度报告](../docs/GRADIENT20_PROGRESS_REPORT.md)、[冻结定位](../docs/SIMULATION_ERROR_PROGRESS.md)；旧建议不生成新任务。
+
+匹配厚度r13沿用同一入口，在上列代表命令加`--thickness-mm 0.45`或`0.55`并使用全新输出。占据和HRZ质量随真实厚度计算；不能改厚度后仍对原0.50mm壳。新核/时间算法未改，r13原证据不覆盖；读取详细口径见[厚度报告](../docs/THICKNESS_RANGE_PROGRESS.md)。

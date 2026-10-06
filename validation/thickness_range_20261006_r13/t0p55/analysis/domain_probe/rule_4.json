@@ -1,0 +1,59 @@
+{
+  "points_per_cell": 27,
+  "Vf": 0.16696143432212113,
+  "raw_J_min": -2.953803430021649,
+  "raw_nonpositive_points": 3535,
+  "raw_nonpositive_cells": 1428,
+  "raw_nonpositive_phi_max": 5.0243236318071455e-06,
+  "required_positive_J_min": 0.3364818704324383,
+  "invalid_material_points": 0,
+  "candidate_energy_N_mm": 4.604910388684646,
+  "candidate_internal_Fz_N": -2.5475477986606534,
+  "continued_NH_points": 0,
+  "domain_bins": {
+    "deep_void_le_0p001": {
+      "points": 695514,
+      "raw_J_min": -2.953803430021649,
+      "raw_nonpositive_points": 3535,
+      "reference_volume_mm3": 786.2439253693248,
+      "candidate_energy_N_mm": 0.10688893920180995,
+      "candidate_internal_Fz_N": -0.025684851351646106
+    },
+    "blend_lt_0p01": {
+      "points": 14517,
+      "raw_J_min": 0.20139091368759612,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 16.12152287989485,
+      "candidate_energy_N_mm": 0.014893406511557718,
+      "candidate_internal_Fz_N": -0.0023638096516066225
+    },
+    "NH_0p01_to_0p05": {
+      "points": 9623,
+      "raw_J_min": 0.3364818704324383,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 11.110789818364726,
+      "candidate_energy_N_mm": 0.04282625858940546,
+      "candidate_internal_Fz_N": -0.009159399238918167
+    },
+    "transition_0p05_to_0p95": {
+      "points": 35505,
+      "raw_J_min": 0.6385866311827944,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 40.271649144804464,
+      "candidate_energy_N_mm": 0.9499787082357986,
+      "candidate_internal_Fz_N": -0.31038185427840265
+    },
+    "solid_ge_0p95": {
+      "points": 129577,
+      "raw_J_min": 0.8304982721527352,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 146.25211278761023,
+      "candidate_energy_N_mm": 3.4903230761460753,
+      "candidate_internal_Fz_N": -2.19995788414008
+    }
+  },
+  "candidate_full_energy_defined": true,
+  "energy_recovery_relative_error": 6.661338147750939e-16,
+  "internal_force_recovery_relative_error": 1.6209256159527285e-14,
+  "new_solve": false
+}

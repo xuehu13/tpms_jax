@@ -1,0 +1,62 @@
+{
+  "input_sha256": {
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/T0p004/result.json": "cd0aa02aaaf57e3854ac2dc782e6fac666c6d5252c4dba542d6108bc16c9fd30",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/T0p004/field.npz": "7f5b786ae12c068d4d817212712485dcd16507c489d3867ad082b440d9542666",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/T0p004/input.json": "ed6e93219d77f288fef215d35513649efa27b979daca797ebbd57399f382d41b",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/abaqus/explicit_T0p040/shell.json": "cf9f3517f48de7a3fb50d584df6c4ee14835e50bab9144f06e2d8b1a3784b1c9",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/abaqus/explicit_T0p040/input.json": "c3cf12992362fe4528127ec7f43de23240c1123183e5d9402e8d9d63cfa33817",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/abaqus/explicit_T0p040/shell_field.npz": "bb96b0fd56089d23931d6d0fe7c3a9160fde296fb7cf287d0852db46d6098b94",
+    "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/quadratic_candidate/gauss_field.npz": "5594df90ac1620a7225b52d974ec5b39a72746a125eb5fd9ed45b101a1d7f8d9",
+    "/home/xuehu/projects/tpms_jax/validation/thin_target_20261004_r5/gauss_field.npz": "b1f1bf51585074f6bb01da4875a697c1b8ff3c8f350885a4cf529414b6759f49",
+    "/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12/experiment.py": "8ebca672d1e9e176c942ddeddaf807cabdce2c295493d551cd4cbb3e99bb6f4a",
+    "/home/xuehu/projects/tpms_jax/hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "/home/xuehu/projects/tpms_jax/scripts/thin_target_explicit.py": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+    "/home/xuehu/projects/tpms_jax/surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "/home/xuehu/projects/tpms_jax/pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "analyzer_sha256": "97f36e5304a43fc3bb0e3b62546f7f7e98ad35d8fdda88fbea071262452a161e",
+  "reused_evaluator_sha256": "8ebca672d1e9e176c942ddeddaf807cabdce2c295493d551cd4cbb3e99bb6f4a",
+  "explicit_evaluator_adaptations": [
+    [
+      "oldphi=f['rho'];oldqp=",
+      "oldphi=expit((T/(2*L)-f['distance'])/(.05/(2*np.log(9))/L));oldqp="
+    ],
+    [
+      "    with np.load(Q/'T0p004_compact/field.npz') as f:ow=fluct(f['q'])\n",
+      ""
+    ],
+    [
+      "for name,ref in [('old_fast',ow),('shell',sw)]:",
+      "for name,ref in [('shell',sw)]:"
+    ]
+  ],
+  "environment": {
+    "python": "3.13.15 | packaged by conda-forge | (main, Sep  2 2026, 22:01:58) [GCC 15.3.0]",
+    "numpy": "2.4.6",
+    "jax": "0.11.2",
+    "basix": "0.10.0"
+  },
+  "matched_thickness_mm": 0.45,
+  "fixed_input_keys": [
+    "N",
+    "cell_size_mm",
+    "E_MPa",
+    "nu",
+    "eta",
+    "interface_10_90_mm",
+    "mechanical_periodic_axes",
+    "load_time_seconds",
+    "Gauss_field_sha256",
+    "element_type",
+    "element_degree",
+    "Gauss_points_per_cell",
+    "mass_lumping",
+    "solid_density_tonne_per_mm3",
+    "void_mass_floor",
+    "source_sha256",
+    "experiment_sha256"
+  ],
+  "time_grid_note": "Each physical thickness estimates its own stable dt.",
+  "new_FEM_implementations": 0,
+  "new_full_AD_jobs": 0
+}
