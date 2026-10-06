@@ -1,0 +1,29 @@
+{
+  "returncode": 0,
+  "seconds": 2.334345299983397,
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "python",
+    "extract_thin_explicit.py",
+    "thin_shell.odb",
+    "input.json",
+    "shell.json"
+  ],
+  "preexisting_files_sha256": {
+    "input.json": "cc750a9c8e1c7847709b4075b7330690f4d7a63a1929131fb1cb55f5db191efe",
+    "thin_shell.inp": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7",
+    "thin_shell.odb": "0072f059d4c22302e4110c2fb82c919f55b25377bb4615094acb1af46f0756f4",
+    "extract_thin_explicit.py": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+    "launch_manifest.json": "af8cd68ee35c833dc5b92a3454f74731e381def0afcdc941a4c19a8fe2f978b5",
+    "launch_receipt.json": "bbfbe2ed2e82e7b7f0ede7a725fb1d7de724fb9ab1369e286adeecc3f2d557dc",
+    "extraction.log": "ebce7d7ddcdf3154f1882ea7c110055eddbf486696195769b5550958fc80a632"
+  },
+  "preexisting_files_unchanged": true,
+  "new_Abaqus_jobs": 0,
+  "original_extraction_failure": "Launcher omitted input.json; Abaqus wrapper returned 0 despite argparse error. Missing JSON and original log identify the failure.",
+  "shell_json_exists": true,
+  "launcher_sha256": "69e5ccaff4c54930286d60b7353a9960fc83efaa181ee46e870949652b65e6db"
+}

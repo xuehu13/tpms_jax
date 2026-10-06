@@ -1,0 +1,124 @@
+{
+  "native_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040",
+  "files": {
+    "extract_thin_explicit.py": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/extract_thin_explicit.py",
+      "bytes": 6023,
+      "sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb"
+    },
+    "extraction.log": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/extraction.log",
+      "bytes": 128,
+      "sha256": "ebce7d7ddcdf3154f1882ea7c110055eddbf486696195769b5550958fc80a632"
+    },
+    "extraction_corrected.log": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/extraction_corrected.log",
+      "bytes": 1950,
+      "sha256": "bd34618fe66bf8d5d6b29db3001a1b667e8b7e34850ba4a88e4726cdb2de5adc"
+    },
+    "extraction_corrected_receipt.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/extraction_corrected_receipt.json",
+      "bytes": 1314,
+      "sha256": "5a2ccea552ecfcbe4b4ee37cd43ba0a106bd3f1ad57e9de8582b369fb0db5fb3"
+    },
+    "input.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/input.json",
+      "bytes": 1415,
+      "sha256": "cc750a9c8e1c7847709b4075b7330690f4d7a63a1929131fb1cb55f5db191efe"
+    },
+    "launch.log": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/launch.log",
+      "bytes": 11798,
+      "sha256": "1088a291add3ac4027e708d79b0447088cc94fb76da9413a31e6ab64fc560b20"
+    },
+    "launch_manifest.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/launch_manifest.json",
+      "bytes": 1126,
+      "sha256": "af8cd68ee35c833dc5b92a3454f74731e381def0afcdc941a4c19a8fe2f978b5"
+    },
+    "launch_receipt.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/launch_receipt.json",
+      "bytes": 421,
+      "sha256": "bbfbe2ed2e82e7b7f0ede7a725fb1d7de724fb9ab1369e286adeecc3f2d557dc"
+    },
+    "shell.json": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/shell.json",
+      "bytes": 391462,
+      "sha256": "6eb5de517f84c28b15110aa4c074ad09c540ef4ddb520f844f337a7976525675"
+    },
+    "shell_field.npz": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/shell_field.npz",
+      "bytes": 329264,
+      "sha256": "650532906b2d78d21993d606c21d8fa5458ef71e3faa9531bf8da35aa794824c"
+    },
+    "thin_shell.abq": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.abq",
+      "bytes": 185446400,
+      "sha256": "5ae98ba9bb5a9f15b9182e30ae665212fae9d47af5f9a57792b828c144d21872"
+    },
+    "thin_shell.com": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.com",
+      "bytes": 3947,
+      "sha256": "eb6ec0726876095194066cf0d810a2e1ce77793eb62899ddb5e6507f1c9afa53"
+    },
+    "thin_shell.dat": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.dat",
+      "bytes": 6256,
+      "sha256": "43f7c4d91f1aae32d5809fa13250c0a38f4f35175c63022f6b17874c6837c82f"
+    },
+    "thin_shell.inp": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.inp",
+      "bytes": 1015984,
+      "sha256": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7"
+    },
+    "thin_shell.mdl": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.mdl",
+      "bytes": 1443812,
+      "sha256": "2c1b7c76dfde0473d7d946ee1f5029879b25054732a217d58044b8eb58325a9a"
+    },
+    "thin_shell.msg": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.msg",
+      "bytes": 548,
+      "sha256": "6bf740dd3cd20e1e682e73bc5c445dfe8cd0858e70045abddd972e9b03b35aea"
+    },
+    "thin_shell.odb": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.odb",
+      "bytes": 83942252,
+      "sha256": "0072f059d4c22302e4110c2fb82c919f55b25377bb4615094acb1af46f0756f4"
+    },
+    "thin_shell.pac": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.pac",
+      "bytes": 35401728,
+      "sha256": "ef2a22a165f82017f60e70059b69d85430b36d61eb6444a45ae5e61d4b0f372c"
+    },
+    "thin_shell.prt": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.prt",
+      "bytes": 412,
+      "sha256": "ff69d15ab6ba7ca7ca195c0fc087a76656a6c42d93a94478c51b7eedba17c303"
+    },
+    "thin_shell.res": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.res",
+      "bytes": 229376,
+      "sha256": "c226778785d52abc7ae71998246bc1631e240540e5426fd8ab36ab35a6176c1f"
+    },
+    "thin_shell.sel": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.sel",
+      "bytes": 12288,
+      "sha256": "7f7a0d117fab57be581dcecf00b7ac1eba4967f1121c9d03b9bfd2c38c351945"
+    },
+    "thin_shell.sta": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.sta",
+      "bytes": 10866,
+      "sha256": "3b0ec423bf190251526748a641df55f156359bc66a9174591afee7cba07907a9"
+    },
+    "thin_shell.stt": {
+      "native_path": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040/thin_shell.stt",
+      "bytes": 12519076,
+      "sha256": "0eb861ca8aa3d466d2a2f994f5153548a30b28ac6abc38545282410073cd827a"
+    }
+  },
+  "ODB_retained_native": true,
+  "job_count": 1,
+  "read_only_extraction_retry_count": 1,
+  "input_INP_extractor_unchanged": true
+}

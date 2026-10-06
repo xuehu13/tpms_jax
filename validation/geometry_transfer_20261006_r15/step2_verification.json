@@ -1,0 +1,24 @@
+{
+  "all_old_tracked_scientific_files_unchanged": true,
+  "old_tracked_validation_file_count": 1086,
+  "all_preexisting_r15_local_files_unchanged": true,
+  "original_user_source_unchanged": true,
+  "solver_and_environment_lock_unchanged": true,
+  "original_native_job_and_ODB_preserved": true,
+  "changed_preexisting_paths": [
+    "AGENTS.md",
+    "README.md",
+    "docs/FILE_MAP.md",
+    "docs/RESEARCH_BACKGROUND.md",
+    "docs/RESEARCH_PLAN.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/TPMS_RESEARCH_REVIEW.md",
+    "scripts/README.md",
+    "validation/README.md"
+  ],
+  "active_document_links_verified": 136,
+  "syntax_and_diff_check_pass": true,
+  "no_completed_JAX20_or_accuracy_or_gradient_claim": true,
+  "only_one_time_path_and_one_shell_job": true,
+  "scope": "Evidence/provenance verification, no new tests of material or simulation and no new calculations"
+}

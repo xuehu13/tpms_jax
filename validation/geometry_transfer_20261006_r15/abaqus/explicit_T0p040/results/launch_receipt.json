@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "analysis_completed_successfully": true,
+  "wall_seconds": 585.5299132000655,
+  "extraction_returncode": 0,
+  "extraction_seconds": 0.29319440003018826,
+  "original_package_unchanged": true,
+  "shell_json_exists": false,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\geometry_transfer_20261006_r15_diverse04_explicit_T0p040",
+  "ODB_retained_native": true
+}

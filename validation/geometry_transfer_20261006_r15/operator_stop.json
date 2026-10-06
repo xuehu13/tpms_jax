@@ -1,0 +1,30 @@
+{
+  "main_plan_step": 2,
+  "action": "SIGINT to selected JAX solver only",
+  "pid": 2146803,
+  "reason": "Main plan requires stopping on actual inertia/completion concern. Rejected nonfinite blocks plus KE/U well above 5%; do not extend/retune merely to reach 20%.",
+  "last_observed_progress": {
+    "steps": 16000,
+    "remaining_steps_estimate": 44168,
+    "compression": 0.1744483742919905,
+    "dt": 3.366591173410051e-08,
+    "rejected_blocks": 3,
+    "elapsed_seconds": 634.6164440560387,
+    "J_min": -11.881235597130386,
+    "required_positive_J_min": 0.0940583673335515,
+    "negative_J_points": 13060,
+    "invalid_material_points": 0,
+    "KE_over_U": 0.19738808902664895
+  },
+  "unix_time": 1791292601.919406,
+  "not_a_budget_or_material_domain_failure_claim": true,
+  "complete_20pct": false,
+  "accepted_state_in_memory_not_checkpointed": true,
+  "preserved_rejected_field_files": {
+    "rejected_block_01.npz": "ff6b75649fb19237b05febf245457a0ef9a96ed80f12daa53ea67c97cff46d71",
+    "rejected_block_02.npz": "ba82542d3c0c697ac9f575a41d08216efc22551843a72a089d839b2319e1a0ea",
+    "rejected_block_03.npz": "20e648602d878a35c08eee9946b00f475708315db5ed7894a499a33c6cea1b20"
+  },
+  "no_new_jobs_or_source_changes": true,
+  "launcher_sha256": "96ec5ea5bbe025c96421f7e656b2f7e1f0518f5cf7aac1655acc6271c9795926"
+}

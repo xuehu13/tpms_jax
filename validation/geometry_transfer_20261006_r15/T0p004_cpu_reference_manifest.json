@@ -1,0 +1,62 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "scripts/thin_target_explicit.py",
+    "target",
+    "--case",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15",
+    "--case-input",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/input.json",
+    "--gauss-field",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/gauss_field.npz",
+    "--geometry-on-cpu",
+    "--material-model",
+    "objective_void",
+    "--element-degree",
+    "2",
+    "--cells",
+    "32",
+    "--quadrature-order",
+    "4",
+    "--force-batch-cells",
+    "2048",
+    "--adaptive",
+    "--load-time",
+    "0.004",
+    "--output",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/T0p004_cpu_reference"
+  ],
+  "base_commit": "86d55b2d6633dd95f6b99b918dee7d749c3eac13",
+  "main_plan_step": 2,
+  "research_question": "One diverse_04 forward with the unchanged candidate",
+  "environment_override": {
+    "JAX_PLATFORMS": "cuda,cpu"
+  },
+  "source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "a537cecde1523a7272008ecf0dc28952ac6e3e01333e9ef0db2925c437ade2ae",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "frozen_local_file_sha256": {
+    "input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+    "input/shell_mesh.inc": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+    "gauss_field.npz": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+    "hrz_mass.npz": "b05342a455b4e4d1c10c643657f0ccc7255a0b8101cf927dfa08d1f06a1be65f",
+    "preparation.json": "1ddbc771cd162176349bbf7f56ae121eb9644099005f09d5d010ba2c490d7deb",
+    "step1_decision.json": "002455d88934e5d079d26b10cc7b768daceee845a73cd425db577b32f0870da4",
+    "band_bracket_diagnosis.json": "e84fb0e3788d36da50c763b35216f189970f581e937896558dec59dbdc335f41",
+    "T0p004.log": "193ade31a2d89678bb79d2ab8e0bcc69cec9359c290cadb4b266d366820fe07e",
+    "T0p004_manifest.json": "2a7d4f0684d3f54f5e36324e6f7c36f2967c0139e855b13e860ed9d8ea612062",
+    "T0p004_receipt.json": "d8d1f2eb19b5aeaf08066ddcaa5be5b6737fc7618d3477c6325c205a805a13cf"
+  },
+  "launcher_sha256": "b436577f4436e45a07d0953a14975df693367d8cf0bb554073ffd1d51b428a44",
+  "reference_geometry_device": "cpu, same as the step1 cache; compact internal-force/time stepping on default cuda",
+  "preceding_attempt": "pre-time-integration exact coordinate-cache assertion failure; kept independently",
+  "new_full_AD_jobs": 0,
+  "no_physical_or_numerical_parameter_change": true,
+  "no_relaxed_cache_tolerance": true
+}

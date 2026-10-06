@@ -1,0 +1,33 @@
+{
+  "main_plan_step": 2,
+  "job_command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=thin_shell",
+    "input=thin_shell.inp",
+    "cpus=4",
+    "double=both",
+    "interactive"
+  ],
+  "extraction_command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "python",
+    "extract_thin_explicit.py",
+    "thin_shell.odb",
+    "shell.json"
+  ],
+  "working_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\geometry_transfer_20261006_r15_diverse04_explicit_T0p040",
+  "input_sha256": {
+    "extract_thin_explicit.py": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+    "input.json": "cc750a9c8e1c7847709b4075b7330690f4d7a63a1929131fb1cb55f5db191efe",
+    "thin_shell.inp": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7"
+  },
+  "launcher_sha256": "f36b1168e77c9396b38d96417a955b9e9e27bf101d58c3b3491b9a8717cd2bec",
+  "research_question": "One matched diverse_04 0.50mm NH XYZ shell reference to 20% plus hold",
+  "no_contact_no_plasticity_no_mass_scaling": true
+}
