@@ -1,0 +1,54 @@
+diff --git a/hyperelastic_fem.py b/hyperelastic_fem.py
+index 3d20dc0..fc04abb 100644
+--- a/hyperelastic_fem.py
++++ b/hyperelastic_fem.py
+@@ -24,6 +24,49 @@ def neo_hookean_energy(F, mu=MU, kappa=KAPPA):
+ first_piola = jax.grad(neo_hookean_energy)
+ 
+ 
++def linearized_neo_hookean_energy(F, mu=MU, kappa=KAPPA):
++    """Quadratic reference-strain energy matching the NH Hessian at I.
++
++    Used only as a fictitious-domain extension. It is not frame indifferent
++    under finite rigid rotations and is not a physical large-strain material.
++    """
++    D = F-jnp.eye(3)
++    eps = (D+D.T)/2
++    dev = eps-jnp.trace(eps)*jnp.eye(3)/3
++    return mu*jnp.sum(dev*dev)+kappa/2*jnp.trace(eps)**2
++
++
++def void_interpolation_gamma(rho, beta=500., cutoff=.01):
++    """Literature Heaviside switch, using the current linear occupancy scale.
++
++    No SIMP penalty is introduced. beta/cutoff are numerical extension
++    parameters, distinct from geometry-interface width and the void floor.
++    Concrete callers must supply 0<=rho<=1; rho is traceable for local AD.
++    """
++    return (jnp.tanh(beta*cutoff)+jnp.tanh(beta*(rho-cutoff)))/(        jnp.tanh(beta*cutoff)+jnp.tanh(beta*(1-cutoff)))
++
++
++def interpolated_neo_hookean_energy(F, rho, eta=1e-4, mu=MU, kappa=KAPPA):
++    """Opt-in Wang-type energy/kinematic candidate, not the default FEM.
++
++    s*[W_NH(I+gamma*(F-I))+(1-gamma**2)*W_linear(F)].
++    Its reference Hessian is s times the original NH Hessian, and rho=1
++    preserves the original NH material exactly. Validity requires det of
++    the mapped gradient to be positive; no actual or mapped J is clipped.
++    This does not guarantee an admissible actual wall map or objectivity
++    of the artificial extension. Pointwise-Gauss use is a project adaptation
++    of the literature's density-based energy interpolation.
++    """
++    gamma = void_interpolation_gamma(rho)
++    mapped_F = jnp.eye(3)+gamma*(F-jnp.eye(3))
++    scale = eta+(1-eta)*rho
++    return scale*(neo_hookean_energy(mapped_F, mu, kappa)
++                  +(1-gamma**2)*linearized_neo_hookean_energy(F, mu, kappa))
++
++
++interpolated_first_piola = jax.grad(interpolated_neo_hookean_energy, argnums=0)
++
++
+ class PeriodicHyperelasticity(PeriodicLinearElasticityCube):
+     """Reuse H runtime field, zero body force, mesh and constraint interfaces."""
+ 

@@ -8,11 +8,12 @@
 | --- | --- |
 | START_HERE.md | 阅读入口；README.md |
 | RESEARCH_BACKGROUND.md | 长期目标/边界；docs同名 |
-| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；积分因素试完、候选未采纳、下一项虚域核验证；docs同名 |
+| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；积分／经典虚域候选未采纳，下一项转动兼容虚域核验证；docs同名 |
 | PROJECT_OVERVIEW.md | 事实状态；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 方法、符号、误差因素、客观可行性；docs同名 |
 | SIMULATION_ERROR_PROGRESS.md | 冻结的定位/参照网格尝试；其后续建议已被主规划调整；docs同名 |
 | JAX_INTEGRATION_PROGRESS.md | 本轮27/125点探针、64点新路径及资源处理；docs同名 |
+| VIRTUAL_KERNEL_PROGRESS.md | 经典虚域候选小核／冻结场／转动缺陷，未采纳；docs同名 |
 | PAPER_ROUTE.md | 来源与阅读范围；docs同名 |
 | FORWARD20_PROGRESS_REPORT.md | 冻结前向执行证据；docs同名，不当最新计划 |
 | GRADIENT20_PROGRESS_REPORT.md | 冻结正负路径/AD失败证据；docs同名，下一项只看主规划 |
@@ -48,6 +49,21 @@
 | candidate_probe/ | 新20%保存场64/125点复查，125点仍有44软域负J |
 
 Windows辅助执行/日志：`work/jax_improvement_20261006`，不是第二套FEM。旧r6/r7科学证据均保留原路径/字节。
+
+## 最新虚域核验证
+
+根：`/home/xuehu/projects/tpms_jax/validation/virtual_kernel_20261006_r9`。没有新压缩路径、Abaqus或完整AD；活动材料核恢复原字节。
+
+| 位置 | 内容 |
+| --- | --- |
+| input.json、probe_manifest.json | 一个经典Wang型候选、固定参数／输入与环境哈希 |
+| rule_4.json、rule_8.json、result.json | 原20%保存场的材料映射和整体转动诊断，非新解 |
+| checks.json、decision.json | 16项核／回归通过；转动缺陷导致未采纳 |
+| candidate.patch、check_at_run.py、experiment.py | 冻结候选补丁／核测试／探针，不作为活动入口 |
+| source_before/、source_at_run/ | 材料核测试前后原字节，仅本地追溯 |
+| evidence_manifest.json、probe.log、rotation_diagnostic.png | 新旧证据校验、日志和图 |
+
+Windows工具／回执：`work/virtual_kernel_20261006`，图为`output/figures/VIRTUAL_KERNEL_rotation.png`。复现旧候选需独立检出和补丁；不能直接在已恢复的当前核上运行。下一项只看唯一主规划，HEX20／混合阶次仍为后备。
 
 ## 当前主要结果
 

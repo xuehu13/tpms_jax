@@ -1,0 +1,13 @@
+{
+  "candidate_consistency_tests_passed": 11,
+  "existing_regression_tests_passed": 5,
+  "total_tests_passed": 16,
+  "observed_pytest_seconds": 11.63,
+  "command": "JAX_PLATFORMS=cpu python -m pytest -q tests/test_void_interpolation.py tests/test_explicit_quadrature.py tests/test_xyz_hyperelastic.py",
+  "test_source_sha256": "13345115283a3ef70ed9a4531325d57e65e5813712b61cc7f105769adeb1d46e",
+  "material_at_run_sha256": "66b2a51ae30f56ef28061b8e4d03c188e8d2159b5345ca6c460f00eedc09c80b",
+  "original_active_material_restored_sha256": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+  "default_entry_unchanged_sha256": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a",
+  "rotation_test_meaning": "Known nonzero pure-rotation defect was exposed by a passing regression; objectivity itself did not pass.",
+  "full_path_gradient_certification": false
+}

@@ -1,0 +1,85 @@
+{
+  "points_per_cell": 125,
+  "Vf": 0.15162795798250328,
+  "raw_J_min": -2.072829818356467,
+  "mapped_J_min": 0.27803203686268685,
+  "raw_nonpositive_points": 3378,
+  "mapped_nonpositive_points": 0,
+  "raw_nonpositive_phi_max": 0.00015010447265510502,
+  "candidate_energy_N_mm": 4.06604214584334,
+  "candidate_internal_Fz_N": -2.049737296990816,
+  "original_energy_N_mm": null,
+  "original_internal_Fz_N": null,
+  "candidate_energy_by_occupancy": {
+    "deep_void_lt_0p001": {
+      "points": 3281967,
+      "reference_volume_mm3": 800.9582688641502,
+      "energy_N_mm": 0.09823391100579856
+    },
+    "weak_0p001_to_0p01": {
+      "points": 64202,
+      "reference_volume_mm3": 16.094798064252945,
+      "energy_N_mm": 0.018423141473042446
+    },
+    "weak_0p01_to_0p05": {
+      "points": 45583,
+      "reference_volume_mm3": 11.155305228574072,
+      "energy_N_mm": 0.03474307670565893
+    },
+    "transition_0p05_to_0p95": {
+      "points": 166245,
+      "reference_volume_mm3": 40.24134207182621,
+      "energy_N_mm": 1.1231375321147232
+    },
+    "solid_ge_0p95": {
+      "points": 538003,
+      "reference_volume_mm3": 131.55028577119705,
+      "energy_N_mm": 2.7915044845441153
+    }
+  },
+  "rotation": {
+    "0.0": {
+      "pure_rotation_energy_N_mm": 0.0,
+      "superposed_energy_N_mm": 4.06604214584334,
+      "superposed_mapped_J_min": 0.27803203686268685,
+      "superposed_invalid_points": 0,
+      "pure_rotation_energy_over_frozen_compression_energy": 0.0,
+      "superposed_relative_energy_change": 0.0
+    },
+    "15.0": {
+      "pure_rotation_energy_N_mm": 0.003552667984118447,
+      "superposed_energy_N_mm": 4.083208080752689,
+      "superposed_mapped_J_min": 0.2779394662753536,
+      "superposed_invalid_points": 0,
+      "pure_rotation_energy_over_frozen_compression_energy": 0.0009451370206638933,
+      "superposed_relative_energy_change": 0.0042217798767525405
+    },
+    "30.0": {
+      "pure_rotation_energy_N_mm": 0.05492488497468298,
+      "superposed_energy_N_mm": 4.173529034904419,
+      "superposed_mapped_J_min": 0.27749859121297527,
+      "superposed_invalid_points": 0,
+      "pure_rotation_energy_over_frozen_compression_energy": 0.014611988054425568,
+      "superposed_relative_energy_change": 0.026435261909658836
+    },
+    "60.0": {
+      "pure_rotation_energy_N_mm": 0.7651692977016785,
+      "superposed_energy_N_mm": 5.014184475044152,
+      "superposed_mapped_J_min": 0.2742084678790577,
+      "superposed_invalid_points": 0,
+      "pure_rotation_energy_over_frozen_compression_energy": 0.20356245885237123,
+      "superposed_relative_energy_change": 0.23318556355105313
+    },
+    "90.0": {
+      "pure_rotation_energy_N_mm": 3.062173805164218,
+      "superposed_energy_N_mm": 7.458197174489943,
+      "superposed_mapped_J_min": 0.24931251620127956,
+      "superposed_invalid_points": 0,
+      "pure_rotation_energy_over_frozen_compression_energy": 0.8146479884711437,
+      "superposed_relative_energy_change": 0.8342646010480628
+    }
+  },
+  "candidate_full_energy_defined": true,
+  "original_full_energy_defined": false,
+  "same_state_only": true
+}

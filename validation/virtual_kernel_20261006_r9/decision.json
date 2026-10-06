@@ -1,0 +1,12 @@
+{
+  "status": "candidate_kernel_consistent_but_not_adopted",
+  "domain_improvement_at_frozen_125_point_state": true,
+  "objectivity_certified": false,
+  "forward_accuracy_improved": null,
+  "reason": "Virtual and switch-domain energy changes under rigid/superposed rotations. No new trajectory was run; force proximity on one frozen state does not validate the candidate.",
+  "active_material_restored": true,
+  "new_complete_TPMS_paths": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "next_action": "Derive/check one rotation-compatible virtual extension using published objective/corotational ideas; preserve true-solid NH, current occupancy/stiffness floor, geometry and time algorithm. No second candidate implemented in this round."
+}

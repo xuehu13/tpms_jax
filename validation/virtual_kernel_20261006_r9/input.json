@@ -1,0 +1,44 @@
+{
+  "base_commit": "f51d099c27ef1eb07319fad6798d09e0109df402",
+  "frozen_sha256": {
+    "scripts/thin_target_explicit.py": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a",
+    "hyperelastic_fem.py": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/input.json": "2fa7f48edeb24699555c15dfb5d87abbc3c3bac37e6e67be4cbf04ba173a0639",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/result.json": "b00fc787f3b0c3030b5bd75a08a3189ef5e293f061a755f775126816983dcdbb",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/field.npz": "e374a179f505b604329eced06dd0a5c5c471388ea20723ecc0504610765f3916",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/gauss_field.npz": "b2929056b9e881bd406ad419fca35dbae657cd591aa6b4b358fee1c0d203d6fa",
+    "validation/jax_improvement_20261006_r8/candidate_probe/result.json": "19d76c8975fb86de8c35a9d8b88daa4be21f03f8b297fdf7e862742dca5f43e7",
+    "validation/jax_improvement_20261006_r8/integration_probe/result.json": "593954f3ea2960483c606e5419342ee7fe0e9d1a3ea2a9e7a11a828fc0b4cd11",
+    "validation/jax_improvement_20261006_r8/comparison.json": "8ba0f1f72eb05dbc372d908bdf7533c29dbffaa475941fd77b0ee4c7ca76923f"
+  },
+  "material_before_sha256": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+  "material_candidate_sha256": "66b2a51ae30f56ef28061b8e4d03c188e8d2159b5345ca6c460f00eedc09c80b",
+  "default_FEM_changed": false,
+  "new_forward_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "candidate": {
+    "type": "Wang-type energy and kinematic interpolation",
+    "beta": 500.0,
+    "cutoff": 0.01,
+    "eta": 0.0001,
+    "scale": "eta+(1-eta)*rho",
+    "SIMP_penalty_added": false,
+    "Gauss_point_adaptation": true
+  },
+  "sources": [
+    "https://doi.org/10.1016/j.cma.2014.03.021",
+    "https://backend.orbit.dtu.dk/ws/portalfiles/portal/236200354/Manuscript.pdf",
+    "https://link.springer.com/article/10.1007/s00158-026-04332-8"
+  ],
+  "planned_checks": [
+    "solid limit",
+    "reference small-strain Hessian",
+    "mapped domain at frozen 20% state",
+    "energy stress and occupancy derivatives",
+    "finite-rotation defect quantified"
+  ],
+  "acceptance_scope": "Kernel consistency/domain checks are distinct from objectivity and forward accuracy. A nonobjective extension is not certified just because local AD agrees."
+}

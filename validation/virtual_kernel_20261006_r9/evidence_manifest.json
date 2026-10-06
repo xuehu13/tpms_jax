@@ -1,0 +1,29 @@
+{
+  "status": "candidate_kernel_consistent_but_not_adopted",
+  "unchanged_frozen_sha256": {
+    "scripts/thin_target_explicit.py": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a",
+    "hyperelastic_fem.py": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/input.json": "2fa7f48edeb24699555c15dfb5d87abbc3c3bac37e6e67be4cbf04ba173a0639",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/result.json": "b00fc787f3b0c3030b5bd75a08a3189ef5e293f061a755f775126816983dcdbb",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/field.npz": "e374a179f505b604329eced06dd0a5c5c471388ea20723ecc0504610765f3916",
+    "validation/jax_improvement_20261006_r8/T0p004_q6_cpu_geometry/gauss_field.npz": "b2929056b9e881bd406ad419fca35dbae657cd591aa6b4b358fee1c0d203d6fa",
+    "validation/jax_improvement_20261006_r8/candidate_probe/result.json": "19d76c8975fb86de8c35a9d8b88daa4be21f03f8b297fdf7e862742dca5f43e7",
+    "validation/jax_improvement_20261006_r8/integration_probe/result.json": "593954f3ea2960483c606e5419342ee7fe0e9d1a3ea2a9e7a11a828fc0b4cd11",
+    "validation/jax_improvement_20261006_r8/comparison.json": "8ba0f1f72eb05dbc372d908bdf7533c29dbffaa475941fd77b0ee4c7ca76923f"
+  },
+  "new_sha256": {
+    "validation/virtual_kernel_20261006_r9/input.json": "66d8b888dc88792ba864cb9e7e0fe8775b5a0ad5eec9ba06dda82e13099bf4af",
+    "validation/virtual_kernel_20261006_r9/probe_manifest.json": "910aedc0d71cec35badf116f8bcb364507778dc391f0c35ccd2172c43b4a290a",
+    "validation/virtual_kernel_20261006_r9/result.json": "679c64b68ca437bb7e6a09430e2c5994a416c029153c0bbae2e681133a77cb76",
+    "validation/virtual_kernel_20261006_r9/checks.json": "ff66fe845e5fb276f930b37186fdc6ee47aac8b64e93b308c96f43ae6ae3c199",
+    "validation/virtual_kernel_20261006_r9/decision.json": "9426917e0df6c8b16fd9a6c4a653746979b93ba1538d07f59671042503a92ed4",
+    "validation/virtual_kernel_20261006_r9/experiment.py": "9123d6e5dc0dbfb35d9805411ee7f9d6d106c1b9b6a9d587fbbaefe3f059e8bd",
+    "validation/virtual_kernel_20261006_r9/candidate.patch": "ba8c4c310689db366a637f94fea35cd6c2d34550290a84e1bee86980f9a681af",
+    "validation/virtual_kernel_20261006_r9/check_at_run.py": "13345115283a3ef70ed9a4531325d57e65e5813712b61cc7f105769adeb1d46e",
+    "validation/virtual_kernel_20261006_r9/rotation_diagnostic.png": "46d6dac606564158d1de783e47e39665b9c7420eebc70a3b00f4bd954de96fef",
+    "validation/virtual_kernel_20261006_r9/source_at_run/hyperelastic_fem.py": "66b2a51ae30f56ef28061b8e4d03c188e8d2159b5345ca6c460f00eedc09c80b"
+  },
+  "large_original_fields_remain_at_original_paths": true
+}
