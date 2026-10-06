@@ -1,0 +1,42 @@
+{
+  "scope": "new r15 files, including local ignored arrays/snapshots; excludes live logs and itself",
+  "files": {
+    ".gitignore": "db2333caf0b3f99084b32321648c4c5408b971aee0e923b4a06eb410046f8267",
+    "README.md": "0e70b11f2644b2454f9d38a2e40195693a976f6f34aebaa464b2ea44f26c0b73",
+    "abaqus/explicit_T0p040/extract_thin_explicit.py": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+    "abaqus/explicit_T0p040/input.json": "cc750a9c8e1c7847709b4075b7330690f4d7a63a1929131fb1cb55f5db191efe",
+    "abaqus/explicit_T0p040/thin_shell.inp": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7",
+    "band_bracket_diagnosis.json": "e84fb0e3788d36da50c763b35216f189970f581e937896558dec59dbdc335f41",
+    "before_manifest.json": "feb0d41ebe0a629395c32ddc356cc8198606452b5a395f7633353e320c279bae",
+    "entry_adapter.json": "58a4d8ac559309f9fc4c7fa6b236cc48e04912b8d0a2700cb81e56d8021d06ed",
+    "execution_notes.json": "b81f44e0b0a353a4801a5a5a11538e9730225f10806716f9a989c196671522d4",
+    "gauss_field.npz": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+    "hrz_mass.npz": "b05342a455b4e4d1c10c643657f0ccc7255a0b8101cf927dfa08d1f06a1be65f",
+    "input/XYZ_periodic_relations.json": "9ece321162efaf4c7dc71f08caf2d1285e8bf01bf269db96a02b030207bf387d",
+    "input/case_used.json": "95eda44705b37dfa799ff2c34319bf0a5fac1ddc9d0f8255cfc4b729b1e19ca3",
+    "input/shell_mesh.inc": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+    "preparation.json": "1ddbc771cd162176349bbf7f56ae121eb9644099005f09d5d010ba2c490d7deb",
+    "report_recovery_receipt.json": "5fe65bc784b1e17ed91a72d23857d48d091df5804f5fbeafe92c2e2815abba6c",
+    "step1_decision.json": "002455d88934e5d079d26b10cc7b768daceee845a73cd425db577b32f0870da4",
+    "surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+    "tools/diagnose_band.py": "36c2ed516b8edab5f0d5574c4be39dc7ba6d3837cccc78c235a20ebde3060a62",
+    "tools/finalize_inputs.py": "699244a98879eff84c106ab7db3f0e453d906900851b19b0deb34b5da6a8391a",
+    "tools/prepare_inputs.py": "d72efcdd65575efca3df4930327a4b98c7799bfea291d09ee3640ac77698227a",
+    "tools/prepare_inputs_attempt1.py": "52fc1accee73d905ce7d388bee20421ae773073a9e6c1d978042301586d0a5aa",
+    "tools/prepare_inputs_fixed.py": "4403cc7bc4e2a787af8bcf275c3e7db3585e40930c82f938aa48e287a987ff02",
+    "tools/recover_report.py": "31803f5844560535a62d4e9fe7889037ac77485bc8437991a906d11afc51f420",
+    "tools/recover_report_attempt1.py": "8925ca5971c40b217aecb074839baa0acce9330af0f37da82005f49fe9d151f3",
+    "tools/recover_report_fixed.py": "790cb822dce1552fb27092f4837da4c14bb5c5e9d2e2a7742d248b1c18587b75",
+    "tools/setup.py": "340960e6a6f9cb7d75e78e44af29382019cd906c7a83a8cc625d757040538b89",
+    "tools/verify_inputs.py": "6c6ab5d1c822f5754ecb78b072351d11fa5844bc53fc2b6caf7eb7518c648af0",
+    "verification.json": "5af96fe309a41746a24e3f2026205d3c854cef2cbb22fdf766e27804d6f3f342"
+  },
+  "original_logs": "frozen hashes in report_recovery_receipt.json",
+  "native_package": {
+    "extract_thin_explicit.py": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+    "input.json": "cc750a9c8e1c7847709b4075b7330690f4d7a63a1929131fb1cb55f5db191efe",
+    "thin_shell.inp": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7"
+  },
+  "new_solve_count": 0
+}

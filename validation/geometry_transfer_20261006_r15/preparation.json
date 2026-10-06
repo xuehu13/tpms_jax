@@ -1,0 +1,112 @@
+{
+  "main_plan_step": 1,
+  "step1_input_ready": false,
+  "checks": {
+    "same_original_midsurface": true,
+    "same_physical_thickness_material_density": true,
+    "Gauss_field_in_own_HEX27_Problem": true,
+    "positive_HRZ_mass": true,
+    "HRZ_mass_conserved": true,
+    "XYZ_quotient_equations_consistent": true,
+    "local_normal_band_brackets": false,
+    "mid_facet_cells_Gauss_wall_coverage": true,
+    "initial_material_domain_valid": true,
+    "periodic_distance_consistent": true
+  },
+  "band": {
+    "nominal_thickness_mm": 0.5,
+    "sampled_normal_width_mm_quantiles": [
+      0.4999998807907105,
+      0.4999998807907105,
+      0.5,
+      0.5000001192092896,
+      0.5115458965301514
+    ],
+    "all_facet_endpoint_distance_ratio_quantiles": [
+      0.8949331532844237,
+      0.9999999999999932,
+      1.0,
+      1.0000000000000109
+    ],
+    "normal_bracket_failures": 4,
+    "normal_samples": 512,
+    "scope": "Local sampled thickness-band diagnostics; not global offset injectivity or contact certification"
+  },
+  "geometry_mass": {
+    "N": 32,
+    "cells": 32768,
+    "nodes": 274625,
+    "Gauss_points_per_cell": 27,
+    "actual_Gauss_points": 884736,
+    "reference_volume_normalized": 0.9999999999999984,
+    "occupancy_exactly_in_own_problem": true,
+    "own_problem_mapping_evidence": "Original unique-Problem callback and array-equality assertion completed before the final JSON exception; cache projection independently rechecked.",
+    "weighted_projected_Vf": 0.13251935766125453,
+    "same_Gauss_binary_Vf": 0.13275201428574293,
+    "area_times_thickness_nominal_shell_Vf": 0.13303205668780924,
+    "projected_Vf_vs_shell_area_thickness_relative": -0.00385395098985708,
+    "mid_facet_cell_max_phi_min": 0.9999999785402249,
+    "mid_facet_cells_with_no_phi_ge_half": 0,
+    "cell_mean_phi_ge_half_periodic_components": 1,
+    "periodic_distance_errors_over_L": [
+      1.942890293094024e-16,
+      2.220446049250313e-16,
+      2.498001805406602e-16
+    ],
+    "initial_actual_detF": 1.0,
+    "initial_all_material_energy_finite": true,
+    "initial_energy_density_absolute_max_MPa": 0.0,
+    "mass_lumping": "HRZ_positive_diagonal_scaling",
+    "minimum_HRZ_nodal_mass_normalized": 1.4128508439146752e-18,
+    "minimum_periodic_class_mass_normalized": 1.1302806712962793e-17,
+    "cell_mass_conservation_relative_error": 5.551115123125783e-16,
+    "negative_unmodified_row_mass_entries": 60061,
+    "JAX_total_physical_mass_tonne": 1.3260610572548825e-07,
+    "shell_area_thickness_mass_tonne": 1.3303205668780924e-07
+  },
+  "shell": {
+    "node_count": 8372,
+    "elements": 15914,
+    "XYZ_relations": 423,
+    "equations": 2538,
+    "periodic_coordinate_error_over_L": 0.0,
+    "affine_plus_random_fluctuation_equation_residual_mm": 4.440892098500626e-16,
+    "pin_label": 1,
+    "macro_control_label": 8373,
+    "native_job_directory": "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040"
+  },
+  "source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "a537cecde1523a7272008ecf0dc28952ac6e3e01333e9ef0db2925c437ade2ae",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "input_sha256": {
+    "input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+    "input/shell_mesh.inc": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+    "gauss_field.npz": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+    "hrz_mass.npz": "b05342a455b4e4d1c10c643657f0ccc7255a0b8101cf927dfa08d1f06a1be65f"
+  },
+  "generator_attempt1_sha256": "52fc1accee73d905ce7d388bee20421ae773073a9e6c1d978042301586d0a5aa",
+  "report_recovery_sha256": "31803f5844560535a62d4e9fe7889037ac77485bc8437991a906d11afc51f420",
+  "environment": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "jax": "0.11.2",
+    "jax-fem": "0.0.12",
+    "fenics-basix": "0.10.0",
+    "libigl": "2.6.3"
+  },
+  "original_body_seconds": null,
+  "original_peak_RSS_GiB": null,
+  "timing_note": "The original body timer and peak RSS were not persisted because final JSON serialization failed; no values invented or complete FEM rebuild repeated.",
+  "report_recovery_seconds": 1.1763454200699925,
+  "serialization_failure": "NumPy bool at final metadata write only; original log and generator preserved.",
+  "new_displacement_solves": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "interpretation": "Matched-input readiness only; no response/equilibrium/contact/gradient validation; thresholded-cell and local-band sampling are diagnostics."
+}

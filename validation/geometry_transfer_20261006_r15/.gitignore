@@ -1,0 +1,5 @@
+input/shell_mesh.inc
+abaqus/**/extract_thin_explicit.py
+tools/*attempt*.py
+tools/recover_report*.py
+tools/prepare_inputs.py

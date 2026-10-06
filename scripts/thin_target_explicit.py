@@ -213,10 +213,24 @@ def run(a):
         N=8;p=build_problem(N,rho_quad=1.,eta=1e-4,periodic_axes=(0,1,2),element_degree=a.element_degree,quadrature_order=a.quadrature_order)
         cfg={'N':N,'role':'small known periodic P-wave integration check; not TPMS accuracy evidence'}
     else:
-        source=json.loads((a.case/'step2/diagnostic_xyz/input.json').read_text())
+        source_path=getattr(a,'case_input',None) or a.case/'step2/diagnostic_xyz/input.json'
+        source=json.loads(source_path.read_text())
+        if getattr(a,'case_input',None) is not None:
+            # Direct physical metadata for a new case; the solver's fixed
+            # material/unit constants must actually match the declared input.
+            mu=source['E_MPa']/(2*(1+source['nu']))
+            kappa=source['E_MPa']/(3*(1-2*source['nu']))
+            if (source['cell_size_mm']!=10. or not math.isclose(mu,MU,rel_tol=1e-12)
+                    or not math.isclose(kappa,KAPPA,rel_tol=1e-12)
+                    or source.get('solid_density_tonne_per_mm3',1e-9)!=1e-9):
+                raise ValueError('Case metadata differs from the fixed material/unit/density constants')
         cfg={k:source[k] for k in ('case_id','N','cell_size_mm','thickness_mm',
                                   'E_MPa','nu','eta','interface_10_90_mm')}
-        cfg.update(source_linear_case_input_sha256=sha(a.case/'step2/diagnostic_xyz/input.json'),
+        if getattr(a,'case_input',None) is None:
+            cfg['source_linear_case_input_sha256']=sha(source_path)
+        else:
+            cfg.update(source_case_input_path=str(source_path),source_case_input_sha256=sha(source_path))
+        cfg.update(
                    mechanical_periodic_axes=[0,1,2],target_compression=.2,
                    bc='XYZ periodic fluctuation; macro Hzz from zero to -0.2, lateral strain zero')
         N=a.cells or cfg['N']
@@ -382,6 +396,7 @@ def run(a):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=['wave','probe','target'])
     p.add_argument('--case',type=Path,default=ROOT/'validation/thin_target_20261004_r5')
+    p.add_argument('--case-input',type=Path,help='Direct physical case metadata JSON; otherwise preserve the legacy linear-case source')
     p.add_argument('--output',type=Path,required=True);p.add_argument('--load-time',type=float,default=.02)
     p.add_argument('--material-model',choices=('nh','objective_void'),default='nh',help='Opt-in validated objective virtual energy; original NH remains default')
     p.add_argument('--adaptive',action='store_true',help='Reject invalid blocks and halve dt, keeping the previous valid state; no detF clipping')

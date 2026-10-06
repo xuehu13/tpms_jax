@@ -1,6 +1,6 @@
 # 程序入口与范围
 
-唯一维护FEM在正式根目录。本页为现有功能/历史入口索引，不生成待办。当前C²候选的代表20%前向/材料域/速率通过，旧四步已收口，新一轮diverse_04单一几何匹配四步待执行，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第1步建立双方输入；方法、数字和可行性看[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。默认NH保持，研究候选明确选择objective_void，完整20%AD/训练后置。
+唯一维护FEM在正式根目录。本页为现有功能/历史入口索引，不生成待办。当前C²候选的代表20%前向/材料域/速率通过，旧四步已收口，diverse_04第1步限定输入就绪已完成，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第2步一次双方前向；方法、数字和可行性看[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。默认NH保持，研究候选明确选择objective_void，完整20%AD/训练后置。
 
 | 入口 | 用途/边界 |
 | --- | --- |
@@ -38,3 +38,5 @@
 旧前向/梯度/诊断分别见[前向报告](../docs/FORWARD20_PROGRESS_REPORT.md)、[梯度报告](../docs/GRADIENT20_PROGRESS_REPORT.md)、[冻结定位](../docs/SIMULATION_ERROR_PROGRESS.md)；旧建议不生成新任务。
 
 匹配厚度r13沿用同一入口，在上列代表命令加`--thickness-mm 0.45`或`0.55`并使用全新输出。占据和HRZ质量随真实厚度计算；不能改厚度后仍对原0.50mm壳。新核/时间算法未改，r13原证据不覆盖；读取详细口径见[厚度报告](../docs/THICKNESS_RANGE_PROGRESS.md)。
+
+`thin_target_explicit.py --case-input <物理参数JSON>`可直接读取新几何参数，不要求伪造旧线性阶段；旧默认路径/读取保持。该入口验证E/ν、L和密度确实匹配现有固定材料/单位常数。仅元数据适配，ExplicitXYZ类及物理时间推进主体未改；r15输入就绪不等于新20%反力或梯度认证。

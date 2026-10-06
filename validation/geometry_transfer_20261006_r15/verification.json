@@ -1,0 +1,31 @@
+{
+  "scope": "input readiness only; no new physics runs",
+  "base_commit": "7e9c642be67ebdddcd44cdabb68fe86b7a4822e8",
+  "changed_preexisting_paths": [
+    "AGENTS.md",
+    "README.md",
+    "docs/FILE_MAP.md",
+    "docs/RESEARCH_BACKGROUND.md",
+    "docs/RESEARCH_PLAN.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/TPMS_RESEARCH_REVIEW.md",
+    "scripts/README.md",
+    "scripts/thin_target_explicit.py",
+    "validation/README.md"
+  ],
+  "all_other_preexisting_tracked_files_unchanged": true,
+  "tracked_frozen_validation_files_verified": 1065,
+  "raw_inputs_first_logs_attempt_sources_and_native_package_unchanged": true,
+  "original_user_surface_and_case_unchanged": true,
+  "source_hashes_match_declared_input": true,
+  "matched_physical_constants_and_distinct_quasistatic_load_times_verified": true,
+  "original_false_preparation_and_separate_targeted_decision_preserved": true,
+  "metadata_reader_class_and_physical_suffix_checks": "see step1_decision.json; no material/HRZ/advance changes",
+  "syntax_pass": true,
+  "changed_active_document_links_verified": 129,
+  "git_diff_check_pass": true,
+  "new_displacement_solves": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "not_a_new_full_test_suite_or_global_geometry_certification": true
+}

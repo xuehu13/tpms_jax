@@ -1,0 +1,14 @@
+{
+  "original_preparation_process_returncode": 1,
+  "original_failure": "NumPy boolean JSON serialization after arrays and native package were generated.",
+  "first_recovery_returncode": 1,
+  "first_recovery_failure": "Active appended log was incorrectly included in its own immutability check; no input was changed.",
+  "second_recovery_returncode": 1,
+  "second_recovery_failure": "Canonical report and receipt saved correctly; NumPy-bool console printing then failed. Its report also honestly retained the four geometric endpoint-bracket failures.",
+  "report_and_readiness_verified_independently": true,
+  "current_print_helpers_corrected_without_rebuilding_fields": true,
+  "all_first_logs_and_attempt_sources_kept": true,
+  "original_FEM_build_repeated": false,
+  "original_runtime_and_peak_RSS_not_persisted": true,
+  "no_displacement_or_Abaqus_jobs": true
+}

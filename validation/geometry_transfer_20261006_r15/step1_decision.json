@@ -1,0 +1,50 @@
+{
+  "status": "matched_inputs_ready_for_single_forward",
+  "main_plan_steps_completed": [
+    1
+  ],
+  "next_only": "step 2 single matched JAX/shell forward",
+  "original_preparation_ready_flag": false,
+  "original_failed_normal_brackets": 4,
+  "original_failure_kept": true,
+  "targeted_diagnosis": "All four endpoint failures have a first local wall exit, positive sampled void gap, then reentry into another part of the periodic distance band.",
+  "readiness_criterion_clarification": "A local wall-width diagnostic needs the first local exit. Being inside material again at an arbitrary full-t endpoint is not by itself a thickness mismatch. Keep the original gate result separate.",
+  "affected_first_local_widths_mm": [
+    0.5,
+    0.5115459105803166,
+    0.5043169743625913,
+    0.5099358424328966
+  ],
+  "maximum_affected_local_width_relative_indicator": 0.02309182116063324,
+  "geometry_representation_scope": "Same midsurface and nominal 0.50mm target; shell normal section and smooth triangle-distance band are distinct approximations, not identical pointwise solids.",
+  "global_offset_injectivity_or_contact_certified": false,
+  "finite_normal_sampling_is_global_bound": false,
+  "unchanged_physical_and_numerical_constants": true,
+  "default_NH_unchanged": true,
+  "explicit_class_AST_unchanged": true,
+  "physical_run_body_after_metadata_unchanged": true,
+  "legacy_metadata_reader_equivalent": true,
+  "direct_case_reader_matches_declared_constants": true,
+  "CLI_help_pass": true,
+  "new_displacement_solves": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "gradient20_certified": false,
+  "input_sha256": {
+    "input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+    "input/shell_mesh.inc": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+    "gauss_field.npz": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+    "hrz_mass.npz": "b05342a455b4e4d1c10c643657f0ccc7255a0b8101cf927dfa08d1f06a1be65f"
+  },
+  "source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "a537cecde1523a7272008ecf0dc28952ac6e3e01333e9ef0db2925c437ade2ae",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "preparation_sha256": "1ddbc771cd162176349bbf7f56ae121eb9644099005f09d5d010ba2c490d7deb",
+  "targeted_diagnosis_sha256": "e84fb0e3788d36da50c763b35216f189970f581e937896558dec59dbdc335f41"
+}

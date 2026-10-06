@@ -1,0 +1,9 @@
+{
+  "changed_file": "/home/xuehu/projects/tpms_jax/scripts/thin_target_explicit.py",
+  "source_before_sha256": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+  "source_after_sha256": "a537cecde1523a7272008ecf0dc28952ac6e3e01333e9ef0db2925c437ade2ae",
+  "change": "Optional direct physical case metadata and matching of fixed material/unit constants; legacy default preserved.",
+  "material_mass_time_stepping_changed": false,
+  "explicit_class_AST_unchanged": true,
+  "new_FEM_implementation": false
+}

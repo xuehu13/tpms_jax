@@ -1,6 +1,6 @@
 # 验证证据索引
 
-当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。旧四步已完成，r13匹配厚度、r14只读范围收口。新的唯一近期四步围绕diverse_04单一几何，均待执行，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第1步输入匹配，尚无新实验或作业。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
+当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。旧四步已完成，r13匹配厚度、r14只读范围收口。diverse_04的r15第1步匹配输入已达限定就绪，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第2步；没有新位移求解/Abaqus作业/完整AD。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
 
 
 方法、符号和结果解释见 [综合报告](../docs/TPMS_RESEARCH_REVIEW.md)，当前事实见 [状态](../docs/RESEARCH_STATUS.md)，执行只看 [主规划](../docs/RESEARCH_PLAN.md)。原四轮均已按判据/停止条件收口；子目录保留冻结记录，其中历史“下一步”不是自动待办。
@@ -11,6 +11,7 @@ Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_befor
 
 | 目录 | 已完成范围 |
 | --- | --- |
+| [geometry_transfer_20261006_r15](geometry_transfer_20261006_r15/README.md) | diverse_04新Gauss/HRZ/XYZ壳输入；原法向末点失败保留、首出口诊断后限定输入就绪；零压缩/AD |
 | [forward_scope_20261006_r14](forward_scope_20261006_r14/README.md) | 第4步只读收口、原中面筛选、diverse_04单候选及未来新核梯度方案；零新力学/Abaqus/AD |
 | [thickness_range_20261006_r13](thickness_range_20261006_r13/README.md) | 固定C²候选，0.45/0.55mm匹配壳与完整20%，0.50mm复用；反力/曲线/功、峰值/模式与27/125点见decision |
 | [void_continuation_20261006_r12](void_continuation_20261006_r12/README.md) | C²混合虚域、45项核/回归、原6点局部AD/FD、快慢20%及新场125点；完整范围判断看decision |

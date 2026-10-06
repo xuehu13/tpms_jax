@@ -7,7 +7,7 @@
 | 文件 | 唯一用途；正式仓库对应 |
 | --- | --- |
 | RESEARCH_BACKGROUND.md | 长期问题与边界；docs同名 |
-| RESEARCH_PLAN.md | 新几何迁移唯一四步；当前第1步待执行，旧四步只作完成依据；docs同名 |
+| RESEARCH_PLAN.md | 新几何迁移唯一四步；第1步输入已就绪，第2步待执行，旧四步只作完成依据；docs同名 |
 | RESEARCH_STATUS.md | 完成/未完成事实；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 当前完整方法、数字解释、进度及可行性；docs同名 |
 | PAPER_ROUTE.md | 文献及实际阅读范围；docs同名 |
@@ -27,6 +27,7 @@
 | surface_distance.py、pbc.py | 周期中面距离/真实Gauss占据、周期自由度 |
 | fem.py、density_fem.py及其他原模块 | 原线性/几何/用料/专用设计计算，按既有范围维护 |
 | scripts/README.md、tests/、pixi.toml/lock | 现有入口分类、维护检查、锁定环境 |
+| validation/geometry_transfer_20261006_r15/ | diverse_04输入/Gauss占据/HRZ/XYZ壳包；原4条法向失败、首出口诊断、step1_decision限定就绪；零压缩/AD |
 | validation/forward_scope_20261006_r14/ | 只读四步收口：范围矩阵、三个原中面库存、diverse_04候选、未来完整梯度方案；零新力学 |
 | validation/thickness_range_20261006_r13/ | 匹配厚度输入、两条完整20%、两份壳参照、27/125点与模式、范围决定及哈希 |
 | validation/void_continuation_20261006_r12/ | 当前C²候选：输入、45项检查、原6点、快慢20%、125点、速率、范围决定及证据哈希 |
@@ -63,4 +64,6 @@ r13原生作业：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_rang
 
 旧第4步收口未新增重复长报告或PDF。WSL r14下`forward_scope.json`为范围，`geometry_inventory.json`为只读原中面筛选，`geometry_candidate.json`为单一diverse_04候选，`gradient_gate_proposal.json`仅未来方案，`decision.json`/输入与验证收据为依据。Windows `history/completed_tools_20261006/forward_scope_20261006`为完成的收口/发布工具，非活动FEM。用户原中面位置为`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/abaqus/ingredients/shell_mesh.inc`，未改。
 
-当前`work/geometry_plan_20261006`只放这次状态/规划/归档与发布收据，不是实验或求解器；正式对应`docs/history/geometry_plan_20261006/receipt.json`。新几何实验将按唯一规划在执行时建独立日期r15目录，当前不存在新场、INP、ODB或计算结果。
+当前`work/geometry_plan_20261006`只放这次状态/规划/归档与发布收据，不是实验或求解器；正式对应`docs/history/geometry_plan_20261006/receipt.json`。r15已建匹配输入/Gauss占据与HRZ场及壳INP；当前没有新ODB或压缩响应。Windows `work/geometry_transfer_20261006`仅本步准备/恢复/诊断/同步收据；正式程序仍唯一共享FEM和显式入口。
+
+r15正式位置：`/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15`。`gauss_field.npz`是真实27点占据，`hrz_mass.npz`是节点/周期质量，`surface_geometry.npz`为中面；`preparation.json`保留原false，`band_bracket_diagnosis.json`解释4条法向，`step1_decision.json`为当前限定就绪。规范壳包在其`abaqus/explicit_T0p040/`，同字节原生包在`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040`；无ODB。科学数组、首次日志/源码原字节保留，计时未知不补造。
