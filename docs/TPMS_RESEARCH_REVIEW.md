@@ -2,7 +2,7 @@
 
 更新：2026-10-06。本次调查、审阅和整理依据正式仓库0933f0f的结果，**没有新增力学计算、Abaqus作业或训练**。实际过程保留在[前向冻结报告](FORWARD20_PROGRESS_REPORT.md)和[厚度路径冻结报告](GRADIENT20_PROGRESS_REPORT.md)。执行顺序只看[唯一近期规划](RESEARCH_PLAN.md)。
 
-后续执行补充：积分64点候选未采纳；经典虚域能量候选的核与冻结场检查已完成，材料求值改善但整体转动有人工能量，未接入新路径，活动材料核已恢复。当前证据分别见[JAX积分报告](JAX_INTEGRATION_PROGRESS.md)、[虚域核报告](VIRTUAL_KERNEL_PROGRESS.md)，不把本综合说明的历史建议当最新任务。
+后续执行补充：积分64点和经典非客观虚域候选未采纳；当前客观虚域纯核及原20%保存场验证通过，未接入新路径。最新证据见[客观虚域报告](OBJECTIVE_VIRTUAL_PROGRESS.md)，原结果分别见[JAX积分报告](JAX_INTEGRATION_PROGRESS.md)、[经典虚域报告](VIRTUAL_KERNEL_PROGRESS.md)。下一项仅一次受控20%路径；下面的综合评价及历史建议不生成新任务，20%有效梯度仍未过。
 
 ## 1. 对长期目标的客观判断
 

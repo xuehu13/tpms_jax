@@ -24,6 +24,52 @@ def neo_hookean_energy(F, mu=MU, kappa=KAPPA):
 first_piola = jax.grad(neo_hookean_energy)
 
 
+
+def stable_neo_hookean_extension(F, mu=MU, kappa=KAPPA):
+    """Objective all-F extension, Smith et al. (2018), Eq. 14 / Sec. 3.4.
+
+    Parameters are converted to preserve the original small-strain mu/kappa;
+    the constant is subtracted to set W(I)=0. This is an artificial void
+    extension, not the matched true-solid NH law and not a contact barrier.
+    No SVD, inverse F or determinant clipping is used.
+    """
+    I1 = jnp.sum(F*F)
+    # Polynomial determinant avoids inverse-based higher AD at singular F.
+    J = jnp.dot(F[:,0],jnp.cross(F[:,1],F[:,2]))
+    mu_s = 4*mu/3
+    lambda_s = kappa+mu/6
+    return (mu_s/2*(I1-3-jnp.log((I1+1)/4))
+            -mu*(J-1)+lambda_s/2*(J-1)**2)
+
+
+def void_nh_weight(rho):
+    """C2 gate: zero through .001 occupancy, original NH from .01 upward.
+
+    Fixed numerical convention for this single candidate, not a fit to shell
+    forces. Occupancy and the geometric interface width remain unchanged.
+    """
+    x = jnp.clip((rho-.001)/(.01-.001),0.,1.)
+    return x**3*(10-15*x+6*x**2)
+
+
+def objective_void_energy(F, rho, eta=1e-4, mu=MU, kappa=KAPPA):
+    """Optional candidate only; existing FEM/time integration remains NH.
+
+    Deep void has an all-F energy. Wherever NH has nonzero weight, actual
+    detF must stay positive. F_nh=I skips an *exactly inactive* branch; it
+    does not repair or reinterpret actual F, J, or the true wall geometry.
+    Scale and gate both participate in occupancy derivatives.
+    """
+    weight = void_nh_weight(rho)
+    F_nh = jnp.where(weight>0,F,jnp.eye(3,dtype=F.dtype))
+    return (eta+(1-eta)*rho)*(
+        weight*neo_hookean_energy(F_nh,mu,kappa)
+        +(1-weight)*stable_neo_hookean_extension(F,mu,kappa))
+
+
+objective_void_first_piola = jax.grad(objective_void_energy)
+
+
 class PeriodicHyperelasticity(PeriodicLinearElasticityCube):
     """Reuse H runtime field, zero body force, mesh and constraint interfaces."""
 

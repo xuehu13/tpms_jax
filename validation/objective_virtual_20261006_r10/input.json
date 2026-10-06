@@ -1,0 +1,57 @@
+{
+  "base_commit": "a32f2ff4d233c478a023b04009c4b5d275c63bc7",
+  "candidate": "objective stable-NH void energy with C2 occupancy-only gate",
+  "theoretical_source": {
+    "url": "https://www.tkim.graphics/NEO/StableNeoHookean2018.pdf",
+    "authors": "Smith, de Goes, Kim (2018)",
+    "formula": "Eq.14, Sec.3.4; shifted by W(I)",
+    "source_scope": "Elastic material study; our density gate and void-only adaptation are project choices, not a published TPMS validation."
+  },
+  "candidate_constants": {
+    "NH_zero_through_occupancy": 0.001,
+    "NH_one_from_occupancy": 0.01,
+    "gate": "quintic C2 smoothstep; frozen before probe; no tuning to shell"
+  },
+  "fixed_inputs": {
+    "L_mm": 10.0,
+    "thickness_mm": 0.5,
+    "E_MPa": 10.0,
+    "nu": 0.3,
+    "eta": 0.0001,
+    "interface_10_90_mm": 0.05,
+    "N": 32,
+    "element": "HEX27",
+    "periodicity": "XYZ",
+    "lateral_macro_strain": 0
+  },
+  "formal_material_before_sha256": "8c5d10c00a559206cfc282a832b637b46762a9a12bc9bd6d0710769fa77b6164",
+  "formal_material_candidate_sha256": "5342b699fe75073efc3251dc7392882da5097228cc83bf860d82e9b9db66c0e7",
+  "explicit_entry_sha256": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a",
+  "test_sha256": "a350669bd6af1cf5f96c0efabc9a8475ede5427ec56be0d073e564538406c172",
+  "prespecified_kernel_gates": [
+    "same tangent at identity / zero stress",
+    "exact old NH from occupancy .01",
+    "rotation-energy invariance / stress covariance",
+    "finite W/P/Hessian for inverted or singular deep void",
+    "consistent state and occupancy local derivatives incl. gate",
+    "invalid wall NH remains invalid",
+    "27/125-point frozen-field full candidate energy and stress finite; all NH-active J positive"
+  ],
+  "not_certified": [
+    "new trajectory accuracy",
+    "actual virtual volume validity",
+    "self-contact",
+    "20% path AD"
+  ],
+  "new_forward_paths": 0,
+  "new_Abaqus_jobs": 0,
+  "solver_connected": false,
+  "formal_material_initial_sha256": "4f809754249f97603a4345765efc2531ad775d2b286e5cfa56842ffc64129b69",
+  "implementation_repair": {
+    "initial": "27 passed, singular rank-2 Hessian check failed",
+    "reason": "Higher AD of general jnp.linalg.det at exactly rank loss produced NaN.",
+    "change": "Scalar triple product determinant only inside the void extension; mathematically identical energy.",
+    "initial_log_sha256": "b349bbabfcb4eb9b7004d9cc5cd37899a234073f275c85482febb3df3b2b58df",
+    "original_matched_NH_modified": false
+  }
+}

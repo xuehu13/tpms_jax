@@ -1,0 +1,98 @@
+{
+  "points_per_cell": 27,
+  "Vf": 0.15163381488928415,
+  "raw_J_min": 0.03537778119925201,
+  "raw_nonpositive_points": 0,
+  "raw_nonpositive_phi_max": null,
+  "NH_active_J_min": 0.40864307145450085,
+  "NH_active_nonpositive_points": 0,
+  "candidate_energy_N_mm": 3.7362969337447667,
+  "candidate_internal_Fz_N": -1.9921277265434285,
+  "candidate_W_min_MPa": 1.367637661080914e-07,
+  "original_energy_N_mm": 3.758891998139007,
+  "original_internal_Fz_N": -2.0068602104330457,
+  "domain_bins": {
+    "deep_void_le_0p001": {
+      "points": 709252,
+      "raw_J_min": 0.03537778119925201,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 801.4950013127996,
+      "candidate_energy_N_mm": 0.09939588582948734,
+      "candidate_internal_Fz_N": -0.026204618339238796
+    },
+    "blend_lt_0p01": {
+      "points": 13066,
+      "raw_J_min": 0.40864307145450085,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 15.113856730310662,
+      "candidate_energy_N_mm": 0.011782491692579245,
+      "candidate_internal_Fz_N": -0.002083240453717681
+    },
+    "NH_0p01_to_0p05": {
+      "points": 9931,
+      "raw_J_min": 0.46387503947667097,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 11.042240388762956,
+      "candidate_energy_N_mm": 0.03048757277131171,
+      "candidate_internal_Fz_N": -0.006260740979748966
+    },
+    "transition_0p05_to_0p95": {
+      "points": 36034,
+      "raw_J_min": 0.6653365454587037,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 40.81041103200817,
+      "candidate_energy_N_mm": 0.8350130427843623,
+      "candidate_internal_Fz_N": -0.28110665619504516
+    },
+    "solid_ge_0p95": {
+      "points": 116453,
+      "raw_J_min": 0.8464369453068774,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 131.53849053611793,
+      "candidate_energy_N_mm": 2.759617940667028,
+      "candidate_internal_Fz_N": -1.6764724705756773
+    }
+  },
+  "rotation": {
+    "0.0": {
+      "pure_rotation_energy_N_mm": 0.0,
+      "superposed_energy_N_mm": 3.7362969337447667,
+      "stress_covariance_max_abs_MPa": 0.0,
+      "stress_covariance_max_scaled_error": 0.0,
+      "superposed_relative_energy_change": 0.0
+    },
+    "15.0": {
+      "pure_rotation_energy_N_mm": 7.785937486369286e-30,
+      "superposed_energy_N_mm": 3.736296933744768,
+      "stress_covariance_max_abs_MPa": 8.43769498715119e-15,
+      "stress_covariance_max_scaled_error": 8.43769498715119e-15,
+      "superposed_relative_energy_change": 4.440892098500626e-16
+    },
+    "30.0": {
+      "pure_rotation_energy_N_mm": 0.0,
+      "superposed_energy_N_mm": 3.7362969337447667,
+      "stress_covariance_max_abs_MPa": 9.769962616701378e-15,
+      "stress_covariance_max_scaled_error": 9.769962616701378e-15,
+      "superposed_relative_energy_change": 0.0
+    },
+    "60.0": {
+      "pure_rotation_energy_N_mm": 0.0,
+      "superposed_energy_N_mm": 3.736296933744767,
+      "stress_covariance_max_abs_MPa": 8.881784197001252e-15,
+      "stress_covariance_max_scaled_error": 8.881784197001252e-15,
+      "superposed_relative_energy_change": 2.220446049250313e-16
+    },
+    "90.0": {
+      "pure_rotation_energy_N_mm": 0.0,
+      "superposed_energy_N_mm": 3.7362969337447676,
+      "stress_covariance_max_abs_MPa": 6.661338147750939e-15,
+      "stress_covariance_max_scaled_error": 6.661338147750939e-15,
+      "superposed_relative_energy_change": 2.220446049250313e-16
+    }
+  },
+  "same_state_energy_relative_change": -0.006011096994919529,
+  "same_state_internal_force_relative_change": -0.007341061332038823,
+  "candidate_full_energy_defined": true,
+  "original_full_energy_defined": true,
+  "same_state_only": true
+}

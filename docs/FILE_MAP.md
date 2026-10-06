@@ -1,6 +1,6 @@
 # 文件地图：活动入口、正式程序与冻结证据
 
-更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本轮执行JAX积分单因素改进；只维护一个显式入口，共享材料/FEM核和原科学文件冻结。
+更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本轮完成客观虚域小核/冻结场验证，下一项一次受控20%路径；只维护一个FEM和显式入口，原科学文件冻结。
 
 ## 现在读哪些文件
 
@@ -8,11 +8,12 @@
 | --- | --- |
 | START_HERE.md | 阅读入口；README.md |
 | RESEARCH_BACKGROUND.md | 长期目标/边界；docs同名 |
-| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；积分／经典虚域候选未采纳，下一项转动兼容虚域核验证；docs同名 |
+| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；积分／经典虚域未采纳，客观核通过，下一项一次20%受控路径；docs同名 |
 | PROJECT_OVERVIEW.md | 事实状态；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 方法、符号、误差因素、客观可行性；docs同名 |
 | SIMULATION_ERROR_PROGRESS.md | 冻结的定位/参照网格尝试；其后续建议已被主规划调整；docs同名 |
 | JAX_INTEGRATION_PROGRESS.md | 本轮27/125点探针、64点新路径及资源处理；docs同名 |
+| OBJECTIVE_VIRTUAL_PROGRESS.md | 最新转动兼容核及保存场验证；未接入路径；docs同名 |
 | VIRTUAL_KERNEL_PROGRESS.md | 经典虚域候选小核／冻结场／转动缺陷，未采纳；docs同名 |
 | PAPER_ROUTE.md | 来源与阅读范围；docs同名 |
 | FORWARD20_PROGRESS_REPORT.md | 冻结前向执行证据；docs同名，不当最新计划 |
@@ -25,7 +26,7 @@
 
 | 路径 | 用途 |
 | --- | --- |
-| hyperelastic_fem.py | 唯一共享NH材料能/内力，HEX8/HEX27与周期参考几何 |
+| hyperelastic_fem.py | 唯一共享NH材料能/内力与未接入的客观虚域纯核，HEX8/HEX27与周期参考几何 |
 | pbc.py、fem.py、density_fem.py | 周期自由度与线弹性背景组装 |
 | surface_distance.py | 周期中面距离、恒厚占据，未认证形态AD |
 | geometry.py、volume.py、voxel_field.py、design_fem.py | 原几何/用料/场及专用已验证梯度，历史范围见报告 |
@@ -34,7 +35,22 @@
 | scripts/extract_thin_explicit.py、extract_thin_finite.py | Abaqus只读提取 |
 | scripts/README.md、pixi.toml、pixi.lock、tests/ | 入口说明、锁定环境及维护检验 |
 
-## 本轮JAX单因素改进
+## 当前客观虚域验证
+
+根：`/home/xuehu/projects/tpms_jax/validation/objective_virtual_20261006_r10`。28项检查与原20%保存场27/125点探针通过；候选未连接默认显式入口。下一项仅一次受控代表20%路径。
+
+| 位置 | 内容 |
+| --- | --- |
+| input.json、literature.json | 固定候选、数值占据界限、原论文URL/哈希/公式范围 |
+| checks.json、decision.json | 28项检查、初次行列式二阶AD失败与等价修复、未认证项 |
+| rule_4.json、rule_8.json、result.json | 原保存位移的全域候选能量/内力/实际J及转动；非新解 |
+| experiment.py、probe_manifest.json、evidence_manifest.json | 可指定仓库/新输出的冻结探针与来源/字节校验 |
+| source_before/、source_attempt/、source_at_run/及*.log | 原字节、初次失败和计算日志，本机追溯不维护副本 |
+| rotation_diagnostic.png | 经典/客观候选叠加转动比较，非对壳反力误差 |
+
+材料只在正式hyperelastic_fem.py维护；23项候选检查为tests/test_objective_void.py。Windows辅助阅读/发布在work/objective_virtual_20261006，图为output/figures/OBJECTIVE_VIRTUAL_rotation.png。旧r8/r9及其他场未移动或覆盖。
+
+## 冻结积分单因素试验
 
 根：`/home/xuehu/projects/tpms_jax/validation/jax_improvement_20261006_r8`。
 
@@ -50,7 +66,7 @@
 
 Windows辅助执行/日志：`work/jax_improvement_20261006`，不是第二套FEM。旧r6/r7科学证据均保留原路径/字节。
 
-## 最新虚域核验证
+## 冻结经典虚域核验证
 
 根：`/home/xuehu/projects/tpms_jax/validation/virtual_kernel_20261006_r9`。没有新压缩路径、Abaqus或完整AD；活动材料核恢复原字节。
 
@@ -84,7 +100,7 @@ Windows工具／回执：`work/virtual_kernel_20261006`，图为`output/figures/
 
 目标薄壁基础在`validation/thin_target_20261004_r5`；第一至第四轮各日期实验冻结。早期M4最终CSV为`results/m4_numerical_study.csv`，Git忽略。原JSON中的阶段状态不自动覆盖最新解释或生成待办。
 
-## 当前新实验：误差定位与三维参照准备
+## 冻结误差定位与三维参照准备
 
 根：`/home/xuehu/projects/tpms_jax/validation/simulation_error_20261006_r7`。完整说明见[执行报告](SIMULATION_ERROR_PROGRESS.md)。
 

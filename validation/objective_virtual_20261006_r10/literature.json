@@ -1,0 +1,15 @@
+{
+  "title": "Stable Neo-Hookean Flesh Simulation",
+  "authors": "Smith, de Goes, Kim",
+  "year": 2018,
+  "url": "https://www.tkim.graphics/NEO/StableNeoHookean2018.pdf",
+  "pdf_sha256": "dc2bc1614cbb6c7af7e2df225ffbc1834776beac0b0f2473426a7ce514916d03",
+  "relevant_pages": [
+    4,
+    5
+  ],
+  "formula": "Eq.14 with Sec.3.4 parameter conversion, W(I) subtracted",
+  "read_and_visual_review": true,
+  "local_source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/objective_virtual_20261006/StableNeoHookean2018.pdf",
+  "scope": "Source model supports the objective energy choice. Occupancy-only gate and TPMS void adaptation are our candidate; no published accuracy or differentiable-TPMS claim is inferred."
+}

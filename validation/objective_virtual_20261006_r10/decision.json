@@ -1,0 +1,15 @@
+{
+  "status": "kernel_gates_passed_candidate_retained_for_one_controlled_path",
+  "objective_energy_and_stress_verified": true,
+  "full_frozen_125_point_energy_defined": true,
+  "actual_negative_J_removed": false,
+  "forward_accuracy_improved": null,
+  "trajectory_gradient_validated": false,
+  "default_solver_material_changed": false,
+  "new_complete_TPMS_paths": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "gate_choice_basis": "Upper occupancy .01 preserves the previous virtual cut-off; .001 lower bound separates the previously documented deep-void bin. Chosen before the probe, not against shell responses.",
+  "domain_warning": "Negative actual J is allowed only where NH weight is exactly zero (rho<=.001). At a negative-J cutoff state rho=.001, no two-sided design derivative across the undefined NH-active side is certified.",
+  "next_action": "Wire the same optional kernel consistently into the existing Explicit entry and run one fixed-physics 27-point representative 20%+hold path in a new directory. Check actual NH-active J and 125-point frozen-field coverage, full reference energy, reaction/curve/work/mode and cost. No parameter or integration scan, Abaqus remodel, training or full-path AD."
+}
