@@ -1,0 +1,206 @@
+{
+  "diverse_28": {
+    "case": "diverse_28",
+    "source_directory": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28",
+    "implicit_expression": "-3.4*cos(X)*cos(Z)+4.6*sin(X)*sin(Y)*sin(Z)+2.0",
+    "case_sha256": "5ea175b0c73aa45a043b6766a7d000408fc52178e212bcb09e959fd54f4bff43",
+    "mesh_sha256": "087cc3659d09c2a665217e3c3ea72b67049775fd932198897e8bda0c76f1c460",
+    "L_mm": 10.0,
+    "nodes": 9351,
+    "triangles": 17986,
+    "coordinate_bounds_over_L": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "area_over_L2": 3.0432626755347663,
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "low_nodes": 124,
+        "high_nodes": 124,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 1,
+        "low_nodes": 120,
+        "high_nodes": 120,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "low_nodes": 126,
+        "high_nodes": 126,
+        "coordinate_gap_over_L": 0.0
+      }
+    ],
+    "normal_second_moment": [
+      [
+        0.3995464053503212,
+        -3.195017748652131e-06,
+        -1.8410523485539813e-05
+      ],
+      [
+        -3.1950177486525486e-06,
+        0.20090817778655817,
+        -2.5206641664267035e-06
+      ],
+      [
+        -1.841052348552703e-05,
+        -2.520664166427304e-06,
+        0.39954541686311723
+      ]
+    ],
+    "basic_periodic_surface_screen_pass": true,
+    "new_XYZ_shell_reference_exists": true,
+    "strict_mathematical_minimal_surface_certified": false,
+    "mechanical_response_predicted": false,
+    "constant_thickness_overlap_or_contact_certified": false
+  },
+  "diverse_04": {
+    "case": "diverse_04",
+    "source_directory": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04",
+    "implicit_expression": "-2.6*sin(Z)-4.5*sin(X)*cos(Y)-0.1*cos(Z)*cos(Z)+1.8",
+    "case_sha256": "95eda44705b37dfa799ff2c34319bf0a5fac1ddc9d0f8255cfc4b729b1e19ca3",
+    "mesh_sha256": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "L_mm": 10.0,
+    "nodes": 8372,
+    "triangles": 15914,
+    "coordinate_bounds_over_L": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "area_over_L2": 2.660641133756185,
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "low_nodes": 124,
+        "high_nodes": 124,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 1,
+        "low_nodes": 141,
+        "high_nodes": 141,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "low_nodes": 162,
+        "high_nodes": 162,
+        "coordinate_gap_over_L": 0.0
+      }
+    ],
+    "normal_second_moment": [
+      [
+        0.36526557173245816,
+        -3.115260060707476e-05,
+        4.771396954744297e-06
+      ],
+      [
+        -3.115260060707466e-05,
+        0.36530217387831765,
+        5.611880191984628e-06
+      ],
+      [
+        4.771396954742036e-06,
+        5.611880191983644e-06,
+        0.2694322543892243
+      ]
+    ],
+    "basic_periodic_surface_screen_pass": true,
+    "new_XYZ_shell_reference_exists": false,
+    "strict_mathematical_minimal_surface_certified": false,
+    "mechanical_response_predicted": false,
+    "constant_thickness_overlap_or_contact_certified": false
+  },
+  "diverse_05": {
+    "case": "diverse_05",
+    "source_directory": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_05",
+    "implicit_expression": "0.6*sin(2*Z)-4.6*cos(Y)*sin(Z)+0.8*sin(X)*sin(X)-0.4",
+    "case_sha256": "cbf71c4b6c4fcaf87151e76d39dbda6a5220d8bfdb00d940a999c83edbf9c64b",
+    "mesh_sha256": "e7e431b912053b45d82ce3799c4b5053875170cf638e4dbb97503ff3c30391d3",
+    "L_mm": 10.0,
+    "nodes": 11624,
+    "triangles": 21998,
+    "coordinate_bounds_over_L": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "area_over_L2": 3.649445212607416,
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "low_nodes": 233,
+        "high_nodes": 233,
+        "coordinate_gap_over_L": 8.326672684688674e-17
+      },
+      {
+        "axis": 1,
+        "low_nodes": 166,
+        "high_nodes": 166,
+        "coordinate_gap_over_L": 7.892991815694472e-17
+      },
+      {
+        "axis": 2,
+        "low_nodes": 248,
+        "high_nodes": 248,
+        "coordinate_gap_over_L": 0.0
+      }
+    ],
+    "normal_second_moment": [
+      [
+        0.0590241933455776,
+        -7.796427969335463e-06,
+        -6.415556634662649e-06
+      ],
+      [
+        -7.796427969335124e-06,
+        0.4570654144435283,
+        4.5226237449409693e-05
+      ],
+      [
+        -6.415556634663646e-06,
+        4.522623744941019e-05,
+        0.4839103922108969
+      ]
+    ],
+    "basic_periodic_surface_screen_pass": true,
+    "new_XYZ_shell_reference_exists": false,
+    "strict_mathematical_minimal_surface_certified": false,
+    "mechanical_response_predicted": false,
+    "constant_thickness_overlap_or_contact_certified": false
+  }
+}

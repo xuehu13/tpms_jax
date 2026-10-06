@@ -1,0 +1,29 @@
+{
+  "source_commit": "10d7ce3ecf53abe1e7e450f5d592c7a958cc5618",
+  "changed_old_files": [
+    "AGENTS.md",
+    "README.md",
+    "docs/FILE_MAP.md",
+    "docs/RESEARCH_BACKGROUND.md",
+    "docs/RESEARCH_PLAN.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/TPMS_RESEARCH_REVIEW.md",
+    "scripts/README.md",
+    "validation/README.md"
+  ],
+  "unchanged_tracked_files": 1251,
+  "unexpected_old_changes": [],
+  "old_r12_r13_manifest_entries_verified": {
+    "void_continuation_20261006_r12": 152,
+    "thickness_range_20261006_r13": 71
+  },
+  "source_and_original_geometry_inputs_verified": 21,
+  "markdown_local_links_checked": 129,
+  "broken_local_links": [],
+  "git_diff_check": "pass",
+  "new_mechanics_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "scientific_scope_assertions": "pass",
+  "checks_kind": "document provenance and result reuse only; no repeated mechanics/unit tests because solver unchanged"
+}

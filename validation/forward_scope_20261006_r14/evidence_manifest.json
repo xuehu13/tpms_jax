@@ -1,0 +1,42 @@
+{
+  "source_commit": "10d7ce3ecf53abe1e7e450f5d592c7a958cc5618",
+  "new_evidence_sha256": {
+    "validation/forward_scope_20261006_r14/README.md": "f1ff83a3a6a67d3e5197182f59586170dd96a3fb985b88a4372eb09356400f6b",
+    "validation/forward_scope_20261006_r14/before_manifest.json": "b4665a254bdd9381c7eb00ff9161ffd5cd65e41e4717add4229d570a7883c4fe",
+    "validation/forward_scope_20261006_r14/decision.json": "bf5343d9d9c9570dccf754741579efeb5d94edaaa0f3dce593b0f793a784c344",
+    "validation/forward_scope_20261006_r14/forward_scope.json": "b4b2422728f2a830531dcf3895106df5d6c37b445e1ac8d0a00732633fc13b9c",
+    "validation/forward_scope_20261006_r14/geometry_candidate.json": "73087d39842ac2d1c33f381345be3a8195524d18d5da522657587f47d96d156d",
+    "validation/forward_scope_20261006_r14/geometry_inventory.json": "108079624ca3a8db5f6358d520b4bfc264039af5303b57e966bafd442bb601d0",
+    "validation/forward_scope_20261006_r14/gradient_gate_proposal.json": "01115f321b235bfb22c919dea7a47e29663bf9b43e62688bd85e164eb4dfb751",
+    "validation/forward_scope_20261006_r14/input_manifest.json": "7bb8d6694bf21a2ba34e0790fdb9d64be32fd50adbec2682d353c48e33be1237",
+    "validation/forward_scope_20261006_r14/tools/analyze_scope.py": "10b02259073068987730b833dadfc634832dc7939b1cc12ae7339e00c62bdd47",
+    "validation/forward_scope_20261006_r14/tools/finish.py": "a2664fd0866250ab50fb5625c1699c8379af1cfd93ed0e3e2728440dc70da13a",
+    "validation/forward_scope_20261006_r14/tools/verify.py": "c70e5b390725277b4a5b0f33938f41b7c4c49f1aa5d9a27083a8bfaa241dc33a",
+    "validation/forward_scope_20261006_r14/verification.json": "47bf76d522f97c2a4e8bc833bef1021bba05b8086646e1c37f490f9c20010d6e"
+  },
+  "frozen_input_sha256": {
+    "/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12/decision.json": "3d60dfaa14dae4f3a2a22d6bf4abb610d19a379c8f00ac228db8342d75d16c64",
+    "/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12/rate_check.json": "325f747c6bcdd4c79372fdaf061f5458c95b35c8963b947bdc6865eedea133de",
+    "/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12/T0p004_analysis/comparison.json": "78d94ef733f50c622ab03782a7e0cdb2ff1a5704281a3c753daadfbadbd4e5c7",
+    "/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12/T0p008_analysis/comparison.json": "d5a39511438db0c2ef9d9c621691b6ce99d4206cce7323e421235f15ebbee035",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/decision.json": "06d409b16fdc38a9f69e60acb1f24e7cfefdb7afc9583ed72b3a46be95088919",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p45/analysis/comparison.json": "52990e156e4403b29cbcb71c08d4f2fedd80606376c3f7165dbfe4244d0f87b6",
+    "/home/xuehu/projects/tpms_jax/validation/thickness_range_20261006_r13/t0p55/analysis/comparison.json": "9c9999133fc681fa0a96f14b13755810bc3d66cc07d0838888d3dab55d4d7c06",
+    "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/gradient20_path_20261005/gradient_validation.json": "86a2c69155354181255c9a9048bdb1ab7bdfd1833c56338ece0fb86a16da154a",
+    "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/gradient20_path_20261005/path_ad_full/result.json": "0cf26b3f6bc5df18c6b2d2b389633a16e26adde130c76571972eada38585c5c3",
+    "/home/xuehu/projects/tpms_jax/scripts/prepare_thin_target.py": "8994144d793e0d57c037dd942f8a5943afb827418b83713d999560a3d15a66f3",
+    "/home/xuehu/projects/tpms_jax/tests/test_objective_explicit.py": "3d02a253486fe6d984992c9ef15fa00266bf2dd6e05103de819336fc88e0ff38",
+    "/home/xuehu/projects/tpms_jax/hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "/home/xuehu/projects/tpms_jax/scripts/thin_target_explicit.py": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+    "/home/xuehu/projects/tpms_jax/surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "/home/xuehu/projects/tpms_jax/pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/case_used.json": "5ea175b0c73aa45a043b6766a7d000408fc52178e212bcb09e959fd54f4bff43",
+    "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus/ingredients/shell_mesh.inc": "087cc3659d09c2a665217e3c3ea72b67049775fd932198897e8bda0c76f1c460",
+    "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/case_used.json": "95eda44705b37dfa799ff2c34319bf0a5fac1ddc9d0f8255cfc4b729b1e19ca3",
+    "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/abaqus/ingredients/shell_mesh.inc": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_05/case_used.json": "cbf71c4b6c4fcaf87151e76d39dbda6a5220d8bfdb00d940a999c83edbf9c64b",
+    "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_05/abaqus/ingredients/shell_mesh.inc": "e7e431b912053b45d82ce3799c4b5053875170cf638e4dbb97503ff3c30391d3"
+  },
+  "old_scientific_evidence_unchanged": true,
+  "new_mechanics_jobs": 0
+}

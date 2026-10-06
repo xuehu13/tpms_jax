@@ -1,0 +1,30 @@
+{
+  "main_plan_steps_completed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "work_kind": "read_only_scientific_synthesis_and_future_gate_selection",
+  "new_mechanics_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "new_training_jobs": 0,
+  "scoped_forward_research_supported": true,
+  "full_Abaqus_replacement_certified": false,
+  "three_thickness_maxima": {
+    "maximum_hold_force_difference": 0.08278280478076483,
+    "maximum_curve_metric": 0.07478002717450971,
+    "maximum_work_difference": 0.0731338667202428
+  },
+  "current_method_retained": "objective_void+C2 explicitly selected; nh default unchanged; no retuning",
+  "strict_shell_quality_certified": false,
+  "gradient20_certified": false,
+  "next_recommended_case": "diverse_04, t.5mm, matched XYZ elastic no-contact; proposal only",
+  "next_priority_order": [
+    "one geometry-transfer forward case",
+    "bounded new-model complete gradient gate if appropriate",
+    "training only after applicable physics/gradient evidence"
+  ],
+  "reason_to_continue": "Three matched physical thickness samples and objective/domain/rate evidence support the forward route; full gradient-guided inverse-design feasibility remains conditional."
+}

@@ -1,0 +1,55 @@
+{
+  "status": "proposal_only_not_executed",
+  "new_full_AD_jobs": 0,
+  "research_question": "Does the repaired candidate provide an independently verified local thickness derivative of the entire declared 20% discrete path?",
+  "case": "diverse_28 t=.5mm; frozen objective_void+C2, HEX27 N32/27, same XYZ/NH/eta/interface",
+  "priority": "After one bounded geometry-transfer forward case; no automatic AD retry or training.",
+  "primal_requirement": {
+    "reuse": "r12 candidate center reference only, not the old NH AD path",
+    "same_core": "ExplicitXYZ.material_fields, block and observables plus shared material/FEM",
+    "accepted_schedule": "same accepted time grid across primal, JVP and perturbations; all hashes checked",
+    "center_force_and_curve_relative_limit": 1e-06,
+    "controls": "No derivative of step rejection/dt-selection decisions; explicitly conditional on the fixed schedule."
+  },
+  "design_chain": [
+    "cached reference distance -> thickness occupancy",
+    "occupancy -> stiffness and gate/cutoff",
+    "occupancy -> HRZ nodal and periodic mass",
+    "mass-dependent affine inertia",
+    "every accepted time step and initial/half-step velocity convention",
+    "signed reaction at 10%/15%, 20% last-half-hold mean and frozen normalized force loss"
+  ],
+  "minimum_physical_difference": {
+    "thicknesses_mm": [
+      0.4975,
+      0.5025
+    ],
+    "delta_mm": 0.0025,
+    "fixed_interface_width_mm": 0.05,
+    "conditional_refinement_delta_mm": 0.00125,
+    "refinement_policy": "Only if FD does not resolve a stable local derivative. At most one half-delta pair; do not keep shrinking until agreement.",
+    "same_new_material_law_on_both_sides": true,
+    "coarse_range_not_reused_as_local_FD": true
+  },
+  "gates": {
+    "finite_primal_and_tangent": true,
+    "actual_positive_J_in_uncontinued_NH": true,
+    "complete_candidate_material_domain": "both perturbed paths and final dense probe; not positive-J subset energies",
+    "same_mode_screen": "report possible branch change; similarity alone does not certify a derivative",
+    "gradient_relative_limit": 0.01,
+    "normalization_floor_N_per_mm": 1e-08,
+    "loss_gradient_relative_limit": 0.01,
+    "loss_normalization_floor_per_mm": 1e-08,
+    "sign_agreement": "required for resolvable nonzero derivatives",
+    "FD_half_delta_relative_limit_if_needed": 0.01
+  },
+  "bounded_execution": "First check the shared new-model primal and a short prefix; then at most one complete new-model directional JVP if those gates pass. No repeated full AD after failure.",
+  "cost": "Two new physical paths about 2x10.7min before AD; old NH full JVP 49.77min is a cost precedent only, not a new-model runtime promise; one optional half-delta pair adds about 21min.",
+  "pass_scope": "Local thickness derivative of one fixed discrete path; not shape derivative, adaptive-controller derivative, high-dimensional VJP, true-solid accuracy or completed inverse design.",
+  "failure_action": "Preserve failure/domain/branch/numerical evidence, keep validated forward scope, identify a targeted mathematical issue before any next attempt.",
+  "references": [
+    "https://docs.jax.dev/en/latest/notebooks/autodiff_cookbook.html",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/gradient_validation.json",
+    "tests/test_objective_explicit.py"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "status": "selected_for_proposal_not_simulated",
+  "case": "diverse_04",
+  "source": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04",
+  "geometry_screen": {
+    "case": "diverse_04",
+    "source_directory": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04",
+    "implicit_expression": "-2.6*sin(Z)-4.5*sin(X)*cos(Y)-0.1*cos(Z)*cos(Z)+1.8",
+    "case_sha256": "95eda44705b37dfa799ff2c34319bf0a5fac1ddc9d0f8255cfc4b729b1e19ca3",
+    "mesh_sha256": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "L_mm": 10.0,
+    "nodes": 8372,
+    "triangles": 15914,
+    "coordinate_bounds_over_L": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "area_over_L2": 2.660641133756185,
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "low_nodes": 124,
+        "high_nodes": 124,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 1,
+        "low_nodes": 141,
+        "high_nodes": 141,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "low_nodes": 162,
+        "high_nodes": 162,
+        "coordinate_gap_over_L": 0.0
+      }
+    ],
+    "normal_second_moment": [
+      [
+        0.36526557173245816,
+        -3.115260060707476e-05,
+        4.771396954744297e-06
+      ],
+      [
+        -3.115260060707466e-05,
+        0.36530217387831765,
+        5.611880191984628e-06
+      ],
+      [
+        4.771396954742036e-06,
+        5.611880191983644e-06,
+        0.2694322543892243
+      ]
+    ],
+    "basic_periodic_surface_screen_pass": true,
+    "new_XYZ_shell_reference_exists": false,
+    "strict_mathematical_minimal_surface_certified": false,
+    "mechanical_response_predicted": false,
+    "constant_thickness_overlap_or_contact_certified": false
+  },
+  "reason": "Existing connected periodic oriented midsurface; different normal distribution and 15914 triangles vs 17986 in baseline. Chosen before new force results, not for a close reference curve.",
+  "alternate_inventory_only": "diverse_05 also passes the basic surface screen; not a second queued job.",
+  "future_fixed_conditions": "L10mm, t.5mm, XYZ zero lateral strain, NH E10 nu.3, frozen objective_void+C2 and numerical constants",
+  "new_inputs_required": [
+    "new reference Gauss distances/occupancy and HRZ mass for this midsurface",
+    "new matched S3R shell using this midsurface and recomputed XYZ periodic classes; original XY equations/results do not certify XYZ",
+    "new input/source/environment provenance; never reuse diverse_28 occupancy or macro-control label blindly"
+  ],
+  "future_order": [
+    "match and screen the physical inputs",
+    "one JAX and one slow shell 0-20% + hold",
+    "compare existing response, mode, energy/inertia and material-domain gates; report scope or failure"
+  ],
+  "gates": "Use existing <=10% response/work targets, fixed RMS denominator, sampled material-domain and energy/inertia gates; report shell strict 1% energy quality separately.",
+  "claim_limit": "One new periodic implicit-surface case would support transfer only to that geometry; not all TPMS families or a mathematical minimal-surface classification."
+}

@@ -7,7 +7,7 @@
 | 文件 | 唯一用途；正式仓库对应 |
 | --- | --- |
 | RESEARCH_BACKGROUND.md | 长期问题与边界；docs同名 |
-| RESEARCH_PLAN.md | 唯一四步及当前第4步；docs同名 |
+| RESEARCH_PLAN.md | 四步已完成；唯一有限后续建议；docs同名 |
 | RESEARCH_STATUS.md | 完成/未完成事实；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 当前完整方法、数字解释、进度及可行性；docs同名 |
 | PAPER_ROUTE.md | 文献及实际阅读范围；docs同名 |
@@ -27,6 +27,7 @@
 | surface_distance.py、pbc.py | 周期中面距离/真实Gauss占据、周期自由度 |
 | fem.py、density_fem.py及其他原模块 | 原线性/几何/用料/专用设计计算，按既有范围维护 |
 | scripts/README.md、tests/、pixi.toml/lock | 现有入口分类、维护检查、锁定环境 |
+| validation/forward_scope_20261006_r14/ | 只读四步收口：范围矩阵、三个原中面库存、diverse_04候选、未来完整梯度方案；零新力学 |
 | validation/thickness_range_20261006_r13/ | 匹配厚度输入、两条完整20%、两份壳参照、27/125点与模式、范围决定及哈希 |
 | validation/void_continuation_20261006_r12/ | 当前C²候选：输入、45项检查、原6点、快慢20%、125点、速率、范围决定及证据哈希 |
 | validation/large_compression_20261005_r6/ | 冻结原HEX8/HEX27、壳参照、背景桥接、20%原梯度失败与定位 |
@@ -59,3 +60,5 @@ r12的`T0p004/`、`T0p008/`含完整输入、结果、最终field.npz及运行�
 ## 当前新增证据
 
 r13新原生作业：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040`及同名`t0p55`目录。ODB留该处；正式实验各厚度`abaqus/explicit_T0p040/`有提取和retention.json。各厚度`T0p004/`含场/完整结果、`analysis/`含27/125点/模式与comparison.json；一份规范INP和厚度单行差异可复现两侧输入。Windows `work/thickness_range_20261006`仅本轮一次性准备/报告/发布收据，不是FEM入口。
+
+第4步收口仅更新现有综合说明/唯一规划，不新增重复长报告或PDF。WSL r14下`forward_scope.json`为范围，`geometry_inventory.json`为只读原中面筛选，`geometry_candidate.json`为单一diverse_04候选，`gradient_gate_proposal.json`仅未来方案，`decision.json`/输入与验证收据为依据。Windows `work/forward_scope_20261006`为本次一次性收口/发布工具，非活动FEM。用户原中面位置为`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/abaqus/ingredients/shell_mesh.inc`，未改。
