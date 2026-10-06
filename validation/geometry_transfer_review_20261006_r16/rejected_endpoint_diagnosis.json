@@ -1,0 +1,256 @@
+{
+  "rows": [
+    {
+      "file": "validation/geometry_transfer_20261006_r15/T0p004_cpu_reference/rejected_block_01.npz",
+      "sha256": "ff6b75649fb19237b05febf245457a0ef9a96ed80f12daa53ea67c97cff46d71",
+      "accepted": false,
+      "attempted_time_s": 0.0027234375956416102,
+      "compression": 0.1621385546274918,
+      "finite_q_scalar_count": 3,
+      "q_scalar_count": 786432,
+      "finite_q_class_count": 1,
+      "class_count": 262144,
+      "nan_q_scalar_count": 786429,
+      "inf_q_scalar_count": 0,
+      "finite_vhalf_scalar_count": 3,
+      "complete_finite_nodal_cells": 0,
+      "candidate_finite_gauss_count": 0,
+      "full_domain_energy_N_mm": null,
+      "scope": "Rejected endpoint, finite-cell subset only. No valid final state, no full energy, no first-offending-step localization."
+    },
+    {
+      "file": "validation/geometry_transfer_20261006_r15/T0p004_cpu_reference/rejected_block_02.npz",
+      "sha256": "ba82542d3c0c697ac9f575a41d08216efc22551843a72a089d839b2319e1a0ea",
+      "accepted": false,
+      "attempted_time_s": 0.00270620064883378,
+      "compression": 0.16090908561872877,
+      "finite_q_scalar_count": 755325,
+      "q_scalar_count": 786432,
+      "finite_q_class_count": 251775,
+      "class_count": 262144,
+      "nan_q_scalar_count": 31107,
+      "inf_q_scalar_count": 0,
+      "finite_vhalf_scalar_count": 755325,
+      "complete_finite_nodal_cells": 30846,
+      "candidate_finite_gauss_count": 832842,
+      "full_domain_energy_N_mm": null,
+      "scope": "Rejected endpoint, finite-cell subset only. No valid final state, no full energy, no first-offending-step localization.",
+      "finite_subset": {
+        "finite_F_points": 832842,
+        "domains": {
+          "deep_virtual_phi_le_0p001": {
+            "points": 691346,
+            "nonpositive_J": 2637,
+            "nonfinite_J": 408,
+            "nonfinite_energy": 1016,
+            "nonfinite_stress": 928
+          },
+          "mixed_virtual_0p001_lt_phi_lt_0p01": {
+            "points": 11689,
+            "nonpositive_J": 3,
+            "nonfinite_J": 0,
+            "nonfinite_energy": 0,
+            "nonfinite_stress": 0
+          },
+          "uncontinued_NH_phi_ge_0p01": {
+            "points": 129807,
+            "nonpositive_J": 0,
+            "nonfinite_J": 0,
+            "nonfinite_energy": 0,
+            "nonfinite_stress": 0
+          }
+        },
+        "finite_J_min": -4.813167258468175e+294,
+        "finite_J_max": 1.4082641199420551e+308,
+        "max_finite_F_norm": 1.0092872310464996e+153,
+        "overflow_F_norm_count": 634,
+        "finite_energy_max": 1.2604018373433704e+303,
+        "finite_stress_max_absolute": 1.3671336476683997e+307,
+        "offending_points_count": 1016,
+        "first_12_by_cell_order": [
+          {
+            "cell": 15869,
+            "gauss_index": 0,
+            "reference_xyz_normalized": [
+              0.47227192704310167,
+              0.4722719270431019,
+              0.9097719270431018
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 1,
+            "reference_xyz_normalized": [
+              0.47227192704310195,
+              0.4722719270431019,
+              0.9218750000000002
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 2,
+            "reference_xyz_normalized": [
+              0.47227192704310184,
+              0.4722719270431019,
+              0.9339780729568983
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 3,
+            "reference_xyz_normalized": [
+              0.47227192704310167,
+              0.48437499999999994,
+              0.9097719270431017
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 4,
+            "reference_xyz_normalized": [
+              0.47227192704310195,
+              0.4843750000000001,
+              0.9218750000000001
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 5,
+            "reference_xyz_normalized": [
+              0.4722719270431017,
+              0.484375,
+              0.9339780729568984
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 6,
+            "reference_xyz_normalized": [
+              0.47227192704310184,
+              0.49647807295689816,
+              0.9097719270431018
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 7,
+            "reference_xyz_normalized": [
+              0.4722719270431017,
+              0.4964780729568981,
+              0.9218749999999998
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 8,
+            "reference_xyz_normalized": [
+              0.4722719270431019,
+              0.4964780729568983,
+              0.9339780729568984
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 9,
+            "reference_xyz_normalized": [
+              0.4843749999999999,
+              0.4722719270431017,
+              0.9097719270431017
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 10,
+            "reference_xyz_normalized": [
+              0.48437500000000006,
+              0.4722719270431019,
+              0.9218750000000002
+            ],
+            "phi": 0.0,
+            "J": 0.0,
+            "energy_finite": false,
+            "stress_finite": false
+          },
+          {
+            "cell": 15869,
+            "gauss_index": 11,
+            "reference_xyz_normalized": [
+              0.4843749999999999,
+              0.47227192704310184,
+              0.933978072956898
+            ],
+            "phi": 0.0,
+            "J": null,
+            "energy_finite": false,
+            "stress_finite": false
+          }
+        ]
+      }
+    },
+    {
+      "file": "validation/geometry_transfer_20261006_r15/T0p004_cpu_reference/rejected_block_03.npz",
+      "sha256": "20e648602d878a35c08eee9946b00f475708315db5ed7894a499a33c6cea1b20",
+      "accepted": false,
+      "attempted_time_s": 0.0027406745424495517,
+      "compression": 0.16335051009527768,
+      "finite_q_scalar_count": 3,
+      "q_scalar_count": 786432,
+      "finite_q_class_count": 1,
+      "class_count": 262144,
+      "nan_q_scalar_count": 786429,
+      "inf_q_scalar_count": 0,
+      "finite_vhalf_scalar_count": 3,
+      "complete_finite_nodal_cells": 0,
+      "candidate_finite_gauss_count": 0,
+      "full_domain_energy_N_mm": null,
+      "scope": "Rejected endpoint, finite-cell subset only. No valid final state, no full energy, no first-offending-step localization."
+    }
+  ],
+  "same_27_point_reference_verified": true,
+  "used_shared_material_kernel": true,
+  "no_force_assembly_or_time_advance": true,
+  "no_design_gradient": true,
+  "partial_cell_sum_not_used_as_full_energy": true,
+  "reference_interpolation_scope": "Same regular HEX27 basis, point order, and cached periodic class map. Not a bitwise replay of original FEM reference gradients or time integration; overflow counts describe this readonly reconstruction.",
+  "J_determinant_evaluation": "Numpy determinant for diagnostic volume counts; shared JAX energy/stress kernel uses its existing determinant formula."
+}

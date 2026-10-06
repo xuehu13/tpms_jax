@@ -1,0 +1,37 @@
+       __       ___      ___   ___                _______  _______ .___  ___. 
+      |  |     /   \     \  \ /  /               |   ____||   ____||   \/   | 
+      |  |    /  ^  \     \  V  /      ______    |  |__   |  |__   |  \  /  | 
+.--.  |  |   /  /_\  \     >   <      |______|   |   __|  |   __|  |  |\/|  | 
+|  `--'  |  /  _____  \   /  .  \                |  |     |  |____ |  |  |  | 
+ \______/  /__/     \__\ /__/ \__\               |__|     |_______||__|  |__| 
+                                                                              
+
+Warning: 27-node hexahedron is rarely used in practice and not recommended.
+REJECTED_SUBSET 1 {"finite_q_scalar_count": 3, "complete_finite_nodal_cells": 0}
+/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/site-packages/numpy/linalg/_linalg.py:2407: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/site-packages/numpy/linalg/_linalg.py:2843: RuntimeWarning: overflow encountered in multiply
+  ret = sqrt(add.reduce((x.conj() * x).real, axis=axis))
+REJECTED_SUBSET 2 {"finite_q_scalar_count": 755325, "complete_finite_nodal_cells": 30846}
+REJECTED_SUBSET 3 {"finite_q_scalar_count": 3, "complete_finite_nodal_cells": 0}
+Traceback (most recent call last):
+  File "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/geometry_closure_20261006/review_existing.py", line 108, in <module>
+    write("rejected_endpoint_diagnosis.json",{"rows":details,
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "same_27_point_reference_verified":True,"used_shared_material_kernel":True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "no_force_assembly_or_time_advance":True,"no_design_gradient":True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "partial_cell_sum_not_used_as_full_energy":True})
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/geometry_closure_20261006/review_existing.py", line 17, in write
+    (D/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2,allow_nan=False)+"\n")
+                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: inf

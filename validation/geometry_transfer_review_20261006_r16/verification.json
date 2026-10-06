@@ -1,0 +1,22 @@
+{
+  "base_commit": "450bc8f994e1ea1e9fb6f0576ae9e381e2e88e9b",
+  "maintained_sources_and_lock_unchanged": true,
+  "quad_and_periodic_class_maps_verified": true,
+  "shell_original_quality_metrics_reproduced": true,
+  "elapsed_postprocess_seconds": 5.612037750892341,
+  "no_time_advance_or_forward_job": true,
+  "no_full_AD": true,
+  "postprocessing_before_doc_updates_frozen_file_count": 1198,
+  "all_preexisting_files_unchanged_during_postprocessing": true,
+  "frozen_scientific_file_count": 1197,
+  "all_frozen_scientific_bytes_unchanged": true,
+  "mutable_evidence_index_updated": [
+    "validation/README.md"
+  ],
+  "current_document_links_and_status_checked": true,
+  "strict_json_and_scope_checks_passed": true,
+  "allowed_current_docs_only_modified": true,
+  "diff_whitespace_check_passed": true,
+  "existing_diverse28_scope_exactly_preserved": true,
+  "rejected_or_missing_metrics_not_certified": true
+}

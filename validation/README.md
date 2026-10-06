@@ -1,6 +1,6 @@
 # 验证证据索引
 
-当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。旧四步已完成，r13匹配厚度、r14只读范围收口。diverse_04的r15第2步已执行但目标未通过，下一项仅[主规划](../docs/RESEARCH_PLAN.md)第3步现有记录诊断；零追加作业/完整AD。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
+当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。旧四步已完成，r13匹配厚度、r14只读范围收口。diverse_04的r15第2步已执行但目标未通过，第3/4步现有记录限定诊断与范围收口已完成，后续仅在[主规划](../docs/RESEARCH_PLAN.md)更新后处理问题；零追加作业/完整AD。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
 
 
 方法、符号和结果解释见 [综合报告](../docs/TPMS_RESEARCH_REVIEW.md)，当前事实见 [状态](../docs/RESEARCH_STATUS.md)，执行只看 [主规划](../docs/RESEARCH_PLAN.md)。原四轮均已按判据/停止条件收口；子目录保留冻结记录，其中历史“下一步”不是自动待办。
@@ -49,3 +49,5 @@ Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_befor
 ## 当前任务
 
 当前四步已收口，唯一规划中的下一阶段建议为diverse_04单一几何迁移，任务只看[唯一规划](../docs/RESEARCH_PLAN.md)。前向与完整设计梯度分别评价，原20%AD符号失败保留；不从上表冻结范围恢复扫描、接触或训练。r13的两条JAX/两份匹配壳已冻结；本次r14仅只读收口和方案，无新力学/完整AD/训练。
+
+r16：[现有记录诊断与范围收口](geometry_transfer_review_20261006_r16/REVIEW.md)，未使r15第2步验证通过；没有新前向/AD。

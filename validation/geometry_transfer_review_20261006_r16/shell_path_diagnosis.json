@@ -1,0 +1,200 @@
+{
+  "samples": 1001,
+  "load_end_s": 0.04,
+  "full_end_s": 0.04399999976158142,
+  "loading_peak_magnitude_N": 5.098315715789795,
+  "loading_peak_compression": 0.11416069269180298,
+  "loading_peak_time_s": 0.02151627466082573,
+  "loading_time_fraction_KE_below_5pct": 0.6716453908881145,
+  "KE_high_sample_intervals": [
+    {
+      "start_s": 0.021604156121611595,
+      "end_s": 0.02882000431418419,
+      "start_compression": 0.11497459411621094,
+      "end_compression": 0.17259225845336915,
+      "sample_count": 165,
+      "max_KE_over_IE": 0.24693429128065103
+    },
+    {
+      "start_s": 0.028908276930451393,
+      "end_s": 0.028908276930451393,
+      "start_compression": 0.17312662601470946,
+      "end_compression": 0.17312662601470946,
+      "sample_count": 1,
+      "max_KE_over_IE": 0.056608994645951954
+    },
+    {
+      "start_s": 0.028996294364333153,
+      "end_s": 0.02948000468313694,
+      "start_compression": 0.17365425825119019,
+      "end_compression": 0.17646024227142335,
+      "sample_count": 12,
+      "max_KE_over_IE": 0.06943609262997201
+    },
+    {
+      "start_s": 0.029568184167146683,
+      "end_s": 0.029964180663228035,
+      "start_compression": 0.1769545078277588,
+      "end_compression": 0.17910753488540648,
+      "sample_count": 10,
+      "max_KE_over_IE": 0.06614649029745488
+    },
+    {
+      "start_s": 0.030052198097109795,
+      "end_s": 0.03132806345820427,
+      "start_compression": 0.17957117557525634,
+      "end_compression": 0.18567298650741576,
+      "sample_count": 30,
+      "max_KE_over_IE": 0.08499026908599991
+    },
+    {
+      "start_s": 0.03141605481505394,
+      "end_s": 0.03141605481505394,
+      "start_compression": 0.18605073690414428,
+      "end_compression": 0.18605073690414428,
+      "sample_count": 1,
+      "max_KE_over_IE": 0.0539394963682605
+    },
+    {
+      "start_s": 0.03150428831577301,
+      "end_s": 0.0319879986345768,
+      "start_compression": 0.1864238977432251,
+      "end_compression": 0.18836987018585205,
+      "sample_count": 12,
+      "max_KE_over_IE": 0.06354746512673856
+    },
+    {
+      "start_s": 0.0322522409260273,
+      "end_s": 0.0325162298977375,
+      "start_compression": 0.18936172723770142,
+      "end_compression": 0.19030261039733887,
+      "sample_count": 7,
+      "max_KE_over_IE": 0.05870140527962322
+    },
+    {
+      "start_s": 0.03300003707408905,
+      "end_s": 0.033132314682006836,
+      "start_compression": 0.19189808368682862,
+      "end_compression": 0.19230551719665528,
+      "sample_count": 4,
+      "max_KE_over_IE": 0.05461798813796891
+    }
+  ],
+  "energy_drift_over_peak_work": 0.06764014548656941,
+  "artificial_energy_over_peak_work": 0.10055576769577278,
+  "terminal_viscous_energy_over_external_work": 0.5488373308814296,
+  "terminal_energy": {
+    "ALLIE": 2.254871368408203,
+    "ALLSE": 1.8221747875213623,
+    "ALLKE": 0.03841887414455414,
+    "ALLAE": 0.4326966404914856,
+    "ALLVD": 2.427884817123413,
+    "ALLWK": 4.42368745803833,
+    "ETOTAL": 0.2974875569343567
+  },
+  "original_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": true,
+    "artificial_energy_le_5pct_work": false
+  },
+  "samples_at_compression": {
+    "0.01": {
+      "time": 0.007570207243841295,
+      "Fz_N": -0.46555922817458134,
+      "ALLIE": 0.023272893820867266,
+      "ALLSE": 0.023263081113201,
+      "ALLKE": 7.150718908646549e-06,
+      "ALLAE": 9.811955320162784e-06,
+      "ALLVD": 6.109486558438828e-07,
+      "ALLWK": 0.023277250574436633,
+      "ETOTAL": 3.404864235012114e-06
+    },
+    "0.05": {
+      "time": 0.01437743604382686,
+      "Fz_N": -2.319672099352383,
+      "ALLIE": 0.5818662296628876,
+      "ALLSE": 0.5815935686013918,
+      "ALLKE": 3.648087764790136e-05,
+      "ALLAE": 0.0002726939344608075,
+      "ALLVD": 7.272427579161499e-06,
+      "ALLWK": 0.5812327130973659,
+      "ETOTAL": 0.0006773076948278605
+    },
+    "0.1": {
+      "time": 0.02000000015564584,
+      "Fz_N": -4.535820606327636,
+      "ALLIE": 2.311395035220144,
+      "ALLSE": 2.310102863138072,
+      "ALLKE": 5.1630560081552024e-05,
+      "ALLAE": 0.0012923575976721343,
+      "ALLVD": 1.847799416688187e-05,
+      "ALLWK": 2.303093877752657,
+      "ETOTAL": 0.008371304508689583
+    },
+    "0.125": {
+      "time": 0.022699267953143615,
+      "Fz_N": -1.9725380530260275,
+      "ALLIE": 2.102046028249634,
+      "ALLSE": 1.8184405712885678,
+      "ALLKE": 0.3713518762372895,
+      "ALLAE": 0.2836054173225266,
+      "ALLVD": 1.0093499537500736,
+      "ALLWK": 3.2869449243561006,
+      "ETOTAL": 0.19580292747025446
+    },
+    "0.15": {
+      "time": 0.02562256579427443,
+      "Fz_N": -1.2551060843939241,
+      "ALLIE": 1.9642363781990209,
+      "ALLSE": 1.5981337308242516,
+      "ALLKE": 0.19796613825113374,
+      "ALLAE": 0.3661027269636177,
+      "ALLVD": 1.710115879320622,
+      "ALLWK": 3.6299453282017833,
+      "ETOTAL": 0.24237309719733272
+    },
+    "0.15966239917005406": {
+      "time": 0.026889644869769497,
+      "Fz_N": -1.43897641507156,
+      "ALLIE": 2.0287362161146993,
+      "ALLSE": 1.6693818773943756,
+      "ALLKE": 0.1357124190369232,
+      "ALLAE": 0.3593543125924676,
+      "ALLVD": 1.8563369854099214,
+      "ALLWK": 3.763930089726924,
+      "ETOTAL": 0.25685551777069204
+    },
+    "0.175": {
+      "time": 0.02922487533633616,
+      "Fz_N": -1.601433463477382,
+      "ALLIE": 2.1483035006470175,
+      "ALLSE": 1.7633221951882483,
+      "ALLKE": 0.14445015804628175,
+      "ALLAE": 0.3849813416505954,
+      "ALLVD": 2.0012189523422577,
+      "ALLWK": 4.0280463392181804,
+      "ETOTAL": 0.26592635351713567
+    },
+    "0.2": {
+      "time": 0.039996132254600525,
+      "Fz_N": -1.629960298538208,
+      "ALLIE": 2.267371416091919,
+      "ALLSE": 1.8286927938461304,
+      "ALLKE": 0.050053369253873825,
+      "ALLAE": 0.4386785328388214,
+      "ALLVD": 2.4038050174713135,
+      "ALLWK": 4.42368745803833,
+      "ETOTAL": 0.2975420653820038
+    }
+  },
+  "quality_metrics_reproduced": true,
+  "no_rate_rerun": true,
+  "limits": "Shell dynamics/viscosity/artificial energy are not isolated contributions to force error or certified quasistatic truth."
+}

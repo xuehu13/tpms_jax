@@ -1,0 +1,17 @@
+       __       ___      ___   ___                _______  _______ .___  ___. 
+      |  |     /   \     \  \ /  /               |   ____||   ____||   \/   | 
+      |  |    /  ^  \     \  V  /      ______    |  |__   |  |__   |  \  /  | 
+.--.  |  |   /  /_\  \     >   <      |______|   |   __|  |   __|  |  |\/|  | 
+|  `--'  |  /  _____  \   /  .  \                |  |     |  |____ |  |  |  | 
+ \______/  /__/     \__\ /__/ \__\               |__|     |_______||__|  |__| 
+                                                                              
+
+Warning: 27-node hexahedron is rarely used in practice and not recommended.
+REJECTED_SUBSET 1 {"finite_q_scalar_count": 3, "complete_finite_nodal_cells": 0}
+/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/site-packages/numpy/linalg/_linalg.py:2407: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/home/xuehu/projects/tpms_jax/.pixi/envs/default/lib/python3.13/site-packages/numpy/linalg/_linalg.py:2843: RuntimeWarning: overflow encountered in multiply
+  ret = sqrt(add.reduce((x.conj() * x).real, axis=axis))
+REJECTED_SUBSET 2 {"finite_q_scalar_count": 755325, "complete_finite_nodal_cells": 30846}
+REJECTED_SUBSET 3 {"finite_q_scalar_count": 3, "complete_finite_nodal_cells": 0}
+SUMMARY {"frozen_files": 1198, "shell_peak_N": 5.098315715789795, "shell_peak_compression": 0.11416069269180298, "partial_largest_pre_rejection_difference": 3.9133812852783096, "output": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_review_20261006_r16"}

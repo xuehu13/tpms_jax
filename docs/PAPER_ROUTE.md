@@ -13,7 +13,7 @@
 | [Han等材料插值比较，2026](https://link.springer.com/article/10.1007/s00158-026-04332-8) | 出版商开放正文§3.2.1、§3.3及结论，发表2026-04-29 | 虚域插值会改变有限应变敏感性；作为风险解释，不引入其新框架 |
 | [Style-Constrained扩散](https://arxiv.org/abs/2601.06469) | 本轮作者摘要；前轮阅读范围复用 | 长期生成/可微物理动机，不认证当前力学或完整AD |
 
-本轮四篇原PDF完整路径、SHA256、页数与渲染记录见Windows `work/research_synthesis_20261006/literature_review.json`；正式精选收据在`docs/history/research_synthesis_20261006/`。原PDF不改，摘录和页图留阅读工具目录，不重复上传原论文。
+本轮四篇原PDF完整路径、SHA256、页数与渲染记录见Windows `history/completed_tools_20261006/research_synthesis_20261006/literature_review.json`；正式精选收据在`docs/history/research_synthesis_20261006/`。原PDF不改，摘录和页图留阅读工具目录，不重复上传原论文。
 
 ## 复用的已有阅读依据
 
@@ -27,6 +27,10 @@
 | [第三介质接触](https://arxiv.org/abs/2010.14277) | 历史方法/摘要；专门接触模型，不等于软填孔隙 |
 | [Hybrid TPMS GAN](https://doi.org/10.1016/j.ijmecsci.2026.111353) | 既有出版商摘要/生成背景，不在本轮复现网络 |
 
-旧23篇身份索引和具体阅读记录移动到`history/completed_tools_20261006/large_compression_review_20261005/`与`simulation_review_20261006/`，按旧根上下文解析；本次改写前完整来源说明保留在`history/research_synthesis_20261006/before_documents/PAPER_ROUTE.md`。
+旧23篇身份索引和具体阅读记录移动到`history/completed_tools_20261006/large_compression_review_20261005/`与`simulation_review_20261006/`，按旧根上下文解析；本次改写前完整来源说明保留在`history/before_research_synthesis_20261006/PAPER_ROUTE.md`。
 
 Abaqus公开2025文档的超弹性、显式、弯曲和准静态能量说明作为既有方法参考，实际软件2026，不冒称核查其所有版本差异。本轮准静态能量网页未成功返回，使用已有读过的依据，未把网页失败称成仿真失败。JAX官方[JVP/VJP](https://docs.jax.dev/en/latest/notebooks/autodiff_cookbook.html)与[checkpoint](https://docs.jax.dev/en/latest/gradient-checkpointing.html)、[显式示例](https://github.com/deepmodeling/jax-fem/tree/main/applications/explicit_dynamics)用于接口依据；不把工具可导当有效设计梯度认证。
+
+## r16限定诊断新增公开方法依据
+
+2026-10-06成功读取公开2025文档正文（实际软件2026，不认证所有版本差异）：[显式动力学理论](https://docs.software.vt.edu/abaqusv2025/English/SIMACAETHERefMap/simathe-c-expdynamic.htm)的中央差分、稳定性、当前有效模量/频率与体积黏性；[能量平衡说明](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEGSARefMap/simagsa-c-ovwstatenerbal.htm)的内能包含人工能量、黏性耗散定义及总能量平衡。仅作为r16局部稳定性假设和质量指标解释，不证明本项目首次异常原因，不改变原验收门槛或要求立即细化网格。网页本次成功不改写前轮读取失败记录。

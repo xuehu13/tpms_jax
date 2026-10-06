@@ -7,9 +7,10 @@
 | 文件 | 唯一用途；正式仓库对应 |
 | --- | --- |
 | RESEARCH_BACKGROUND.md | 长期问题与边界；docs同名 |
-| RESEARCH_PLAN.md | 新几何迁移唯一四步；第1步完成，第2步目标未通过，第3步限定诊断待执行，旧四步只作完成依据；docs同名 |
+| RESEARCH_PLAN.md | 新几何迁移唯一四步；第1步完成、第2步目标未过、第3/4步限定诊断与范围收口完成，旧四步只作完成依据；docs同名 |
 | RESEARCH_STATUS.md | 完成/未完成事实；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 当前完整方法、数字解释、进度及可行性；docs同名 |
+| GEOMETRY_TRANSFER_REVIEW.md | r16现有记录第3/4步诊断与范围；validation/geometry_transfer_review_20261006_r16/REVIEW.md |
 | PAPER_ROUTE.md | 文献及实际阅读范围；docs同名 |
 | START_HERE.md、AGENTS.md | 阅读入口与工作约定；README.md、根AGENTS.md |
 | THICKNESS_RANGE_PROGRESS.md | r13匹配0.45/0.55mm完整20%及范围；docs同名 |
@@ -27,6 +28,7 @@
 | surface_distance.py、pbc.py | 周期中面距离/真实Gauss占据、周期自由度 |
 | fem.py、density_fem.py及其他原模块 | 原线性/几何/用料/专用设计计算，按既有范围维护 |
 | scripts/README.md、tests/、pixi.toml/lock | 现有入口分类、维护检查、锁定环境 |
+| validation/geometry_transfer_review_20261006_r16/ | 新第3/4步只读后处理与收口；REVIEW.md、三份诊断、scope_decision、图与冻结哈希；没有新仿真或梯度 |
 | validation/geometry_transfer_20261006_r15/ | diverse_04匹配输入及第2步JAX中止/壳完整诊断；step1_decision与STEP2/step2_summary分别留输入与执行事实；零完整AD |
 | validation/forward_scope_20261006_r14/ | 只读四步收口：范围矩阵、三个原中面库存、diverse_04候选、未来完整梯度方案；零新力学 |
 | validation/thickness_range_20261006_r13/ | 匹配厚度输入、两条完整20%、两份壳参照、27/125点与模式、范围决定及哈希 |
@@ -69,3 +71,5 @@ r13原生作业：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_rang
 r15正式位置：`/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15`。`gauss_field.npz`是真实27点占据，`hrz_mass.npz`是节点/周期质量，`surface_geometry.npz`为中面；`preparation.json`保留原false，`band_bracket_diagnosis.json`解释4条法向，`step1_decision.json`为当前限定就绪。规范壳包在其`abaqus/explicit_T0p040/`，同字节原生包在`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040`；有一次壳ODB/日志。第1步科学数组/首次日志原字节保留，首次预处理计时未知不补造。
 
 第2步：r15的T0p004为空输出目录及缓存启动失败收据；实际JAX尝试为T0p004_cpu_reference，含input/progress/rejected_blocks、3拒绝场和source_at_run，无result/有效末态。operator_stop.json保留停止前监测；accepted_logged_observations.json只提取14条真实稀疏接受观察，不等于完整曲线。abaqus/explicit_T0p040/results保留壳JSON/场/日志/retention，ODB留原生不重复复制。step2_summary.json和STEP2.md分别为结构化与可读事实。Windows work/geometry_forward_20261006仅本次调用/提取/留存/发布工具，非第二套FEM。
+
+后两步收口：r16的existing_record_review.py只读已有场/日志，复用共享材料核求值，无内力组装/时间推进；不是新求解器。rejected_endpoint_diagnosis只诊断拒绝子集，partial_force_diagnosis只有14个真实JAX观察对壳插值；不输出完整20%误差/模式。frozen_before.json保全旧证据，verification/evidence_manifest验证追溯；postprocess_attempt01保留Inf序列化失败，不是新仿真。Windows work/geometry_closure_20261006仅本次后处理/说明/发布工具；GEOMETRY_TRANSFER_REVIEW.md镜像正式REVIEW.md，图在该work目录。
