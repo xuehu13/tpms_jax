@@ -1,0 +1,13 @@
+{
+  "interpolation": "installed HEX27 basis on original midsurface nodes, reference area weighted, translation gauge removed",
+  "comparison_at_current_compression": 0.2,
+  "scope": "Saved motion similarity, not stress or self-contact certification",
+  "old_fast": {
+    "fluctuation_vector_cosine": 0.9999990406959156,
+    "area_weighted_relative_fluctuation_difference": 0.002243741656549558
+  },
+  "shell": {
+    "fluctuation_vector_cosine": 0.9998400742258886,
+    "area_weighted_relative_fluctuation_difference": 0.01824760123004396
+  }
+}

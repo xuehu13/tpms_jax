@@ -13,7 +13,7 @@ sys.path.insert(0,str(ROOT))
 import numpy as np
 import jax
 import jax.numpy as jnp
-from hyperelastic_fem import make_density_hyperelastic_problem,MU,KAPPA
+from hyperelastic_fem import make_density_hyperelastic_problem,MU,KAPPA,VOID_NH_CUTOFF_MAX
 jax.config.update('jax_enable_x64',True)
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -151,11 +151,11 @@ class ExplicitXYZ:
     def _material_stats(self,F,weights,scale):
         J=jnp.linalg.det(F)
         W=jax.vmap(self.p.material_energy)(F.reshape((-1,3,3)),scale.ravel()).reshape(scale.shape)
-        active=self.p.nh_active(scale)
+        active=self.p.requires_positive_J(scale)
         return {'J_min':jnp.min(J),'J_finite':jnp.all(jnp.isfinite(J)),
-                'NH_active_J_min':jnp.min(jnp.where(active,J,jnp.inf)),
-                'NH_active_points':jnp.sum(active),
-                'NH_active_invalid_points':jnp.sum(active&(J<=0)),
+                'required_positive_J_min':jnp.min(jnp.where(active,J,jnp.inf)),
+                'required_positive_J_points':jnp.sum(active),
+                'invalid_material_points':jnp.sum(active&(J<=0)),
                 'negative_J_points':jnp.sum(J<=0)},jnp.sum(W*weights)
 
     def _quadratic_stats(self,w,h,grads,cells,weights,scale):
@@ -192,12 +192,12 @@ class ExplicitXYZ:
         if (not np.isfinite(np.asarray(state[0])).all() or not row['J_finite']
                 or not all(math.isfinite(row[k]) for k in physics)):
             raise ValueError('Nonfinite state or material energy/force')
-        if row['NH_active_invalid_points']:
-            raise ValueError('Nonpositive actual detF where the NH energy is active')
-        for key in ('NH_active_points','NH_active_invalid_points','negative_J_points'):
+        if row['invalid_material_points']:
+            raise ValueError('Nonpositive actual detF in the uncontinued NH material domain')
+        for key in ('required_positive_J_points','invalid_material_points','negative_J_points'):
             row[key]=int(row[key])
         row['J_finite']=bool(row['J_finite'])
-        if not row['NH_active_points']:row['NH_active_J_min']=None
+        if not row['required_positive_J_points']:row['required_positive_J_min']=None
         return row
 
 def run(a):
@@ -274,7 +274,9 @@ def run(a):
         cfg.update(N=N,Gauss_field_path=str(field_path),Gauss_field_sha256=sha(field_path))
     ex=ExplicitXYZ(p,force_batch_cells=a.force_batch_cells);dt=ex.dt_estimate*(.25 if a.action=='wave' else 1.)
     cfg.update(method='physical central difference; shared JAX-FEM material residual',
-        material_model=a.material_model,material_domain='actual J>0 wherever NH weight is nonzero; deep virtual folds reported separately',
+        material_model=a.material_model,material_domain='actual J>0 in uncontinued NH: rho>=.01 for objective_void, all points for nh; mixed/deep virtual folds reported separately',
+        virtual_continuation_max_J=VOID_NH_CUTOFF_MAX if a.material_model=='objective_void' else None,
+        virtual_continuation='C2 Taylor J**(-2/3), cutoff=.1*reverse occupancy smoothstep' if a.material_model=='objective_void' else None,
         virtual_NH_weight_bounds=[.001,.01] if a.material_model=='objective_void' else None,dt_seconds=dt,
         element_type=p.fe.ele_type,element_degree=a.element_degree,nodes=len(p.fe.points),
         elements=p.fe.num_cells,Gauss_points_per_cell=p.fe.num_quads,
@@ -346,8 +348,8 @@ def run(a):
             elapsed=time.perf_counter()-walk
             write(a.output/'progress.json',{'steps':done,'remaining_steps_estimate':math.ceil(max(0.,end-float(state[2]))/dt),
                 'compression':row['compression'],'dt':dt,'rejected_blocks':len(rejections),
-                'elapsed_seconds':elapsed,'J_min':row['J_min'],'NH_active_J_min':row['NH_active_J_min'],
-                'negative_J_points':row['negative_J_points'],'NH_active_invalid_points':row['NH_active_invalid_points'],
+                'elapsed_seconds':elapsed,'J_min':row['J_min'],'required_positive_J_min':row['required_positive_J_min'],
+                'negative_J_points':row['negative_J_points'],'invalid_material_points':row['invalid_material_points'],
                 'KE_over_U':row['KE_over_U']})
             if a.action=='probe':continue
             if done%(chunk*10)==0:print(json.dumps(path[-1]),flush=True)

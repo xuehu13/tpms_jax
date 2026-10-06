@@ -1,0 +1,18 @@
+{
+  "passed_declared_kernel_and_frozen_domain_gates": true,
+  "targeted_tests_passed": 45,
+  "initial_check_failure": "Fixed finite-difference step crossed the high-curvature joining scale near phi=.00999; locally resolved step passed, candidate constants unchanged",
+  "initial_frozen_tool_exit": 1,
+  "initial_frozen_extra_assertion": "Expected zero continued 27-point samples; actual count=1 at positive J. Not a declared safety requirement; full-domain and recovery gates passed.",
+  "actual_continued_NH_points_27": 1,
+  "actual_continued_NH_points_125": 13,
+  "invalid_material_points_125": 0,
+  "actual_negative_J_points_125": 17749,
+  "energy_recovery_relative_error_27": 8.881784197001252e-16,
+  "internal_force_recovery_relative_error_27": 3.8746783559417963e-14,
+  "candidate_constants_changed_after_checks": false,
+  "analysis_tool_after_sha256": "136c95c9bc60019b4382015b2d2cc765fda8e563a173087db5e57296fcb55461",
+  "new_test_after_sha256": "dfa84d8e361f2e2422b3f7f9eea55f81922ccf9b9fb0d865eec701dcf0880f6d",
+  "domain_definition": "rho>=.01 retains strict original NH; rho<.01 uses C2 isochoric continuation only below occupancy-dependent positive cutoff",
+  "next_allowed_action": "One same-input representative 20%+hold; new rate test only after reasonable new path/domain."
+}

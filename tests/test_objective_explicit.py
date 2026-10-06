@@ -31,15 +31,15 @@ def test_periodic_force_is_total_energy_derivative_and_mass_is_unchanged(model):
     np.testing.assert_allclose(jax.grad(lambda z:energy(q,z))(h)/ex.L,row['internal_macro_Fz_N'],rtol=2e-12)
     np.testing.assert_allclose(np.sum(ex.nodem),1e-9*ex.L**2*np.sum(np.asarray(p.fe.JxW)*(1e-4+.9999*phi)),rtol=2e-13)
 
-@pytest.mark.parametrize('phi,allowed',[(.00015,True),(.0055,False),(.01,False)])
-def test_folds_are_allowed_only_in_exactly_inactive_nh_domain(phi,allowed):
+@pytest.mark.parametrize('phi,allowed',[(.00015,True),(.0055,True),(.01,False)])
+def test_folds_are_allowed_only_in_continued_virtual_domain(phi,allowed):
     _,ex=make(phi,n=1)
     state=(jnp.zeros((ex.nc,3)),jnp.zeros((ex.nc,3)),jnp.array(0.))
     motion=lambda t:jnp.array([-1.2,0.,0.])
     if allowed:
         row=ex.observe(state,ex.dt_estimate,motion)
-        assert row['negative_J_points']==27 and row['NH_active_points']==0
-        assert row['NH_active_J_min'] is None
+        assert row['negative_J_points']==27 and row['required_positive_J_points']==0
+        assert row['required_positive_J_min'] is None
         assert np.isfinite(row['energy_N_mm']) and np.isfinite(row['Fz_N'])
     else:
         with pytest.raises(ValueError):ex.observe(state,ex.dt_estimate,motion)

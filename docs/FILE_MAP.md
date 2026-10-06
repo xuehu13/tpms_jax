@@ -1,6 +1,6 @@
 # 文件地图：活动入口、正式程序与冻结证据
 
-更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本轮一次客观虚域20%路径完成，但125点混合尾部材料域未过；只维护一个FEM和显式入口，原科学文件冻结。
+更新2026-10-06。正式程序在WSL `/home/xuehu/projects/tpms_jax`，Windows工作区为阅读/历史。本轮C²虚域核、冻结场与快慢完整20%路径完成，材料域/速率通过；只维护一个FEM和显式入口，原科学文件冻结。
 
 ## 现在读哪些文件
 
@@ -8,12 +8,13 @@
 | --- | --- |
 | START_HERE.md | 阅读入口；README.md |
 | RESEARCH_BACKGROUND.md | 长期目标/边界；docs同名 |
-| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；当前客观路径完成但混合尾部材料域未过，下一项纯核域修复；docs同名 |
+| RESEARCH_PLAN.md | 唯一活动四步：定位保留、JAX改进优先、有限工况验证、范围/梯度关口；当前C²候选状态见新报告，下一项第3步固定该方法，少量真实厚度工况需匹配壳参考；不重新建复杂三维模型；docs同名 |
 | PROJECT_OVERVIEW.md | 事实状态；docs/RESEARCH_STATUS.md |
 | TPMS_RESEARCH_REVIEW.md | 方法、符号、误差因素、客观可行性；docs同名 |
 | SIMULATION_ERROR_PROGRESS.md | 冻结的定位/参照网格尝试；其后续建议已被主规划调整；docs同名 |
-| JAX_INTEGRATION_PROGRESS.md | 本轮27/125点探针、64点新路径及资源处理；docs同名 |
-| OBJECTIVE_PATH_PROGRESS.md | 最新一次20%路径、改善及6点材料域失败；docs同名 |
+| JAX_INTEGRATION_PROGRESS.md | 冻结27/125点探针、64点路径及资源处理；docs同名 |
+| VOID_CONTINUATION_PROGRESS.md | 最新C²虚域、核/冻结场、快慢完整路径和速率；docs同名 |
+| OBJECTIVE_PATH_PROGRESS.md | 冻结上轮20%改善及6点材料域失败；docs同名 |
 | OBJECTIVE_VIRTUAL_PROGRESS.md | 冻结上一轮转动兼容核及原场验证，当时未接入；docs同名 |
 | VIRTUAL_KERNEL_PROGRESS.md | 经典虚域候选小核／冻结场／转动缺陷，未采纳；docs同名 |
 | PAPER_ROUTE.md | 来源与阅读范围；docs同名 |
@@ -27,7 +28,7 @@
 
 | 路径 | 用途 |
 | --- | --- |
-| hyperelastic_fem.py | 唯一共享NH/可选客观虚域材料能及内力（默认NH、候选未采纳），HEX8/HEX27与周期参考几何 |
+| hyperelastic_fem.py | 唯一共享NH/可选客观虚域材料能及内力（默认NH、研究选项明确选择；有限前向门槛已通过），HEX8/HEX27与周期参考几何 |
 | pbc.py、fem.py、density_fem.py | 周期自由度与线弹性背景组装 |
 | surface_distance.py | 周期中面距离、恒厚占据，未认证形态AD |
 | geometry.py、volume.py、voxel_field.py、design_fem.py | 原几何/用料/场及专用已验证梯度，历史范围见报告 |
@@ -36,7 +37,22 @@
 | scripts/extract_thin_explicit.py、extract_thin_finite.py | Abaqus只读提取 |
 | scripts/README.md、pixi.toml、pixi.lock、tests/ | 入口说明、锁定环境及维护检验 |
 
-## 当前一次客观虚域路径
+## 当前C²混合虚域验证
+
+根：`/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12`。45项检查、原场/6点、两条20%及保载、速率与新场125点；具体验收看decision.json和新报告。实际虚域负J不隐去。
+
+| 位置 | 内容 |
+| --- | --- |
+| input.json、kernel_admission.json、checks*.log | 先固定的公式/参数、核/冻结场门槛、初次FD/附加计数问题和原日志 |
+| frozen_field/、six_points.json | 上轮保存场的新核完整域与原6点局部AD/FD；不是新路径 |
+| T0p004/、T0p008/及对应*_manifest/receipt.json、*.log | 快慢实际输入、完整路径、最终field.npz、源码/环境哈希与退出 |
+| T0p004_analysis/、T0p008_analysis/ | 新保存场27/125点、全域能量、对壳及位移模式 |
+| rate_check.json、decision.json、response.png、evidence_manifest.json | 速率、范围决定、曲线和新旧证据校验 |
+| experiment.py、six_points.py | 复用纯核的保存场分析与原6点定位，非求解器 |
+
+正式新增测试tests/test_void_continuation.py；材料仍只hyperelastic_fem.py、显式仍scripts/thin_target_explicit.py。Windows一次性工具work/void_continuation_20261006；图output/figures/VOID_CONTINUATION_response.png。
+
+## 冻结客观虚域原路径
 
 根：`/home/xuehu/projects/tpms_jax/validation/objective_path_20261006_r11`。20%和保载完成、35项检查通过；125点有6个NH混合尾部负J，候选未采纳默认。
 
@@ -50,11 +66,11 @@
 | experiment.py、locate_domain.py、analysis_manifest.json | 保存场分析与点定位，复用材料纯核，不是求解器 |
 | decision.json、evidence_manifest.json | 不采纳决定与新旧科学字节校验 |
 
-Windows辅助工具在work/objective_path_20261006；图output/figures/OBJECTIVE_PATH_response.png。正式接入测试tests/test_objective_explicit.py；默认NH、可选objective_void。下一项只看主规划的混合区材料域修复。
+Windows辅助工具在work/objective_path_20261006；图output/figures/OBJECTIVE_PATH_response.png。正式接入测试tests/test_objective_explicit.py；默认NH、可选objective_void。上轮下一项已执行，当前只看主规划。
 
 ## 冻结客观虚域核验证
 
-根：`/home/xuehu/projects/tpms_jax/validation/objective_virtual_20261006_r10`。上一轮28项检查与原20%保存场27/125点探针通过，当时未连接显式入口；这是冻结核验证，当前完整路径见r11。
+根：`/home/xuehu/projects/tpms_jax/validation/objective_virtual_20261006_r10`。28项检查与原20%保存场27/125点探针通过，当时未连接显式入口；这是冻结核验证。后续r11路径失败保留，当前有效性范围见r12报告。
 
 | 位置 | 内容 |
 | --- | --- |
@@ -98,7 +114,7 @@ Windows辅助执行/日志：`work/jax_improvement_20261006`，不是第二套FE
 
 Windows工具／回执：`work/virtual_kernel_20261006`，图为`output/figures/VIRTUAL_KERNEL_rotation.png`。复现旧候选需独立检出和补丁；不能直接在已恢复的当前核上运行。下一项只看唯一主规划，HEX20／混合阶次仍为后备。
 
-## 当前主要结果
+## 冻结原NH前向与梯度基准
 
 根：`/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6`。
 

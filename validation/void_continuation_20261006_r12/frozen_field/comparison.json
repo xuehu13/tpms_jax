@@ -1,0 +1,24 @@
+{
+  "complete_path_is_frozen_old_result": true,
+  "new_paths": 0,
+  "candidate_material_checked_on_old_q": true,
+  "dense_sampling_J_min": -3.942901293995078,
+  "dense_sampling_nonpositive_points": 17749,
+  "dense_sampling_required_positive_J_min": 0.2152570791776792,
+  "dense_sampling_invalid_material_points": 0,
+  "dense_sampling_material_defined": true,
+  "mode": {
+    "interpolation": "installed HEX27 basis on original midsurface nodes, reference area weighted, translation gauge removed",
+    "comparison_at_current_compression": 0.2,
+    "scope": "Saved motion similarity, not stress or self-contact certification",
+    "old_fast": {
+      "fluctuation_vector_cosine": 0.9999990406959166,
+      "area_weighted_relative_fluctuation_difference": 0.0022437416550425337
+    },
+    "shell": {
+      "fluctuation_vector_cosine": 0.9998400742259106,
+      "area_weighted_relative_fluctuation_difference": 0.018247601229075983
+    }
+  },
+  "analysis_seconds": 23.28030976501759
+}

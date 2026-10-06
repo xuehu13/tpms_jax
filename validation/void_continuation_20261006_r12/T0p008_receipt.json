@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "wall_seconds": 1269.9091717209667,
+  "after_input_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "validation/large_compression_20261005_r6/quadratic_candidate/gauss_field.npz": "5594df90ac1620a7225b52d974ec5b39a72746a125eb5fd9ed45b101a1d7f8d9",
+    "validation/large_compression_20261005_r6/quadratic_candidate/T0p004_compact/input.json": "b9ea8ca4824ede7b476f62354cd71051860871ab4fe9c85e2c6e268d07ca679a",
+    "validation/large_compression_20261005_r6/quadratic_candidate/T0p004_compact/result.json": "72cbc96e7854348b26fb7fb82860b7eaed9a29c938040ba0d79ad7b6a9c7dad1",
+    "validation/objective_path_20261006_r11/T0p004/result.json": "b12bc0e5a6b310ca0e10807c903348c2eba7f10c66e6a6d4a9a8563120949c65",
+    "validation/objective_path_20261006_r11/T0p004/field.npz": "6faaf892d5ea7211e30e0158d743e4be768a83e01933816293c97c1b64be618e",
+    "validation/void_continuation_20261006_r12/input.json": "759f153777aff6f5bd3f4cb3ee665f8ba5c7bf523fb4fa8cda2a10d980505941",
+    "validation/void_continuation_20261006_r12/kernel_admission.json": "1bf8806b7186c14b361f26c3fc20b5182dec4483d5ccc096e803a17f7ae99f7f"
+  }
+}

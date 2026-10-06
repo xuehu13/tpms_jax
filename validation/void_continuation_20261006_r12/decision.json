@@ -1,0 +1,26 @@
+{
+  "accepted_for_scoped_forward_validation": true,
+  "default_material": "nh",
+  "default_material_changed": false,
+  "candidate": "objective_void with occupancy-dependent C2 NH continuation",
+  "material_domain_pass": true,
+  "response_work_target_pass": true,
+  "energy_inertia_work_gates_pass": true,
+  "new_rate_targets_pass": true,
+  "targeted_tests_passed": 45,
+  "new_complete_paths": 2,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "scope": "diverse_28 midsurface, L=10mm, t=.5mm, XYZ zero lateral macro strain, elastic no-contact 0-20%, HEX27 N32/27 points; dense final-state material check, not everywhere-in-time positivity",
+  "actual_virtual_folds_remain": true,
+  "real_3D_accuracy_certified": false,
+  "gradient20_certified": false,
+  "next_action": "fixed-method limited physical-case verification with matched reference, per main plan",
+  "limits": [
+    "shell reference quality not strictly certified",
+    "finite sampling does not guarantee pointwise geometry",
+    "no contact/plasticity or arbitrary-morphology replacement",
+    "near phi=.01 and J<=0 is not an admissible two-sided design domain",
+    "virtual continuation can have very large tangents near its vanishing cutoff; no convexity or general stability proof"
+  ]
+}

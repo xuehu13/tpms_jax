@@ -1,0 +1,53 @@
+{
+  "base_commit": "9676d3e911ced7f217d98b8b7f57652157266428",
+  "candidate": "one C2 Taylor isochoric continuation inside unchanged mixed-void gate",
+  "fixed_constants": {
+    "occupancy_NH_zero": 0.001,
+    "occupancy_original_NH_from": 0.01,
+    "maximum_J_cutoff": 0.1,
+    "cutoff": "tau(phi)=0.1*S((0.01-phi)/0.009), S(x)=x^3(10-15x+6x^2), clipped x in [0,1]",
+    "factor_for_J_lt_tau": "tau^(-2/3)*(1-(2/3)*(J/tau-1)+(5/9)*(J/tau-1)^2)",
+    "rationale": "Positive cutoff no greater than one tenth of reference volume, restricted to virtual mixed tail and smoothly vanishing at original true-NH boundary; fixed before checks/path, not fit to reactions"
+  },
+  "requirements": [
+    "objective W/P",
+    "zero reference stress and matched small-strain tangent",
+    "exact original NH from phi=.01 for all positive J",
+    "exact old candidate where J>=tau",
+    "C2 joint state/occupancy continuation at J=tau",
+    "finite energy/stress/tangent and local derivatives for negative/singular mixed void",
+    "true-wall negative J still rejected",
+    "full 27/125-point r11 frozen-field energy and stress, no positive-J partial total"
+  ],
+  "unchanged_physics": {
+    "L_mm": 10,
+    "thickness_mm": 0.5,
+    "E_MPa": 10,
+    "nu": 0.3,
+    "eta": 0.0001,
+    "interface_10_90_mm": 0.05,
+    "periodic_axes": "XYZ",
+    "lateral_macro_strain": 0,
+    "element": "HEX27",
+    "N": 32,
+    "Gauss_points_per_cell": 27,
+    "mass": "HRZ"
+  },
+  "source_before_sha256": {
+    "hyperelastic_fem.py": "ca92950bacd211430939b66dbf25ec4fd01558c3eb9aab6699e66771ca9dcc35",
+    "scripts/thin_target_explicit.py": "aeff3475d20578ee2af92954495f3147eca6eb4d20b0517efa450ed92e24a346",
+    "tests/test_objective_void.py": "a350669bd6af1cf5f96c0efabc9a8475ede5427ec56be0d073e564538406c172",
+    "tests/test_objective_explicit.py": "47de97d136bc6e0c41166fe8b875e4a05849ce70d1da8ad49c37679eb168e49a"
+  },
+  "source_after_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "c1c08f1b43bb370277d6fbefd752590efebcdcf2111f573603eebe8c786e1fd8",
+    "tests/test_objective_void.py": "048e4645c33d960102c3f218e2121a4db3cf97651484f1b7db3359859f768348",
+    "tests/test_objective_explicit.py": "3d02a253486fe6d984992c9ef15fa00266bf2dd6e05103de819336fc88e0ff38"
+  },
+  "new_test_sha256": "b1c8d04a4b84318d9a1e44a8fd1c8cab1ebc08958a8554db6d78b6854b4f70d8",
+  "theory_status": "C2 continuation derived in this project; literature supports treating void energy separately, not validation of this exact formula or TPMS accuracy",
+  "scope": "Pure-kernel and frozen r11 field first; conditional one new path and needed slower rate check; no Abaqus/training/full AD",
+  "default_material": "nh",
+  "default_candidate_adopted": false
+}

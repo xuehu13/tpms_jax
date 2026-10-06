@@ -1,0 +1,121 @@
+{
+  "rules": {
+    "4": {
+      "points_per_cell": 27,
+      "Vf": 0.15163381488928415,
+      "raw_J_min": -1.5285662826139916,
+      "raw_nonpositive_points": 3388,
+      "raw_nonpositive_cells": 1211,
+      "raw_nonpositive_phi_max": 1.0218687862005232e-05,
+      "required_positive_J_min": 0.39304619032662325,
+      "invalid_material_points": 0,
+      "candidate_energy_N_mm": 3.7276153216508927,
+      "candidate_internal_Fz_N": -1.9593691170976022,
+      "continued_NH_points": 1,
+      "domain_bins": {
+        "deep_void_le_0p001": {
+          "points": 709252,
+          "raw_J_min": -1.5285662826139916,
+          "raw_nonpositive_points": 3388,
+          "reference_volume_mm3": 801.4950013127996,
+          "candidate_energy_N_mm": 0.10571099621665016,
+          "candidate_internal_Fz_N": -0.02586967895062692
+        },
+        "blend_lt_0p01": {
+          "points": 13066,
+          "raw_J_min": 0.09960153443191629,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 15.113856730310662,
+          "candidate_energy_N_mm": 0.01403439607680218,
+          "candidate_internal_Fz_N": -0.0022773155852345533
+        },
+        "NH_0p01_to_0p05": {
+          "points": 9931,
+          "raw_J_min": 0.39304619032662325,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 11.042240388762956,
+          "candidate_energy_N_mm": 0.0320404177251109,
+          "candidate_internal_Fz_N": -0.0057537647440647575
+        },
+        "transition_0p05_to_0p95": {
+          "points": 36034,
+          "raw_J_min": 0.6708917265984696,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 40.81041103200817,
+          "candidate_energy_N_mm": 0.8215465254785361,
+          "candidate_internal_Fz_N": -0.2713418051338121
+        },
+        "solid_ge_0p95": {
+          "points": 116453,
+          "raw_J_min": 0.8487720971442398,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 131.53849053611793,
+          "candidate_energy_N_mm": 2.7542829861537963,
+          "candidate_internal_Fz_N": -1.6541265526838647
+        }
+      },
+      "candidate_full_energy_defined": true,
+      "energy_recovery_relative_error": 8.881784197001252e-16,
+      "internal_force_recovery_relative_error": 1.9539925233402755e-14,
+      "new_solve": false
+    },
+    "8": {
+      "points_per_cell": 125,
+      "Vf": 0.15162795798250328,
+      "raw_J_min": -3.942901293422992,
+      "raw_nonpositive_points": 17749,
+      "raw_nonpositive_cells": 2227,
+      "raw_nonpositive_phi_max": 0.004080761757390742,
+      "required_positive_J_min": 0.21525707917435985,
+      "invalid_material_points": 0,
+      "candidate_energy_N_mm": 4.101770192461947,
+      "candidate_internal_Fz_N": -2.016984676334858,
+      "continued_NH_points": 13,
+      "domain_bins": {
+        "deep_void_le_0p001": {
+          "points": 3281967,
+          "raw_J_min": -3.942901293422992,
+          "raw_nonpositive_points": 17743,
+          "reference_volume_mm3": 800.9582688641502,
+          "candidate_energy_N_mm": 0.10593089114860259,
+          "candidate_internal_Fz_N": -0.025830501087778863
+        },
+        "blend_lt_0p01": {
+          "points": 64202,
+          "raw_J_min": -0.038131958638314326,
+          "raw_nonpositive_points": 6,
+          "reference_volume_mm3": 16.094798064252945,
+          "candidate_energy_N_mm": 0.013276437490446743,
+          "candidate_internal_Fz_N": -0.0020633838097958153
+        },
+        "NH_0p01_to_0p05": {
+          "points": 45583,
+          "raw_J_min": 0.21525707917435985,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 11.155305228574072,
+          "candidate_energy_N_mm": 0.039636846715743725,
+          "candidate_internal_Fz_N": -0.007082049262074606
+        },
+        "transition_0p05_to_0p95": {
+          "points": 166245,
+          "raw_J_min": 0.4927643371526966,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 40.24134207182621,
+          "candidate_energy_N_mm": 1.1465522233507437,
+          "candidate_internal_Fz_N": -0.3186209675678468
+        },
+        "solid_ge_0p95": {
+          "points": 538003,
+          "raw_J_min": 0.7338108234884142,
+          "raw_nonpositive_points": 0,
+          "reference_volume_mm3": 131.55028577119705,
+          "candidate_energy_N_mm": 2.796373793756411,
+          "candidate_internal_Fz_N": -1.663387774607362
+        }
+      },
+      "candidate_full_energy_defined": true,
+      "new_solve": false
+    }
+  },
+  "scope": "Same saved state, not new paths; actual raw folds remain explicit."
+}

@@ -1,6 +1,6 @@
 # 程序入口与范围
 
-唯一维护FEM在正式根目录；下列是功能/历史索引。执行只看[主规划](../docs/RESEARCH_PLAN.md)。最新客观虚域选项已接入，一次20%路径完成但125点混合尾部材料域未过；默认仍NH、候选未采纳。下一项纯核域修复，训练与完整20%AD后置。
+唯一维护FEM在正式根目录，下列是功能/历史索引。执行只看[主规划](../docs/RESEARCH_PLAN.md)。本轮C²混合虚域候选已完成核/原场与快慢20%路径，通过有限前向/材料域/速率门槛，可固定用于有限工况验证；默认仍NH，训练和完整20%AD后置。
 
 | 入口 | 用途/边界 |
 | --- | --- |
@@ -20,11 +20,11 @@
 
 ## 当前任务与证据
 
-唯一活动步骤见[主规划](../docs/RESEARCH_PLAN.md)。本轮结果见[路径报告](../docs/OBJECTIVE_PATH_PROGRESS.md)，核来源见[上一轮核记录](../docs/OBJECTIVE_VIRTUAL_PROGRESS.md)。objective_void只用于显式实验；旧静力finite_response拒绝该选项。
+唯一活动步骤见[主规划](../docs/RESEARCH_PLAN.md)。最新理论、公式和结果见[C²虚域报告](../docs/VOID_CONTINUATION_PROGRESS.md)，上轮6点失败见[冻结路径报告](../docs/OBJECTIVE_PATH_PROGRESS.md)。objective_void只用于显式，静力旧提取拒绝该选项。required_positive_J_*表示未延拓原NH域，不沿用旧NH_active_*的混合域含义。
 
 `thin_target_explicit.py`仍复用同一材料/FEM内力和中央差分/HRZ。新增`--quadrature-order`暴露已有Basix支持，`--surface-geometry`在新Problem自身Gauss点计算同一中面距离占据；它与`--gauss-field`互斥。改变规则不能复用旧规则的占据数组。`--geometry-on-cpu`和`--force-batch-cells`用于实际参考预处理显存/编译开销，默认行为保留，未增加物理稳定化。
 
-本轮未采纳候选的复现命令（WSL仓库内，输出必须使用全新目录）：
+本轮C²候选的代表复现命令（WSL仓库内，输出必须使用全新目录）：
 
 ```sh
 .pixi/envs/default/bin/python scripts/thin_target_explicit.py target \
@@ -33,6 +33,6 @@
   --force-batch-cells 2048 --adaptive --load-time 0.004 --output YOUR_NEW_DIRECTORY
 ```
 
-27点完成不代表125点完整材料域通过。仅本机保留大场；默认省略material-model即原NH。旧64点命令和资源处理见冻结[JAX积分报告](../docs/JAX_INTEGRATION_PROGRESS.md)，不作为当前活动任务。
+本轮新保存场27/125点材料域已检查，具体门槛看报告；有限采样不证明处处有效。慢路径只将load-time改为0.008，其他物理输入/算法相同。大场留本机；省略material-model即默认原NH。旧64点命令和资源处理见冻结[JAX积分报告](../docs/JAX_INTEGRATION_PROGRESS.md)，不作为当前活动任务。
 
 旧前向/梯度/诊断分别见[前向报告](../docs/FORWARD20_PROGRESS_REPORT.md)、[梯度报告](../docs/GRADIENT20_PROGRESS_REPORT.md)、[冻结定位](../docs/SIMULATION_ERROR_PROGRESS.md)；旧建议不生成新任务。

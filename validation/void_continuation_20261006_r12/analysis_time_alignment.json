@@ -1,0 +1,5 @@
+{
+  "before_sha256": "136c95c9bc60019b4382015b2d2cc765fda8e563a173087db5e57296fcb55461",
+  "after_sha256": "8ebca672d1e9e176c942ddeddaf807cabdce2c295493d551cd4cbb3e99bb6f4a",
+  "reason": "Compare exact physical/time inputs against the corresponding old loading duration, including endpoint-aligned dt and total steps; fast/slow share the same estimate and time algorithm, not an exactly equal rounded dt. No solver or kernel change."
+}

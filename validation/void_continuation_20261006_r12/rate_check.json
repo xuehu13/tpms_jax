@@ -1,0 +1,14 @@
+{
+  "rate_force_relative_difference": 0.00041822929786605734,
+  "rate_work_relative_difference": 6.0273618440631616e-05,
+  "rate_curve_RMS_over_Standard_peak": 0.006087563387593008,
+  "rate_check_limit": 0.02,
+  "rate_targets_pass": true,
+  "source": "same established 2% definition as frozen r6; fixed candidate/physical inputs and identical time algorithm; doubled load time, endpoint-aligned rounded dt recorded separately",
+  "fast_initial_dt_seconds": 2.693272938728041e-07,
+  "slow_initial_dt_seconds": 2.693355369877269e-07,
+  "result_sha256": {
+    "T0p004": "51e69a4d3c513e48fb4db4c680219696904927165fc685eb3fc4c8e61f51ad99",
+    "T0p008": "1377866d097f8c7e8de7c7b922c284676fa6d31beae9c9a4197c1715e6ae052a"
+  }
+}

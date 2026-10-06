@@ -55,10 +55,10 @@ def test_inverted_and_singular_void_derivatives_defined(F_bad):
         Q=rotation(60.)
         np.testing.assert_allclose(objective_void_energy(Q@F_bad,rho),objective_void_energy(F_bad,rho),rtol=2e-13,atol=1e-14)
 
-def test_invalid_actual_j_in_nh_active_domain_is_not_hidden():
+def test_invalid_actual_j_in_uncontinued_nh_domain_is_not_hidden():
     bad=jnp.diag(jnp.array([-2.1,.7,1.2]))
     assert float(jnp.linalg.det(bad))<0
-    for rho in [.0011,.0055,.01,1.]:
+    for rho in [.01,.5,1.]:
         assert not np.isfinite(float(objective_void_energy(bad,rho)))
 
 @pytest.mark.parametrize('rho',[.00015,.0055,.01,.5])

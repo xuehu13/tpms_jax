@@ -52,18 +52,57 @@ def void_nh_weight(rho):
     return x**3*(10-15*x+6*x**2)
 
 
+VOID_NH_CUTOFF_MAX = .1
+
+
+def void_nh_cutoff(rho):
+    """C2 cutoff vanishes at the unchanged .01 true-NH occupancy boundary.
+
+    .1 is a prespecified virtual-domain volume scale, not a force fit.
+    Reverse smoothstep avoids cancellation close to its zero endpoint.
+    """
+    x=jnp.clip((.01-rho)/(.01-.001),0.,1.)
+    return VOID_NH_CUTOFF_MAX*x**3*(10-15*x+6*x**2)
+
+
+def continued_void_nh_energy(F,rho,mu=MU,kappa=KAPPA):
+    """NH with a second-order Taylor continuation of J**(-2/3) in void only.
+
+    Exact NH when J>=cutoff or rho>=.01. The factor and its first two
+    derivatives match at the positive cutoff. Actual F/J are not clipped.
+    This is an artificial energy extension, not positive-volume repair,
+    convexity, self-contact or a physical material at J<=0.
+    """
+    J=jnp.dot(F[:,0],jnp.cross(F[:,1],F[:,2]))
+    cutoff=void_nh_cutoff(rho)
+    extend=(rho<.01)&(J<cutoff)
+    # Inactive arithmetic is evaluated at nonsingular constants, so JAX's
+    # eager select does not introduce NaN derivatives through unused terms.
+    delta=jnp.where(extend,cutoff,1.)
+    z=(jnp.where(extend,J,delta)-delta)/delta
+    polynomial=delta**(-2/3)*(1-(2/3)*z+(5/9)*z*z)
+    normal=jnp.where(extend,1.,J)**(-2/3)
+    factor=jnp.where(extend,polynomial,normal)
+    return mu/2*(factor*jnp.sum(F*F)-3)+kappa/2*(J-1)**2
+
+
+def objective_void_requires_positive_J(rho):
+    """Uncontinued true-NH domain; mixed virtual tail now has an all-F law."""
+    return rho>=.01
+
+
 def objective_void_energy(F, rho, eta=1e-4, mu=MU, kappa=KAPPA):
     """Opt-in objective virtual energy; default material remains matched NH.
 
-    Deep void has an all-F energy. Wherever NH has nonzero weight, actual
-    detF must stay positive. F_nh=I skips an *exactly inactive* branch; it
-    does not repair or reinterpret actual F, J, or the true wall geometry.
-    Scale and gate both participate in occupancy derivatives.
+    Deep and mixed void have all-F energies. Actual J must stay positive
+    in the uncontinued original-NH domain rho>=.01. F_nh=I skips an exactly
+    inactive branch; actual F/J and true wall geometry remain unchanged.
+    Scale, occupancy gate and continuation cutoff participate in derivatives.
     """
     weight = void_nh_weight(rho)
     F_nh = jnp.where(weight>0,F,jnp.eye(3,dtype=F.dtype))
     return (eta+(1-eta)*rho)*(
-        weight*neo_hookean_energy(F_nh,mu,kappa)
+        weight*continued_void_nh_energy(F_nh,rho,mu,kappa)
         +(1-weight)*stable_neo_hookean_extension(F,mu,kappa))
 
 
@@ -199,9 +238,9 @@ class DensityHyperelasticity(PeriodicHyperelasticity):
             return objective_void_first_piola(F,(scale-self.eta)/(1-self.eta),self.eta)
         return scale*first_piola(F)
 
-    def nh_active(self,scale):
+    def requires_positive_J(self,scale):
         if getattr(self,'material_model','nh')=='objective_void':
-            return void_nh_weight((scale-self.eta)/(1-self.eta))>0
+            return objective_void_requires_positive_J((scale-self.eta)/(1-self.eta))
         return jnp.ones_like(scale,dtype=bool)
 
     def get_tensor_map(self):

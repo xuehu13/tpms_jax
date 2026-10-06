@@ -1,0 +1,5 @@
+{
+  "report_tool_sha256": "69c59049a42bdbb233da2c3ee822aeb480839c2c63e3912dd86425ec6b0d072f",
+  "based_on_frozen_analysis": "validation/objective_path_20261006_r11/experiment.py",
+  "changes": "explicit case/output; frozen mode without curve reuse as a new path; strict domain and continued-point counts; unchanged physical reference comparison"
+}

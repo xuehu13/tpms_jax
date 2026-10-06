@@ -1,6 +1,6 @@
 # 验证证据索引
 
-最新2026-10-06：[客观虚域完整路径](objective_path_20261006_r11/README.md)到20%且前向改善，但125点发现6个NH混合尾部负J、候选未采纳默认。下一项只做混合区纯核域修复，执行看[主规划](../docs/RESEARCH_PLAN.md)，解释看[最新报告](../docs/OBJECTIVE_PATH_PROGRESS.md)。以下为冻结证据，旧下一步不生成任务。
+最新2026-10-06：[C²混合虚域](void_continuation_20261006_r12/README.md)完成45项检查、原6点/冻结场、快慢完整20%及保载，通过有限前向/材料域/速率门槛。实际虚域折叠仍在，默认NH。解释见[新报告](../docs/VOID_CONTINUATION_PROGRESS.md)，活动只看[主规划](../docs/RESEARCH_PLAN.md)。旧r11的材料域失败保持，旧下一步不生成任务。
 
 
 方法、符号和结果解释见 [综合报告](../docs/TPMS_RESEARCH_REVIEW.md)，当前事实见 [状态](../docs/RESEARCH_STATUS.md)，执行只看 [主规划](../docs/RESEARCH_PLAN.md)。原四轮均已按判据/停止条件收口；子目录保留冻结记录，其中历史“下一步”不是自动待办。
@@ -11,6 +11,7 @@ Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_befor
 
 | 目录 | 已完成范围 |
 | --- | --- |
+| [void_continuation_20261006_r12](void_continuation_20261006_r12/README.md) | C²混合虚域、45项核/回归、原6点局部AD/FD、快慢20%及新场125点；完整范围判断看decision |
 | [objective_path_20261006_r11](objective_path_20261006_r11/README.md) | 一次20%客观虚域路径、35项检查；6.81%反力差，125点6个混合尾部材料域失败，未采纳默认 |
 | [objective_virtual_20261006_r10](objective_virtual_20261006_r10/README.md) | 客观虚域纯核与原场验证通过；28项检查，无新路径/AD，下一项只看主规划 |
 | [virtual_kernel_20261006_r9](virtual_kernel_20261006_r9/README.md) | 经典虚域核因转动缺陷未采纳，原科学证据冻结 |
