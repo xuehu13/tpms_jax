@@ -1,0 +1,9 @@
+{
+  "passed": 35,
+  "seconds": 24.72,
+  "command": "JAX_PLATFORMS=cpu .pixi/envs/default/bin/python -m pytest -q tests/test_objective_explicit.py tests/test_objective_void.py tests/test_explicit_quadrature.py tests/test_xyz_hyperelastic.py",
+  "new_interface_checks": 7,
+  "prior_candidate_kernel_checks": 23,
+  "prior_quadrature_and_XYZ_checks": 5,
+  "scope": "Shared force/energy, default NH, opt-in domain, macro work, mass, short-block JVP versus FD; not full 20% trajectory gradient"
+}

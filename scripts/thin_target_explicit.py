@@ -13,7 +13,7 @@ sys.path.insert(0,str(ROOT))
 import numpy as np
 import jax
 import jax.numpy as jnp
-from hyperelastic_fem import make_density_hyperelastic_problem,neo_hookean_energy,MU,KAPPA
+from hyperelastic_fem import make_density_hyperelastic_problem,MU,KAPPA
 jax.config.update('jax_enable_x64',True)
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -148,13 +148,20 @@ class ExplicitXYZ:
             return compiled(state,count,*material)
         return apply,motion
 
-    @staticmethod
-    def _quadratic_stats(w,h,grads,cells,weights,scale):
+    def _material_stats(self,F,weights,scale):
+        J=jnp.linalg.det(F)
+        W=jax.vmap(self.p.material_energy)(F.reshape((-1,3,3)),scale.ravel()).reshape(scale.shape)
+        active=self.p.nh_active(scale)
+        return {'J_min':jnp.min(J),'J_finite':jnp.all(jnp.isfinite(J)),
+                'NH_active_J_min':jnp.min(jnp.where(active,J,jnp.inf)),
+                'NH_active_points':jnp.sum(active),
+                'NH_active_invalid_points':jnp.sum(active&(J<=0)),
+                'negative_J_points':jnp.sum(J<=0)},jnp.sum(W*weights)
+
+    def _quadratic_stats(self,w,h,grads,cells,weights,scale):
         H=jnp.zeros((3,3)).at[2,2].set(h)
         F=jnp.eye(3)+H+jnp.einsum('cni,qnj->cqij',w[cells],grads)
-        J=jnp.linalg.det(F)
-        W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(scale.shape)
-        return jnp.min(J),jnp.sum(W*scale*weights)
+        return self._material_stats(F,weights,scale)
 
     def observables(self,state,dt,motion,material=None):
         """JAX scalar response; caller handles finite/positive-volume protection."""
@@ -162,12 +169,11 @@ class ExplicitXYZ:
         q,vhalf,t=state;h,hd,hdd=motion(t)
         H=jnp.zeros((3,3)).at[2,2].set(h);w=q[self.ids]
         if geometry is None:
-            F=jnp.eye(3)+H+self.p.fe.sol_to_grad(w);minJ=jnp.linalg.det(F).min()
-            W=jax.vmap(neo_hookean_energy)(F.reshape((-1,3,3))).reshape(self.scale.shape)
-            U_norm=jnp.sum(W*self.scale*jnp.asarray(self.p.fe.JxW))
+            F=jnp.eye(3)+H+self.p.fe.sol_to_grad(w)
+            domain,U_norm=self._material_stats(F,jnp.asarray(self.p.fe.JxW),self.scale)
             r=self.force(q,h)
         else:
-            minJ,U_norm=self.stats(w,h,geometry[1],self.device_cells,geometry[2][0],geometry[4])
+            domain,U_norm=self.stats(w,h,geometry[1],self.device_cells,geometry[2][0],geometry[4])
             r=self.force_for_geometry(q,h,geometry)
         gd=self.points*jnp.array([0.,0.,hdd])
         acc=(-(self.reduce(r)+self.reduce(nodem[:,None]*gd))/mass[:,None]).at[self.pin].set(0.)
@@ -177,18 +183,27 @@ class ExplicitXYZ:
         qstatic=jnp.sum(r[:,2]*self.points[:,2])*self.L**2
         qdynamic=jnp.sum((r[:,2]+nodem*fullacc[:,2])*self.points[:,2])*self.L**2
         return {'time':t,'compression':-h,'Fz_N':qdynamic,'internal_macro_Fz_N':qstatic,
-                'energy_N_mm':U,'KE_N_mm':KE,'KE_over_U':KE/jnp.maximum(U,1e-30),'J_min':minJ}
+                'energy_N_mm':U,'KE_N_mm':KE,'KE_over_U':KE/jnp.maximum(U,1e-30),**domain}
 
     def observe(self,state,dt,motion,material=None):
         values=self.observables(state,dt,motion,material)
         row={k:float(v) for k,v in values.items()}
-        if not np.isfinite(np.asarray(state[0])).all() or not math.isfinite(row['J_min']) or row['J_min']<=0:
-            raise ValueError('Nonfinite displacement or nonpositive reference Gauss detF')
+        physics=('time','compression','Fz_N','internal_macro_Fz_N','energy_N_mm','KE_N_mm','KE_over_U')
+        if (not np.isfinite(np.asarray(state[0])).all() or not row['J_finite']
+                or not all(math.isfinite(row[k]) for k in physics)):
+            raise ValueError('Nonfinite state or material energy/force')
+        if row['NH_active_invalid_points']:
+            raise ValueError('Nonpositive actual detF where the NH energy is active')
+        for key in ('NH_active_points','NH_active_invalid_points','negative_J_points'):
+            row[key]=int(row[key])
+        row['J_finite']=bool(row['J_finite'])
+        if not row['NH_active_points']:row['NH_active_J_min']=None
         return row
 
 def run(a):
     a.output.mkdir(parents=True,exist_ok=False);started=time.perf_counter()
     def build_problem(*args,**kwargs):
+        kwargs['material_model']=a.material_model
         if not a.geometry_on_cpu:return make_density_hyperelastic_problem(*args,**kwargs)
         # Installed JAX-FEM reference maps use a large broadcast temporary.
         # Construct on CPU, then reuse exactly the same compact GPU kernel.
@@ -258,7 +273,9 @@ def run(a):
         else:del rho,qp,qw
         cfg.update(N=N,Gauss_field_path=str(field_path),Gauss_field_sha256=sha(field_path))
     ex=ExplicitXYZ(p,force_batch_cells=a.force_batch_cells);dt=ex.dt_estimate*(.25 if a.action=='wave' else 1.)
-    cfg.update(method='physical central difference; existing JAX-FEM NH residual',dt_seconds=dt,
+    cfg.update(method='physical central difference; shared JAX-FEM material residual',
+        material_model=a.material_model,material_domain='actual J>0 wherever NH weight is nonzero; deep virtual folds reported separately',
+        virtual_NH_weight_bounds=[.001,.01] if a.material_model=='objective_void' else None,dt_seconds=dt,
         element_type=p.fe.ele_type,element_degree=a.element_degree,nodes=len(p.fe.points),
         elements=p.fe.num_cells,Gauss_points_per_cell=p.fe.num_quads,
         quadrature_order=p.fe.quadrature_order,force_batch_cells=ex.force_batch_cells,
@@ -273,6 +290,7 @@ def run(a):
         experiment_sha256=sha(Path(__file__)),source_case=str(a.case),load_time_seconds=a.load_time,
         devices=[str(d) for d in jax.devices()])
     snap=a.output/'source_at_run';snap.mkdir();shutil.copy2(__file__,snap/'thin_target_explicit.py')
+    shutil.copy2(ROOT/'hyperelastic_fem.py',snap/'hyperelastic_fem.py')
     q=jnp.zeros((ex.nc,3));wave=a.action=='wave'
     if wave:
         xyz=np.zeros((ex.nc,3));xyz[np.asarray(ex.ids)]=np.asarray(p.fe.points)%1.
@@ -328,7 +346,9 @@ def run(a):
             elapsed=time.perf_counter()-walk
             write(a.output/'progress.json',{'steps':done,'remaining_steps_estimate':math.ceil(max(0.,end-float(state[2]))/dt),
                 'compression':row['compression'],'dt':dt,'rejected_blocks':len(rejections),
-                'elapsed_seconds':elapsed,'J_min':row['J_min'],'KE_over_U':row['KE_over_U']})
+                'elapsed_seconds':elapsed,'J_min':row['J_min'],'NH_active_J_min':row['NH_active_J_min'],
+                'negative_J_points':row['negative_J_points'],'NH_active_invalid_points':row['NH_active_invalid_points'],
+                'KE_over_U':row['KE_over_U']})
             if a.action=='probe':continue
             if done%(chunk*10)==0:print(json.dumps(path[-1]),flush=True)
         cost=(time.perf_counter()-walk)/done
@@ -361,6 +381,7 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=['wave','probe','target'])
     p.add_argument('--case',type=Path,default=ROOT/'validation/thin_target_20261004_r5')
     p.add_argument('--output',type=Path,required=True);p.add_argument('--load-time',type=float,default=.02)
+    p.add_argument('--material-model',choices=('nh','objective_void'),default='nh',help='Opt-in validated objective virtual energy; original NH remains default')
     p.add_argument('--adaptive',action='store_true',help='Reject invalid blocks and halve dt, keeping the previous valid state; no detF clipping')
     p.add_argument('--element-degree',type=int,choices=(1,2),default=1)
     p.add_argument('--cells',type=int,help='Cells per axis; periodic node levels also include midside nodes in Q2')

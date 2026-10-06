@@ -1,0 +1,121 @@
+{
+  "scope": "Locations only in current 20% saved field; no added force, path or material change",
+  "points": [
+    {
+      "cell_id": 1020,
+      "dense_local_point": 112,
+      "reference_xyz_mm": [
+        0.29784060092791614,
+        9.84375,
+        8.90625
+      ],
+      "actual_J": -0.004209474153550007,
+      "phi": 0.0035769822054437326,
+      "NH_weight": 0.1454736278161812,
+      "stiffness_scale": 0.0036766245072231882,
+      "distance_from_midsurface_mm": 0.3140541305676972,
+      "distance_outside_nominal_wall_mm": 0.06405413056769721,
+      "same_cell_27point_J_min": -1.4616510205854265,
+      "same_cell_27point_NH_active_J_min": 0.13497555811552459
+    },
+    {
+      "cell_id": 15891,
+      "dense_local_point": 12,
+      "reference_xyz_mm": [
+        4.702159399072085,
+        5.156250000000002,
+        6.093750000000002
+      ],
+      "actual_J": -0.026293347059923103,
+      "phi": 0.0031943849320773357,
+      "NH_weight": 0.09710591527119018,
+      "stiffness_scale": 0.0032940654935841277,
+      "distance_from_midsurface_mm": 0.3153456328562759,
+      "distance_outside_nominal_wall_mm": 0.06534563285627593,
+      "same_cell_27point_J_min": -1.4472866579118258,
+      "same_cell_27point_NH_active_J_min": 0.12106933425908173
+    },
+    {
+      "cell_id": 16371,
+      "dense_local_point": 12,
+      "reference_xyz_mm": [
+        4.702159399072085,
+        9.843750000000002,
+        6.093750000000002
+      ],
+      "actual_J": -0.02742033974284111,
+      "phi": 0.0036435872696358117,
+      "NH_weight": 0.15488696748754538,
+      "stiffness_scale": 0.003743222910908848,
+      "distance_from_midsurface_mm": 0.31384345489273946,
+      "distance_outside_nominal_wall_mm": 0.06384345489273946,
+      "same_cell_27point_J_min": -1.4934345979919978,
+      "same_cell_27point_NH_active_J_min": 0.12289342200668377
+    },
+    {
+      "cell_id": 16403,
+      "dense_local_point": 112,
+      "reference_xyz_mm": [
+        5.297840600927916,
+        0.15625000000000003,
+        6.09375
+      ],
+      "actual_J": -0.0381319481221808,
+      "phi": 0.0029560041412719233,
+      "NH_weight": 0.07209895947799203,
+      "stiffness_scale": 0.003055708540857796,
+      "distance_from_midsurface_mm": 0.3162307867072026,
+      "distance_outside_nominal_wall_mm": 0.06623078670720262,
+      "same_cell_27point_J_min": -1.380884769828428,
+      "same_cell_27point_NH_active_J_min": 0.09960154335034949
+    },
+    {
+      "cell_id": 17388,
+      "dense_local_point": 112,
+      "reference_xyz_mm": [
+        5.297840600927916,
+        9.84375,
+        3.90625
+      ],
+      "actual_J": -0.013149304883074616,
+      "phi": 0.003472542367137681,
+      "NH_weight": 0.13129278384468687,
+      "stiffness_scale": 0.003572195112900967,
+      "distance_from_midsurface_mm": 0.31439248126237207,
+      "distance_outside_nominal_wall_mm": 0.06439248126237207,
+      "same_cell_27point_J_min": -1.3760986668161035,
+      "same_cell_27point_NH_active_J_min": 0.12556304476930435
+    },
+    {
+      "cell_id": 32259,
+      "dense_local_point": 12,
+      "reference_xyz_mm": [
+        9.702159399072086,
+        5.156250000000002,
+        1.0937500000000002
+      ],
+      "actual_J": -0.006913316500292647,
+      "phi": 0.004080761757390742,
+      "NH_weight": 0.22334716166114318,
+      "stiffness_scale": 0.004180353681215003,
+      "distance_from_midsurface_mm": 0.31254916484945966,
+      "distance_outside_nominal_wall_mm": 0.06254916484945966,
+      "same_cell_27point_J_min": -1.4244003517192496,
+      "same_cell_27point_NH_active_J_min": 0.12446445782423404
+    }
+  ],
+  "cell_count": 6,
+  "phi_range": [
+    0.0029560041412719233,
+    0.004080761757390742
+  ],
+  "NH_weight_range": [
+    0.07209895947799203,
+    0.22334716166114318
+  ],
+  "outside_nominal_wall_mm_range": [
+    0.06254916484945966,
+    0.06623078670720262
+  ],
+  "saved_field_sha256": "6faaf892d5ea7211e30e0158d743e4be768a83e01933816293c97c1b64be618e"
+}

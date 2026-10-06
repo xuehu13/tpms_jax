@@ -1,0 +1,67 @@
+{
+  "case_id": "diverse28_t005",
+  "N": 32,
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "source_linear_case_input_sha256": "87a4f88df427de1cccc7b0a20080dfc7350256e2ef3f5e7a2eb1d64c7eaf56ec",
+  "mechanical_periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "target_compression": 0.2,
+  "bc": "XYZ periodic fluctuation; macro Hzz from zero to -0.2, lateral strain zero",
+  "evaluated_occupancy_sha256": "a8d6508678d934cda5ec72f37942524514f832309106a03bb401d209a3c00bb9",
+  "Gauss_weight_relative_max_difference": 6.572520305780927e-14,
+  "Gauss_field_path": "/home/xuehu/projects/tpms_jax/validation/large_compression_20261005_r6/quadratic_candidate/gauss_field.npz",
+  "Gauss_field_sha256": "5594df90ac1620a7225b52d974ec5b39a72746a125eb5fd9ed45b101a1d7f8d9",
+  "method": "physical central difference; shared JAX-FEM material residual",
+  "material_model": "objective_void",
+  "material_domain": "actual J>0 wherever NH weight is nonzero; deep virtual folds reported separately",
+  "virtual_NH_weight_bounds": [
+    0.001,
+    0.01
+  ],
+  "dt_seconds": 2.693272938728041e-07,
+  "element_type": "HEX27",
+  "element_degree": 2,
+  "nodes": 274625,
+  "elements": 32768,
+  "Gauss_points_per_cell": 27,
+  "quadrature_order": 4,
+  "force_batch_cells": 2048,
+  "reference_geometry_on_cpu": false,
+  "mass_lumping": "HRZ_positive_diagonal_scaling",
+  "negative_unmodified_row_mass_entries": 69296,
+  "cell_mass_conservation_error": 4.440892098500626e-16,
+  "common_reference_geometry_errors": {
+    "gradient": 8.485087228966525e-14,
+    "weight": 1.0247358517290195e-13
+  },
+  "solid_density_tonne_per_mm3": 1e-09,
+  "void_mass_floor": 0.0001,
+  "mass_model": "rho_s*(eta+(1-eta)*phi); numerical void mass, not a second physical material",
+  "affine_inertia_included": true,
+  "no_mass_scaling": true,
+  "no_contact": true,
+  "no_damping": true,
+  "source_sha256": {
+    "hyperelastic_fem.py": "ca92950bacd211430939b66dbf25ec4fd01558c3eb9aab6699e66771ca9dcc35",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "experiment_sha256": "aeff3475d20578ee2af92954495f3147eca6eb4d20b0517efa450ed92e24a346",
+  "source_case": "/home/xuehu/projects/tpms_jax/validation/thin_target_20261004_r5",
+  "load_time_seconds": 0.004,
+  "devices": [
+    "cuda:0"
+  ],
+  "total_steps": 16337,
+  "adaptive_block_rejection": true,
+  "minimum_dt_seconds": 1.6832955867050256e-08
+}

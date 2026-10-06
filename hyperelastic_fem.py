@@ -1,7 +1,7 @@
 """Matched compressible Neo-Hookean material on periodic HEX8/HEX27 kinematics.
 
-Energy and weak form use the reference configuration. No contact, plasticity,
-void stabilization, or new equilibrium solver is implemented here.
+Energy and weak form use the reference configuration. An opt-in objective
+void extension shares this material kernel; no contact, plasticity or new solver.
 """
 import numpy as np
 import jax
@@ -53,7 +53,7 @@ def void_nh_weight(rho):
 
 
 def objective_void_energy(F, rho, eta=1e-4, mu=MU, kappa=KAPPA):
-    """Optional candidate only; existing FEM/time integration remains NH.
+    """Opt-in objective virtual energy; default material remains matched NH.
 
     Deep void has an all-F energy. Wherever NH has nonzero weight, actual
     detF must stay positive. F_nh=I skips an *exactly inactive* branch; it
@@ -134,6 +134,8 @@ def reduced_guess(problem, w):
 
 def finite_response(problem, sol):
     """Recover reactions and reference/current-configuration physical outputs."""
+    if getattr(problem,'material_model','nh')!='nh':
+        raise ValueError('Objective void is currently Explicit-only; use its reference energy/P observables')
     F=jnp.eye(3)+problem.H_macro+problem.fe.sol_to_grad(sol[0])
     flat=F.reshape((-1,3,3))
     P=jax.vmap(first_piola)(flat).reshape(F.shape)
@@ -187,9 +189,24 @@ class DensityHyperelasticity(PeriodicHyperelasticity):
         self.stiffness_scale=eta+(1-eta)*rho
         self.internal_vars=[jnp.broadcast_to(self.H_macro,(*rho.shape,3,3)),self.stiffness_scale]
 
+    def material_energy(self,F,scale):
+        if getattr(self,'material_model','nh')=='objective_void':
+            return objective_void_energy(F,(scale-self.eta)/(1-self.eta),self.eta)
+        return scale*neo_hookean_energy(F)
+
+    def material_stress(self,F,scale):
+        if getattr(self,'material_model','nh')=='objective_void':
+            return objective_void_first_piola(F,(scale-self.eta)/(1-self.eta),self.eta)
+        return scale*first_piola(F)
+
+    def nh_active(self,scale):
+        if getattr(self,'material_model','nh')=='objective_void':
+            return void_nh_weight((scale-self.eta)/(1-self.eta))>0
+        return jnp.ones_like(scale,dtype=bool)
+
     def get_tensor_map(self):
         def stress(w_grad,H,scale):
-            return scale*first_piola(jnp.eye(3)+H+w_grad)
+            return self.material_stress(jnp.eye(3)+H+w_grad,scale)
         return stress
 
     def get_mass_map(self):
@@ -223,16 +240,22 @@ class DensityHyperelasticity(PeriodicHyperelasticity):
 
 def make_density_hyperelastic_problem(n,c=.541062,beta=40.,eta=1e-4,
                                       rho_quad=None,periodic_axes=(0,1),
-                                      element_degree=1,quadrature_order=None):
+                                      element_degree=1,quadrature_order=None,material_model="nh"):
     """Shared background with optional actual-Gauss input and XY/XYZ constraints.
 
     Without rho_quad, preserve the historical Gyroid c/beta field. Otherwise
     evaluate the callable on this unique Problem or accept its Gauss array;
     c/beta are unused. Geometry is fixed in reference/material coordinates.
     """
+    if material_model not in ('nh','objective_void'):
+        raise ValueError('Expected nh or objective_void material model')
+    if material_model=='objective_void' and not 0<eta<1:
+        raise ValueError('Objective void requires a fixed 0<eta<1')
     from geometry import density
     problem=_make_periodic_problem(n,DensityHyperelasticity,periodic_axes,
                                    element_degree,quadrature_order)
+    # Fixed before the first JIT trace; never change model on an existing Problem.
+    problem.material_model=material_model
     if rho_quad is None:rho=density(problem.physical_quad_points,c,beta)
     else:rho=rho_quad(problem) if callable(rho_quad) else rho_quad
     problem.set_params(jnp.zeros((3,3)),rho,eta)

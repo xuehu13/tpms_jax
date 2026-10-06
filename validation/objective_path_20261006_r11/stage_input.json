@@ -1,0 +1,33 @@
+{
+  "base_commit": "df01eb3c822972133194a8407f53b3c621c05559",
+  "before_source_sha256": {
+    "hyperelastic_fem.py": "5342b699fe75073efc3251dc7392882da5097228cc83bf860d82e9b9db66c0e7",
+    "scripts/thin_target_explicit.py": "777c58e1496a2bf82fc9adf68743b7fbcd22ad92158f04044d5a0fff7971e16a"
+  },
+  "after_source_sha256": {
+    "hyperelastic_fem.py": "ca92950bacd211430939b66dbf25ec4fd01558c3eb9aab6699e66771ca9dcc35",
+    "scripts/thin_target_explicit.py": "aeff3475d20578ee2af92954495f3147eca6eb4d20b0517efa450ed92e24a346"
+  },
+  "changed_factor": "objective virtual-domain energy, selected before first JIT",
+  "default_material": "nh",
+  "mass_and_time_algorithm_changed": false,
+  "fixed_target": {
+    "L_mm": 10.0,
+    "thickness_mm": 0.5,
+    "N": 32,
+    "element": "HEX27",
+    "Gauss_points": 27,
+    "E_MPa": 10.0,
+    "nu": 0.3,
+    "eta": 0.0001,
+    "interface_10_90_mm": 0.05,
+    "periodicity": "XYZ",
+    "macro_lateral_strain": 0.0,
+    "load_time_seconds": 0.004,
+    "hold_fraction": 0.1
+  },
+  "planned_complete_paths": 1,
+  "planned_Abaqus_jobs": 0,
+  "planned_full_AD_jobs": 0,
+  "next_after_path": "one saved-field 125-point domain probe and existing curve/mode/energy comparison; no scans"
+}

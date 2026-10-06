@@ -1,0 +1,56 @@
+{
+  "points_per_cell": 125,
+  "Vf": 0.15162795798250328,
+  "raw_J_min": -3.942901293995078,
+  "raw_nonpositive_points": 17749,
+  "raw_nonpositive_cells": 2227,
+  "raw_nonpositive_phi_max": 0.004080761757390742,
+  "NH_active_J_min": -0.0381319481221808,
+  "NH_active_nonpositive_points": 6,
+  "candidate_energy_N_mm": null,
+  "candidate_internal_Fz_N": null,
+  "domain_bins": {
+    "deep_void_le_0p001": {
+      "points": 3281967,
+      "raw_J_min": -3.942901293995078,
+      "raw_nonpositive_points": 17743,
+      "reference_volume_mm3": 800.9582688641502,
+      "candidate_energy_N_mm": null,
+      "candidate_internal_Fz_N": null
+    },
+    "blend_lt_0p01": {
+      "points": 64202,
+      "raw_J_min": -0.0381319481221808,
+      "raw_nonpositive_points": 6,
+      "reference_volume_mm3": 16.094798064252945,
+      "candidate_energy_N_mm": null,
+      "candidate_internal_Fz_N": null
+    },
+    "NH_0p01_to_0p05": {
+      "points": 45583,
+      "raw_J_min": 0.2152570791776792,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 11.155305228574072,
+      "candidate_energy_N_mm": null,
+      "candidate_internal_Fz_N": null
+    },
+    "transition_0p05_to_0p95": {
+      "points": 166245,
+      "raw_J_min": 0.49276433715064427,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 40.24134207182621,
+      "candidate_energy_N_mm": null,
+      "candidate_internal_Fz_N": null
+    },
+    "solid_ge_0p95": {
+      "points": 538003,
+      "raw_J_min": 0.7338108234857329,
+      "raw_nonpositive_points": 0,
+      "reference_volume_mm3": 131.55028577119705,
+      "candidate_energy_N_mm": null,
+      "candidate_internal_Fz_N": null
+    }
+  },
+  "candidate_full_energy_defined": false,
+  "new_solve": false
+}

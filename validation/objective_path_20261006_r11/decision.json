@@ -1,0 +1,21 @@
+{
+  "completed_controlled_paths": 1,
+  "new_Abaqus_jobs": 0,
+  "new_full_AD_jobs": 0,
+  "response_target_only_pass": true,
+  "dense_material_domain_pass": false,
+  "adopted_default": false,
+  "candidate_connected_opt_in": true,
+  "default_material": "nh",
+  "reason": "Six 125-point locations in low-occupancy blending tail have J<=0 with nonzero original NH weight. All-domain candidate energy is undefined there.",
+  "next_action": "Repair the low-occupancy mixed-energy evaluation domain in the shared pure kernel first; preserve objectivity, true-wall NH, occupancy, thickness, eta and interface width. No threshold tuning to shell curves. Kernel and this frozen field must pass before another path.",
+  "not_certified": [
+    "125-point full candidate energy",
+    "new quasi-static rate independence",
+    "20% path gradient",
+    "contact/plasticity",
+    "arbitrary geometry replacement"
+  ],
+  "actual_negative_J_not_removed": true,
+  "response_improvement_not_physical_accuracy_certification": true
+}
