@@ -1,6 +1,6 @@
 # 文件地图：当前入口、冻结证据与历史
 
-更新2026-10-08至r42只读分析。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
+更新2026-10-08至r43占据复核。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
 
 ## 当前入口各管一件事
 
@@ -31,6 +31,7 @@
 | validation/interface_width_mixed_20261008_r38/ | 一个窄界面同部分密积分确认/综合报告/两图 | 同上 |
 | validation/binary_occupancy_20261008_r40/ | 二值27点、冻结选区8/12及一次部分密积分平衡；综合报告/图 | [r40–r41](../validation/binary_occupancy_20261008_r40/REVIEW.md) |
 | validation/initial_diverse28_20261008_r41/ | 当前N32零态/匹配Standard壳/全部周期检查/摘要/重建配方 | 同上 |
+| validation/binary_diverse28_20261008_r43/ | 自身3896选区、二值原点及一次配对/局部积分与能量账目/原中断/两图；非生产 | [r43](../validation/binary_diverse28_20261008_r43/REVIEW.md) |
 | validation/initial_bias_reassessment_20261008_r42/ | 四个既有初始状态的能量账目/协议/原数据保护清单/一图；零新求解 | [机制审查](MECHANISM_ANALYSIS.md) |
 | validation/curved_patch_20261008_r39/ | 圆柱设计/解析/两Abaqus参照/背景原失败/只读审计/图 | [r39](../validation/curved_patch_20261008_r39/REVIEW.md) |
 
@@ -53,9 +54,9 @@
 
 ## 本次整理与归档
 
-当前入口修改前原文：W/history/before_initial_reassessment_20261008/；正式对应入口/validation索引：R/docs/history/before_initial_reassessment_20261008/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
+当前入口修改前原文：W/history/before_r43_diverse28_20261008/；正式对应入口/validation索引：R/docs/history/before_r43_diverse28_20261008/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
 
-本轮支持脚本在W/history/completed_tools_20261008/r42_reassessment_support/；实际分析配方在R/validation/initial_bias_reassessment_20261008_r42/analyze.py。work只保留用途说明。科学保护哈希、维护收据和结果在r42正式目录。
+本轮支持脚本在W/history/completed_tools_20261008/r43_support/；实际诊断配方在R/validation/binary_diverse28_20261008_r43/diagnostic.py；能量账目复用r42，入口在本轮energy_accounting/analyze.py。work只保留用途说明。科学保护哈希、维护收据和结果在r43正式目录。输入适配前日志/源码与配置在该目录before_*，保留全部中断，不重复发布大数组。
 
 W/output的成品入口README.md只指向完整Word和最新重点版PPT。前两版PPT按原字节归档至W/history/presentation_versions_20261008/，archive_receipt.json记录原/新路径与SHA256。它们仍可恢复；本轮没有改成品内容。
 

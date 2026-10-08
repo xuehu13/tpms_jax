@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "full_original_energy_N_mm": 1.8508165478878615e-06,
+  "selected_original": {
+    "total_energy_N_mm": 1.3810581773838084e-06
+  },
+  "levels": [
+    {
+      "total_energy_N_mm": 1.657630780586421e-06
+    }
+  ]
+}

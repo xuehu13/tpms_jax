@@ -79,3 +79,6 @@ validation/initial_bias_mechanism_20261008_r32/shell_sections.json
 validation/initial_diverse28_20261008_r41/abaqus/shell.inp
 validation/initial_diverse28_20261008_r41/abaqus/shell_result.json
 validation/initial_diverse28_20261008_r41/abaqus/extract_shell.py
+
+# r43 preserves preparation-error snapshots locally; current recipe/errors are published.
+validation/binary_diverse28_20261008_r43/before_*/

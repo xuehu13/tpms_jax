@@ -1,0 +1,107 @@
+{
+  "status": "accepted_initial_partial_scope",
+  "rows": [
+    {
+      "rule": "original27",
+      "smooth_K_N_per_mm": 3.8882555807871677,
+      "binary_K_N_per_mm": 3.701633095775124,
+      "smooth_relative_to_shell": 0.03003319935082427,
+      "binary_relative_to_shell": -0.019404743015310255,
+      "binary_relative_to_same_rule_smooth": -0.04799645525726026
+    },
+    {
+      "rule": "own_selected12_rest27",
+      "smooth_K_N_per_mm": 3.907643951586478,
+      "binary_K_N_per_mm": 3.8160682780092334,
+      "smooth_relative_to_shell": 0.03516934978890074,
+      "binary_relative_to_shell": 0.010910146123492614,
+      "binary_relative_to_same_rule_smooth": -0.023435009614953595
+    }
+  ],
+  "selected_cells": 3896,
+  "original_smooth_energy_fraction_selected": 0.7377716951226263,
+  "max_abs_8_12_relative": 0.0006374013186403182,
+  "energy_accounting": [
+    {
+      "rule": "original27",
+      "status": "ok",
+      "smooth_source": "initial_diverse28_20261008_r41",
+      "binary_source": "binary_diverse28_20261008_r43/original27",
+      "energies_N_mm": {
+        "U_s_q_s": 1.944127790393596e-06,
+        "U_b_q_s": 1.9169284689795175e-06,
+        "U_s_q_b": 2.3820218832737654e-06,
+        "U_b_q_b": 1.8508165478878615e-06,
+        "compatible_difference_energy_b": 6.611192109284827e-08,
+        "fixed_state_inside_addition": 6.416054082948186e-08,
+        "fixed_state_outside_removal": -9.135986224356085e-08
+      },
+      "checks": {
+        "smooth_energy_reproduced": true,
+        "binary_energy_reproduced": true,
+        "addition_removal_balance": true,
+        "nonnegative_relaxation": true,
+        "compatible_variational_identity": true,
+        "finite": true,
+        "budget": true
+      },
+      "relative_to_smooth_equilibrium_energy": {
+        "inside_addition": 0.03300222400323403,
+        "outside_removal": -0.046992724806976145,
+        "fixed_state_net_coefficient_change": -0.013990500803741767,
+        "reequilibration_release": 0.03400595445337026,
+        "net_equilibrium_change": -0.047996455257112026,
+        "identity_residual": -6.132715598689383e-13
+      }
+    },
+    {
+      "rule": "selected12_rest27",
+      "status": "ok",
+      "smooth_source": "binary_diverse28_20261008_r43/smooth_mixed12",
+      "binary_source": "binary_diverse28_20261008_r43/binary_mixed12",
+      "energies_N_mm": {
+        "U_s_q_s": 1.953821975793052e-06,
+        "U_b_q_s": 1.9402838758819514e-06,
+        "U_s_q_b": 2.1811286128919966e-06,
+        "U_b_q_b": 1.908034138992573e-06,
+        "compatible_difference_energy_b": 3.2249736887134686e-08,
+        "fixed_state_inside_addition": 6.875084574554089e-08,
+        "fixed_state_outside_removal": -8.228894565664035e-08
+      },
+      "checks": {
+        "smooth_energy_reproduced": true,
+        "binary_energy_reproduced": true,
+        "addition_removal_balance": true,
+        "nonnegative_relaxation": true,
+        "compatible_variational_identity": true,
+        "finite": true,
+        "budget": true
+      },
+      "relative_to_smooth_equilibrium_energy": {
+        "inside_addition": 0.03518787617159187,
+        "outside_removal": -0.042116910688978944,
+        "fixed_state_net_coefficient_change": -0.006929034517387653,
+        "reequilibration_release": 0.016505975103636782,
+        "net_equilibrium_change": -0.023435009621024433,
+        "identity_residual": 1.1484446789553943e-12
+      }
+    }
+  ],
+  "recorded_successful_stage_seconds": {
+    "selection": 10.46771636302583,
+    "binary27": 46.20615064096637,
+    "fixed_check": 30.467837115982547,
+    "smooth_mixed12": 69.84972411801573,
+    "binary_mixed12": 74.4445885940222,
+    "energy_accounting": 43.10012686194386
+  },
+  "recorded_successful_stage_total_seconds": 274.53614369395655,
+  "cost_note": "stage-internal timings; excludes preparation scripting, input-adapter repairs, process startup, some file IO and documentation time",
+  "new_equilibrium_solves": 3,
+  "new_Abaqus_jobs": 0,
+  "production_changed": false,
+  "all_initial_static_and_frozen_local_integration_gates_passed": true,
+  "outside_selection_densely_verified": false,
+  "sharp_interface_convergence_certified": false,
+  "complete20pct_or_design_AD_certified": false
+}

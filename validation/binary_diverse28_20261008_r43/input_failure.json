@@ -1,0 +1,7 @@
+{
+  "stage": "fixed-field check before dense geometry query",
+  "exception": "KeyError: surface_vertices is not a file in the archive",
+  "numerical_integration_gate_evaluated": false,
+  "binary_solve_repeated": false,
+  "repair": "Use original archived r5 diverse_28 surface arrays only; keep r6 N32 Gauss field, frozen own selection, material, budgets and every numerical tolerance. Verify original N32 distances before dense evaluation."
+}

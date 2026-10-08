@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "pairs": [
+    {
+      "rule": "original27",
+      "status": "ok",
+      "smooth_source": "initial_diverse28_20261008_r41",
+      "binary_source": "binary_diverse28_20261008_r43/original27",
+      "energies_N_mm": {
+        "U_s_q_s": 1.944127790393596e-06,
+        "U_b_q_s": 1.9169284689795175e-06,
+        "U_s_q_b": 2.3820218832737654e-06,
+        "U_b_q_b": 1.8508165478878615e-06,
+        "compatible_difference_energy_b": 6.611192109284827e-08,
+        "fixed_state_inside_addition": 6.416054082948186e-08,
+        "fixed_state_outside_removal": -9.135986224356085e-08
+      },
+      "checks": {
+        "smooth_energy_reproduced": true,
+        "binary_energy_reproduced": true,
+        "addition_removal_balance": true,
+        "nonnegative_relaxation": true,
+        "compatible_variational_identity": true,
+        "finite": true,
+        "budget": true
+      },
+      "relative_to_smooth_equilibrium_energy": {
+        "inside_addition": 0.03300222400323403,
+        "outside_removal": -0.046992724806976145,
+        "fixed_state_net_coefficient_change": -0.013990500803741767,
+        "reequilibration_release": 0.03400595445337026,
+        "net_equilibrium_change": -0.047996455257112026,
+        "identity_residual": -6.132715598689383e-13
+      }
+    },
+    {
+      "rule": "selected12_rest27",
+      "status": "ok",
+      "smooth_source": "binary_diverse28_20261008_r43/smooth_mixed12",
+      "binary_source": "binary_diverse28_20261008_r43/binary_mixed12",
+      "energies_N_mm": {
+        "U_s_q_s": 1.953821975793052e-06,
+        "U_b_q_s": 1.9402838758819514e-06,
+        "U_s_q_b": 2.1811286128919966e-06,
+        "U_b_q_b": 1.908034138992573e-06,
+        "compatible_difference_energy_b": 3.2249736887134686e-08,
+        "fixed_state_inside_addition": 6.875084574554089e-08,
+        "fixed_state_outside_removal": -8.228894565664035e-08
+      },
+      "checks": {
+        "smooth_energy_reproduced": true,
+        "binary_energy_reproduced": true,
+        "addition_removal_balance": true,
+        "nonnegative_relaxation": true,
+        "compatible_variational_identity": true,
+        "finite": true,
+        "budget": true
+      },
+      "relative_to_smooth_equilibrium_energy": {
+        "inside_addition": 0.03518787617159187,
+        "outside_removal": -0.042116910688978944,
+        "fixed_state_net_coefficient_change": -0.006929034517387653,
+        "reequilibration_release": 0.016505975103636782,
+        "net_equilibrium_change": -0.023435009621024433,
+        "identity_residual": 1.1484446789553943e-12
+      }
+    }
+  ],
+  "new_solve": false,
+  "production_changed": false,
+  "wall_seconds": 43.10012686194386,
+  "interpretation": "diverse_28 exact saved-state variational accounting under each same quadrature rule; not a unique physical decomposition of shell error, global sharp interface or AD certification",
+  "outside_selected_not_densely_checked": true
+}

@@ -1,0 +1,8 @@
+{
+  "eta": 0.0001,
+  "macro_Hzz": -0.0001,
+  "budget_seconds": 900,
+  "energy_relative_reproduction_tolerance": 1e-09,
+  "variational_identity_relative_tolerance": 1e-08,
+  "interpretation": "diverse_28 exact saved-state variational accounting under each same quadrature rule; not a unique physical decomposition of shell error, global sharp interface or AD certification"
+}
