@@ -1,0 +1,20 @@
+{
+  "task": "read-only energy accounting on existing initial equilibrium states",
+  "new_FE_equilibria": false,
+  "new_Abaqus_jobs": false,
+  "production_changed": false,
+  "geometry": "diverse_04",
+  "pairs": [
+    "r30 smooth27 / r40 binary27",
+    "r34 smooth selected12/rest27 / r40 binary same rule"
+  ],
+  "selection": "original r33 1941 cells; unchanged, not applicable to diverse_28",
+  "t_mm": 0.5,
+  "eta": 0.0001,
+  "smooth_width_10_90_mm": 0.05,
+  "macro_Hzz": -0.0001,
+  "energy_relative_reproduction_tolerance": 1e-09,
+  "variational_identity_relative_tolerance": 1e-08,
+  "budget_seconds": 900,
+  "interpretation": "algebraic fixed-smooth-state coefficient change and compatible state redistribution; not a unique physical attribution of shell discrepancy; no global sharp-interface certification or AD"
+}

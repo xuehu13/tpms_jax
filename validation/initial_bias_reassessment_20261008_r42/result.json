@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "pairs": [
+    {
+      "rule": "original27",
+      "status": "ok",
+      "smooth_source": "initial_tangent_20261008_r30",
+      "binary_source": "binary_occupancy_20261008_r40/original27",
+      "energies_N_mm": {
+        "U_s_q_s": 2.458227340869754e-06,
+        "U_b_q_s": 2.43698180897514e-06,
+        "U_s_q_b": 3.1151869732150154e-06,
+        "U_b_q_b": 2.3596943869907247e-06,
+        "compatible_difference_energy_b": 7.728742197751203e-08,
+        "fixed_state_inside_addition": 7.665588130469824e-08,
+        "fixed_state_outside_removal": -9.790141319930991e-08
+      },
+      "checks": {
+        "smooth_energy_reproduced": true,
+        "binary_energy_reproduced": true,
+        "addition_removal_balance": true,
+        "nonnegative_relaxation": true,
+        "compatible_variational_identity": true,
+        "finite": true,
+        "budget": true
+      },
+      "relative_to_smooth_equilibrium_energy": {
+        "inside_addition": 0.031183397902317837,
+        "outside_removal": -0.03982602079621776,
+        "fixed_state_net_coefficient_change": -0.00864262289390077,
+        "reequilibration_release": 0.0314403068827109,
+        "net_equilibrium_change": -0.04008292977661167,
+        "identity_residual": 2.8082829503551278e-12
+      }
+    },
+    {
+      "rule": "selected12_rest27",
+      "status": "ok",
+      "smooth_source": "local_reequilibrium_20261008_r34",
+      "binary_source": "binary_occupancy_20261008_r40/mixed12",
+      "energies_N_mm": {
+        "U_s_q_s": 2.476806126908231e-06,
+        "U_b_q_s": 2.4614085940415206e-06,
+        "U_s_q_b": 2.8537067757678756e-06,
+        "U_b_q_b": 2.424285150781573e-06,
+        "compatible_difference_energy_b": 3.712344326505977e-08,
+        "fixed_state_inside_addition": 8.19070631616297e-08,
+        "fixed_state_outside_removal": -9.730459602833972e-08
+      },
+      "checks": {
+        "smooth_energy_reproduced": true,
+        "binary_energy_reproduced": true,
+        "addition_removal_balance": true,
+        "nonnegative_relaxation": true,
+        "compatible_variational_identity": true,
+        "finite": true,
+        "budget": true
+      },
+      "relative_to_smooth_equilibrium_energy": {
+        "inside_addition": 0.03306963038882392,
+        "outside_removal": -0.0392863191717811,
+        "fixed_state_net_coefficient_change": -0.0062166887829572534,
+        "reequilibration_release": 0.014988433231263226,
+        "net_equilibrium_change": -0.02120512201422048,
+        "identity_residual": -2.063981516016949e-12
+      }
+    }
+  ],
+  "new_solve": false,
+  "production_changed": false,
+  "wall_seconds": 36.72902226890437,
+  "interpretation": "algebraic fixed-smooth-state coefficient change and compatible state redistribution; not a unique physical attribution of shell discrepancy; no global sharp-interface certification or AD",
+  "outside_selected_not_densely_checked": true
+}

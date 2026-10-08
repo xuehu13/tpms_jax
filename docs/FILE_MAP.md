@@ -1,6 +1,6 @@
 # 文件地图：当前入口、冻结证据与历史
 
-更新2026-10-08。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
+更新2026-10-08至r42只读分析。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
 
 ## 当前入口各管一件事
 
@@ -31,17 +31,12 @@
 | validation/interface_width_mixed_20261008_r38/ | 一个窄界面同部分密积分确认/综合报告/两图 | 同上 |
 | validation/binary_occupancy_20261008_r40/ | 二值27点、冻结选区8/12及一次部分密积分平衡；综合报告/图 | [r40–r41](../validation/binary_occupancy_20261008_r40/REVIEW.md) |
 | validation/initial_diverse28_20261008_r41/ | 当前N32零态/匹配Standard壳/全部周期检查/摘要/重建配方 | 同上 |
+| validation/initial_bias_reassessment_20261008_r42/ | 四个既有初始状态的能量账目/协议/原数据保护清单/一图；零新求解 | [机制审查](MECHANISM_ANALYSIS.md) |
 | validation/curved_patch_20261008_r39/ | 圆柱设计/解析/两Abaqus参照/背景原失败/只读审计/图 | [r39](../validation/curved_patch_20261008_r39/REVIEW.md) |
 
 全部阶段见R/validation/README.md。代表C²与厚度范围为r12/r13，迁移与原失败为r15/r17/r18，同速率r20，未收敛模式r21/r22，未编译背景稿r23/r24，填充r25、支撑r26、板弯r27、N64 r28、初始只读r29。旧共同保存态桥接在r6/background_bridge，不是独立路径。
 
 生产源码：R/hyperelastic_fem.py、surface_distance.py、pbc.py、fem.py、scripts/thin_target_explicit.py；环境pixi.lock。R/scripts/README.md只作程序用途索引，不再复制近期计划。validation内诊断是冻结实验，不是第二套生产框架。
-
-本轮当前文档修改前副本在W/history/before_r36_r38_20261008及R/docs/history/before_r36_r38_20261008；新支持工具一次归档至W/history/completed_tools_20261008/r36_r38_support。原科学文件、壳输入和大数组未迁移。
-
-r39修改前当前入口在W/history/before_r39_20261008及R/docs/history/before_r39_20261008；本轮支持工具归档在W/history/completed_tools_20261008/r39_support，正式诊断仍在原validation目录。
-
-r40–r41修改前入口在W/history/before_r40_r41_20261008及R/docs/history/before_r40_r41_20261008；支持工具在W/history/completed_tools_20261008/r40_r41_support。当前只保留一份综合报告/图；重复壳输入、全节点结果和提取器留本机，Git用重建配方/摘要，不删除原件。
 
 ## Abaqus、用户原件与成品
 
@@ -58,8 +53,10 @@ r40–r41修改前入口在W/history/before_r40_r41_20261008及R/docs/history/be
 
 ## 本次整理与归档
 
-修改前九个当前入口原文在W/history/before_research_reassessment_20261008/；正式对应入口及程序/validation/历史索引在R/docs/history/before_research_reassessment_20261008/。旧逐轮快照保留原位，不作为活动文档。文档积累历史收回归档，当前地图不再逐轮重复“本次归档”段落。
+当前入口修改前原文：W/history/before_initial_reassessment_20261008/；正式对应入口/validation索引：R/docs/history/before_initial_reassessment_20261008/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
 
-本次收据与本地文献元数据在R/docs/history/research_reassessment_20261008/，Windows支持工具/摘录/阅读页图在W/history/completed_tools_20261008/research_reassessment/。W/work只留说明；每个output轮次仅一个阅读报告与必要图。正式大数组、原冻结报告/源码不移动。
+本轮支持脚本在W/history/completed_tools_20261008/r42_reassessment_support/；实际分析配方在R/validation/initial_bias_reassessment_20261008_r42/analyze.py。work只保留用途说明。科学保护哈希、维护收据和结果在r42正式目录。
 
-Git保留维护源码、精选协议/结果摘要与必要图；重复文档快照和原日志/大数组留本机。已跟踪历史不改字节，新的before_*副本不重复发布。Git克隆不是完整实验档案，复核原运行须结合本机数据和Abaqus原目录。
+W/output的成品入口README.md只指向完整Word和最新重点版PPT。前两版PPT按原字节归档至W/history/presentation_versions_20261008/，archive_receipt.json记录原/新路径与SHA256。它们仍可恢复；本轮没有改成品内容。
+
+Git保留精选配方、协议、结果摘要、必要图与当前文档。重复before_*快照、日志、大数组及重复壳输入/全节点结果留本机；已跟踪历史不改字节。Git克隆不是完整实验档案，原计算复核需结合本机validation数据和原生Abaqus目录。
