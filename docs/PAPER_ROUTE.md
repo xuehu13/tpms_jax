@@ -35,3 +35,5 @@
 - [Style-Constrained扩散](https://arxiv.org/abs/2601.06469)、[Hybrid TPMS GAN](https://doi.org/10.1016/j.ijmecsci.2026.111353)：长期设计背景，训练后置，不作前向认证。
 
 逐轮文献记录仍在原validation目录；2026-10-06详细身份索引在正式 `docs/history/research_synthesis_20261006/` 与Windows `history/completed_tools_20261006/`。失败网页/未读页保持原范围，不用成功检索覆盖原失败。
+
+本轮r40–r41为已冻结的数值干预及零态对照，没有新增文献认证。二值采样、同积分分母及梯度限制见[本轮报告](../validation/binary_occupancy_20261008_r40/REVIEW.md)；既有文献不能替代这些实际结果，也不据此称全部误差已定位。

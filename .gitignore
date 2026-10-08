@@ -74,3 +74,8 @@ docs/history/before_*/
 validation/critical_mode_20261007_r21/postprocess_layout01/
 validation/shell_rate_20261007_r20/analysis_attempt01/
 validation/initial_bias_mechanism_20261008_r32/shell_sections.json
+
+# r41 matched initial shell shares canonical r6 geometry; full derived deck/nodes stay local.
+validation/initial_diverse28_20261008_r41/abaqus/shell.inp
+validation/initial_diverse28_20261008_r41/abaqus/shell_result.json
+validation/initial_diverse28_20261008_r41/abaqus/extract_shell.py

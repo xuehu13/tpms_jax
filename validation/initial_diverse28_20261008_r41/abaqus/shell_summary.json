@@ -1,0 +1,34 @@
+{
+  "periodic": {
+    "translation_max_mm": 8.731149137020111e-11,
+    "rotation_max_rad": 0.0,
+    "equation_count": 2196
+  },
+  "status": "ok",
+  "checks": {
+    "complete_step": true,
+    "node_count": true,
+    "finite": true,
+    "load_delta": true,
+    "relative_total_energy_work_le_1e-5": true,
+    "artificial_energy_fraction_le_1pct": true,
+    "periodic_translation_gap_le_1e-8_mm": true,
+    "periodic_rotation_gap_le_1e-8_rad": true
+  },
+  "Fz_top_N": -0.0037748839240521193,
+  "Fz_bottom_N": 0.0,
+  "delta_mm": -0.0010000000474974513,
+  "energy_N_mm": 1.8834728052752325e-06,
+  "energies_N_mm": {
+    "ALLSE": 1.8834728052752325e-06,
+    "ALLAE": 3.969258699498823e-09,
+    "ALLWK": 1.887442067527445e-06
+  },
+  "stiffness_N_per_mm": 3.7748837447547623,
+  "effective_axial_MPa": 0.3774883924052119,
+  "artificial_energy_fraction": 0.002102983062520464,
+  "total_energy_N_mm": 1.8874420639747314e-06,
+  "extractor_sha256": "72a1ef920d707866c0163c85b58fedee81d7e6932c83c1db4bab46ccb8e35862",
+  "odb_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\initial_diverse28_20261008_r41_diverse28\\shell.odb",
+  "input_sha256": "f577f9d38eef7a3ed604d9bec23873a80537751088dbfdc822fc006b1ccd3338"
+}

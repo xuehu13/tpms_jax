@@ -1,0 +1,6 @@
+{
+  "original_runner_sha256": "7d53519fe8a7aa621fc5625e1a5c75302215a47a3231dfc6ea6ebc34b8aac768",
+  "adapted_runner_sha256": "6378d4dd7647d7871938c6bc362e88a54dd7004703c7bddf741c17b81d11f4f8",
+  "changes": "Only formal and native paths/case label; one cpus=1 Standard job and one extractor, no retry",
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\initial_tangent_20261008_r30\\run_abaqus.py"
+}

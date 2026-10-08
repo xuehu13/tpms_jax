@@ -1,0 +1,7 @@
+{
+  "source_path": "validation/initial_tangent_20261008_r30/diagnostic.py",
+  "source_sha256": "e34a2f2cd26ba34d2203ede59d32431f45916121f91bb0c084d86b13f4a203f5",
+  "compiled_source_sha256": "598cf648ef0c5daab772e3b71590bc9e2e08e678378b7185f8c001e8e008e6ea",
+  "changes": "Only current diverse_28 N32 Gauss cache and case label; r30 shared tangent and all solver gates unchanged",
+  "production_changed": false
+}

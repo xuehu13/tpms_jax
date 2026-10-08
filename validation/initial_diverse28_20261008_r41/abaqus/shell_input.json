@@ -1,0 +1,31 @@
+{
+  "case_id": "diverse28_t005",
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "mechanical_periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "physical_node_count": 9351,
+  "element_count": 17986,
+  "periodic_relations": 366,
+  "macro_control_label": 9352,
+  "pin_node_label": 1,
+  "pin_xyz_mm": [
+    4.7302002942001655,
+    8.959158702063036,
+    3.2824779837585867
+  ],
+  "N": 32,
+  "epsilon_z": -0.0001,
+  "diagnostic_xyz": true,
+  "reference": "Current same-midsurface S3R Standard initial NH tangent E10/nu.3; no inertia",
+  "step_name": "COMPRESSION",
+  "shell_inp_sha256": "98e517c965510d35b2d5bfe1e251c80f57d5bbc00a1b2bda9cbdc3309a209d3b",
+  "source_original_explicit_sha256": "3fd8b87d2f097aade4a68ee75e1d3f3016833da4508bf1b5028da38ebf128e86"
+}

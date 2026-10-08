@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "checks": {
+    "constitutive_initial_tangent_error_le_1e-11": true,
+    "whole_mesh_shared_force_JVP_le_5e-10": true,
+    "true_free_relative_residual_le_1e-8": true,
+    "energy_work_relative_le_1e-6": true,
+    "finite_solution": true,
+    "small_strain_range": true,
+    "solve_budget": true,
+    "restored_pin": true,
+    "periodic_fluctuation_gap_le_1e-12": true
+  },
+  "case": "diverse_04 binary Gauss occupancy",
+  "compression": 0.0001,
+  "delta_mm": -0.001,
+  "Fz_N": -0.004719388773981349,
+  "stiffness_N_per_mm": 4.719388773981349,
+  "energy_N_mm": 2.3596943869907255e-06,
+  "macro_energy_N_mm": 2.3596943869906747e-06,
+  "energy_relative_error": 2.1538326677728037e-14,
+  "true_free_relative_residual": 9.892007132607863e-11,
+  "periodic_gap_normalized": 0.0,
+  "minimum_linearized_state_J": 0.9956951468927772,
+  "max_abs_strain": 0.004408964421044227,
+  "stop": "recurrence_tolerance",
+  "iterations": 2228,
+  "preparation_seconds": 14.05896774190478,
+  "solve_seconds": 25.805264686001465,
+  "wall_seconds": 40.69390554493293,
+  "gauge": "mean-zero periodic solve, then restore the original fixed-class translation",
+  "mass_in_operator": false,
+  "design_gradient_certified": false,
+  "operator_JVP_errors": [
+    4.286370827809528e-16,
+    2.99428883779245e-16
+  ],
+  "weighted_volume_mm3": 132.83873908431426,
+  "occupancy_volume_mm3": 132.75201428574275,
+  "binary_occupancy_at_Gauss_not_voxel_cell_center": true
+}
