@@ -1,0 +1,110 @@
+[
+  {
+    "path": "results/GPU_CPU_matrix_check.json",
+    "sha256": "9a988e7dda89e3bd8ab37c67fc2b383752b0b8b29de6b382781ceba656c88e66"
+  },
+  {
+    "path": "results/accepted_a0.1000_N4_K.npz",
+    "sha256": "1c4272a315ab073bf1164063cc9f949231edfc9863aff1d826ea1c0c4e8297f6"
+  },
+  {
+    "path": "results/accepted_a0.1000_N4_assembly_check.json",
+    "sha256": "2392c7605d46a15db4c159d8ef941e8745adc0b569e6a488cd79c916ff166a1c"
+  },
+  {
+    "path": "results/accepted_a0.1000_N4_modes.npz",
+    "sha256": "2e86b24223f5d4dc46462ac777783ac8741eba61818e4d0e64e881163d9e2b2e"
+  },
+  {
+    "path": "results/accepted_a0.1000_N4_selected.npz",
+    "sha256": "21a19405e0b9cabe8173ad0c309b38daceccc3d0c35f08c48bdab568a46b98ed"
+  },
+  {
+    "path": "results/accepted_a0.1000_N8_K.npz",
+    "sha256": "fdfd227b577abe577be92a54d4714c78a121f5fd34747179acc0183f8281b9b4"
+  },
+  {
+    "path": "results/accepted_a0.1000_N8_assembly_check.json",
+    "sha256": "82fbdfc5f186d33f7ef1bf423cd51ceb50549fa282c5fbb21e86f18ba7b9d035"
+  },
+  {
+    "path": "results/accepted_a0.1000_N8_modes.npz",
+    "sha256": "6564a955ef665a9f32b55c00ae0eced0aa7958510a9ada98e5ed9173c0956dd5"
+  },
+  {
+    "path": "results/accepted_a0.1000_column_check.json",
+    "sha256": "2e408b5507a9384f8a4128a55869f53755a4de8a021fd503b7e5e48974c7dadd"
+  },
+  {
+    "path": "results/accepted_a0.1200_N4_K.npz",
+    "sha256": "3f642218a61cae35a466a3a121519d247d93b27a2e54449324262f02e3bce179"
+  },
+  {
+    "path": "results/accepted_a0.1200_N4_assembly_check.json",
+    "sha256": "99c2459066af9b07e1aebd7687b0a084a431e46adee665bb2517e38d00a0ca8c"
+  },
+  {
+    "path": "results/accepted_a0.1200_N4_modes.npz",
+    "sha256": "679224653351505c700133d23470a27c9103f25f1956661d233f7100627f9594"
+  },
+  {
+    "path": "results/accepted_a0.1200_N4_selected.npz",
+    "sha256": "c24f1a0f0c6154183953e79ff77e54f04403646147e50f067c2dbd769510a0e9"
+  },
+  {
+    "path": "results/accepted_a0.1200_N8_K.npz",
+    "sha256": "0023ec04ca51bd4333b60702a3ce3053d9901ee22673ea0858eced09390c1d95"
+  },
+  {
+    "path": "results/accepted_a0.1200_N8_assembly_check.json",
+    "sha256": "64438c1acc9071f8f659a0ec7e6beb184998d07de4e5f35fbe1b1e88ccbfe80f"
+  },
+  {
+    "path": "results/accepted_a0.1200_N8_modes.npz",
+    "sha256": "6564a955ef665a9f32b55c00ae0eced0aa7958510a9ada98e5ed9173c0956dd5"
+  },
+  {
+    "path": "results/accepted_a0.1200_column_check.json",
+    "sha256": "e3886baa61c16a0a061185748e20acb26ee285141fe4cb20b2a3b422d2d3bd3b"
+  },
+  {
+    "path": "results/accepted_a0.1600_N4_K.npz",
+    "sha256": "25c3b5cc635d2478f5473bcd30c9b648dcd823c3658454c011d95f0f67295849"
+  },
+  {
+    "path": "results/accepted_a0.1600_N4_assembly_check.json",
+    "sha256": "0cdb907e45629794e13f908b1bd1912a97868c9e3012dbc506d7cd2352765637"
+  },
+  {
+    "path": "results/accepted_a0.1600_N4_modes.npz",
+    "sha256": "79153e2c2ebcfbec2eafa737abca0873dcb499374ea398663e5762a108c665ba"
+  },
+  {
+    "path": "results/accepted_a0.1600_N4_selected.npz",
+    "sha256": "f2f4e9cdf628a6649e5c3f573e71834e1025148e2722d59c79bd4e7391df79de"
+  },
+  {
+    "path": "results/accepted_a0.1600_N8_K.npz",
+    "sha256": "5a0b6c50108928ff53b9650e579f838d77f8e2e2f3c117a4a9369dbf1940d7b2"
+  },
+  {
+    "path": "results/accepted_a0.1600_N8_assembly_check.json",
+    "sha256": "b563e1670ab57888fa64c1ece6fed19d974b0f6a301e8af92027df182d8f7dbb"
+  },
+  {
+    "path": "results/accepted_a0.1600_N8_modes.npz",
+    "sha256": "6564a955ef665a9f32b55c00ae0eced0aa7958510a9ada98e5ed9173c0956dd5"
+  },
+  {
+    "path": "results/accepted_a0.1600_column_check.json",
+    "sha256": "01cfcd40f16f70499408d1a6ada66c47e8e914cf000202059047c280b74af5bf"
+  },
+  {
+    "path": "results/partial_result.json",
+    "sha256": "f7111bad62f9fd303b4f89f4239191aab0deafffe31724100795b4f031d6f37e"
+  },
+  {
+    "path": "results/result.json",
+    "sha256": "2bb41919a136d34ea289ce9b72234a52e38d5b07688d1072921eb1e9575ca902"
+  }
+]

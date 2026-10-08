@@ -1,0 +1,20 @@
+{
+  "scope": "Publication verification of existing finished diagnostic code and documentation; no new research solve",
+  "targeted_regression": {
+    "passed": 11,
+    "seconds": 20.7
+  },
+  "full_regression": {
+    "passed": 208,
+    "seconds": 107.89,
+    "command": "JAX_PLATFORMS=cpu .pixi/envs/default/bin/python -m pytest -q"
+  },
+  "maintained_local_links": {
+    "checked": 112,
+    "missing": []
+  },
+  "frozen_source_count": 36,
+  "production_sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "remote_main_before": "07b2042011fa4fb86a0da17c104fdf127c3b4239",
+  "scientific_raw_files_moved": 0
+}

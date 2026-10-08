@@ -1,0 +1,73 @@
+{
+  "support_energy_factor": 1.0,
+  "incident_periodic_mass_min_max": [
+    1.1305831471921392e-17,
+    7.680981491209071e-13
+  ],
+  "scope": "one accepted frozen endpoint; local conservative row diagnostic, not buckling eigenmode or unique peak cause",
+  "compression": 0.100771027033137,
+  "state_file": "validation/step_control_20261007_r18/controlled_forward/accepted_a0.1000.npz",
+  "target_periodic_class": 116750,
+  "component": 0,
+  "reference_class_position_mm": [
+    4.375,
+    5.0,
+    2.1875
+  ],
+  "incident_cells": [
+    13798,
+    13799,
+    13830,
+    13831,
+    14822,
+    14823,
+    14854,
+    14855
+  ],
+  "original_bound_R_s_minus2": 65390797661164.11,
+  "reconstructed_row_R_s_minus2": 65390797661164.21,
+  "reconstruction_relative_error": 1.5543122344752192e-15,
+  "partitions": {
+    "deep_phi_le_0p001": {
+      "points": 120,
+      "occupancy_min_max": [
+        1.1477427738532917e-16,
+        0.0006371736265193503
+      ],
+      "max_F_frobenius": 1.743457283848284,
+      "max_F_singular_value": 1.0368171302696831,
+      "actual_J_min": 0.8602382817373967,
+      "negative_J_points": 0,
+      "separate_absolute_row_bound_s_minus2": 433419512333.3493,
+      "local_stored_energy_N_mm": 1.7112594479209184e-06
+    },
+    "mixed_0p001_lt_phi_lt_0p01": {
+      "points": 22,
+      "occupancy_min_max": [
+        0.001110700931494126,
+        0.009690053709047049
+      ],
+      "max_F_frobenius": 1.7420353393844685,
+      "max_F_singular_value": 1.0240016292428593,
+      "actual_J_min": 1.0138614118826736,
+      "negative_J_points": 0,
+      "separate_absolute_row_bound_s_minus2": 755899974140.3718,
+      "local_stored_energy_N_mm": 2.5083784640929596e-07
+    },
+    "required_NH_phi_ge_0p01": {
+      "points": 74,
+      "occupancy_min_max": [
+        0.01143540511570062,
+        0.9999999545900539
+      ],
+      "max_F_frobenius": 1.7403578849799741,
+      "max_F_singular_value": 1.0183700102300755,
+      "actual_J_min": 0.9902060245494569,
+      "negative_J_points": 0,
+      "separate_absolute_row_bound_s_minus2": 64247353358789.34,
+      "local_stored_energy_N_mm": 3.8885620848791287e-05
+    }
+  },
+  "partition_caution": "Absolute values are taken after integrating each group; separate bounds are not additive percentages of the assembled total.",
+  "analysis_seconds": 1.5046960090985522
+}

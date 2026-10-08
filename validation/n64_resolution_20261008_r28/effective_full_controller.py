@@ -1,0 +1,100 @@
+def state_step_target(ex,a,cfg,N):
+    """Finite attempts with frozen-state bounds; never project material forces."""
+    end=1.1*a.load_time;nominal=end/math.ceil(end/ex.dt_estimate);floor=nominal/16
+    bound=conservative_step_bound(ex,a.stability_batch_cells)
+    advance,motion=ex.block(nominal,128,a.load_time,False)
+    state=(jnp.zeros((ex.nc,3)),jnp.zeros((ex.nc,3)),jnp.asarray(0.))
+    state_dt=nominal;dt=nominal;path=[];rejections=[];bounds=[];saved=set()
+    high_KE_time=0.;done=0;bound_cost=0.;observing_cost=0.;started=time.perf_counter()
+    def evaluate_bound(s):
+        nonlocal bound_cost
+        h,_,_=motion(s[2]);start=time.perf_counter();raw=bound(s[0],h);jax.block_until_ready(raw)
+        bound_cost+=time.perf_counter()-start
+        if not bool(raw['all_material_tangents_finite']) or int(raw['invalid_material_points']):
+            raise ValueError('Nonfinite tangent or invalid uncontinued NH domain in stability guard')
+        R=float(raw['row_sum_bound_s_minus2'])
+        if not math.isfinite(R) or R<=0:raise ValueError('Nonpositive/nonfinite frequency bound')
+        return {'time':float(s[2]),'R_s_minus2':R,'safe_dt_seconds':1.6/math.sqrt(R),
+            'required_positive_J_min':float(raw['required_positive_J_min']),
+            'J_min':float(raw['J_min']),'max_periodic_class':int(raw['max_periodic_class']),
+            'max_component':int(raw['max_component'])}
+    def observe(s,d):
+        nonlocal observing_cost
+        start=time.perf_counter();row=ex.observe(s,d,motion);observing_cost+=time.perf_counter()-start
+        row['dt_seconds']=d;return row
+    current=evaluate_bound(state);bounds.append(current)
+    dt=min(nominal,current['safe_dt_seconds'])
+    warm=advance(state,128,step_dt=jnp.asarray(dt));jax.block_until_ready(warm)
+    path=[observe(state,state_dt)]
+    cfg.update(state_step_control=True,stability_safety=.8,initial_dt_seconds=nominal,
+        dt_seconds=dt,minimum_dt_seconds=floor,adaptive_block_rejection=False,
+        body_budget_seconds=a.control_budget_seconds,runtime_block_dt=True,
+        normal_chunk=128,sensitive_chunk=16,sensitive_required_J=.1,
+        loading_start_compression=.01,irrecoverable_high_KE_time_limit=None,high_KE_duration_is_recorded_not_stop=True,
+        scope='State-bound controlled forward attempt; accepted endpoints do not certify all intermediate positions or control-decision AD')
+    write(a.output/'input.json',cfg)
+    trial=state
+    def retain():
+        write(a.output/'accepted_path.json',path);write(a.output/'stability_path.json',bounds)
+        write(a.output/'rejected_blocks.json',rejections)
+    try:
+        while float(state[2])<end-1e-12*end:
+            if time.perf_counter()-started>a.control_budget_seconds:
+                raise TimeoutError('Controlled forward budget stop; not a numerical method failure')
+            dt=min(dt,current['safe_dt_seconds'])
+            if dt<floor:raise RuntimeError('Conservative step bound requires dt below unchanged initial/16 safeguard')
+            chunk=16 if dt<nominal/2 or current['required_positive_J_min']<.1 else 128
+            remaining=max(1,math.ceil((end-float(state[2]))/dt-1e-9));count=min(chunk,remaining)
+            local_dt=(end-float(state[2]))/count if remaining<=chunk else dt
+            prior=state;seed=prior
+            if local_dt!=state_dt:
+                h,_,hdd=motion(prior[2]);acc=ex.acceleration(prior[0],h,hdd)
+                seed=(prior[0],prior[1]+.5*(state_dt-local_dt)*acc,prior[2])
+            trial=advance(seed,count,step_dt=jnp.asarray(local_dt));jax.block_until_ready(trial)
+            try:
+                row=observe(trial,local_dt);candidate=evaluate_bound(trial)
+                if local_dt*math.sqrt(candidate['R_s_minus2'])>2:
+                    raise ValueError('Endpoint conservative positive-frequency limit exceeded')
+            except ValueError as exc:
+                record={'time':float(prior[2]),'attempted_end_time':float(trial[2]),
+                    'dt':local_dt,'reason':str(exc),'accepted_state_dt':state_dt,'last_valid':path[-1]}
+                rejections.append(record)
+                save_state(a.output/f'rejected_block_{len(rejections):02d}.npz',trial,local_dt,N)
+                retain();print('CONTROL_REJECTION '+json.dumps(record),flush=True)
+                dt=local_dt/2
+                if dt<floor:raise RuntimeError('Finite rollback reaches unchanged initial/16 safeguard') from exc
+                continue
+            state=trial;state_dt=local_dt;done+=count;path.append(row);current=candidate;bounds.append(candidate)
+            if row['compression']>=.01 and row['time']<=a.load_time+1e-12 and row['KE_over_U']>.05:
+                high_KE_time+=row['time']-path[-2]['time']
+            for target in (a.checkpoint_compressions or ()):
+                if target not in saved and row['compression']>=target:
+                    save_state(a.output/f'accepted_a{target:.4f}.npz',state,state_dt,N);saved.add(target)
+            elapsed=time.perf_counter()-started
+            progress={'steps':done,'compression':row['compression'],'time':row['time'],
+                'dt':state_dt,'next_safe_dt':current['safe_dt_seconds'],'rejected_blocks':len(rejections),
+                'elapsed_seconds':elapsed,'bound_seconds_total':bound_cost,
+                'J_min':row['J_min'],'required_positive_J_min':row['required_positive_J_min'],
+                'negative_J_points':row['negative_J_points'],'invalid_material_points':row['invalid_material_points'],
+                'KE_over_U':row['KE_over_U'],'sampled_high_KE_loading_seconds':high_KE_time}
+            write(a.output/'progress.json',progress);retain()
+            if len(path)%10==0:print('CONTROL_PROGRESS '+json.dumps(progress),flush=True)
+            if False and high_KE_time>.05*a.load_time:
+                raise RuntimeError('Observed high-inertia loading duration already prevents original 95% low-KE quality gate')
+        save_state(a.output/'field.npz',state,state_dt,N)
+        write(a.output/'result.json',{'status':'controlled_forward_completed_diagnostic','path':path,
+            'steps':done,'rejected_blocks':rejections,'body_seconds':time.perf_counter()-started,
+            'bound_seconds_total':bound_cost,'observing_seconds_total':observing_cost,
+            'initial_dt_seconds':nominal,'terminal_dt_seconds':state_dt,
+            'peak_RSS_GiB':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024**2,
+            'scope':'Completed monitored trajectory; response/energy/reference and design-gradient gates require separate evaluation'})
+    except (Exception,KeyboardInterrupt) as exc:
+        save_state(a.output/'last_valid_field.npz',state,state_dt,N)
+        save_state(a.output/'failed_or_rejected_field.npz',trial,local_dt if 'local_dt' in locals() else state_dt,N)
+        retain();write(a.output/'failure.json',{'type':type(exc).__name__,'message':str(exc),
+            'completed_steps':done,'body_seconds':time.perf_counter()-started,
+            'bound_seconds_total':bound_cost,'observing_seconds_total':observing_cost,
+            'last_valid':path[-1],'accepted_path':path,'rejected_blocks':rejections,
+            'sampled_high_KE_loading_seconds':high_KE_time,
+            'scope':'Partial accepted trajectory and explicit stop reason; not full 20% or design AD certification'})
+        raise

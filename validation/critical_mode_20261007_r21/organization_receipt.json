@@ -1,0 +1,115 @@
+{
+  "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/critical_mode_20261007",
+  "destination": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261007/critical_mode_20261007",
+  "files": [
+    {
+      "relative": "analyze.py",
+      "sha256": "1a1250cc611b65e197bf62a1c1af7cc65591ab66aeca1798a5e04e9a3be0fb4c"
+    },
+    {
+      "relative": "classify.py",
+      "sha256": "a03ed8bf622b06895f90322de124e944df9506509a89e6b058d80fe179d7287b"
+    },
+    {
+      "relative": "close.py",
+      "sha256": "4aa93a385b66bf676c23d6a4a3989fb38b33a66cfaf0cc1343008fb80cb49a39"
+    },
+    {
+      "relative": "close_final.py",
+      "sha256": "17580b574202b96eaefdc49b34239a6b351d625a5fc7488b27d0e8123303d113"
+    },
+    {
+      "relative": "diagnose.py",
+      "sha256": "65483daef541bbdcc655c243624c2ec43b8be7f0eeb4a46bd0d6d8119e8fd695"
+    },
+    {
+      "relative": "finish_plot.py",
+      "sha256": "9a89626aa2578fc7d67cd9aa161a7c4d1dd4a425bbfa7e1d94c018ce2a152f58"
+    },
+    {
+      "relative": "inspect_surface.py",
+      "sha256": "6b8db5667032ae99ec6258cfc32b1d0db72f3b3d5b2c915a5bed498d5aa8442c"
+    },
+    {
+      "relative": "interpret_modes.py",
+      "sha256": "d14bdfc4a3bfe5ae49ab43c6ba1cee26192b7321cfe59b2a32494a6e3762712d"
+    },
+    {
+      "relative": "metric_protocol.py",
+      "sha256": "08de832a9478d38b9145b87ae9dc644d21e13fcdc6937b12e065bbfdbb56a5fa"
+    },
+    {
+      "relative": "physical_metric.py",
+      "sha256": "0c30ea1b9f7e0bfed3c9981fd380c54e7081f804cbeb0761cac84f1cc6d0e74f"
+    },
+    {
+      "relative": "prepare.py",
+      "sha256": "447379bb4820b171a47fc28bedbf18e5aa32943fce9244cb21d447e9815be468"
+    },
+    {
+      "relative": "prepare_cuda.py",
+      "sha256": "e84b612ef36d45b67a2dac92aeac3c5d9667253ec436f0c3a12144f2db24d95c"
+    },
+    {
+      "relative": "prepare_zero.py",
+      "sha256": "6311a65ed015a4931bae0003649eb1734baf7f2d409765fb44d569d67c8d91dd"
+    },
+    {
+      "relative": "probe_basis.py",
+      "sha256": "65dd93dec606e92467141803e46f91da5b29504e361af5ab32220f7445d46567"
+    },
+    {
+      "relative": "repair_analysis.py",
+      "sha256": "c1183b178fcf6cfaf7e5791d9d93d9c19dc3d91db8d889e3ed85be8f87904f17"
+    },
+    {
+      "relative": "repair_cost.py",
+      "sha256": "ef0fccb39cb24018201ad499c939e12d0f8cf13e812fa06f72193a2c4b9a53cf"
+    },
+    {
+      "relative": "repair_field.py",
+      "sha256": "f9275200d08c4ee76f1e19c8b8e0e6b91a70fe0b68789e3911d9bcadd42057c3"
+    },
+    {
+      "relative": "repair_import.py",
+      "sha256": "ed6e2c8ab30925151414058fd75fa2f92bd2ace575286c68b76b701cd958445d"
+    },
+    {
+      "relative": "repair_interface.py",
+      "sha256": "985d5f3be92f7fe5fe2230c16d1d6d47dbfc4dcd1377ac9ae225c437c856dde6"
+    },
+    {
+      "relative": "repair_resume_directory.py",
+      "sha256": "3941c91170a65c0a4fa347b3aef5393dfc871fc4b391e0b6ddfa82a2268c7cdf"
+    },
+    {
+      "relative": "repair_roundoff.py",
+      "sha256": "6e809d8bb1b50a94563c68345eafd1d90744c79faf245139e588305bf8d51bca"
+    },
+    {
+      "relative": "run.py",
+      "sha256": "43fe12cebc241dafd40d7286d7c25fec9f2d4c351588acad92e7aba197b7c912"
+    },
+    {
+      "relative": "run_metric.py",
+      "sha256": "922d023a2f9b0cbbc7b485bd2676e2a8388cba8291c53bba3f722791c7640a9a"
+    },
+    {
+      "relative": "stop_cost.py",
+      "sha256": "d262ec45aa524ffa45c3420a0e2b19ef5d00b9076d140710259a0f991b47ead4"
+    },
+    {
+      "relative": "stop_for_interface.py",
+      "sha256": "6bf4aac341415c408a4fa553a0c02af378b2a63a7863ab41e776d33bc77db0aa"
+    },
+    {
+      "relative": "stop_metric.py",
+      "sha256": "905f50b7833ac0f7b819b615829d010701c39cd3a572b275df074ff031e8d54f"
+    },
+    {
+      "relative": "verify.py",
+      "sha256": "2657535cad0bc1d76c8445dd79f05590c5453d41ed0ed98323344e4d3a03d0bb"
+    }
+  ],
+  "bytes_preserved": true
+}

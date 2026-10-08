@@ -1,0 +1,5 @@
+{
+  "problem": "Read wrong surface array key, before material evaluation.",
+  "repair": "Use original surface_vertices and surface_triangles fields.",
+  "physical_or_solver_protocol_changed": false
+}

@@ -1,9 +1,9 @@
-# TPMS研究阅读入口
+# TPMS研究入口
 
-依次读[研究背景](docs/RESEARCH_BACKGROUND.md)、[唯一主规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。想完整了解方法、数字及可行性，读[综合说明](docs/TPMS_RESEARCH_REVIEW.md)。
+更新：2026-10-08，研究复盘与文献审查。本次没有新增力学求解。当前方法已在一个薄壁构型的三个厚度上完成20%压缩对照，但另一构型仍有明显峰位差和计算中断；通用20%计算及完整设计梯度尚未成立。
 
-上一轮四步已完成并冻结：同diverse_28中面三个采样厚度至20%，最大反力/曲线/功差8.28%/7.48%/7.31%。当前diverse_04四步的第1步限定输入就绪已完成；原4条法向末点失败/首出口诊断分别留存。第2步已执行但迁移目标未通过，JAX中止、壳质量未过；第3/4步限定诊断与范围收口已完成（r16），问题处理留下一轮决定，不自动修复或追加作业。20%新核完整路径梯度仍未认证，训练后置；新计划不会自动启动AD、其他构型或材料扫描。
+当前问题是：**diverse_04的无惯性初始刚度比同中面Abaqus壳高5.70%，为什么？** 已排除“只因加载惯性”，局部补积分没有改善，位移近似限制与实体/壳模型差别尚需区分。
 
-正式程序仅WSL `/home/xuehu/projects/tpms_jax`。Windows是阅读和历史，work仅放当前实验/整理收据；已完成工具归档，不作为运行入口。最新科学细节见[厚度执行报告](docs/THICKNESS_RANGE_PROGRESS.md)，核修复见[冻结执行报告](docs/VOID_CONTINUATION_PROGRESS.md)，论文阅读范围见[来源索引](docs/PAPER_ROUTE.md)。
+继续科研依次阅读[长期背景](docs/RESEARCH_BACKGROUND.md)、[唯一近期规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。本次完整原因分析见[机制审查](docs/MECHANISM_ANALYSIS.md)，方法与可行性见[综合说明](docs/TPMS_RESEARCH_REVIEW.md)，文献实际阅读范围见[PAPER_ROUTE](docs/PAPER_ROUTE.md)。
 
-本轮主要发现与范围见[本轮诊断与收口](validation/geometry_transfer_review_20261006_r16/REVIEW.md)：双方响应转折差异早于JAX数值拒绝；未完成的20%验证不算通过。
+正式程序只在WSL `/home/xuehu/projects/tpms_jax`；Windows是阅读与历史目录。旧轮次报告保留原始事实，下一步只由唯一规划决定。本次提交范围、冻结核查及整理收据见文件地图。

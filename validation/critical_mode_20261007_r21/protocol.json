@@ -1,0 +1,52 @@
+{
+  "plan_step": 3,
+  "question": "Is a periodic long-wave folding direction already locally nonconvex in the saved pre-jump JAX states, despite positive curvature in the previous finite jump direction?",
+  "states": [
+    "accepted_a0.1000.npz",
+    "accepted_a0.1200.npz",
+    "accepted_a0.1600.npz"
+  ],
+  "subspaces": {
+    "coarse_Q2_cells_per_axis": [
+      4,
+      8
+    ],
+    "definition": "Nested periodic triquadratic fields exactly embedded in the original N32 Q2 displacement space. All three components, same pinned translation class, fixed macro H. This restricts only perturbations, not the base geometry/material/Gauss integration.",
+    "free_dofs": [
+      1533,
+      12285
+    ],
+    "no_wall_only_cut_or_void_removal": true,
+    "basis_norm": "Euclidean coarse coefficient norm for extraction; signs are invariant under positive norm changes. Eigenvalue magnitudes across resolutions are not compared. Report physical curvature after mass-mean translation removal and 1mm maximum surface displacement normalization."
+  },
+  "operator": "P^T K(F,phi) P; K is the full total-Lagrangian energy Hessian from the existing material stress derivative at all original 27 Gauss points, including prestress through exact dP/dF.",
+  "eigensolver": {
+    "N4": "dense symmetric eigh, lowest six",
+    "N8": "ARPACK smallest algebraic, k=6 ncv=60 tol=1e-8 maxiter=400; retain convergence failures, no repeated settings or shift fit"
+  },
+  "checks": [
+    "original Gauss coordinates and class mapping",
+    "coarse prolongation gradients agree with original fine Q2 gradients",
+    "symmetry",
+    "eigenpair residual",
+    "selected mode direct full-domain curvature agrees with Ritz matrix",
+    "material participation and domain curvature partitions"
+  ],
+  "mode_analysis": "Evaluate lowest extracted modes on the original surface; compare selected minimum mode to existing shell/JAX folding increments with area-weighted translation removed. Neither increments nor selected Ritz modes are certified full-space critical modes.",
+  "budget": "One three-state pass, predeclared two nested spaces, total mechanical diagnostic watchdog 25min. No time advance, new Abaqus job, design AD or parameter fitting.",
+  "interpretation": {
+    "negative_wall_mode": "Sufficient evidence of local energy nonconvexity in that full-space admissible direction; supports investigating delayed excitation, but does not by itself establish a dynamic instability or its causal contribution.",
+    "negative_void_mode": "Record as virtual-domain issue, not a physical shell-folding proof.",
+    "positive": "Only subspace positivity. Missing finer-scale directions precludes full-space stability certification.",
+    "no_convergence": "Inconclusive; do not substitute the previous positive finite direction or claim a critical load."
+  },
+  "limits": [
+    "Saved states are dynamic, not exact equilibria; no static critical compression estimate.",
+    "No Abaqus shell tangent is extracted, so stiffness representation versus trigger is not uniquely separated.",
+    "The new calculation is a restricted Hessian eigendiagnostic, not a replacement FEM or design gradient."
+  ],
+  "sources": [
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAETHERefMap/simathe-c-eigenbuckling.htm",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigsh.html"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "plan_step": 3,
+  "bare_record_groups": 6,
+  "bare_unconverged_groups": 3,
+  "zero_target_converged_states": 2,
+  "modes_each_state": 6,
+  "deformation_candidate_rank_zero_based": 3,
+  "true_fine_critical_mode_not_identified": true,
+  "cause_not_uniquely_identified": true,
+  "not_full_space_or_static_stability_pass": true,
+  "step4_not_started": true,
+  "next_action": "下一项仍属原第3步：只在12.1904%这个已保存态，尝试一次原N32周期位移空间的机械模式细化，以本轮变形候选及残差为起点。执行前另记矩阵自由切线作用、原HRZ/平移固定的处理、整体平移分类、残差门槛、内存与单次成本上限；不直接组装786429阶稠密矩阵，不因未收敛无限重试。先判断是否漏掉更局部的薄壁折叠方向，再决定表示刚度/分支触发的针对性方案。前向网格、材料、占据、质量、PBC保持，不扫η/界面/积分/扰动幅值；不把滤除平移的诊断空间当作改变前向边界。若仍无可信模式，如实收口，不据此宣布全空间稳定或启动第4步。当前未生成或排队这项新计算。",
+  "current_running_or_queued_jobs": 0,
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "design_AD": false,
+  "shared_core_changes": false,
+  "Git_commit_push_merge": false,
+  "mechanical_launch_seconds": 2187.7346214501886
+}

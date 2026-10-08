@@ -1,0 +1,9 @@
+{
+  "initial_verification": "failed at figure byte identity; no archival occurred",
+  "formal_figure_sha256": "b5016048ca54c3759eff47a76bf20e577a7c083b6645ff40275afc9b86956995",
+  "initial_Windows_render_sha256": "e41f36b32f7738420c598e6036bb46eaa34d4da757502c54975e01d138028aa8",
+  "numeric_analysis_sha256": "a29a6704bb1004901e2e7098498fb66f628ad337620344c989f4a20523c1b98a",
+  "cause": "Same matplotlib figure saved twice with constrained-layout redraw; renders were not byte-identical.",
+  "correction": "Save once, copy the formal figure for the reading mirror; no recalculation.",
+  "new_forward_runs": 0
+}

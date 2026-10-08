@@ -1,0 +1,7 @@
+{
+  "shared_class_AST_unchanged": true,
+  "default_material_unchanged": true,
+  "opt_in_diagnosis_stops_at_first_rejection": true,
+  "catch_KeyboardInterrupt_and_retain_last_accepted_state": true,
+  "script_sha256": "5fb572310f5667f1661e09200bde96c81ec5f64be29768e6ab62da55c7e5db30"
+}

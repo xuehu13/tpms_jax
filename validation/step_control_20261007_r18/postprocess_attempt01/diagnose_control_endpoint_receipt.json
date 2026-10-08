@@ -1,0 +1,6 @@
+{
+  "script": "diagnose_control_endpoint.py",
+  "returncode": 1,
+  "wall_seconds": 7.1149163210066035,
+  "time_advancing_jobs": 0
+}

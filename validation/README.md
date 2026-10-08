@@ -1,16 +1,30 @@
-# 验证证据索引
+# 实验证据索引
 
-当前科学结果以[C²混合虚域r12](void_continuation_20261006_r12/README.md)为代表，范围见[综合说明](../docs/TPMS_RESEARCH_REVIEW.md)。旧四步已完成，r13匹配厚度、r14只读范围收口。diverse_04的r15第2步已执行但目标未通过，第3/4步现有记录限定诊断与范围收口已完成，后续仅在[主规划](../docs/RESEARCH_PLAN.md)更新后处理问题；零追加作业/完整AD。以下目录为冻结实验索引，历史建议不生成任务；本轮零新力学/Abaqus/完整AD。
+更新2026-10-08。当前事实看[研究状态](../docs/RESEARCH_STATUS.md)，下一步只看[唯一规划](../docs/RESEARCH_PLAN.md)，原因审查见[机制分析](../docs/MECHANISM_ANALYSIS.md)。本次无新力学计算。每份以下报告保持当时范围，历史“下一步”不自动恢复。
 
+Git保存维护源码、精选协议/结果与必要图；大数组、原日志、完整ODB留本机。克隆不是完整实验档案；实际位置见[地图](../docs/FILE_MAP.md)。r6共同保存态桥接不是独立路径；r24参考源未编译；r25近零填充已执行但8.35%失败，有限填充未执行。
 
-方法、符号和结果解释见 [综合报告](../docs/TPMS_RESEARCH_REVIEW.md)，当前事实见 [状态](../docs/RESEARCH_STATUS.md)，执行只看 [主规划](../docs/RESEARCH_PLAN.md)。原四轮均已按判据/停止条件收口；子目录保留冻结记录，其中历史“下一步”不是自动待办。
-
-早期薄壁四步（以下为当时快照，非当前活动阶段）：恒厚表示、小变形壳对照、分段压缩、可信区间有效梯度。最新用户目标t/L=0.05，第1步表示完成；第2步原XY平端未过、唯一XYZ周期诊断通过；用户已统一XYZ；第3步1%/5%通过、10%未接受，第4步1%/5%厚度总梯度与两点损失通过，四步限定收口。旧中等厚度成本/N48/N64/半步计划已替换，不能从历史报告恢复待办。前三轮及第四轮实验的原始输入/结果/日志保持冻结；旧manifest记录当时版本，不改写匹配活动文档。
-
-Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_before/source_at_run等源码快照、大型数组、重复停止尝试的INP和求解器原始日志留在本机原位、由.gitignore排除。克隆Git不等于下载完整实验档案；复核具体旧运行须按FILE_MAP取本机冻结证据/环境及原Abaqus包。已被Git跟踪的早期证据继续保留。
-
-| 目录 | 已完成范围 |
+| 原冻结证据 | 内容与范围 |
 | --- | --- |
+| [r35穿厚度诊断](thickness_kinematics_20261008_r35/REVIEW.md) | 无新FEM/Abaqus/AD；主体法向差异保留，界面改善而K0仍高；候选运动学/模型差别，未认证根因 |
+| [r33局部积分及r34干预](local_quadrature_20261008_r33/REVIEW.md) | r33固定状态两级局部积分稳定；r34只换此区域积分，初始有效平衡但对壳高6.5014%，未改善 |
+| [r32初始机制](initial_bias_mechanism_20261008_r32/REVIEW.md) | 已有场后处理，膜内主导；同中面位移迹膜能差1.79%，非因果；其后局部积分与干预见r33/r34 |
+| [r30初始静力](initial_tangent_20261008_r30/REVIEW.md) | 当前N32对同中面新Standard初始刚度高5.7025%，求解/能量/PBC通过；非20%或设计AD |
+| [r31膜向补片](membrane_diagnostic_20261008_r31/REVIEW.md) | 一个平直补片泊松收缩及同高斯解析一致；对真实板采样偏软6.7956%，非TPMS偏硬根因 |
+| [r29初始刚度](initial_stiffness_review_20261008_r29/REVIEW.md) | 仅读取既有初始动力/内部力、拟合与旧诊断，主因和新静力未验证；后续N32 |
+| [r28 N64](n64_resolution_20261008_r28/REVIEW.md) | 接受到14.7320%，观察峰改善但覆盖段误差大；未完成20%/保载，原步长底线停止 |
+| [r27弯曲](plate_bending_20261008_r27/REVIEW.md) | 平板采样误差有证据，不认证TPMS峰因 |
+| [r26支撑](void_support_20261007_r26/REVIEW.md) | 只到13.0777%预算停，深虚域步长瓶颈非峰因证明 |
+| [r25填充](shell_fill_diagnostic_20261007_r25/REVIEW.md) | 近零填料8.3500%失败，未覆盖峰；有限填充不提交 |
+| [r24暂停准备](background_probe_20261007_r24/PAUSED.md) | 仅准备参考源，未编译/运行；27节点路线暂停 |
+| [r23背景审查](background_control_review_20261007_r23/REVIEW.md) | 旧桥接缺口、资料与四步提议，未提交 |
+| [r22细空间模式](fine_mode_20261007_r22/REVIEW.md) | 四方向200迭代未收敛；原中断/恢复保持，无临界认证 |
+| [r21受限模式](critical_mode_20261007_r21/REVIEW.md) | HRZ分类，细空间残差大 |
+| [r20壳速率](shell_rate_20261007_r20/REVIEW.md) | 快壳峰11.8241%，不足解释JAX15.9409% |
+| [r19跳跃分析](dynamic_branch_review_20261007_r19/REVIEW.md) | 只读跳跃能量及文献，不改旧失败 |
+| [r18步长控制](step_control_20261007_r18/REVIEW.md) | 一次受控路径至17.5363%预算停，无20%/AD |
+| [r17首错](mechanism_20261007_r17/REVIEW.md) | 定位及短重放，不拼完整路径 |
+| [r16迁移诊断](geometry_transfer_review_20261006_r16/REVIEW.md) | 原r15收口，未令20%通过 |
 | [geometry_transfer_20261006_r15](geometry_transfer_20261006_r15/README.md) | diverse_04匹配输入及一次JAX中止/壳诊断；[第2步记录](geometry_transfer_20261006_r15/STEP2.md)保留限制，未认证迁移 |
 | [forward_scope_20261006_r14](forward_scope_20261006_r14/README.md) | 第4步只读收口、原中面筛选、diverse_04单候选及未来新核梯度方案；零新力学/Abaqus/AD |
 | [thickness_range_20261006_r13](thickness_range_20261006_r13/README.md) | 固定C²候选，0.45/0.55mm匹配壳与完整20%，0.50mm复用；反力/曲线/功、峰值/模式与27/125点见decision |
@@ -41,13 +55,3 @@ Git保存维护源码、关键JSON/CSV摘要、报告及必要图；source_befor
 | [projection_grid_20261002](projection_grid_20261002/README.md) | N48/N64 背景响应与求解路径核对 |
 | [projection_effects_20261002](projection_effects_20261002/README.md) | 7 项 β/E_min/体积分数影响计算 |
 | [design_gradient_20261002](design_gradient_20261002/README.md) | 3 组 N4/N8 固定横向参数梯度，132 次差分扰动 |
-
-历史截至2026-10-02的Abaqus分析／矩阵诊断共23项；加第二轮4、第三轮1，加第四轮第2步2项，加第3步2项，截至第四轮合计32；该历史薄壁第2步另有2项、第3步另有4项、第4步另有2项，总计40项，datacheck另计。原23项索引及第一轮127项回归是历史快照。完整路径及哈希见 [23 项索引](research_audit_20261002.json)，较早的 [21 项快照](project_status_20261002_inventory.json) 保留。
-
-大型 INP/ODB 在 E 盘。旧长报告可从 Git `6295ee7` 读取；历史 R/G 草案与 [范围纠正记录](scope_correction_20261003.json) 只供追溯。这些验证记录不能替代训练与逆向设计证据；具体后续只能由新的近期主规划决定。
-
-## 当前任务
-
-当前四步已收口，唯一规划中的下一阶段建议为diverse_04单一几何迁移，任务只看[唯一规划](../docs/RESEARCH_PLAN.md)。前向与完整设计梯度分别评价，原20%AD符号失败保留；不从上表冻结范围恢复扫描、接触或训练。r13的两条JAX/两份匹配壳已冻结；本次r14仅只读收口和方案，无新力学/完整AD/训练。
-
-r16：[现有记录诊断与范围收口](geometry_transfer_review_20261006_r16/REVIEW.md)，未使r15第2步验证通过；没有新前向/AD。

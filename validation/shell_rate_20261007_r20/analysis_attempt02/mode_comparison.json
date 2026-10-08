@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "JAX_state": "accepted_a0.1000.npz",
+      "JAX_compression": 0.1007710270331371,
+      "JAX_fluctuation_RMS_mm": 0.11264551899773419,
+      "old_shell_compression": 0.0981281042098999,
+      "fast_shell_compression": 0.09815130233764649,
+      "JAX_vs_old_cosine": 0.9984987426229828,
+      "JAX_vs_fast_cosine": 0.998508071649554,
+      "old_vs_fast_cosine": 0.999999607472156,
+      "old_shell_RMS_mm": 0.11419511384641402,
+      "fast_shell_RMS_mm": 0.11421545480555122,
+      "scope": "Nearest retained frames may have unequal compression; fluctuation-pattern diagnostic, not an eigenmode."
+    },
+    {
+      "JAX_state": "accepted_a0.1200.npz",
+      "JAX_compression": 0.1219042645487386,
+      "JAX_fluctuation_RMS_mm": 0.13782712253885313,
+      "old_shell_compression": 0.11862679719924926,
+      "fast_shell_compression": 0.11863248348236084,
+      "JAX_vs_old_cosine": 0.8158732583672609,
+      "JAX_vs_fast_cosine": 0.9963784240569293,
+      "old_vs_fast_cosine": 0.838668981081154,
+      "old_shell_RMS_mm": 0.19350293200064134,
+      "fast_shell_RMS_mm": 0.1399377086431513,
+      "scope": "Nearest retained frames may have unequal compression; fluctuation-pattern diagnostic, not an eigenmode."
+    },
+    {
+      "JAX_state": "accepted_a0.1400.npz",
+      "JAX_compression": 0.14184607899724563,
+      "JAX_fluctuation_RMS_mm": 0.162766816223271,
+      "old_shell_compression": 0.13823457956314086,
+      "fast_shell_compression": 0.13824518918991088,
+      "JAX_vs_old_cosine": 0.7604891811260991,
+      "JAX_vs_fast_cosine": 0.7265369920871905,
+      "old_vs_fast_cosine": 0.8719166400671404,
+      "old_shell_RMS_mm": 0.27199631083992254,
+      "fast_shell_RMS_mm": 0.26891215435066207,
+      "scope": "Nearest retained frames may have unequal compression; fluctuation-pattern diagnostic, not an eigenmode."
+    },
+    {
+      "JAX_state": "accepted_a0.1600.npz",
+      "JAX_compression": 0.16007084008727882,
+      "JAX_fluctuation_RMS_mm": 0.18932568835631952,
+      "old_shell_compression": 0.1560315728187561,
+      "fast_shell_compression": 0.15605242252349855,
+      "JAX_vs_old_cosine": 0.8152366481864743,
+      "JAX_vs_fast_cosine": 0.7557591375103975,
+      "old_vs_fast_cosine": 0.9295169820665983,
+      "old_shell_RMS_mm": 0.3078076743063663,
+      "fast_shell_RMS_mm": 0.33320688035013946,
+      "scope": "Nearest retained frames may have unequal compression; fluctuation-pattern diagnostic, not an eigenmode."
+    },
+    {
+      "JAX_state": "last_valid_field.npz",
+      "JAX_compression": 0.17536302435107093,
+      "JAX_fluctuation_RMS_mm": 0.37183967699708964,
+      "old_shell_compression": 0.17123959064483643,
+      "fast_shell_compression": 0.17124974727630615,
+      "JAX_vs_old_cosine": 0.8259965526169764,
+      "JAX_vs_fast_cosine": 0.8040926181155132,
+      "old_vs_fast_cosine": 0.9783963823666395,
+      "old_shell_RMS_mm": 0.3314451860810998,
+      "fast_shell_RMS_mm": 0.3728027393932675,
+      "scope": "Nearest retained frames may have unequal compression; fluctuation-pattern diagnostic, not an eigenmode."
+    }
+  ],
+  "Q2_interpolator_source": "validation/mechanism_20261007_r17/analyze_localization.py",
+  "source_sha256": "feb905e2a2f449acd1993b689344a203bad2866f63cdf6b5b605e02a973f4e60",
+  "reference_surface_exact_equal": true,
+  "new_mechanical_tangents_or_FEM": false
+}

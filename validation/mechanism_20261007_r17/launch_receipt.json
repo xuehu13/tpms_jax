@@ -1,0 +1,8 @@
+{
+  "returncode": 1,
+  "wall_seconds": 436.3234369290294,
+  "failure_exists": true,
+  "complete_result_exists": false,
+  "first_failure_located": true,
+  "accepted_state_retained": true
+}

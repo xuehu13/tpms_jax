@@ -1,0 +1,9 @@
+{
+  "seconds": 4.634796670055948,
+  "new_jobs": 0,
+  "new_design_AD": false,
+  "new_FEM_or_tangent_evaluations": false,
+  "JAX_source": "validation/step_control_20261007_r18/controlled_forward/accepted_path.json",
+  "JAX_source_sha256": "f0251631d3c674acc0c598a3359b8e47d7927810ec1e0795af9bf89a68db7f57",
+  "old_shell_source_sha256": "6eb5de517f84c28b15110aa4c074ad09c540ef4ddb520f844f337a7976525675"
+}

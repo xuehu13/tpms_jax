@@ -1,0 +1,28 @@
+{
+  "cost_only_recovery": true,
+  "scientific_protocol_unchanged": true,
+  "same_states_subspaces_and_eigensolver_tolerances": true,
+  "CUDA_x64_available": "[CudaDevice(id=0)], checked before execution",
+  "CPU_attempts_held_below_original_25min_budget": true,
+  "additional_one_CUDA_call_budget_seconds": 900,
+  "no_more_backend_or_parameter_trials": true,
+  "required_GPU_CPU_matrix_relative_Frobenius_error_max": 1e-10,
+  "checks": "Original full-domain F/Gauss/J and material; compare full assembled 10% N4 matrix to existing CPU matrix, reuse original CPU eigenvectors without re-extracting.",
+  "copied_completed_evidence": [
+    {
+      "path": "accepted_a0.1000_N4_selected.npz",
+      "sha256": "21a19405e0b9cabe8173ad0c309b38daceccc3d0c35f08c48bdab568a46b98ed"
+    },
+    {
+      "path": "accepted_a0.1000_N4_K.npz",
+      "sha256": "1c4272a315ab073bf1164063cc9f949231edfc9863aff1d826ea1c0c4e8297f6"
+    },
+    {
+      "path": "accepted_a0.1000_N4_modes.npz",
+      "sha256": "2e86b24223f5d4dc46462ac777783ac8741eba61818e4d0e64e881163d9e2b2e"
+    }
+  ],
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "design_AD": false
+}

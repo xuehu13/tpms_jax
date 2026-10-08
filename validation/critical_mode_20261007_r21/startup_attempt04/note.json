@@ -1,0 +1,5 @@
+{
+  "problem": "Resume directory existed because completed N4 evidence was reused. Failure before material evaluation.",
+  "repair": "Allow that directory, assert no new partial/final result before execution.",
+  "old_science_or_physical_protocol_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "question": "Which extracted near-zero direction represents deformation rather than gross translation, and how stationary is it in the original fine space?",
+  "selection": "Report all six translation fractions; take first in increasing absolute eigenvalue with deformation kinetic share greater than uniform translation kinetic share. No use of reference force or eigenvalue shift to select.",
+  "states": [
+    "accepted_a0.1200.npz",
+    "accepted_a0.1600.npz"
+  ],
+  "no_new_eigensolve_or_time_advance": true,
+  "same_original_material_Gauss_mass_and_pin": true,
+  "full_residual": "Kfine v-lambda MHRZ v on original free periodic classes; this is mode residual, not forward state imbalance.",
+  "limit": "A converged restricted mode with a large fine residual is not a certified fine-space critical mode. Domain curvature shares refer to this candidate only."
+}

@@ -1,0 +1,5 @@
+{
+  "reason": "CPU bulk tangent/Ritz assembly is too expensive for the remaining prescribed saved states. Preserve all completed spectra; one CUDA x64 recovery will keep the same states/subspaces/eigen settings and verify against the completed CPU matrix.",
+  "not_a_method_or_physics_failure": true,
+  "protocol_scientific_choices_unchanged": true
+}

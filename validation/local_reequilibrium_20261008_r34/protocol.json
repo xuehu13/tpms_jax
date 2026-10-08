@@ -1,0 +1,32 @@
+{
+  "case": "diverse_04 initial static integration-only intervention",
+  "N": 32,
+  "cell_size_mm": 10,
+  "thickness_mm": 0.5,
+  "E_MPa": 10,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "compression": 0.0001,
+  "periodic": "XYZ fluctuations; macro lateral strain zero; old pin restored",
+  "selected_cells": 1941,
+  "selected_cells_sha256": "37a651f38ebad044f44362cc87b7bb88e3d32c5fa6988540309cc3c317600c8d",
+  "dense_points_per_axis": 12,
+  "all_other_cells_original_points": 27,
+  "total_budget_seconds": 900.0,
+  "maximum_iterations": 6000,
+  "recurrence_relative_tolerance": 1e-10,
+  "gates": {
+    "true_free_relative_residual": 1e-08,
+    "energy_work_relative_error": 1e-06,
+    "periodic_gap": 1e-12,
+    "r33_fixed_state_delta_energy_relative": 1e-09,
+    "matrix_symmetry_relative": 1e-12,
+    "translation_relative": 1e-11
+  },
+  "shell_stiffness_N_per_mm": 4.651218897465464,
+  "denominators": "r30 background for integration intervention; original same-mid-surface r30 shell for shell difference",
+  "production_changed": false,
+  "new_Abaqus_job": false,
+  "scope": "Single initial static causal diagnostic, not adopted integration correction; no new dense level, full-domain dense study, 20pct path, or design AD"
+}

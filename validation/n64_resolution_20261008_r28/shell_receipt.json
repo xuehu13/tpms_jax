@@ -1,0 +1,23 @@
+{
+  "returncode": 0,
+  "analysis_completed_successfully": true,
+  "wall_seconds": 90.31977979990188,
+  "postprocess_returncodes": {
+    "extraction": 0,
+    "mode_extraction": 0
+  },
+  "input_unchanged": true,
+  "quality_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "ODB_retained_native": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\n64_resolution_20261008_r28_shell_T0p002\\thin_shell.odb"
+}

@@ -1,0 +1,7 @@
+{
+  "wall_seconds": 25.547147586010396,
+  "states_analyzed": 7,
+  "new_solver_jobs": 0,
+  "new_design_AD_jobs": 0,
+  "only_shared_material_mechanical_tangents": true
+}

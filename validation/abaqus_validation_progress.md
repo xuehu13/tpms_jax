@@ -1,5 +1,5 @@
-# 研究规划与状态入口
+# Abaqus对照入口
 
-完整研究目标和后续训练/逆向设计步骤见 [研究主规划](../docs/RESEARCH_PLAN.md)，已有结果见 [研究状态](../docs/RESEARCH_STATUS.md)，路径见 [文件地图](../docs/FILE_MAP.md)。
+当前统一入口为[研究状态](../docs/RESEARCH_STATUS.md)、[实验证据](README.md)、[文件地图](../docs/FILE_MAP.md)。后续仅由[唯一规划](../docs/RESEARCH_PLAN.md)决定，历史暂停/恢复文字不代表当前任务。
 
-当前仍在第一阶段线弹性精度验证；完成验证后按主规划继续多构型、学习和逆向设计。较早长报告从 Git `6295ee7` 的 `validation/abaqus_validation_progress.md` 读取。旧计划仅供追溯，原始计算证据保留。
+壳是工程参照，不是真值；原r6填充是共同保存态，不是独立压缩路径。r24背景参考源未编译，r25近零填充8.35%畸变失败，未覆盖峰；本次不提交新作业。

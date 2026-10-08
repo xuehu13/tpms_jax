@@ -1,0 +1,5 @@
+{
+  "reason": "Full jacfwd and generic einsum implementation exceeded useful cost before first eigendiagnostic. Same-operator JVP columns and BLAS contractions will be verified against original expressions, with the same states/subspaces/eigen tolerances.",
+  "not_a_method_or_physics_failure": true,
+  "protocol_scientific_choices_unchanged": true
+}

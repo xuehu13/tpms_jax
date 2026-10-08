@@ -1,0 +1,6 @@
+{
+  "script": "analyze_control.py",
+  "returncode": 0,
+  "wall_seconds": 0.9071470599155873,
+  "time_advancing_jobs": 0
+}

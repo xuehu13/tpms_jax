@@ -1,0 +1,8 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/fine_mode_20261007_r22/fine_modes.py"
+  ],
+  "source_sha256": "ab83bf66755d5505fc43de9dacd3abf8c81292be106da3a0376795a2eda7293a",
+  "protocol_sha256": "b4d448b5946b69ed16e2709a3795e67971e67756dc8f656fec7f5969f190c80f"
+}

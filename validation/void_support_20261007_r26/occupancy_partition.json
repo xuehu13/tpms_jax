@@ -1,0 +1,27 @@
+{
+  "scope": "reference field only; weighted stiffness-scale integral is not a structural bending stiffness or energy/force fraction",
+  "points": 884736,
+  "reference_volume_normalized": 0.9999999999999984,
+  "occupancy_volume_fraction": 0.13251935766125453,
+  "partitions": {
+    "deep_phi_le_0p001": {
+      "points": 730816,
+      "reference_volume_fraction": 0.8260883231875992,
+      "original_integrated_scale": 8.831267870590111e-05,
+      "diagnostic_integrated_scale": 8.83126787059011e-06
+    },
+    "mixed_0p001_lt_phi_lt_0p01": {
+      "points": 12638,
+      "reference_volume_fraction": 0.014138701848368915,
+      "original_integrated_scale": 5.715783531108032e-05,
+      "diagnostic_integrated_scale": 3.1179647382816246e-05
+    },
+    "unchanged_NH_phi_ge_0p01": {
+      "points": 141282,
+      "reference_volume_fraction": 0.1597729749640319,
+      "original_integrated_scale": 0.13246063521147122,
+      "diagnostic_integrated_scale": 0.13246063521147122
+    }
+  },
+  "integrated_scale_relative_reduction": 0.0007952846378123102
+}

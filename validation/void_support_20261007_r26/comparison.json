@@ -1,0 +1,409 @@
+{
+  "scope": "one from-zero diagnostic, no default/20pct/design-AD certification",
+  "support_energy_factor_deep_void": 0.1,
+  "complete_17pct_diagnostic": false,
+  "end": {
+    "time": 0.0023344747217128414,
+    "compression": 0.13077724201070814,
+    "Fz_N": -6.081961344606114,
+    "internal_macro_Fz_N": -6.084720357572862,
+    "energy_N_mm": 4.090680438785405,
+    "KE_N_mm": 0.004667540344135407,
+    "KE_over_U": 0.001141018080972681,
+    "J_finite": true,
+    "J_min": -13.023791365936585,
+    "invalid_material_points": 0,
+    "negative_J_points": 11372,
+    "required_positive_J_min": 0.2950393137345891,
+    "required_positive_J_points": 141282,
+    "dt_seconds": 4.8694370490744855e-08
+  },
+  "accepted_endpoints": 715,
+  "new_peak": {
+    "compression": 0.13077724201070814,
+    "compressive_force_N": 6.081961344606114,
+    "post_peak_span_percentage_points": 0.0,
+    "largest_post_peak_fraction_drop": 0.0,
+    "observed_drop_peak_qualified": false,
+    "definition": "largest saved dynamic compressive force within declared loading window; not an eigenvalue buckling point"
+  },
+  "original_JAX_peak": {
+    "compression": 0.15940872539154782,
+    "compressive_force_N": 7.072391495989786,
+    "post_peak_span_percentage_points": 1.0581428578506191,
+    "largest_post_peak_fraction_drop": 0.9828116495625439,
+    "observed_drop_peak_qualified": true,
+    "definition": "largest saved dynamic compressive force within declared loading window; not an eigenvalue buckling point"
+  },
+  "matched_shell_peak": {
+    "compression": 0.1182407021522522,
+    "compressive_force_N": 5.229988098144531,
+    "post_peak_span_percentage_points": 8.17592978477478,
+    "largest_post_peak_fraction_drop": 0.9469729660979862,
+    "observed_drop_peak_qualified": true,
+    "definition": "largest saved dynamic compressive force within declared loading window; not an eigenvalue buckling point"
+  },
+  "new_minus_original_peak_percentage_points": null,
+  "new_minus_shell_peak_percentage_points": null,
+  "original_minus_shell_peak_percentage_points": 4.116802323929562,
+  "peak_force_relative_shell_new": null,
+  "comparisons": {
+    "main": {
+      "new_vs_original_JAX": {
+        "requested_window": [
+          0.01,
+          0.17
+        ],
+        "actual_common_window": [
+          0.01,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": false,
+        "curve_RMS_N": 0.057803915700773346,
+        "RMS_relative_original_fixed_2p25891N": 0.02558929558980807,
+        "RMS_relative_matched_shell_peak": 0.011052399090789658,
+        "work_first_N_mm": 4.070371127447782,
+        "work_second_N_mm": 4.132919612223979,
+        "work_relative_second": -0.015134212770845368,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "new_vs_shell": {
+        "requested_window": [
+          0.01,
+          0.17
+        ],
+        "actual_common_window": [
+          0.01,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": false,
+        "curve_RMS_N": 0.8736729497023193,
+        "RMS_relative_original_fixed_2p25891N": 0.3867674894981736,
+        "RMS_relative_matched_shell_peak": 0.1670506573451432,
+        "work_first_N_mm": 4.070371127447782,
+        "work_second_N_mm": 3.620022991353574,
+        "work_relative_second": 0.1244047723370445,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "original_JAX_vs_shell": {
+        "requested_window": [
+          0.01,
+          0.13077724201070814
+        ],
+        "actual_common_window": [
+          0.01,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 0.9088293969850152,
+        "RMS_relative_original_fixed_2p25891N": 0.402330945892052,
+        "RMS_relative_matched_shell_peak": 0.17377274669275922,
+        "work_first_N_mm": 4.132919612223979,
+        "work_second_N_mm": 3.620022991353574,
+        "work_relative_second": 0.14168324955268496,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "original_JAX_vs_shell_full_requested_window": {
+        "requested_window": [
+          0.01,
+          0.17
+        ],
+        "actual_common_window": [
+          0.01,
+          0.17
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 2.438848532706562,
+        "RMS_relative_original_fixed_2p25891N": 1.0796572385383048,
+        "RMS_relative_matched_shell_peak": 0.4663200923099241,
+        "work_first_N_mm": 6.471745121544258,
+        "work_second_N_mm": 4.272903331151422,
+        "work_relative_second": 0.5146013424554381,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "new_vs_original_internal_force": {
+        "requested_window": [
+          0.01,
+          0.17
+        ],
+        "actual_common_window": [
+          0.01,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": false,
+        "curve_RMS_N": 0.057787134084094076,
+        "RMS_relative_original_fixed_2p25891N": 0.025581866512651708,
+        "RMS_relative_matched_shell_peak": 0.011049190361369178,
+        "work_first_N_mm": 4.067016089338134,
+        "work_second_N_mm": 4.129547799569027,
+        "work_relative_second": -0.0151425079127111,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      }
+    },
+    "peak_zone": {
+      "new_vs_original_JAX": {
+        "requested_window": [
+          0.1,
+          0.17
+        ],
+        "actual_common_window": [
+          0.1,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": false,
+        "curve_RMS_N": 0.08445082867804858,
+        "RMS_relative_original_fixed_2p25891N": 0.03738565444309361,
+        "RMS_relative_matched_shell_peak": 0.01614742272702487,
+        "work_first_N_mm": 1.674712152109443,
+        "work_second_N_mm": 1.7006570376971157,
+        "work_relative_second": -0.015255801147775805,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "new_vs_shell": {
+        "requested_window": [
+          0.1,
+          0.17
+        ],
+        "actual_common_window": [
+          0.1,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": false,
+        "curve_RMS_N": 1.7146297535903399,
+        "RMS_relative_original_fixed_2p25891N": 0.7590518230431225,
+        "RMS_relative_matched_shell_peak": 0.32784582324358397,
+        "work_first_N_mm": 1.674712152109443,
+        "work_second_N_mm": 1.3351763781944388,
+        "work_relative_second": 0.2543003152693273,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "original_JAX_vs_shell": {
+        "requested_window": [
+          0.1,
+          0.13077724201070814
+        ],
+        "actual_common_window": [
+          0.1,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 1.772936005301769,
+        "RMS_relative_original_fixed_2p25891N": 0.7848634984580036,
+        "RMS_relative_matched_shell_peak": 0.3389942715033639,
+        "work_first_N_mm": 1.7006570376971157,
+        "work_second_N_mm": 1.3351763781944388,
+        "work_relative_second": 0.27373211919530593,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "original_JAX_vs_shell_full_requested_window": {
+        "requested_window": [
+          0.1,
+          0.17
+        ],
+        "actual_common_window": [
+          0.1,
+          0.17
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 3.681186228496478,
+        "RMS_relative_original_fixed_2p25891N": 1.629629435655461,
+        "RMS_relative_matched_shell_peak": 0.703861301291005,
+        "work_first_N_mm": 4.0394828654843975,
+        "work_second_N_mm": 1.9881137805417024,
+        "work_relative_second": 1.0318167425929503,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "new_vs_original_internal_force": {
+        "requested_window": [
+          0.1,
+          0.17
+        ],
+        "actual_common_window": [
+          0.1,
+          0.13077724201070814
+        ],
+        "full_requested_window_covered": false,
+        "curve_RMS_N": 0.08441319994567442,
+        "RMS_relative_original_fixed_2p25891N": 0.03736899652738463,
+        "RMS_relative_matched_shell_peak": 0.016140227924346922,
+        "work_first_N_mm": 1.675118034109815,
+        "work_second_N_mm": 1.7010512545461083,
+        "work_relative_second": -0.01524540801870955,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      }
+    },
+    "early": {
+      "new_vs_original_JAX": {
+        "requested_window": [
+          0.01,
+          0.08
+        ],
+        "actual_common_window": [
+          0.01,
+          0.08
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 0.036458011711508885,
+        "RMS_relative_original_fixed_2p25891N": 0.016139647755558602,
+        "RMS_relative_matched_shell_peak": 0.006970955005508191,
+        "work_first_N_mm": 1.5315664616434281,
+        "work_second_N_mm": 1.5547051489092303,
+        "work_relative_second": -0.014883006775938235,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "new_vs_shell": {
+        "requested_window": [
+          0.01,
+          0.08
+        ],
+        "actual_common_window": [
+          0.01,
+          0.08
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 0.10911697608837805,
+        "RMS_relative_original_fixed_2p25891N": 0.04830514544111011,
+        "RMS_relative_matched_shell_peak": 0.020863714035427732,
+        "work_first_N_mm": 1.5315664616434281,
+        "work_second_N_mm": 1.4628454147098335,
+        "work_relative_second": 0.04697765481065952,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "original_JAX_vs_shell": {
+        "requested_window": [
+          0.01,
+          0.08
+        ],
+        "actual_common_window": [
+          0.01,
+          0.08
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 0.1455699471927254,
+        "RMS_relative_original_fixed_2p25891N": 0.0644425617632953,
+        "RMS_relative_matched_shell_peak": 0.02783370525152246,
+        "work_first_N_mm": 1.5547051489092303,
+        "work_second_N_mm": 1.4628454147098335,
+        "work_relative_second": 0.06279524362293465,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "original_JAX_vs_shell_full_requested_window": {
+        "requested_window": [
+          0.01,
+          0.08
+        ],
+        "actual_common_window": [
+          0.01,
+          0.08
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 0.1455699471927254,
+        "RMS_relative_original_fixed_2p25891N": 0.0644425617632953,
+        "RMS_relative_matched_shell_peak": 0.02783370525152246,
+        "work_first_N_mm": 1.5547051489092303,
+        "work_second_N_mm": 1.4628454147098335,
+        "work_relative_second": 0.06279524362293465,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      },
+      "new_vs_original_internal_force": {
+        "requested_window": [
+          0.01,
+          0.08
+        ],
+        "actual_common_window": [
+          0.01,
+          0.08
+        ],
+        "full_requested_window_covered": true,
+        "curve_RMS_N": 0.036456437685720974,
+        "RMS_relative_original_fixed_2p25891N": 0.01613895094790008,
+        "RMS_relative_matched_shell_peak": 0.006970654043869585,
+        "work_first_N_mm": 1.5280220734196361,
+        "work_second_N_mm": 1.5511585375612358,
+        "work_relative_second": -0.014915602487657553,
+        "integration": "linear interpolation to common uniform 1001-point compression grid, trapezoid, no smoothing or shift"
+      }
+    }
+  },
+  "decision": "incomplete_or_no_qualified_drop_peak_no_insensitivity_conclusion",
+  "peak_sensitivity_interpretable": false,
+  "invalid_required_NH_points_max": 0,
+  "required_actual_J_min": 0.2950393137345891,
+  "all_actual_J_min": -13.023791365936585,
+  "negative_J_points_max": 11373,
+  "accepted_endpoint_positive_frequency_ratio_max": 1.8069466114939632,
+  "rejected_blocks": 1,
+  "energy_balance": {
+    "terminal_work_N_mm": 4.095343314907549,
+    "terminal_U_plus_KE_minus_work_N_mm": 4.664221991745876e-06,
+    "max_absolute_drift_relative_max_work": 1.138965415880487e-06,
+    "scope": "saved endpoint trapezoidal work; not exact stepwise energy certification"
+  },
+  "cost": {
+    "scope": "single from-zero support-energy intervention, not default/20pct/design AD",
+    "factor": 0.1,
+    "stop_compression": 0.17,
+    "stop_time_seconds": 0.002840328835643321,
+    "production_unchanged": true,
+    "dynamic_jump_allowed": true,
+    "started_unix": 1791379815.7842326,
+    "protocol_sha256": "7be0b699ef1bd4ef3e7d959aa5247ec3d884622215581965fc0a9f7f352f25af",
+    "adapter_sha256": "e67a3458aaf4f85cbe06bf69689702355add62b31eae90793062798c9c28ca7e",
+    "exception_type": "TimeoutError",
+    "exception_message": "Controlled forward budget stop; not a numerical method failure",
+    "total_seconds": 1529.4802790379617,
+    "exit_code": 1,
+    "frozen_files_unchanged": true
+  },
+  "control_result": {
+    "type": "TimeoutError",
+    "message": "Controlled forward budget stop; not a numerical method failure",
+    "completed_steps": 18592,
+    "body_seconds": 1501.9949326820206,
+    "bound_seconds_total": 547.1534315132303,
+    "observing_seconds_total": 68.35733314731624,
+    "last_valid": {
+      "time": 0.0023344747217128414,
+      "compression": 0.13077724201070814,
+      "Fz_N": -6.081961344606114,
+      "internal_macro_Fz_N": -6.084720357572862,
+      "energy_N_mm": 4.090680438785405,
+      "KE_N_mm": 0.004667540344135407,
+      "KE_over_U": 0.001141018080972681,
+      "J_finite": true,
+      "J_min": -13.023791365936585,
+      "invalid_material_points": 0,
+      "negative_J_points": 11372,
+      "required_positive_J_min": 0.2950393137345891,
+      "required_positive_J_points": 141282,
+      "dt_seconds": 4.8694370490744855e-08
+    },
+    "sampled_high_KE_loading_seconds": 0.0,
+    "scope": "Partial accepted trajectory and explicit stop reason; not full 20% or design AD certification"
+  },
+  "old_shell_checks_preserved": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "frozen_files_unchanged": {
+    "hyperelastic_fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "pixi.lock": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/input.json": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/geometry_transfer_20261006_r15/gauss_field.npz": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true
+  }
+}

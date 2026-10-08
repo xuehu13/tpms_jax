@@ -1,0 +1,56 @@
+[
+  {
+    "key": "qiu",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+    "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0",
+    "total_pages": 18,
+    "text_pages": [
+      1,
+      11,
+      12,
+      13
+    ],
+    "visual_pages": [
+      12
+    ]
+  },
+  {
+    "key": "hu",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Geometrically non-linear topology optimization via geometry projection.pdf",
+    "sha256": "90b2b02f62880b449ce17e11d4406c037540a97385d057c32986b51995e1c688",
+    "total_pages": 15,
+    "text_pages": [
+      1,
+      5,
+      6,
+      7
+    ],
+    "visual_pages": [
+      5
+    ]
+  },
+  {
+    "key": "improved",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\An improved finite element modeling method for triply periodic minimal surface structures based on element size and minimum Jacobian.pdf",
+    "sha256": "07f46f02e195517eb9e02cf1d51c48b37f9397e5736c244e285830783b92a28e",
+    "total_pages": 13,
+    "text_pages": [
+      1,
+      2,
+      3
+    ],
+    "visual_pages": []
+  },
+  {
+    "key": "voxel",
+    "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\A voxel-based method of multiscale mechanical property optimization for the design of graded TPMS structures.pdf",
+    "sha256": "45fa80c61b569075fce5b6e9a3ee2ed4a0cd22382a5389d9a7268760e1456980",
+    "total_pages": 12,
+    "text_pages": [
+      1,
+      2,
+      3
+    ],
+    "visual_pages": []
+  }
+]

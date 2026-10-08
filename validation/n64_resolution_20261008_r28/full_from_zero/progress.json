@@ -1,0 +1,16 @@
+{
+  "steps": 12896,
+  "compression": 0.1473204908506258,
+  "time": 0.0012644460804815583,
+  "dt": 9.524951387322923e-09,
+  "next_safe_dt": 1.914678367239311e-08,
+  "rejected_blocks": 2,
+  "elapsed_seconds": 6205.373590953066,
+  "bound_seconds_total": 1996.524894797476,
+  "J_min": -14.310507697487383,
+  "required_positive_J_min": 0.017995402116018223,
+  "negative_J_points": 15918,
+  "invalid_material_points": 0,
+  "KE_over_U": 0.06938041521353254,
+  "sampled_high_KE_loading_seconds": 0.00016391396571423245
+}

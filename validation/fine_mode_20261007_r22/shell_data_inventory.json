@@ -1,0 +1,35 @@
+{
+  "scope": "Only existing r20 data inventory; no ODB extraction, new job, mode solve or mechanical evaluation.",
+  "example_frame": "frame_a0.1140.npz",
+  "saved_frame_arrays": [
+    "u_mm",
+    "fluctuation_mm",
+    "removed_translation_mm",
+    "normal_fluctuation_mm",
+    "time_s",
+    "compression",
+    "frame_index"
+  ],
+  "INP_node_output_sections": [
+    "U, UR, RF\n",
+    "U3, RF3\n"
+  ],
+  "actual_frame_field_outputs_recorded_in_r20": [
+    "LE",
+    "RF",
+    "RM",
+    "S",
+    "STH",
+    "U",
+    "UR"
+  ],
+  "extract_script_lines_mentioning_fieldOutputs_or_UR": [
+    "            udata={v.nodeLabel:np.asarray(data(v),dtype=float) for v in frame.fieldOutputs['U'].values}",
+    "                 'field_outputs_available':list(frame.fieldOutputs.keys()),'file':name}"
+  ],
+  "file_sha256": {
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/thin_shell.inp": "9f578dd1918aebec25e3cd2af1cbec8a71af1b75929bded0960e2e8ffc4c4c28",
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/extract_shell_modes.py": "a811e9f715bbaa97595180a5df3885e645c87372cdfc0e6a6549adf1ab1fd31a",
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell_frames/frame_a0.1140.npz": "6149fd3882ae5c990814e47a3edbe0fff46b26c2c0d8c1bab43027f9e6b4817e"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "case_id": "diverse04_t005",
+  "N": 32,
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "mechanical_periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "solid_density_tonne_per_mm3": 1e-09,
+  "step_name": "COMPRESSION",
+  "load_time_seconds": 0.04,
+  "hold_time_seconds": 0.004,
+  "total_time_seconds": 0.044,
+  "physical_node_count": 8372,
+  "element_count": 15914,
+  "periodic_relations": 423,
+  "macro_control_label": 8373,
+  "pin_node_label": 1,
+  "pin_xyz_mm": [
+    1.1769523282424443,
+    8.869647893099462,
+    5.368578344011146
+  ],
+  "no_contact": true,
+  "no_plasticity": true,
+  "no_mass_scaling": true,
+  "shell_units": "mm,N,MPa,tonne,s; S3R five section points; Explicit with default bulk viscosity",
+  "macro_F": "diag(1,1,1-a); XYZ periodic fluctuations and rotations; lateral macro strain zero",
+  "shell_inp_sha256": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7",
+  "original_mesh_sha256": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+  "material": {
+    "C10_MPa": 1.923076923076923,
+    "D1_per_MPa": 0.24
+  },
+  "boundary_role": "Periodic cell; no pressure plates or periodic image contact",
+  "source_case": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15",
+  "extractor_sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+  "epsilon_z": -0.0001,
+  "diagnostic_xyz": true,
+  "reference": "initial tangent of the original NH material"
+}

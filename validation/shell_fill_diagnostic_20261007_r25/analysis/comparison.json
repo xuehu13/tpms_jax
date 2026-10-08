@@ -1,0 +1,190 @@
+{
+  "original_fast_shell_peak": {
+    "time": 0.00219581532292068,
+    "compression": 0.1182407021522522,
+    "Fz_N": -5.229988098144531,
+    "ALLIE": 3.2153453826904297,
+    "ALLSE": 3.2106857299804688,
+    "ALLKE": 0.015035320073366165,
+    "ALLAE": 0.004659564234316349,
+    "ALLVD": 0.00030522781889885664,
+    "ALLWK": 3.2033770084381104,
+    "ETOTAL": 0.02730882167816162
+  },
+  "nearzero_trial_peak_observed": {
+    "time": 0.0018216187600046396,
+    "compression": 0.08336523771286011,
+    "Fz_N": -3.8254809379577637,
+    "ALLIE": 1.6116663217544556,
+    "ALLSE": 1.6108238697052002,
+    "ALLKE": 0.0049860551953315735,
+    "ALLAE": 0.0008291088161058724,
+    "ALLVD": 0.00014867882418911904,
+    "ALLWK": 1.613548755645752,
+    "ETOTAL": 0.0032518322113901377
+  },
+  "metrics": {
+    "available_common_range": [
+      0.01,
+      0.08336523771286011
+    ],
+    "predeclared_range_complete": false,
+    "curve_RMS_N": 0.001231128120680782,
+    "curve_RMS_original_fixed_denominator": 0.0005450098147694162,
+    "curve_RMS_matched_fast_peak_denominator": 0.000235397881902935,
+    "observed_peak_shift_percentage_points": null,
+    "observed_peak_force_relative_difference": null,
+    "trial_observed_peak_at_last_history_point": true,
+    "observed_peak_not_always_a_bracketed_snap": true,
+    "RF_at_10pct_original_N": 4.536357579674203,
+    "RF_at_10pct_trial_N": null,
+    "dynamic_peaks_not_certified_critical_strains": true,
+    "partial_peak_not_comparable_if_target_incomplete": true
+  },
+  "checks": {
+    "solver_completed": false,
+    "extraction_success": true,
+    "target17_reached": false,
+    "finite": true,
+    "peak_shift_le_0p5pp": false,
+    "peak_force_difference_le5pct": false,
+    "curve_fixed_RMS_le5pct": false,
+    "curve_matched_RMS_le5pct": false,
+    "energy_drift_le1pct": true,
+    "artificial_energy_le5pct": true,
+    "sampled_PBC_le1e6_mm": false,
+    "sampled_UR_PBC_le1e6_rad": true,
+    "sampled_positive_host_volume": true,
+    "fatal_diagnostic_no_inverted_host": false
+  },
+  "nearzero_attribution_gate_pass": false,
+  "last_compression": 0.08336523771286011,
+  "added_mass_fraction": 0.0007516985190620133,
+  "global_energy_drift_relative_work": 0.0020153293788068615,
+  "artificial_energy_relative_work": 0.0005138418118478596,
+  "wall_seconds": 607.4274958999595,
+  "element_group_history_names": [
+    "ElementSet PART-1-1.FILLER",
+    "ElementSet PART-1-1.WALL"
+  ],
+  "original_shell_quality_same_17pct_window": {
+    "comparison_range": [
+      0.0,
+      0.17
+    ],
+    "energy_drift_relative_work": 0.06776018198112282,
+    "artificial_energy_relative_work": 0.11089827775358081,
+    "original20pct_checks_preserved": {
+      "complete": true,
+      "finite": true,
+      "target_compression": true,
+      "physical_node_count": true,
+      "XYZ_periodic_mm_le_1e-6": true,
+      "XYZ_rotation_rad_le_1e-6": true,
+      "global_energy_drift_le_1pct": false,
+      "most_loading_time_KE_below_5pct": false,
+      "terminal_KE_below_5pct": false,
+      "artificial_energy_le_5pct_work": false
+    }
+  },
+  "group_energy_at_peak_and_last": {
+    "ElementSet PART-1-1.FILLER": {
+      "ALLAE": {
+        "at_trial_observed_peak_N_mm": 7.484823981940281e-06,
+        "at_last_history_N_mm": 7.484823981940281e-06
+      },
+      "ALLIE": {
+        "at_trial_observed_peak_N_mm": 2.994451097038109e-05,
+        "at_last_history_N_mm": 2.994451097038109e-05
+      },
+      "ALLKE": {
+        "at_trial_observed_peak_N_mm": 8.688894922670443e-06,
+        "at_last_history_N_mm": 8.688894922670443e-06
+      },
+      "ALLSE": {
+        "at_trial_observed_peak_N_mm": 9.113602573052049e-06,
+        "at_last_history_N_mm": 9.113602573052049e-06
+      },
+      "ALLVD": {
+        "at_trial_observed_peak_N_mm": 1.2075631730112946e-06,
+        "at_last_history_N_mm": 1.2075631730112946e-06
+      }
+    },
+    "ElementSet PART-1-1.WALL": {
+      "ALLAE": {
+        "at_trial_observed_peak_N_mm": 0.0008216240094043314,
+        "at_last_history_N_mm": 0.0008216240094043314
+      },
+      "ALLIE": {
+        "at_trial_observed_peak_N_mm": 1.6116362810134888,
+        "at_last_history_N_mm": 1.6116362810134888
+      },
+      "ALLKE": {
+        "at_trial_observed_peak_N_mm": 0.004977353382855654,
+        "at_last_history_N_mm": 0.004977353382855654
+      },
+      "ALLSE": {
+        "at_trial_observed_peak_N_mm": 1.6108146905899048,
+        "at_last_history_N_mm": 1.6108146905899048
+      },
+      "ALLVD": {
+        "at_trial_observed_peak_N_mm": 0.00014747124805580825,
+        "at_last_history_N_mm": 0.00014747124805580825
+      }
+    }
+  },
+  "not_JAX20pct_validation": true,
+  "no_JAX_forward_or_AD": true,
+  "original_shell_quality_available_window": {
+    "compression_range": [
+      0.0,
+      0.08336523771286011
+    ],
+    "energy_drift_relative_work": 0.002240035739456292,
+    "artificial_energy_relative_work": 0.0005184715441002772
+  },
+  "fatal_field_diagnostic": {
+    "failing_element": 121978,
+    "element_type": "C3D8R",
+    "belongs_to": "ordinary FILLER, not shell",
+    "reference_center_mm": [
+      6.71875,
+      4.53125,
+      7.96875
+    ],
+    "node_labels": [
+      123357,
+      124446,
+      124479,
+      123390,
+      123358,
+      124447,
+      124480,
+      123391
+    ],
+    "fatal_field_time": 0.0018230816349387169,
+    "analytic_compression": 0.08350022459486553,
+    "control_present_in_fatal_field": true,
+    "actual_control_compression": 0.08350022435188294,
+    "center_F": [
+      [
+        0.8589110381901265,
+        0.0619257040321827,
+        -0.04626929089426995
+      ],
+      [
+        -0.2814113035798073,
+        0.5156369343400001,
+        -0.6211665794253349
+      ],
+      [
+        0.07616332024335862,
+        -0.33308587521314625,
+        0.31318556815385823
+      ]
+    ],
+    "center_J_from_failed_field": -0.03899651816059895,
+    "initial_volume_mm3": 0.030517578125,
+    "scope": "fatal/failed ordinary diagnostic field, not accepted JAX or full path certificate"
+  }
+}

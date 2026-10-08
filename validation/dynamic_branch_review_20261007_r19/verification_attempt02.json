@@ -1,0 +1,17 @@
+{
+  "check": "formal reading links",
+  "initial_result": "two broken links; source/hash checks passed; no archival occurred",
+  "repairs": [
+    [
+      "docs/RESEARCH_STATUS.md",
+      "(GEOMETRY_TRANSFER_REVIEW.md)",
+      "(../validation/geometry_transfer_review_20261006_r16/REVIEW.md)"
+    ],
+    [
+      "docs/FILE_MAP.md",
+      "[归档索引](history/completed_tools_20261006/README.md)",
+      "`Windows history/completed_tools_20261006/README.md`"
+    ]
+  ],
+  "no_scientific_values_changed": true
+}

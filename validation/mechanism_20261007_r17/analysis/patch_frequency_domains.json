@@ -1,0 +1,191 @@
+{
+  "event_class": 41008,
+  "central_cell": 4119,
+  "event_incident_cells": [
+    4119,
+    4120,
+    5111,
+    5112,
+    5143,
+    5144,
+    6135,
+    6136
+  ],
+  "target_periodic_classes": [
+    32814,
+    32815,
+    32816,
+    32878,
+    32879,
+    32880,
+    32942,
+    32943,
+    32944,
+    36910,
+    36911,
+    36912,
+    36974,
+    36975,
+    36976,
+    37038,
+    37039,
+    37040,
+    41006,
+    41007,
+    41008,
+    41070,
+    41071,
+    41072,
+    41134,
+    41135,
+    41136
+  ],
+  "rows": [
+    {
+      "state": "undeformed_same_material",
+      "compression": 0.0,
+      "dt_s": 2.693272938728041e-07,
+      "restricted_dofs": 81,
+      "incident_cells": 27,
+      "tangent_relative_asymmetry": 5.532277287420487e-17,
+      "largest_restricted_eigenvalue_s_minus2": 5994369449986.906,
+      "rayleigh_s_minus2": 5994369449986.907,
+      "dt_times_omega_lower_bound": 0.6594048248732229,
+      "upper_bound_on_positive_frequency_dt_limit_s": 8.168799611819187e-07,
+      "frozen_positive_frequency_limit_violated_by_bound": false,
+      "negative_restricted_eigenvalues": 0,
+      "dominant_direction_curvature_by_domain_s_minus2": {
+        "deep_void": 360915055529.756,
+        "mixed_virtual_tail": 83950079775.58148,
+        "uncontinued_NH": 5549504314681.571
+      },
+      "dominant_direction_curvature_fraction_by_domain": {
+        "deep_void": 0.060209010896140926,
+        "mixed_virtual_tail": 0.014004822438123971,
+        "uncontinued_NH": 0.9257861666657353
+      }
+    },
+    {
+      "state": "original_diagnostic/accepted_a0.1000.npz",
+      "compression": 0.10318311216977079,
+      "dt_s": 2.693272938728041e-07,
+      "restricted_dofs": 81,
+      "incident_cells": 27,
+      "tangent_relative_asymmetry": 6.510319843650555e-17,
+      "largest_restricted_eigenvalue_s_minus2": 6386720997964.606,
+      "rayleigh_s_minus2": 6386720997964.609,
+      "dt_times_omega_lower_bound": 0.6806429330633715,
+      "upper_bound_on_positive_frequency_dt_limit_s": 7.913908476523571e-07,
+      "frozen_positive_frequency_limit_violated_by_bound": false,
+      "negative_restricted_eigenvalues": 0,
+      "dominant_direction_curvature_by_domain_s_minus2": {
+        "deep_void": 5224402974883.283,
+        "mixed_virtual_tail": 109957716942.91518,
+        "uncontinued_NH": 1052360306138.4099
+      },
+      "dominant_direction_curvature_fraction_by_domain": {
+        "deep_void": 0.8180102084541119,
+        "mixed_virtual_tail": 0.01721661506396752,
+        "uncontinued_NH": 0.1647731764819205
+      }
+    },
+    {
+      "state": "original_diagnostic/accepted_a0.1200.npz",
+      "compression": 0.12235806246428892,
+      "dt_s": 2.693272938728041e-07,
+      "restricted_dofs": 81,
+      "incident_cells": 27,
+      "tangent_relative_asymmetry": 9.971666704833069e-17,
+      "largest_restricted_eigenvalue_s_minus2": 9501131408048.275,
+      "rayleigh_s_minus2": 9501131408048.277,
+      "dt_times_omega_lower_bound": 0.8301719013541744,
+      "upper_bound_on_positive_frequency_dt_limit_s": 6.488470482642886e-07,
+      "frozen_positive_frequency_limit_violated_by_bound": false,
+      "negative_restricted_eigenvalues": 0,
+      "dominant_direction_curvature_by_domain_s_minus2": {
+        "deep_void": 8434915543033.704,
+        "mixed_virtual_tail": 112386641550.06683,
+        "uncontinued_NH": 953829223464.506
+      },
+      "dominant_direction_curvature_fraction_by_domain": {
+        "deep_void": 0.887780115943729,
+        "mixed_virtual_tail": 0.01182876404118205,
+        "uncontinued_NH": 0.10039112001508899
+      }
+    },
+    {
+      "state": "original_diagnostic/accepted_a0.1400.npz",
+      "compression": 0.14058631476796862,
+      "dt_s": 2.693272938728041e-07,
+      "restricted_dofs": 81,
+      "incident_cells": 27,
+      "tangent_relative_asymmetry": 7.629709775459323e-17,
+      "largest_restricted_eigenvalue_s_minus2": 13058148256853.252,
+      "rayleigh_s_minus2": 13058148256853.252,
+      "dt_times_omega_lower_bound": 0.9732427226287269,
+      "upper_bound_on_positive_frequency_dt_limit_s": 5.534637713916864e-07,
+      "frozen_positive_frequency_limit_violated_by_bound": false,
+      "negative_restricted_eigenvalues": 0,
+      "dominant_direction_curvature_by_domain_s_minus2": {
+        "deep_void": 12002899404354.748,
+        "mixed_virtual_tail": 127056104098.11539,
+        "uncontinued_NH": 928192748400.3865
+      },
+      "dominant_direction_curvature_fraction_by_domain": {
+        "deep_void": 0.9191884766705201,
+        "mixed_virtual_tail": 0.009730024625155645,
+        "uncontinued_NH": 0.0710814987043241
+      }
+    },
+    {
+      "state": "original_diagnostic/accepted_a0.1590.npz",
+      "compression": 0.159662399170054,
+      "dt_s": 2.693272938728041e-07,
+      "restricted_dofs": 81,
+      "incident_cells": 27,
+      "tangent_relative_asymmetry": 7.462024531091441e-17,
+      "largest_restricted_eigenvalue_s_minus2": 32037470769539.05,
+      "rayleigh_s_minus2": 32037470769539.08,
+      "dt_times_omega_lower_bound": 1.5244369923255359,
+      "upper_bound_on_positive_frequency_dt_limit_s": 3.5334657349392194e-07,
+      "frozen_positive_frequency_limit_violated_by_bound": false,
+      "negative_restricted_eigenvalues": 0,
+      "dominant_direction_curvature_by_domain_s_minus2": {
+        "deep_void": 31111287504264.67,
+        "mixed_virtual_tail": 163272260861.72595,
+        "uncontinued_NH": 762911004412.6543
+      },
+      "dominant_direction_curvature_fraction_by_domain": {
+        "deep_void": 0.9710906247269989,
+        "mixed_virtual_tail": 0.005096290591608238,
+        "uncontinued_NH": 0.02381308468139198
+      }
+    },
+    {
+      "state": "original_diagnostic/first_rejection_replay/before_first_invalid.npz",
+      "compression": 0.16022941795541268,
+      "dt_s": 2.693272938728041e-07,
+      "restricted_dofs": 81,
+      "incident_cells": 27,
+      "tangent_relative_asymmetry": 2.269461577903443e-16,
+      "largest_restricted_eigenvalue_s_minus2": 1884794191308201.8,
+      "rayleigh_s_minus2": 1884794191308201.2,
+      "dt_times_omega_lower_bound": 11.692633436245462,
+      "upper_bound_on_positive_frequency_dt_limit_s": 4.6067858937222594e-08,
+      "frozen_positive_frequency_limit_violated_by_bound": true,
+      "negative_restricted_eigenvalues": 16,
+      "dominant_direction_curvature_by_domain_s_minus2": {
+        "deep_void": 1883055658597103.0,
+        "mixed_virtual_tail": 1126891920099.7952,
+        "uncontinued_NH": 611640790998.2585
+      },
+      "dominant_direction_curvature_fraction_by_domain": {
+        "deep_void": 0.9990776007698264,
+        "mixed_virtual_tail": 0.0005978859258461743,
+        "uncontinued_NH": 0.0003245133043272644
+      }
+    }
+  ],
+  "wall_seconds": 3.163381319027394,
+  "scope": "Frozen-state undamped central-difference positive-frequency test. Exact restricted shared-energy tangent and original global HRZ mass; >2 establishes this frozen tangent violates the original dt limit. <=2 does not certify the full system. Negative eigenvalues are retained; no stiffness projection, trajectory or design AD."
+}

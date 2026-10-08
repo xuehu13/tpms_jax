@@ -1,0 +1,12 @@
+{
+  "/home/xuehu/projects/tpms_jax/hyperelastic_fem.py": true,
+  "/home/xuehu/projects/tpms_jax/surface_distance.py": true,
+  "/home/xuehu/projects/tpms_jax/pbc.py": true,
+  "/home/xuehu/projects/tpms_jax/scripts/thin_target_explicit.py": true,
+  "/home/xuehu/projects/tpms_jax/pixi.toml": true,
+  "/home/xuehu/projects/tpms_jax/pixi.lock": true,
+  "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/shell_rate_20261007_r20_diverse04_explicit_T0p004/thin_shell.inp": true,
+  "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/shell_rate_20261007_r20_diverse04_explicit_T0p004/input.json": true,
+  "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/shell_rate_20261007_r20_diverse04_explicit_T0p004/thin_shell.odb": true,
+  "/mnt/e/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/shell_rate_20261007_r20_diverse04_explicit_T0p004/shell.json": true
+}

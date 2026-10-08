@@ -1,0 +1,12 @@
+{
+  "Python": "3.13.15 | packaged by conda-forge | (main, Sep  2 2026, 22:01:58) [GCC 15.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "fenics-basix": "0.10.0"
+  },
+  "GPU_preallocation_off_in_actual_source": true
+}

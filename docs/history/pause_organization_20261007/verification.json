@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "status": "paused_by_user",
+  "root_markdown_before": 23,
+  "root_markdown_after": 10,
+  "move_items": 24,
+  "archived_input_files_verified": 266,
+  "historical_report_original_bytes_in_backup": 14,
+  "historical_reading_links_rewritten": 14,
+  "frozen": {
+    "frozen_before.json": {
+      "checked": 550,
+      "changed": 0,
+      "reference": "/home/xuehu/projects/tpms_jax/validation/background_probe_20261007_r24/frozen_before.json"
+    },
+    "source_before.json": {
+      "checked": 6,
+      "changed": 0,
+      "reference": "/home/xuehu/projects/tpms_jax/validation/background_probe_20261007_r24/source_before.json"
+    }
+  },
+  "missing_active_links": [],
+  "new_abaqus_jobs": 0,
+  "new_jax_forward": 0,
+  "compilation": 0,
+  "design_ad": 0,
+  "production_edits": 0,
+  "git_mutations": 0
+}

@@ -1,0 +1,15 @@
+{
+  "updated_utc": "2026-10-08T02:12:30.475336+00:00",
+  "research_status": "paused_by_user",
+  "new_FEM_Abaqus_AD_compilation_runs": 0,
+  "integration_candidate_executed": false,
+  "r27_frozen_files_checked": 29,
+  "r27_all_bytes_unchanged": true,
+  "six_production_and_two_old_evidence_files_unchanged": true,
+  "native_r27_INP_ODB_unchanged": true,
+  "current_reading_links_valid": true,
+  "archive_top_level_hashes_valid": true,
+  "week_snapshot_edited": false,
+  "no_commit_push_merge": true,
+  "old_figure_link_target_same_bytes": true
+}

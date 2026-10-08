@@ -1,0 +1,11 @@
+{
+  "stage": "full",
+  "started_unix": 1791429014.6900814,
+  "body_budget_seconds": 10800.0,
+  "dynamic_jump_allowed": true,
+  "virtual_support_multiplier": 1.0,
+  "from_zero": true,
+  "protocol_sha256": "8a63bea1df23683d4dcbeb29cdfa254da090281ba111bcf011b0662d6702ab74",
+  "adapter_sha256": "931407b46b6025a897eff1d0304013e9272019aa33a01a39f10c6a9ab70fc2e2",
+  "pid": 4052859
+}

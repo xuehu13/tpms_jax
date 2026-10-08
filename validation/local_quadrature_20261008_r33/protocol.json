@@ -1,0 +1,37 @@
+{
+  "case": "diverse_04 r30 saved initial static equilibrium",
+  "N": 32,
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "selection": "Cell has >=1 original Gauss point with phi>=0.01 and nearest face in r32 fixed top20pct-area mask",
+  "selected_cells": 1941,
+  "total_cells": 32768,
+  "selected_cells_sha256": "37a651f38ebad044f44362cc87b7bb88e3d32c5fa6988540309cc3c317600c8d",
+  "dense_points_per_axis": [
+    8,
+    12
+  ],
+  "dense_points_per_selected_cell": [
+    512,
+    1728
+  ],
+  "budget_seconds": 900.0,
+  "batch_cells": 32,
+  "gates": {
+    "original_occupancy_max_abs": 1e-10,
+    "original_total_energy_relative": 1e-10,
+    "original_selected_energy_relative": 1e-10,
+    "constant_floor_energy_relative": 1e-10,
+    "dense_levels_relative_energy_volume_distance_moment": 0.01
+  },
+  "denominators": "original selected 27-point values for dense changes; 12-point-axis selected values for 8-vs12 stability; original full r30 energy for contribution scale only",
+  "state_fixed": true,
+  "outside_selection_densely_checked": false,
+  "production_changed": false,
+  "no_equilibrium_design_AD_or_Abaqus_job": true,
+  "selection_preparation_seconds": 0.916099278954789
+}

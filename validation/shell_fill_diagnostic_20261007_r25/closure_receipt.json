@@ -1,0 +1,14 @@
+{
+  "plan_steps": 4,
+  "nearzero_control_executed": true,
+  "attribution_gate_pass": false,
+  "filler_failed_not_JAX_failure": true,
+  "finite_fill_submitted": false,
+  "new_JAX_forward": false,
+  "design_AD": false,
+  "queued_followups": false,
+  "old_science_and_production_unchanged": true,
+  "Git_operations": false,
+  "reading_copy": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r25_shell_fill_diagnostic_20261007",
+  "next_single_factor": "JAX low-occupancy support energy only, not started"
+}

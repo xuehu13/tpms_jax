@@ -1,0 +1,4 @@
+{
+  "reason": "Generalized smallest-algebraic call has produced no eigenmode within useful remaining cost. Preserve as incomplete; one zero-centered extraction using unchanged K/M and fixed sigma=0 targets critical directions, not a shift fit or global minimum certification.",
+  "no_spectrum_yet": true
+}

@@ -1,0 +1,9 @@
+{
+  "returncode": 0,
+  "wall_seconds": 167.44616105803289,
+  "previous_attempt_seconds": 1474.6037471381715,
+  "remaining_budget_seconds_at_start": 900.0,
+  "budget_stop": false,
+  "result_exists": true,
+  "partial_result_exists": true
+}

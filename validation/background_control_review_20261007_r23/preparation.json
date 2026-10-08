@@ -1,0 +1,11 @@
+{
+  "frozen_old_r15_r21": 490,
+  "additional_r22": 45,
+  "frozen_total": 535,
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "new_design_AD": 0,
+  "source_changed": false,
+  "old_scientific_bytes_unchanged": true,
+  "scope": "read-only evidence/literature and active documents; no solve submitted"
+}

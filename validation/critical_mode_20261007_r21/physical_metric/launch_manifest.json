@@ -1,0 +1,8 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/critical_mode_20261007_r21/physical_metric.py"
+  ],
+  "source_sha256": "0c30ea1b9f7e0bfed3c9981fd380c54e7081f804cbeb0761cac84f1cc6d0e74f",
+  "protocol_sha256": "02414802bcb3ab4a2b9569791e62fafceecddd49ecaab7cd2fa43750c2dac501"
+}

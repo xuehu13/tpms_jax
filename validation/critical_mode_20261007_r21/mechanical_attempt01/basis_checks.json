@@ -1,0 +1,14 @@
+[
+  {
+    "Ncoarse": 4,
+    "prolongation_gradient_max_error": 4.600764214046649e-13,
+    "prolongation_gradient_relative_error": 7.579583022200416e-15,
+    "P_partition_unity_error": 0.0
+  },
+  {
+    "Ncoarse": 8,
+    "prolongation_gradient_max_error": 2.042810365310288e-12,
+    "prolongation_gradient_relative_error": 1.3460518624251594e-14,
+    "P_partition_unity_error": 0.0
+  }
+]

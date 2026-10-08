@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "checks": {
+    "constitutive_initial_tangent_error_le_1e-11": true,
+    "true_free_relative_residual_le_1e-8": true,
+    "reaction_energy_work_le_1e-8": true,
+    "sampled_plane_stress_stiffness_le_1e-8": true,
+    "thickness_Poisson_contraction_relative_le_1e-6": true,
+    "finite": true,
+    "solve_budget": true
+  },
+  "case": "single flat membrane, centered phase_layer",
+  "geometry_mm": {
+    "length": 10.0,
+    "width": 1.25,
+    "background_height": 2.5,
+    "thickness": 0.5,
+    "midplane_z": 1.25
+  },
+  "conditions": "ux=0 and 0.001 mm on x end faces; uy=0 everywhere (in-plane lateral strain held zero); uz free except one translation pin. This is a patch diagnostic, not TPMS XYZ boundary substitution.",
+  "K_solved_N_per_mm": 0.6401398764673333,
+  "K_actual_Gauss_analytic_N_per_mm": 0.6401398764672791,
+  "K_dense_same_field_N_per_mm": 0.687087912096876,
+  "K_binary_plate_N_per_mm": 0.6868131868131868,
+  "solved_over_sampled_analytic_minus_one": 8.459899447643693e-14,
+  "solved_over_binary_plate_minus_one": -0.06795633986356275,
+  "expected_thickness_strain": -4.285714285714286e-05,
+  "thickness_strain_relative_error": 3.986972788953361e-12,
+  "true_free_relative_residual": 3.8385262839137515e-15,
+  "energy_N_mm": 3.200699382336526e-07,
+  "force_N": 0.0006401398764673332,
+  "weighted_volume_mm3": 5.82527287585224,
+  "preparation_seconds": 10.070807110983878,
+  "solve_seconds": 0.46040235296823084,
+  "wall_seconds": 10.541691091959365,
+  "full_TPMS_normal_relaxation_certified": false,
+  "causal_reason_for_TPMS_5pct_bias_identified": false
+}

@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-08",
+  "stage": "existing_data_analysis_and_organization_complete",
+  "new_forward_Abaqus_tangent_AD": 0,
+  "updated_entries": [
+    "RESEARCH_BACKGROUND.md",
+    "RESEARCH_PLAN.md",
+    "PROJECT_OVERVIEW.md",
+    "MECHANISM_ANALYSIS.md",
+    "START_HERE.md",
+    "AGENTS.md",
+    "TPMS_RESEARCH_REVIEW.md",
+    "FILE_MAP.md",
+    "PAPER_ROUTE.md"
+  ],
+  "formal_mapping": {
+    "RESEARCH_BACKGROUND.md": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_BACKGROUND.md",
+    "RESEARCH_PLAN.md": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md",
+    "FILE_MAP.md": "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md",
+    "MECHANISM_ANALYSIS.md": "/home/xuehu/projects/tpms_jax/docs/MECHANISM_ANALYSIS.md",
+    "TPMS_RESEARCH_REVIEW.md": "/home/xuehu/projects/tpms_jax/docs/TPMS_RESEARCH_REVIEW.md",
+    "PAPER_ROUTE.md": "/home/xuehu/projects/tpms_jax/docs/PAPER_ROUTE.md",
+    "PROJECT_OVERVIEW.md": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md",
+    "START_HERE.md": "/home/xuehu/projects/tpms_jax/README.md",
+    "AGENTS.md": "/home/xuehu/projects/tpms_jax/AGENTS.md"
+  },
+  "frozen_production_and_old_evidence": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/plate_bending_20261008_r27/comparison.json": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/problem.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/fe.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/basis.py": true
+  },
+  "all_newly_read_sources_unchanged": {
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/n64_resolution_20261008_r28/full_from_zero/accepted_path.json": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true,
+    "validation/n64_resolution_20261008_r28/abaqus/explicit_T0p002/results/shell.json": true,
+    "validation/void_continuation_20261006_r12/T0p004/result.json": true,
+    "validation/void_continuation_20261006_r12/T0p008/result.json": true,
+    "validation/large_compression_20261005_r6/abaqus/explicit_T0p040/shell.json": true,
+    "validation/large_compression_20261005_r6/abaqus/standard/shell.json": true,
+    "validation/thin_target_20261004_r5/step2/diagnostic_xyz/comparison.json": true,
+    "validation/thin_target_20261004_r5/step2/diagnostic_xyz/input.json": true,
+    "validation/simulation_error_20261006_r7/step1/result.json": true,
+    "validation/n64_resolution_20261008_r28/comparison.json": true,
+    "validation/plate_bending_20261008_r27/comparison.json": true
+  },
+  "broken_local_links": [],
+  "archived_helpers": [
+    {
+      "from": "work/initial_slope_read.py",
+      "to": "history/completed_tools_20261008/r29_review_support/initial_slope_read.py",
+      "sha256": "c8b87c39e304b0ddc50d7ad4e1ca691664be9e62fea7e65d6a24a3f512e300dd"
+    },
+    {
+      "from": "work/initial_stiffness_review.py",
+      "to": "history/completed_tools_20261008/r29_review_support/initial_stiffness_review.py",
+      "sha256": "66da997d9a1148871287f884f79354360f7892bb95bf2bcb31f210ee6ab39d18"
+    },
+    {
+      "from": "work/close_initial_stiffness_review.py",
+      "to": "history/completed_tools_20261008/r29_review_support/close_initial_stiffness_review.py",
+      "sha256": "290929a048215173a28dcf51e22ed5a991cee0241d64abc4611afaf9d7aaa4e0"
+    }
+  ],
+  "new_default_research_priority": "N32 initial stiffness before full dynamic peak/step-floor work",
+  "next_candidate_executed": false,
+  "no_GitHub_commit_push_or_merge": true
+}

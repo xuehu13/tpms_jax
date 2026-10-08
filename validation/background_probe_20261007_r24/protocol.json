@@ -1,0 +1,41 @@
+{
+  "step": 1,
+  "status": "authorized_implementation_gate",
+  "question": "Can an independent Abaqus2026 HEX27/C2/HRZ reference reproduce the current background discretization?",
+  "scope": "single-element specified states, independent stress/tangent/mass audit and one small periodic Explicit trajectory; no full TPMS trajectory or design AD",
+  "material": {
+    "E_MPa": 10.0,
+    "nu": 0.3,
+    "eta": 0.0001,
+    "density_tonne_per_mm3": 1e-09,
+    "phi_NH": 0.01,
+    "phi_void": 0.001,
+    "continuation_max": 0.1
+  },
+  "references": [
+    "r15 frozen Gauss field and HRZ convention",
+    "shared C2 kernel and ExplicitXYZ used only as reference, never called by Abaqus forces"
+  ],
+  "normalization": {
+    "energy": "max(reference_abs, E*cell_volume*1e-4)",
+    "force": "max(reference_l2, E*cell_width**2*0.01)",
+    "point_stress": "max(reference_l2, E*.01)",
+    "dynamic_displacement": "prescribed_terminal_strain*patch_length"
+  },
+  "targets": {
+    "specified_energy_force": 1e-06,
+    "mass": 1e-10,
+    "small_dynamic": 0.001
+  },
+  "ordering": "independent tensor product Q2 nodes and 3x3x3 Gauss on [0,1]; explicitly map to Basix/JAX ordering",
+  "dynamic": "XYZ independent classes/gauge, macro lateral zero, no damping/contact/mass scaling, matched fixed dt, prescribed smooth compression, analytic versus actual time-discrete affine forcing recorded",
+  "implementation": "small C++ C-ABI VUEL, isolated job-local usub_lib_dir; installed DLL copied unchanged and default exports forwarded; no install-directory modification",
+  "stability": "each-state analytic 9x9 material tangent bound, triangle/submultiplicative bound on mass-scaled FE tangent; fixed dt cannot exceed returned safe bound",
+  "finite_domain": "phi>=.01 requires actual J>0; virtual actual negative J retained, no clipping",
+  "bounded_work": "one interface/implementation cycle; at most three native linkage/interface repairs, no broad model scan; stop and report if gate cannot be established",
+  "budget": "small jobs expected seconds to minutes, timing measured; no claim of full N32 cost before measurement",
+  "no_production_core_changes": true,
+  "no_full_N32_job": true,
+  "no_design_AD": true,
+  "no_parameters_fitted_to_shell": true
+}

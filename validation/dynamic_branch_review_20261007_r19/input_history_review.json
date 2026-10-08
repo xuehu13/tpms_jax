@@ -1,0 +1,11 @@
+{
+  "JAX_motion_source": "scripts/thin_target_explicit.py:126-132",
+  "JAX_motion": "Hzz=-0.2*(10*s**3-15*s**4+6*s**5), s=clip(t/T,0,1)",
+  "shell_INP": "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/thin_shell.inp",
+  "shell_motion": "QZ displacement=-2 mm, SMOOTH STEP (0,0),(0.04,1),(0.044,1)",
+  "normalized_motion_shape": "same quintic polynomial per public Abaqus smooth-step formula",
+  "official_formula_url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAECAERefMap/simacae-t-ampsmooth.htm",
+  "time_scale_ratio_shell_over_JAX": 10,
+  "does_not_imply_identical_mass_damping_or_discretization": true,
+  "no_new_INP_or_run": true
+}

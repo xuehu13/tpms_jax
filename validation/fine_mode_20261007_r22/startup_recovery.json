@@ -1,0 +1,10 @@
+{
+  "scope": "One pre-spectrum implementation recovery, same original operator/backend/initial modes; no spectrum or backend parameter retry.",
+  "previous_attempt_seconds": 249.8343603219837,
+  "remaining_seconds": 650.1656396780163,
+  "old_phase": "Two material columns printed immediately before SIGINT; no global operator or eigeniteration result.",
+  "change": "Add phase timings and replace batch 3x3 generic determinant with the exact triple-product determinant already used in r21; verify against16 generic determinants. No clipping of actual F/J or change to physical guards.",
+  "cost_attribution": "Old first-column time alone does not locate the preceding slow instruction. This recovery improves instrumentation; do not claim that traceback proves determinant was the only bottleneck.",
+  "no_further_recovery": true,
+  "same_total_900s_launch_budget": true
+}

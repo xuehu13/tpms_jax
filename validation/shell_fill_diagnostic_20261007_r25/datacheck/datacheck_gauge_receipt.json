@@ -1,0 +1,24 @@
+{
+  "phase": "datacheck_gauge",
+  "returncode": 0,
+  "wall_seconds": 30.727344399900176,
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=check_gauge",
+    "input=shell_fill_gauge.inp",
+    "cpus=1",
+    "double=both",
+    "interactive",
+    "datacheck"
+  ],
+  "INP_sha256": "e05772434cfb80e2cae91b38555e80a4d1ce549751666c32497e8740553a021a",
+  "input_json_sha256": "13ea9349c8bdaad5183f84e368f80d88389fbc1c52413eab24fd7974b498f7ba",
+  "input_unchanged": true,
+  "Abaqus_success_log": true,
+  "Abaqus_error_log": false,
+  "design_AD": false,
+  "JAX_forward": false
+}

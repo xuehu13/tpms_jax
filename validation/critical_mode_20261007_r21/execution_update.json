@@ -1,0 +1,30 @@
+{
+  "scientific_protocol_unchanged": true,
+  "operator": "same full-domain material energy Hessian, same Gauss, states, subspaces, gauge, eigensolver settings",
+  "implementation": "Nine JVP columns replace fused jacfwd; 9 BLAS contractions replace generic four-operand einsum. Exact expression checks required before acceptance.",
+  "completed_rows_reused_without_new_eigen_extraction": [
+    [
+      "accepted_a0.1000.npz",
+      4
+    ]
+  ],
+  "copied_files": [
+    {
+      "source": "mechanical_attempt02/results/accepted_a0.1000_N4_selected.npz",
+      "destination": "results/accepted_a0.1000_N4_selected.npz",
+      "sha256": "21a19405e0b9cabe8173ad0c309b38daceccc3d0c35f08c48bdab568a46b98ed"
+    },
+    {
+      "source": "mechanical_attempt02/results/accepted_a0.1000_N4_K.npz",
+      "destination": "results/accepted_a0.1000_N4_K.npz",
+      "sha256": "1c4272a315ab073bf1164063cc9f949231edfc9863aff1d826ea1c0c4e8297f6"
+    },
+    {
+      "source": "mechanical_attempt02/results/accepted_a0.1000_N4_modes.npz",
+      "destination": "results/accepted_a0.1000_N4_modes.npz",
+      "sha256": "2e86b24223f5d4dc46462ac777783ac8741eba61818e4d0e64e881163d9e2b2e"
+    }
+  ],
+  "cumulative_25min_budget_retained": true,
+  "no_new_forward_or_design_AD": true
+}

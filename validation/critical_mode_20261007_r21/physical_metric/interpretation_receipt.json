@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "observed_launcher_wall_seconds": 9.284,
+  "interpretation_source": "interpret_modes.py",
+  "new_eigensolve_or_time_advance": false,
+  "stderr_observation": "CUDA BFC allocator reported unsuccessful preallocation requests (6.00, 5.40, 4.86, 4.37 GiB); execution continued with fallback allocation and completed both states.",
+  "not_an_execution_OOM_failure": true,
+  "finite_output_and_direct_projected_checks_passed": true,
+  "original_warning_observation_preserved_in_tool_output": true,
+  "scope": "This receipt records the actual tool result, not a reconstructed raw stderr log."
+}

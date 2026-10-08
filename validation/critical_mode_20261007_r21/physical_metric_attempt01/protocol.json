@@ -1,0 +1,24 @@
+{
+  "plan_step": 3,
+  "reason": "N4 smallest bare stiffness modes are void dominated; all three N8 bare ARPACK calls did not converge at original limit. Identify physical periodic mode using actual mass metric, without changing the physical model.",
+  "states": [
+    "accepted_a0.1200.npz",
+    "accepted_a0.1600.npz"
+  ],
+  "subspace": "Same fixed N8 periodic Q2 space, same pin and complete original Gauss/material domain.",
+  "equation": "Kr v=lambda Mr v; Kr is reused original full-domain Ritz matrix, Mr=P^T diag(actual HRZ periodic mass) P, all three components and same pinned class.",
+  "meaning": "lambda has inverse-second-squared units for the entry normalization. No mass relumping or forward-model change.",
+  "solver": "eigsh smallest algebraic k=6 ncv=60 tol=1e-8 maxiter=400; exact scalar mass sparse factorization applied to three components; one pass at two predefined states, no solver setting scan.",
+  "checks": [
+    "positive mass diagonal/full rank embedding, deterministic quadratic checks",
+    "M orthonormality and generalized eigen residual",
+    "reused stiffness hashes",
+    "mechanical full-domain selected mode curvature agrees with Kr",
+    "surface/void motion and shell finite event increment patterns"
+  ],
+  "positive_mode_limit": "No static base equilibrium or full-space stability certification. A positive minimum in this restricted space cannot rule out fine-space instability.",
+  "negative_mode_limit": "Record sign and material participation; does not uniquely identify shell/JAX cause or imply dynamic growth history.",
+  "budget_seconds": 732.5538389419671,
+  "cost_rule": "Uses remaining time of the single CUDA recovery scope; no new budget reset, no new forward, Abaqus or design AD.",
+  "not_a_parameter_or_perturbation_amplitude_fit": true
+}

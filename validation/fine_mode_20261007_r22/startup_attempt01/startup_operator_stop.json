@@ -1,0 +1,6 @@
+{
+  "reason": "Unexpected long CPU preparation before any material-column or eigensolver output; request KeyboardInterrupt traceback to locate implementation cost. Not a spectrum failure or new physics result.",
+  "signal": "SIGINT",
+  "pid": 23265,
+  "new_time_advance": false
+}

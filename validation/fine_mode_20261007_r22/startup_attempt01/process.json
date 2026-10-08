@@ -1,0 +1,7 @@
+{
+  "pid": 23265,
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/fine_mode_20261007_r22/fine_modes.py"
+  ]
+}

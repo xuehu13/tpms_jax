@@ -1,0 +1,32 @@
+{
+  "Q_rad": 0.007661475799977779,
+  "compliance_per_N_mm": 76.6147579997778,
+  "effective_EI_N_mm2": 0.1305231558654666,
+  "tip_average_uz_mm": -0.03822087682783604,
+  "reference_relative_compliance": -0.002412005211226642,
+  "root_reaction_force_N": [
+    4.235164706787825e-21,
+    -1.4558378868201025e-21,
+    4.547473508864641e-13
+  ],
+  "root_reaction_moment_N_mm": [
+    1.5136478767434347e-18,
+    -0.00010000000020227162,
+    4.757078700983945e-38
+  ],
+  "energies_N_mm": {
+    "ALLAE": 5.296402639382025e-12,
+    "ALLIE": 3.8307379668367503e-07,
+    "ALLSE": 3.8306848182401154e-07,
+    "ALLWK": 3.8307379668367503e-07
+  },
+  "checks": {
+    "analytic_reference_5pct": true,
+    "reaction_moment": true,
+    "reaction_force": true,
+    "artificial_energy": true,
+    "finite_positive_compliance": true
+  },
+  "reference_gate_pass": true,
+  "scope": "one independent linear static S4R reference; no finite-strain path"
+}

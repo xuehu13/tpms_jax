@@ -1,0 +1,61 @@
+{
+  "case": "diverse_04 r30/r34 saved initial static states",
+  "N": 32,
+  "L_mm": 10.0,
+  "t_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "selected_cells": 1941,
+  "selected_cells_sha256": "37a651f38ebad044f44362cc87b7bb88e3d32c5fa6988540309cc3c317600c8d",
+  "profile_faces": 3122,
+  "profile_faces_sha256": "3cd00fcff6a1bcf77e92d83ffdc7168cabc76d02ccfe438fe064848129db58ab",
+  "region": "Same r33 1941 cells for original-Gauss partitions; all r32 frozen top20pct-area face centroids for normal-line probes",
+  "occupancy_partitions": [
+    0.0,
+    0.001,
+    0.01,
+    0.9,
+    1.0
+  ],
+  "distance_bins_mm": [
+    0.0,
+    0.1,
+    0.2,
+    0.225,
+    0.25,
+    0.275,
+    0.3,
+    0.35
+  ],
+  "distance_tail": "distance>=0.35mm separately retained",
+  "line_z_range_mm": [
+    -0.35,
+    0.35
+  ],
+  "line_points": 81,
+  "point_batch": 4096,
+  "Gauss_frames": "original nearest periodic triangle facet normal; no smoothed-normal replacement",
+  "line_frames": "fixed source triangle facet normal; closest-face switches recorded, not filtered",
+  "nearest_edge_tangential_distance_ratio_flag": 0.05,
+  "denominators": {
+    "energy": "each saved state evaluated at the SAME original 27-point rule in SAME 1941 cells",
+    "strain": "macro compression 1e-4; weighted least-squares/RMS plane-stress prediction reported separately",
+    "profile": "fixed source-face area weights at each signed z; not volume integration",
+    "stress": "E_MPa, actual occupancy scaling and unit-material stress both retained"
+  },
+  "budget_seconds": 900.0,
+  "gates": {
+    "r30_original_full_energy_relative": 1e-10,
+    "r30_selected_original_energy_relative": 1e-10,
+    "pointwise_energy_identity_relative": 1e-10,
+    "r32_normal_and_shear_reproduction_relative": 1e-10,
+    "finite_output": true
+  },
+  "causal_stiffness_claim_allowed": false,
+  "new_FEM_or_Abaqus_or_AD": false,
+  "new_integration_levels": false,
+  "production_changed": false,
+  "prepare_seconds": 0.04893197095952928
+}

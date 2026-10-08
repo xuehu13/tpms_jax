@@ -1,0 +1,70 @@
+{
+  "frozen_files_unchanged": 264,
+  "core_source_unchanged": [
+    {
+      "path": "hyperelastic_fem.py",
+      "sha256": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e"
+    },
+    {
+      "path": "surface_distance.py",
+      "sha256": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6"
+    },
+    {
+      "path": "pbc.py",
+      "sha256": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+    },
+    {
+      "path": "scripts/thin_target_explicit.py",
+      "sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967"
+    }
+  ],
+  "one_Abaqus_job_complete": true,
+  "old_native_input_and_ODB_unchanged": true,
+  "mirror_documents": [
+    {
+      "Windows": "RESEARCH_BACKGROUND.md",
+      "formal": "docs/RESEARCH_BACKGROUND.md",
+      "sha256": "fe9cf7cdfaa2b33a3d57bc09b81fa38685fcc91a6c28a235fef20c76274517d7"
+    },
+    {
+      "Windows": "RESEARCH_PLAN.md",
+      "formal": "docs/RESEARCH_PLAN.md",
+      "sha256": "4f9fc67ce47bc90fd673ec8e1ae43748582bb7911a497d27a04ef3a6735ebbf9"
+    },
+    {
+      "Windows": "PROJECT_OVERVIEW.md",
+      "formal": "docs/RESEARCH_STATUS.md",
+      "sha256": "db622f48911ce6fd34f40572af30b5511c253cd5ae40eae6d425afb5ea897e1c"
+    },
+    {
+      "Windows": "FILE_MAP.md",
+      "formal": "docs/FILE_MAP.md",
+      "sha256": "75ac3ae1d73bf9021f3a9c2bcfa9621d643c293c6814d906f966cfb18ecfadfb"
+    },
+    {
+      "Windows": "TPMS_RESEARCH_REVIEW.md",
+      "formal": "docs/TPMS_RESEARCH_REVIEW.md",
+      "sha256": "f2fcbc2a0dd3aa1990f781b107b9e5fb50f1b192035f19d5513076163150f9cf"
+    },
+    {
+      "Windows": "MECHANISM_ANALYSIS.md",
+      "formal": "docs/MECHANISM_ANALYSIS.md",
+      "sha256": "4397861568b810482be588514551ba8ee85ba0b1df8765aec231925809505bc0"
+    },
+    {
+      "Windows": "SHELL_RATE_PROGRESS.md",
+      "formal": "docs/SHELL_RATE_PROGRESS.md",
+      "sha256": "15b36352684fef0d67b2f89b4694727c01a86b3b0726fd5186952a1e678d2809"
+    }
+  ],
+  "broken_links": [],
+  "force_interpolation_matches_frozen_common_1_5_10pct": true,
+  "git_diff_check": "passed",
+  "visual_QA": "Response and 3x3 actual-mode figures inspected; overlapping initial labels corrected and old render retained in attempt01.",
+  "new_JAX_forward": 0,
+  "design_AD": false,
+  "step3_cause_not_located": true,
+  "step4_not_started": true,
+  "Git_commit_push_merge": false,
+  "tool_files_archived": 8
+}

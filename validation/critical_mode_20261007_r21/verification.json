@@ -1,0 +1,55 @@
+{
+  "frozen_files_unchanged": 320,
+  "core_unchanged": true,
+  "mirror_documents": [
+    {
+      "Windows": "RESEARCH_BACKGROUND.md",
+      "formal": "docs/RESEARCH_BACKGROUND.md",
+      "sha256": "dc160d2ba82d5219d9555da58bc497526fd1614340130022b33a652af8852fba"
+    },
+    {
+      "Windows": "RESEARCH_PLAN.md",
+      "formal": "docs/RESEARCH_PLAN.md",
+      "sha256": "62d48cd1d494ee4d93ed09f4d6502c377b448be309ba82d72055e93d34ff6931"
+    },
+    {
+      "Windows": "PROJECT_OVERVIEW.md",
+      "formal": "docs/RESEARCH_STATUS.md",
+      "sha256": "e14b6e861fe834e02cb6fc85fd12e39fe6523147cbad8c78ffef78f0498d3fd2"
+    },
+    {
+      "Windows": "FILE_MAP.md",
+      "formal": "docs/FILE_MAP.md",
+      "sha256": "fd150f35e7659c6eaf3a10a33843d2ec608f89ef37f0040e6259a9fa2e928f05"
+    },
+    {
+      "Windows": "TPMS_RESEARCH_REVIEW.md",
+      "formal": "docs/TPMS_RESEARCH_REVIEW.md",
+      "sha256": "03adfd0c791fd718550f241cff5a6c6e2e511b53b16fc91c40e130a5e8776267"
+    },
+    {
+      "Windows": "MECHANISM_ANALYSIS.md",
+      "formal": "docs/MECHANISM_ANALYSIS.md",
+      "sha256": "7f8ad63fa623d073519e9d725638331ff7a8f3be2f6d4d1bf28124c4eb2f4071"
+    },
+    {
+      "Windows": "CRITICAL_MODE_PROGRESS.md",
+      "formal": "docs/CRITICAL_MODE_PROGRESS.md",
+      "sha256": "ee8e83e0ae61177ee85b80e7b7812074117e0e11c8bf9113762dc62e16819cab"
+    }
+  ],
+  "broken_links": [],
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "design_AD": false,
+  "current_running_jobs": 0,
+  "Git_commit_push_merge": false,
+  "mechanical_checks": "Q2 embedding, original Gauss/periodic map, symmetry, direct versus Ritz curvature; JVP columns and BLAS equivalence for new implementation.",
+  "not_full_space_or_static_buckling_certification": true,
+  "visual_QA": "Mode figure inspected before closure, no actual deformation implied.",
+  "zero_target_states_converged": 2,
+  "all_six_modes_classified": true,
+  "candidate_not_fine_critical_mode": true,
+  "CUDA_preallocation_warning_recorded_with_successful_interpretation_exit": true,
+  "archived_tool_files": 27
+}

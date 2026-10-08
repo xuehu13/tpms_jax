@@ -1,0 +1,4 @@
+{
+  "issue": "Initial check required bitwise equality of separate GPU periodic scatter reductions, which need not be deterministic. No scientific run was launched.",
+  "correction": "Nodal HRZ masses must remain bitwise equal; periodic class reduction relative roundoff below 2e-14. Mass formula untouched; original failed check source retained."
+}

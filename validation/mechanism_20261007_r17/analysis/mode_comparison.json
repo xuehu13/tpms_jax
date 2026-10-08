@@ -1,0 +1,50 @@
+[
+  {
+    "state": "original_diagnostic/accepted_a0.1000.npz",
+    "file": "accepted_a0.1000_midsurface.npz",
+    "compression": 0.10318311216977079,
+    "JAX_fluctuation_RMS_mm": 0.11547370450365371,
+    "shell_nearest_file": "frame_a0.1000.npz",
+    "shell_nearest_compression": 0.0981281042098999,
+    "compression_difference": 0.005055007959870891,
+    "shell_nearest_fluctuation_RMS_mm": 0.11419511384641402,
+    "area_weighted_pattern_cosine": 0.998480481878958,
+    "scope": "Actual accepted JAX field Q2-interpolated on original midsurface; compared with nearest saved shell frame. Unequal compression; cosine is a pattern diagnostic, not eigenmode or accuracy certification."
+  },
+  {
+    "state": "original_diagnostic/accepted_a0.1200.npz",
+    "file": "accepted_a0.1200_midsurface.npz",
+    "compression": 0.12235806246428892,
+    "JAX_fluctuation_RMS_mm": 0.1383794406918115,
+    "shell_nearest_file": "frame_a0.1140.npz",
+    "shell_nearest_compression": 0.11862679719924926,
+    "compression_difference": 0.0037312652650396544,
+    "shell_nearest_fluctuation_RMS_mm": 0.19350293200064134,
+    "area_weighted_pattern_cosine": 0.8158892148497184,
+    "scope": "Actual accepted JAX field Q2-interpolated on original midsurface; compared with nearest saved shell frame. Unequal compression; cosine is a pattern diagnostic, not eigenmode or accuracy certification."
+  },
+  {
+    "state": "original_diagnostic/accepted_a0.1400.npz",
+    "file": "accepted_a0.1400_midsurface.npz",
+    "compression": 0.14058631476796862,
+    "JAX_fluctuation_RMS_mm": 0.16114007482156661,
+    "shell_nearest_file": "frame_a0.1400.npz",
+    "shell_nearest_compression": 0.13823457956314086,
+    "compression_difference": 0.0023517352048277596,
+    "shell_nearest_fluctuation_RMS_mm": 0.27199631083992254,
+    "area_weighted_pattern_cosine": 0.7597209788977108,
+    "scope": "Actual accepted JAX field Q2-interpolated on original midsurface; compared with nearest saved shell frame. Unequal compression; cosine is a pattern diagnostic, not eigenmode or accuracy certification."
+  },
+  {
+    "state": "original_diagnostic/accepted_a0.1590.npz",
+    "file": "accepted_a0.1590_midsurface.npz",
+    "compression": 0.159662399170054,
+    "JAX_fluctuation_RMS_mm": 0.18843233855705635,
+    "shell_nearest_file": "frame_a0.1600.npz",
+    "shell_nearest_compression": 0.1560315728187561,
+    "compression_difference": 0.003630826351297911,
+    "shell_nearest_fluctuation_RMS_mm": 0.3078076743063663,
+    "area_weighted_pattern_cosine": 0.8140020968048762,
+    "scope": "Actual accepted JAX field Q2-interpolated on original midsurface; compared with nearest saved shell frame. Unequal compression; cosine is a pattern diagnostic, not eigenmode or accuracy certification."
+  }
+]

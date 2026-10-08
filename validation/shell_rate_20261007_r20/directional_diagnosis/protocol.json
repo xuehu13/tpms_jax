@@ -1,0 +1,28 @@
+{
+  "plan_step": 3,
+  "factor": "Mechanical response in one observed periodic jump direction",
+  "question": "Is the much later JAX jump accompanied by an earlier negative curvature in its observed jump direction, or is this direction still locally stiff?",
+  "direction": "r18 last_valid_field q minus accepted_a0.1600 q, fixed at all tested states; full periodic DOFs, pin unchanged",
+  "states": [
+    "accepted_a0.1000.npz",
+    "accepted_a0.1200.npz",
+    "accepted_a0.1400.npz",
+    "accepted_a0.1600.npz",
+    "last_valid_field.npz"
+  ],
+  "kernel": "same existing material stress derivative, same HEX27 basis/Gauss and complete JxW domain",
+  "partitions": [
+    "phi<=0.001",
+    "0.001<phi<0.01",
+    "0.01<=phi<0.5",
+    "phi>=0.5"
+  ],
+  "method": "deltaF : dP(F)[deltaF], summed at each frozen state, actual F/J and scale",
+  "not_an_eigenmode_or_static_buckling_point": true,
+  "negative_direction_is_sufficient_for_local_energy_nonconvexity": true,
+  "positive_direction_does_not_certify_global_stability": true,
+  "frozen_states_are_dynamic_not_exact_equilibria": true,
+  "no_time_advance_no_design_AD_no_input_changes": true,
+  "bounded_attempt": "one batched pass through five retained states; no parameter or direction scan",
+  "response_if_inconclusive": "Retain limited conclusion; do not claim stiffness proven or auto-fit a perturbation."
+}

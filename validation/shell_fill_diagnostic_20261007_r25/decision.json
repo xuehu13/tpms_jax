@@ -1,0 +1,26 @@
+{
+  "nearzero_gate_pass": false,
+  "checks": {
+    "solver_completed": false,
+    "extraction_success": true,
+    "target17_reached": false,
+    "finite": true,
+    "peak_shift_le_0p5pp": false,
+    "peak_force_difference_le5pct": false,
+    "curve_fixed_RMS_le5pct": false,
+    "curve_matched_RMS_le5pct": false,
+    "energy_drift_le1pct": true,
+    "artificial_energy_le5pct": true,
+    "sampled_PBC_le1e6_mm": false,
+    "sampled_UR_PBC_le1e6_rad": true,
+    "sampled_positive_host_volume": true,
+    "fatal_diagnostic_no_inverted_host": false
+  },
+  "response_gate_pass": false,
+  "numerical_screen_pass": false,
+  "next_action": "No finite-fill expansion; next separately protocol one JAX-only low-occupancy energy intervention against frozen r18, without attributing shell peak behavior from failed r25.",
+  "soft_void_is_proven_unique_cause": false,
+  "nearzero_control_does_not_certify_JAX": true,
+  "no_finite_fill_submitted": true,
+  "no_new_JAX_or_design_AD": true
+}

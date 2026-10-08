@@ -1,0 +1,114 @@
+{
+  "complete_20pct_and_hold": false,
+  "stop": {
+    "type": "TimeoutError",
+    "message": "Controlled forward budget stop; not a numerical method failure"
+  },
+  "receipt": {
+    "returncode": 1,
+    "wall_seconds": 1530.0346384550212,
+    "result_exists": false,
+    "failure_exists": true
+  },
+  "accepted_observations": 685,
+  "accepted_final": {
+    "time": 0.002928756670124946,
+    "compression": 0.17536302435107093,
+    "Fz_N": -1.3936672102323806,
+    "internal_macro_Fz_N": -1.649719510533237,
+    "energy_N_mm": 5.460327787376295,
+    "KE_N_mm": 1.1146593292004374,
+    "KE_over_U": 0.2041378050192175,
+    "J_finite": true,
+    "J_min": -9.713530861547673,
+    "invalid_material_points": 0,
+    "negative_J_points": 12976,
+    "required_positive_J_min": 0.09578537374222007,
+    "required_positive_J_points": 141282,
+    "dt_seconds": 2.3559230036849513e-08
+  },
+  "min_required_J_over_accepted_endpoints": 0.02462539228906777,
+  "max_accepted_end_dt_sqrt_R": 1.8221279947362865,
+  "max_accepted_start_dt_sqrt_R": 1.6000000000000003,
+  "dt_nominal_s": 2.693272938728041e-07,
+  "minimum_accepted_dt_s": 2.3559230036849513e-08,
+  "minimum_accepted_dt_fraction": 0.08747435025272965,
+  "loading_low_KE_time_fraction_observed_range": 0.9110003159502985,
+  "loading_high_KE_time_seconds": 0.00019502635319194883,
+  "input_work_N_mm_observed_range": 6.5748251905675765,
+  "energy_work_gap_observed_range": 2.4628184698838938e-05,
+  "common_compression_force_table": [
+    {
+      "compression": 0.01,
+      "controlled_N": 0.5006483078186619,
+      "shell_N": 0.46555922817458134,
+      "relative_shell_difference": 0.07536974356981789,
+      "original_JAX_N": 0.5006507289302063,
+      "relative_original_JAX_difference": -4.83592933070127e-06
+    },
+    {
+      "compression": 0.05,
+      "controlled_N": 2.4713164461401433,
+      "shell_N": 2.319672099352383,
+      "relative_shell_difference": 0.06537318219678427,
+      "original_JAX_N": 2.471316564441201,
+      "relative_original_JAX_difference": -4.7869649538593465e-08
+    },
+    {
+      "compression": 0.1,
+      "controlled_N": 4.849331417702432,
+      "shell_N": 4.535820606327636,
+      "relative_shell_difference": 0.0691188736471272,
+      "original_JAX_N": 4.849377430394925,
+      "relative_original_JAX_difference": -9.488371064748365e-06
+    },
+    {
+      "compression": 0.12,
+      "controlled_N": 5.729865710807766,
+      "shell_N": 2.927569261491428,
+      "relative_shell_difference": 0.9572092746624647,
+      "original_JAX_N": 5.729774551687645,
+      "relative_original_JAX_difference": 1.590972197921305e-05
+    },
+    {
+      "compression": 0.14,
+      "controlled_N": 6.528361936981765,
+      "shell_N": 1.5935826252440202,
+      "relative_shell_difference": 3.096657326432697,
+      "original_JAX_N": 6.528204878780469,
+      "relative_original_JAX_difference": 2.4058405673889872e-05
+    },
+    {
+      "compression": 0.15,
+      "controlled_N": 6.871892264355591,
+      "shell_N": 1.2551060843939241,
+      "relative_shell_difference": 4.475148555011544,
+      "original_JAX_N": 6.871197158310682,
+      "relative_original_JAX_difference": 0.00010116229077600728
+    },
+    {
+      "compression": 0.16,
+      "controlled_N": 7.065210083289826,
+      "shell_N": 1.6189211840342386,
+      "relative_shell_difference": 3.3641470338190373,
+      "original_JAX_N": null,
+      "relative_original_JAX_difference": null
+    }
+  ],
+  "new_abaqus_jobs": 0,
+  "new_design_AD_jobs": 0,
+  "reference_quality_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": true,
+    "artificial_energy_le_5pct_work": false
+  },
+  "scope": "Observed accepted endpoints only; partial range is not full 20% certification. Shell quality failures remain.",
+  "full_metrics": null
+}

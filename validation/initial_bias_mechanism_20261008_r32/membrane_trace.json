@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "shell_trace_membrane_N_mm": 2.2158564979322558e-06,
+  "original_ODB_membrane_N_mm": 2.215856498349056e-06,
+  "shell_trace_energy_relative_difference": -1.8809898083560483e-10,
+  "shell_trace_agreement_limit": 0.01,
+  "background_trace_membrane_N_mm": 2.25552559767147e-06,
+  "background_over_shell_trace_energy_minus_one": 0.017902377602625252,
+  "definition": "Piecewise-linear triangle trace of the saved physical displacement on the exact same midsurface; homogeneous plane-stress membrane energy with true t=0.5mm. No equilibrium is recomputed, no background constitutive law is replaced.",
+  "interpretation": "Only compare trace energies as corresponding shell membrane quantities when shell own displacement energy is within the fixed 1% ODB reconstruction gate. Difference is a diagnostic of saved trace and approximation, not a causal stiffness correction or background membrane/bending split.",
+  "causal_factor_identified": false
+}

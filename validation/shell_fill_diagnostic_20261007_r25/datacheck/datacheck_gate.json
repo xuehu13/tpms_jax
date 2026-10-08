@@ -1,0 +1,18 @@
+{
+  "phase": "datacheck",
+  "Abaqus_log_success": false,
+  "dispatcher_returncode_not_a_success_test": true,
+  "system_exception": true,
+  "input_errors": [],
+  "warnings": [
+    "***WARNING: THE OPTION *BOUNDARY,TYPE=DISPLACEMENT HAS BEEN USED; CHECK STATUS \n             FILE BETWEEN STEPS FOR WARNINGS ON ANY JUMPS PRESCRIBED ACROSS THE \n             STEPS IN DISPLACEMENT VALUES OF TRANSLATIONAL DOF. FOR ROTATIONAL \n             DOF MAKE SURE THAT THERE ARE NO SUCH JUMPS. ALL JUMPS IN "
+  ],
+  "embedded_shell_nodes": 8372,
+  "all_8372_embedded": true,
+  "host_weight_counts_ok": true,
+  "max_printed_weight_sum_error": 1.8599999999979744e-05,
+  "printed_weight_min": 2.10773e-17,
+  "printed_precision_not_exact_interpolation_verification": true,
+  "approved_for_nearzero_solve": false,
+  "INP_sha256": "fed40f91d71101261da15507f32b58b3c0d8c1f9c8cfd2e2223dd1050e8ed927"
+}

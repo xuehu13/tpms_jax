@@ -1,0 +1,17 @@
+{
+  "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+  "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+  "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+  "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+  "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+  "validation/void_support_20261007_r26/comparison.json": "497aaa1e0039f4732f61da9c52ba938664972af7eb959fcf894cf419146b2597",
+  "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": "f0251631d3c674acc0c598a3359b8e47d7927810ec1e0795af9bf89a68db7f57",
+  "validation/geometry_transfer_20261006_r15/surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+  "validation/geometry_transfer_20261006_r15/input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+  "validation/plate_bending_20261008_r27/comparison.json": "6befa191f1d14e637ba028bc1da25fbd2d126b34da2e020a4906ac43f6fb2bab",
+  "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": "a34dbb3340590335f1dda1b3e94d17f0592dc865036fffa92fd0d5fda0dfcece",
+  ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/problem.py": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2",
+  ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/fe.py": "2d05679123b3fe10e483b37c218a2e9008c40e8118e9e1a1f97d1817003e2032",
+  ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/basis.py": "51641346c7d4d1c445d34fe8ea8572f4f44001fa7c428aea6331b08042173654"
+}

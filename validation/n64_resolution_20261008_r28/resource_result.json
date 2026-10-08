@@ -1,0 +1,48 @@
+{
+  "status": "N64_initial_resource_probe_completed",
+  "N": 64,
+  "nodes": 2146689,
+  "elements": 262144,
+  "Gauss_points_per_cell": 27,
+  "integrated_occupancy": 0.1324512243730824,
+  "total_material_plus_floor_mass_tonne": 1.3253797925064496e-07,
+  "nominal_dt_seconds": 1.3467056365177105e-07,
+  "initial_safe_dt_seconds": 1.2846942163185998e-07,
+  "initial_bound_s_minus2": 155110224862068.97,
+  "compile_bound_seconds": 10.886663684039377,
+  "compile_advance_seconds": 41.64519940398168,
+  "compile_observe_seconds": 4.393334481981583,
+  "block_costs": [
+    {
+      "advance_seconds": 38.84336926601827,
+      "observe_seconds": 0.5866334750317037,
+      "bound_seconds": 9.525554275955074
+    },
+    {
+      "advance_seconds": 38.73509578604717,
+      "observe_seconds": 0.5714911409886554,
+      "bound_seconds": 6.078570766025223
+    }
+  ],
+  "constant_initial_dt_estimated_steps": 34250,
+  "optimistic_body_estimate_seconds": 12641.655771148857,
+  "probe_seconds": 152.30113360995892,
+  "peak_RSS_GiB": 4.678867340087891,
+  "probe_endpoint": {
+    "time": 1.644408596887809e-05,
+    "compression": 1.3810114721897062e-07,
+    "Fz_N": -0.00013150717515350268,
+    "internal_macro_Fz_N": -1.1444412392807277e-05,
+    "energy_N_mm": 4.622115975052556e-11,
+    "KE_N_mm": 6.777122855065073e-11,
+    "KE_over_U": 1.4662381670308509,
+    "J_finite": true,
+    "J_min": 0.9999937045467119,
+    "invalid_material_points": 0,
+    "negative_J_points": 0,
+    "required_positive_J_min": 0.9999989158724363,
+    "required_positive_J_points": 1131151
+  },
+  "from_zero_full20_started": false,
+  "scope": "Initial-state cost only; two discarded duplicate short blocks, no full path and no peak/20pct or AD claim. Later dt reduction and 16-step monitoring can substantially increase cost."
+}

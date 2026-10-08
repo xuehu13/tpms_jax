@@ -1,0 +1,38 @@
+{
+  "research_question": "Does a 10x faster loading shift the observed shell snap toward the existing JAX trajectory?",
+  "user_authorization": "2026-10-07: 好的，开始按照规划进行吧",
+  "plan_step": 2,
+  "one_new_Abaqus_job": true,
+  "new_JAX_forward": false,
+  "design_AD": false,
+  "only_physical_change": "load/hold duration divided by 10; smooth-step shape unchanged",
+  "INP_changed_lines": 3,
+  "third_change": "history output interval divided by 10, not a physical parameter",
+  "same_model_reverse_byte_check": true,
+  "same_extractor_sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+  "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/shell_rate_20261007_r20_diverse04_explicit_T0p004",
+  "job_settings": {
+    "cpus": 4,
+    "double": "both",
+    "interactive": true
+  },
+  "target_compression": 0.2,
+  "new_load_s": 0.004,
+  "new_hold_s": 0.0004,
+  "keep_original_quasistatic_checks_as_diagnostics": true,
+  "JAX_comparison_limit": 0.17536302435107093,
+  "windows_defined_before_run": {
+    "prejump_compressions": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "common_postjump_loading_compression": [
+      0.17,
+      0.175
+    ],
+    "shell_hold_mean": "last half of each shell hold; no existing JAX hold comparison"
+  },
+  "mode_scope": "existing S3R field output frames, same reference surface; nearest compression labels retained",
+  "next_single_factor_chosen_only_after_results": true
+}

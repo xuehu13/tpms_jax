@@ -1,0 +1,221 @@
+{
+  "shell": {
+    "Q_rad": 0.007661475799977779,
+    "compliance_per_N_mm": 76.6147579997778,
+    "effective_EI_N_mm2": 0.1305231558654666,
+    "tip_average_uz_mm": -0.03822087682783604,
+    "reference_relative_compliance": -0.002412005211226642,
+    "root_reaction_force_N": [
+      4.235164706787825e-21,
+      -1.4558378868201025e-21,
+      4.547473508864641e-13
+    ],
+    "root_reaction_moment_N_mm": [
+      1.5136478767434347e-18,
+      -0.00010000000020227162,
+      4.757078700983945e-38
+    ],
+    "energies_N_mm": {
+      "ALLAE": 5.296402639382025e-12,
+      "ALLIE": 3.8307379668367503e-07,
+      "ALLSE": 3.8306848182401154e-07,
+      "ALLWK": 3.8307379668367503e-07
+    },
+    "checks": {
+      "analytic_reference_5pct": true,
+      "reaction_moment": true,
+      "reaction_force": true,
+      "artificial_energy": true,
+      "finite_positive_compliance": true
+    },
+    "reference_gate_pass": true,
+    "scope": "one independent linear static S4R reference; no finite-strain path"
+  },
+  "phases": [
+    {
+      "scope": "independent linear static equilibrium of original shared initial material tangent, not finite-strain path or AD",
+      "phase_name": "phase_layer",
+      "midsurface_z_mm": 1.25,
+      "mesh_cells": 1024,
+      "mesh_nodes": 9945,
+      "cells_per_axis": [
+        32,
+        4,
+        8
+      ],
+      "h_mm": 0.3125,
+      "quad_per_cell": 27,
+      "thickness_mm": 0.5,
+      "E_MPa": 10.0,
+      "nu": 0.3,
+      "eta": 0.0001,
+      "interface_10_90_mm": 0.05,
+      "moment_N_mm": 0.0001,
+      "Q_rad": 0.009673732756568265,
+      "compliance_per_N_mm": 96.73732756568265,
+      "effective_EI_N_mm2": 0.10337271301205014,
+      "linear_strain_energy_N_mm": 4.836866378465232e-07,
+      "energy_work_relative": 3.7441383327063704e-11,
+      "free_residual_relative": 1.1222724308528234e-11,
+      "root_reaction_force_N": [
+        -8.394906829961786e-16,
+        3.446765175656752e-16,
+        4.318587077711896e-15
+      ],
+      "root_reaction_moment_N_mm": [
+        3.574173574502183e-15,
+        -0.00010000000003299408,
+        2.911619971126147e-15
+      ],
+      "actual_J_min": 0.9988400009328524,
+      "small_strain_norm_max": 0.0016009595708208826,
+      "K_symmetry_relative": 6.40900869909429e-17,
+      "shared_tangent_absolute_error": 3.552713678800501e-15,
+      "load": {
+        "area_mm2": 0.5825272875852248,
+        "centroid_z_mm": 1.25,
+        "I_mm4": 0.01030138278454575,
+        "resultant_force_N": [
+          -2.1175244654928721e-19,
+          0.0,
+          0.0
+        ],
+        "applied_moment_N_mm": [
+          0.0,
+          0.0001,
+          1.2918989524914442e-19
+        ]
+      },
+      "continuous_section": {
+        "area_mm2": 0.6252500000081572,
+        "centroid_z_mm": 1.2499999999999998,
+        "I_mm4": 0.013448453756154752,
+        "physical_I_mm4": 0.013020833333333334
+      },
+      "actual_Gauss_section_I_mm4": 0.010301382784545739,
+      "Gauss_vs_dense_I_relative": -0.23400987419603836,
+      "effective_EI_vs_Gauss_EI_relative": 0.003483854295087019,
+      "checks": {
+        "free_residual": true,
+        "load_net_force": true,
+        "reaction_moment": true,
+        "reaction_net_force": true,
+        "energy_work": true,
+        "finite_positive_small_J": true,
+        "matrix_symmetry": true,
+        "shared_tangent": true
+      },
+      "all_checks_pass": true,
+      "cost_seconds": {
+        "preparation": 1.5317137759411708,
+        "assembly": 8.569046927033924,
+        "linear_solve": 1.2694698810810223,
+        "total": 12.342484912951477
+      }
+    },
+    {
+      "scope": "independent linear static equilibrium of original shared initial material tangent, not finite-strain path or AD",
+      "phase_name": "phase_half",
+      "midsurface_z_mm": 1.40625,
+      "mesh_cells": 1024,
+      "mesh_nodes": 9945,
+      "cells_per_axis": [
+        32,
+        4,
+        8
+      ],
+      "h_mm": 0.3125,
+      "quad_per_cell": 27,
+      "thickness_mm": 0.5,
+      "E_MPa": 10.0,
+      "nu": 0.3,
+      "eta": 0.0001,
+      "interface_10_90_mm": 0.05,
+      "moment_N_mm": 0.0001,
+      "Q_rad": 0.008744735412899444,
+      "compliance_per_N_mm": 87.44735412899443,
+      "effective_EI_N_mm2": 0.11435451763639301,
+      "linear_strain_energy_N_mm": 4.372367706153732e-07,
+      "energy_work_relative": -6.769551585961153e-11,
+      "free_residual_relative": 4.880790017804797e-11,
+      "root_reaction_force_N": [
+        9.065346626059753e-17,
+        3.7966736465791816e-17,
+        -2.6999374343873945e-14
+      ],
+      "root_reaction_moment_N_mm": [
+        -1.633747966835218e-14,
+        -9.999999979794375e-05,
+        7.4995757662700245e-16
+      ],
+      "actual_J_min": 0.9987869150170197,
+      "small_strain_norm_max": 0.001676389786160768,
+      "K_symmetry_relative": 6.438332532129001e-17,
+      "shared_tangent_absolute_error": 3.552713678800501e-15,
+      "load": {
+        "area_mm2": 0.6080525562517238,
+        "centroid_z_mm": 1.4061696975253244,
+        "I_mm4": 0.011396808118832966,
+        "resultant_force_N": [
+          -1.3575063691857813e-18,
+          0.0,
+          0.0
+        ],
+        "applied_moment_N_mm": [
+          0.0,
+          0.0001,
+          8.376733986232628e-19
+        ]
+      },
+      "continuous_section": {
+        "area_mm2": 0.6252500000081572,
+        "centroid_z_mm": 1.4061719062375058,
+        "I_mm4": 0.013456079337514004,
+        "physical_I_mm4": 0.013020833333333334
+      },
+      "actual_Gauss_section_I_mm4": 0.011396808118832938,
+      "Gauss_vs_dense_I_relative": -0.15303649503165861,
+      "effective_EI_vs_Gauss_EI_relative": 0.0033907427766994847,
+      "checks": {
+        "free_residual": true,
+        "load_net_force": true,
+        "reaction_moment": true,
+        "reaction_net_force": true,
+        "energy_work": true,
+        "finite_positive_small_J": true,
+        "matrix_symmetry": true,
+        "shared_tangent": true
+      },
+      "all_checks_pass": true,
+      "cost_seconds": {
+        "preparation": 0.19238192902412266,
+        "assembly": 8.472042908077128,
+        "linear_solve": 1.941543060936965,
+        "total": 11.257954214001074
+      }
+    }
+  ],
+  "shell_reference_gate": true,
+  "background_validity": true,
+  "phase_compliance_relative": -0.09603297579603398,
+  "phase_sensitivity_gt_5pct": true,
+  "background_relative_shell_compliance": {
+    "phase_layer": 0.2626461283864294,
+    "phase_half": 0.14139046330013927
+  },
+  "background_within_10pct": {
+    "phase_layer": false,
+    "phase_half": false
+  },
+  "no_TPMS_peak_or_20pct_or_design_AD_conclusion": true,
+  "frozen_files_unchanged": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true
+  }
+}

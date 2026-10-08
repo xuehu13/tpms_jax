@@ -1,0 +1,53 @@
+{
+  "job_receipt": {
+    "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\plate_bending_20261008_r27",
+    "command": [
+      "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+      "job=plate",
+      "input=plate.inp",
+      "cpus=1",
+      "interactive",
+      "ask_delete=OFF"
+    ],
+    "one_new_job": true,
+    "input_sha256": {
+      "plate.inp": "b7dba0e752f817a36aa7cc89059a4f65a25ba350f5817e53f5a1f9b5f0078147",
+      "input.json": "1d960902502f8383c69c15bcbd4c359ae9fffc66755c6bcc03e5a7f63ec97706",
+      "extract_shell.py": "bd09d5fd21c5bf191b61c0dae11bd12d4a5d648e0c1140ac064652adea6f03fa"
+    },
+    "job_seconds": 22.038679599994794,
+    "returncode": 0,
+    "analysis_completed_successfully": true,
+    "extract_seconds": 0.39382060000207275,
+    "extract_returncode": 0,
+    "input_files_unchanged": true,
+    "scope_note": "Original job receipt retained: exit 0 did not certify initial extraction; see postprocess_correction.json for final successful read-only extraction."
+  },
+  "postprocess": {
+    "initial_postprocess_failure": "KeyError ROOT: flat input node set stored in instance, not rootAssembly; initial Abaqus python command returned 0 despite traceback",
+    "correction": "Use exact declared root labels from the generated input metadata; verify field labels. Read-only extraction, no new analysis.",
+    "odb_sha256_before": "6ec363db430509ffda360920caee89047a36d80dad979a2c617b40a1bbd9ad21",
+    "inp_sha256_before": "b7dba0e752f817a36aa7cc89059a4f65a25ba350f5817e53f5a1f9b5f0078147",
+    "extractor_v2_sha256": "1415879a8ad8f0da142d89c937b004878b1d9a63b5212a9ccd30efd09c00fba4",
+    "second_postprocess_failure": "NumPy bool_ from ODB field data not JSON serializable; v2 returned 0 despite traceback",
+    "final_correction": "Convert field/history numbers to builtin float; exact root labels verified. Read-only v3, original native v1/v2 retained.",
+    "extractor_final_sha256": "326a46c30e81f66399da8465591206fc846bd1a6a49e606d2151d9ebbc3104d7",
+    "final_shell_sha256": "457c3ff8cdacbd3d41cbfd5605e749bc498eabdd15e6270240b0bed0f9f88621",
+    "final_result_gate_pass": true,
+    "inp_unchanged_after_postprocess": true,
+    "odb_unchanged_after_postprocess": true,
+    "new_analysis_submissions_after_first_job": 0
+  },
+  "background_runs": 2,
+  "abaqus_new_jobs": 1,
+  "frozen_files_unchanged": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true
+  }
+}

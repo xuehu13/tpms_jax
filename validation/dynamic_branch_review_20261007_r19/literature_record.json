@@ -1,0 +1,60 @@
+[
+  {
+    "file": "C:\\Users\\xuehu\\Desktop\\tpms优化\\TPMS 体素有限元、几何精度与力学验证\\Experimental and numerical studies on mechanical properties of TPMS structures.pdf",
+    "sha256": "9c80564343f97bd3cb01e8f55e8064c8cc38a7c21fe6a456f7f35baa29eb27f0",
+    "pages": 18,
+    "read_pages": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "metadata": {
+      "/Creator": "Elsevier",
+      "/CrossMarkDomains[1]": "elsevier.com",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/CreationDate--Text": "20th December 2023",
+      "/ElsevierWebPDFSpecifications": "7.0",
+      "/robots": "noindex",
+      "/ModDate": "D:20231220104723Z",
+      "/Author": "Na Qiu",
+      "/doi": "10.1016/j.ijmecsci.2023.108657",
+      "/Keywords": "Triply periodic minimal surface,Selective laser melting,Finite elements,Energy absorption,Mechanical property",
+      "/Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "/CreationDate": "D:20231220100103Z",
+      "/Title": "Experimental and numerical studies on mechanical properties of TPMS structures",
+      "/Subject": "International Journal of Mechanical Sciences, 261 (2024) 108657. doi:10.1016/j.ijmecsci.2023.108657",
+      "/CrossMarkDomains[2]": "sciencedirect.com",
+      "/CrossmarkDomainExclusive": "true"
+    }
+  },
+  {
+    "file": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour.pdf",
+    "sha256": "e8db9aa5fcca053f9c2b5bca6cd1c0d7de23472e296ea50c5a9d04f5fc7c82f6",
+    "pages": 16,
+    "read_pages": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "metadata": {
+      "/Author": "Dilaksan Thillaithevan ",
+      "/CreationDate": "D:20251115095102+05'30'",
+      "/Creator": "Springer",
+      "/CrossMarkDomains[1]": "springer.com",
+      "/CrossMarkDomains[2]": "springerlink.com",
+      "/CrossmarkDomainExclusive": "true",
+      "/CrossmarkMajorVersionDate": "2010-04-23",
+      "/Keywords": "Inverse homogenization; Inverse design; Topology optimization; Hyperelasticity; Finite strain; Periodic microstructures; Metamaterials",
+      "/ModDate": "D:20251122073438+01'00'",
+      "/Producer": "Acrobat Distiller 10.1.8 (Windows); modified using iText® 5.5.13.4 ©2000-2024 iText Group NV (SPRINGER SBM; licensed version)",
+      "/Subject": "Structural and Multidisciplinary Optimization, https://doi.org/10.1007/s00158-024-03761-7",
+      "/Title": "Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour",
+      "/Trapped": "/False",
+      "/doi": "10.1007/s00158-024-03761-7",
+      "/robots": "noindex"
+    }
+  }
+]

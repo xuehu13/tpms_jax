@@ -1,0 +1,113 @@
+{
+  "protocol": {
+    "plan_step": 3,
+    "reason": "Smallest-algebraic mass-metric call is incomplete after cost stop. Critical tangent singularity is associated with zero; fixed zero-target extraction is not a shift chosen to fit force peaks. No more spectral retries in this scope.",
+    "states": [
+      "accepted_a0.1200.npz",
+      "accepted_a0.1600.npz"
+    ],
+    "subspace": "Same fixed N8 periodic Q2 space, same pin and complete original Gauss/material domain.",
+    "equation": "Kr v=lambda Mr v; Kr is reused original full-domain Ritz matrix, Mr=P^T diag(actual HRZ periodic mass) P, all three components and same pinned class.",
+    "meaning": "lambda has inverse-second-squared units for the entry normalization. No mass relumping or forward-model change.",
+    "solver": "One fixed sigma=0 shift-invert generalized eigsh, k=6 ncv=60 tol=1e-8 maxiter=400; same Kr/Mr. Extract closest-to-zero directions, not smallest algebraic/global minimum.",
+    "checks": [
+      "positive mass diagonal/full rank embedding, deterministic quadratic checks",
+      "M orthonormality and generalized eigen residual",
+      "reused stiffness hashes",
+      "mechanical full-domain selected mode curvature agrees with Kr",
+      "surface/void motion and shell finite event increment patterns"
+    ],
+    "positive_mode_limit": "No static base equilibrium or full-space stability certification. A positive minimum in this restricted space cannot rule out fine-space instability.",
+    "negative_mode_limit": "Record sign and material participation; does not uniquely identify shell/JAX cause or imply dynamic growth history.",
+    "budget_seconds": 220.4462334109703,
+    "cost_rule": "Uses remaining time of the single CUDA recovery scope; no new budget reset, no new forward, Abaqus or design AD.",
+    "not_a_parameter_or_perturbation_amplitude_fit": true,
+    "does_not_certify_no_other_negative_modes": true
+  },
+  "rows": [
+    {
+      "state": "accepted_a0.1200.npz",
+      "compression": 0.1219042645487386,
+      "converged": true,
+      "failure": null,
+      "eigenvalues_s_minus2": [
+        2801337.683578244,
+        2995489.7386798053,
+        3417359.8701006197,
+        32082696.315798014,
+        203296060.89554262,
+        240842636.03027537
+      ],
+      "ordering": "increasing absolute eigenvalue; nearest zero, not global minimum",
+      "generalized_relative_residuals": [
+        3.179212142345683e-11,
+        3.416057113776575e-11,
+        3.0650776867633545e-11,
+        1.3717200812027266e-11,
+        5.571359189546213e-12,
+        9.187348781985054e-12
+      ],
+      "mass_orthogonality_error": 1.1102230246251565e-15,
+      "eigen_seconds": 13.16309522697702,
+      "modes": [
+        {
+          "rank": 0,
+          "curvature_for_1mm_max_surface_mode_N_mm": 10.382215461358333,
+          "parts_N_mm": {
+            "deep_void": 0.12770833493898703,
+            "mixed_tail": 0.02311832820592533,
+            "main_interface": 0.9482888687702171,
+            "geometric_core": 9.283099929443203
+          },
+          "Ritz_direct_relative_error": 8.879888912728377e-14,
+          "occupancy_weighted_displacement_fraction": 0.13276735215411384,
+          "surface_RMS_mm": 0.6066107831141867,
+          "full_background_max_mode_mm": 7.435909206568896
+        }
+      ]
+    },
+    {
+      "state": "accepted_a0.1600.npz",
+      "compression": 0.16007084008727882,
+      "converged": true,
+      "failure": null,
+      "eigenvalues_s_minus2": [
+        2579686.758666016,
+        2977167.524552413,
+        3266236.8203071975,
+        21744274.13514215,
+        184532349.2127707,
+        196737492.17049396
+      ],
+      "ordering": "increasing absolute eigenvalue; nearest zero, not global minimum",
+      "generalized_relative_residuals": [
+        3.497065048292307e-11,
+        3.188274789255848e-11,
+        2.719785982351918e-11,
+        2.0182238793771206e-11,
+        8.793879279787997e-13,
+        1.895016841722479e-12
+      ],
+      "mass_orthogonality_error": 3.122502256758253e-16,
+      "eigen_seconds": 13.090168455964886,
+      "modes": [
+        {
+          "rank": 0,
+          "curvature_for_1mm_max_surface_mode_N_mm": 4.930048958556402,
+          "parts_N_mm": {
+            "deep_void": 0.12575540134098429,
+            "mixed_tail": 0.011804098369702809,
+            "main_interface": 0.5191694819580661,
+            "geometric_core": 4.273319976887648
+          },
+          "Ritz_direct_relative_error": 2.6933337754124384e-13,
+          "occupancy_weighted_displacement_fraction": 0.13328377054223037,
+          "surface_RMS_mm": 0.6563908936089119,
+          "full_background_max_mode_mm": 5.083507078392756
+        }
+      ]
+    }
+  ],
+  "mass_inverse_residual": 4.377645625021312e-14,
+  "wall_seconds": 32.33677640603855
+}

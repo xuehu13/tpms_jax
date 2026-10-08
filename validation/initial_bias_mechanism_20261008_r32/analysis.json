@@ -1,0 +1,59 @@
+{
+  "status": "ok",
+  "scope": "Read existing r30 zero-state equilibrium only; no new FEM/Abaqus job or AD",
+  "shell": {
+    "membrane_N_mm": 2.215856498349056e-06,
+    "bending_N_mm": 8.733343411394787e-08,
+    "recovered_N_mm": 2.3031899324630044e-06,
+    "membrane_fraction_of_ALLSE": 0.9531789642724348,
+    "bending_fraction_of_ALLSE": 0.03756759173579595,
+    "unreconstructed_fraction_of_ALLSE": 0.009253443991769082,
+    "ALLSE_N_mm": 2.324701426914544e-06,
+    "energy_recovery_within_1pct": true,
+    "interpretation": "Initial linear section S/E; transverse shear not requested in the original ODB. Recovered membrane/bending only, residual is not automatically assigned to any unique mechanism."
+  },
+  "shell_local_initial_constitutive_relative_error": 2.67530584003697e-08,
+  "background": {
+    "recomputed_energy_relative_error": 2.220446049250313e-16,
+    "pointwise_energy_identity_relative_error": 2.298679170189517e-16,
+    "tangential_plane_stress_energy_N_mm": 2.3839742550650173e-06,
+    "normal_relaxation_energy_N_mm": 1.9760497502094892e-08,
+    "transverse_shear_energy_N_mm": 5.449258830264069e-08,
+    "sum_is_original_total": true,
+    "interpretation": "Pointwise algebraic split in nearest-face frames; no global strain compatibility, no causal contribution, no membrane/bending split of the background."
+  },
+  "groups": [
+    {
+      "region": "top20pct_area",
+      "area_fraction": 0.19995058572912075,
+      "shell_membrane_N_mm": 1.409488430288207e-06,
+      "shell_bending_N_mm": 2.2808531665249554e-08,
+      "shell_recovered_energy_fraction": 0.6218753137835119,
+      "background_nearest_face_energy_fraction": 0.605186185735616,
+      "background_nearest_face_energy_N_mm": 1.4876852280919718e-06,
+      "background_tangential_plane_stress_energy_N_mm": 1.4413187592859325e-06
+    },
+    {
+      "region": "remaining_area",
+      "area_fraction": 0.8000494142708792,
+      "shell_membrane_N_mm": 8.063680680608494e-07,
+      "shell_bending_N_mm": 6.45249024486983e-08,
+      "shell_recovered_energy_fraction": 0.378124686216488,
+      "background_nearest_face_energy_fraction": 0.3948138142643839,
+      "background_nearest_face_energy_N_mm": 9.70542112777781e-07,
+      "background_tangential_plane_stress_energy_N_mm": 9.426554957790849e-07
+    }
+  ],
+  "normal_variation_proxy": {
+    "units": "1/mm",
+    "area_weighted_mean": 0.6589478592033324,
+    "shell_energy_weighted_mean": 1.1417473799169098,
+    "top20_area_weighted_mean": 0.9252349577187111,
+    "remaining_area_weighted_mean": 0.5923966432777736,
+    "nonmanifold_periodic_edges": 0,
+    "interpretation": "Facet normal angle divided by periodic centroid distance, averaged over adjacent faces; not principal curvature, thickness/radius, or proof of shell validity."
+  },
+  "causal_factor_identified": false,
+  "full_20pct_or_design_AD_certified": false,
+  "postprocess_seconds": 1.753121283953078
+}

@@ -68,3 +68,9 @@ validation/thickness_range_20261006_r13/**/*.inp
 !validation/thickness_range_20261006_r13/t0p45/abaqus/explicit_T0p040/thin_shell.inp
 validation/thickness_range_20261006_r13/**/progress.json
 validation/thickness_range_20261006_r13/**/extract_thin_explicit.py
+
+# Reassessment: preserve local snapshots; avoid publishing repeated navigation copies.
+docs/history/before_*/
+validation/critical_mode_20261007_r21/postprocess_layout01/
+validation/shell_rate_20261007_r20/analysis_attempt01/
+validation/initial_bias_mechanism_20261008_r32/shell_sections.json

@@ -1,0 +1,10 @@
+{
+  "status": "failed_document_link_check",
+  "broken": [
+    "docs/FILE_MAP.md GEOMETRY_TRANSFER_REVIEW.md",
+    "docs/TPMS_RESEARCH_REVIEW.md output/figures/VOID_CONTINUATION_response.png"
+  ],
+  "scientific_hash_check_passed": 535,
+  "core_unchanged": true,
+  "not_simulation_failure": true
+}

@@ -1,0 +1,53 @@
+{
+  "frozen_files_unchanged": 490,
+  "shared_core_unchanged": true,
+  "mirror_documents": [
+    {
+      "Windows": "RESEARCH_BACKGROUND.md",
+      "formal": "docs/RESEARCH_BACKGROUND.md",
+      "sha256": "928cb137ab800eb7bf037e7130892d53303d2e3cea4f728571f8897fb658f09e"
+    },
+    {
+      "Windows": "RESEARCH_PLAN.md",
+      "formal": "docs/RESEARCH_PLAN.md",
+      "sha256": "82bbada9919c9f3c6a8542b4bb832063117b3308aba99bdbeda16171c7e296db"
+    },
+    {
+      "Windows": "PROJECT_OVERVIEW.md",
+      "formal": "docs/RESEARCH_STATUS.md",
+      "sha256": "462408623774217aa873aefb8feedca710c6b00d79637c8dca11b7c2dab8e2a5"
+    },
+    {
+      "Windows": "FILE_MAP.md",
+      "formal": "docs/FILE_MAP.md",
+      "sha256": "fd786affd3ce02e5e751ff5469f18c77380231be288317a49443b929514096c6"
+    },
+    {
+      "Windows": "TPMS_RESEARCH_REVIEW.md",
+      "formal": "docs/TPMS_RESEARCH_REVIEW.md",
+      "sha256": "9970e384fcdf63420bbf30c68f2beb42448c65909f2013920703262588c5ed5f"
+    },
+    {
+      "Windows": "MECHANISM_ANALYSIS.md",
+      "formal": "docs/MECHANISM_ANALYSIS.md",
+      "sha256": "c826d3353b60092819ae6d7b7d55d175d43df1df9c73ef99b62d8774dc9625ae"
+    },
+    {
+      "Windows": "CRITICAL_MODE_PROGRESS.md",
+      "formal": "docs/CRITICAL_MODE_PROGRESS.md",
+      "sha256": "0d9064b3b0185f7bb233681f3ad3a3fa07132eca39e6490c3f2bb0bfb215ea75"
+    }
+  ],
+  "broken_links": [],
+  "operator_and_mass_equivalence_checked": true,
+  "four_returned_modes_converged": 0,
+  "not_a_critical_or_global_stability_certification": true,
+  "visual_QA": "Four-candidate scientific figure inspected; labels/colorbar legible, mode normalization and non-actual-deformation scope visible.",
+  "startup_interrupt_not_rewritten_as_success": true,
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "new_design_AD": false,
+  "current_running_or_queued_jobs": 0,
+  "Git_commit_push_merge": false,
+  "archived_tool_files": 9
+}

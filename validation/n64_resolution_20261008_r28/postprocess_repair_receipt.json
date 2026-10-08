@@ -1,0 +1,9 @@
+{
+  "returncode": 0,
+  "wall_seconds": 0.8380060420604423,
+  "only_change": "Axes.set_yscale receives linthresh instead of Axes.set",
+  "original_comparison_SHA256_unchanged": true,
+  "original_comparison_sha256": "03f0a539dfeb09aee7944cac6363b24180cf3484f4b65540c549445bb3c7af89",
+  "no_new_physical_job_or_AD": true,
+  "original_pipeline_receipt_preserved": true
+}

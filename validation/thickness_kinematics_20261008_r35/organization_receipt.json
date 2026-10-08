@@ -1,0 +1,115 @@
+{
+  "scope": "r35 observational only; no new FEM/Abaqus/AD or production change",
+  "old_entrances_archived": [
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/START_HERE.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/START_HERE.md",
+      "sha256": "01d52db323634f7b6d432c3149a8558b0f7e7aea75b7cff1f2197e774df26136"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_BACKGROUND.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/RESEARCH_BACKGROUND.md",
+      "sha256": "6a384070e29bc8e1096cfbb83062f1e5c0e52306f289fd61845b6bf336be8d6f"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_PLAN.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/RESEARCH_PLAN.md",
+      "sha256": "8ad6b10693b687e6c33c75b581cefd3ebddd89f3974cf34807d56aba923309ea"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/PROJECT_OVERVIEW.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/PROJECT_OVERVIEW.md",
+      "sha256": "6dc4b6780407a72ef0da92615271ff029c92ae2c0daae5e2a37b655879cadf62"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/FILE_MAP.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/FILE_MAP.md",
+      "sha256": "0f162ca90517f69a1ca918b64ddf3e1c9e62a11b755d12773956413746b7272b"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/MECHANISM_ANALYSIS.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/MECHANISM_ANALYSIS.md",
+      "sha256": "a3a81b54c33be93b3f6174dab0ee0820cc2807430ea6caad52e3b829397c4c89"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/TPMS_RESEARCH_REVIEW.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/TPMS_RESEARCH_REVIEW.md",
+      "sha256": "8a1e254d5936c8707a2948e5828f342083da729522393cdf5be7fd0a555701a2"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/PAPER_ROUTE.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/PAPER_ROUTE.md",
+      "sha256": "a3c5bd5ab89254981a1947c18d6ad6e422057a47f6ee30a3d563c32d3314577a"
+    },
+    {
+      "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/AGENTS.md",
+      "archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_r35_kinematics_20261008/AGENTS.md",
+      "sha256": "6c6d6833231b19177948306e5ec6066bae48e83c5b1cb44e541f00d2d08086bd"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/README.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/README.md",
+      "sha256": "0c309ac37a0c971fd89eb376783f51622376c4f624ed9af11c45ba6fe6aa7aa7"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_BACKGROUND.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/RESEARCH_BACKGROUND.md",
+      "sha256": "4e663186c9b1f79f7577dd9fbef132c7374c4f38ea1f91be8b8cf630e5b86712"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/RESEARCH_PLAN.md",
+      "sha256": "4891bb392c6b25e181ed16a759437fd39879d25baf8bb7ea7c0462fd1a31b90e"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/RESEARCH_STATUS.md",
+      "sha256": "c1f2da8df9506e9db30a2f54f35697302e0b9aadc3a4755cc000b937836ce501"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/FILE_MAP.md",
+      "sha256": "40df4c6137f1bef31928b72f2f75e862ebdff8c468a30e7f086745f5bf94ce02"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/MECHANISM_ANALYSIS.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/MECHANISM_ANALYSIS.md",
+      "sha256": "ce0ed568381081b5146a292f3ab1af8548686b48e65afeb320ddf95384c53bbc"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/TPMS_RESEARCH_REVIEW.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/TPMS_RESEARCH_REVIEW.md",
+      "sha256": "5dd47e686582e09bb78bcfc4dea700b8107d5d4884b0fad1a79f545eb20e0c13"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/docs/PAPER_ROUTE.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/PAPER_ROUTE.md",
+      "sha256": "740864de3143b4380b8d758cb284eb3d98f426d7403673b81f70159e5032fa98"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/AGENTS.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/AGENTS.md",
+      "sha256": "4d7176f07d9af63686afa3c4471707ba95d1fc91bb140d82df8ce21fb1e66fd3"
+    },
+    {
+      "source": "/home/xuehu/projects/tpms_jax/validation/README.md",
+      "archive": "/home/xuehu/projects/tpms_jax/docs/history/before_r35_kinematics_20261008/validation_README.md",
+      "sha256": "e239d0132cfd1d24645c0156e9703d4d3d12caac99d2b0cbaf12fa970dce85e6"
+    }
+  ],
+  "current_local_links_checked": 183,
+  "broken_links": [],
+  "frozen_sources_and_protocol_verified": 36,
+  "support_archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261008/r35_support",
+  "support_top_level_sha256": {
+    "diagnostic.py": "39a326a496a554a120897f70b9a5b7de7f8fb06d2157c4140b8702d26aff0e5b",
+    "make_figures.py": "dc95729dbfcd254fca02fc7cf5ea934fb2ee0ef1143db7707a3057cf55debe68",
+    "organize.py": "8d86ea6b73d15620420d0ac9681637335c908287f8013cc7dd7f6a9cccb1ac18",
+    "prepare.log": "cfe371f98b09cd0d744949d7ea008485b834589850e05c8f3924b4150857abde",
+    "run.log": "d759493e6910376ef18e1d3ae59a4fbe970ff845657787b66ba77bfb5056f5ed"
+  },
+  "no_git_commit_push_merge": true,
+  "next_compatible_trial_executed": false,
+  "no_active_jobs": true,
+  "profile_scope_note": "Both sides retained; |z|<0.1mm owner unchanged; negative/positive outside maximum face-change fractions 7.9575%/2.4399%."
+}

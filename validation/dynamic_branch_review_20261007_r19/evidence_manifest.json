@@ -1,0 +1,66 @@
+[
+  {
+    "path": "REVIEW.md",
+    "sha256": "49b1218df7dae91317fdbd34f6c2001fb94a94727f580987fca306beb8574515"
+  },
+  {
+    "path": "analyze_existing_paths.py",
+    "sha256": "eb87c66d2a942d63fe9d7514afda5e887cfa7149efda8b51230b07333e0ade75"
+  },
+  {
+    "path": "document_backups.json",
+    "sha256": "ccf7ee4ca8166fdeb6abd6e2c5d60483c82984986dd37f704d92674b177e75cf"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "df71e28b169ce227bfdb6753e6d53ef1ea8ef5f3c7d82bff4317fb4c9806cd0a"
+  },
+  {
+    "path": "frozen_before.json",
+    "sha256": "6736ab8e8ac654339a226ab3d638ef65cc9e771fd5ff90e88bbb6c1afb28720f"
+  },
+  {
+    "path": "history_analysis.json",
+    "sha256": "a29a6704bb1004901e2e7098498fb66f628ad337620344c989f4a20523c1b98a"
+  },
+  {
+    "path": "input_history_review.json",
+    "sha256": "f65ea1afcc96ff245bf67742d4658b03ee4449d2b21d3b93b4fc4a374432bb1a"
+  },
+  {
+    "path": "literature_record.json",
+    "sha256": "06188ac5458d6e67c01aaf2eda0637a414979494d216dced27b3e62c7182e52b"
+  },
+  {
+    "path": "next_protocol.json",
+    "sha256": "9681b388dde1dc2482e0c5bcc024f491642f8b23bbd738296c950c71fa9f4806"
+  },
+  {
+    "path": "organization_receipt.json",
+    "sha256": "403f35dcdb16e9a1731dee36d777bd616e0464aa2a10c8b8983d8b2bfcb30d95"
+  },
+  {
+    "path": "response_energy.png",
+    "sha256": "b5016048ca54c3759eff47a76bf20e577a7c083b6645ff40275afc9b86956995"
+  },
+  {
+    "path": "scope.json",
+    "sha256": "677c52427f6532302846807ef47bc8d32c732e5c5506f9f6d4d2c8d401e66b9c"
+  },
+  {
+    "path": "source_before.json",
+    "sha256": "6cebc136be08a936a9eff886acc42489169f586c5416aab44db25037b12e2a29"
+  },
+  {
+    "path": "verification.json",
+    "sha256": "d1aa619c2e46c5b90605a5d156729794ae912a4dc5eb8ff170f588fb6b270a32"
+  },
+  {
+    "path": "verification_attempt01.json",
+    "sha256": "360c52e9125c95627224c837e3d8cde51ea5e4fcc1171bf0edaf5ff468ea9c6b"
+  },
+  {
+    "path": "verification_attempt02.json",
+    "sha256": "bc35fddc61566b375e70096733c1b1d866c338713206080da673af3f2b873279"
+  }
+]

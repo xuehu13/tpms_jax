@@ -1,0 +1,8 @@
+{
+  "validation/critical_mode_20261007_r21/diagnose.py": "65483daef541bbdcc655c243624c2ec43b8be7f0eeb4a46bd0d6d8119e8fd695",
+  "validation/critical_mode_20261007_r21/physical_metric/accepted_a0.1200_modes.npz": "857b163ecb5673f1c3e70ae5c9a349eb3adb2c58700f742677a050881c3f7680",
+  "validation/critical_mode_20261007_r21/physical_metric/accepted_a0.1200_deformation_candidate.npz": "e13ad12e7e2bb0f9a32c0532936f9439a6e2192676fcdabbf235248213de5ff9",
+  "validation/critical_mode_20261007_r21/results/accepted_a0.1200_N8_K.npz": "0023ec04ca51bd4333b60702a3ce3053d9901ee22673ea0858eced09390c1d95",
+  "validation/critical_mode_20261007_r21/physical_metric/restricted_HRZ_mass.npz": "b6193fce956514bd72c9d2b3fa60c5c3da4cc63c3467a92d5725999088557c73",
+  "validation/step_control_20261007_r18/controlled_forward/accepted_a0.1200.npz": "59fb40940b44708fd1eec9346468e4692a22fd25679c8ef32042aafd3a676e3a"
+}

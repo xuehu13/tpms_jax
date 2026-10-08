@@ -1,0 +1,18 @@
+{
+  "status": "read_only_review_complete",
+  "source_hashes": {
+    "validation/abaqus_discrete/discrete_gyroid_N16_fixed.acceptance.json": "aa94a16e9917ed08c49cb790a4c1fae335d4ce7ff70ccfdff53d189b8750a5ee",
+    "validation/large_compression_20261005_r6/background_bridge/execution.json": "d27ce7252734e23ccc8116f4305a72929273d9fcfa1565c3b747ceba317ed6ab",
+    "validation/large_compression_20261005_r6/background_bridge/point_check/result.json": "0d0ecc8ec5a5c44a7fa0f49f0f0008e084451e68aeacc5f837496b001f7ed066",
+    "validation/large_compression_20261005_r6/background_bridge/saved20/result.json": "670f6bfbb36f5bf8bee445f0fa5cecbb86f54eceae6c906bdcbc3e573ed761f1"
+  },
+  "old_linear_independent_path": true,
+  "old_native_saved_state_independent_path": false,
+  "current_HEX27_C2_HRZ_independent_Abaqus_path": false,
+  "background_match_proves_void_only": false,
+  "void_main_cause_known": false,
+  "old_native_bridge_scope": "C3D8 UHYPER SDVINI, old HEX8 N64 all displacements prescribed",
+  "candidate_route": "single independent 27-node VUEL verification reference, not implemented",
+  "all_steps_proposed_not_submitted": true,
+  "one_factor_counterfactual": "energy support 0.1 only in low occupancy, true NH and mass unchanged; diagnostic not calibration"
+}

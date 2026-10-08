@@ -1,0 +1,39 @@
+{
+  "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/rate_diagnostic_20261007",
+  "destination": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261007/rate_diagnostic_20261007",
+  "files": [
+    {
+      "relative": "analyze.py",
+      "sha256": "f45f39d99375b75f0cf11edcbe21ea7abf7375307aaa84f5961c86a3bc9ecaac"
+    },
+    {
+      "relative": "close.py",
+      "sha256": "0e8459eb934ef2d3e118d1a2c123c433ebdec750bd1b9869888c0e82388c91b9"
+    },
+    {
+      "relative": "diagnose_direction.py",
+      "sha256": "17f62b9b268759a06cd9918e5b250c2d9a85e604da79d97308c91b63cf05004a"
+    },
+    {
+      "relative": "launch_receipt.json",
+      "sha256": "6cfc6ad7542a0210700e5e3b2d7a942f6ae46da3a19f2c0d94f2c579dbea8cbd"
+    },
+    {
+      "relative": "prepare.py",
+      "sha256": "73472268b2cd33e9567df2749127d08bac8d4138a62402a3a0fb0d2b80e0498d"
+    },
+    {
+      "relative": "prepare_direction.py",
+      "sha256": "f8f5a6c9abe1e8970f6c9cb1c97dd9e40f3247bb3fb8f66de005b8c80fa06fd2"
+    },
+    {
+      "relative": "run_shell.py",
+      "sha256": "8e4ff02f98694cbac8c586281ba52003a52fc52c0adc12045167d7a6ab3ea49f"
+    },
+    {
+      "relative": "verify.py",
+      "sha256": "6f5246dbb80d32a3b4db3ad079838a7d546bda6dcf18d22403930e4f88f30847"
+    }
+  ],
+  "bytes_preserved": true
+}

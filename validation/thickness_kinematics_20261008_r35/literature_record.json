@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-08",
+  "actual_software": "Abaqus 2026",
+  "source": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-shellelem.htm",
+  "read_scope": "Conventional shells, general-purpose transverse-shear behavior, thickness stress/Poisson assumption; not a full manual or version-difference verification",
+  "used_to": "Distinguish diagnostic plane-stress prediction from proof of discretization error; S3R transverse shear is not automatically erroneous",
+  "no_new_local_pdf_review": true
+}
