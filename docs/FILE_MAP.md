@@ -1,6 +1,6 @@
 # 文件地图：当前入口、冻结证据与历史
 
-更新2026-10-08至r43占据复核。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
+更新2026-10-09：r44二值20%及保载完成，整体对壳仍未达约10%。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
 
 ## 当前入口各管一件事
 
@@ -20,6 +20,7 @@
 
 | 正式相对R目录 | 内容 | Windows阅读 |
 | --- | --- | --- |
+| validation/binary_full20_20261008_r44/ | 完整二值20%及保载、预算精确接续、两图/摘要/冻结收据；0数值失败，精度未达10% | [r44](../validation/binary_full20_20261008_r44/REVIEW.md) |
 | validation/initial_tangent_20261008_r30/ | 原N32初始切线/Standard壳、原场、协议、结果 | [r30–r31](../validation/initial_tangent_20261008_r30/REVIEW.md) |
 | validation/membrane_diagnostic_20261008_r31/ | 平直膜向补片与同Gauss解析 | 同上 |
 | validation/initial_bias_mechanism_20261008_r32/ | 原壳S/E、膜弯/迹分析与区域 | [r32](../validation/initial_bias_mechanism_20261008_r32/REVIEW.md) |
@@ -54,9 +55,9 @@
 
 ## 本次整理与归档
 
-当前入口修改前原文：W/history/before_r43_diverse28_20261008/；正式对应入口/validation索引：R/docs/history/before_r43_diverse28_20261008/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
+当前入口修改前原文：W/history/before_r44_binary_full20_20261008/；正式对应入口/validation索引：R/docs/history/before_r44_binary_full20_20261008/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
 
-本轮支持脚本在W/history/completed_tools_20261008/r43_support/；实际诊断配方在R/validation/binary_diverse28_20261008_r43/diagnostic.py；能量账目复用r42，入口在本轮energy_accounting/analyze.py。work只保留用途说明。科学保护哈希、维护收据和结果在r43正式目录。输入适配前日志/源码与配置在该目录before_*，保留全部中断，不重复发布大数组。
+r44配方、预算精确接续与只读后处理在R/validation/binary_full20_20261008_r44/；结果与保护收据同目录，完整路径/场/原日志留本机。两次后处理格式中断原版本与原因在postprocess_attempt01/02，不是求解重试。r43支持脚本和原中断仍留W/history/completed_tools_20261008/r43_support/及正式r43目录，不再作为当前待办。work只保留用途说明。
 
 W/output的成品入口README.md只指向完整Word和最新重点版PPT。前两版PPT按原字节归档至W/history/presentation_versions_20261008/，archive_receipt.json记录原/新路径与SHA256。它们仍可恢复；本轮没有改成品内容。
 

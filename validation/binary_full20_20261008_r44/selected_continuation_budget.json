@@ -1,0 +1,13 @@
+{
+  "total_budget_seconds": 21600.0,
+  "basis": "Latest user request: this binary diverse_04 trial should finish 20% without a premature stop. Prior 3-hour preference concerned the N64 trial; completion has priority for this task. Resource-only arrangement, no numerical/physical gate changes.",
+  "explicit_new_budget_reply_received": false,
+  "assistant_selected_resource_reserve": true,
+  "expected_total_hours": [
+    4,
+    5
+  ],
+  "maximum_total_hours": 6,
+  "selected_unix": 1791482902.1877453,
+  "may_be_replaced_by_later_user_time_limit": true
+}

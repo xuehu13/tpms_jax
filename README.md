@@ -1,11 +1,11 @@
 # TPMS研究入口
 
-更新2026-10-08，实验完成至r43，r42为只读账目，r43新增3次初始静态平衡。目标仍是可信薄壁TPMS背景压缩与有效梯度，服务以后学习/逆设计；训练后置。
+更新2026-10-09，r44二值diverse_04完整20%及保载已算完。目标仍是可信薄壁TPMS背景压缩与有效梯度，服务以后学习/逆设计；训练后置。
 
-**近期确认：占据表示会影响初始刚度，位移重新分布占重要部分，但全部误差来源未确定。** diverse_04原平滑对壳高5.70%；同部分密积分二值使K降2.12%，仍对壳高4.24%，原27点1.47%具有积分敏感性。diverse_28自身部分密积分配对为平滑对壳高3.52%、二值高1.09%，K下降2.34%；重分布主导趋势在两构型重复。选区外未密检查，生产方法保持。
+**取消过渡改善了初始偏硬，但没有消除大压缩差异。** 原27点二值初始对壳+1.47%，原平滑+5.70%；动态峰仍在15.24%而壳为11.82%，完整曲线/功/保载均力差35.90%/40.21%/47.89%，未达约10%。r44完整路径数值推进与能量账目自洽；积分、模型真实性和完整梯度仍需区别判断。详见[r44报告](validation/binary_full20_20261008_r44/REVIEW.md)。
 
-已有diverse_28三个厚度到20%的有限范围结果；diverse_04峰位与数值中断、完整20%梯度仍未解决。不能用初始差缩小外推全部大压缩。
+原r43两构型同部分密积分占据配对已确认初始影响及位移重新分布趋势，但原27点二值有积分敏感性，生产保持。diverse_28三个厚度已有20%有限范围结果；不能将其外推所有薄壁或将本轮诊断当作连续场迁移验证通过。
 
-继续前依次读[长期背景](docs/RESEARCH_BACKGROUND.md)、[唯一近期规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。近期推断集中在[机制审查](docs/MECHANISM_ANALYSIS.md)，方法/符号见[综合说明](docs/TPMS_RESEARCH_REVIEW.md)，文献范围见[PAPER_ROUTE](docs/PAPER_ROUTE.md)。
+继续前依次读[长期背景](docs/RESEARCH_BACKGROUND.md)、[唯一近期规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。近期机制见[审查](docs/MECHANISM_ANALYSIS.md)，方法/符号见[综合说明](docs/TPMS_RESEARCH_REVIEW.md)，文献范围见[PAPER_ROUTE](docs/PAPER_ROUTE.md)。原三步第2项具体可导修正未选定，不自动增加长路径或训练。
 
-正式程序仅WSL `/home/xuehu/projects/tpms_jax`；Windows为阅读与历史。Word/PPT位置见[文件地图](docs/FILE_MAP.md)，它们是周总结快照。逐轮冻结报告保存原事实，不产生额外待办。
+正式程序仅WSL `/home/xuehu/projects/tpms_jax`；Windows为阅读与历史。Word/PPT位置见文件地图，它们是周总结快照。原失败与逐轮冻结报告保留，不产生额外待办。Git保留精选源码/摘要/图，不是完整大数组和日志档案。

@@ -1,0 +1,6 @@
+{
+  "stage": "read_only_result_extraction",
+  "type": "TypeError",
+  "reason": "NumPy boolean from completed end-time comparison cannot be serialized by standard JSON encoder.",
+  "repair": "Convert that check explicitly to Python bool; no data or numerical threshold change; no forward rerun."
+}

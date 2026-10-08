@@ -82,3 +82,11 @@ validation/initial_diverse28_20261008_r41/abaqus/extract_shell.py
 
 # r43 preserves preparation-error snapshots locally; current recipe/errors are published.
 validation/binary_diverse28_20261008_r43/before_*/
+
+# r44 raw continuous path and failed extraction source copies stay local.
+validation/binary_full20_20261008_r44/full_from_zero/
+validation/binary_full20_20261008_r44/continuation_from_budget/
+validation/binary_full20_20261008_r44/postprocess_attempt*/analyze.py
+validation/binary_full20_20261008_r44/effective*_controller.py
+validation/binary_full20_20261008_r44/*background_launch.json
+validation/binary_full20_20261008_r44/supervisor_state.json

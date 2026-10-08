@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "old_peak_compression_15p9409pct": true,
+    "shell_peak_compression_11p8241pct": true,
+    "old_peakforce_difference_35p23pct": true,
+    "numpy_trapezoid_available": true
+  },
+  "old_peak": {
+    "compression": 0.15940872539154782,
+    "force_N": 7.072391495989786,
+    "time": 0.0026854848531435156
+  },
+  "shell_peak": {
+    "compression": 0.1182407021522522,
+    "force_N": 5.229988098144531,
+    "time": 0.00219581532292068
+  },
+  "scope": "Read-only metrics reproduce previous r20 observed peaks; no new solve and no tuning by new binary path."
+}

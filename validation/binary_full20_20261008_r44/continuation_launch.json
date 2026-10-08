@@ -1,0 +1,9 @@
+{
+  "started_unix": 1791486494.493681,
+  "pid": 79299,
+  "source_state": "/home/xuehu/projects/tpms_jax/validation/binary_full20_20261008_r44/full_from_zero/last_valid_field.npz",
+  "source_state_sha256": "67abba7a16d4a15f7d8dfe5ac426ae622d573448cf410cb5742e48e5dabe2fb8",
+  "selected_total_budget_seconds": 21600.0,
+  "returncode": 0,
+  "scope": "Exact continuation of the one from-zero trajectory; physical and numerical controller parameters unchanged."
+}
