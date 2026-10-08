@@ -29,6 +29,7 @@
 | validation/compatible_mode_20261008_r36/ | 一个兼容模式/8和12级/微小固定节点释放 | [r36–r38](../validation/interface_width_mixed_20261008_r38/REVIEW.md) |
 | validation/interface_width_20261008_r37/ | 两个新宽度原27点静力/同选区固定场复积分 | 同上 |
 | validation/interface_width_mixed_20261008_r38/ | 一个窄界面同部分密积分确认/综合报告/两图 | 同上 |
+| validation/curved_patch_20261008_r39/ | 圆柱设计/解析/两Abaqus参照/背景原失败/只读审计/图 | [r39](../validation/curved_patch_20261008_r39/REVIEW.md) |
 
 全部阶段见R/validation/README.md。代表C²与厚度范围为r12/r13，迁移与原失败为r15/r17/r18，同速率r20，未收敛模式r21/r22，未编译背景稿r23/r24，填充r25、支撑r26、板弯r27、N64 r28、初始只读r29。旧共同保存态桥接在r6/background_bridge，不是独立路径。
 
@@ -36,10 +37,13 @@
 
 本轮当前文档修改前副本在W/history/before_r36_r38_20261008及R/docs/history/before_r36_r38_20261008；新支持工具一次归档至W/history/completed_tools_20261008/r36_r38_support。原科学文件、壳输入和大数组未迁移。
 
+r39修改前当前入口在W/history/before_r39_20261008及R/docs/history/before_r39_20261008；本轮支持工具归档在W/history/completed_tools_20261008/r39_support，正式诊断仍在原validation目录。
+
 ## Abaqus、用户原件与成品
 
 命令 `E:/ABAQUS/2026/Commands/abaqus.bat`；原生作业根 `E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/`：
 
+- `curved_patch_20261008_r39/`：本轮CAX8与S3R初始参照、原INP/ODB。
 - `initial_tangent_20261008_r30_diverse04/`：初始Standard壳。
 - `n64_resolution_20261008_r28_shell_T0p002/`：r28同速率壳。
 - `shell_rate_20261007_r20_diverse04_explicit_T0p004/`、`geometry_transfer_20261006_r15_diverse04_explicit_T0p040/`：diverse_04速率参照。

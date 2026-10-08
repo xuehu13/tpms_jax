@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "checks": {
+    "completed": true,
+    "finite_positive": true,
+    "energy_work": true,
+    "artificial_energy": true,
+    "equations": true
+  },
+  "job": "cylinder_solid",
+  "K_N_per_mm": 4.341735932750598,
+  "mid_radial_u_mm": 2.303226210642606e-05,
+  "generalized_force_N": 0.0001,
+  "energies_N_mm": {
+    "ALLSE": 1.1516131381839045e-09,
+    "ALLAE": 0.0,
+    "ALLWK": 1.1516131381839045e-09
+  },
+  "energy_work_relative_error": 2.853614766706869e-08,
+  "artificial_energy_fraction": 0.0,
+  "max_equation_gap_mm": 0.0,
+  "odb_path": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\curved_patch_20261008_r39\\cylinder_solid.odb"
+}
