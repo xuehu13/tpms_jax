@@ -26,10 +26,15 @@
 | validation/local_quadrature_20261008_r33/ | 原1941选区/原与8/12积分及综合报告 | [r33–r34](../validation/local_quadrature_20261008_r33/REVIEW.md) |
 | validation/local_reequilibrium_20261008_r34/ | 一次仅积分初始干预、原状态/结果 | 同上 |
 | validation/thickness_kinematics_20261008_r35/ | 原两状态、27点分区/法向线、协议/两图 | [r35](../validation/thickness_kinematics_20261008_r35/REVIEW.md) |
+| validation/compatible_mode_20261008_r36/ | 一个兼容模式/8和12级/微小固定节点释放 | [r36–r38](../validation/interface_width_mixed_20261008_r38/REVIEW.md) |
+| validation/interface_width_20261008_r37/ | 两个新宽度原27点静力/同选区固定场复积分 | 同上 |
+| validation/interface_width_mixed_20261008_r38/ | 一个窄界面同部分密积分确认/综合报告/两图 | 同上 |
 
 全部阶段见R/validation/README.md。代表C²与厚度范围为r12/r13，迁移与原失败为r15/r17/r18，同速率r20，未收敛模式r21/r22，未编译背景稿r23/r24，填充r25、支撑r26、板弯r27、N64 r28、初始只读r29。旧共同保存态桥接在r6/background_bridge，不是独立路径。
 
 生产源码：R/hyperelastic_fem.py、surface_distance.py、pbc.py、fem.py、scripts/thin_target_explicit.py；环境pixi.lock。R/scripts/README.md只作程序用途索引，不再复制近期计划。validation内诊断是冻结实验，不是第二套生产框架。
+
+本轮当前文档修改前副本在W/history/before_r36_r38_20261008及R/docs/history/before_r36_r38_20261008；新支持工具一次归档至W/history/completed_tools_20261008/r36_r38_support。原科学文件、壳输入和大数组未迁移。
 
 ## Abaqus、用户原件与成品
 

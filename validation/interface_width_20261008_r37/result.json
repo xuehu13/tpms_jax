@@ -1,0 +1,120 @@
+{
+  "status": "initial_width_diagnostic_complete",
+  "case": "diverse_04 N32 original 27-point static",
+  "baseline_reproduction_max_occupancy_error": 9.992007221626409e-16,
+  "baseline_reused_r30": true,
+  "cases": [
+    {
+      "status": "ok",
+      "checks": {
+        "true_free_residual": true,
+        "energy_work": true,
+        "periodic_gap": true,
+        "finite": true,
+        "small_strain": true,
+        "budget": true
+      },
+      "interface_10_90_mm": 0.025,
+      "inverse_length_per_mm": 175.77796618689754,
+      "K0_N_per_mm": 4.8433349140922815,
+      "Fz_N": -0.004843334914092281,
+      "U_N_mm": 2.4216674570074772e-06,
+      "relative_to_shell": 0.04130444532109756,
+      "relative_to_original": -0.014872458383285658,
+      "true_free_residual": 9.935867534457088e-11,
+      "energy_work_error": 1.5965673227924526e-11,
+      "periodic_gap": 0.0,
+      "minimum_linearized_J": 0.9968129405602772,
+      "max_abs_strain": 0.003209165847906084,
+      "iterations": 1903,
+      "stop": "recurrence_tolerance",
+      "occupancy_volume_mm3": 132.65135290938804,
+      "weighted_volume_mm3": 132.7380877740971,
+      "solve_and_metrics_seconds": 25.78878358390648
+    },
+    {
+      "status": "reused_valid_r30",
+      "interface_10_90_mm": 0.05,
+      "inverse_length_per_mm": 87.88898309344877,
+      "K0_N_per_mm": 4.916454681739766,
+      "U_N_mm": 2.4582273408697526e-06,
+      "relative_to_shell": 0.0570250057288928,
+      "relative_to_original": 0.0,
+      "occupancy_volume_mm3": 132.51935766125433,
+      "weighted_volume_mm3": 132.6061057254883
+    },
+    {
+      "status": "ok",
+      "checks": {
+        "true_free_residual": true,
+        "energy_work": true,
+        "periodic_gap": true,
+        "finite": true,
+        "small_strain": true,
+        "budget": true
+      },
+      "interface_10_90_mm": 0.1,
+      "inverse_length_per_mm": 43.944491546724386,
+      "K0_N_per_mm": 5.0079694959623176,
+      "Fz_N": -0.005007969495962317,
+      "U_N_mm": 2.503984747959562e-06,
+      "relative_to_shell": 0.07670045344269938,
+      "relative_to_original": 0.018613985106472608,
+      "true_free_residual": 9.942698883940239e-11,
+      "energy_work_error": 8.624989611405454e-12,
+      "periodic_gap": 0.0,
+      "minimum_linearized_J": 0.9990776296295664,
+      "max_abs_strain": 0.0010650499793109188,
+      "iterations": 1344,
+      "stop": "recurrence_tolerance",
+      "occupancy_volume_mm3": 132.44849867205917,
+      "weighted_volume_mm3": 132.535253822192,
+      "solve_and_metrics_seconds": 15.74639974697493
+    }
+  ],
+  "local_integration": [
+    {
+      "width_mm": 0.025,
+      "original_selected_energy_N_mm": 1.558786204739392e-06,
+      "dense8_energy_N_mm": 1.6731233041937448e-06,
+      "dense12_energy_N_mm": 1.6720569737423313e-06,
+      "dense12_relative_to_original_selected": 0.0726660068318199,
+      "dense8_12_relative_energy": 0.0006377357160425312,
+      "dense8_12_relative_volume": -5.788963760022803e-05,
+      "dense12_relative_change_scaled_by_own_full_energy": 0.046773874206044494,
+      "stable_existing_levels": true
+    },
+    {
+      "width_mm": 0.05,
+      "original_selected_energy_N_mm": 1.58854611166171e-06,
+      "dense8_energy_N_mm": 1.639973390949146e-06,
+      "dense12_energy_N_mm": 1.639860016996925e-06,
+      "dense12_relative_to_original_selected": 0.03230243362689533,
+      "dense8_12_relative_energy": 6.913635983929467e-05,
+      "dense8_12_relative_volume": -4.616543904600867e-06,
+      "dense12_relative_change_scaled_by_own_full_energy": 0.020874353027519187,
+      "stable_existing_levels": true
+    },
+    {
+      "width_mm": 0.1,
+      "original_selected_energy_N_mm": 1.6211647584015043e-06,
+      "dense8_energy_N_mm": 1.6299767275945426e-06,
+      "dense12_energy_N_mm": 1.6299427350184816e-06,
+      "dense12_relative_to_original_selected": 0.005414611051397733,
+      "dense8_12_relative_energy": 2.0855073819880943e-05,
+      "dense8_12_relative_volume": -7.868614693151699e-08,
+      "dense12_relative_change_scaled_by_own_full_energy": 0.003505603068920547,
+      "stable_existing_levels": true
+    }
+  ],
+  "selected_cells": 1941,
+  "selected_region_outside_not_dense_checked": true,
+  "dense_checks_are_fixed_state_not_new_global_K": true,
+  "width_is_one_changed_factor": true,
+  "production_changed": false,
+  "new_Abaqus_job": false,
+  "new_design_AD": false,
+  "preparation_seconds": 7.963587946025655,
+  "local_postprocess_seconds": 1.9466157889692113,
+  "wall_seconds": 52.22852786909789
+}

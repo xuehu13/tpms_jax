@@ -1,0 +1,46 @@
+{
+  "user_authorized_additional_factor": "Sigmoid steepness / interface width diagnostic; production width unchanged",
+  "case": "diverse_04",
+  "N": 32,
+  "t_mm": 0.5,
+  "E_MPa": 10,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "compression": 0.0001,
+  "all_widths_mm": [
+    0.025,
+    0.05,
+    0.1
+  ],
+  "new_widths_mm": [
+    0.025,
+    0.1
+  ],
+  "baseline": "reuse original r30 width .05 valid state",
+  "inverse_scale": "1/ell=2*ln(9)/width, units mm^-1",
+  "original_rule": 27,
+  "periodic": "XYZ / macro Hxx=Hyy=0",
+  "iterations_per_case": 6000,
+  "total_budget_seconds": 900,
+  "recurrence_tolerance": 1e-10,
+  "gates": {
+    "true_free_residual": 1e-08,
+    "energy_work_relative": 1e-06,
+    "PBC": 1e-12,
+    "max_abs_strain": 0.02,
+    "min_linearized_J": 0.98
+  },
+  "dense_selected_cells": 1941,
+  "selected_cells_sha256": "37a651f38ebad044f44362cc87b7bb88e3d32c5fa6988540309cc3c317600c8d",
+  "dense_rules": [
+    8,
+    12
+  ],
+  "dense_relative_gate": 0.01,
+  "denominators": "Each matching full state U for integration scale; original r30 K for width effect; unchanged matching shell K for bias",
+  "shell_stiffness_N_per_mm": 4.651218897465464,
+  "screening_relevance_relative_K": 0.01,
+  "scope": "Two new independent initial static equilibria, no thickness/eta/damping fitting; limited dense fixed-state checks are not physical sharp-interface convergence",
+  "new_equilibrium_AD": false,
+  "mass_or_damping_in_operator": false
+}

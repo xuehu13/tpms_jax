@@ -1,0 +1,28 @@
+{
+  "status": "ok",
+  "checks": {
+    "true_free_residual": true,
+    "energy_work": true,
+    "periodic_gap": true,
+    "finite": true,
+    "small_strain": true,
+    "budget": true
+  },
+  "interface_10_90_mm": 0.025,
+  "inverse_length_per_mm": 175.77796618689754,
+  "K0_N_per_mm": 4.8433349140922815,
+  "Fz_N": -0.004843334914092281,
+  "U_N_mm": 2.4216674570074772e-06,
+  "relative_to_shell": 0.04130444532109756,
+  "relative_to_original": -0.014872458383285658,
+  "true_free_residual": 9.935867534457088e-11,
+  "energy_work_error": 1.5965673227924526e-11,
+  "periodic_gap": 0.0,
+  "minimum_linearized_J": 0.9968129405602772,
+  "max_abs_strain": 0.003209165847906084,
+  "iterations": 1903,
+  "stop": "recurrence_tolerance",
+  "occupancy_volume_mm3": 132.65135290938804,
+  "weighted_volume_mm3": 132.7380877740971,
+  "solve_and_metrics_seconds": 25.78878358390648
+}

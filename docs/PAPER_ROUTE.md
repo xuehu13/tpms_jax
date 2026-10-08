@@ -1,6 +1,6 @@
 # 文献依据与实际阅读范围
 
-更新2026-10-08：本次为初始偏硬原因复盘，没有新力学计算。用户论文目录递归清点23篇；选择直接相关的方法/验证页，未宣称全部通读。文献支持机制与判别设计，不证明本项目根因。当前完整判断见[机制审查](MECHANISM_ANALYSIS.md)，任务只见[唯一规划](RESEARCH_PLAN.md)。
+更新2026-10-08：初始原因复盘后已执行r36–r38；本次新增平滑Heaviside方法的出版商摘要/引言检索，未重读其余全部论文。用户论文目录递归清点23篇；选择直接相关的方法/验证页，未宣称全部通读。文献支持机制与判别设计，不证明本项目根因。当前完整判断见[机制审查](MECHANISM_ANALYSIS.md)，任务只见[唯一规划](RESEARCH_PLAN.md)。
 
 ## 本次实际读取
 
@@ -15,6 +15,7 @@
 | [Schillinger等FCM综述2018](https://arxiv.org/abs/1807.01285) | 作者摘要 | 高阶位移/几何积分相互区分；当前并非完整FCM |
 | [Abaqus壳元素说明](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-shellelem.htm) | “Thick/Thin”、有限应变、厚度应力、S3/S3R段落 | S3R允许横向剪切、常规壳厚度零应力假定；公开2025，实机2026，不认证所有版本差异 |
 | [Gfrerer Trace-Finite-Cell，2021](https://link.springer.com/article/10.1007/s00466-020-01956-5) | 开放正文摘要、§1、§2.1 | 隐式曲面背景壳/C¹样条可行的线性方法；只作备选，未实施非线性/AD |
+| [Xia等，CMAME2012，材料边界平滑敏感性](https://doi.org/10.1016/j.cma.2012.06.005) | 出版商检索摘要/引言，直接全文403 | 固定网格上平滑材料边界支持设计敏感性；非当前TPMS/显式/20%AD认证 |
 | [JAX-FEM原论文](https://arxiv.org/abs/2212.00964) | 本次作者摘要，复用旧方法页证据 | 一般固体与AD基础，不认证当前薄壁20% |
 
 本地四篇路径、原件SHA256、页数和读取范围记录在正式 `docs/history/research_reassessment_20261008/local_reading_record.json`。本次未改/上传原PDF，少量摘录和阅读页图留Windows完成工具。Cornell薄壁会议合辑只用于检索线索，不作当前方法结论依据。
