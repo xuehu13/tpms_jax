@@ -1,8 +1,19 @@
 # 文献依据与实际阅读范围
 
-更新2026-10-08：初始原因复盘后已执行至r39；本次新增平滑Heaviside方法的出版商摘要/引言检索，未重读其余全部论文。用户论文目录递归清点23篇；选择直接相关的方法/验证页，未宣称全部通读。文献支持机制与判别设计，不证明本项目根因。当前完整判断见[机制审查](MECHANISM_ANALYSIS.md)，任务只见[唯一规划](RESEARCH_PLAN.md)。
+更新2026-10-09，r46复盘。本次核查下列官方网页与作者摘要，未重读全部本地PDF；既有23篇清点与旧页范围保持。文献说明可能机制，不认证本项目唯一原因。
 
-## 本次实际读取
+## r46本次核查范围
+
+- [Abaqus显式动力分析](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEANLRefMap/simaanl-c-expdynamic.htm)：集中质量、加载加速/惯性影响及稳定步长说明；[准静态显式目录](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEGSARefMap/simagsa-m-Quasi-sb.htm)检索正文。公开2025手册，不能宣称已验证实机2026全部内部实现。
+- [Abaqus壳选择](https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-shellelem.htm)：有限应变、S3R横向剪切与厚度应力假定；不据此宣称壳与完整三维等价。
+- [Liu/Gomez/Vella，弹性跳跃延迟分岔](https://arxiv.org/abs/2010.07850)：复核作者摘要，速率/阻尼可改变跳跃；没有重读全文或将拱的公式套到TPMS。
+- [FCM综述](https://arxiv.org/abs/1807.01285)：复核作者摘要中的高阶近似、虚域、几何积分组成；不认证当前Q2/27点/C²。
+
+一次旧准静态手册URL读取失败，后通过官方目录/Explicit页取得依据；不以成功页覆盖原失败范围。新判断集中在[机制审查](MECHANISM_ANALYSIS.md)，后续只见[唯一规划](RESEARCH_PLAN.md)。
+
+## 继承的本地与此前方法读取范围
+
+### 2026-10-08及此前实际读取
 
 | 原始来源 | 范围 | 对本项目的作用与限制 |
 | --- | --- | --- |

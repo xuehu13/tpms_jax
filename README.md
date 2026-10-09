@@ -1,13 +1,9 @@
 # TPMS研究入口
 
-r45 N64二值诊断已预算停止：T=1ms，UTC总118.38min，只至13.5877%且仍增载，未捕获峰；同速率壳峰12.7867%，末端同压缩量力差+35.39%。0数值回退，249项原科学字节保持；无新N32/保载/AD，不自动接续或新增作业。不是完整20%或纯网格因果检验。 详见[r45报告](validation/binary_n64_20261009_r45/REVIEW.md)。
+更新2026-10-09：最新为[r46近期复盘](validation/binary_mesh_reassessment_20261009_r46/REVIEW.md)，本次零新FEM/Abaqus/AD。N32 T4ms与N64 T1ms不能作纯网格排名；N64只至13.59%、没有捕获峰。小压缩接近不等于20%路径通过。
 
-更新2026-10-09，r44二值diverse_04完整20%及保载已算完。目标仍是可信薄壁TPMS背景压缩与有效梯度，服务以后学习/逆设计；训练后置。
+长期目标仍为可信薄壁TPMS背景压缩与有效梯度，服务以后学习/逆设计；仿真优先。代表diverse_28已有有限范围20%结果，迁移diverse_04峰附近仍有明显差异。生产连续占据与唯一WSL程序保持，硬二值只作诊断。
 
-**取消过渡改善了初始偏硬，但没有消除大压缩差异。** 原27点二值初始对壳+1.47%，原平滑+5.70%；动态峰仍在15.24%而壳为11.82%，完整曲线/功/保载均力差35.90%/40.21%/47.89%，未达约10%。r44完整路径数值推进与能量账目自洽；积分、模型真实性和完整梯度仍需区别判断。详见[r44报告](validation/binary_full20_20261008_r44/REVIEW.md)。
+继续前依次读[长期背景](docs/RESEARCH_BACKGROUND.md)、[唯一近期规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。[机制审查](docs/MECHANISM_ANALYSIS.md)解释判断，[综合说明](docs/TPMS_RESEARCH_REVIEW.md)解释方法/符号，[文献索引](docs/PAPER_ROUTE.md)标明实际读取范围。下一轮四步尚未执行，不自动接续N64或恢复N32。
 
-原r43两构型同部分密积分占据配对已确认初始影响及位移重新分布趋势，但原27点二值有积分敏感性，生产保持。diverse_28三个厚度已有20%有限范围结果；不能将其外推所有薄壁或将本轮诊断当作连续场迁移验证通过。
-
-继续前依次读[长期背景](docs/RESEARCH_BACKGROUND.md)、[唯一近期规划](docs/RESEARCH_PLAN.md)、[当前状态](docs/RESEARCH_STATUS.md)、[文件地图](docs/FILE_MAP.md)。近期机制见[审查](docs/MECHANISM_ANALYSIS.md)，方法/符号见[综合说明](docs/TPMS_RESEARCH_REVIEW.md)，文献范围见[PAPER_ROUTE](docs/PAPER_ROUTE.md)。原三步第2项具体可导修正未选定，不自动增加长路径或训练。
-
-正式程序仅WSL `/home/xuehu/projects/tpms_jax`；Windows为阅读与历史。Word/PPT位置见文件地图，它们是周总结快照。原失败与逐轮冻结报告保留，不产生额外待办。Git保留精选源码/摘要/图，不是完整大数组和日志档案。
+正式程序仅`/home/xuehu/projects/tpms_jax`；Windows为阅读与历史。旧报告、失败与预算保持；Word/PPT为周总结快照。Git保存精选配方/摘要/图，原大场、日志、INP/ODB留本机，位置只见文件地图。

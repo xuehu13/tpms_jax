@@ -1,0 +1,39 @@
+{
+  "round": "r46",
+  "date": "2026-10-09",
+  "action": "read-only reassessment and workspace organization; zero new FEM, Abaqus job or AD",
+  "base_commit": "379409242f4d68404c6e4adcd190e01785510858",
+  "window_selection_scope": "Retrospective exploratory common windows after known outcomes; not pre-registered acceptance gates. Original r44/r45 checks unchanged.",
+  "upper_windows_compression": [
+    0.05,
+    0.1,
+    0.12,
+    0.13587668519974092
+  ],
+  "grid_points": 2001,
+  "force_sign": "compressive positive=-Fz_N",
+  "RMS": "same compression-axis window for each model versus its own matched-rate shell; both own full shell loading maximum and legacy fixed2.2589142322540283N denominator; raw RMS_N retained",
+  "work": "interpolate endpoint and integrate each original path over same compression interval; no strain/force shift or fitted scale",
+  "rate_N32_seconds": 0.004,
+  "rate_N64_seconds": 0.001,
+  "peak_scope": "r45 N64 peak remains unobserved; do not compare endpoint maximum to r44 captured peak as equal indicators",
+  "sources": [
+    "validation/binary_full20_20261008_r44/continuation_from_budget/accepted_path.json",
+    "validation/binary_full20_20261008_r44/comparison.json",
+    "validation/binary_full20_20261008_r44/protocol.json",
+    "validation/binary_n64_20261009_r45/peak_N64/accepted_path.json",
+    "validation/binary_n64_20261009_r45/comparison.json",
+    "validation/binary_n64_20261009_r45/protocol.json",
+    "validation/binary_n64_20261009_r45/preparation.json"
+  ],
+  "source_sha256": {
+    "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+    "validation/binary_full20_20261008_r44/continuation_from_budget/accepted_path.json": "700279afe5c53400bdf98adb3103f8c5c41b482bf2cc4ea0c602597999540c5b",
+    "validation/binary_n64_20261009_r45/peak_N64/accepted_path.json": "2c647ba5529cde75852fd39d5b5d9b95ad09a1744ec09f3185476365cbc98ceb"
+  },
+  "original_protected_files_count": 349,
+  "new_N32_runs": 0,
+  "N64_resumed": false,
+  "new_Abaqus_jobs": 0,
+  "new_design_AD": 0
+}

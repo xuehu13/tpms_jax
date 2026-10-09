@@ -1,0 +1,41 @@
+{
+  "action": "read-only reassessment and current-document consolidation",
+  "date": "2026-10-09",
+  "scientific_paths_moved": 0,
+  "scientific_files_deleted": 0,
+  "Windows_auxiliary_archive": {
+    "date": "2026-10-09",
+    "scope": "Only completed Windows r45 auxiliary launcher and logs; no scientific input/result moved or deleted",
+    "moves": [
+      {
+        "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r45_binary_n64_20261009\\run_shell.py",
+        "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261009\\r45_support\\run_shell.py",
+        "sha256": "2367FD285502B38B76C2EF0F00B8A8798CF4D52FD839E6C0104ABE9D46E84472",
+        "bytes_unchanged": true
+      },
+      {
+        "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r45_binary_n64_20261009\\shell_driver_T0p001.log",
+        "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261009\\r45_support\\shell_driver_T0p001.log",
+        "sha256": "DB443EE7FC5EFCC74441C10B84F871C8496D364E56BD5BFD29C529D41C1761AB",
+        "bytes_unchanged": true
+      },
+      {
+        "old_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r45_binary_n64_20261009\\shell_driver.log",
+        "new_path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261009\\r45_support\\shell_driver.log",
+        "sha256": "0039840C96445EC9532A86715829B3676ADC3F34F324187EF80E7B2EDE9AAFB8",
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "formal_before_documents": "docs/history/before_r46_mesh_reassessment_20261009",
+  "Windows_before_documents": "history/before_r46_mesh_reassessment_20261009",
+  "single_production_root": "/home/xuehu/projects/tpms_jax",
+  "old_reports_including_r44_r45_unchanged": true,
+  "new_FEM_Abaqus_AD": 0,
+  "scientific_protected_files_count": 349,
+  "scientific_hashes_unchanged": true,
+  "production_entry_sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "read_only_analyzer_compiles": true,
+  "current_document_links_valid": true,
+  "new_numerical_jobs": 0
+}

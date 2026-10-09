@@ -1,0 +1,261 @@
+{
+  "action": "read-only; no new solve/AD",
+  "common_upper_compression": 0.13587668519974092,
+  "RMS_points": 2001,
+  "window_metrics": [
+    {
+      "upper_compression": 0.05,
+      "N32_T4ms": {
+        "RMS_N": 0.019581163677429837,
+        "RMS_over_matched_shell_loading_peak": 0.003744016871544458,
+        "RMS_over_legacy_fixed_peak": 0.008668396257741502,
+        "model_loading_work_N_mm": 0.5935946524339032,
+        "matched_shell_loading_work_N_mm": 0.5852696564654017,
+        "covered_work_relative_difference": 0.014224205674318258
+      },
+      "N64_T1ms": {
+        "RMS_N": 0.04270117779178534,
+        "RMS_over_matched_shell_loading_peak": 0.007765631959270341,
+        "RMS_over_legacy_fixed_peak": 0.01890340818702821,
+        "model_loading_work_N_mm": 0.662668171092005,
+        "matched_shell_loading_work_N_mm": 0.6464889400382777,
+        "covered_work_relative_difference": 0.025026307569576245
+      }
+    },
+    {
+      "upper_compression": 0.1,
+      "N32_T4ms": {
+        "RMS_N": 0.04171533808107812,
+        "RMS_over_matched_shell_loading_peak": 0.007976182220352982,
+        "RMS_over_legacy_fixed_peak": 0.01846698625624799,
+        "model_loading_work_N_mm": 2.344389869994229,
+        "matched_shell_loading_work_N_mm": 2.30888727984995,
+        "covered_work_relative_difference": 0.015376493453845175
+      },
+      "N64_T1ms": {
+        "RMS_N": 0.1046913581537166,
+        "RMS_over_matched_shell_loading_peak": 0.01903916001338772,
+        "RMS_over_legacy_fixed_peak": 0.0463458756684408,
+        "model_loading_work_N_mm": 2.480171405172312,
+        "matched_shell_loading_work_N_mm": 2.3949684645679774,
+        "covered_work_relative_difference": 0.035575808978221435
+      }
+    },
+    {
+      "upper_compression": 0.12,
+      "N32_T4ms": {
+        "RMS_N": 0.06020746429067674,
+        "RMS_over_matched_shell_loading_peak": 0.011511969656687526,
+        "RMS_over_legacy_fixed_peak": 0.02665327591061282,
+        "model_loading_work_N_mm": 3.3511684327980675,
+        "matched_shell_loading_work_N_mm": 3.294691255783222,
+        "covered_work_relative_difference": 0.01714187237293041
+      },
+      "N64_T1ms": {
+        "RMS_N": 0.13053933350757074,
+        "RMS_over_matched_shell_loading_peak": 0.023739870248339054,
+        "RMS_over_legacy_fixed_peak": 0.05778853027868781,
+        "model_loading_work_N_mm": 3.510250426813343,
+        "matched_shell_loading_work_N_mm": 3.381609720894832,
+        "covered_work_relative_difference": 0.03804126334379898
+      }
+    },
+    {
+      "upper_compression": 0.13587668519974092,
+      "N32_T4ms": {
+        "RMS_N": 1.1569983670179993,
+        "RMS_over_matched_shell_loading_peak": 0.22122390057225433,
+        "RMS_over_legacy_fixed_peak": 0.512192251701165,
+        "model_loading_work_N_mm": 4.264897349188539,
+        "matched_shell_loading_work_N_mm": 3.7184273525889346,
+        "covered_work_relative_difference": 0.1469626658751657
+      },
+      "N64_T1ms": {
+        "RMS_N": 0.26650312520107217,
+        "RMS_over_matched_shell_loading_peak": 0.048466231924520944,
+        "RMS_over_legacy_fixed_peak": 0.11797841697386867,
+        "model_loading_work_N_mm": 4.4389485582235615,
+        "matched_shell_loading_work_N_mm": 4.2208401915841876,
+        "covered_work_relative_difference": 0.05167415887345217
+      }
+    }
+  ],
+  "force_at_fixed_compressions": [
+    {
+      "compression": 0.01,
+      "N32_T4ms": {
+        "force_N": 0.48048238455448977,
+        "matched_shell_force_N": 0.474663133142886,
+        "same_compression_force_relative_difference": 0.012259750137055603,
+        "internal_macro_force_on_dynamic_state_N": 0.4733643614844691,
+        "instantaneous_inertia_contribution_N": 0.007118023070020685,
+        "KE_over_U": 0.029752141066315338
+      },
+      "N64_T1ms": {
+        "force_N": 0.6200194645050988,
+        "matched_shell_force_N": 0.6181242218066805,
+        "same_compression_force_relative_difference": 0.0030661194490628763,
+        "internal_macro_force_on_dynamic_state_N": 0.49733768328043887,
+        "instantaneous_inertia_contribution_N": 0.12268178122465995,
+        "KE_over_U": 0.4577926742539222
+      },
+      "N64_vs_N32_force_relative_difference": 0.29041039679319325
+    },
+    {
+      "compression": 0.05,
+      "N32_T4ms": {
+        "force_N": 2.360633297534449,
+        "matched_shell_force_N": 2.325966645911184,
+        "same_compression_force_relative_difference": 0.014904191203345851,
+        "internal_macro_force_on_dynamic_state_N": 2.3559251877579523,
+        "instantaneous_inertia_contribution_N": 0.004708109776496716,
+        "KE_over_U": 0.006076742644114765
+      },
+      "N64_T1ms": {
+        "force_N": 2.5029756698651022,
+        "matched_shell_force_N": 2.4202900273798575,
+        "same_compression_force_relative_difference": 0.03416352649882959,
+        "internal_macro_force_on_dynamic_state_N": 2.425440213465233,
+        "instantaneous_inertia_contribution_N": 0.07753545639986914,
+        "KE_over_U": 0.09641894995595932
+      },
+      "N64_vs_N32_force_relative_difference": 0.06029838369191931
+    },
+    {
+      "compression": 0.1,
+      "N32_T4ms": {
+        "force_N": 4.613159237415003,
+        "matched_shell_force_N": 4.536357579674203,
+        "same_compression_force_relative_difference": 0.016930247757566796,
+        "internal_macro_force_on_dynamic_state_N": 4.612873044861623,
+        "instantaneous_inertia_contribution_N": 0.0002861925533794718,
+        "KE_over_U": 0.0021738896397807675
+      },
+      "N64_T1ms": {
+        "force_N": 4.729696669198833,
+        "matched_shell_force_N": 4.537383544636678,
+        "same_compression_force_relative_difference": 0.042384145547817775,
+        "internal_macro_force_on_dynamic_state_N": 4.73409343368501,
+        "instantaneous_inertia_contribution_N": -0.004396764486177318,
+        "KE_over_U": 0.03396591819705256
+      },
+      "N64_vs_N32_force_relative_difference": 0.025261957323877704
+    },
+    {
+      "compression": 0.12,
+      "N32_T4ms": {
+        "force_N": 5.445397594889246,
+        "matched_shell_force_N": 5.055781124276235,
+        "same_compression_force_relative_difference": 0.07706355576632817,
+        "internal_macro_force_on_dynamic_state_N": 5.446985348652361,
+        "instantaneous_inertia_contribution_N": -0.0015877537631148186,
+        "KE_over_U": 0.0014766258430285752
+      },
+      "N64_T1ms": {
+        "force_N": 5.557638351409316,
+        "matched_shell_force_N": 5.309324456416128,
+        "same_compression_force_relative_difference": 0.04676939543468839,
+        "internal_macro_force_on_dynamic_state_N": 5.573794879906858,
+        "instantaneous_inertia_contribution_N": -0.016156528497542233,
+        "KE_over_U": 0.023245993971787764
+      },
+      "N64_vs_N32_force_relative_difference": 0.020612040638761098
+    },
+    {
+      "compression": 0.13,
+      "N32_T4ms": {
+        "force_N": 5.836322284765985,
+        "matched_shell_force_N": 1.9572112186139592,
+        "same_compression_force_relative_difference": 1.9819583237925138,
+        "internal_macro_force_on_dynamic_state_N": 5.838954959357437,
+        "instantaneous_inertia_contribution_N": -0.002632674591452222,
+        "KE_over_U": 0.0012078405516118581
+      },
+      "N64_T1ms": {
+        "force_N": 5.927104690971571,
+        "matched_shell_force_N": 5.441670639148988,
+        "same_compression_force_relative_difference": 0.0892068050444339,
+        "internal_macro_force_on_dynamic_state_N": 5.965285951916016,
+        "instantaneous_inertia_contribution_N": -0.03818126094444452,
+        "KE_over_U": 0.01923730780072894
+      },
+      "N64_vs_N32_force_relative_difference": 0.01555472809350289
+    },
+    {
+      "compression": 0.13587668519974092,
+      "N32_T4ms": {
+        "force_N": 6.055677036644353,
+        "matched_shell_force_N": 1.8242351243253077,
+        "same_compression_force_relative_difference": 2.319570463201141,
+        "internal_macro_force_on_dynamic_state_N": 6.058789375419456,
+        "instantaneous_inertia_contribution_N": -0.0031123387751037512,
+        "KE_over_U": 0.0010700244347388464
+      },
+      "N64_T1ms": {
+        "force_N": 6.123711452351463,
+        "matched_shell_force_N": 4.523104115178185,
+        "same_compression_force_relative_difference": 0.3538736443855268,
+        "internal_macro_force_on_dynamic_state_N": 6.170626144367181,
+        "instantaneous_inertia_contribution_N": -0.04691469201571774,
+        "KE_over_U": 0.017271172295418788
+      },
+      "N64_vs_N32_force_relative_difference": 0.011234815743213833
+    }
+  ],
+  "N32_captured_dynamic_loading_peak": {
+    "compression": 0.15238701643777103,
+    "force_N": 6.5638696609580505,
+    "time": 0.0025925587590043295
+  },
+  "N64_captured_dynamic_loading_peak": null,
+  "N64_endpoint_maximum": {
+    "compression": 0.13587668519974092,
+    "force_N": 6.123711452351463,
+    "time": 0.0005981644966550156
+  },
+  "matched_shell_peaks": {
+    "T4ms": {
+      "compression": 0.1182407021522522,
+      "force_N": 5.229988098144531
+    },
+    "T1ms": {
+      "compression": 0.12786719799041749,
+      "force_N": 5.4987382888793945
+    },
+    "T0p25ms_preliminary": {
+      "compression": 0.054700815677642824,
+      "force_N": 4.8698296546936035
+    }
+  },
+  "N64_peak_unobserved": true,
+  "N32_full20_and_hold": true,
+  "N64_full20_and_hold": false,
+  "binary_volume_fraction": {
+    "N32": 0.13275201428574293,
+    "N64": 0.13237768665099178,
+    "N64_vs_N32_relative_difference": -0.0028197510731959863
+  },
+  "force_source": "scripts/thin_target_explicit.py observables: macro reaction includes internal force plus nodal full acceleration. internal_macro_Fz_N is evaluated on the dynamic state, not a statically re-equilibrated response.",
+  "mesh_rate_confounded": true,
+  "original_gates_unchanged": true,
+  "old_N32_full_window_metrics_preserved": {
+    "upper_compression": 0.2,
+    "points": 2001,
+    "RMS_N": 1.877385424450154,
+    "relative_to_old_fixed_peak": 0.831100799509696,
+    "relative_to_matched_shell_peak": 0.3589655252019031
+  },
+  "source_SHA256": {
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": "a34dbb3340590335f1dda1b3e94d17f0592dc865036fffa92fd0d5fda0dfcece",
+    "validation/binary_n64_20261009_r45/abaqus/explicit_T0p001000/results/shell.json": "df82cac8d63b1bc3344e7ef65f7ce46857f95234af686f9199a8d637b50900a8",
+    "validation/binary_n64_20261009_r45/abaqus/explicit_T0p000250/results/shell.json": "62966180dc65064886b3ececaddb149e36ba1705ecfc926dd8a90ff768145be4"
+  },
+  "new_N32_runs": 0,
+  "N64_resumed": false,
+  "new_Abaqus_jobs": 0,
+  "new_design_AD": 0,
+  "original_protected_files_count": 349,
+  "original_protected_files_unchanged": true,
+  "production_entry_sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "read_only_analysis_seconds": 2.183983177994378
+}

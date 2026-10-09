@@ -1,8 +1,6 @@
 # 文件地图：当前入口、冻结证据与历史
 
-r45 N64二值诊断已预算停止：T=1ms，UTC总118.38min，只至13.5877%且仍增载，未捕获峰；同速率壳峰12.7867%，末端同压缩量力差+35.39%。0数值回退，249项原科学字节保持；无新N32/保载/AD，不自动接续或新增作业。不是完整20%或纯网格因果检验。
-
-更新2026-10-09：r44二值20%及保载完成，整体对壳仍未达约10%。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
+更新2026-10-09：r46只读复盘/整理已完成，未新增仿真。N64峰仍未捕获；本轮具体范围见状态。R=`/home/xuehu/projects/tpms_jax`为唯一生产仓库，W为Windows阅读目录。原科学文件、INP/ODB和论文不搬迁。
 
 ## 当前入口各管一件事
 
@@ -10,9 +8,9 @@ r45 N64二值诊断已预算停止：T=1ms，UTC总118.38min，只至13.5877%且
 | --- | --- | --- |
 | [START_HERE](../README.md) | 导航 | R/README.md |
 | [背景](RESEARCH_BACKGROUND.md) | 长期研究问题、固定物理范围 | R/docs/RESEARCH_BACKGROUND.md |
-| [唯一规划](RESEARCH_PLAN.md) | N64收口及暂缓的机制路线 | R/docs/RESEARCH_PLAN.md |
+| [唯一规划](RESEARCH_PLAN.md) | 下一轮四步及启动边界 | R/docs/RESEARCH_PLAN.md |
 | [状态](RESEARCH_STATUS.md) | 已完成/失败/尚未执行 | R/docs/RESEARCH_STATUS.md |
-| [机制审查](MECHANISM_ANALYSIS.md) | 约5%原因、理论与判断 | R/docs/MECHANISM_ANALYSIS.md |
+| [机制审查](MECHANISM_ANALYSIS.md) | 初始占据与动态峰位机制 | R/docs/MECHANISM_ANALYSIS.md |
 | [综合说明](TPMS_RESEARCH_REVIEW.md) | 方法、符号、结果指标、可行性 | R/docs/TPMS_RESEARCH_REVIEW.md |
 | [文献](PAPER_ROUTE.md) | 实际阅读范围与出处 | R/docs/PAPER_ROUTE.md |
 | [周总结](WEEKLY_RESEARCH_SUMMARY.md) | 2026-10-07事实快照 | R/docs/WEEKLY_RESEARCH_SUMMARY.md |
@@ -22,6 +20,7 @@ r45 N64二值诊断已预算停止：T=1ms，UTC总118.38min，只至13.5877%且
 
 | 正式相对R目录 | 内容 | Windows阅读 |
 | --- | --- | --- |
+| validation/binary_mesh_reassessment_20261009_r46/ | 既有N32/N64共同窗口/惯性只读复盘、一图、报告、保护与整理收据；零新作业 | [r46](../validation/binary_mesh_reassessment_20261009_r46/REVIEW.md) |
 | validation/binary_n64_20261009_r45/ | N64 T1ms至13.59%预算停、峰未捕获；唯一peak_N64路径/完整检查点/匹配壳/两图/口径 | [r45](../validation/binary_n64_20261009_r45/REVIEW.md) |
 | validation/binary_full20_20261008_r44/ | 完整二值20%及保载、预算精确接续、两图/摘要/冻结收据；0数值失败，精度未达10% | [r44](../validation/binary_full20_20261008_r44/REVIEW.md) |
 | validation/initial_tangent_20261008_r30/ | 原N32初始切线/Standard壳、原场、协议、结果 | [r30–r31](../validation/initial_tangent_20261008_r30/REVIEW.md) |
@@ -59,7 +58,9 @@ r45 N64二值诊断已预算停止：T=1ms，UTC总118.38min，只至13.5877%且
 
 ## 本次整理与归档
 
-当前入口修改前原文：W/history/before_r45_binary_n64_20261009/；正式对应入口/validation索引：R/docs/history/before_r45_binary_n64_20261009/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
+当前入口修改前原文：W/history/before_r46_mesh_reassessment_20261009/；正式对应入口/validation索引：R/docs/history/before_r46_mesh_reassessment_20261009/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
+
+r46只读配方、统一比较、机制结论及新规划在R/validation/binary_mesh_reassessment_20261009_r46/，阅读在W/output/r46_binary_mesh_reassessment_20261009/。Windows r45的已完成辅助脚本与两日志归档至W/history/completed_tools_20261009/r45_support/，archive_receipt.json记录哈希不变；没有删除原文件。
 
 r45配方、峰后窗口修订、匹配壳、预算停止和保存状态位于R/validation/binary_n64_20261009_r45/，阅读在W/output/r45_binary_n64_20261009/；peak_N64是唯一有效非零路径，full_N64仅旧零态准备。未执行N32、保载或AD，原大文件不搬迁。
 
