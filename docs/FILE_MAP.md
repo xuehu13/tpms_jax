@@ -1,5 +1,7 @@
 # 文件地图：当前入口、冻结证据与历史
 
+r45 N64二值诊断已预算停止：T=1ms，UTC总118.38min，只至13.5877%且仍增载，未捕获峰；同速率壳峰12.7867%，末端同压缩量力差+35.39%。0数值回退，249项原科学字节保持；无新N32/保载/AD，不自动接续或新增作业。不是完整20%或纯网格因果检验。
+
 更新2026-10-09：r44二值20%及保载完成，整体对壳仍未达约10%。R=`/home/xuehu/projects/tpms_jax`，唯一正式程序；W=当前Windows阅读目录。原科学文件、INP/ODB、论文不搬迁。各轮完成不等于全部验证通过。
 
 ## 当前入口各管一件事
@@ -8,7 +10,7 @@
 | --- | --- | --- |
 | [START_HERE](../README.md) | 导航 | R/README.md |
 | [背景](RESEARCH_BACKGROUND.md) | 长期研究问题、固定物理范围 | R/docs/RESEARCH_BACKGROUND.md |
-| [唯一规划](RESEARCH_PLAN.md) | 仅当前三步顺序 | R/docs/RESEARCH_PLAN.md |
+| [唯一规划](RESEARCH_PLAN.md) | N64收口及暂缓的机制路线 | R/docs/RESEARCH_PLAN.md |
 | [状态](RESEARCH_STATUS.md) | 已完成/失败/尚未执行 | R/docs/RESEARCH_STATUS.md |
 | [机制审查](MECHANISM_ANALYSIS.md) | 约5%原因、理论与判断 | R/docs/MECHANISM_ANALYSIS.md |
 | [综合说明](TPMS_RESEARCH_REVIEW.md) | 方法、符号、结果指标、可行性 | R/docs/TPMS_RESEARCH_REVIEW.md |
@@ -20,6 +22,7 @@
 
 | 正式相对R目录 | 内容 | Windows阅读 |
 | --- | --- | --- |
+| validation/binary_n64_20261009_r45/ | N64 T1ms至13.59%预算停、峰未捕获；唯一peak_N64路径/完整检查点/匹配壳/两图/口径 | [r45](../validation/binary_n64_20261009_r45/REVIEW.md) |
 | validation/binary_full20_20261008_r44/ | 完整二值20%及保载、预算精确接续、两图/摘要/冻结收据；0数值失败，精度未达10% | [r44](../validation/binary_full20_20261008_r44/REVIEW.md) |
 | validation/initial_tangent_20261008_r30/ | 原N32初始切线/Standard壳、原场、协议、结果 | [r30–r31](../validation/initial_tangent_20261008_r30/REVIEW.md) |
 | validation/membrane_diagnostic_20261008_r31/ | 平直膜向补片与同Gauss解析 | 同上 |
@@ -44,6 +47,7 @@
 
 命令 `E:/ABAQUS/2026/Commands/abaqus.bat`；原生作业根 `E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/`：
 
+- `binary_n64_20261009_r45_shell_T0p001000/`：当前同速率壳原INP/ODB；`binary_n64_20261009_r45_shell_T0p000250/`为早期快速参照，均保留原质量检查。
 - `initial_diverse28_20261008_r41_diverse28/`：本轮代表构型初始Standard壳INP/ODB，全节点结果在R对应abaqus目录。
 - `curved_patch_20261008_r39/`：本轮CAX8与S3R初始参照、原INP/ODB。
 - `initial_tangent_20261008_r30_diverse04/`：初始Standard壳。
@@ -55,7 +59,9 @@
 
 ## 本次整理与归档
 
-当前入口修改前原文：W/history/before_r44_binary_full20_20261008/；正式对应入口/validation索引：R/docs/history/before_r44_binary_full20_20261008/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
+当前入口修改前原文：W/history/before_r45_binary_n64_20261009/；正式对应入口/validation索引：R/docs/history/before_r45_binary_n64_20261009/。此前各轮before_*与completed_tools_*原归档保留，不逐轮在当前地图追加重复段落。
+
+r45配方、峰后窗口修订、匹配壳、预算停止和保存状态位于R/validation/binary_n64_20261009_r45/，阅读在W/output/r45_binary_n64_20261009/；peak_N64是唯一有效非零路径，full_N64仅旧零态准备。未执行N32、保载或AD，原大文件不搬迁。
 
 r44配方、预算精确接续与只读后处理在R/validation/binary_full20_20261008_r44/；结果与保护收据同目录，完整路径/场/原日志留本机。两次后处理格式中断原版本与原因在postprocess_attempt01/02，不是求解重试。r43支持脚本和原中断仍留W/history/completed_tools_20261008/r43_support/及正式r43目录，不再作为当前待办。work只保留用途说明。
 

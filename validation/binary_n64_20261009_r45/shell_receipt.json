@@ -1,0 +1,35 @@
+{
+  "started_unix": 1791510431.3023207,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_n64_20261009_r45_shell_T0p001000",
+  "load_time_seconds": 0.001,
+  "new_shell_jobs": 1,
+  "returncode": 0,
+  "analysis_completed_successfully": true,
+  "quality_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "matched_peak": {
+    "time": 0.0005754500743933022,
+    "compression": 0.12786719799041749,
+    "Fz_N": -5.4987382888793945,
+    "ALLIE": 3.68945050239563,
+    "ALLSE": 3.669447898864746,
+    "ALLKE": 0.16900098323822021,
+    "ALLAE": 0.02000248059630394,
+    "ALLVD": 0.002312397351488471,
+    "ALLWK": 3.8083107471466064,
+    "ETOTAL": 0.05245300382375717
+  },
+  "input_unchanged": true,
+  "ODB_retained_native": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\binary_n64_20261009_r45_shell_T0p001000\\thin_shell.odb",
+  "wall_seconds": 42.98193287849426
+}

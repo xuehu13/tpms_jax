@@ -1,0 +1,9 @@
+{
+  "time_unix": 1791513360.5447206,
+  "compression_before_revision": 0.10297139907203806,
+  "old_postpeak_increment": 0.01,
+  "new_postpeak_increment": 0.003,
+  "force_drop_min": 0.1,
+  "consecutive_accepted_drop_rows": 3,
+  "reason": "Observed prepeak cost rises under shared 2h cap; human requested a little beyond peak, not full20. Only observational stop window narrowed; T=1ms/material/mass/dt/finite guards unchanged. No response acceptance threshold altered."
+}

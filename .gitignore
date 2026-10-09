@@ -90,3 +90,20 @@ validation/binary_full20_20261008_r44/postprocess_attempt*/analyze.py
 validation/binary_full20_20261008_r44/effective*_controller.py
 validation/binary_full20_20261008_r44/*background_launch.json
 validation/binary_full20_20261008_r44/supervisor_state.json
+
+# r45: peak-only diagnostic; large paths, duplicate decks and launch scratch stay local.
+validation/binary_n64_20261009_r45/full_N64/
+validation/binary_n64_20261009_r45/peak_N64/
+validation/binary_n64_20261009_r45/probe_N64/
+validation/binary_n64_20261009_r45/abaqus/
+validation/binary_n64_20261009_r45/effective*.py
+validation/binary_n64_20261009_r45/*background.json
+validation/binary_n64_20261009_r45/run_cases*.py
+validation/binary_n64_20261009_r45/run_before_peak_only.py
+validation/binary_n64_20261009_r45/monitor_before_attach/
+validation/binary_n64_20261009_r45/cases_receipt.json
+validation/binary_n64_20261009_r45/input_N32.json
+validation/binary_n64_20261009_r45/*_launch.json
+validation/binary_n64_20261009_r45/probe_N64_receipt.json
+validation/binary_n64_20261009_r45/full_N64_receipt.json
+validation/binary_n64_20261009_r45/protocol_before*.json

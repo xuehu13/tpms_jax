@@ -1,0 +1,9 @@
+{
+  "N64_binary_volume_fraction": 0.13237768665099178,
+  "Gauss_points": 7077888,
+  "same_N64_reference_cache": "/home/xuehu/projects/tpms_jax/validation/n64_resolution_20261008_r28/full_from_zero/gauss_field.npz",
+  "Gauss_cache_sha256": "88a76e5ca4ef5371c5c2347f2139edf9b0dcbc6ff3687106c9881ae0320c6c5a",
+  "binary_phi_sha256": "eec254824f6ca525a652e155231db2a45e10fc09399dcc0c07d48b8de70ac892",
+  "N32_cache_reused": "/home/xuehu/projects/tpms_jax/validation/binary_full20_20261008_r44/binary_gauss_field.npz",
+  "no_spatial_interpolation": true
+}

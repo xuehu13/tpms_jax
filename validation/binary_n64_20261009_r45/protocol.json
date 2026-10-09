@@ -1,0 +1,65 @@
+{
+  "round": "r45",
+  "user_scope": "Try binary diverse_04 N64 with T<=.001 s under a total computational budget <=2h; no automatic extension. Matched N32 short-rate control and same-rate shell if costs permit, not a sole mesh cause claim from unmatched rates.",
+  "started_unix": 1791509594.4944878,
+  "total_budget_seconds": 7200.0,
+  "postprocess_reserve_seconds": 120.0,
+  "N_candidates": [
+    32,
+    64
+  ],
+  "load_time_seconds": 0.001,
+  "T_candidates_seconds": [
+    0.001,
+    0.0005,
+    0.00025
+  ],
+  "target_compression": 0.2,
+  "hold_fraction": 0.1,
+  "L_mm": 10.0,
+  "t_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "occupancy": "reference Gauss binary phi=1[distance_normalized<=.025], preserve eta/C2 void and recompute HRZ",
+  "state_control": "same r44 numerical rule: row bound safety .8; positive solid J; 128/16 blocks; only decrease dt; nominal/4096 floor; high KE recorded; finite rollback. Absolute common wall deadline, no continuation/extension.",
+  "no_new_contact_damping_plasticity_training_AD": true,
+  "geometry_cache": "Reuse each N own actual Gauss distance; no N32 interpolation to N64.",
+  "curve_window": [
+    0.0,
+    0.2
+  ],
+  "comparison_points": 2001,
+  "old_fixed_peak_N": 2.2589142322540283,
+  "matched_peak_N": 5.4987382888793945,
+  "work_window": [
+    0.0,
+    0.2
+  ],
+  "hold_average": "time integral in common-covered [T,1.1T], no endpoint selection",
+  "working_target": 0.1,
+  "scope": "Accelerated dynamic spatial-resolution diagnostic; same T controls required for mesh inference; not quasistatic convergence or design AD certification",
+  "production_unchanged": true,
+  "matched_shell_peak": {
+    "time": 0.0005754500743933022,
+    "compression": 0.12786719799041749,
+    "Fz_N": -5.4987382888793945,
+    "ALLIE": 3.68945050239563,
+    "ALLSE": 3.669447898864746,
+    "ALLKE": 0.16900098323822021,
+    "ALLAE": 0.02000248059630394,
+    "ALLVD": 0.002312397351488471,
+    "ALLWK": 3.8083107471466064,
+    "ETOTAL": 0.05245300382375717
+  },
+  "matched_shell_json": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\binary_n64_20261009_r45\\abaqus\\explicit_T0p001000\\results\\shell.json",
+  "matched_shell_sha256": "df82cac8d63b1bc3344e7ef65f7ce46857f95234af686f9199a8d637b50900a8",
+  "selected_unix": 1791510474.2817435,
+  "selected_requested_T": 0.001,
+  "attempt_tag": "peak",
+  "output_directory": "peak_N64",
+  "N32_cancelled": true,
+  "hold_cancelled": true,
+  "stop_after_observed_peak": true,
+  "user_steering_file": "user_steering_02.json"
+}

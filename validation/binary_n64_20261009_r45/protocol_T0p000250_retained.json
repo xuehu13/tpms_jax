@@ -1,0 +1,58 @@
+{
+  "round": "r45",
+  "user_scope": "Try binary diverse_04 N64 with T<=.001 s under a total computational budget <=2h; no automatic extension. Matched N32 short-rate control and same-rate shell if costs permit, not a sole mesh cause claim from unmatched rates.",
+  "started_unix": 1791509594.4944878,
+  "total_budget_seconds": 7200.0,
+  "postprocess_reserve_seconds": 120.0,
+  "N_candidates": [
+    32,
+    64
+  ],
+  "load_time_seconds": 0.00025,
+  "T_candidates_seconds": [
+    0.001,
+    0.0005,
+    0.00025
+  ],
+  "target_compression": 0.2,
+  "hold_fraction": 0.1,
+  "L_mm": 10.0,
+  "t_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "occupancy": "reference Gauss binary phi=1[distance_normalized<=.025], preserve eta/C2 void and recompute HRZ",
+  "state_control": "same r44 numerical rule: row bound safety .8; positive solid J; 128/16 blocks; only decrease dt; nominal/4096 floor; high KE recorded; finite rollback. Absolute common wall deadline, no continuation/extension.",
+  "no_new_contact_damping_plasticity_training_AD": true,
+  "geometry_cache": "Reuse each N own actual Gauss distance; no N32 interpolation to N64.",
+  "curve_window": [
+    0.0,
+    0.2
+  ],
+  "comparison_points": 2001,
+  "old_fixed_peak_N": 2.2589142322540283,
+  "matched_peak_N": 4.8698296546936035,
+  "work_window": [
+    0.0,
+    0.2
+  ],
+  "hold_average": "time integral in common-covered [T,1.1T], no endpoint selection",
+  "working_target": 0.1,
+  "scope": "Accelerated dynamic spatial-resolution diagnostic; same T controls required for mesh inference; not quasistatic convergence or design AD certification",
+  "production_unchanged": true,
+  "matched_shell_peak": {
+    "time": 9.349129686597735e-05,
+    "compression": 0.054700815677642824,
+    "Fz_N": -4.8698296546936035,
+    "ALLIE": 0.8249861001968384,
+    "ALLSE": 0.8245812654495239,
+    "ALLKE": 1.1832534074783325,
+    "ALLAE": 0.0004047916445415467,
+    "ALLVD": 0.0019428738160058856,
+    "ALLWK": 2.1044788360595703,
+    "ETOTAL": -0.0942964032292366
+  },
+  "matched_shell_json": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\binary_n64_20261009_r45\\abaqus\\explicit_T0p000250\\results\\shell.json",
+  "matched_shell_sha256": "62966180dc65064886b3ececaddb149e36ba1705ecfc926dd8a90ff768145be4",
+  "selected_unix": 1791510176.5283701
+}

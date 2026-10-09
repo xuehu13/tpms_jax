@@ -1,0 +1,8 @@
+{
+  "time": 1791510350.7545428,
+  "pid": 147609,
+  "accepted_path_existed_before_signal": false,
+  "old_T": 0.00025,
+  "new_T": 0.001,
+  "reason": "User changed target to peak-only; .00025 shell strongly shifts dynamic peak. Use originally suggested .001 without extending total budget. Old preparation and fast shell retained."
+}

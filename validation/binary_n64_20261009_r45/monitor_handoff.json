@@ -1,0 +1,6 @@
+{
+  "time_unix": 1791514975.0745242,
+  "old_monitor_pid": 149062,
+  "unchanged_solver_pid": 149137,
+  "reason": "Attach same ongoing solver; read prepeak .003 observation revision, allow internal budget save before external watchdog, no new solver/parameters"
+}

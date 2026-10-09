@@ -1,0 +1,13 @@
+{
+  "received_unix": 1791510286.6303442,
+  "user_instruction": "先不用再做N32；N64不必20%，到峰值后多一些，主要看峰位",
+  "N32_cancelled": true,
+  "hold_cancelled": true,
+  "early_stop_definition": {
+    "loading_observed_peak_search_min_compression": 0.01,
+    "postpeak_compression_increment": 0.01,
+    "force_drop_fraction_min": 0.1,
+    "consecutive_accepted_drop_rows": 3
+  },
+  "scope": "Online observed maximum followed by >=1 percentage point and >=10% force drop across last 3 accepted rows; partial diagnostic, cannot certify future global maximum or quasi-static buckling. Same absolute 2h cap."
+}
