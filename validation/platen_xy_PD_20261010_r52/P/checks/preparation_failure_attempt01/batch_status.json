@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-10",
+  "stage": "batch_finished",
+  "execution_authorized": true,
+  "active_jobs": [],
+  "jobs_submitted": 0,
+  "new_solver_datachecks": 0,
+  "new_FEM_responses": 0,
+  "cases": {
+    "P": {
+      "planned_target_compression": 0.2,
+      "Abaqus": "not_submitted",
+      "JAX": "partial_or_failed",
+      "result": false,
+      "stage": "partial_or_failed_pair",
+      "full20_completed": false,
+      "three_scalar_targets_within_10pct": false,
+      "overall_minutes": 0.04274286429087321
+    },
+    "D": {
+      "planned_target_compression": 0.2,
+      "Abaqus": "not_submitted",
+      "JAX": "not_submitted",
+      "result": null
+    }
+  },
+  "existing_G_result": "r51 completed and unchanged",
+  "next_action": "await user review/continue instruction",
+  "authorization": "2026-10-10 user: 好的，安排准备好就开始吧",
+  "latest_kind": null
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-10",
+  "stage": "batch_analyzed",
+  "execution_authorized": true,
+  "active_jobs": [],
+  "jobs_submitted": 4,
+  "new_solver_datachecks": 2,
+  "new_FEM_responses": 3,
+  "cases": {
+    "P": {
+      "planned_target_compression": 0.2,
+      "Abaqus": "complete",
+      "JAX": "complete",
+      "result": true,
+      "stage": "complete_pair_analyzed",
+      "full20_completed": true,
+      "three_scalar_targets_within_10pct": true,
+      "overall_minutes": 44.58668013811111
+    },
+    "D": {
+      "planned_target_compression": 0.2,
+      "Abaqus": "failed_excessive_distortion",
+      "JAX": "complete",
+      "result": true,
+      "stage": "partial_reference_analyzed",
+      "full20_completed": false,
+      "three_scalar_targets_within_10pct": false,
+      "overall_minutes": 75.09317688941955,
+      "full20_acceptance": "not_evaluable_reference_failed",
+      "through_final_reporting_minutes": 80.12066326936086
+    }
+  },
+  "existing_G_result": "r51 completed and unchanged",
+  "next_action": "No automatic next task; discuss scientific results first",
+  "authorization": "2026-10-10 user: 好的，安排准备好就开始吧",
+  "latest_kind": "D",
+  "complete_pairs": 1,
+  "passing_pairs": 1
+}

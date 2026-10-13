@@ -1,0 +1,19 @@
+{
+  "case": "G12/AD/thickness",
+  "steps": 38189,
+  "total_steps": 38189,
+  "wall_s": 317.8165473937988,
+  "time_s": 0.00221493528535155,
+  "compression": 0.1199955736248841,
+  "work_N_mm": 2.4390370884164625,
+  "force_N": 3.6111283650124455,
+  "IE_N_mm": 2.4095426295312303,
+  "all_J_min": -1.22751881235085,
+  "required_positive_J_min": 0.7541928865806338,
+  "negative_void_J_points": 448,
+  "KE_N_mm": 0.022130762486596445,
+  "bottom_force_N": 3.6283870117706534,
+  "contact_energy_N_mm": 0.0073636967832589285,
+  "work_gradient_N": 7.397392320617286,
+  "force_gradient_N_per_mm": 12.778978665316625
+}

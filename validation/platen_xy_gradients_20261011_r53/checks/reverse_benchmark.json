@@ -1,0 +1,15 @@
+{
+  "block_steps": 256,
+  "forward256_s": 9.534984588623047,
+  "reverse256_s": 47.502774715423584,
+  "compile_and_first_forward_s": 10.605355739593506,
+  "compile_and_first_reverse_s": 68.78440976142883,
+  "block_work_JVP": 1.317739001456203,
+  "block_VJP_contraction": 1.3177390014562034,
+  "duality_relative_error": 3.3700847387783916e-16,
+  "estimated_full_forward_reverse_minutes": 92.21104420820872,
+  "host_checkpoint_estimate_GiB": 1.7317257523536682,
+  "wall_s": 188.55277585983276,
+  "passed": true,
+  "scope": "256-step AD duality/runtime at the loaded5pct state; not full-path reverse certification"
+}

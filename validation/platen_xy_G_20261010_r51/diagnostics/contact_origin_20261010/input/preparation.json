@@ -1,0 +1,11 @@
+{
+  "rim_nodes": 344,
+  "cap_points": 18432,
+  "area_preserved_mm2": [
+    12.999883973621222,
+    12.999883973621218
+  ],
+  "area_weighted_distance_to_rim_mm": 0.17830824165549697,
+  "max_shape_partition_error": 2.220446049250313e-16,
+  "warning": "Changed contact support/discretization is a diagnostic, not a correction certified as physical."
+}

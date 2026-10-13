@@ -1,0 +1,14 @@
+{
+  "contact_points": 344,
+  "reference_weighted_area_mm2": [
+    12.999883973621222,
+    12.999883973621218
+  ],
+  "shape_partition_error": 2.220446049250313e-16,
+  "same_existing_rim_cache": true,
+  "ramp_time_s": 0.004,
+  "hold_s": 0.0002,
+  "top_final_U3_mm": -2.0,
+  "new_material_or_mass": false,
+  "passed": true
+}

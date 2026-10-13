@@ -1,0 +1,19 @@
+{
+  "stage": "complete_pair_delivered",
+  "execution_authorized": true,
+  "active_jobs": [],
+  "case": "diverse_04",
+  "new_dynamic_jobs": 2,
+  "datachecks": 1,
+  "new_design_AD": false,
+  "training": false,
+  "heartbeat": "PAUSED; not re-enabled",
+  "original_r53_paused": true,
+  "complete_pair": true,
+  "Abaqus_complete": true,
+  "JAX_complete": true,
+  "overall_minutes": 41.01291763782501,
+  "source_guard_unchanged": true,
+  "next_queue": [],
+  "gradient_r53_unchanged": true
+}

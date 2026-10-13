@@ -1,0 +1,17 @@
+{
+  "stage": "complete_pair_analyzed",
+  "active_jobs": [],
+  "full20_completed": true,
+  "three_scalar_targets_within_10pct": true,
+  "new_design_AD": false,
+  "curve_RMS_over_shell_peak": 0.03418660233554509,
+  "work_relative_bias": 0.038586311534834605,
+  "hold_mean_relative_bias": 0.05761410013902335,
+  "overall_minutes": 87.07866555054983,
+  "physical_finite_width_contact_validated": false,
+  "report": "README.md",
+  "boundary_idealization": "Common midsurface-rim contact; both sides omit finite-width end-contact enforcement",
+  "identical_discrete_model": false,
+  "Abaqus_thickness_envelope_penetration_measured": false,
+  "universal20pct_substitution_validated": false
+}

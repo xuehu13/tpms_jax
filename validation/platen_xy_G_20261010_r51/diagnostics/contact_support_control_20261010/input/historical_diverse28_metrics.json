@@ -1,0 +1,41 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/void_continuation_20261006_r12/T0p008_analysis/comparison.json",
+  "curve_RMS": 0.050457806381543,
+  "curve_denominator_N": 2.2589142322540283,
+  "terminal_bias": 0.06854839993958528,
+  "work_bias": 0.05981164394277072,
+  "reference": "Abaqus Standard shell as recorded in original comparison; XYZ zero lateral macro strain, no contact",
+  "scope": "Do not compare this as the same problem or same force metric as current G platen/XY-free model",
+  "points": [
+    {
+      "compression": 0.01,
+      "jax_force_N": 0.38473167778632494,
+      "shell_force_N": 0.36943723478252233,
+      "signed_bias": 0.041399300243263326
+    },
+    {
+      "compression": 0.05,
+      "jax_force_N": 1.6858765900569963,
+      "shell_force_N": 1.6103992253526205,
+      "signed_bias": 0.04686872889413429
+    },
+    {
+      "compression": 0.1,
+      "jax_force_N": 2.377753705773583,
+      "shell_force_N": 2.2387674044908055,
+      "signed_bias": 0.0620816173238814
+    },
+    {
+      "compression": 0.15,
+      "jax_force_N": 2.227903817385944,
+      "shell_force_N": 2.0904140550078156,
+      "signed_bias": 0.06577154513899108
+    },
+    {
+      "compression": 0.2,
+      "jax_force_N": 1.9570316059772122,
+      "shell_force_N": 1.8314424753189087,
+      "signed_bias": 0.06857388771461936
+    }
+  ]
+}

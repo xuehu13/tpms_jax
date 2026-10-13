@@ -1,0 +1,73 @@
+{
+  "scope": "READ-ONLY saved terminal states. Frozen-pose penalty demands are not equilibrated reactions, not new force curves and not replacement validation.",
+  "G_new_dynamic_paths_complete": 0,
+  "G_attempts_stopped_before_time_advance": 3,
+  "original_G_comparison_still_not_passed": true,
+  "saved_states_time_s": 0.0012000000569969416,
+  "rows": [
+    {
+      "case": "Original shell pose + finite rigid cap replay",
+      "side": 0,
+      "area_weighted_penetration_mm": 0.003932832288763085,
+      "max_penetration_phi_ge_0p01_mm": 0.02404866569931241,
+      "max_penetration_phi_ge_0p5_mm": 0.020471618111216044,
+      "occupied_contact_fraction": 0.5036965108052631,
+      "fixed_pose_penalty_demand_N": 16.36043630127662
+    },
+    {
+      "case": "Original shell pose + finite rigid cap replay",
+      "side": 1,
+      "area_weighted_penetration_mm": 0.004493427676506954,
+      "max_penetration_phi_ge_0p01_mm": 0.027368590648690017,
+      "max_penetration_phi_ge_0p5_mm": 0.023448068932861332,
+      "occupied_contact_fraction": 0.5036963413877911,
+      "fixed_pose_penalty_demand_N": 18.692492300251754
+    },
+    {
+      "case": "Actual original JAX cap pose",
+      "side": 0,
+      "area_weighted_penetration_mm": 0.00021648624859640984,
+      "max_penetration_phi_ge_0p01_mm": 0.0050333199576272445,
+      "max_penetration_phi_ge_0p5_mm": 0.0018982176742533738,
+      "occupied_contact_fraction": 0.3818814016645217,
+      "fixed_pose_penalty_demand_N": 0.9005747563616127
+    },
+    {
+      "case": "Actual original JAX cap pose",
+      "side": 1,
+      "area_weighted_penetration_mm": 0.00021829259371656019,
+      "max_penetration_phi_ge_0p01_mm": 0.005105221374343216,
+      "max_penetration_phi_ge_0p5_mm": 0.001928585433022434,
+      "occupied_contact_fraction": 0.3750184049986271,
+      "fixed_pose_penalty_demand_N": 0.9080890849946388
+    },
+    {
+      "case": "JAX pose + polar rigid cap replay",
+      "side": 0,
+      "area_weighted_penetration_mm": 0.00044555506452190847,
+      "max_penetration_phi_ge_0p01_mm": 0.0074302576156056255,
+      "max_penetration_phi_ge_0p5_mm": 0.005634246805010214,
+      "occupied_contact_fraction": 0.39728639749518513,
+      "fixed_pose_penalty_demand_N": 1.8534925256409784
+    },
+    {
+      "case": "JAX pose + polar rigid cap replay",
+      "side": 1,
+      "area_weighted_penetration_mm": 0.00045091991596841986,
+      "max_penetration_phi_ge_0p01_mm": 0.007585915280831301,
+      "max_penetration_phi_ge_0p5_mm": 0.005712497902772284,
+      "occupied_contact_fraction": 0.397862117491681,
+      "fixed_pose_penalty_demand_N": 1.8758101084698324
+    }
+  ],
+  "rigid_cap_approximation_on_JAX": {
+    "area_weighted_z_difference_RMS_mm": 0.0007335995769942693,
+    "max_abs_z_difference_phi_ge_0p5_mm": 0.0037839124697498505,
+    "required_J_at_parent_min": 0.993258342361797,
+    "note": "Rotation estimated from polar decomposition of Q2 F at original shell rim positions. Not an independent shell rotation solution; includes different stretch/shear kinematics."
+  },
+  "shell_rim_rotation_max_degrees": 4.518516470914167,
+  "full20_submitted": false,
+  "new_design_AD": false,
+  "JAX_actual_cap_force_reconstruction_relative_error": -1.4036438678033392e-10
+}

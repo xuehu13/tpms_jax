@@ -1,0 +1,5 @@
+{
+  "type": "RuntimeError",
+  "message": "Abaqus solve failed",
+  "common_input_error": false
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 40.0,
+    "requested_compression_pct": 10.0,
+    "actual_a_pct": 9.812807440757751,
+    "actual_b_pct": 9.81281042098999,
+    "area_weighted_direction_cosine": 0.9999999949855867,
+    "fluctuation_difference_RMS_mm": 1.1450144229186503e-05,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 40.0,
+    "requested_compression_pct": 11.4,
+    "actual_a_pct": 11.862818002700806,
+    "actual_b_pct": 11.862679719924927,
+    "area_weighted_direction_cosine": 0.8378505364817372,
+    "fluctuation_difference_RMS_mm": 0.13523020387108284,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 40.0,
+    "requested_compression_pct": 12.0,
+    "actual_a_pct": 11.862818002700806,
+    "actual_b_pct": 11.862679719924927,
+    "area_weighted_direction_cosine": 0.8378505364817372,
+    "fluctuation_difference_RMS_mm": 0.13523020387108284,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 40.0,
+    "requested_compression_pct": 14.000000000000002,
+    "actual_a_pct": 13.823639154434202,
+    "actual_b_pct": 13.823457956314087,
+    "area_weighted_direction_cosine": 0.9483248339013245,
+    "fluctuation_difference_RMS_mm": 0.08798158814070797,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 40.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 10.0,
+    "actual_a_pct": 9.81281042098999,
+    "actual_b_pct": 9.812657237052917,
+    "area_weighted_direction_cosine": 0.9999999995560773,
+    "fluctuation_difference_RMS_mm": 3.826634671500376e-06,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 40.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 11.4,
+    "actual_a_pct": 11.862679719924927,
+    "actual_b_pct": 11.862592697143555,
+    "area_weighted_direction_cosine": 0.8075479012099401,
+    "fluctuation_difference_RMS_mm": 0.1468342622888047,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 40.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 12.0,
+    "actual_a_pct": 11.862679719924927,
+    "actual_b_pct": 11.862592697143555,
+    "area_weighted_direction_cosine": 0.8075479012099401,
+    "fluctuation_difference_RMS_mm": 0.1468342622888047,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 40.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 14.000000000000002,
+    "actual_a_pct": 13.823457956314087,
+    "actual_b_pct": 13.823313713073732,
+    "area_weighted_direction_cosine": 0.9581197912372523,
+    "fluctuation_difference_RMS_mm": 0.07997095614462821,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 10.0,
+    "actual_a_pct": 9.812807440757751,
+    "actual_b_pct": 9.812657237052917,
+    "area_weighted_direction_cosine": 0.9999999915650761,
+    "fluctuation_difference_RMS_mm": 1.4878866264419655e-05,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 11.4,
+    "actual_a_pct": 11.862818002700806,
+    "actual_b_pct": 11.862592697143555,
+    "area_weighted_direction_cosine": 0.9543721113304411,
+    "fluctuation_difference_RMS_mm": 0.0748259736509769,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 12.0,
+    "actual_a_pct": 11.862818002700806,
+    "actual_b_pct": 11.862592697143555,
+    "area_weighted_direction_cosine": 0.9543721113304411,
+    "fluctuation_difference_RMS_mm": 0.0748259736509769,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  },
+  {
+    "T_a_ms": 20.0,
+    "T_b_ms": 80.0,
+    "requested_compression_pct": 14.000000000000002,
+    "actual_a_pct": 13.823639154434202,
+    "actual_b_pct": 13.823313713073732,
+    "area_weighted_direction_cosine": 0.9772002276216029,
+    "fluctuation_difference_RMS_mm": 0.05923896367664706,
+    "scope": "Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "scope": "P complete0-to5pct thickness derivative, migration of same shared mechanics",
+  "passed": true,
+  "actual_compression": 0.05000000000003027,
+  "complete_from_zero_design_JVP": true,
+  "full_prefix_state_tangent_reused": false,
+  "objectives": [
+    {
+      "objective": "loading_work",
+      "baseline_value": 0.23632964959577554,
+      "AD": 0.5755736438778319,
+      "FD_h": 0.5755856337746723,
+      "FD_half": 0.5755742124404994,
+      "AD_FD_relative_error": 9.8781817394407e-07,
+      "FD_halving_relative_difference": 1.9843373671033246e-05,
+      "nearzero": false,
+      "pass_target": true
+    },
+    {
+      "objective": "terminal_upper_force",
+      "baseline_value": 0.8669298037929232,
+      "AD": 2.1940415888227043,
+      "FD_h": 2.190209298922552,
+      "FD_half": 2.193571044297471,
+      "AD_FD_relative_error": 0.00021451072964177393,
+      "FD_halving_relative_difference": 0.001532544561826911,
+      "nearzero": false,
+      "pass_target": true
+    }
+  ],
+  "steps": 17972,
+  "dt_s": 7.999914640321546e-08,
+  "additional_case_wall_minutes": {
+    "P5/AD/thickness": 24.473282980918885,
+    "P5/FD/t_plus_h": 12.774062939484914,
+    "P5/FD/t_minus_h": 12.682327020168305,
+    "P5/FD/t_plus_half": 12.677071678638459,
+    "P5/FD/t_minus_half": 12.679891498883565
+  },
+  "sampled_min_required_J": 0.950053075221531,
+  "sampled_min_all_J": 0.4765667553544991,
+  "protected_sources_unchanged": true,
+  "reverse_at_this_endpoint_validated": false,
+  "required_objectives": [
+    "loading_work",
+    "terminal_upper_force"
+  ],
+  "parameter": "thickness_mm",
+  "baseline_vs_original_forward": {
+    "max_absolute_force_N": 2.733904317531871e-05,
+    "RMS_force_N": 6.637779570801617e-06,
+    "includes_sample_interpolation": true
+  }
+}

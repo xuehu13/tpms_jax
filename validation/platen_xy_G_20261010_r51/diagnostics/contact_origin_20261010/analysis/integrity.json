@@ -1,0 +1,28 @@
+{
+  "protected_original_count": 14,
+  "protected_original_changed": [],
+  "r50_original_count": 156,
+  "r50_original_changed": [],
+  "original_production_source_count": 9,
+  "original_production_source_changed": [],
+  "shared_platen_adapter_unchanged": true,
+  "deliberate_experimental_launcher_changes": [
+    "Optional config/output paths in tools/run_jax.py",
+    "Optional isolated input/output/native paths in tools/run_abaqus.py"
+  ],
+  "new_dynamic_jobs": 3,
+  "full20_submitted": false,
+  "new_design_AD": false,
+  "active_jobs": [],
+  "tool_sha256": {
+    "extract_abaqus.py": "b829d02b316e8ba86530043f8e028fea4b262688816ed3eaa122a4df65c73e8d",
+    "contact_origin.py": "ee723e6a383c86aee265403b84eca24f0dad608b66beb56dc326f786e2e04e5e",
+    "run_abaqus.py": "dde5f71edc21d5979c0b41c26546a8a7741974b27c1dcb46bdb7f9770eb39836",
+    "run_jax.py": "8165e7235c188b4e43acb8ecce8eaa480e8784ca76ca28ac99e3caf7d58f367b",
+    "platen_model.py": "d5ce4bc214e38dc1b31e7d2b8d1dc748437684b6d18a9c24f068476e0bb7d1f9",
+    "analyze_contact_origin.py": "e8c14ca11ca5da24376f550394e164d1f671673f1930714e3788a3b543dfa022",
+    "prepare.py": "68e1f4c4d35fa0dad5de1c6630f08335cfcb32cc3f0f9757625686fa2a81f150",
+    "analyze.py": "a55dc66c65df44cb17884e9f34387b49ee3f4d8ca01f6cd5c89184657a4b258d"
+  },
+  "finalized_utc": "2026-10-10T04:28:28Z"
+}

@@ -1,0 +1,12 @@
+{
+  "XY_pairs": 341,
+  "unique_slaves": 341,
+  "Z_periodic_pairs": 0,
+  "macro_affine_identity_verified": true,
+  "no_wall_pin": true,
+  "r50_original_unchanged": true,
+  "contact_area_mm2": [
+    12.999883973621218,
+    12.999883973621218
+  ]
+}

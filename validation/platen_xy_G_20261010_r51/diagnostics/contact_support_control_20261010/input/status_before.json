@@ -1,0 +1,25 @@
+{
+  "stage": "paired_2pct_complete_comparison_not_passed",
+  "datacheck": "passed_with_recorded_warnings",
+  "uniform_contact": "passed",
+  "jax": "complete_2pct_plus_hold",
+  "abaqus": "complete_2pct_plus_hold",
+  "loading_RMS_over_shell_short_max": 0.11512172538540663,
+  "hold_mean_relative_bias": 0.1846983049992923,
+  "full20_submitted": false,
+  "new_design_AD": false,
+  "contact_scope": "2pct cut-end prototype, not full-wall contact or 20pct certification",
+  "active_jobs": [],
+  "diagnostic": {
+    "stage": "three_diagnostics_complete_contact_support_effect_identified",
+    "original_cap_comparison_passed": false,
+    "rimline_loading_RMS_over_original_shell_peak": 0.002081525381559259,
+    "rimline_hold_mean_bias": 0.003913027337197006,
+    "original_cap_T2ms_hold_bias": 0.1824603404213525,
+    "physical_finite_thickness_contact_certified": false,
+    "full20_submitted": false,
+    "new_design_AD": false,
+    "active_jobs": []
+  },
+  "diagnostic_directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010"
+}

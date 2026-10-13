@@ -1,0 +1,1 @@
+Pre-solver platform configuration error: cuda excluded CPU reference preprocessing. No JAX Problem built and zero dynamic tasks. Three completed Standard initial shells retained and reused. Corrected launcher enables cuda,cpu; no physical input changes.

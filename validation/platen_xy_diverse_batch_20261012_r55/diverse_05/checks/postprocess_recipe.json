@@ -1,0 +1,32 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/tools/analyze_rim20.py",
+  "source_sha256": "d85e6acb617c2ba88de612e1115b1e868dccb60228362d3e6bb16075e11d31c8",
+  "substitutions": [
+    [
+      "E=Path(__file__).resolve().parents[1];D=E.parents[1];R=D.parents[1]",
+      "E=Path('/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_05');D=Path('/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51');R=Path('/home/xuehu/projects/tpms_jax')"
+    ],
+    [
+      "R/'validation/canonical_tpms_20261009_r50/G/surface_shell_quality.npz'",
+      "Path('/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/surface.npz')"
+    ],
+    [
+      "D/'input/cut_face_contact.npz'",
+      "E/'input/cut_face_contact.npz'"
+    ],
+    [
+      "fig.suptitle('G | L10 mm",
+      "fig.suptitle('diverse_05 | L10 mm"
+    ],
+    [
+      ",'contextual_original2pct_peak_N':fixed",
+      ""
+    ],
+    [
+      ",'curve_RMS_over_old_fixed_peak':primary/fixed",
+      ""
+    ]
+  ],
+  "adapted_sha256": "0351e55a8ddbdea498b28998c153557ce5189b93573f26403ded0e17d686933d",
+  "new_FEM_calls": false
+}

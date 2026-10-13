@@ -1,0 +1,13 @@
+{
+  "scope": "One targeted finer actual-geometry FD check; original failed check retained",
+  "solver_exit_code": 0,
+  "new_complete_dynamic_paths": 4,
+  "new_JVP_paths": 0,
+  "reused_complete_JVP": "G5_shape/AD/shape",
+  "threshold_changes": false,
+  "analysis_exit_code": 0,
+  "passed": false,
+  "additional_case_wall_minutes": 69.97617764075596,
+  "wall_minutes": 70.54636501073837,
+  "protected_sources_unchanged": true
+}

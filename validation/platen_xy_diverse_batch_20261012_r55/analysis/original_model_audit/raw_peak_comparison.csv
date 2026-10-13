@@ -1,0 +1,9 @@
+﻿kind,model,raw_global_peak_compression_percent,raw_global_peak_stress_MPa
+diverse_02,original selected,1.8654872477000002,0.40533424377
+diverse_02,current Abaqus,4.549655914306641,0.02774116039276123
+diverse_04,original selected,18.509995937,0.24025856018
+diverse_04,current Abaqus,20.0,0.029020986557006835
+diverse_05,original selected,3.5267531871999998,0.21499286652
+diverse_05,current Abaqus,10.770080089569092,0.04640503883361816
+diverse_28,original selected,8.5064691305,0.14243915558
+diverse_28,current Abaqus,20.0,0.005971449017524719

@@ -1,0 +1,8 @@
+{
+  "datacheck_errors": 0,
+  "distorted_triangle_warning_present": true,
+  "same_warning_in_original_shell": true,
+  "source_mesh_unchanged": true,
+  "rigid_surface_offset_warning_present": true,
+  "interpretation": "Existing shell-mesh warnings retained; rigid plates have zero offset and midsurface node contact. Contact-pair deprecation warning is not a current solver error. No mesh/material/contact changes made."
+}

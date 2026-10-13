@@ -1,0 +1,76 @@
+{
+  "id": "interface5",
+  "requires_reverse_pass": true,
+  "scope": "G complete0-5pct interface-width reverse work derivative; independent FD",
+  "wall_budget_seconds": 5400,
+  "baseline_parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "active_parameter": "interface_10_90_mm",
+  "fd_steps_mm": [
+    0.00025,
+    0.000125
+  ],
+  "cases": [
+    {
+      "label": "FD/w_plus_h",
+      "params_mm": [
+        0.5,
+        0.05025
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "FD/w_minus_h",
+      "params_mm": [
+        0.5,
+        0.04975
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "FD/w_plus_half",
+      "params_mm": [
+        0.5,
+        0.050125
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "FD/w_minus_half",
+      "params_mm": [
+        0.5,
+        0.049875
+      ],
+      "is_ad": false
+    }
+  ],
+  "steps": 24789,
+  "dt_s": 5.7999300462244876E-08,
+  "target_compression": 0.05,
+  "load": "Original20pct4ms quintic prefix, no hold",
+  "primary_objective": "loading_work_N_mm",
+  "auxiliary": "terminal force FD only; no force VJP claim",
+  "AD_reference": "AD/reverse_work/result.json gradient_N[1]",
+  "thresholds": {
+    "nonzero_gradient_relative_AD_FD": 0.01,
+    "FD_h_halving_relative": 0.01,
+    "nearzero_dimensionless_gradient_cutoff": 1E-06,
+    "nearzero_absolute_scaled_error": 1E-05,
+    "objective_scales": [
+      1.0
+    ],
+    "parameter_scale_mm": 0.05
+  },
+  "includes": [
+    "Gauss occupancy",
+    "internal force",
+    "HRZ mass",
+    "XY macro inertia",
+    "end contact area",
+    "initial state",
+    "all steps and work"
+  ],
+  "frozen_utc": "2026-10-11T01:53:12.1023210Z"
+}

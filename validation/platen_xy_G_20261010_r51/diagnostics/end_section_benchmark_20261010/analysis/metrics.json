@@ -1,0 +1,62 @@
+{
+  "cap": {
+    "endpoint_force_N": 0.0011414630571380258,
+    "external_work_path_trapezoid_N_mm": 0.000142071925831362,
+    "endpoint_ALLWK_N_mm": 0.00014207191998139024,
+    "endpoint_ALLIE_N_mm": 0.0001420858025085181,
+    "IE_minus_WK_over_WK": 9.77147850869109e-05,
+    "endpoint_rotation_degrees": -7.5840841853841185,
+    "endpoint_force_lever_mm": -0.2528861165046692,
+    "endpoint_tip_lateral_mm": 0.8996667861938477,
+    "endpoint_local_normal_moment_N_mm": -0.00028866015965318265,
+    "maximum_contact_node_penetration_mm": 0.0,
+    "maximum_physical_cap_penetration_mm": 0.0,
+    "maximum_reaction_imbalance_over_endpoint_force": 2.9321496491670196e-07,
+    "maximum_contact_force_discrepancy_over_endpoint_force": 7.649086041305268e-08,
+    "endpoint_force_centroid_crosscheck_mm": 1.124437932986666e-06,
+    "saved_frames": 54,
+    "solve_wall_seconds": 26.43799999996554,
+    "datacheck_wall_seconds": 23.18799999996554
+  },
+  "rim": {
+    "endpoint_force_N": 0.00091531005455181,
+    "external_work_path_trapezoid_N_mm": 0.00010892691976161311,
+    "endpoint_ALLWK_N_mm": 0.00010892692080233246,
+    "endpoint_ALLIE_N_mm": 0.00010893501894315705,
+    "IE_minus_WK_over_WK": 7.434471446488011e-05,
+    "endpoint_rotation_degrees": -6.968650087217432,
+    "endpoint_force_lever_mm": 0.0,
+    "endpoint_tip_lateral_mm": 0.7906562685966492,
+    "endpoint_local_normal_moment_N_mm": 0.0,
+    "maximum_contact_node_penetration_mm": 0.0,
+    "maximum_physical_cap_penetration_mm": 0.03108195960521698,
+    "maximum_reaction_imbalance_over_endpoint_force": 3.8156028522140066e-07,
+    "maximum_contact_force_discrepancy_over_endpoint_force": 6.359338087023345e-08,
+    "endpoint_force_centroid_crosscheck_mm": 2.0492494190449406e-07,
+    "saved_frames": 54,
+    "solve_wall_seconds": 25.93700000003446,
+    "datacheck_wall_seconds": 20.343999999924563
+  },
+  "comparison": {
+    "cap_over_rim_minus_one_endpoint": 0.24707802723411976,
+    "rim_over_cap_minus_one_endpoint": -0.19812555576984325,
+    "RMS_difference_over_cap_maximum": 0.1542637713126936,
+    "cap_over_rim_minus_one_external_work": 0.3042865706192628,
+    "grid_points": 201,
+    "geometry_and_material_same": true,
+    "is_G_test": false,
+    "is_JAX_validation": false,
+    "magnitude_transfer_to_G_allowed": false,
+    "rim_contact_is_physical_full_cap": false,
+    "equal_force_N": 0.00091531005455181,
+    "cap_compression_at_equal_force": 0.01319984812358364,
+    "cap_rotation_degrees_at_equal_force": -5.320258214118143
+  },
+  "working_gate": {
+    "support_difference_above_5pct": true,
+    "both_static_balance_below_1e_minus3": true,
+    "both_selected_contact_node_penetration_below_1e_minus4_mm": true,
+    "rim_has_unconstrained_cap_penetration": true,
+    "causal_mechanism_demonstrated_in_local_solid": true
+  }
+}

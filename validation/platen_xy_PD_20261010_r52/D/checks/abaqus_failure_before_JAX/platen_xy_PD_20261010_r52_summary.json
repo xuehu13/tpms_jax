@@ -1,0 +1,61 @@
+[
+  {
+    "kind": "P",
+    "metrics": {
+      "paired_full20_and_hold": true,
+      "curve_RMS_over_new_shell_peak": 0.027818742532248225,
+      "common_loading_work_N_mm": {
+        "JAX": 2.58866963876766,
+        "Abaqus": 2.497543330716276,
+        "relative_bias": 0.03648637720541559
+      },
+      "hold_last0p1ms": {
+        "force_N": {
+          "JAX_N": 2.0359402776989493,
+          "Abaqus_N": 1.9426512044671185,
+          "relative_bias": 0.0480215249229059
+        },
+        "bottom_force_N": {
+          "JAX_N": 2.02927651212765,
+          "Abaqus_N": 1.9351671617779898,
+          "relative_bias": 0.04863112200766917
+        }
+      },
+      "three_scalar_targets_within_10pct": true
+    },
+    "costs": {
+      "preparation_seconds": 103.7127251625061,
+      "abaqus_check_solve_seconds": 378.1133768558502,
+      "extraction_seconds": 23.477920532226562,
+      "JAX_driver_seconds": 2163.9929101467133,
+      "overall_minutes": 44.58668013811111,
+      "within_100min": true,
+      "budget_minutes": {
+        "overall": 100,
+        "JAX": 65,
+        "Abaqus_datacheck_solve": 25,
+        "preparation_extraction_analysis": 10
+      }
+    }
+  },
+  {
+    "kind": "D",
+    "metrics": null,
+    "costs": {
+      "preparation_seconds": 1.868441104888916,
+      "failure": {
+        "type": "RuntimeError",
+        "message": "Abaqus solve failed",
+        "common_input_error": false
+      },
+      "overall_minutes": 7.202206007639567,
+      "within_100min": true,
+      "budget_minutes": {
+        "overall": 100,
+        "JAX": 65,
+        "Abaqus_datacheck_solve": 25,
+        "preparation_extraction_analysis": 10
+      }
+    }
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "scope": "documentation, stale navigation and regenerable cache only",
+  "new_FEM": 0,
+  "new_Abaqus": 0,
+  "new_AD": 0,
+  "active_jobs": [],
+  "protected_scientific_files": 670,
+  "changed_scientific_files": [],
+  "cached_files_removed": [
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\run_jax.cpython-313.pyc",
+      "bytes": 18334,
+      "sha256": "5d3efd940b0004421d29e607602674c6ee65b0eae1ad1c844e09502a0bccbdd9"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\contact_origin.cpython-313.pyc",
+      "bytes": 9031,
+      "sha256": "551bf1dd79c84d941f2311c19c857eb90868091a8a75aef33d4470d38fefe517"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\run_jax.cpython-312.pyc",
+      "bytes": 18348,
+      "sha256": "4a283c7748a71db6fcac3a377478da9db3ea8aca4f6a13291392c1d269bc42ea"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\probe_contact_support.cpython-312.pyc",
+      "bytes": 5792,
+      "sha256": "9a3019769444d35b2fadbf07f64f1d55cfaef6833ad48db3d9d68e9365674b2b"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\analyze_contact_origin.cpython-313.pyc",
+      "bytes": 22518,
+      "sha256": "4eae31db9aaf585dc5b9ab6afcf82d4ab98cbdc7e941707eab89b66ecd040f74"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\prepare.cpython-313.pyc",
+      "bytes": 16301,
+      "sha256": "ef972876daf7fc76f690c9e48db562a50a011d8094e86f74c8db7dee8c78700b"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\analyze_contact_control.cpython-312.pyc",
+      "bytes": 17487,
+      "sha256": "05e062ba60dacc222d843b1ecaeeeb6b4595d7612081d447c5ce2a8b93fe65d2"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\analyze_cap_arm_preparation.cpython-313.pyc",
+      "bytes": 16433,
+      "sha256": "674d07c082aa6ec586ba4569f2df652d8e9ff72fe5176d7cba57113421ab4caf"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\__pycache__\\platen_model.cpython-313.pyc",
+      "bytes": 18143,
+      "sha256": "f24e341dcd6d02a22b4309ef8da68c506e13d220e812a3b6df5cf1a47594f9c6"
+    }
+  ],
+  "cache_bytes_removed": 142387,
+  "previous_navigation_backups": 23,
+  "links_checked": 153,
+  "broken_links": [],
+  "source_code_moved_or_changed": false,
+  "raw_results_or_failed_inputs_deleted": false,
+  "original_G_2pct_comparison_passed": false,
+  "common_physical_G_reference_submitted": false,
+  "Windows_history": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\organization_platen_xy_20261010_r51\\consolidation",
+  "formal_organization": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\checks\\organization_20261010",
+  "authoring_recipe_archive": {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\consolidate_r51.py",
+    "archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\organization_platen_xy_20261010_r51\\consolidation\\authoring\\consolidate_r51.py",
+    "sha256": "c49587fd7d276e64e676fd2b9355ec0492097271c8d99c66633a23a5a9e57901",
+    "execution": "completed_once; historical recipe, not a pending task"
+  }
+}

@@ -1,0 +1,100 @@
+-------------------------------------------------------------------------------
+
+Double precision package and explicit executables will be used in this analysis.
+
+-------------------------------------------------------------------------------
+
+***WARNING: Contact Pair in Abaqus/Explicit will be deprecated and will be
+            removed in future releases. Please use General Contact in
+            Abaqus/Explicit, which offers better accuracy and performance.
+            This does not affect Abaqus/Standard which supports both Contact
+            Pair and General Contact.
+
+-------------------------------------------------------------------------------
+           DOMAIN DECOMPOSITION INFORMATION
+-------------------------------------------------------------------------------
+
+
+     DOMAIN 1 HAS 10194 ELEMENTS AND 6085 NODES with WEIGHT 24.999
+
+     DOMAIN 2 HAS 10181 ELEMENTS AND 6344 NODES with WEIGHT 24.999
+
+     DOMAIN 3 HAS 9438 ELEMENTS AND 6234 NODES with WEIGHT 23.000
+
+     DOMAIN 4 HAS 11794 ELEMENTS AND 8612 NODES with WEIGHT 27.001
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 1.54659E-07
+   Center of mass of model = ( 5.000000E+00, 5.000000E+00, 5.000000E+00)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          2.564997E-06                  1.029793E-05
+      I(YY)          2.564997E-06                  1.029793E-05
+      I(ZZ)          2.564997E-06                  1.029793E-05
+      I(XY)          1.148083E-12                 -3.866467E-06
+      I(YZ)         -9.470193E-13                 -3.866469E-06
+      I(ZX)         -9.422679E-13                 -3.866469E-06
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 7.04115E-08
+
+   Statistics over 36576 deformable elements:
+      Mean = 6.58707E-07
+      Standard deviation = 3.65309E-07
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+        1667          1       7.041154E-08      1.000000E+00
+        4061          2       7.041154E-08      1.000000E+00
+       16988          3       7.041154E-08      1.000000E+00
+       23508          4       7.041154E-08      1.000000E+00
+       19898          5       7.041154E-08      1.000000E+00
+       14212          6       7.041154E-08      1.000000E+00
+       29120          7       7.041154E-08      1.000000E+00
+        4248          8       7.041154E-08      1.000000E+00
+       16409          9       7.041154E-08      1.000000E+00
+       19954         10       7.041154E-08      1.000000E+00
+
+
+***WARNING: A shell surface with shell offsets has either rigid elements or
+            deformable elements made rigid. Rigid surfaces with shell offsets
+            cannot be used with contact pairs. The shell offsets will not be
+            enforced within the contact domain.  Please use general contact
+            instead.
+
+-----------------------------------------------------------------------
+CONSTRAINT SYSTEM DIAGNOSTIC OUTPUT
+-----------------------------------------------------------------------
+
+***ERROR: Abaqus/Explicit has formed at least one very large implicit system
+          of equations associated with enforcing constraints. Solving this
+          system of equations would  dramatically degrade performance. Please
+          refer to Abaqus/Explicit constraints documentation about implicit
+          systems of equations for suggestions on how to reduce the size of,
+          or avoid, these systems of equations. You can rerun this model with
+          this error message converted to a warning message by specifying
+          *Diagnostics, Large Implicit System=Warning   in the input file.
+          Additional details on individual systems of equations follows:
+
+ System               Solve           Number of        Node set           TriggerNodeSet
+  Rank             Opreations         Variables
+--------------------------------------------------------------------------------------------------
+    1           130114350              4050           ErrNsetSystNodes1    ErrNsetSystNodes_Trigger
+--------------------------------------------------------------------------------------------------
+           
+***ERROR: error was encountered in constraint packaging
+           

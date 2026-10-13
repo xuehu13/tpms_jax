@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791717885.3360674,
+  "deadline_unix": 1791719685.3360674,
+  "pid": 870152,
+  "steps": 38189,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/G12_interface_protocol.json"
+}

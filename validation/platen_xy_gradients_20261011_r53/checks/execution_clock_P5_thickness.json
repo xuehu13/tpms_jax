@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791719514.387779,
+  "deadline_unix": 1791726714.387779,
+  "pid": 875615,
+  "steps": 17972,
+  "dt": 7.999914640321546e-08,
+  "spec": "input/P5_thickness_protocol.json"
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "Targeted G5 complete-path shape derivative check at h=1e-7 and h/2; existing complete JVP reused byte-for-byte",
+  "passed": false,
+  "actual_compression": 0.04999999999998118,
+  "complete_from_zero_design_JVP": true,
+  "full_prefix_state_tangent_reused": false,
+  "objectives": [
+    {
+      "objective": "loading_work",
+      "baseline_value": 0.47990912191372703,
+      "AD": 0.0006712776899371033,
+      "FD_h": 0.0006717965073121945,
+      "FD_half": 0.0006712508326955913,
+      "AD_FD_relative_error": 4.001073846592514e-05,
+      "FD_halving_relative_difference": 0.000812922070296671,
+      "nearzero": false,
+      "pass_target": true,
+      "gradient_unit": "N mm"
+    },
+    {
+      "objective": "terminal_upper_force",
+      "baseline_value": 1.8227484584491298,
+      "AD": 0.0013517795834398503,
+      "FD_h": 0.001270702432165649,
+      "FD_half": 0.0014943779547138547,
+      "AD_FD_relative_error": 0.09542322999626246,
+      "FD_halving_relative_difference": 0.14967801274279058,
+      "nearzero": false,
+      "pass_target": false,
+      "gradient_unit": "N"
+    }
+  ],
+  "steps": 24789,
+  "dt_s": 5.7999300462244876e-08,
+  "additional_case_wall_minutes": {
+    "G5_shape/AD/shape": 33.796455379327135,
+    "G5_shape_refined/FD/a_plus_h": 17.56929803689321,
+    "G5_shape_refined/FD/a_minus_h": 17.472496143976848,
+    "G5_shape_refined/FD/a_plus_half": 17.466331537564596,
+    "G5_shape_refined/FD/a_minus_half": 17.46805192232132
+  },
+  "sampled_min_required_J": 0.9032635779478955,
+  "sampled_min_all_J": 0.019745752548607245,
+  "protected_sources_unchanged": true,
+  "reverse_at_this_endpoint_validated": false,
+  "required_objectives": [
+    "loading_work",
+    "terminal_upper_force"
+  ],
+  "parameter": "a",
+  "baseline_vs_original_forward": {
+    "max_absolute_force_N": 3.5287309634313146e-06,
+    "RMS_force_N": 1.3316160640974123e-06,
+    "includes_sample_interpolation": true
+  }
+}

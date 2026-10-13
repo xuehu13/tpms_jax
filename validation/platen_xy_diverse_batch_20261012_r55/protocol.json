@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "stage": "authorized_execution",
+  "date": "2026-10-12",
+  "request": "Three paired 20% forward comparisons: diverse_28, diverse_05, diverse_02 under latest common midsurface-end loading",
+  "execution_authorized": true,
+  "jobs_submitted": 0,
+  "cases": [
+    "diverse_28",
+    "diverse_05",
+    "diverse_02"
+  ],
+  "future_dynamic_jobs": 6,
+  "execution_order": [
+    "diverse_28_Abaqus",
+    "diverse_28_JAX",
+    "diverse_05_Abaqus",
+    "diverse_05_JAX",
+    "diverse_02_Abaqus",
+    "diverse_02_JAX"
+  ],
+  "L_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "density_tonne_mm3": 1e-09,
+  "N": 32,
+  "element": "HEX27",
+  "Gauss_points_per_element": 27,
+  "mass": "HRZ with projected affine inertia",
+  "material_model": "objective_void/C2",
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "phi_branches": [
+    0.001,
+    0.01
+  ],
+  "void_positive_cut_cap": 0.1,
+  "actual_F_J_clipping": false,
+  "contact_kn_MPa_per_mm": 320.0,
+  "kn_rule": "10*E/(L/N)",
+  "target_compression": 0.2,
+  "upper_platen_U3_mm": -2.0,
+  "load_time_s": 0.004,
+  "hold_time_s": 0.0002,
+  "motion": "quintic smoothstep, zero undeformed initial state, identical physical time in both solvers",
+  "periodic_axes": [
+    0,
+    1
+  ],
+  "lateral_macro": "free ax/ay; zero macro shear",
+  "wall_pin": null,
+  "contact_selection": "all actual midsurface shell nodes at initial z=0 orL; includes D tangency nodes; same locations in both solvers",
+  "jax_contact": "own occupied cut-face reference weights, nearest end-node aggregation, own Q2 interpolation; area conserved per end",
+  "abaqus_contact": "node-based zero contact thickness, Hard automatic penalty; S3R section thickness remains0.5mm and five section integration points",
+  "no_friction": true,
+  "no_self_contact": true,
+  "no_full_wall_contact": true,
+  "no_mass_scaling": true,
+  "no_new_design_AD": true,
+  "no_training": true,
+  "no_parameter_retries": true,
+  "per_geometry_budget_seconds": {
+    "overall": 6000,
+    "jax_build_compile_checks_solve": 3900,
+    "abaqus_datacheck_solve": 1500,
+    "preparation_extraction_analysis_reserve": 600
+  },
+  "budget_rule": "Sequential single attempt; all preparation/compile/check/solve/extraction costs included. Own cap versus remaining total minus postprocess reserve, whichever is smaller. No reset or automatic extension.",
+  "metrics": {
+    "loading_grid_points": 1001,
+    "loading_range": [
+      0.0,
+      0.2
+    ],
+    "windows": [
+      [
+        0.0,
+        0.02
+      ],
+      [
+        0.02,
+        0.1
+      ],
+      [
+        0.1,
+        0.2
+      ]
+    ],
+    "RMS_normalizer": "own new Abaqus loading maximum absolute upper-platen force; same for global and window RMS",
+    "work": "integral of upper-platen compressive force over platen travel; own new Abaqus work denominator",
+    "hold_mean_window_s": [
+      0.0041,
+      0.0042
+    ],
+    "hold_mean_denominator": "own new Abaqus time-mean upper-platen force",
+    "working_targets": {
+      "global_RMS": 0.1,
+      "absolute_work_relative_bias": 0.1,
+      "absolute_hold_mean_relative_bias": 0.1
+    },
+    "checkpoints": [
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "force_samples": [
+      0.02,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "additional": [
+      "peak/mode",
+      "free lateral displacement",
+      "matched displacement fields",
+      "energies and inertia",
+      "actualJ anddt",
+      "rim penetration and wall crossing"
+    ],
+    "peak_rules": {
+      "primary": "Raw global maximum upper-platen compressive force in actual loading window; report force, engineering compression and time",
+      "location_difference": "JAX minus new Abaqus in compression percentage points; report raw sample spacing",
+      "diagnostic_smoothing": "Centered moving mean on fixed 1001-point compression grid: width25 samples (~0.5 percentage points); no time warping",
+      "first_prominent_peak": "On smoothed curve, scipy find_peaks prominence >=10% of its own full-loading absolute peak and distance>=25 samples; list all qualifying peaks, compare first if both have one",
+      "endpoint_rule": "If global maximum is at end or no qualifying interior peak, mark no captured interior peak rather than claim a buckling peak",
+      "incomplete_rule": "Compare common achieved window only; no full20 acceptance, no unseen peak extrapolation"
+    }
+  },
+  "stop_policy": "No discrepancy/KE-only early stop. Stop on solver error, nonfinite state, nonpositive required actualJ, irrecoverable timestep or budget; preserve incomplete path honestly.",
+  "interpretation": "Transferability of common simplified midsurface end-loading; not identical discretization, full finite-thickness/self-contact or design-gradient certification.",
+  "cost_basis_minutes": {
+    "r54_diverse04_total": 41.0129,
+    "prior_G_total": 87.08,
+    "prior_P_total": 44.59,
+    "prior_D_total": 80.12
+  },
+  "geometry_precheck": "checks/geometry_precheck.json",
+  "implementation": "Same r51 mechanics / r52 bounded runners and preparation; new geometry/Gauss caches and data-only adapters",
+  "authorization": "User explicitly authorized preparation followed by 3-4 geometry tests; choose three named cases",
+  "maximum_batch_minutes": 300
+}

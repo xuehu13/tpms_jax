@@ -1,0 +1,108 @@
+{
+  "P": {
+    "shell_surface": "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/P/surface_shell_quality.npz",
+    "distance_surface": "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/P/surface.npz",
+    "nodes": 13424,
+    "triangles": 26160,
+    "xy_independent_relations": 232,
+    "xy_equations_6_dof": 1392,
+    "max_pair_coordinate_gap_mm": 0.0,
+    "raw_nonmanifold_edges": 0,
+    "rims": [
+      {
+        "side": 0,
+        "contact_nodes_all_on_end_plane": 116,
+        "open_rim_nodes": 116,
+        "open_rim_edges": 116,
+        "non_open_rim_end_nodes_labels": [],
+        "non_open_rim_end_nodes_xyz_mm": [],
+        "open_rim_length_mm": 15.28502747689269
+      },
+      {
+        "side": 1,
+        "contact_nodes_all_on_end_plane": 116,
+        "open_rim_nodes": 116,
+        "open_rim_edges": 116,
+        "non_open_rim_end_nodes_labels": [],
+        "non_open_rim_end_nodes_xyz_mm": [],
+        "open_rim_length_mm": 15.28502747689269
+      }
+    ],
+    "source_sha256": {
+      "surface.npz": "9a7cfe8f6a58d61feba383611031f86a687eb5936b37ad74461a9ac391ebb8df",
+      "gauss_field.npz": "d6d0aa18fe5d4cfe917f802410f83e240e033cdf9144884418bd83caee18c01d",
+      "input.json": "f6722b63e1fd6c92b3fefa45b5178f53b6bdaf0de9f380681305f4babae7b5df",
+      "geometry_audit.json": "21c5a2752bd52144345e70a756be7c4e3e2ea482b5494353f55e9110a7d30b5d",
+      "abaqus/shell.inp": "e2094ed2a516bfa27a7250782525a1905bd618a39547ee3877a858f419a1ddfa",
+      "surface_shell_quality.npz": "e0ab7cf9ef8316aa4c0098952918e7b1afa227907a9752bed1c089eee18c4440",
+      "shell_quality_adopted.json": "93e93f6ad480f5d0a37ebfdb530f46e8f2d11fc9a12dd09b681e8f118ff0d5a5"
+    },
+    "check_scope": "Read-only coordinates/connectivity audit; not a solver datacheck, rank proof, stability test, or new FEM response."
+  },
+  "D": {
+    "shell_surface": "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/D/surface.npz",
+    "distance_surface": "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/D/surface.npz",
+    "nodes": 20702,
+    "triangles": 39936,
+    "xy_independent_relations": 502,
+    "xy_equations_6_dof": 3012,
+    "max_pair_coordinate_gap_mm": 0.0,
+    "raw_nonmanifold_edges": 0,
+    "rims": [
+      {
+        "side": 0,
+        "contact_nodes_all_on_end_plane": 254,
+        "open_rim_nodes": 252,
+        "open_rim_edges": 248,
+        "non_open_rim_end_nodes_labels": [
+          5317,
+          15385
+        ],
+        "non_open_rim_end_nodes_xyz_mm": [
+          [
+            2.5,
+            7.5,
+            0.0
+          ],
+          [
+            7.5,
+            2.5,
+            0.0
+          ]
+        ],
+        "open_rim_length_mm": 39.26776695296637
+      },
+      {
+        "side": 1,
+        "contact_nodes_all_on_end_plane": 254,
+        "open_rim_nodes": 252,
+        "open_rim_edges": 248,
+        "non_open_rim_end_nodes_labels": [
+          5161,
+          15543
+        ],
+        "non_open_rim_end_nodes_xyz_mm": [
+          [
+            2.5,
+            2.5,
+            10.0
+          ],
+          [
+            7.5,
+            7.5,
+            10.0
+          ]
+        ],
+        "open_rim_length_mm": 39.26776695296637
+      }
+    ],
+    "source_sha256": {
+      "surface.npz": "297a17650495fe501b1ce3d7826e2a25ebbf10250f6edb2f8d8bf6006babd0fc",
+      "gauss_field.npz": "03fcbaa1b65409846554261270234d9cb71169ac1f62f7138fe100a55fc980ed",
+      "input.json": "4c7f8a203634d4e8ac35b5ad10127c2ea6a52a2461454cc0fff76ba7f0c0675e",
+      "geometry_audit.json": "56c59aa3b4d8e5d7a9a7ba78e746a7603e5782e5181659d928354e2805e9fb4c",
+      "abaqus/shell.inp": "d0b95c8e4d07be6091a33eb0f7b2ebdc74d89cf10293652b9982b4e63fa97787"
+    },
+    "check_scope": "Read-only coordinates/connectivity audit; not a solver datacheck, rank proof, stability test, or new FEM response."
+  }
+}

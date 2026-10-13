@@ -1,0 +1,19 @@
+{
+  "case": "P5/AD/thickness",
+  "steps": 17972,
+  "total_steps": 17972,
+  "wall_s": 1464.5562181472778,
+  "time_s": 0.0014377446591589689,
+  "compression": 0.05000000000003027,
+  "work_N_mm": 0.23632964959577554,
+  "force_N": 0.8669298037929232,
+  "IE_N_mm": 0.22217781705007333,
+  "all_J_min": 0.48927923230172465,
+  "required_positive_J_min": 0.9502098355634837,
+  "negative_void_J_points": 0,
+  "KE_N_mm": 0.013761864075866739,
+  "bottom_force_N": 0.8352708541753358,
+  "contact_energy_N_mm": 0.00038996857326277756,
+  "work_gradient_N": 0.5755736438778319,
+  "force_gradient_N_per_mm": 2.1940415888227043
+}

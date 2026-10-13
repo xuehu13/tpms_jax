@@ -1,0 +1,23 @@
+--- original_2pct
++++ new_rim20
+@@ -62753,16 +62753,16 @@
+ RP_TOP,1,2,0.
+ RP_TOP,4,6,0.
+ *Amplitude, name=LOAD, definition=SMOOTH STEP
+-0.,0.,0.001,1.,0.0012000000000000001,1.
++0.,0.,0.004,1.,0.0042,1.
+ *Step, name=PLATEN, nlgeom=YES
+ *Dynamic, Explicit
+-, 0.0012000000000000001
++, 0.0042
+ *Contact Pair, interaction=FRICTIONLESS, mechanical constraint=PENALTY
+ END_BOTTOM,PLATEN_BOTTOM
+ END_TOP,PLATEN_TOP
+ *Boundary, amplitude=LOAD
+-RP_TOP,3,3,-0.2
+-*Output, field, number interval=12
++RP_TOP,3,3,-2.
++*Output, field, number interval=84
+ *Node Output
+ U,UR,RF
+ *Element Output, elset=WALL

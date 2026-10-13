@@ -1,0 +1,22 @@
+{
+  "reason": "G shell MC sliver gives initial stable dt about 3e-10 s; stopped before meaningful loading. Retessellate G/P only, preserve D. No physical parameter fitting.",
+  "first_G_shell_wall_reserved_seconds": 320,
+  "first_G_launch_UTC": "2026-10-09T16:59:56.0176556Z",
+  "termination_command_finished_UTC": "2026-10-09T17:04:48.7095056Z",
+  "actual_timestamp_difference_seconds": 292.69185,
+  "G_new_shell_solver_budget_seconds": 1080,
+  "P_D_shell_solver_budget_seconds": 1400,
+  "initial_recheck": [
+    "G",
+    "P"
+  ],
+  "JAX_fields_unchanged": true,
+  "same_vertices_not_same_facets": true,
+  "geometry_scope": "Sampled facet-centroid deviations are not global Hausdorff bounds; original JAX distance fields retained. D retessellation assessed but not used.",
+  "algorithm": "igl.intrinsic_delaunay_triangulation(igl.edge_lengths(vertices, original_faces), original_faces)[1]; unchanged vertices; original IDs and boundary edges retained; independent periodic quotient audit and all-centroid distance comparison.",
+  "library_versions": {
+    "libigl": "2.6.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

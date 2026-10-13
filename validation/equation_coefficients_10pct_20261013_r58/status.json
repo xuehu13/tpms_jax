@@ -1,0 +1,13 @@
+{
+  "stage": "completed",
+  "active_jobs": [],
+  "result": "AD/work_VJP_result.json",
+  "heartbeat": "PAUSED",
+  "r53": "unchanged_paused",
+  "r57": "unchanged_completed",
+  "analysis": "analysis/README.md",
+  "analysis_completed_unix": 1791876545.5154178,
+  "final_acceptance_passed": true,
+  "analysis_conclusion": "完整0–10%加载功三系数梯度通过",
+  "worker_status_snapshot": "analysis/worker_status_before_analysis.json"
+}

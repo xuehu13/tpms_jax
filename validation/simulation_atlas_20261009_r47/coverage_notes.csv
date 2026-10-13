@@ -1,0 +1,56 @@
+﻿source,id,reason
+validation/thin_target_20261004_r5/step3_xyz/attempt1_a0p010000/shell.json,28-ST1old,相同时间/压缩/反力记录，已画 28-ST1
+validation/thin_target_20261004_r5/step3_xyz/attempt2_mgs_a0p050000/shell.json,28-ST5mid,相同时间/压缩/反力记录，已画 28-ST5
+validation/thin_target_20261004_r5/step4_thickness_a01/t0p498000/shell.json,28-ST498,相同时间/压缩/反力记录，已画 28-ST498old
+validation/binary_full20_20261008_r44/continuation_from_budget/result.json,,结果内嵌/原失败文件的相同曲线副本
+validation/binary_full20_20261008_r44/full_from_zero/accepted_path.json,,r44原预算停止前缀，精确包含于04-B32完整接续，不另算新路径
+validation/binary_full20_20261008_r44/full_from_zero/failure.json,,r44原预算停止前缀，精确包含于04-B32完整接续，不另算新路径
+validation/binary_n64_20261009_r45/full_N64/accepted_path.json,,仅零态准备，无非零接受路径
+validation/binary_n64_20261009_r45/full_N64/failure.json,,仅零态准备，无非零接受路径
+validation/binary_n64_20261009_r45/peak_N64/failure.json,,结果内嵌/原失败文件的相同曲线副本
+validation/jax_improvement_20261006_r8/uniform_q6/result.json,,均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应
+validation/large_compression_20261005_r6/explicit/wave_check/result.json,,均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应
+validation/large_compression_20261005_r6/gradient20_path_20261005/q1_wave_after_interface/result.json,,均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应
+validation/large_compression_20261005_r6/quadratic_wave/result.json,,均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应
+validation/large_compression_20261005_r6/quadratic_wave_runtime_geometry/result.json,,均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应
+validation/mechanism_20261007_r17/original_diagnostic/failure.json,,结果内嵌/原失败文件的相同曲线副本
+validation/mechanism_20261007_r17/short_dt_replay/result.json,,结果内嵌/原失败文件的相同曲线副本
+validation/n64_resolution_20261008_r28/full_from_zero/failure.json,,结果内嵌/原失败文件的相同曲线副本
+validation/shell_fill_diagnostic_20261007_r25/results/result_gauge.json,,结果内嵌/原失败文件的相同曲线副本
+validation/step_control_20261007_r18/controlled_forward/failure.json,,结果内嵌/原失败文件的相同曲线副本
+validation/void_support_20261007_r26/forward/failure.json,,结果内嵌/原失败文件的相同曲线副本
+validation/binary_n64_20261009_r45/full_N64/failure.json,,
+validation/binary_n64_20261009_r45/peak_N64/failure.json,,Controlled forward budget stop; not a numerical method failure
+validation/geometry_transfer_20261006_r15/operator_stop.json,,Main plan requires stopping on actual inertia/completion concern. Rejected nonfinite blocks plus KE/U well above 5%; do not extend/retune merely to reach 20%.
+validation/large_compression_20261005_r6/explicit/N64_T0p004/failure.json,,Nonfinite displacement or nonpositive reference Gauss detF
+validation/large_compression_20261005_r6/gradient20/endpoint/algorithm_stop.json,,residual stagnation in thickness-minus Newton; try same-model energy line search
+validation/large_compression_20261005_r6/gradient20/endpoint_energy/failure.json,,Newton direction is not an energy descent direction
+validation/large_compression_20261005_r6/static/a0p150000/failure.json,,"error code 91
+[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094
+[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+validation/mechanism_20261007_r17/original_diagnostic/failure.json,,Nonfinite state or material energy/force
+validation/n64_resolution_20261008_r28/full_from_zero/failure.json,,Finite rollback reaches unchanged initial/16 safeguard
+validation/step_control_20261007_r18/controlled_forward/failure.json,,Controlled forward budget stop; not a numerical method failure
+validation/thin_target_20261004_r5/step3_xyz/attempt1_a0p010000/failure.json,,"error code 82
+[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094
+[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+validation/thin_target_20261004_r5/step3_xyz/attempt1_a0p050000/failure.json,,"error code 82
+[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094
+[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+validation/thin_target_20261004_r5/step3_xyz/attempt2_mgs_a0p050000/failure.json,,"error code 82
+[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094
+[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+validation/thin_target_20261004_r5/step4_thickness_a01/attempt1_memory_t0p498000/stop_context.json,,"guard policy, not OOM or numerical divergence"
+validation/thin_target_20261004_r5/step4_thickness_a01/attempt1_overlap_t0p499000/stop_context.json,,operator interrupted attempt after scheduling overlap and prolonged no-progress observation; retry separately
+validation/thin_target_20261004_r5/step4_thickness_a01/attempt1_scheduling_t0p501000/stop_context.json,,agent scheduling mistake: overlap with .499 process; guard stopped new .501 process before completion
+validation/simulation_error_20261006_r7/,,恒厚保形体网格未通过；无独立新增TPMS实体响应路径
+validation/virtual_kernel_20261006_r9/,,经典虚域核转动缺陷；未采用，未算独立压缩路径
+validation/objective_virtual_20261006_r10/,,纯核/既有场验证；没有新压缩路径
+validation/critical_mode_20261007_r21/,,受限谱/细空间残差诊断；不是力-压缩路径
+validation/fine_mode_20261007_r22/,,四方向200迭代未收敛；不当作临界点证据
+validation/background_probe_20261007_r24/,,参考背景源仅准备，未编译/运行；没有ABAQUS27节点对照曲线
+validation/initial_bias_mechanism_20261008_r32/,,已有初始场能量/膜迹后处理，无新压缩路径
+validation/thickness_kinematics_20261008_r35/,,穿厚度已有场后处理，无新平衡路径
+validation/compatible_mode_20261008_r36/,,固定节点局部模式释放，不是新全局刚度
+validation/initial_bias_reassessment_20261008_r42/,,既有状态能量账目后处理，不另算重复仿真
+validation/binary_mesh_reassessment_20261009_r46/,,共同窗口复盘，原N32/N64重复使用，不另画成新仿真

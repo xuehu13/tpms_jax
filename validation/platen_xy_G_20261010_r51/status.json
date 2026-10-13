@@ -1,0 +1,149 @@
+{
+  "active_jobs": [],
+  "diagnostic": {
+    "stage": "three_diagnostics_complete_contact_support_effect_identified",
+    "original_cap_comparison_passed": false,
+    "rimline_loading_RMS_over_original_shell_peak": 0.002081525381559259,
+    "rimline_hold_mean_bias": 0.003913027337197006,
+    "original_cap_T2ms_hold_bias": 0.1824603404213525,
+    "physical_finite_thickness_contact_certified": false,
+    "full20_submitted": false,
+    "new_design_AD": false,
+    "active_jobs": []
+  },
+  "diagnostic_directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010",
+  "contact_support_control_directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_support_control_20261010",
+  "contact_support_control": {
+    "stage": "one_path_complete_halfway_admission_stopped_analyzed",
+    "active_jobs": [],
+    "dynamic_complete": [
+      "cap_common_dt"
+    ],
+    "pre_dynamic_stop": [
+      "half_support_common_dt"
+    ],
+    "cap_common_dt_hold_bias": 0.1847254443736832,
+    "cap_dt_control_max_curve_change_over_shell_peak": 0.00015532283211689538,
+    "rimline_is_diagnostic_only": true,
+    "physical_finite_thickness_contact_certified": false,
+    "full20_submitted": false,
+    "new_design_AD": false
+  },
+  "end_section_benchmark_directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/end_section_benchmark_20261010",
+  "end_section_benchmark": {
+    "stage": "two_static_solid_paths_complete_analyzed",
+    "cap_over_rim_endpoint_bias": 0.24707802723411976,
+    "is_G_test": false,
+    "is_JAX_validation": false,
+    "active_jobs": []
+  },
+  "end_section_JAX_comparison": {
+    "stage": "two_local_JAX_static_paths_complete_analyzed",
+    "active_jobs": [],
+    "nodal_endpoint_bias": -0.00019254310088800963,
+    "gauss_endpoint_bias": -0.012442373349801361,
+    "local_gate_passed": true,
+    "is_G_test": false,
+    "background_occupancy_validated": false,
+    "new_design_AD": false,
+    "full20_submitted": false
+  },
+  "shell_cap_arm_directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/shell_cap_arm_20261010",
+  "shell_cap_arm_diagnostic": {
+    "stage": "two_probes_complete_three_G_packaging_stops_analyzed",
+    "active_jobs": [],
+    "completed_G_dynamic_paths": 0,
+    "G_attempts_stopped_before_time_advance": 3,
+    "original_G_comparison_passed": false,
+    "saved_pose_top_cap_max_phi_ge_0p5_mm": 0.023448068932861332,
+    "JAX_rigid_replay_z_RMS_mm": 0.0007335995769942693,
+    "rigid_cap_scheme_not_adopted": true,
+    "full20_submitted": false,
+    "new_design_AD": false
+  },
+  "native_shell_contact_directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/native_shell_contact_20261010",
+  "native_shell_contact_diagnostic": {
+    "stage": "three_prescribed_native_geometry_probes_complete_analyzed",
+    "active_jobs": [],
+    "native_flat_cut_geometry_gate_passed": false,
+    "native_contact_not_adopted": true,
+    "new_G_paths": 0,
+    "original_G_comparison_passed": false,
+    "full20_submitted": false,
+    "new_design_AD": false,
+    "native_onset_height_midpoints_mm": [
+      0.00022737979888914905,
+      0.052245232462882985,
+      0.21254997253417968
+    ],
+    "G_initial_facet_normal_envelope_max_mm": 0.14610243452041347,
+    "G_saved_state_full_F_Z_RMS_mm": 0.0008330209324333027,
+    "supplemental_G_solid_reference": "proposed_geometry_and_cost_feasibility_only_not_generated_or_submitted"
+  },
+  "latest_activity": "documentation_and_directory_consolidated_after_rim20",
+  "midsurface_rim_20pct": {
+    "stage": "complete_pair_analyzed",
+    "directory": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010",
+    "load_time_s": 0.004,
+    "hold_time_s": 0.0002,
+    "target_compression": 0.2,
+    "overall_wall_budget_s": 5400,
+    "new_INP_generated": true,
+    "new_dynamic_jobs_submitted": 2,
+    "full20_completed": true,
+    "new_design_AD": false,
+    "active_jobs": [],
+    "abaqus_complete": true,
+    "three_scalar_targets_within_10pct": true,
+    "curve_RMS_over_shell_peak": 0.03418660233554509,
+    "work_relative_bias": 0.038586311534834605,
+    "hold_mean_relative_bias": 0.05761410013902335,
+    "overall_minutes": 87.07866555054983,
+    "physical_finite_width_contact_validated": false,
+    "report": "experiments/midsurface_rim_20pct_20261010/README.md"
+  },
+  "original_2pct": {
+    "scope": "Original finite-width JAX versus node-rim Abaqus, 1ms+0.2ms; original outcome unchanged",
+    "stage": "paired_2pct_complete_comparison_not_passed",
+    "datacheck": "passed_with_recorded_warnings",
+    "uniform_contact": "passed",
+    "jax": "complete_2pct_plus_hold",
+    "abaqus": "complete_2pct_plus_hold",
+    "loading_RMS_over_shell_short_max": 0.11512172538540663,
+    "hold_mean_relative_bias": 0.1846983049992923,
+    "full20_submitted": false,
+    "new_design_AD": false,
+    "contact_scope": "2pct cut-end prototype, not full-wall contact or 20pct certification"
+  },
+  "schema_version": 2,
+  "stage": "G_common_midsurface_rim_full20_pair_complete_targets_met",
+  "jax": "complete_20pct_plus_hold",
+  "abaqus": "complete_20pct_plus_hold",
+  "full20_submitted": true,
+  "full20_completed": true,
+  "new_design_AD": false,
+  "contact_scope": "Common midsurface-rim idealization; not identical discrete contact, not finite-width/full-wall/self-contact validation",
+  "current_experiment": "experiments/midsurface_rim_20pct_20261010",
+  "current_report": "experiments/midsurface_rim_20pct_20261010/README.md",
+  "common_simplified_rim_forward_targets_met": true,
+  "physical_finite_width_contact_validated": false,
+  "universal20pct_substitution_validated": false,
+  "organization_before_rim20": {
+    "date": "2026-10-10",
+    "summary": "README.md",
+    "complete_historical_record": "RESEARCH_LOG.md",
+    "new_FEM": 0,
+    "new_Abaqus": 0,
+    "new_design_AD": false,
+    "common_physical_G_end_validated": false,
+    "reason_assessment": "Strong evidence for contact support/discretization as a major influence in current G 0-2pct; no unique attribution of all errors.",
+    "receipt": "checks/organization_20261010/receipt.json"
+  },
+  "organization": {
+    "date": "2026-10-10",
+    "new_FEM": 0,
+    "new_Abaqus": 0,
+    "new_design_AD": false,
+    "receipt": "checks/organization_rim20_conclusion_20261010/receipt.json"
+  }
+}

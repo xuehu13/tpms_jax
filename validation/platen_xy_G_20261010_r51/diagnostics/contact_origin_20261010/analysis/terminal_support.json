@@ -1,0 +1,23 @@
+{
+  "scope": "Saved terminal state of original cap-contact path only. Moments are about nearest shell rim nodes, using current lever arms; not an isolated causal test or physical shell nodal moments.",
+  "sides": [
+    {
+      "side": 0,
+      "force_N": 0.9005747564859129,
+      "sum_local_moment_magnitudes_N_mm": 0.15452648303235994,
+      "equivalent_local_lever_mm": 0.17158651396729116,
+      "pressure_redistribution_moment_N_mm": 0.17115401317803086,
+      "pressure_redistribution_equivalent_lever_mm": 0.19004975649759745,
+      "occupied_area_fraction_in_contact": 0.3818814016654968
+    },
+    {
+      "side": 1,
+      "force_N": 0.9080890851207213,
+      "sum_local_moment_magnitudes_N_mm": 0.15630637736983222,
+      "equivalent_local_lever_mm": 0.17212669982598994,
+      "pressure_redistribution_moment_N_mm": 0.17285116698029923,
+      "pressure_redistribution_equivalent_lever_mm": 0.1903460462332508,
+      "occupied_area_fraction_in_contact": 0.37501840499962114
+    }
+  ]
+}

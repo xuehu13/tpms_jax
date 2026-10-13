@@ -1,0 +1,69 @@
+{
+  "canonical_curves": 41,
+  "static_points": 22,
+  "figures": 23,
+  "window_error_rows": 131,
+  "point_error_rows": 200,
+  "all_canonical_curves_plotted": true,
+  "new_FEM_Abaqus_AD": 0,
+  "source_files": 140,
+  "source_hashes_unchanged": true,
+  "shell_T": [
+    {
+      "id": "04-S025",
+      "case": "diverse_04",
+      "T_ms": 0.25,
+      "recorded_max_at": 0.054700815677642824,
+      "recorded_max_N": 4.8698296546936035,
+      "original_failed_checks": "global_energy_drift_le_1pct; most_loading_time_KE_below_5pct; terminal_KE_below_5pct; artificial_energy_le_5pct_work"
+    },
+    {
+      "id": "04-S1",
+      "case": "diverse_04",
+      "T_ms": 1.0,
+      "recorded_max_at": 0.12786719799041749,
+      "recorded_max_N": 5.4987382888793945,
+      "original_failed_checks": "global_energy_drift_le_1pct; most_loading_time_KE_below_5pct; terminal_KE_below_5pct; artificial_energy_le_5pct_work"
+    },
+    {
+      "id": "04-S40",
+      "case": "diverse_04",
+      "T_ms": 40.0,
+      "recorded_max_at": 0.11416069269180298,
+      "recorded_max_N": 5.098315715789795,
+      "original_failed_checks": "global_energy_drift_le_1pct; most_loading_time_KE_below_5pct; artificial_energy_le_5pct_work"
+    },
+    {
+      "id": "28-S20",
+      "case": "diverse_28",
+      "T_ms": 20.0,
+      "recorded_max_at": 0.10513772964477539,
+      "recorded_max_N": 2.24279522895813,
+      "original_failed_checks": "global_energy_drift_le_1pct"
+    },
+    {
+      "id": "28-S40",
+      "case": "diverse_28",
+      "T_ms": 40.0,
+      "recorded_max_at": 0.10554772615432739,
+      "recorded_max_N": 2.243082284927368,
+      "original_failed_checks": "global_energy_drift_le_1pct"
+    },
+    {
+      "id": "04-S2",
+      "case": "diverse_04",
+      "T_ms": 2.0,
+      "recorded_max_at": 0.12190046310424804,
+      "recorded_max_N": 5.340913772583008,
+      "original_failed_checks": "global_energy_drift_le_1pct; most_loading_time_KE_below_5pct; terminal_KE_below_5pct; artificial_energy_le_5pct_work"
+    },
+    {
+      "id": "04-S4",
+      "case": "diverse_04",
+      "T_ms": 4.0,
+      "recorded_max_at": 0.1182407021522522,
+      "recorded_max_N": 5.229988098144531,
+      "original_failed_checks": "global_energy_drift_le_1pct; most_loading_time_KE_below_5pct; terminal_KE_below_5pct; artificial_energy_le_5pct_work"
+    }
+  ]
+}

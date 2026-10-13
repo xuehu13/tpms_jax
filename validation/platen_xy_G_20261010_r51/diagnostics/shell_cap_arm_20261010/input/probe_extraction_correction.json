@@ -1,0 +1,8 @@
+{
+  "kind": "read-only extraction sign correction, no solver rerun",
+  "reason": "Bottom platen compression-positive reaction is RF3, not -RF3; original raw saved separately",
+  "old_tool_sha256": "1c3d537a875aac887d9b00019c187212926b339e9ab961f626aeb26137bbc17f",
+  "new_tool_sha256": "0f95384e4f5cbbb5eb85462629841a85f663fd3a453d76ce7d588c0b0195a51a",
+  "native_corrected_copy_synchronized": true,
+  "native_original_result_preserved": "result_before_sign_fix.json"
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "diverse_02",
+  "actual_own_problem_Gauss_equality": true,
+  "Gauss_points": 884736,
+  "weighted_occupancy_volume_fraction": 0.21447227830040835,
+  "shell_area_times_t_volume_fraction": 0.2157016571008107,
+  "volume_relative_difference": -0.005699440685464019,
+  "no_volume_or_stiffness_fitting": true,
+  "periodic_distance_errors": [
+    2.1510571102112408e-16,
+    1.6653345369377348e-16,
+    2.220446049250313e-16
+  ],
+  "midfacet_cells_max_phi_min": 0.9999999784155218,
+  "midfacet_cells_with_max_phi_below_half": 0,
+  "coverage_scope": "Cell/Gauss sampling diagnostic; not global thickness, contact or mechanical-connectivity certification",
+  "geometry_cache_seconds": 9.16494083404541
+}

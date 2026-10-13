@@ -1,0 +1,35 @@
+{
+  "protected_scientific_files": 670,
+  "changed_scientific_files": [],
+  "original_source_preserved": true,
+  "current_tools_sha256": {
+    "start_abaqus_20.py": "a6e68ba83a4ef723e6c9628e3565d206bf95aa2f42411fdb99c95f36cbdcb613",
+    "finalize_rim20.py": "1213a12303d61f89b93133f03ee5c8395ad3c7fbf343387c97313502397690b6",
+    "analyze_rim20.py": "485d3476edfb52cca7f5094a147e08b3c4674796a09774f571eb843218dc010c",
+    "run_jax_20.py": "d0c99a2a6a430def8ea2ab67283a0c7321853a85d7c2b10e111751dd1e4806b6",
+    "extract_rim20_frames.py": "217631dfadc18a88662d6b33b0611b2eb71347357e530a5513dc92d0d3d08fff"
+  },
+  "no_new_design_AD": true,
+  "archived_windows_recipes": [
+    {
+      "name": "start_rim20.py",
+      "sha256": "a6e68ba83a4ef723e6c9628e3565d206bf95aa2f42411fdb99c95f36cbdcb613"
+    },
+    {
+      "name": "run_jax_20.py",
+      "sha256": "d0c99a2a6a430def8ea2ab67283a0c7321853a85d7c2b10e111751dd1e4806b6"
+    },
+    {
+      "name": "extract_rim20_frames.py",
+      "sha256": "217631dfadc18a88662d6b33b0611b2eb71347357e530a5513dc92d0d3d08fff"
+    },
+    {
+      "name": "analyze_rim20.py",
+      "sha256": "485d3476edfb52cca7f5094a147e08b3c4674796a09774f571eb843218dc010c"
+    },
+    {
+      "name": "finalize_rim20.py",
+      "sha256": "1213a12303d61f89b93133f03ee5c8395ad3c7fbf343387c97313502397690b6"
+    }
+  ]
+}

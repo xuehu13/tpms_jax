@@ -1,0 +1,281 @@
+{
+  "scope": "G simplified midsurface-rim platen dynamic comparison to20pct; not finite-width contact or AD certification",
+  "JAX_status": "complete",
+  "JAX_complete": true,
+  "Abaqus_complete": true,
+  "paired_full20_and_hold": true,
+  "compared_compression_max": 0.2,
+  "primary_shell_full20_peak_N": 4.123236290287131,
+  "contextual_original2pct_peak_N": 0.7241182386842194,
+  "curve_RMS_N": 0.1409594393915343,
+  "curve_RMS_over_new_shell_peak": 0.03418660233554509,
+  "curve_RMS_over_old_fixed_peak": 0.19466356716503763,
+  "common_loading_work_N_mm": {
+    "JAX": 5.707467014873846,
+    "Abaqus": 5.49541906289838,
+    "relative_bias": 0.038586311534834605
+  },
+  "segments": [
+    {
+      "compression": [
+        0,
+        0.02
+      ],
+      "RMS_N": 0.0010523620453811563,
+      "RMS_over_same_full20_shell_peak": 0.0002552271980774288
+    },
+    {
+      "compression": [
+        0.02,
+        0.1
+      ],
+      "RMS_N": 0.03773334286425945,
+      "RMS_over_same_full20_shell_peak": 0.009151389881085813
+    },
+    {
+      "compression": [
+        0.1,
+        0.2
+      ],
+      "RMS_N": 0.1964015882468808,
+      "RMS_over_same_full20_shell_peak": 0.04763287243797613
+    }
+  ],
+  "sample_force": [
+    {
+      "compression": 0.02,
+      "JAX_N": 0.7923037246695601,
+      "Abaqus_N": 0.7931173858448897,
+      "relative_bias": -0.0010259025837174862
+    },
+    {
+      "compression": 0.05,
+      "JAX_N": 1.8227485379233506,
+      "Abaqus_N": 1.8103874447342934,
+      "relative_bias": 0.006827871693990684
+    },
+    {
+      "compression": 0.1,
+      "JAX_N": 3.2038658003101643,
+      "Abaqus_N": 3.1202627959228786,
+      "relative_bias": 0.026793577930848134
+    },
+    {
+      "compression": 0.15,
+      "JAX_N": 4.045524130034218,
+      "Abaqus_N": 3.8414855974176825,
+      "relative_bias": 0.053114485904540265
+    },
+    {
+      "compression": 0.2,
+      "JAX_N": 4.363573821287274,
+      "Abaqus_N": 4.123236290287131,
+      "relative_bias": 0.05828856608734578
+    }
+  ],
+  "new_design_AD": false,
+  "physical_finite_width_contact_validated": false,
+  "peak_in_compared_window": {
+    "JAX": {
+      "force_N": 4.363573821287274,
+      "compression": 0.19999999983600766
+    },
+    "Abaqus": {
+      "force_N": 4.123236290287131,
+      "compression": 0.2
+    }
+  },
+  "peak_force_relative_bias": 0.05828856608734578,
+  "peak_compression_difference_percentage_points": -1.639923474794358e-08,
+  "hold_last0p1ms": {
+    "force_N": {
+      "JAX_N": 4.373180019409908,
+      "Abaqus_N": 4.1349486725215305,
+      "relative_bias": 0.05761410013902335
+    },
+    "bottom_force_N": {
+      "JAX_N": 4.383857248304662,
+      "Abaqus_N": 4.140099458435912,
+      "relative_bias": 0.05887727875040949
+    }
+  },
+  "three_scalar_targets_within_10pct": true,
+  "JAX_sampled_health": {
+    "minimum_required_actual_J": 0.3144562612096434,
+    "minimum_all_actual_J": -3.194252260862972,
+    "max_negative_void_J_samples": 2208,
+    "energy_work_defect_over_max_sampled_work": 5.03370943123663e-07,
+    "impulse_defect_over_max_momentum": 3.280047823822473e-05,
+    "terminal_KE_over_IE": 7.924544569374915e-05,
+    "steps": 69596,
+    "wall_seconds": 3020.758247613907,
+    "rejected_blocks": 0,
+    "initial_dt_s": 6.037345293026866e-08,
+    "terminal_dt_s": 6.032383053843534e-08,
+    "validation_scope": "Accepted block samples and selected tangent checks; not every-step or global contact certification."
+  },
+  "Abaqus_health": {
+    "XY_U_error_mm": 5.960464477539063e-08,
+    "XY_UR_error_rad": 0.0,
+    "terminal_rim_penetration_mm": [
+      0.0009176628664135933,
+      0.000919342041015625
+    ],
+    "energy_drift_relative_work": 0.012007879240305044,
+    "terminal_KE_over_IE": 9.377714667567708e-05
+  },
+  "field_comparison": [
+    {
+      "target_pct": 5,
+      "time_s": 0.001441235068351568,
+      "Abaqus_interpolation_bracket_s": [
+        0.00140004837885499,
+        0.0014500194229185581
+      ],
+      "displacement_RMS_mm": 0.0067345267224430275,
+      "relative_displacement_RMS": 0.023371016043802414,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.001986638190777157,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.12138391535416601,
+          -0.15703267014348576
+        ],
+        [
+          10.121416768281312,
+          10.157179384282992
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.00029424710561238096,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.13106861206354398,
+          -0.1611357973617913
+        ],
+        [
+          10.131078096061685,
+          10.161352157135141
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.07106530000102573,
+        "0.5": 0.060570312678310145
+      }
+    },
+    {
+      "target_pct": 10,
+      "time_s": 0.002001387860802764,
+      "Abaqus_interpolation_bracket_s": [
+        0.002000046195462346,
+        0.002050010021775961
+      ],
+      "displacement_RMS_mm": 0.01565555007246072,
+      "relative_displacement_RMS": 0.027216849036533847,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.003720075727904205,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.2622330571480036,
+          -0.2860600301085109
+        ],
+        [
+          10.262269816401743,
+          10.286041411230636
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.0006305124190060241,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.28450960345332926,
+          -0.2899551890944921
+        ],
+        [
+          10.284485496065184,
+          10.289964911728006
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.14360994125805782,
+        "0.5": 0.12323188268217145
+      }
+    },
+    {
+      "target_pct": 15,
+      "time_s": 0.002565263456984748,
+      "Abaqus_interpolation_bracket_s": [
+        0.002550034550949931,
+        0.0026000002399086952
+      ],
+      "displacement_RMS_mm": 0.02240905853502758,
+      "relative_displacement_RMS": 0.025790315234787944,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.004931995045064,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.44244923215801935,
+          -0.3744731979528889
+        ],
+        [
+          10.442284542439785,
+          10.374498315390953
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.001108786636024206,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.4706443146826804,
+          -0.3727824042181491
+        ],
+        [
+          10.470772916014411,
+          10.373109922291393
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.21842366976747393,
+        "0.5": 0.18766497900557647
+      }
+    },
+    {
+      "target_pct": 20,
+      "time_s": 0.0040014532144433766,
+      "Abaqus_interpolation_bracket_s": [
+        0.0040000081062316895,
+        0.004050001502037048
+      ],
+      "displacement_RMS_mm": 0.02053576269919399,
+      "relative_displacement_RMS": 0.017607824381952488,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.0055594871448982515,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.6495663303135509,
+          -0.4094834127473991
+        ],
+        [
+          10.64939458743053,
+          10.40921977381211
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.001178789697140914,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.6691315831674195,
+          -0.4022661952328345
+        ],
+        [
+          10.669178965960244,
+          10.402432304195177
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.2853970453898364,
+        "0.5": 0.245969992675215
+      }
+    }
+  ]
+}

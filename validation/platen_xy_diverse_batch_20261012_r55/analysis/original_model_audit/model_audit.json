@@ -1,0 +1,1559 @@
+{
+  "original_inventory": [
+    {
+      "kind": "diverse_04",
+      "variant": "Coarse/T0p01/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p01\\MS0\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.37569861871206817,
+      "surface_area_mm2": 266.1707949387992,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3489,
+      "elements": 6368,
+      "equations": 1146,
+      "raw_global_peak_compression": 0.19761481285,
+      "raw_global_peak_stress_MPa": 0.2546516037,
+      "terminal_plastic_dissipation_N_mm": 40.246841431,
+      "terminal_internal_energy_N_mm": 45.887523651,
+      "terminal_ALLPD_ALLIE": 0.8770759071049353,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Coarse/T0p01/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p01\\MS0\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2736965771159322,
+      "surface_area_mm2": 365.3681060017132,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 5222,
+      "elements": 9424,
+      "equations": 2100,
+      "raw_global_peak_compression": 0.038113945723,
+      "raw_global_peak_stress_MPa": 0.23368513107,
+      "terminal_plastic_dissipation_N_mm": 17.852514267,
+      "terminal_internal_energy_N_mm": 21.993383408,
+      "terminal_ALLPD_ALLIE": 0.8117220500282928,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Coarse/T0p01/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p01\\MS0\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.328437983297295,
+      "surface_area_mm2": 304.4714834626242,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3756,
+      "elements": 7004,
+      "equations": 1044,
+      "raw_global_peak_compression": 0.081408333778,
+      "raw_global_peak_stress_MPa": 0.14905713081,
+      "terminal_plastic_dissipation_N_mm": 11.246389389,
+      "terminal_internal_energy_N_mm": 14.787569046,
+      "terminal_ALLPD_ALLIE": 0.7605299663531999,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Coarse/T0p01/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p01\\MS9\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.37569861871206817,
+      "surface_area_mm2": 266.1707949387992,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3489,
+      "elements": 6368,
+      "equations": 1146,
+      "raw_global_peak_compression": 0.18506647348,
+      "raw_global_peak_stress_MPa": 0.26210529327,
+      "terminal_plastic_dissipation_N_mm": 40.651515961,
+      "terminal_internal_energy_N_mm": 46.17257309,
+      "terminal_ALLPD_ALLIE": 0.8804256128797868,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Coarse/T0p01/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p01\\MS9\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2736965771159322,
+      "surface_area_mm2": 365.3681060017132,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 5222,
+      "elements": 9424,
+      "equations": 2100,
+      "raw_global_peak_compression": 0.043977162242,
+      "raw_global_peak_stress_MPa": 0.23936180115,
+      "terminal_plastic_dissipation_N_mm": 19.788564682,
+      "terminal_internal_energy_N_mm": 23.878051758,
+      "terminal_ALLPD_ALLIE": 0.8287344747617496,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Coarse/T0p01/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p01\\MS9\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.328437983297295,
+      "surface_area_mm2": 304.4714834626242,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3756,
+      "elements": 7004,
+      "equations": 1044,
+      "raw_global_peak_compression": 0.070508921146,
+      "raw_global_peak_stress_MPa": 0.14963311195,
+      "terminal_plastic_dissipation_N_mm": 11.460466385,
+      "terminal_internal_energy_N_mm": 14.92059803,
+      "terminal_ALLPD_ALLIE": 0.7680969865924335,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Coarse/T0p02/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p02\\MS0\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.37569861871206817,
+      "surface_area_mm2": 266.1707949387992,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3489,
+      "elements": 6368,
+      "equations": 1146,
+      "raw_global_peak_compression": 0.13258569241,
+      "raw_global_peak_stress_MPa": 0.25147129059,
+      "terminal_plastic_dissipation_N_mm": 40.57542038,
+      "terminal_internal_energy_N_mm": 46.019142151,
+      "terminal_ALLPD_ALLIE": 0.8817074478890149,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Coarse/T0p02/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p02\\MS0\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2736965771159322,
+      "surface_area_mm2": 365.3681060017132,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 5222,
+      "elements": 9424,
+      "equations": 2100,
+      "raw_global_peak_compression": 0.038060492277,
+      "raw_global_peak_stress_MPa": 0.23049877167,
+      "terminal_plastic_dissipation_N_mm": 17.285345078,
+      "terminal_internal_energy_N_mm": 21.424125671,
+      "terminal_ALLPD_ALLIE": 0.8068168262006458,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Coarse/T0p02/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p02\\MS0\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.328437983297295,
+      "surface_area_mm2": 304.4714834626242,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3756,
+      "elements": 7004,
+      "equations": 1044,
+      "raw_global_peak_compression": 0.074126696587,
+      "raw_global_peak_stress_MPa": 0.14853275299,
+      "terminal_plastic_dissipation_N_mm": 11.225319862,
+      "terminal_internal_energy_N_mm": 14.76103878,
+      "terminal_ALLPD_ALLIE": 0.7604695055208032,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Coarse/T0p02/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p02\\MS9\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.37569861871206817,
+      "surface_area_mm2": 266.1707949387992,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3489,
+      "elements": 6368,
+      "equations": 1146,
+      "raw_global_peak_compression": 0.16999238729,
+      "raw_global_peak_stress_MPa": 0.25637386322,
+      "terminal_plastic_dissipation_N_mm": 40.539100647,
+      "terminal_internal_energy_N_mm": 46.072422028,
+      "terminal_ALLPD_ALLIE": 0.8798994900325148,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Coarse/T0p02/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p02\\MS9\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2736965771159322,
+      "surface_area_mm2": 365.3681060017132,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 5222,
+      "elements": 9424,
+      "equations": 2100,
+      "raw_global_peak_compression": 0.0409894526,
+      "raw_global_peak_stress_MPa": 0.23443798065,
+      "terminal_plastic_dissipation_N_mm": 18.259002686,
+      "terminal_internal_energy_N_mm": 22.399835587,
+      "terminal_ALLPD_ALLIE": 0.8151400315008035,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Coarse/T0p02/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Coarse\\T0p02\\MS9\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.328437983297295,
+      "surface_area_mm2": 304.4714834626242,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 3756,
+      "elements": 7004,
+      "equations": 1044,
+      "raw_global_peak_compression": 0.081385356188,
+      "raw_global_peak_stress_MPa": 0.14922231674,
+      "terminal_plastic_dissipation_N_mm": 11.316699982,
+      "terminal_internal_energy_N_mm": 14.842927933,
+      "terminal_ALLPD_ALLIE": 0.7624304337448001,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Fine/T0p01/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p01\\MS0\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3758492595310066,
+      "surface_area_mm2": 266.0641133756185,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 8372,
+      "elements": 15914,
+      "equations": 1578,
+      "raw_global_peak_compression": 0.19113838673,
+      "raw_global_peak_stress_MPa": 0.24774169922,
+      "terminal_plastic_dissipation_N_mm": 39.904582977,
+      "terminal_internal_energy_N_mm": 44.902477264,
+      "terminal_ALLPD_ALLIE": 0.8886944642805487,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Fine/T0p01/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p01\\MS0\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2740142519595549,
+      "surface_area_mm2": 364.9445212607416,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 11624,
+      "elements": 21998,
+      "equations": 2382,
+      "raw_global_peak_compression": 0.04094131887,
+      "raw_global_peak_stress_MPa": 0.22196166992,
+      "terminal_plastic_dissipation_N_mm": 17.365919113,
+      "terminal_internal_energy_N_mm": 21.321815491,
+      "terminal_ALLPD_ALLIE": 0.8144671883278516,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Fine/T0p01/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p01\\MS0\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3285947046369498,
+      "surface_area_mm2": 304.3262675534766,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 9351,
+      "elements": 17986,
+      "equations": 1452,
+      "raw_global_peak_compression": 0.092390596867,
+      "raw_global_peak_stress_MPa": 0.14260028839,
+      "terminal_plastic_dissipation_N_mm": 11.46397686,
+      "terminal_internal_energy_N_mm": 14.856862068,
+      "terminal_ALLPD_ALLIE": 0.7716284103284575,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Fine/T0p01/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p01\\MS9\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3758492595310066,
+      "surface_area_mm2": 266.0641133756185,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 8372,
+      "elements": 15914,
+      "equations": 1578,
+      "raw_global_peak_compression": 0.19255701303,
+      "raw_global_peak_stress_MPa": 0.2545917511,
+      "terminal_plastic_dissipation_N_mm": 39.987594604,
+      "terminal_internal_energy_N_mm": 44.949897766,
+      "terminal_ALLPD_ALLIE": 0.889603683019865,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Fine/T0p01/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p01\\MS9\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2740142519595549,
+      "surface_area_mm2": 364.9445212607416,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 11624,
+      "elements": 21998,
+      "equations": 2382,
+      "raw_global_peak_compression": 0.04704541564,
+      "raw_global_peak_stress_MPa": 0.22884830475,
+      "terminal_plastic_dissipation_N_mm": 19.504148483,
+      "terminal_internal_energy_N_mm": 23.351552963,
+      "terminal_ALLPD_ALLIE": 0.8352398880667113,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Fine/T0p01/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p01\\MS9\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3285947046369498,
+      "surface_area_mm2": 304.3262675534766,
+      "time_s": 0.01,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 9351,
+      "elements": 17986,
+      "equations": 1452,
+      "raw_global_peak_compression": 0.066972672939,
+      "raw_global_peak_stress_MPa": 0.14496243477,
+      "terminal_plastic_dissipation_N_mm": 11.593347549,
+      "terminal_internal_energy_N_mm": 14.935599327,
+      "terminal_ALLPD_ALLIE": 0.7762224531587423,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Fine/T0p02/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS0\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3758492595310066,
+      "surface_area_mm2": 266.0641133756185,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 8372,
+      "elements": 15914,
+      "equations": 1578,
+      "raw_global_peak_compression": 0.18509995937,
+      "raw_global_peak_stress_MPa": 0.24025856018,
+      "terminal_plastic_dissipation_N_mm": 39.423744202,
+      "terminal_internal_energy_N_mm": 44.266597748,
+      "terminal_ALLPD_ALLIE": 0.8905980176391848,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Fine/T0p02/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS0\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2740142519595549,
+      "surface_area_mm2": 364.9445212607416,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 11624,
+      "elements": 21998,
+      "equations": 2382,
+      "raw_global_peak_compression": 0.035267531872,
+      "raw_global_peak_stress_MPa": 0.21499286652,
+      "terminal_plastic_dissipation_N_mm": 16.961248398,
+      "terminal_internal_energy_N_mm": 20.915742874,
+      "terminal_ALLPD_ALLIE": 0.8109321528849083,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Fine/T0p02/MS0",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS0\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3285947046369498,
+      "surface_area_mm2": 304.3262675534766,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": false,
+        "factor": 1.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 9351,
+      "elements": 17986,
+      "equations": 1452,
+      "raw_global_peak_compression": 0.085064691305,
+      "raw_global_peak_stress_MPa": 0.14243915558,
+      "terminal_plastic_dissipation_N_mm": 11.477293015,
+      "terminal_internal_energy_N_mm": 14.868844032,
+      "terminal_ALLPD_ALLIE": 0.7719021727781347,
+      "success": true
+    },
+    {
+      "kind": "diverse_04",
+      "variant": "Fine/T0p02/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_04",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3758492595310066,
+      "surface_area_mm2": 266.0641133756185,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 8372,
+      "elements": 15914,
+      "equations": 1578,
+      "raw_global_peak_compression": 0.19681483507,
+      "raw_global_peak_stress_MPa": 0.2514381218,
+      "terminal_plastic_dissipation_N_mm": 39.818717957,
+      "terminal_internal_energy_N_mm": 44.72800827,
+      "terminal_ALLPD_ALLIE": 0.8902412492108941,
+      "success": true
+    },
+    {
+      "kind": "diverse_05",
+      "variant": "Fine/T0p02/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.2740142519595549,
+      "surface_area_mm2": 364.9445212607416,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 11624,
+      "elements": 21998,
+      "equations": 2382,
+      "raw_global_peak_compression": 0.043929058313,
+      "raw_global_peak_stress_MPa": 0.22340415955,
+      "terminal_plastic_dissipation_N_mm": 17.810106277,
+      "terminal_internal_energy_N_mm": 21.740119934,
+      "terminal_ALLPD_ALLIE": 0.8192275999888236,
+      "success": true
+    },
+    {
+      "kind": "diverse_28",
+      "variant": "Fine/T0p02/MS9",
+      "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_28",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ]
+      ],
+      "t_mm": 0.3285947046369498,
+      "surface_area_mm2": 304.3262675534766,
+      "time_s": 0.02,
+      "mass_scaling": {
+        "enabled": true,
+        "factor": 9.0
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 9351,
+      "elements": 17986,
+      "equations": 1452,
+      "raw_global_peak_compression": 0.081394201517,
+      "raw_global_peak_stress_MPa": 0.14403355598,
+      "terminal_plastic_dissipation_N_mm": 11.525865555,
+      "terminal_internal_energy_N_mm": 14.899001122,
+      "terminal_ALLPD_ALLIE": 0.7735998850272454,
+      "success": true
+    },
+    {
+      "kind": "diverse_02",
+      "variant": "r3_smoke",
+      "directory": "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02",
+      "E_MPa": 484.0,
+      "nu": 0.4,
+      "density_tonne_mm3": 1.1e-09,
+      "plastic_table": [
+        [
+          8.0,
+          0.0
+        ],
+        [
+          9.5,
+          0.02
+        ],
+        [
+          11.0,
+          0.05
+        ],
+        [
+          12.5,
+          0.08
+        ],
+        [
+          13.5,
+          0.11
+        ],
+        [
+          14.2,
+          0.147
+        ],
+        [
+          14.5,
+          0.2
+        ],
+        [
+          15.0,
+          0.3
+        ],
+        [
+          15.6,
+          0.5
+        ],
+        [
+          16.3,
+          0.8
+        ],
+        [
+          17.0,
+          1.2
+        ],
+        [
+          18.0,
+          2.0
+        ]
+      ],
+      "t_mm": 0.23180164989011612,
+      "surface_area_mm2": 431.4033142016214,
+      "time_s": 0.001,
+      "mass_scaling": {
+        "enabled": false
+      },
+      "contact": {
+        "normal": "hard",
+        "allow_separation": true,
+        "friction": 0.6,
+        "self_contact": true
+      },
+      "nodes": 13752,
+      "elements": 25930,
+      "equations": 3504,
+      "raw_global_peak_compression": 0.018654872477,
+      "raw_global_peak_stress_MPa": 0.40533424377,
+      "terminal_plastic_dissipation_N_mm": 17.192077637,
+      "terminal_internal_energy_N_mm": 22.547115326,
+      "terminal_ALLPD_ALLIE": 0.7624956624573217,
+      "success": true
+    }
+  ],
+  "current_raw_peaks": {
+    "diverse_02": {
+      "kind": "diverse_02",
+      "raw_global_peak_compression": 0.045496559143066405,
+      "raw_global_peak_stress_MPa": 0.02774116039276123,
+      "current_E_MPa": 10.0,
+      "current_t_mm": 0.5
+    },
+    "diverse_04": {
+      "kind": "diverse_04",
+      "raw_global_peak_compression": 0.2,
+      "raw_global_peak_stress_MPa": 0.029020986557006835,
+      "current_E_MPa": 10.0,
+      "current_t_mm": 0.5
+    },
+    "diverse_05": {
+      "kind": "diverse_05",
+      "raw_global_peak_compression": 0.10770080089569092,
+      "raw_global_peak_stress_MPa": 0.04640503883361816,
+      "current_E_MPa": 10.0,
+      "current_t_mm": 0.5
+    },
+    "diverse_28": {
+      "kind": "diverse_28",
+      "raw_global_peak_compression": 0.2,
+      "raw_global_peak_stress_MPa": 0.005971449017524719,
+      "current_E_MPa": 10.0,
+      "current_t_mm": 0.5
+    }
+  },
+  "model_audits": {
+    "diverse_02": {
+      "same_triangle_connectivity": true,
+      "max_reference_coordinate_difference_mm": 1.7763568394002505e-15,
+      "same_exact_XY_equation_sets": true,
+      "equation_count": 3504,
+      "rotation_equations": 1752,
+      "XY_pair_checks_failed": 0,
+      "macro_XY_free_in_BC": true,
+      "old_plate_extent_mm": [
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          14.0,
+          14.0,
+          10.0
+        ]
+      ],
+      "new_plate_extent_mm": [
+        [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        [
+          15.0,
+          15.0,
+          10.0
+        ]
+      ],
+      "native_INP_matches_reading": true,
+      "current_material_parameters": {
+        "case_id": "diverse_02_midsurface_end_platen_20pct_r55",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "diverse_02 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "821b7243e31027c5a62f3611be38ad30394f517d29ab07527071e18a27b77197",
+        "source_shell_surface_sha256": "821b7243e31027c5a62f3611be38ad30394f517d29ab07527071e18a27b77197",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_02/gauss_field.npz",
+        "original_Gauss_sha256": "dc5657ea1e3d850537004c66296675e51b0cecc0fa996089a1a6011d5d138ca7",
+        "contact_reference_area_mm2": [
+          17.606647146184827,
+          17.606647146184827
+        ],
+        "physical_nodes": 13752,
+        "shell_elements": 25930,
+        "XY_relations": 584,
+        "XY_equations": 3504,
+        "labels": {
+          "ax": 13753,
+          "ay": 13754,
+          "bottom": 13755,
+          "top": 13756
+        },
+        "rim_node_count": [
+          225,
+          225
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/input/rimline_contact.npz",
+        "contact_cache_sha256": "3c01f144c1e43b13a3c7dfa83ba0d449a2f5e882dc1576224336a7b0cf4c4b29",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "d085336ef69290a8e3cd2c465376abbde9a44b6aae1b6f3106317f85f956cfa6",
+        "kind": "diverse_02",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_02/surface.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "overall": 6000,
+          "jax_build_compile_checks_solve": 3900,
+          "abaqus_datacheck_solve": 1500,
+          "preparation_extraction_analysis_reserve": 600
+        }
+      },
+      "old_selected": {
+        "kind": "diverse_02",
+        "variant": "r3_smoke",
+        "directory": "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02",
+        "E_MPa": 484.0,
+        "nu": 0.4,
+        "density_tonne_mm3": 1.1e-09,
+        "plastic_table": [
+          [
+            8.0,
+            0.0
+          ],
+          [
+            9.5,
+            0.02
+          ],
+          [
+            11.0,
+            0.05
+          ],
+          [
+            12.5,
+            0.08
+          ],
+          [
+            13.5,
+            0.11
+          ],
+          [
+            14.2,
+            0.147
+          ],
+          [
+            14.5,
+            0.2
+          ],
+          [
+            15.0,
+            0.3
+          ],
+          [
+            15.6,
+            0.5
+          ],
+          [
+            16.3,
+            0.8
+          ],
+          [
+            17.0,
+            1.2
+          ],
+          [
+            18.0,
+            2.0
+          ]
+        ],
+        "t_mm": 0.23180164989011612,
+        "surface_area_mm2": 431.4033142016214,
+        "time_s": 0.001,
+        "mass_scaling": {
+          "enabled": false
+        },
+        "contact": {
+          "normal": "hard",
+          "allow_separation": true,
+          "friction": 0.6,
+          "self_contact": true
+        },
+        "nodes": 13752,
+        "elements": 25930,
+        "equations": 3504,
+        "raw_global_peak_compression": 0.018654872477,
+        "raw_global_peak_stress_MPa": 0.40533424377,
+        "terminal_plastic_dissipation_N_mm": 17.192077637,
+        "terminal_internal_energy_N_mm": 22.547115326,
+        "terminal_ALLPD_ALLIE": 0.7624956624573217,
+        "success": true
+      },
+      "current_nominal_shell_volume_fraction": 0.2157016571008107
+    },
+    "diverse_04": {
+      "same_triangle_connectivity": true,
+      "max_reference_coordinate_difference_mm": 1.7763568394002505e-15,
+      "same_exact_XY_equation_sets": true,
+      "equation_count": 1578,
+      "rotation_equations": 789,
+      "XY_pair_checks_failed": 0,
+      "macro_XY_free_in_BC": true,
+      "old_plate_extent_mm": [
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          14.0,
+          14.0,
+          10.0
+        ]
+      ],
+      "new_plate_extent_mm": [
+        [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        [
+          15.0,
+          15.0,
+          10.0
+        ]
+      ],
+      "native_INP_matches_reading": true,
+      "current_material_parameters": {
+        "case_id": "diverse_04_midsurface_end_platen_20pct_r54",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "diverse_04 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "source_shell_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/gauss_field.npz",
+        "original_Gauss_sha256": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+        "contact_reference_area_mm2": [
+          15.229465305736445,
+          15.229465305736445
+        ],
+        "physical_nodes": 8372,
+        "shell_elements": 15914,
+        "XY_relations": 263,
+        "XY_equations": 1578,
+        "labels": {
+          "ax": 8373,
+          "ay": 8374,
+          "bottom": 8375,
+          "top": 8376
+        },
+        "rim_node_count": [
+          162,
+          162
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/rimline_contact.npz",
+        "contact_cache_sha256": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "74d82fd2273b29aa949863528b9967c732d8f5bca9125d38a678b411302188bc",
+        "kind": "diverse_04",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "overall": 6000,
+          "jax_build_compile_checks_solve": 3900,
+          "abaqus_datacheck_solve": 1500,
+          "preparation_extraction_analysis_reserve": 600
+        }
+      },
+      "old_selected": {
+        "kind": "diverse_04",
+        "variant": "Fine/T0p02/MS0",
+        "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS0\\diverse_04",
+        "E_MPa": 484.0,
+        "nu": 0.4,
+        "density_tonne_mm3": 1.1e-09,
+        "plastic_table": [
+          [
+            8.0,
+            0.0
+          ]
+        ],
+        "t_mm": 0.3758492595310066,
+        "surface_area_mm2": 266.0641133756185,
+        "time_s": 0.02,
+        "mass_scaling": {
+          "enabled": false,
+          "factor": 1.0
+        },
+        "contact": {
+          "normal": "hard",
+          "allow_separation": true,
+          "friction": 0.6,
+          "self_contact": true
+        },
+        "nodes": 8372,
+        "elements": 15914,
+        "equations": 1578,
+        "raw_global_peak_compression": 0.18509995937,
+        "raw_global_peak_stress_MPa": 0.24025856018,
+        "terminal_plastic_dissipation_N_mm": 39.423744202,
+        "terminal_internal_energy_N_mm": 44.266597748,
+        "terminal_ALLPD_ALLIE": 0.8905980176391848,
+        "success": true
+      },
+      "current_nominal_shell_volume_fraction": 0.13303205668780924
+    },
+    "diverse_05": {
+      "same_triangle_connectivity": true,
+      "max_reference_coordinate_difference_mm": 1.7763568394002505e-15,
+      "same_exact_XY_equation_sets": true,
+      "equation_count": 2382,
+      "rotation_equations": 1191,
+      "XY_pair_checks_failed": 0,
+      "macro_XY_free_in_BC": true,
+      "old_plate_extent_mm": [
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          14.0,
+          14.0,
+          10.0
+        ]
+      ],
+      "new_plate_extent_mm": [
+        [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        [
+          15.0,
+          15.0,
+          10.0
+        ]
+      ],
+      "native_INP_matches_reading": true,
+      "current_material_parameters": {
+        "case_id": "diverse_05_midsurface_end_platen_20pct_r55",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "diverse_05 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "192eda3e70b7a3457d7be6c141674e9972a08dfaa9b37547abd634ef78c467cb",
+        "source_shell_surface_sha256": "192eda3e70b7a3457d7be6c141674e9972a08dfaa9b37547abd634ef78c467cb",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/gauss_field.npz",
+        "original_Gauss_sha256": "d557f9dc0871dd682bff9d0f505838595c3a1e995002888904e796c8a5f0d672",
+        "contact_reference_area_mm2": [
+          78.75061225701513,
+          78.75061225701513
+        ],
+        "physical_nodes": 11624,
+        "shell_elements": 21998,
+        "XY_relations": 397,
+        "XY_equations": 2382,
+        "labels": {
+          "ax": 11625,
+          "ay": 11626,
+          "bottom": 11627,
+          "top": 11628
+        },
+        "rim_node_count": [
+          248,
+          248
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_05/input/rimline_contact.npz",
+        "contact_cache_sha256": "885b40ee1b727914055fc042618cc1080969b2da1ff4c89f9b430fd628459e2f",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "47f9bbfeb6fcb4f5dada2d9996ea74d732ba210860f08f723ed823f75e6dba69",
+        "kind": "diverse_05",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/surface.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "overall": 6000,
+          "jax_build_compile_checks_solve": 3900,
+          "abaqus_datacheck_solve": 1500,
+          "preparation_extraction_analysis_reserve": 600
+        }
+      },
+      "old_selected": {
+        "kind": "diverse_05",
+        "variant": "Fine/T0p02/MS0",
+        "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS0\\diverse_05",
+        "E_MPa": 484.0,
+        "nu": 0.4,
+        "density_tonne_mm3": 1.1e-09,
+        "plastic_table": [
+          [
+            8.0,
+            0.0
+          ]
+        ],
+        "t_mm": 0.2740142519595549,
+        "surface_area_mm2": 364.9445212607416,
+        "time_s": 0.02,
+        "mass_scaling": {
+          "enabled": false,
+          "factor": 1.0
+        },
+        "contact": {
+          "normal": "hard",
+          "allow_separation": true,
+          "friction": 0.6,
+          "self_contact": true
+        },
+        "nodes": 11624,
+        "elements": 21998,
+        "equations": 2382,
+        "raw_global_peak_compression": 0.035267531872,
+        "raw_global_peak_stress_MPa": 0.21499286652,
+        "terminal_plastic_dissipation_N_mm": 16.961248398,
+        "terminal_internal_energy_N_mm": 20.915742874,
+        "terminal_ALLPD_ALLIE": 0.8109321528849083,
+        "success": true
+      },
+      "current_nominal_shell_volume_fraction": 0.1824722606303708
+    },
+    "diverse_28": {
+      "same_triangle_connectivity": true,
+      "max_reference_coordinate_difference_mm": 1.7763568394002505e-15,
+      "same_exact_XY_equation_sets": true,
+      "equation_count": 1452,
+      "rotation_equations": 726,
+      "XY_pair_checks_failed": 0,
+      "macro_XY_free_in_BC": true,
+      "old_plate_extent_mm": [
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          14.0,
+          14.0,
+          10.0
+        ]
+      ],
+      "new_plate_extent_mm": [
+        [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        [
+          15.0,
+          15.0,
+          10.0
+        ]
+      ],
+      "native_INP_matches_reading": true,
+      "current_material_parameters": {
+        "case_id": "diverse_28_midsurface_end_platen_20pct_r55",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "diverse_28 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+        "source_shell_surface_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/gauss_field.npz",
+        "original_Gauss_sha256": "afd06922ccf4c4c600a79e99c1ce280fa8d3d9baf8b0b22f1044d72e7efe14e6",
+        "contact_reference_area_mm2": [
+          13.73971231533854,
+          13.739712315338537
+        ],
+        "physical_nodes": 9351,
+        "shell_elements": 17986,
+        "XY_relations": 242,
+        "XY_equations": 1452,
+        "labels": {
+          "ax": 9352,
+          "ay": 9353,
+          "bottom": 9354,
+          "top": 9355
+        },
+        "rim_node_count": [
+          126,
+          126
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/input/rimline_contact.npz",
+        "contact_cache_sha256": "34b8468e50361b95b44f3c404e6342bec14c69f7fc920cee352cc5d91d23a0b9",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "ba713564b30bdc1ca3fe214db082f6505201ef95f2e6e3aceb1f09a012abe02e",
+        "kind": "diverse_28",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "overall": 6000,
+          "jax_build_compile_checks_solve": 3900,
+          "abaqus_datacheck_solve": 1500,
+          "preparation_extraction_analysis_reserve": 600
+        }
+      },
+      "old_selected": {
+        "kind": "diverse_28",
+        "variant": "Fine/T0p02/MS0",
+        "directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS0\\diverse_28",
+        "E_MPa": 484.0,
+        "nu": 0.4,
+        "density_tonne_mm3": 1.1e-09,
+        "plastic_table": [
+          [
+            8.0,
+            0.0
+          ]
+        ],
+        "t_mm": 0.3285947046369498,
+        "surface_area_mm2": 304.3262675534766,
+        "time_s": 0.02,
+        "mass_scaling": {
+          "enabled": false,
+          "factor": 1.0
+        },
+        "contact": {
+          "normal": "hard",
+          "allow_separation": true,
+          "friction": 0.6,
+          "self_contact": true
+        },
+        "nodes": 9351,
+        "elements": 17986,
+        "equations": 1452,
+        "raw_global_peak_compression": 0.085064691305,
+        "raw_global_peak_stress_MPa": 0.14243915558,
+        "terminal_plastic_dissipation_N_mm": 11.477293015,
+        "terminal_internal_energy_N_mm": 14.868844032,
+        "terminal_ALLPD_ALLIE": 0.7719021727781347,
+        "success": true
+      },
+      "current_nominal_shell_volume_fraction": 0.15216313377673832
+    }
+  },
+  "scope": "Saved-input and read-only ODB comparison; no new dynamics/AD/FD/Git; original scientific records unchanged."
+}

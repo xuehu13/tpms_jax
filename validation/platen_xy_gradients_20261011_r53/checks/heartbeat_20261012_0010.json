@@ -1,0 +1,20 @@
+{
+  "observed_utc": "2026-10-11T16:11:13.6782908Z",
+  "automation_id": "tpms",
+  "stage": "G5_shape_running",
+  "verified_process_id": 911523,
+  "completed_cases": [
+    "G5_shape/AD/shape",
+    "G5_shape/FD/a_plus_h"
+  ],
+  "active_case": "G5_shape/FD/a_minus_h",
+  "active_steps": 22016,
+  "total_steps": 24789,
+  "active_compression": 0.03788625058780845,
+  "active_wall_minutes": 15.487137194474538,
+  "sampled_current_required_positive_J": 0.9243769095796294,
+  "finite_current_values": true,
+  "active_protocol_protected_sources_unchanged": true,
+  "new_FE_submissions": 0,
+  "next_action": "Keep existing sequential FD job; analyze only after all four FD paths, then gate full VJP"
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 790939,
+  "solver_stage": "G10_thickness_paths_complete_analysis_pending",
+  "no_new_FE_submission": true,
+  "input_hashes": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_gradients_20261011_r53/input/G10_thickness_protocol.json": "af09eed53898a84aea3b9100007bab3074a168b19d812d4a7119eb3d5c03edc4",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_gradients_20261011_r53/tools/analyze.py": "423c31ea41a2afb8c91ab7117489cbf3ff81191ac5e86209e5d1fdd62c393cf4"
+  },
+  "analysis_exit_code": 0,
+  "passed": true
+}

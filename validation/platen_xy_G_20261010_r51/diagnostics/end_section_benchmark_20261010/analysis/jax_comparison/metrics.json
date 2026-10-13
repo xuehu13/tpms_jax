@@ -1,0 +1,66 @@
+{
+  "reference": {
+    "case": "Abaqus local C3D20R full cap static hard contact",
+    "force_denominator_N": 0.0011414630487982,
+    "endpoint_force_N": 0.0011414630571380258,
+    "RF_U_work_N_mm": 0.000142071925831362,
+    "frames": 54
+  },
+  "scope": "Local conforming fully solid static validation, not G, no background occupancy/HRZ/dynamic or design-gradient certification.",
+  "cases": {
+    "nodal": {
+      "endpoint_force_N": 0.0011412432763014554,
+      "endpoint_relative_bias": -0.00019254310088800963,
+      "loading_RMS_over_fixed_Abaqus_cap_max": 0.0002610378262808285,
+      "maximum_force_difference_over_fixed_Abaqus_cap_max": 0.00040625959128394115,
+      "RF_U_work_N_mm": 0.00014201412899335252,
+      "work_relative_bias": -0.0004068139266169002,
+      "endpoint_rotation_degree": -7.5709050378822385,
+      "endpoint_force_lever_mm": -0.2528737830844748,
+      "endpoint_tip_U1_mm": 0.8992569465731062,
+      "endpoint_tip_U3_mm": -0.23337376088232492,
+      "physical_node_displacement_RMS_difference_mm": 0.00021217523649477544,
+      "physical_node_displacement_RMS_relative_difference": 0.00046338012740912914,
+      "maximum_reaction_imbalance_over_endpoint_force": 2.4788879009614554e-11,
+      "maximum_free_residual_l2_N": 3.293620544773228e-11,
+      "minimum_saved_actual_J": 0.9937589106582483,
+      "maximum_enabled_quadrature_penetration_mm": 0.00010386054344380113,
+      "maximum_physical_top_node_penetration_mm": 0.00010386054344380113,
+      "endpoint_internal_plus_contact_energy_N_mm": 0.0001420340923248658,
+      "endpoint_RF_U_work_minus_energy_over_work": -0.00014057285465037596,
+      "accepted_static_increments": 40,
+      "maximum_Newton_corrections_per_increment": 6,
+      "wall_seconds": 33.64995517593343,
+      "provisional_local_forward_gate_passed": true
+    },
+    "gauss": {
+      "endpoint_force_N": 0.0011272605476161089,
+      "endpoint_relative_bias": -0.012442373349801361,
+      "loading_RMS_over_fixed_Abaqus_cap_max": 0.009988941090858976,
+      "maximum_force_difference_over_fixed_Abaqus_cap_max": 0.012457454581293069,
+      "RF_U_work_N_mm": 0.00013991021877091898,
+      "work_relative_bias": -0.015215582162298236,
+      "endpoint_rotation_degree": -7.552810186018222,
+      "endpoint_force_lever_mm": -0.23858451424635188,
+      "endpoint_tip_U1_mm": 0.8930655567337709,
+      "endpoint_tip_U3_mm": -0.2314277302641596,
+      "physical_node_displacement_RMS_difference_mm": 0.003700368555289761,
+      "physical_node_displacement_RMS_relative_difference": 0.008081420249309473,
+      "maximum_reaction_imbalance_over_endpoint_force": 1.1110294799262857e-10,
+      "maximum_free_residual_l2_N": 9.297301958073384e-11,
+      "minimum_saved_actual_J": 0.99381703254161,
+      "maximum_enabled_quadrature_penetration_mm": 9.948329185149873e-05,
+      "maximum_physical_top_node_penetration_mm": 0.001956783086521696,
+      "endpoint_internal_plus_contact_energy_N_mm": 0.00013992962373231637,
+      "endpoint_RF_U_work_minus_energy_over_work": -0.00013869581198475457,
+      "accepted_static_increments": 40,
+      "maximum_Newton_corrections_per_increment": 10,
+      "wall_seconds": 40.32929859205615,
+      "provisional_local_forward_gate_passed": true
+    }
+  },
+  "between_JAX_cases": {
+    "gauss_over_nodal_minus_one_endpoint": -0.0122521893234383,
+    "changed_factor": "Only contact sampling and reference area weights; shared HEX27 volume, material, base BC, kn=320 and 40 static increments."
+  }
+}

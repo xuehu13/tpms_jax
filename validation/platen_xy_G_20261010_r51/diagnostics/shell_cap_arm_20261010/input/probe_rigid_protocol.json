@@ -1,0 +1,5 @@
+{
+  "stage": "Rigid-body arm verification, same prescribed shell and force law",
+  "load_time_s": 0.001,
+  "hold_time_s": 0.0002
+}

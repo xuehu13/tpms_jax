@@ -1,0 +1,122 @@
+{
+  "scope": "Three prescribed local Explicit geometry probes plus read-only decomposition of original G terminal state. No new deformable G path, no new JAX solve or design AD.",
+  "native_contact_geometry": [
+    {
+      "case": "default",
+      "first_contact_height_low_mm": 0.00010957121849058948,
+      "first_contact_height_high_mm": 0.0003451883792877086,
+      "physical_flat_cut_height_mm": 0.02495835416170704,
+      "contact_height_error_low_mm": -0.02484878294321645,
+      "contact_height_error_high_mm": -0.02461316578241933,
+      "reported_most_severe_contact_thickness_scale": 0.10607,
+      "structural_thickness_min_mm": 0.5,
+      "structural_thickness_max_mm": 0.5,
+      "motion_max_error_mm": 3.9941181639857604e-08,
+      "geometry_gate_passed": false,
+      "final_prescribed_pose_contact_force_N": 0.0602649450302124
+    },
+    {
+      "case": "self",
+      "first_contact_height_low_mm": 0.05205594301223754,
+      "first_contact_height_high_mm": 0.05243452191352843,
+      "physical_flat_cut_height_mm": 0.02495835416170704,
+      "contact_height_error_low_mm": 0.0270975888505305,
+      "contact_height_error_high_mm": 0.027476167751821393,
+      "reported_most_severe_contact_thickness_scale": 0.10607,
+      "structural_thickness_min_mm": 0.5,
+      "structural_thickness_max_mm": 0.5,
+      "motion_max_error_mm": 3.9941181639857604e-08,
+      "geometry_gate_passed": false,
+      "final_prescribed_pose_contact_force_N": 0.2931336462497711
+    },
+    {
+      "case": "noperimself",
+      "first_contact_height_low_mm": 0.21235625743865966,
+      "first_contact_height_high_mm": 0.2127436876296997,
+      "physical_flat_cut_height_mm": 0.02495835416170704,
+      "contact_height_error_low_mm": 0.1873979032769526,
+      "contact_height_error_high_mm": 0.18778533346799264,
+      "reported_most_severe_contact_thickness_scale": 1.0,
+      "structural_thickness_min_mm": 0.5,
+      "structural_thickness_max_mm": 0.5,
+      "motion_max_error_mm": 3.9941181639857604e-08,
+      "geometry_gate_passed": false,
+      "final_prescribed_pose_contact_force_N": 0.956224262714386
+    }
+  ],
+  "saved_G_kinematics": [
+    {
+      "side": "bottom",
+      "rigid_actual_Z_RMS_mm": 0.0007275758610813354,
+      "nonrigid_affine_correction_Z_RMS_mm": 0.00019850658512222036,
+      "affine_actual_Z_RMS_mm": 0.0008263296244721682,
+      "affine_correction_variance_term_mm2": 3.9404864336885316e-08,
+      "remainder_variance_term_mm2": 6.828206482803145e-07,
+      "cross_variance_term_mm2": -1.9285887898895316e-07,
+      "max_abs_rigid_error_phi_ge_0p5_mm": 0.0037401196671059678,
+      "max_abs_affine_error_phi_ge_0p5_mm": 0.004612770163249983
+    },
+    {
+      "side": "top",
+      "rigid_actual_Z_RMS_mm": 0.0007395742323148467,
+      "nonrigid_affine_correction_Z_RMS_mm": 0.00020149241593527228,
+      "affine_actual_Z_RMS_mm": 0.0008396589185281033,
+      "affine_correction_variance_term_mm2": 4.0599193679432765e-08,
+      "remainder_variance_term_mm2": 7.050270994637839e-07,
+      "cross_variance_term_mm2": -1.986562480391217e-07,
+      "max_abs_rigid_error_phi_ge_0p5_mm": 0.0037839124697498505,
+      "max_abs_affine_error_phi_ge_0p5_mm": 0.004645864292038837
+    },
+    {
+      "side": "both",
+      "rigid_actual_Z_RMS_mm": 0.0007335995769942693,
+      "nonrigid_affine_correction_Z_RMS_mm": 0.00020000507245607308,
+      "affine_actual_Z_RMS_mm": 0.0008330209324333027,
+      "affine_correction_variance_term_mm2": 4.000202900815904e-08,
+      "remainder_variance_term_mm2": 6.939238738720491e-07,
+      "cross_variance_term_mm2": -1.9575756351403743e-07,
+      "max_abs_rigid_error_phi_ge_0p5_mm": 0.0037839124697498505,
+      "max_abs_affine_error_phi_ge_0p5_mm": 0.004645864292038837
+    }
+  ],
+  "kinematic_decomposition_closure_error_mm": 3.469446951953614e-18,
+  "initial_G_normal_envelope": {
+    "scope": "Read-only initial reference facet-normal extrusion of .5mm shell at its untrimmed midsurface rim. Geometric illustration; not actual Abaqus contact thickness or new initial equilibrium. Facet normals, not interpolated shell directors. Current background solid is clipped by z=0 and10 planes.",
+    "rows": [
+      {
+        "side": "bottom",
+        "boundary_segments": 168,
+        "total_reference_rim_length_mm": 23.08826431016624,
+        "normal_extrusion_beyond_flat_plate_length_weighted_mean_mm": 0.10343386703715302,
+        "weighted_median_mm": 0.12357501092707857,
+        "weighted_95pct_mm": 0.14565082074409416,
+        "max_mm": 0.14610243452041347,
+        "rim_length_fraction_above_0p01mm": 0.9729217919451243
+      },
+      {
+        "side": "top",
+        "boundary_segments": 168,
+        "total_reference_rim_length_mm": 23.08826431016624,
+        "normal_extrusion_beyond_flat_plate_length_weighted_mean_mm": 0.10343384542414163,
+        "weighted_median_mm": 0.12357501092707913,
+        "weighted_95pct_mm": 0.14565082074409388,
+        "max_mm": 0.14610243452041294,
+        "rim_length_fraction_above_0p01mm": 0.9729217919451243
+      }
+    ],
+    "new_G": false,
+    "new_AD": false
+  },
+  "decomposition_definition": "actual-rigid = (F-R)*arm + [actual-(parent+F*arm)]. The first includes local stretch/shear. The second includes non-affine Q2 variation and nearest-parent/surface-curvature effects; RMS terms are correlated, not additive percentages.",
+  "native_geometry_gate_passed": false,
+  "production_adoption": false,
+  "original_G_comparison_still_not_passed": true,
+  "budget_seconds": {
+    "datacheck": 83.06199999991804,
+    "solve": 89.92299999995157,
+    "extract": 7.483999999938533
+  },
+  "new_G_paths": 0,
+  "full20_submitted": false,
+  "new_design_AD": false
+}

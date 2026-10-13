@@ -1,0 +1,43 @@
+{
+  "case_id": "D_canonical_t005",
+  "N": 32,
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "mechanical_periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "solid_density_tonne_per_mm3": 1e-09,
+  "formula_level": 0,
+  "phase": [
+    0,
+    0,
+    0
+  ],
+  "compression_direction": [
+    0,
+    0,
+    1
+  ],
+  "surface_sha256": "297a17650495fe501b1ce3d7826e2a25ebbf10250f6edb2f8d8bf6006babd0fc",
+  "epsilon_z": -0.0001,
+  "diagnostic_xyz": true,
+  "physical_node_count": 20702,
+  "element_count": 39936,
+  "periodic_relations": 750,
+  "macro_control_label": 20703,
+  "pin_node_label": 1,
+  "step_name": "compress20",
+  "no_contact": true,
+  "load_time_seconds": 0.004,
+  "hold_time_seconds": 0.0004,
+  "total_time_seconds": 0.0044,
+  "no_plasticity": true,
+  "no_mass_scaling": true,
+  "shell_inp_sha256": "d0b95c8e4d07be6091a33eb0f7b2ebdc74d89cf10293652b9982b4e63fa97787"
+}

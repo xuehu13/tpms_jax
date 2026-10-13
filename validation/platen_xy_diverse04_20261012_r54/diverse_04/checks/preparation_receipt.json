@@ -1,0 +1,25 @@
+{
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu-24.04",
+    "--exec",
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=10s",
+    "600s",
+    "/usr/bin/env",
+    "PYTHONUNBUFFERED=1",
+    "JAX_PLATFORMS=cuda,cpu",
+    "XLA_PYTHON_CLIENT_PREALLOCATE=false",
+    "OMP_NUM_THREADS=1",
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/tools/prepare.py",
+    "diverse_04"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 2.0300912857055664,
+  "started_UTC": "2026-10-12T02:34:32.219142+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse04_20261012_r54\\diverse_04\\checks\\preparation.log"
+}

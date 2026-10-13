@@ -1,0 +1,11 @@
+{
+  "failed_attempt": "abaqus/G",
+  "stopped_before_time_advance": true,
+  "error": "Very large implicit constraint system: 4050 variables, 130114350 estimated operations",
+  "first_solve_seconds": 25.875,
+  "no_solver_protection_override": true,
+  "rigid_groups": 386,
+  "contact_pairs": 4494,
+  "physical_added_mass": 0.0,
+  "remaining_mass_note": "Explicit rigid-body augmented inertia from attached deformable nodes must be recorded; no point mass/rotary inertia added."
+}

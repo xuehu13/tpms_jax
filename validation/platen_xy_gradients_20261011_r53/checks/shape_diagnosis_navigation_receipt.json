@@ -1,0 +1,31 @@
+{
+  "updated_utc": "2026-10-11T17:31:18.921308+00:00",
+  "original_shape_pass": false,
+  "original_work_pass": true,
+  "original_force_pass": false,
+  "refined_check_budget_minutes": 90,
+  "acceptance_threshold_changes": false,
+  "navigation_archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\execution_gradient_20261011_r53\\before_shape_diagnosis",
+  "archive_manifest": {
+    "windows/AGENTS.md": "76b1eb9829309a8c29f0ef5d501f98f3bf6feea7291d4d26ef9edf74cda8108e",
+    "windows/RESEARCH_BACKGROUND.md": "9b728e0a3eed817f6f9c892d42e942c3cc848f860f5db274e43c74e4d826ab75",
+    "windows/RESEARCH_PLAN.md": "92f2d5d0712c0eef1d23521763e1dda0693bca9cad9f80b5a7f5859ec57102da",
+    "windows/PROJECT_OVERVIEW.md": "917ea002859546ae1591394afbd491c7e5022595cae622adafca8c69974435c9",
+    "windows/FILE_MAP.md": "f36b0eb4dd04922e13b738afd9f10386fc07c31d360373300dd42aaff98fd62e",
+    "windows/START_HERE.md": "e7ab7ac4c8db5936717d1844f7b38f03948f90f0bec45accb081734f5e95cb5d",
+    "windows/TPMS_RESEARCH_REVIEW.md": "9572f42e05963640abde193cbbbe97d8893394a7596d07536c2a37d19a1e07d6",
+    "formal_batch/README.md": "d192b1477668c68260578ed90064fdd54a50016dc1fecd907acf898998ef12d5",
+    "reading_output/README.md": "30decb5e6722f208b146f6a9c9ebb0e44d41ce7dfcec69e22686b0d1abd7467d",
+    "formal_batch/analysis/G5_shape/README.md": "0beb28b0b519760a59471e101df30f166e30c21ba491406d6f8a23d2a70e07ac",
+    "reading_output/analysis/G5_shape/README.md": "0beb28b0b519760a59471e101df30f166e30c21ba491406d6f8a23d2a70e07ac",
+    "formal_batch/status.json": "0e40cb2a9bd5a0b96b74e8772a2a9f3b11e5c87a9ea3eaf91f290b07d4364bb9",
+    "reading_output/status.json": "c3f500a64a1ee5bec21031081df72b5e8b52e749b448a346870ed5751e29e376",
+    "formal_docs/RESEARCH_BACKGROUND.md": "9b728e0a3eed817f6f9c892d42e942c3cc848f860f5db274e43c74e4d826ab75",
+    "formal_docs/RESEARCH_PLAN.md": "92f2d5d0712c0eef1d23521763e1dda0693bca9cad9f80b5a7f5859ec57102da",
+    "formal_docs/RESEARCH_STATUS.md": "917ea002859546ae1591394afbd491c7e5022595cae622adafca8c69974435c9",
+    "formal_docs/FILE_MAP.md": "f36b0eb4dd04922e13b738afd9f10386fc07c31d360373300dd42aaff98fd62e",
+    "formal_docs/TPMS_RESEARCH_REVIEW.md": "9572f42e05963640abde193cbbbe97d8893394a7596d07536c2a37d19a1e07d6",
+    "formal_docs/root_README.md": "edd372ae9fd80da3128b7aa2f04514668756d0459b68e9f189e66aa1285657ab"
+  },
+  "protected_sources_unchanged": true
+}

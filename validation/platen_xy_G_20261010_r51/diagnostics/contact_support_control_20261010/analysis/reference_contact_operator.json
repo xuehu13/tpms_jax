@@ -1,0 +1,21 @@
+{
+  "scope": "Reference contact operator at all-active contact, assigned local rim centers; not FE stiffness or global physical end moment",
+  "sides": [
+    {
+      "side": 0,
+      "occupied_area_mm2": 12.99988397362122,
+      "uniform_normal_stiffness_N_per_mm": 4159.9628715587905,
+      "sum_local_rotational_tangent_trace_if_all_contact_N_mm_per_rad": 601.1554495631643,
+      "mean_distance_to_assigned_rim_mm": 0.17830816771900035,
+      "rms_distance_to_assigned_rim_mm": 0.38014446108683386
+    },
+    {
+      "side": 1,
+      "occupied_area_mm2": 12.99988397362122,
+      "uniform_normal_stiffness_N_per_mm": 4159.9628715587905,
+      "sum_local_rotational_tangent_trace_if_all_contact_N_mm_per_rad": 601.1579282993289,
+      "mean_distance_to_assigned_rim_mm": 0.1783083155919936,
+      "rms_distance_to_assigned_rim_mm": 0.3801452448082929
+    }
+  ]
+}

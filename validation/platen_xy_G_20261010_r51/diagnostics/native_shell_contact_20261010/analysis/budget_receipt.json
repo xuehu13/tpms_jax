@@ -1,0 +1,7 @@
+{
+  "datacheck": 83.06199999991804,
+  "solve": 89.92299999995157,
+  "extract": 7.483999999938533,
+  "sum_seconds": 180.46899999980815,
+  "scope": "Three datachecks, three prescribed-motion Explicit solves, three extractions; authoring and read-only analysis excluded."
+}

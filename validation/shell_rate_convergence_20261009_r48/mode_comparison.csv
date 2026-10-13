@@ -1,0 +1,13 @@
+﻿T_a_ms,T_b_ms,requested_compression_pct,actual_a_pct,actual_b_pct,area_weighted_direction_cosine,fluctuation_difference_RMS_mm,scope
+20.0,40.0,10.0,9.812807440757751,9.81281042098999,0.9999999949855867,1.1450144229186503e-05,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,40.0,11.4,11.862818002700806,11.862679719924927,0.8378505364817372,0.13523020387108284,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,40.0,12.0,11.862818002700806,11.862679719924927,0.8378505364817372,0.13523020387108284,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,40.0,14.000000000000002,13.823639154434202,13.823457956314087,0.9483248339013245,0.08798158814070797,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+40.0,80.0,10.0,9.81281042098999,9.812657237052917,0.9999999995560773,3.826634671500376e-06,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+40.0,80.0,11.4,11.862679719924927,11.862592697143555,0.8075479012099401,0.1468342622888047,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+40.0,80.0,12.0,11.862679719924927,11.862592697143555,0.8075479012099401,0.1468342622888047,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+40.0,80.0,14.000000000000002,13.823457956314087,13.823313713073732,0.9581197912372523,0.07997095614462821,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,80.0,10.0,9.812807440757751,9.812657237052917,0.9999999915650761,1.4878866264419655e-05,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,80.0,11.4,11.862818002700806,11.862592697143555,0.9543721113304411,0.0748259736509769,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,80.0,12.0,11.862818002700806,11.862592697143555,0.9543721113304411,0.0748259736509769,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"
+20.0,80.0,14.000000000000002,13.823639154434202,13.823313713073732,0.9772002276216029,0.05923896367664706,"Nearest saved frames, subtract affine and area-mean translation; not eigenmodes or exact critical location"

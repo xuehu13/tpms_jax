@@ -1,0 +1,112 @@
+{
+  "scope": "diverse_04 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+  "paired_complete20_and_hold": true,
+  "common_compression_max": 0.2,
+  "common_time_s": 0.004,
+  "normalizer_N": 2.902436788645905,
+  "normalizer_scope": "new shell full loading peak",
+  "raw_global_peak": {
+    "JAX": {
+      "compression_percent": 19.999999954089237,
+      "force_N": 2.756562886525545,
+      "time_s": 0.004,
+      "at_loading_endpoint": true,
+      "sample_time_spacing_s_min_max": [
+        8.588235274721925e-07,
+        5.236193630077726e-06
+      ],
+      "captured_interior_global_peak": false
+    },
+    "Abaqus": {
+      "compression_percent": 20.0,
+      "force_N": 2.902436788645905,
+      "time_s": 0.004,
+      "at_loading_endpoint": true,
+      "sample_time_spacing_s_min_max": [
+        1.9031576812267303e-06,
+        2.3145476006902754e-06
+      ],
+      "captured_interior_global_peak": false
+    }
+  },
+  "smoothed_peaks": {
+    "JAX": {
+      "smoothing_points": 25,
+      "approx_width_percentage_points": 0.5,
+      "prominence_threshold_N": 0.27200600941165204,
+      "peaks": [],
+      "first_prominent_interior_peak": null
+    },
+    "Abaqus": {
+      "smoothing_points": 25,
+      "approx_width_percentage_points": 0.5,
+      "prominence_threshold_N": 0.289029754101651,
+      "peaks": [],
+      "first_prominent_interior_peak": null
+    }
+  },
+  "primary_curve_RMS_over_shell_peak": 0.026997324250011025,
+  "peak_rules": {
+    "primary": "Raw global maximum upper-platen compressive force in actual loading window; report force, engineering compression and time",
+    "location_difference": "JAX minus new Abaqus in compression percentage points; report raw sample spacing",
+    "diagnostic_smoothing": "Centered moving mean on fixed 1001-point compression grid: width25 samples (~0.5 percentage points); no time warping",
+    "first_prominent_peak": "On smoothed curve, scipy find_peaks prominence >=10% of its own full-loading absolute peak and distance>=25 samples; list all qualifying peaks, compare first if both have one",
+    "endpoint_rule": "If global maximum is at end or no qualifying interior peak, mark no captured interior peak rather than claim a buckling peak",
+    "incomplete_rule": "Compare common achieved window only; no full20 acceptance, no unseen peak extrapolation"
+  },
+  "no_new_FEM_AD_FD": true,
+  "raw_global_peak_location_difference_percentage_points": -4.5910763191159276e-08,
+  "raw_global_peak_force_relative_bias": -0.05025911423497886,
+  "first_prominent_peak_difference_percentage_points": null,
+  "loading_work_N_mm": {
+    "JAX": 3.7848076660180086,
+    "Abaqus": 3.8242261503108095
+  },
+  "loading_work_relative_bias": -0.010307571451964814,
+  "point_forces": [
+    {
+      "compression_percent": 2.0,
+      "JAX_N": 0.577614176000236,
+      "Abaqus_N": 0.557872799989027,
+      "relative_bias": 0.03538687674250718
+    },
+    {
+      "compression_percent": 5.0,
+      "JAX_N": 1.2997394291496052,
+      "Abaqus_N": 1.258215360823263,
+      "relative_bias": 0.033002353666364836
+    },
+    {
+      "compression_percent": 10.0,
+      "JAX_N": 2.1721368506851437,
+      "Abaqus_N": 2.1412419399883906,
+      "relative_bias": 0.014428500637775121
+    },
+    {
+      "compression_percent": 15.0,
+      "JAX_N": 2.625370119064751,
+      "Abaqus_N": 2.681474324902314,
+      "relative_bias": -0.02092289503447209
+    },
+    {
+      "compression_percent": 20.0,
+      "JAX_N": 2.756562886525545,
+      "Abaqus_N": 2.902436788645905,
+      "relative_bias": -0.05025911423497886
+    }
+  ],
+  "hold_mean_N": {
+    "JAX": 2.793298627109192,
+    "Abaqus": 2.9312567402816176
+  },
+  "hold_mean_relative_bias": -0.047064493285965514,
+  "three_working_targets_within10pct": true,
+  "JAX_terminal_time_s": 0.004199999999999998,
+  "JAX_complete": true,
+  "Abaqus_terminal_time_s": 0.00419999985024333,
+  "Abaqus_complete": true,
+  "source_sha256": {
+    "JAX": "5e670a5cf6e6f8f4f19ddb74249cb88339ec966691c6a9bfea624e3b98ec178e",
+    "Abaqus": "c81a41e6ffd138685ba247c6aa4332393f985fe0f84e309732bff03ebb2bd994"
+  }
+}

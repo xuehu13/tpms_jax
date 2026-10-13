@@ -1,0 +1,24 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/tools/analyze_rim20.py",
+  "source_sha256": "d85e6acb617c2ba88de612e1115b1e868dccb60228362d3e6bb16075e11d31c8",
+  "substitutions": [
+    [
+      "E=Path(__file__).resolve().parents[1];D=E.parents[1];R=D.parents[1]",
+      "E=Path('/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04');D=Path('/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51');R=Path('/home/xuehu/projects/tpms_jax')"
+    ],
+    [
+      "R/'validation/canonical_tpms_20261009_r50/G/surface_shell_quality.npz'",
+      "Path('/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz')"
+    ],
+    [
+      "D/'input/cut_face_contact.npz'",
+      "E/'input/cut_face_contact.npz'"
+    ],
+    [
+      "fig.suptitle('G | L10 mm",
+      "fig.suptitle('diverse_04 | L10 mm"
+    ]
+  ],
+  "adapted_sha256": "925baf3de75e59342b4c90fe2ce7f820a73d90e8a45784da9fc95e91cd9528a6",
+  "new_FEM_calls": false
+}

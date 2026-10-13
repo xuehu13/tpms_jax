@@ -1,0 +1,56 @@
+{
+  "navigation": {
+    "README.md": {
+      "before": "4ea3cc3c9c5fb3aa5b3d33c0fb699b5335bbbfd2747236bf33803c51c00970a0",
+      "after": "87dbf968681843e0cd5fdeedceaab7a8abb12dd5ca91ae4b95df136863f0e181"
+    },
+    "docs/RESEARCH_BACKGROUND.md": {
+      "before": "1d0147233da1130813be5416761b0f04b7a6e0b2c9cacc9a697ce8097213cd87",
+      "after": "95d74052071467a5f0765e3fab7586e74b7e7c2f73add1ac71f3186142451aef"
+    },
+    "docs/RESEARCH_PLAN.md": {
+      "before": "7dd39cf9d2809e16dda795b381664373d71df845a60df3bc73248487402be5bc",
+      "after": "e85ec096aa0030e905a6162e0cec064400ffb4a25e8170b2fd14c9c938302dd0"
+    },
+    "docs/RESEARCH_STATUS.md": {
+      "before": "930b0a639c3f83ac8a91cd9cca2e77829a4d6b28f77400f2ff0ce130e07a0592",
+      "after": "6e4a209399ae78ac6042e6a28da065c4ad652ea3691e22239824e422eb06f37f"
+    },
+    "docs/FILE_MAP.md": {
+      "before": "f195bd783bea48e37acf6228bd3b149b99c0e0fda1b915590487f601159ed34a",
+      "after": "8ae93ac92faa1a5b21927a763e2eddd3d2df873022d8c2d856ab9834c7c670cb"
+    },
+    "docs/TPMS_RESEARCH_REVIEW.md": {
+      "before": "b1da341c5e2c27b9c6f9903fd753a033daae9ed79c0d957a697b2317696c8567",
+      "after": "2cd5a10f1918d32070463d7d0f43983495bb5e9815af06a4fcde3a5adbae0e4e"
+    }
+  },
+  "protected_science_before": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+    "validation/platen_xy_gradients_20261011_r53/status.json": "1778899f289097d2f39ea9c6cb740bc992dc691abb1182c02f0a1036ed7a54a8",
+    "validation/platen_xy_gradients_20261011_r53/tools/reverse.py": "3ec3755983bbed970e7b66f89ebaf5760734691ef5006ec732253d8cd403e5e3",
+    "validation/platen_xy_diverse04_20261012_r54/status.json": "4d1fd09e8b93c164d19d843b3eb07249d218c8b66755b7e467d8c2962793c7e1",
+    "validation/platen_xy_diverse_batch_20261012_r55/status.json": "17eb5f74e04a16be6191b4ffa5333f29fd67baf40353c742b0b11065575fce99",
+    "validation/platen_xy_hex8_20261012_r56/status.json": "9ce45a76dd1164fee1852ac1198c079f637bfd51ea2866399a97f3aaeb5dc779"
+  },
+  "protected_science_after": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+    "validation/platen_xy_gradients_20261011_r53/status.json": "1778899f289097d2f39ea9c6cb740bc992dc691abb1182c02f0a1036ed7a54a8",
+    "validation/platen_xy_gradients_20261011_r53/tools/reverse.py": "3ec3755983bbed970e7b66f89ebaf5760734691ef5006ec732253d8cd403e5e3",
+    "validation/platen_xy_diverse04_20261012_r54/status.json": "4d1fd09e8b93c164d19d843b3eb07249d218c8b66755b7e467d8c2962793c7e1",
+    "validation/platen_xy_diverse_batch_20261012_r55/status.json": "17eb5f74e04a16be6191b4ffa5333f29fd67baf40353c742b0b11065575fce99",
+    "validation/platen_xy_hex8_20261012_r56/status.json": "9ce45a76dd1164fee1852ac1198c079f637bfd51ea2866399a97f3aaeb5dc779"
+  },
+  "science_unchanged": true,
+  "new_jobs": 0,
+  "new_AD_FD": 0,
+  "git_actions": 0
+}

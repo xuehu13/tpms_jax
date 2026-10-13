@@ -1,0 +1,9 @@
+{
+  "G12_interface_loading_work_passed": true,
+  "G12_interface_terminal_force_passed": false,
+  "auxiliary_nonpass_preserved": true,
+  "next_parameter": "P thickness, independent small-compression migration",
+  "P_protocol_sha256": "1c57dc315d782f5a50f7c0c530212ec2ce777b9eb240e02f4616b6cc7cea30b5",
+  "new_solver_submitted": false,
+  "shared_solver_sources_unchanged": true
+}

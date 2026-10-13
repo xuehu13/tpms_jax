@@ -1,0 +1,3 @@
+solver,peak_definition,compression_percent,force_N,endpoint_flag
+JAX,raw global max,19.999999954089237,2.756562886525545,True
+Abaqus,raw global max,20.0,2.902436788645905,True

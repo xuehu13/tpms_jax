@@ -1,0 +1,21 @@
+{
+  "kind": "diverse_04",
+  "xy_pairs": 263,
+  "unique_slaves": 263,
+  "Z_periodic_pairs": 0,
+  "macro_affine_identity_verified": true,
+  "no_wall_pin": true,
+  "G20_contact_load_output_tail_identical": true,
+  "contact_area_mm2": [
+    15.229465305736445,
+    15.229465305736445
+  ],
+  "rim_nodes": [
+    162,
+    162
+  ],
+  "area_conserved_per_end": true,
+  "occupied_area_weighted_mapping_distance_mm": 0.16293698499957765,
+  "sources_unchanged": true,
+  "preparation_wall_seconds": 28.553431272506714
+}

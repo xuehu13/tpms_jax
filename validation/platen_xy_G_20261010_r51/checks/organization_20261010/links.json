@@ -1,0 +1,771 @@
+{
+  "checked": 153,
+  "broken": [],
+  "links": [
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "target": "output/r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "target": "output/r51_platen_xy_G_20261010/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "target": "RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "target": "PROJECT_OVERVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "target": "FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "target": "output/r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "target": "PROJECT_OVERVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "target": "output/r51_platen_xy_G_20261010/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "target": "RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "target": "TPMS_RESEARCH_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "output/r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "output/r51_platen_xy_G_20261010/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "output/r50_canonical_tpms_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "target": "FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r51_platen_xy_G_20261010/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r51_JAX_model_learning_20261010.zip",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r51_JAX_model_learning_20261010/README_先读.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r50_canonical_tpms_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r47_simulation_atlas_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r48_shell_rate_convergence_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/r49_time_logic_audit_20261009/audit.json",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "target": "output/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "output/r50_canonical_tpms_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "WEEKLY_RESEARCH_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "output/r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "MECHANISM_ANALYSIS.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "PROJECT_OVERVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "output/figures/VOID_CONTINUATION_response.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "target": "output/r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r51_JAX_model_learning_20261010.zip",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r51_JAX_model_learning_20261010/README_先读.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r51_platen_xy_G_20261010/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r51_platen_xy_G_20261010/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r50_canonical_tpms_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "TPMS固定背景可导力学计算研究_一周完整技术报告_20261007.docx",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "TPMS薄壁可导力学计算_重点展示版_20261007.pptx",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r47_simulation_atlas_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r48_shell_rate_convergence_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "r49_time_logic_audit_20261009/audit.json",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md",
+      "target": "../FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md",
+      "target": "RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md",
+      "target": "../../RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md",
+      "target": "contact_origin/contact_origin_comparison.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md",
+      "target": "end_section_benchmark/jax_comparison/local_JAX_Abaqus_force.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md",
+      "target": "RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md",
+      "target": "../../FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "geometry_boundary.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "paired_response.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "energy_contact.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "metrics.json",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "jax_response.csv",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "abaqus_response.csv",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "terminal_contact_coverage.json",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "contact_origin/contact_origin_comparison.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "contact_origin/terminal_contact_support.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "contact_support_control/common_dt_contact_comparison.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "end_section_benchmark/same_solid_force_rotation.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "end_section_benchmark/same_solid_contact_geometry.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "end_section_benchmark/jax_comparison/local_JAX_Abaqus_force.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "end_section_benchmark/jax_comparison/local_JAX_Abaqus_rotation_penetration.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "shell_cap_arm/saved_pose_cap_penetration.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "shell_cap_arm/saved_pose_rigid_cap_limit.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "native_shell_contact/analysis/contact_geometry_and_kinematics.png",
+      "exists": true
+    },
+    {
+      "file": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md",
+      "target": "native_shell_contact/analysis/native_contact_force.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "target": "validation/platen_xy_G_20261010_r51/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "target": "validation/platen_xy_G_20261010_r51/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "target": "docs/RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "target": "docs/RESEARCH_STATUS.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "target": "docs/RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "target": "docs/FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "target": "docs/RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "target": "docs/RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "target": "docs/RESEARCH_STATUS.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "target": "docs/FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "target": "docs/TPMS_RESEARCH_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "target": "docs/WEEKLY_RESEARCH_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md",
+      "target": "../validation/platen_xy_G_20261010_r51/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md",
+      "target": "RESEARCH_STATUS.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md",
+      "target": "../validation/platen_xy_G_20261010_r51/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md",
+      "target": "RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md",
+      "target": "TPMS_RESEARCH_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "RESEARCH_BACKGROUND.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "../validation/platen_xy_G_20261010_r51/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "../validation/platen_xy_G_20261010_r51/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "../validation/canonical_tpms_20261009_r50/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "target": "FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "../validation/platen_xy_G_20261010_r51/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "../validation/platen_xy_G_20261010_r51/RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r51_JAX_model_learning_20261010.zip",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r51_JAX_model_learning_20261010/README_先读.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "../validation/canonical_tpms_20261009_r50/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r47_simulation_atlas_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r48_shell_rate_convergence_20261009/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r49_time_logic_audit_20261009/audit.json",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "../validation/canonical_tpms_20261009_r50/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "WEEKLY_RESEARCH_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "../validation/platen_xy_G_20261010_r51/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "MECHANISM_ANALYSIS.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "RESEARCH_STATUS.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "C:/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/figures/VOID_CONTINUATION_response.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "target": "../validation/platen_xy_G_20261010_r51/README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_BACKGROUND.md",
+      "target": "RESEARCH_STATUS.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_BACKGROUND.md",
+      "target": "TPMS_RESEARCH_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_BACKGROUND.md",
+      "target": "RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md",
+      "target": "RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md",
+      "target": "../../docs/RESEARCH_PLAN.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md",
+      "target": "diagnostics/contact_origin_20261010/analysis/contact_origin_comparison.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md",
+      "target": "diagnostics/end_section_benchmark_20261010/analysis/jax_comparison/local_JAX_Abaqus_force.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md",
+      "target": "RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md",
+      "target": "../../docs/FILE_MAP.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/geometry_boundary.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/paired_response.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/energy_contact.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/metrics.json",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/jax_response.csv",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/abaqus_response.csv",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "analysis/terminal_contact_coverage.json",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/contact_origin_20261010/analysis/contact_origin_comparison.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/contact_origin_20261010/analysis/terminal_contact_support.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/contact_support_control_20261010/analysis/common_dt_contact_comparison.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/end_section_benchmark_20261010/analysis/same_solid_force_rotation.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/end_section_benchmark_20261010/analysis/same_solid_contact_geometry.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/end_section_benchmark_20261010/analysis/jax_comparison/local_JAX_Abaqus_force.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/end_section_benchmark_20261010/analysis/jax_comparison/local_JAX_Abaqus_rotation_penetration.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/shell_cap_arm_20261010/analysis/saved_pose_cap_penetration.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/shell_cap_arm_20261010/analysis/saved_pose_rigid_cap_limit.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/native_shell_contact_20261010/analysis/contact_geometry_and_kinematics.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md",
+      "target": "diagnostics/native_shell_contact_20261010/analysis/native_contact_force.png",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\analysis\\README.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\analysis\\README.md",
+      "target": "../RESEARCH_LOG.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\README.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "file": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\README.md",
+      "target": "../RESEARCH_LOG.md",
+      "exists": true
+    }
+  ]
+}

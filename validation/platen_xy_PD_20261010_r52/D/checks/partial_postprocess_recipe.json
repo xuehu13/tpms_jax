@@ -1,0 +1,37 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/tools/analyze_rim20.py",
+  "source_sha256": "d85e6acb617c2ba88de612e1115b1e868dccb60228362d3e6bb16075e11d31c8",
+  "substitutions": [
+    [
+      "R/'validation/canonical_tpms_20261009_r50/G/surface_shell_quality.npz'",
+      "Path('/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/D/surface.npz')"
+    ],
+    [
+      "D/'input/cut_face_contact.npz'",
+      "E/'input/cut_face_contact.npz'"
+    ],
+    [
+      "for target in [5,10,15,20]:",
+      "for target in [5,10,15]:"
+    ],
+    [
+      "# Reuse the exact periodic equivalence classes; no model rebuild.",
+      "assert ts <= ft[-2], 'No extrapolation beyond the final regular shell frame'\n    # Reuse the exact periodic equivalence classes; no model rebuild."
+    ],
+    [
+      "if x[0] in [10,20]",
+      "if x[0] in [10,15]"
+    ],
+    [
+      "deformation_10_20pct.png",
+      "deformation_10_15pct.png"
+    ]
+  ],
+  "fixed_windows": [
+    0.02,
+    0.1,
+    0.15
+  ],
+  "full20_denominator": null,
+  "new_FEM_calls": false
+}

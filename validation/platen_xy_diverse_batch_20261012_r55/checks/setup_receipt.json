@@ -1,0 +1,20 @@
+{
+  "stage_source_sha256": {
+    "run_batch.py": "7ea73fa1f175c8243703818ac13cc8ebd89338c39a6ccbd6cea610684bc9a4b4",
+    "run_pair.py": "ffb1d67368542e42ef3140efc5cb48ef37bef454c2914a31d7cbe3dcb4e0a0e6",
+    "setup.py": "4796c1f5e21b91b18f8c0cfb4c3bd584d9a9045073283c6c1176e2cf2e4548d9",
+    "compare_peaks.py": "b24bcdb1642668563abc6150a74ea6e549d9b5a3703db4bcb1d6d630b283c228",
+    "summarize.py": "4e14e1755f524b96ac4637f2d026615a3291b9b22dbfc97394c56c4bc8c7c3c1",
+    "run_jax.py": "ad08215e20ea263671b83d39e8eced5e88cec3064c422060270695029b2cdab9",
+    "prepare.py": "33eb56ab44d17980717a7a9122fe68894e88277df10b9925133e80042c969381",
+    "analyze.py": "2602f6a2b39ca11479c6a2f1364ebbda3042508f1c62db0eb535933831ae9309"
+  },
+  "protected_old_files": 93,
+  "cases": [
+    "diverse_28",
+    "diverse_05",
+    "diverse_02"
+  ],
+  "new_dynamic_jobs_at_setup": 0,
+  "time_unix": 1791776214.5963354
+}

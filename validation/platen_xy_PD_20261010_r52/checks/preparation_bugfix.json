@@ -1,0 +1,18 @@
+{
+  "reason": "Element Output was mistakenly matched by the Element keyword prefix; fixed exact keyword matching before first solver/datacheck submission",
+  "new_solver_attempts": 0,
+  "parameter_changes": false,
+  "prior_preparation_archived": "P/checks/preparation_failure_attempt01",
+  "original_pair_clock_retained": true,
+  "elapsed_pair_seconds": 87.82427859306335,
+  "tool_changes": {
+    "prepare_case.py": {
+      "before": "af8824af77c826cfd9f17fed8688a2091756b7805537a4b039a832cdf54545ae",
+      "after": "583f50b1eba3528b07b52b876256a893a5313cf3cd223693ee11945feb70a2cd"
+    },
+    "run_batch.py": {
+      "before": "169f95a3e91dafefac53704d9133e9754efc77aad6d05ab86b2cffbea9add8a5",
+      "after": "6dc54d5ff40e6edaa3d3a13da436bb817ce9c3665c674430850b01f598eb5f1e"
+    }
+  }
+}

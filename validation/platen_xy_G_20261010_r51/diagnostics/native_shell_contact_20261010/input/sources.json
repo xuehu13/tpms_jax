@@ -1,0 +1,6 @@
+{
+  "native_geometry": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEITNRefMap/simaitn-c-contactgeneral.htm",
+  "thickness_and_perimeter_controls": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEITNRefMap/simaitn-c-contactcontrolsassign.htm",
+  "surface_thickness": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEITNRefMap/simaitn-c-surfacepropassign.htm",
+  "note": "Official public 2025 documentation used as algorithm reference; actual input tested using installed Abaqus 2026."
+}

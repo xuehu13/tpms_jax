@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "protected_file_count": 2114,
+  "archive_files": 232,
+  "archive_bytes": 73414875,
+  "archive_directories": [
+    "gradient_report_20261013_qa",
+    "report_20261012_qa",
+    "ppt_update_20261013",
+    "ppt_gradient_revision_20261013"
+  ],
+  "backup_windows_docs": [
+    "AGENTS.md",
+    "START_HERE.md",
+    "RESEARCH_PLAN.md",
+    "PROJECT_OVERVIEW.md",
+    "FILE_MAP.md",
+    "output/README.md",
+    "tmp/README.md",
+    "work/README.md",
+    "output/gradient_summary_20261013/README.md",
+    "output/gradient_summary_20261013/source/README.md",
+    "output/research_report_20261007_20261012/README.md",
+    "output/presentation_update_20261013/README.md",
+    "output/presentation_gradient_revision_20261013/README.md",
+    "TPMS_RESEARCH_REVIEW.md"
+  ],
+  "backup_wsl_docs": [
+    "AGENTS.md",
+    "README.md",
+    "validation/README.md",
+    "docs/RESEARCH_PLAN.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/FILE_MAP.md",
+    "docs/TPMS_RESEARCH_REVIEW.md"
+  ]
+}

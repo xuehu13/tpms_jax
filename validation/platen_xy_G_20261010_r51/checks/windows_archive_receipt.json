@@ -1,0 +1,45 @@
+{
+  "file_count": 9,
+  "purpose": "Completed Windows organization/transfer recipes; only WSL r51 tools are authoritative",
+  "changed": [],
+  "files": [
+    {
+      "path": "finalize.py",
+      "sha256": "b4cd194d7a416b4bc5425d231618bffa7e2392dd57d01c13e40c3e626f301049"
+    },
+    {
+      "path": "organize.py",
+      "sha256": "9956757a1c8dedae094d9ed741f2028ed57ae31bf8ce5eb8d1b0fb1367214015"
+    },
+    {
+      "path": "provision.py",
+      "sha256": "61760358e874c935b1988fe71a4eafdf546038408f1bd0a6093f8f46c7722685"
+    },
+    {
+      "path": "payload\\tools\\analyze.py",
+      "sha256": "7067f835444bece51c8342502fbd20cc5f2bf37412105ec870f93e385c50aa9f"
+    },
+    {
+      "path": "payload\\tools\\extract_abaqus.py",
+      "sha256": "b829d02b316e8ba86530043f8e028fea4b262688816ed3eaa122a4df65c73e8d"
+    },
+    {
+      "path": "payload\\tools\\platen_model.py",
+      "sha256": "d5ce4bc214e38dc1b31e7d2b8d1dc748437684b6d18a9c24f068476e0bb7d1f9"
+    },
+    {
+      "path": "payload\\tools\\prepare.py",
+      "sha256": "68e1f4c4d35fa0dad5de1c6630f08335cfcb32cc3f0f9757625686fa2a81f150"
+    },
+    {
+      "path": "payload\\tools\\run_abaqus.py",
+      "sha256": "d18d9a44530d88d41b05017dae08484985032d0c983ce473ecf1bc835e420e39"
+    },
+    {
+      "path": "payload\\tools\\run_jax.py",
+      "sha256": "7b94be1fb445fbc620a7a8f812e8b8c498cc36be8b4501ed6db306ae6d96985b"
+    }
+  ],
+  "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\r51_support",
+  "target": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\organization_platen_xy_20261010_r51\\completed_transfer_tools"
+}

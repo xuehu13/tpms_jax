@@ -1,0 +1,30 @@
+{
+  "diverse_28": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/input/protocol.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/jax/result.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/input/rimline_contact.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/gauss_field.npz": true
+  },
+  "diverse_02": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/input/protocol.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/jax/result.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_02/surface.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/input/rimline_contact.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_02/gauss_field.npz": true
+  },
+  "diverse_04": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/protocol.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/result.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/rimline_contact.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/gauss_field.npz": true
+  },
+  "diverse_05": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_05/input/protocol.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_05/jax/result.json": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/surface.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_05/input/rimline_contact.npz": true,
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/gauss_field.npz": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "F:\\Anaconda\\python.exe",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\run_abaqus.py",
+    "solve",
+    "--native-dir",
+    "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_05_midsurface_end_20pct_20261012",
+    "--output-dir",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\diverse_05\\abaqus",
+    "--input",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\diverse_05\\abaqus\\platen_20pct.inp",
+    "--config",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\diverse_05\\input\\protocol.json"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 98.25483417510986,
+  "started_UTC": "2026-10-12T04:09:51.269494+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\diverse_05\\abaqus\\driver_solve.log"
+}

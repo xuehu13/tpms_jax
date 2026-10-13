@@ -1,0 +1,49 @@
+{
+  "pdf_pages": 23,
+  "pdf_geometry_order": [
+    "04",
+    "04",
+    "04",
+    "04",
+    "04",
+    "04",
+    "04",
+    "04",
+    "04",
+    "04",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28",
+    "28"
+  ],
+  "xlsx_sheets": [
+    "加载时长与峰位",
+    "曲线条件",
+    "窗口误差",
+    "定点误差",
+    "峰与保载差",
+    "初始与静力点",
+    "记录范围"
+  ],
+  "xlsx_formula_errors": [],
+  "window_ratio_values_all_match": true,
+  "hold_ratio_values_all_match": true,
+  "static_ratio_values_all_match": true,
+  "source_case_counts": {
+    "diverse_04": 15,
+    "diverse_28": 26
+  },
+  "static_case_counts": {
+    "diverse_28": 15,
+    "diverse_04": 7
+  }
+}

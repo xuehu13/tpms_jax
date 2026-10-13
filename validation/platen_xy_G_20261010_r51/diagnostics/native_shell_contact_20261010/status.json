@@ -1,0 +1,10 @@
+{
+  "stage": "three_prescribed_native_geometry_probes_complete_analyzed",
+  "active_jobs": [],
+  "native_flat_cut_geometry_gate_passed": false,
+  "native_contact_not_adopted": true,
+  "new_G_paths": 0,
+  "original_G_comparison_passed": false,
+  "full20_submitted": false,
+  "new_design_AD": false
+}

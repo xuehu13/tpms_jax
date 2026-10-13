@@ -1,0 +1,21 @@
+{
+  "kind": "D",
+  "xy_pairs": 502,
+  "unique_slaves": 502,
+  "Z_periodic_pairs": 0,
+  "macro_affine_identity_verified": true,
+  "no_wall_pin": true,
+  "G20_contact_load_output_tail_identical": true,
+  "contact_area_mm2": [
+    26.750595923970096,
+    26.750595923970096
+  ],
+  "rim_nodes": [
+    254,
+    254
+  ],
+  "area_conserved_per_end": true,
+  "occupied_area_weighted_mapping_distance_mm": 0.19873950105483923,
+  "sources_unchanged": true,
+  "preparation_wall_seconds": 25.395561695098877
+}

@@ -1,0 +1,51 @@
+{
+  "case_id": "G_platen_xy_r51_rimline_diagnostic",
+  "L_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "density_tonne_mm3": 1e-09,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "N": 32,
+  "contact_normal_stiffness_MPa_per_mm": 320.0,
+  "contact_stiffness_rule": "10*E/background_h, selected before response",
+  "target_compression": 0.02,
+  "load_time_s": 0.001,
+  "hold_time_s": 0.0002,
+  "stage": "Artificial midsurface-rim contact-support diagnostic, 2pct; not physical finite-thickness contact certification",
+  "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+  "material_model": "objective_void",
+  "no_friction": true,
+  "no_self_contact": true,
+  "no_mass_scaling": true,
+  "shell_contact": "node-based cut rims against rigid planes; zero contact thickness by node-based pair definition; section thickness .5 retained",
+  "jax_contact": "Occupied cap weights aggregated at nearest existing shell rim node; Q2 interpolation and force distribution at that point; reference area and kn conserved",
+  "remaining_difference": "shell rim discretization vs diffuse solid cap; different contact penalties and discrete mass, not identical models",
+  "source_surface_sha256": "f29cee32531216d623f5386439620789117c8c7e1312d2cb3b29f4651f3fa925",
+  "source_shell_surface_sha256": "16002f687de4e1f69d60463a57cd87c395b4445e3008749777a9669ea2966da4",
+  "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/G/gauss_field.npz",
+  "original_Gauss_sha256": "110de55d63508b1f8e504f804fbcae26ec11e93be0caf6ef85f8388b1ae81712",
+  "contact_reference_area_mm2": [
+    12.999883973621218,
+    12.999883973621218
+  ],
+  "physical_nodes": 18789,
+  "shell_elements": 36576,
+  "XY_relations": 341,
+  "XY_equations": 2046,
+  "labels": {
+    "ax": 18790,
+    "ay": 18791,
+    "bottom": 18792,
+    "top": 18793
+  },
+  "rim_node_count": [
+    172,
+    172
+  ],
+  "inp_sha256": "c31665438fc03919e3620c5fafaa8ebef5af83327b0adce240b49333cc3231e1",
+  "wall_pin": null,
+  "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/rimline_contact.npz",
+  "contact_cache_sha256": "045ed72593a474952be792773bcc26d3695e84db11f4ba423e6c1d3e2a7b3ffd"
+}

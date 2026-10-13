@@ -1,0 +1,8 @@
+{
+  "virtual_work_relative_error": 4.631272497608578e-09,
+  "finite_difference": 0.0016358292289252294,
+  "assembled_virtual_work": 0.0016358292213492585,
+  "nonnegative_weights": true,
+  "weights_are_occupancy_aggregates_not_phi_replaced_in_material": true,
+  "pass": true
+}

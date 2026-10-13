@@ -1,0 +1,38 @@
+{
+  "cases": [
+    "G",
+    "P",
+    "D"
+  ],
+  "new_dynamic_tasks": 6,
+  "initial_checks": 6,
+  "jax_wall_cap_seconds": 2400,
+  "abaqus_wall_cap_seconds": 1500,
+  "Abaqus_solver_budget_seconds": {
+    "G_remaining": 1080,
+    "P": 1400,
+    "D": 1400
+  },
+  "G_prior_aborted_launch_reserved_seconds": 320,
+  "initial_task_cap_seconds": 300,
+  "load_time_seconds": 0.004,
+  "hold_time_seconds": 0.0004,
+  "N": 32,
+  "element": "HEX27",
+  "Gauss_points": 27,
+  "material": "objective_void C2",
+  "thickness_mm": 0.5,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "no_AD": true,
+  "no_numerical_parameter_retries": true,
+  "mesh_preprocessing_restart_G": true,
+  "mesh_quality_reconnected": [
+    "G",
+    "P"
+  ],
+  "D_original_mesh_retained": true,
+  "user_authorized": true,
+  "time_control": "r12 validated adaptive invalid-block rollback, minimum initial dt/16; no F/J clipping",
+  "prelaunch_choice": "State-step-control draft replaced before any dynamic run: its historical high-KE hard stop conflicts with allowed jump dynamics. Original production entry unchanged; energy/KE quality flags reported separately."
+}

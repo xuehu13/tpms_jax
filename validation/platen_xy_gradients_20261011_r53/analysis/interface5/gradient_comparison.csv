@@ -1,0 +1,2 @@
+objective,baseline_value,AD,FD_h,FD_half,AD_FD_relative_error,FD_halving_relative_difference,nearzero,pass_target
+loading_work,0.4799091219137255,0.3246246775087882,0.32462095290897164,0.32462076774919524,1.2044083377896994e-05,5.703879566425898e-07,False,True

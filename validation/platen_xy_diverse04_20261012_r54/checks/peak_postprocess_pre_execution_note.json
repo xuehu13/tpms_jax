@@ -1,0 +1,5 @@
+{
+  "purpose": "Raw global maximum uses original loading time samples, including equal rounded compression at ramp endpoint; interpolation uses unique compression only for curve integration/RMS. No change to peak rule or frozen solver.",
+  "source_sha256": "b06450755b238dcb6ae9c868dc2de2af8f67a9e10f71895b43499d153be2c524",
+  "FEM_calls": 0
+}

@@ -1,0 +1,12 @@
+{
+  "planned_target_compression": 0.2,
+  "Abaqus": "failed_excessive_distortion",
+  "JAX": "complete",
+  "result": true,
+  "stage": "partial_reference_analyzed",
+  "full20_completed": false,
+  "three_scalar_targets_within_10pct": false,
+  "overall_minutes": 75.09317688941955,
+  "full20_acceptance": "not_evaluable_reference_failed",
+  "through_final_reporting_minutes": 80.12066326936086
+}

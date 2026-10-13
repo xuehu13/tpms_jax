@@ -1,0 +1,22 @@
+{
+  "action": "datacheck",
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=check",
+    "input=platen.inp",
+    "cpus=4",
+    "double=both",
+    "interactive",
+    "ask_delete=OFF",
+    "datacheck"
+  ],
+  "returncode": 0,
+  "wall_seconds": 26.90700000000652,
+  "budget_stop": false,
+  "success": true,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_arm_20261010",
+  "INP_sha256": "215942c160c5d746e1dd1eb8c0f470139e5cd656675542057c5ccac80d10ce10"
+}

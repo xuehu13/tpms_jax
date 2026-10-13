@@ -1,0 +1,17 @@
+{
+  "authorization_quote": "等会算完了之后，你就自动进行下一步就行，不用再让我指挥，把刚刚定的4条规划全部做完。",
+  "automation_id": "tpms",
+  "kind": "heartbeat",
+  "interval_minutes": 30,
+  "status": "ACTIVE",
+  "explicit_scope": [
+    "existing four-step plan",
+    "G5 shape JVP/FD",
+    "gated full work VJP including t/w/a",
+    "parameter summary and docs"
+  ],
+  "active_protocol_protected_sources_unchanged": true,
+  "new_FE_submissions_this_turn": 0,
+  "completion": "Evidence-based delivery, then disable heartbeat",
+  "recorded_utc": "2026-10-11T15:42:42.789144+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "L_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "density_tonne_mm3": 1e-09,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "N": 32,
+  "contact_normal_stiffness_MPa_per_mm": 320.0,
+  "target_compression": 0.2,
+  "load_time_s": 0.004,
+  "material_model": "objective_void",
+  "no_friction": true,
+  "no_self_contact": true,
+  "no_mass_scaling": true,
+  "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+  "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/P/gauss_field.npz",
+  "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_PD_20261010_r52/P/input/rimline_contact.npz",
+  "case_id": "P_platen_xy_thickness_gradient_r53",
+  "kind": "P",
+  "hold_time_s": 0.0,
+  "target_stop_compression": 0.05,
+  "end_time_s": 0.0014377446591585883,
+  "baseline_parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "fixed_dt_max_s": 8e-08,
+  "baseline_state_path": "validation/platen_xy_PD_20261010_r52/P/jax/state_05pct.npz",
+  "source_protocol": "validation/platen_xy_PD_20261010_r52/P/input/protocol.json",
+  "stage": "Same validated P mechanics, full design thickness JVP to5pct; no inherited execution queue"
+}

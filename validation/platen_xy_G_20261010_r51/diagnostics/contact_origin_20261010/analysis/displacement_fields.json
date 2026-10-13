@@ -1,0 +1,25 @@
+{
+  "scope": "Raw terminal displacement differences at existing shell midsurface nodes, Q2 interpolated from saved JAX state; no rigid alignment or scaling. This is a field diagnostic, not a new acceptance threshold.",
+  "cases": {
+    "Original cap": {
+      "RMS_component_mm": [
+        0.0030598383686407365,
+        0.004770583027900872,
+        0.008407004278574633
+      ],
+      "RMS_vector_mm": 0.010138974021481364,
+      "RMS_vector_over_shell_displacement_RMS": 0.08966752983179045,
+      "maximum_vector_difference_mm": 0.03283913245567952
+    },
+    "Rimline diagnostic": {
+      "RMS_component_mm": [
+        0.0016272969069563753,
+        0.0013211090614281965,
+        0.0014362832743315007
+      ],
+      "RMS_vector_mm": 0.0025409317227548427,
+      "RMS_vector_over_shell_displacement_RMS": 0.02247161010255493,
+      "maximum_vector_difference_mm": 0.007395531447705815
+    }
+  }
+}

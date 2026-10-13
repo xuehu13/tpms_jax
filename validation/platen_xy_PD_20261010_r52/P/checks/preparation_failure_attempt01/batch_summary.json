@@ -1,0 +1,21 @@
+[
+  {
+    "kind": "P",
+    "metrics": null,
+    "costs": {
+      "failure": {
+        "type": "RuntimeError",
+        "message": "Input preparation failed; see checks/preparation.log",
+        "common_input_error": true
+      },
+      "overall_minutes": 0.04274286429087321,
+      "within_100min": true,
+      "budget_minutes": {
+        "overall": 100,
+        "JAX": 65,
+        "Abaqus_datacheck_solve": 25,
+        "preparation_extraction_analysis": 10
+      }
+    }
+  }
+]

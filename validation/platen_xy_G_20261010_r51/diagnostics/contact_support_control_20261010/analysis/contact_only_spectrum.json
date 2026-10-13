@@ -1,0 +1,26 @@
+{
+  "scope": "Both caps fully active, contact-only Z tangent on exactly the same HRZ class mass; ignores material tangent and changing active set. Not a certified global stability bound.",
+  "cases": [
+    {
+      "case": "original",
+      "contact_only_max_mass_normalized_eigenvalue_s_minus2": 21099899736198.05,
+      "contact_only_dt_at_safety_0p3_s": 1.3062041359918592e-07,
+      "operator_active_mass_min": 5.651403356481324e-18,
+      "active_boundary_classes": 8192
+    },
+    {
+      "case": "halfway",
+      "contact_only_max_mass_normalized_eigenvalue_s_minus2": 6.987476696107723e+16,
+      "contact_only_dt_at_safety_0p3_s": 2.2698181485916888e-09,
+      "operator_active_mass_min": 5.651403356481324e-18,
+      "active_boundary_classes": 4888
+    },
+    {
+      "case": "rimline",
+      "contact_only_max_mass_normalized_eigenvalue_s_minus2": 96881596888259.14,
+      "contact_only_dt_at_safety_0p3_s": 6.09579854701669e-08,
+      "operator_active_mass_min": 8.55016272637907e-16,
+      "active_boundary_classes": 1072
+    }
+  ]
+}

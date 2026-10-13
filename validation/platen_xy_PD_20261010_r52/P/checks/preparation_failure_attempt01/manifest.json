@@ -1,0 +1,11 @@
+{
+  "checks/preparation.log": "4c931f245b50b8c784d0d1f3dfadb4ef380d488b34afdf41f513c6e2cc1b9780",
+  "checks/preparation_receipt.json": "89669a8d08cecdf0064f737a53f7972bf30a4493d9f3bb4dc742cb12c0fc804b",
+  "checks/stopped.json": "d8005dd6f18fca4d28d6e9ee16cf445a74692194acdfae5d8abbfd9d9b52e667",
+  "analysis/costs.json": "5ac6de11416edf87a7e368a0274cee297b49e69fd2c0fb0c7ad5c8ab07acdc34",
+  "README.md": "c9c4783d1b70368a0bed4a160a9fcc254de1860f1bd087443163425805c17d72",
+  "status.json": "4a37a49d919bf6aa2a496261984dbcba76907cce0c46424d1ef8276b72c1c71e",
+  "input/rimline_contact.npz": "79d25ad69409e90136777658c29ea749dc1943d0ae12d3591beea354c662df78",
+  "input/cut_face_contact.npz": "3034800e9c8694a2a7d02323d2fe5e25b49a6fa27747930faddfa7505e76caae",
+  "input/contact_assignment.npz": "df6f50df45fabd51e1b68df6a7cc32c24adfe4c16dc86471234ded19727a3097"
+}

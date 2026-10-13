@@ -1,0 +1,19 @@
+{
+  "case": "G12_interface/AD/width",
+  "steps": 38189,
+  "total_steps": 38189,
+  "wall_s": 318.7715554237366,
+  "time_s": 0.00221493528535155,
+  "compression": 0.1199955736248841,
+  "work_N_mm": 2.4390370884164696,
+  "force_N": 3.611128365000999,
+  "IE_N_mm": 2.4095426295312428,
+  "all_J_min": -1.227518812350525,
+  "required_positive_J_min": 0.7541928865806397,
+  "negative_void_J_points": 448,
+  "KE_N_mm": 0.02213076248659503,
+  "bottom_force_N": 3.6283870117564425,
+  "contact_energy_N_mm": 0.007363696783246149,
+  "work_gradient_N": 2.131043927082218,
+  "force_gradient_N_per_mm": 4.099238978265446
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "target_compression": 0.05,
+    "actual_compression": 0.05001760962201714,
+    "time": 0.0014379661016953634,
+    "allowed_dt_s": 3.699739297217377e-08,
+    "old_dt_s": 3.707627118644068e-08,
+    "omega2_estimate": 263002729521264.25,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 2.4828197956085205
+  },
+  {
+    "target_compression": 0.1,
+    "actual_compression": 0.10014159914435497,
+    "time": 0.0020015103914473907,
+    "allowed_dt_s": 3.6996826839068675e-08,
+    "old_dt_s": 3.699739297217377e-08,
+    "omega2_estimate": 263010778627300.6,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 1.521364450454712
+  },
+  {
+    "target_compression": 0.15,
+    "actual_compression": 0.15003362496800488,
+    "time": 0.0025626782609426734,
+    "allowed_dt_s": 3.7080046403284026e-08,
+    "old_dt_s": 3.6996826839068675e-08,
+    "omega2_estimate": 261831541649829.47,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 1.4942255020141602
+  }
+]

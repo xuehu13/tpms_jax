@@ -1,0 +1,62 @@
+--- 
++++ 
+@@ -6,16 +6,17 @@
+ ABQ=r'E:\ABAQUS\2026\Commands\abaqus.bat'
+ def write(p,x):p.write_text(json.dumps(x,indent=2)+'\n')
+ def main():
+-    a=argparse.ArgumentParser();a.add_argument('action',choices=['datacheck','solve','extract']);x=a.parse_args()
+-    NATIVE.mkdir(exist_ok=True)
++    a=argparse.ArgumentParser();a.add_argument('action',choices=['datacheck','solve','extract']);a.add_argument('--native-dir',type=Path);a.add_argument('--output-dir',type=Path);a.add_argument('--input',type=Path);a.add_argument('--config',type=Path);x=a.parse_args()
++    native=x.native_dir or NATIVE;out=x.output_dir or D/'abaqus'
++    native.mkdir(exist_ok=True);out.mkdir(parents=True,exist_ok=True)
+     if x.action=='datacheck':
+-        if (NATIVE/'check.dat').exists():raise FileExistsError('Do not repeat datacheck in original directory')
+-        shutil.copy2(D/'abaqus/platen_2pct.inp',NATIVE/'platen.inp');shutil.copy2(D/'input/protocol.json',NATIVE/'protocol.json')
++        if (native/'check.dat').exists():raise FileExistsError('Do not repeat datacheck in original directory')
++        shutil.copy2(x.input or D/'abaqus/platen_2pct.inp',native/'platen.inp');shutil.copy2(x.config or D/'input/protocol.json',native/'protocol.json')
+     if x.action=='solve':
+-        check=json.loads((D/'abaqus/datacheck_receipt.json').read_text());assert check['success']
+-        if (NATIVE/'platen.odb').exists():raise FileExistsError('Never overwrite a solver attempt')
++        check=json.loads((out/'datacheck_receipt.json').read_text());assert check['success']
++        if (native/'platen.odb').exists():raise FileExistsError('Never overwrite a solver attempt')
+     if x.action=='extract':
+-        shutil.copy2(D/'tools/extract_abaqus.py',NATIVE/'extract.py')
++        shutil.copy2(D/'tools/extract_abaqus.py',native/'extract.py')
+         cmd=['cmd','/d','/c',ABQ,'python','extract.py','platen.odb','protocol.json','result.json'];limit=120
+     else:
+         job='check' if x.action=='datacheck' else 'platen'
+@@ -23,8 +24,8 @@
+         if x.action=='datacheck':cmd.append('datacheck')
+         limit=180 if x.action=='datacheck' else 1450
+     start=time.monotonic();stopped=False
+-    with (NATIVE/(x.action+'_launch.log')).open('w') as log:
+-        p=subprocess.Popen(cmd,cwd=NATIVE,stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW)
++    with (native/(x.action+'_launch.log')).open('w') as log:
++        p=subprocess.Popen(cmd,cwd=native,stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW)
+         try:code=p.wait(timeout=limit)
+         except subprocess.TimeoutExpired:
+             subprocess.run(['taskkill','/PID',str(p.pid),'/T','/F'],stdout=log,stderr=log,creationflags=subprocess.CREATE_NO_WINDOW)
+@@ -32,16 +33,16 @@
+     success=code==0 and not stopped
+     if x.action=='extract':
+         # Abaqus python may return 0 even when the script raises an exception.
+-        success=success and (NATIVE/'result.json').exists() and (NATIVE/'field.npz').exists()
+-        if success:success=json.loads((NATIVE/'result.json').read_text())['complete']
++        success=success and (native/'result.json').exists() and (native/'field.npz').exists()
++        if success:success=json.loads((native/'result.json').read_text())['complete']
+     if x.action in ['datacheck','solve']:
+-        dat=(NATIVE/('check.dat' if x.action=='datacheck' else 'platen.dat')).read_text(errors='replace')
++        dat=(native/('check.dat' if x.action=='datacheck' else 'platen.dat')).read_text(errors='replace')
+         success=success and '***ERROR' not in dat
+-        if x.action=='solve':success=success and 'THE ANALYSIS HAS COMPLETED SUCCESSFULLY' in (NATIVE/'platen.sta').read_text(errors='replace')
++        if x.action=='solve':success=success and 'THE ANALYSIS HAS COMPLETED SUCCESSFULLY' in (native/'platen.sta').read_text(errors='replace')
+     receipt={'action':x.action,'command':cmd,'returncode':code,'wall_seconds':time.monotonic()-start,'budget_stop':stopped,
+-             'success':success,'native_directory':str(NATIVE),'INP_sha256':hashlib.sha256((NATIVE/'platen.inp').read_bytes()).hexdigest()}
+-    write(D/'abaqus'/(x.action+'_receipt.json'),receipt);write(NATIVE/(x.action+'_receipt.json'),receipt)
+-    if x.action=='extract' and success:shutil.copy2(NATIVE/'result.json',D/'abaqus/result.json');shutil.copy2(NATIVE/'field.npz',D/'abaqus/field.npz')
++             'success':success,'native_directory':str(native),'INP_sha256':hashlib.sha256((native/'platen.inp').read_bytes()).hexdigest()}
++    write(out/(x.action+'_receipt.json'),receipt);write(native/(x.action+'_receipt.json'),receipt)
++    if x.action=='extract' and success:shutil.copy2(native/'result.json',out/'result.json');shutil.copy2(native/'field.npz',out/'field.npz')
+     print(json.dumps(receipt,indent=2))
+     if not success:raise SystemExit(1)
+ if __name__=='__main__':main()

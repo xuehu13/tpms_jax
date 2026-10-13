@@ -1,0 +1,847 @@
+{
+  "kind": "diverse_04",
+  "original_case_dir": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04",
+  "HEX8_result_complete": true,
+  "triple_common_compression_max": 0.19999999954089237,
+  "triple_common_time_s": 0.004,
+  "shell_full_loading_raw_peak_N": 2.902436788645905,
+  "pairs": {
+    "HEX8_vs_Abaqus": {
+      "common_time_s": 0.004,
+      "common_compression_max": 0.199999999976719,
+      "full20_loading": true,
+      "full_hold_window": true,
+      "paired_result_complete": true,
+      "normalizer_N": 2.902436788645905,
+      "normalizer_scope": "shell raw loading peak in this pair's common achieved window",
+      "curve_RMS_over_shell_peak": 0.07742444218922542,
+      "loading_work_left_N_mm": 4.233196997084339,
+      "loading_work_right_N_mm": 3.8242261503108095,
+      "loading_work_shell_N_mm": 3.8242261503108095,
+      "loading_work_relative_bias_vs_right": 0.10694211866635839,
+      "loading_work_difference_over_shell_work": 0.1069421186663584,
+      "hold_mean_left_N": 3.2899911208057993,
+      "hold_mean_right_N": 2.9312566965049554,
+      "hold_mean_relative_bias_vs_right": 0.12238246644470818,
+      "secant_stiffness_2pct_left_N_per_mm": 3.053772769351669,
+      "secant_stiffness_2pct_right_N_per_mm": 2.7893639999451345,
+      "secant_stiffness_2pct_ratio_left_over_right": 1.0947917766959547,
+      "raw_global_max": {
+        "left": {
+          "compression_percent": 19.9999999976719,
+          "force_N": 3.267096773660553,
+          "time_s": 0.004,
+          "at_loading_endpoint": true,
+          "is_interior_global_max": false
+        },
+        "right": {
+          "compression_percent": 20.0,
+          "force_N": 2.902436788645905,
+          "time_s": 0.004,
+          "at_loading_endpoint": true,
+          "is_interior_global_max": false
+        }
+      },
+      "raw_global_max_location_difference_percentage_points": -2.328100379145326e-09,
+      "first_prominent_peak_difference_percentage_points": null,
+      "prominent_peaks": {
+        "left": {
+          "scope_terminal_compression": 0.199999999976719,
+          "raw_global_max": {
+            "compression_percent": 19.9999999976719,
+            "force_N": 3.267096773660553,
+            "time_s": 0.004,
+            "at_loading_endpoint": true,
+            "is_interior_global_max": false
+          },
+          "raw_sample_time_spacing_s_min_max": [
+            1.1312043093496954e-05,
+            1.7237398999615273e-05
+          ],
+          "smoothing_points": 25,
+          "smoothing_width_percentage_points": 0.49999999994179745,
+          "prominence_threshold_N": 0.3244295149498141,
+          "prominent_peaks": [],
+          "no_peak_extrapolation": true
+        },
+        "right": {
+          "scope_terminal_compression": 0.2,
+          "raw_global_max": {
+            "compression_percent": 20.0,
+            "force_N": 2.902436788645905,
+            "time_s": 0.004,
+            "at_loading_endpoint": true,
+            "is_interior_global_max": false
+          },
+          "raw_sample_time_spacing_s_min_max": [
+            1.9031576812267303e-06,
+            2.3145476006902754e-06
+          ],
+          "smoothing_points": 25,
+          "smoothing_width_percentage_points": 0.5,
+          "prominence_threshold_N": 0.289029754101651,
+          "prominent_peaks": [],
+          "no_peak_extrapolation": true
+        }
+      },
+      "three_targets_within10pct": false,
+      "three_target_evaluation_applies": true
+    },
+    "HEX27_vs_Abaqus": {
+      "common_time_s": 0.004,
+      "common_compression_max": 0.19999999954089237,
+      "full20_loading": true,
+      "full_hold_window": true,
+      "paired_result_complete": true,
+      "normalizer_N": 2.902436788645905,
+      "normalizer_scope": "shell raw loading peak in this pair's common achieved window",
+      "curve_RMS_over_shell_peak": 0.026997299390201526,
+      "loading_work_left_N_mm": 3.784807653365,
+      "loading_work_right_N_mm": 3.8242261503108095,
+      "loading_work_shell_N_mm": 3.8242261503108095,
+      "loading_work_relative_bias_vs_right": -0.010307574760610283,
+      "loading_work_difference_over_shell_work": -0.010307574760610236,
+      "hold_mean_left_N": 2.793298627109192,
+      "hold_mean_right_N": 2.9312566965049554,
+      "hold_mean_relative_bias_vs_right": -0.047064479054412245,
+      "secant_stiffness_2pct_left_N_per_mm": 2.88807088000118,
+      "secant_stiffness_2pct_right_N_per_mm": 2.7893639999451345,
+      "secant_stiffness_2pct_ratio_left_over_right": 1.0353868767425072,
+      "raw_global_max": {
+        "left": {
+          "compression_percent": 19.999999954089237,
+          "force_N": 2.756562886525545,
+          "time_s": 0.004,
+          "at_loading_endpoint": true,
+          "is_interior_global_max": false
+        },
+        "right": {
+          "compression_percent": 20.0,
+          "force_N": 2.902436788645905,
+          "time_s": 0.004,
+          "at_loading_endpoint": true,
+          "is_interior_global_max": false
+        }
+      },
+      "raw_global_max_location_difference_percentage_points": -4.5910763191159276e-08,
+      "first_prominent_peak_difference_percentage_points": null,
+      "prominent_peaks": {
+        "left": {
+          "scope_terminal_compression": 0.19999999954089237,
+          "raw_global_max": {
+            "compression_percent": 19.999999954089237,
+            "force_N": 2.756562886525545,
+            "time_s": 0.004,
+            "at_loading_endpoint": true,
+            "is_interior_global_max": false
+          },
+          "raw_sample_time_spacing_s_min_max": [
+            8.588235274721925e-07,
+            5.236193630077726e-06
+          ],
+          "smoothing_points": 25,
+          "smoothing_width_percentage_points": 0.49999999885223095,
+          "prominence_threshold_N": 0.2720060089732685,
+          "prominent_peaks": [],
+          "no_peak_extrapolation": true
+        },
+        "right": {
+          "scope_terminal_compression": 0.2,
+          "raw_global_max": {
+            "compression_percent": 20.0,
+            "force_N": 2.902436788645905,
+            "time_s": 0.004,
+            "at_loading_endpoint": true,
+            "is_interior_global_max": false
+          },
+          "raw_sample_time_spacing_s_min_max": [
+            1.9031576812267303e-06,
+            2.3145476006902754e-06
+          ],
+          "smoothing_points": 25,
+          "smoothing_width_percentage_points": 0.5,
+          "prominence_threshold_N": 0.289029754101651,
+          "prominent_peaks": [],
+          "no_peak_extrapolation": true
+        }
+      },
+      "three_targets_within10pct": true,
+      "three_target_evaluation_applies": true
+    },
+    "HEX8_vs_HEX27": {
+      "common_time_s": 0.004,
+      "common_compression_max": 0.19999999954089237,
+      "full20_loading": true,
+      "full_hold_window": true,
+      "paired_result_complete": true,
+      "normalizer_N": 2.902436788645905,
+      "normalizer_scope": "shell raw loading peak in this pair's common achieved window",
+      "curve_RMS_over_shell_peak": 0.09361971893060662,
+      "loading_work_left_N_mm": 4.233196997084339,
+      "loading_work_right_N_mm": 3.784807653365,
+      "loading_work_shell_N_mm": 3.8242261503108095,
+      "loading_work_relative_bias_vs_right": 0.11847084047208711,
+      "loading_work_difference_over_shell_work": 0.11724969342696864,
+      "hold_mean_left_N": 3.2899911208057993,
+      "hold_mean_right_N": 2.793298627109192,
+      "hold_mean_relative_bias_vs_right": 0.1778157511968701,
+      "secant_stiffness_2pct_left_N_per_mm": 3.053772769351669,
+      "secant_stiffness_2pct_right_N_per_mm": 2.88807088000118,
+      "secant_stiffness_2pct_ratio_left_over_right": 1.0573745923266333,
+      "raw_global_max": {
+        "left": {
+          "compression_percent": 19.9999999976719,
+          "force_N": 3.267096773660553,
+          "time_s": 0.004,
+          "at_loading_endpoint": true,
+          "is_interior_global_max": false
+        },
+        "right": {
+          "compression_percent": 19.999999954089237,
+          "force_N": 2.756562886525545,
+          "time_s": 0.004,
+          "at_loading_endpoint": true,
+          "is_interior_global_max": false
+        }
+      },
+      "raw_global_max_location_difference_percentage_points": 4.358266281201395e-08,
+      "first_prominent_peak_difference_percentage_points": null,
+      "prominent_peaks": {
+        "left": {
+          "scope_terminal_compression": 0.199999999976719,
+          "raw_global_max": {
+            "compression_percent": 19.9999999976719,
+            "force_N": 3.267096773660553,
+            "time_s": 0.004,
+            "at_loading_endpoint": true,
+            "is_interior_global_max": false
+          },
+          "raw_sample_time_spacing_s_min_max": [
+            1.1312043093496954e-05,
+            1.7237398999615273e-05
+          ],
+          "smoothing_points": 25,
+          "smoothing_width_percentage_points": 0.49999999994179745,
+          "prominence_threshold_N": 0.3244295149498141,
+          "prominent_peaks": [],
+          "no_peak_extrapolation": true
+        },
+        "right": {
+          "scope_terminal_compression": 0.19999999954089237,
+          "raw_global_max": {
+            "compression_percent": 19.999999954089237,
+            "force_N": 2.756562886525545,
+            "time_s": 0.004,
+            "at_loading_endpoint": true,
+            "is_interior_global_max": false
+          },
+          "raw_sample_time_spacing_s_min_max": [
+            8.588235274721925e-07,
+            5.236193630077726e-06
+          ],
+          "smoothing_points": 25,
+          "smoothing_width_percentage_points": 0.49999999885223095,
+          "prominence_threshold_N": 0.2720060089732685,
+          "prominent_peaks": [],
+          "no_peak_extrapolation": true
+        }
+      },
+      "three_targets_within10pct": null,
+      "three_target_evaluation_applies": false
+    }
+  },
+  "own_achieved_window_peaks": {
+    "HEX8": {
+      "scope_terminal_compression": 0.199999999976719,
+      "raw_global_max": {
+        "compression_percent": 19.9999999976719,
+        "force_N": 3.267096773660553,
+        "time_s": 0.004,
+        "at_loading_endpoint": true,
+        "is_interior_global_max": false
+      },
+      "raw_sample_time_spacing_s_min_max": [
+        1.1312043093496954e-05,
+        1.7237398999615273e-05
+      ],
+      "smoothing_points": 25,
+      "smoothing_width_percentage_points": 0.49999999994179745,
+      "prominence_threshold_N": 0.3244295149498141,
+      "prominent_peaks": [],
+      "no_peak_extrapolation": true
+    },
+    "HEX27": {
+      "scope_terminal_compression": 0.19999999954089237,
+      "raw_global_max": {
+        "compression_percent": 19.999999954089237,
+        "force_N": 2.756562886525545,
+        "time_s": 0.004,
+        "at_loading_endpoint": true,
+        "is_interior_global_max": false
+      },
+      "raw_sample_time_spacing_s_min_max": [
+        8.588235274721925e-07,
+        5.236193630077726e-06
+      ],
+      "smoothing_points": 25,
+      "smoothing_width_percentage_points": 0.49999999885223095,
+      "prominence_threshold_N": 0.2720060089732685,
+      "prominent_peaks": [],
+      "no_peak_extrapolation": true
+    },
+    "Abaqus": {
+      "scope_terminal_compression": 0.2,
+      "raw_global_max": {
+        "compression_percent": 20.0,
+        "force_N": 2.902436788645905,
+        "time_s": 0.004,
+        "at_loading_endpoint": true,
+        "is_interior_global_max": false
+      },
+      "raw_sample_time_spacing_s_min_max": [
+        1.9031576812267303e-06,
+        2.3145476006902754e-06
+      ],
+      "smoothing_points": 25,
+      "smoothing_width_percentage_points": 0.5,
+      "prominence_threshold_N": 0.289029754101651,
+      "prominent_peaks": [],
+      "no_peak_extrapolation": true
+    }
+  },
+  "health": {
+    "HEX8": {
+      "status": "complete",
+      "complete": true,
+      "full20": true,
+      "new_design_AD": false,
+      "steps": 15594,
+      "wall_seconds": 124.37550497055054,
+      "initial_dt_s": 2.6933435936898807e-07,
+      "terminal_dt_s": 2.6933435936898807e-07,
+      "rejections": [],
+      "current_stability_checks": [
+        {
+          "target_compression": 0.05,
+          "actual_compression": 0.05081333391140868,
+          "time": 0.0014479415159676164,
+          "allowed_dt_s": 2.693411273035421e-07,
+          "old_dt_s": 2.6933435936898807e-07,
+          "omega2_estimate": 3931519699534.9595,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 1.1433939933776855
+        },
+        {
+          "target_compression": 0.1,
+          "actual_compression": 0.10157264651182717,
+          "time": 0.002016775682954892,
+          "allowed_dt_s": 2.693411273035421e-07,
+          "old_dt_s": 2.6933435936898807e-07,
+          "omega2_estimate": 3952076797156.9683,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 0.42145872116088867
+        },
+        {
+          "target_compression": 0.15,
+          "actual_compression": 0.15048550286171947,
+          "time": 0.002568372450942553,
+          "allowed_dt_s": 2.693411273035421e-07,
+          "old_dt_s": 2.6933435936898807e-07,
+          "omega2_estimate": 3946387882240.464,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 0.4063880443572998
+        },
+        {
+          "target_compression": 0.2,
+          "actual_compression": 0.2,
+          "time": 0.004016313966910164,
+          "allowed_dt_s": 2.693411273035421e-07,
+          "old_dt_s": 2.6933435936898807e-07,
+          "omega2_estimate": 3928584902385.4624,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 0.4116637706756592
+        }
+      ],
+      "failure": null,
+      "scope": "HEX8 common midsurface-end platen20pct; compare to frozen r54/r55 references, no new design AD",
+      "sample_validation": "actual energy/J at each accepted64-step sample; not every-step/global certification",
+      "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/jax/result.json",
+      "filtered_nonfinite_or_missing_rows": false,
+      "sampled_min_required_positive_J_min": 0.7017686877452415,
+      "sampled_min_all_J_min": -0.4340771493998765,
+      "sampled_max_negative_void_J_points": 73,
+      "terminal_time_s": 0.004199999999999805,
+      "terminal_compression": 0.2,
+      "terminal_KE_over_IE": 4.150534425882712e-05,
+      "hold_upper_mean_N": 3.2899911208057993,
+      "hold_lower_mean_N": 3.269454779389936,
+      "hold_upper_minus_lower_N": 0.02053634141586347,
+      "sampled_energy_work_max_gap_over_max_abs_work": 1.015256254289556e-05,
+      "actual_J_scope": "saved accepted samples only; no every-step proof; actual F/J unmodified",
+      "hold_interpretation": "short dynamic hold; upper/lower force imbalance is not a static stiffness error"
+    },
+    "HEX27": {
+      "status": "complete",
+      "complete": true,
+      "full20": true,
+      "new_design_AD": false,
+      "steps": 51467,
+      "wall_seconds": 2241.7872800827026,
+      "initial_dt_s": 8.181552546995227e-08,
+      "terminal_dt_s": 8.142365990210099e-08,
+      "rejections": [],
+      "current_stability_checks": [
+        {
+          "target_compression": 0.05,
+          "actual_compression": 0.050175738508481206,
+          "time": 0.0014399532482709588,
+          "allowed_dt_s": 8.175781273116275e-08,
+          "old_dt_s": 8.181552546995227e-08,
+          "omega2_estimate": 53857224960470.75,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 2.6206705570220947
+        },
+        {
+          "target_compression": 0.1,
+          "actual_compression": 0.10047467764708139,
+          "time": 0.0020050632498694932,
+          "allowed_dt_s": 8.145269526984201e-08,
+          "old_dt_s": 8.175781273116275e-08,
+          "omega2_estimate": 54261473287879.79,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 1.4856023788452148
+        },
+        {
+          "target_compression": 0.15,
+          "actual_compression": 0.15004738078516033,
+          "time": 0.002562851307078623,
+          "allowed_dt_s": 8.142365990210099e-08,
+          "old_dt_s": 8.145269526984201e-08,
+          "omega2_estimate": 54300179058216.34,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 1.474787950515747
+        },
+        {
+          "target_compression": 0.2,
+          "actual_compression": 0.2,
+          "time": 0.004001118835590461,
+          "allowed_dt_s": 8.142724490122039e-08,
+          "old_dt_s": 8.142365990210099e-08,
+          "omega2_estimate": 54295397813092.34,
+          "not_a_proven_global_bound": true,
+          "wall_seconds": 1.5158131122589111
+        }
+      ],
+      "failure": null,
+      "scope": "diverse_04 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+      "sample_validation": "actual energy/J at each accepted64-step sample; not every-step/global certification",
+      "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/result.json",
+      "filtered_nonfinite_or_missing_rows": false,
+      "sampled_min_required_positive_J_min": 0.4183960395292833,
+      "sampled_min_all_J_min": -2.2707572192445635,
+      "sampled_max_negative_void_J_points": 2577,
+      "terminal_time_s": 0.004199999999999998,
+      "terminal_compression": 0.2,
+      "terminal_KE_over_IE": 0.00011133170826150054,
+      "hold_upper_mean_N": 2.793298627109192,
+      "hold_lower_mean_N": 2.761141932517201,
+      "hold_upper_minus_lower_N": 0.03215669459199111,
+      "sampled_energy_work_max_gap_over_max_abs_work": 1.1353254397363901e-06,
+      "actual_J_scope": "saved accepted samples only; no every-step proof; actual F/J unmodified",
+      "hold_interpretation": "short dynamic hold; upper/lower force imbalance is not a static stiffness error"
+    },
+    "Abaqus": {
+      "status": "complete_diagnostic",
+      "complete": true,
+      "XY_U_error_mm": 5.960464477539063e-08,
+      "XY_UR_error_rad": 0.0,
+      "terminal_rim_penetration_mm": [
+        0.0017486943397670984,
+        0.0017375946044921875
+      ],
+      "macro_work_RF_U_N_mm": 3.8242261502511488,
+      "work_relative_ALLWK_error": 1.2226314188978227e-07,
+      "energy_drift_relative_work": 0.0078059270641358475,
+      "terminal_KE_over_IE": 0.00026635219154394897,
+      "scope": "diverse_04 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+      "no_self_contact": true,
+      "contact_type": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+      "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/abaqus/result.json",
+      "filtered_nonfinite_or_missing_rows": false,
+      "sampled_min_required_positive_J_min": null,
+      "sampled_min_all_J_min": null,
+      "sampled_max_negative_void_J_points": 0,
+      "terminal_time_s": 0.00419999985024333,
+      "terminal_compression": 0.2,
+      "hold_upper_mean_N": 2.9312566965049554,
+      "hold_lower_mean_N": 2.94221500993482,
+      "hold_upper_minus_lower_N": -0.010958313429864752,
+      "actual_J_scope": "saved accepted samples only; no every-step proof; actual F/J unmodified",
+      "hold_interpretation": "short dynamic hold; upper/lower force imbalance is not a static stiffness error"
+    }
+  },
+  "evidence": {
+    "HEX8_preparation": {
+      "path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/checks/preparation.json",
+      "data": {
+        "pass": true,
+        "compact_general_residual_relative_difference": 4.398180840863304e-15,
+        "affine_gradient_max_error": 1.802486111757151e-18,
+        "projected_mass_relative_residual": 8.152640664958521e-16,
+        "contact_virtual_work_relative_error": 1.7903729164920897e-08,
+        "XY_classes": 33792,
+        "zero_state": {
+          "time": 0.0,
+          "compression": 0.0,
+          "force_N": 0.0,
+          "bottom_force_N": 0.0,
+          "ax_mm": 0.0,
+          "ay_mm": 0.0,
+          "energy_N_mm": 0.0,
+          "contact_energy_N_mm": 0.0,
+          "KE_N_mm": 0.0,
+          "KE_over_IE": 0.0,
+          "required_positive_J_min": 1.0,
+          "all_J_min": 1.0,
+          "negative_void_J_points": 0,
+          "cap_penetration_phi_ge_0p01_mm": [
+            0.0,
+            0.0
+          ],
+          "momentum_z_N_s": 0.0
+        },
+        "common_geometry_relative_errors": {
+          "gradient": 3.534102350856979e-14,
+          "weight": 3.885780586188048e-14
+        },
+        "mass_conservation_error": 4.440892098500626e-16,
+        "positive_lumped_mass": true,
+        "XY_face_classes_equal": true,
+        "Z_faces_not_periodic": true,
+        "node_count": 35937,
+        "Gauss_points_per_cell": 8,
+        "mass_lumping": "row_sum",
+        "shared_platen_sha256": "d5ce4bc214e38dc1b31e7d2b8d1dc748437684b6d18a9c24f068476e0bb7d1f9",
+        "periodic_source_substitution": [
+          "n=cfg['N'];p.class_ids,_=periodic_node_classes(p.fe.points,2*n,2*n,2*n,periodic_axes=(0,1))",
+          "n=cfg['N']*p.element_degree;p.class_ids,_=periodic_node_classes(p.fe.points,n,n,n,periodic_axes=(0,1))"
+        ],
+        "kind": "diverse_04",
+        "preparation_wall_seconds": 15.715540409088135,
+        "occupancy_volume_fraction": 0.1320035545941125,
+        "HEX27_occupancy_volume_fraction": 0.13251935766125453,
+        "occupancy_relative_change": -0.003892284691422332,
+        "total_mass_tonne": 1.320903542386528e-07,
+        "contact_area_mm2": [
+          15.229465305736445,
+          15.229465305736445
+        ],
+        "same_contact_points_weights_verified": true,
+        "actual_own_Gauss_equality": true,
+        "reference_case_dir": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04",
+        "reference_source_sha256": {
+          "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/protocol.json": "b49b95dc66b274c71dbbb3a414dd12b404f475b372da824edcf4056b43a61315",
+          "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/result.json": "5e670a5cf6e6f8f4f19ddb74249cb88339ec966691c6a9bfea624e3b98ec178e",
+          "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+          "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/rimline_contact.npz": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856"
+        }
+      }
+    },
+    "HEX8_input": {
+      "path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/jax/input.json",
+      "data": {
+        "case_id": "diverse_04_HEX8_platen_xy_r56",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "HEX8 common midsurface-end platen20pct; compare to frozen r54/r55 references, no new design AD",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "Same frozen rim points and weights; own Q1 force interpolation; same kn320",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "source_shell_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/input/gauss_field.npz",
+        "original_Gauss_sha256": "fb43c86daca9c0f83f357413b2c74e876bf1a8f9a95641e0c8fe0d77690c99d7",
+        "contact_reference_area_mm2": [
+          15.229465305736445,
+          15.229465305736445
+        ],
+        "physical_nodes": 8372,
+        "shell_elements": 15914,
+        "XY_relations": 263,
+        "XY_equations": 1578,
+        "labels": {
+          "ax": 8373,
+          "ay": 8374,
+          "bottom": 8375,
+          "top": 8376
+        },
+        "rim_node_count": [
+          162,
+          162
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/input/rimline_contact.npz",
+        "contact_cache_sha256": "51a78b1bbbbcbca3ba3ec3404b877b26c28a7f3628a52478a0188b259dd45101",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "74d82fd2273b29aa949863528b9967c732d8f5bca9125d38a678b411302188bc",
+        "kind": "diverse_04",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "preparation": 300,
+          "jax_build_compile_checks_solve": 2400,
+          "analysis": 120
+        },
+        "element": "HEX8",
+        "element_degree": 1,
+        "Gauss_points_per_cell": 8,
+        "quadrature_order": 2,
+        "mass": "positive row_sum",
+        "reference_case_dir": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04",
+        "reference_contact_sha256": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856",
+        "no_new_abaqus": true,
+        "initial_dt_s": 2.6933435936898807e-07,
+        "initial_stability_estimate": {
+          "power_estimated_omega2_s_minus2": 3917587029729.7485,
+          "power_steps": 25,
+          "safety_fraction": 0.3,
+          "not_a_proven_global_bound": true
+        },
+        "deadline_unix": 1791796267.363916,
+        "projected_inertia_schur": [
+          1.201912637983687e-10,
+          8.909159104465508e-11
+        ],
+        "mass_conservation_error": 4.440892098500626e-16,
+        "devices": [
+          "cuda:0"
+        ],
+        "sample_validation": "actual energy/J at each accepted64-step sample; not every-step/global certification"
+      }
+    },
+    "HEX8_execution_receipt": {
+      "path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/checks/execution_receipt.json",
+      "data": {
+        "returncode": 0,
+        "wall_seconds": 131.58168148994446
+      }
+    },
+    "HEX27_input": {
+      "path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/input.json",
+      "data": {
+        "case_id": "diverse_04_midsurface_end_platen_20pct_r54",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "diverse_04 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "source_shell_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/gauss_field.npz",
+        "original_Gauss_sha256": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+        "contact_reference_area_mm2": [
+          15.229465305736445,
+          15.229465305736445
+        ],
+        "physical_nodes": 8372,
+        "shell_elements": 15914,
+        "XY_relations": 263,
+        "XY_equations": 1578,
+        "labels": {
+          "ax": 8373,
+          "ay": 8374,
+          "bottom": 8375,
+          "top": 8376
+        },
+        "rim_node_count": [
+          162,
+          162
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/rimline_contact.npz",
+        "contact_cache_sha256": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "74d82fd2273b29aa949863528b9967c732d8f5bca9125d38a678b411302188bc",
+        "kind": "diverse_04",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "overall": 6000,
+          "jax_build_compile_checks_solve": 3900,
+          "abaqus_datacheck_solve": 1500,
+          "preparation_extraction_analysis_reserve": 600
+        },
+        "initial_dt_s": 8.181552546995227e-08,
+        "initial_stability_estimate": {
+          "power_estimated_omega2_s_minus2": 53780316171372.305,
+          "power_steps": 25,
+          "safety_fraction": 0.3,
+          "not_a_proven_global_bound": true
+        },
+        "deadline_unix": 1791776607.2330556,
+        "projected_inertia_schur": [
+          5.055773451461478e-11,
+          2.982289675884652e-11
+        ],
+        "mass_conservation_error": 5.551115123125783e-16,
+        "devices": [
+          "cuda:0"
+        ],
+        "sample_validation": "actual energy/J at each accepted64-step sample; not every-step/global certification"
+      }
+    },
+    "HEX27_parameters": {
+      "path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/protocol.json",
+      "data": {
+        "case_id": "diverse_04_midsurface_end_platen_20pct_r54",
+        "L_mm": 10.0,
+        "thickness_mm": 0.5,
+        "E_MPa": 10.0,
+        "nu": 0.3,
+        "density_tonne_mm3": 1e-09,
+        "eta": 0.0001,
+        "interface_10_90_mm": 0.05,
+        "N": 32,
+        "contact_normal_stiffness_MPa_per_mm": 320.0,
+        "contact_stiffness_rule": "10*E/background_h, selected before response",
+        "target_compression": 0.2,
+        "load_time_s": 0.004,
+        "hold_time_s": 0.0002,
+        "stage": "diverse_04 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+        "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+        "material_model": "objective_void",
+        "no_friction": true,
+        "no_self_contact": true,
+        "no_mass_scaling": true,
+        "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+        "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+        "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+        "source_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "source_shell_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+        "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/gauss_field.npz",
+        "original_Gauss_sha256": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+        "contact_reference_area_mm2": [
+          15.229465305736445,
+          15.229465305736445
+        ],
+        "physical_nodes": 8372,
+        "shell_elements": 15914,
+        "XY_relations": 263,
+        "XY_equations": 1578,
+        "labels": {
+          "ax": 8373,
+          "ay": 8374,
+          "bottom": 8375,
+          "top": 8376
+        },
+        "rim_node_count": [
+          162,
+          162
+        ],
+        "wall_pin": null,
+        "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/rimline_contact.npz",
+        "contact_cache_sha256": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856",
+        "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+        "inp_sha256": "74d82fd2273b29aa949863528b9967c732d8f5bca9125d38a678b411302188bc",
+        "kind": "diverse_04",
+        "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz",
+        "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+        "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+        "execution_authorized": true,
+        "budget_seconds": {
+          "overall": 6000,
+          "jax_build_compile_checks_solve": 3900,
+          "abaqus_datacheck_solve": 1500,
+          "preparation_extraction_analysis_reserve": 600
+        }
+      }
+    }
+  },
+  "preparation_summary": {
+    "occupancy_volume_fraction": 0.1320035545941125,
+    "HEX27_occupancy_volume_fraction": 0.13251935766125453,
+    "occupancy_relative_change": -0.003892284691422332,
+    "total_mass_tonne": 1.320903542386528e-07,
+    "contact_area_mm2": [
+      15.229465305736445,
+      15.229465305736445
+    ],
+    "preparation_wall_seconds": 15.715540409088135,
+    "pass": true,
+    "node_count": 35937,
+    "Gauss_points_per_cell": 8,
+    "mass_lumping": "row_sum"
+  },
+  "no_matching_fitted_params": true,
+  "fitting_operations_performed_by_analysis": false,
+  "new_FEM_AD_FD_calls": false,
+  "peak_rule": "0.0002 compression grid, centered nearest-edge moving mean25; prominence>=10% own smoothed maximum absolute force, distance>=25; all peaks listed",
+  "partial_rule": "Each pair uses its own actual common achieved window; old HEX27 diverse_05 is never extended. Full HEX8-shell evidence, when available, is separate from triple common-window evidence.",
+  "interpretation": "Element-family/discretization comparison under common end-rim simplification; neither shell truth nor contact/AD certification. No curve scaling, shifting, time warping, or parameter fitting.",
+  "source_sha256": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/protocol.json": "5bc90850c5b6b9bbcaf285ecad2b54aec4a6cf5fa12277d1d5b3b47841974a12",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_28/jax/result.json": "edde12ae1ac0df57939ec2396a68f2ead904b52c57ec804f9dfe43529156260d",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/jax/result.json": "15d911c1194abaf625dc6543219be62020e7e5974c3165780e89143aca4386e4",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/abaqus/result.json": "e330e44713619d125ad950332ee540fbaf6c227f6d13b483e1d6c6c6f7f76f7b",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_28/checks/preparation.json": "8bf79a6664690354e5b9126602d1907e155d8c861a32cd7160b84f756f5470e9",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_28/jax/input.json": "2478b730cc4dda18cf7ac6ae2d13c6457a44a14884de1f496cfb6b5e06d627f8",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_28/checks/execution_receipt.json": "5d391f2a9191d0dc42aeb8b13fc09a2127c428b23288935da3fa99c4245c21a6",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/jax/input.json": "cc94fce500979c44430daf1b70293bf24b3fdbb196a53f695fa9e1d800740d63",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/input/protocol.json": "38345ea19037c8560103bbf37896accce24aefaadf11622490bb1d8562771f3a",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_28/checks/gauss_preparation.json": "b982e395ef9199407d251c110e84636929d36c2c100fa48b27441c538e93551a",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_02/jax/result.json": "203a407360bc23d7ccf330d4ee9579174123a5ea4baf4a07712e0b505aefbc78",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/jax/result.json": "7575172523c1237f04c7f4d92775829be4d5c1ca90911a4afc95659a69a5ba50",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/abaqus/result.json": "9a19d7a34b8e75367221307824132007ca031e6ed157b89ba118d09d0472747e",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_02/checks/preparation.json": "5dd6f62d063068aa19748b4d87205225e0dc95926b21d30d445862af9e15349c",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_02/jax/input.json": "07548d890cd4a5ebab84f81ade26379e95c7367e8377e0379fd05edcd5184271",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_02/checks/execution_receipt.json": "7f67ac6fa4e90bc8d47e90517cce2e04ba761c705df3745824c317c6ef400355",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/jax/input.json": "2fe6b270e22724ba195faba6d3d086a52da37d8df451b5b0c551ae012df74895",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/input/protocol.json": "d8623afff2fbea43a6422b8b38e739c4098cb252db9f561de704ea62400d0150",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_02/checks/gauss_preparation.json": "7c25e92a32ecf5ba050b193e6949de321e7dabb772c29a7ce2c617cc4a0fce3b",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/jax/result.json": "46ffa4e672d48349344b2564c7d4aca9208c0d82a4a5e9a1ed01e70668b248a2",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/result.json": "5e670a5cf6e6f8f4f19ddb74249cb88339ec966691c6a9bfea624e3b98ec178e",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/abaqus/result.json": "c81a41e6ffd138685ba247c6aa4332393f985fe0f84e309732bff03ebb2bd994",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/checks/preparation.json": "138668449a6a6c0a933762dca4503b9c76861d3823a67fac064389b8149b1d55",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/jax/input.json": "677b73f9b25e06314d8cf3c0ed1029706408c44b2486f5fa9fec004c92b15358",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/checks/execution_receipt.json": "998086ca13660de5852b06af18fbae9e23aa6b20a6f67e2d60234d9325255edc",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/input.json": "819593f9bc64c6264dc6e1e40aa955d1a07c6143efe38fb88c90f3864196d30a",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/protocol.json": "b49b95dc66b274c71dbbb3a414dd12b404f475b372da824edcf4056b43a61315"
+  }
+}

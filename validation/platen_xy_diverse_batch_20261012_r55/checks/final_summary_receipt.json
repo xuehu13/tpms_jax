@@ -1,0 +1,12 @@
+{
+  "command": [
+    "F:\\Anaconda\\python.exe",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\tools\\summarize.py",
+    "--final"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 2.8017077445983887,
+  "started_UTC": "2026-10-12T06:18:10.138214+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\checks\\final_summary.log"
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu-24.04",
+    "--exec",
+    "/usr/bin/timeout",
+    "--signal=INT",
+    "--kill-after=15s",
+    "280s",
+    "/usr/bin/env",
+    "JAX_PLATFORMS=cuda,cpu",
+    "XLA_PYTHON_CLIENT_PREALLOCATE=false",
+    "OMP_NUM_THREADS=1",
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/initial.py",
+    "/home/xuehu/projects/tpms_jax/validation/canonical_tpms_20261009_r50/P"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 65.39000000001397,
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\canonical_tpms_20261009_r50\\P\\P_initial_jax.log"
+}

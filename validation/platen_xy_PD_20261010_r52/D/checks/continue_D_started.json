@@ -1,0 +1,13 @@
+{
+  "UTC": "2026-10-10T13:56:43.067096+00:00",
+  "original_clock_preserved": true,
+  "reason": "Abaqus failed at18.4pct; execute still-unsubmitted original D/JAX and analyze only pre-failure common windows",
+  "new_Abaqus_attempts": 0,
+  "parameter_changes": false,
+  "diagnostic_compression_windows": [
+    0.02,
+    0.1,
+    0.15
+  ],
+  "full20_acceptance_not_evaluable_without_complete_Abaqus": true
+}

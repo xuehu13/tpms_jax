@@ -1,0 +1,8 @@
+{
+  "original_XY_equations_byte_equal": true,
+  "original_shell_connectivity_byte_equal": true,
+  "original_density_NH_thickness_byte_equal": true,
+  "mass_elements_added": false,
+  "original_plane_geometry_and_loading_preserved": true,
+  "new_contact_arms_have_no_structural_elements": true
+}

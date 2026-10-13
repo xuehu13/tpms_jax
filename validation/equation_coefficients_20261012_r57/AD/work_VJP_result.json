@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "objective": "full_path_loading_work",
+  "gradient": [
+    -0.0005000343375599008,
+    0.0001604391642710568,
+    -0.001219068451675289
+  ],
+  "gradient_units": "N mm per dimensionless coefficient",
+  "baseline_work": 0.0030505088744971626,
+  "baseline_force": 0.08231728068108521,
+  "checks": [
+    {
+      "coefficient": "c1",
+      "AD": -0.0005000343375599008,
+      "FD": -0.0005000358621216771,
+      "FD_half": -0.0005000345149048129,
+      "near_zero": false,
+      "AD_FD_error": 3.54665341688276e-07,
+      "FD_halving_error": 2.6942477450254545e-06,
+      "passed": true
+    },
+    {
+      "coefficient": "c2",
+      "AD": 0.0001604391642710568,
+      "FD": 0.00016043897344137557,
+      "FD_half": 0.00016043914623020442,
+      "near_zero": false,
+      "AD_FD_error": 1.1244669906805994e-07,
+      "FD_halving_error": 1.076974247900142e-06,
+      "passed": true
+    },
+    {
+      "coefficient": "c0",
+      "AD": -0.001219068451675289,
+      "FD": -0.0012190702655895738,
+      "FD_half": -0.0012190699518431491,
+      "near_zero": false,
+      "AD_FD_error": 1.2305839036497868e-06,
+      "FD_halving_error": 2.5736539908927496e-07,
+      "passed": true
+    }
+  ],
+  "c2_VJP_JVP_relative": 9.791929265343623e-13,
+  "common_scaling_gradient_contraction": -5.377642775528102e-17,
+  "reverse_wall_s": 1856.2505722045898,
+  "total_wall_s": 8613.03425526619,
+  "passed": true,
+  "compression": 0.005,
+  "steps": 10113
+}

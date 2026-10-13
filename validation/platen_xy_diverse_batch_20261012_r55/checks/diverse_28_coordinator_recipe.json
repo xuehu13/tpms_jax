@@ -1,0 +1,48 @@
+{
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse04_20261012_r54\\tools\\run_pair.py",
+  "source_sha256": "260758cd451b2d9c7ced50c40e666f638a66126279704a1cb9441c995c7e1660",
+  "substitutions": [
+    [
+      "platen_xy_diverse04_20261012_r54",
+      "platen_xy_diverse_batch_20261012_r55"
+    ],
+    [
+      "output/r54_platen_xy_diverse04_20261012",
+      "output/r55_platen_xy_diverse_batch_20261012/diverse_28"
+    ],
+    [
+      "r54_diverse04_midsurface_end_20pct_20261012",
+      "r55_diverse_28_midsurface_end_20pct_20261012"
+    ],
+    [
+      "diverse_04",
+      "diverse_28"
+    ],
+    [
+      "B/'checks/pair_started.json'",
+      "E/'checks/pair_started.json'"
+    ],
+    [
+      "wsl('analyze.py',lim)",
+      "wsl('analyze.py',lim,'diverse_28')"
+    ],
+    [
+      "wsl('compare_peaks.py',lim)",
+      "wsl('compare_peaks.py',lim,'diverse_28')"
+    ],
+    [
+      "s.update(stage=stage,active_jobs=active or [],**kw);",
+      "s.update(stage=stage,current_case=K,active_jobs=active or [],**kw);s['cases'][K].update(stage=stage,**kw);"
+    ],
+    [
+      "shutil.copy2(p,O/p.name)",
+      "shutil.copy2(p,O/p.name)"
+    ],
+    [
+      "write(O/'status.json',s)",
+      "write(O/'status.json',s);write(O.parent/'status.json',s)"
+    ]
+  ],
+  "adapted_sha256": "7938d76f55fe5cc5a394c085459135abc365786c585f30b4f6d664ea527c378c",
+  "same_100min_budget_and_single_attempt": true
+}

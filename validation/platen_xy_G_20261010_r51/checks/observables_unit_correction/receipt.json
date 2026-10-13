@@ -1,0 +1,7 @@
+{
+  "field": "momentum_z_N_s",
+  "correction": "L^4 to L^2 because m_norm=rho*L^2 and physical velocity=L*v_norm",
+  "original_multiplier_error": 100,
+  "mechanics_changed": false,
+  "rerun": false
+}

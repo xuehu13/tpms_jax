@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-10",
+  "stage": "batch_finished",
+  "execution_authorized": true,
+  "active_jobs": [],
+  "jobs_submitted": 3,
+  "new_solver_datachecks": 2,
+  "new_FEM_responses": 2,
+  "cases": {
+    "P": {
+      "planned_target_compression": 0.2,
+      "Abaqus": "complete",
+      "JAX": "complete",
+      "result": true,
+      "stage": "complete_pair_analyzed",
+      "full20_completed": true,
+      "three_scalar_targets_within_10pct": true,
+      "overall_minutes": 44.58668013811111
+    },
+    "D": {
+      "planned_target_compression": 0.2,
+      "Abaqus": "solve",
+      "JAX": "partial_or_failed",
+      "result": false,
+      "stage": "partial_or_failed_pair",
+      "full20_completed": false,
+      "three_scalar_targets_within_10pct": false,
+      "overall_minutes": 7.202206007639567
+    }
+  },
+  "existing_G_result": "r51 completed and unchanged",
+  "next_action": "Execute authorized P then D pairs, bounded by original per-geometry clock",
+  "authorization": "2026-10-10 user: 好的，安排准备好就开始吧",
+  "latest_kind": null
+}

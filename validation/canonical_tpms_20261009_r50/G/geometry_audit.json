@@ -1,0 +1,43 @@
+{
+  "kind": "G",
+  "geometry_intervals_per_axis": 64,
+  "background_N": 32,
+  "nodes": 18789,
+  "triangles": 36576,
+  "area_mm2": 309.33697586880135,
+  "nominal_shell_volume_mm3": 154.66848793440067,
+  "min_triangle_area_mm2": 3.1811557323919536e-06,
+  "periodic_components": 1,
+  "nonmanifold_periodic_edges": 0,
+  "orientation_conflicts": 0,
+  "seams": [
+    {
+      "axis": 0,
+      "low_nodes": 172,
+      "high_nodes": 172,
+      "max_gap_over_L": 0.0
+    },
+    {
+      "axis": 1,
+      "low_nodes": 172,
+      "high_nodes": 172,
+      "max_gap_over_L": 0.0
+    },
+    {
+      "axis": 2,
+      "low_nodes": 172,
+      "high_nodes": 172,
+      "max_gap_over_L": 0.0
+    }
+  ],
+  "analytic_vertex_residual_max": 1.201816424156732e-14,
+  "marching_cube_interior_vertices": 0,
+  "mesh_cleanup": {
+    "short_edge_threshold_mm": 0.01,
+    "removed_vertices": 1584,
+    "max_single_pass_vertex_move_mm": 0.009181419377140943,
+    "passes_at_most": 3
+  },
+  "seam_definition": "opposite face traces with transverse periodic edge/corner equivalence; quotient edges audited independently",
+  "pass": true
+}

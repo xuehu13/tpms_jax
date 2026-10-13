@@ -1,0 +1,11 @@
+{
+  "source": "validation/initial_tangent_20261008_r30/diagnostic.py",
+  "changes": [
+    "case path argument",
+    "new own-Gauss geometry callback",
+    "240s solve budget",
+    "baseline freeze manifest",
+    "result case label"
+  ],
+  "operator_and_PCG_unchanged": true
+}

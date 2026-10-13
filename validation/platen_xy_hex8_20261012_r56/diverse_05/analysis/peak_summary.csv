@@ -1,0 +1,12 @@
+﻿solver,definition,compression_percent,force_N,time_s,at_loading_endpoint,prominence_N
+HEX8,raw global max in own achieved loading,12.017783853666781,6.131352036721785,0.0022169255738460616,False,
+HEX8,fixed moving mean prominent interior peak,11.979999980880669,6.124374124345095,,,4.884596542645754
+HEX8,fixed moving mean prominent interior peak,17.639999971847665,4.830366104068065,,,2.488208493114041
+HEX27,raw global max in own achieved loading,10.900692706352217,4.823185077584211,0.0020962222681554553,False,
+HEX27,fixed moving mean prominent interior peak,10.900053372621365,4.817418277101115,,,2.9960660674909105
+HEX27,fixed moving mean prominent interior peak,17.260084514811442,3.79299814924931,,,1.602294010004945
+HEX27,fixed moving mean prominent interior peak,18.860092349324674,2.868987288331171,,,0.5400838915420625
+Abaqus,raw global max in own achieved loading,10.770080089569092,4.640503883361816,0.0020822344813495874,False,
+Abaqus,fixed moving mean prominent interior peak,10.76,4.636235559706834,,,4.538603181728702
+Abaqus,fixed moving mean prominent interior peak,15.1,2.815497459623326,,,0.9328414381634678
+Abaqus,fixed moving mean prominent interior peak,17.080000000000002,4.102570815538297,,,2.238826765709204

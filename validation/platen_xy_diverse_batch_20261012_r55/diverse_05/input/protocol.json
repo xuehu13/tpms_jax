@@ -1,0 +1,63 @@
+{
+  "case_id": "diverse_05_midsurface_end_platen_20pct_r55",
+  "L_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "density_tonne_mm3": 1e-09,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "N": 32,
+  "contact_normal_stiffness_MPa_per_mm": 320.0,
+  "contact_stiffness_rule": "10*E/background_h, selected before response",
+  "target_compression": 0.2,
+  "load_time_s": 0.004,
+  "hold_time_s": 0.0002,
+  "stage": "diverse_05 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+  "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+  "material_model": "objective_void",
+  "no_friction": true,
+  "no_self_contact": true,
+  "no_mass_scaling": true,
+  "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+  "jax_contact": "own occupied cap weights aggregated at nearest matching shell end nodes; Q2 force distribution, reference area andkn conserved",
+  "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+  "source_surface_sha256": "192eda3e70b7a3457d7be6c141674e9972a08dfaa9b37547abd634ef78c467cb",
+  "source_shell_surface_sha256": "192eda3e70b7a3457d7be6c141674e9972a08dfaa9b37547abd634ef78c467cb",
+  "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/gauss_field.npz",
+  "original_Gauss_sha256": "d557f9dc0871dd682bff9d0f505838595c3a1e995002888904e796c8a5f0d672",
+  "contact_reference_area_mm2": [
+    78.75061225701513,
+    78.75061225701513
+  ],
+  "physical_nodes": 11624,
+  "shell_elements": 21998,
+  "XY_relations": 397,
+  "XY_equations": 2382,
+  "labels": {
+    "ax": 11625,
+    "ay": 11626,
+    "bottom": 11627,
+    "top": 11628
+  },
+  "rim_node_count": [
+    248,
+    248
+  ],
+  "wall_pin": null,
+  "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/diverse_05/input/rimline_contact.npz",
+  "contact_cache_sha256": "885b40ee1b727914055fc042618cc1080969b2da1ff4c89f9b430fd628459e2f",
+  "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+  "inp_sha256": "47f9bbfeb6fcb4f5dada2d9996ea74d732ba210860f08f723ed823f75e6dba69",
+  "kind": "diverse_05",
+  "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/surface.npz",
+  "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+  "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+  "execution_authorized": true,
+  "budget_seconds": {
+    "overall": 6000,
+    "jax_build_compile_checks_solve": 3900,
+    "abaqus_datacheck_solve": 1500,
+    "preparation_extraction_analysis_reserve": 600
+  }
+}

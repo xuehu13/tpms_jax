@@ -1,0 +1,18 @@
+{
+  "command": [
+    "F:\\Anaconda\\python.exe",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\tools\\run_abaqus.py",
+    "extract",
+    "--native-dir",
+    "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r52_P_midsurface_end_20pct_20261010",
+    "--output-dir",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\P\\abaqus",
+    "--config",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\P\\input\\protocol.json"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 2.226001262664795,
+  "started_UTC": "2026-10-10T13:02:59.678269+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\P\\abaqus\\driver_extract.log"
+}

@@ -1,0 +1,14 @@
+{
+  "pid": 441061,
+  "started_utc": "2026-10-10T04:12:47Z",
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/tools/run_jax.py",
+    "--config",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/slow_protocol.json",
+    "--out",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/jax/cap_T2ms"
+  ],
+  "budget_seconds": 2350,
+  "log": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/jax/slow_launch.log"
+}

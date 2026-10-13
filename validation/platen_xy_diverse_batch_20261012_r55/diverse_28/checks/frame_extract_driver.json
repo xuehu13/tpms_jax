@@ -1,0 +1,16 @@
+{
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "python",
+    "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_28_midsurface_end_20pct_20261012\\extract_frames.py",
+    "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_28_midsurface_end_20pct_20261012"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 15.07182002067566,
+  "started_UTC": "2026-10-12T03:39:37.793244+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\diverse_28\\abaqus\\frame_extract.log"
+}

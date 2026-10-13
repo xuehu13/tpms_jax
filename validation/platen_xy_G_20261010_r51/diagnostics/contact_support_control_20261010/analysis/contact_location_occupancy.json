@@ -1,0 +1,29 @@
+{
+  "scope": "Occupancy re-evaluated at diagnostic contact point positions; volume Gauss material and HRZ remain unchanged. This is point geometry, not an FE path or material-domain failure.",
+  "cases": [
+    {
+      "case": "original",
+      "contact_weight_fraction_at_geometric_phi_lt_0p001": 4.0937543331461546e-05,
+      "contact_weight_fraction_at_geometric_phi_lt_0p01": 0.00039185208435005953,
+      "contact_weight_fraction_at_geometric_phi_lt_0p5": 0.03659305681743445,
+      "minimum_geometric_phi_at_nonzero_weight": 1.4865373869835464e-77,
+      "area_weighted_geometric_phi": 0.9554297566661858
+    },
+    {
+      "case": "halfway",
+      "contact_weight_fraction_at_geometric_phi_lt_0p001": 0.007159344040422881,
+      "contact_weight_fraction_at_geometric_phi_lt_0p01": 0.007159344040425218,
+      "contact_weight_fraction_at_geometric_phi_lt_0p5": 0.0071593440594411445,
+      "minimum_geometric_phi_at_nonzero_weight": 2.9662261520110042e-52,
+      "area_weighted_geometric_phi": 0.9928382886896756
+    },
+    {
+      "case": "rimline",
+      "contact_weight_fraction_at_geometric_phi_lt_0p001": 0.0,
+      "contact_weight_fraction_at_geometric_phi_lt_0p01": 0.0,
+      "contact_weight_fraction_at_geometric_phi_lt_0p5": 0.0,
+      "minimum_geometric_phi_at_nonzero_weight": 0.9999999997132027,
+      "area_weighted_geometric_phi": 0.9999999997132027
+    }
+  ]
+}

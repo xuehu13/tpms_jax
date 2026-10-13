@@ -1,0 +1,19 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_PD_20261010_r52/tools/prepare_case.py",
+  "source_sha256": "583f50b1eba3528b07b52b876256a893a5313cf3cd223693ee11945feb70a2cd",
+  "substitutions": [
+    [
+      "choices=['P','D']",
+      "choices=['diverse_28', 'diverse_05', 'diverse_02']"
+    ],
+    [
+      "old=R/'validation/canonical_tpms_20261009_r50'/a.kind",
+      "old=B/'sources'/a.kind"
+    ],
+    [
+      "r52",
+      "r55"
+    ]
+  ],
+  "adapted_sha256": "a034318bb2f2ad72531dddd481b0b715cd2deb3001fb0f4a46493d8e7b8d6dc1"
+}

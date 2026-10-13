@@ -1,0 +1,32 @@
+{
+  "scope": "G complete0-5pct interface-width reverse work derivative",
+  "step2_interface_pass": true,
+  "objective": {
+    "objective": "loading_work",
+    "baseline_value": 0.4799091219137255,
+    "AD": 0.3246246775087882,
+    "FD_h": 0.32462095290897164,
+    "FD_half": 0.32462076774919524,
+    "AD_FD_relative_error": 1.2044083377896994e-05,
+    "FD_halving_relative_difference": 5.703879566425898e-07,
+    "nearzero": false,
+    "pass_target": true
+  },
+  "reverse_thickness_pass": true,
+  "terminal_force_AD_validated": false,
+  "terminal_force_FD_N_per_mm": {
+    "h": 1.3239960571462817,
+    "half": 1.3239091923473723
+  },
+  "interface_is_numerical_geometry_parameter": true,
+  "sampled_min_required_J": 0.902516293585662,
+  "beta_per_mm": 87.88898309344877,
+  "work_beta_derivative_N_mm2": -0.0001846788221247412,
+  "case_wall_minutes": {
+    "FD/w_plus_h": 17.660265270868937,
+    "FD/w_minus_h": 17.509484724203745,
+    "FD/w_plus_half": 17.515356663862864,
+    "FD/w_minus_half": 17.53882731993993
+  },
+  "protected_sources_unchanged": true
+}

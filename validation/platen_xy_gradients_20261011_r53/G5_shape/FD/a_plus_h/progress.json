@@ -1,0 +1,17 @@
+{
+  "case": "G5_shape/FD/a_plus_h",
+  "steps": 24789,
+  "total_steps": 24789,
+  "wall_s": 1046.5882914066315,
+  "time_s": 0.0014377446591583515,
+  "compression": 0.04999999999998118,
+  "work_N_mm": 0.4799092560828127,
+  "force_N": 1.822748906692337,
+  "IE_N_mm": 0.46220664516521903,
+  "all_J_min": 0.019677230935156012,
+  "required_positive_J_min": 0.9032478074045867,
+  "negative_void_J_points": 0,
+  "KE_N_mm": 0.016051869237855558,
+  "bottom_force_N": 1.7865854931928375,
+  "contact_energy_N_mm": 0.0016507417476569195
+}

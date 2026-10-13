@@ -1,0 +1,20 @@
+{
+  "stage": "two_Abaqus_and_two_JAX_local_static_paths_complete_analyzed",
+  "active_jobs": [],
+  "no_G_change": true,
+  "no20pct": true,
+  "no_new_AD": true,
+  "input_correction": "Initial cap datacheck failed: missing trailing comma before connectivity continuation; no solve. Both inputs corrected, physical protocol unchanged; retry uses separate native directory.",
+  "new_design_AD": false,
+  "jax_comparison": {
+    "stage": "two_local_JAX_static_paths_complete_analyzed",
+    "active_jobs": [],
+    "nodal_endpoint_bias": -0.00019254310088800963,
+    "gauss_endpoint_bias": -0.012442373349801361,
+    "local_gate_passed": true,
+    "is_G_test": false,
+    "background_occupancy_validated": false,
+    "new_design_AD": false,
+    "full20_submitted": false
+  }
+}

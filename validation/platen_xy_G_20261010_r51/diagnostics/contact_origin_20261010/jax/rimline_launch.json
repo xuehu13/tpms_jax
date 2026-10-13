@@ -1,0 +1,14 @@
+{
+  "pid": 438277,
+  "started_utc": "2026-10-10T03:57:53Z",
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/tools/run_jax.py",
+    "--config",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/rimline_protocol.json",
+    "--out",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/jax/rimline_T1ms"
+  ],
+  "budget_seconds": 2350,
+  "log": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/jax/rimline_launch.log"
+}

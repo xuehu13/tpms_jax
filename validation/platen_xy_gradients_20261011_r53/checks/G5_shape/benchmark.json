@@ -1,0 +1,31 @@
+{
+  "baseline": {
+    "scale": 2.2204460498975956e-16,
+    "nodem": 7.817241806374076e-16,
+    "mass": 7.817241806374076e-16,
+    "c": 8.069410896902276e-16,
+    "schur": 6.155369897057529e-15,
+    "area": 4.623656403804098e-16,
+    "acceleration_q": 1.0740510887781974e-11,
+    "acceleration_macro": 1.4527191552629146e-12,
+    "pass": true
+  },
+  "primal_compile_and_first64_s": 7.511187314987183,
+  "primal64_s": 2.391404867172241,
+  "JVP_compile_and_first64_s": 7.008955001831055,
+  "JVP64_s": 4.61232852935791,
+  "steps_to5pct": 24789,
+  "fixed_dt_s": 5.7999300462244876e-08,
+  "original_model_initial_allowed_dt_s": 6.037383139088144e-08,
+  "initial_estimate": {
+    "power_estimated_omega2_s_minus2": 98765445191227.19,
+    "power_steps": 25,
+    "safety_fraction": 0.3,
+    "not_a_proven_global_bound": true
+  },
+  "estimated_one_primal_minutes": 15.437639388628304,
+  "estimated_one_JVP_minutes": 29.774742686003446,
+  "estimated_thickness_check_minutes": 91.52530024051666,
+  "benchmark_wall_s": 64.9133722782135,
+  "scope": "Benchmark includes no full design gradient or full response"
+}

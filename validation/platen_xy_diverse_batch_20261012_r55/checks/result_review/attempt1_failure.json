@@ -1,0 +1,7 @@
+{
+  "stage": "derived_postprocessing_before_report_edits",
+  "reason": "Windows NumPy1.26 lacks numpy.trapezoid; use the same trapezoidal sum explicitly",
+  "new_dynamic_solve": 0,
+  "raw_scientific_evidence_modified": false,
+  "wall_seconds": 5.7606797
+}

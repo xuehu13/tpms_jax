@@ -1,0 +1,12 @@
+{
+  "stage": "two_probes_complete_three_G_packaging_stops_analyzed",
+  "active_jobs": [],
+  "completed_G_dynamic_paths": 0,
+  "G_attempts_stopped_before_time_advance": 3,
+  "original_G_comparison_passed": false,
+  "saved_pose_top_cap_max_phi_ge_0p5_mm": 0.023448068932861332,
+  "JAX_rigid_replay_z_RMS_mm": 0.0007335995769942693,
+  "rigid_cap_scheme_not_adopted": true,
+  "full20_submitted": false,
+  "new_design_AD": false
+}

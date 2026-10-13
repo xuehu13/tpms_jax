@@ -1,0 +1,10 @@
+{
+  "started_unix": 1791542639.5979574,
+  "deadline_unix": 1791545039.5979574,
+  "new_shell_jobs": 2,
+  "launcher_sha256": "0c0196bb926c1b20e428912f6f3f07498eb8bb4ef4dbad57ac94fa55af21da77",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "parallel_jobs": 2,
+  "CPUs_per_job": 4,
+  "authorization": "2026-10-09: 你可以安排个方案算一下不同T下abaqus的峰值点变化。"
+}

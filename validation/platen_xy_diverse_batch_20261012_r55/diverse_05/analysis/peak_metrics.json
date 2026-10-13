@@ -1,0 +1,141 @@
+{
+  "scope": "diverse_05 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+  "paired_complete20_and_hold": false,
+  "common_compression_max": 0.1936009310667164,
+  "common_time_s": 0.003358258025290416,
+  "normalizer_N": 4.640503883361816,
+  "normalizer_scope": "new shell common achieved loading window peak; not full20 acceptance",
+  "raw_global_peak": {
+    "JAX": {
+      "compression_percent": 10.900692706352217,
+      "force_N": 4.823185077584211,
+      "time_s": 0.0020962222681554553,
+      "at_loading_endpoint": false,
+      "sample_time_spacing_s_min_max": [
+        2.3677969177016145e-06,
+        2.372881355933165e-06
+      ],
+      "captured_interior_global_peak": true
+    },
+    "Abaqus": {
+      "compression_percent": 10.770080089569092,
+      "force_N": 4.640503883361816,
+      "time_s": 0.0020822344813495874,
+      "at_loading_endpoint": false,
+      "sample_time_spacing_s_min_max": [
+        1.778826117515564e-06,
+        2.122018486261368e-06
+      ],
+      "captured_interior_global_peak": true
+    }
+  },
+  "smoothed_peaks": {
+    "JAX": {
+      "smoothing_points": 25,
+      "approx_width_percentage_points": 0.5000024046144534,
+      "prominence_threshold_N": 0.4817418282171628,
+      "peaks": [
+        {
+          "compression_percent": 10.900052420595085,
+          "force_N": 4.817418282171628,
+          "prominence_N": 2.996066335072526
+        },
+        {
+          "compression_percent": 17.260083007290934,
+          "force_N": 3.7930003388903284,
+          "prominence_N": 1.6022712688948784
+        },
+        {
+          "compression_percent": 18.860090702057185,
+          "force_N": 2.868985985789426,
+          "prominence_N": 0.540081958460179
+        }
+      ],
+      "first_prominent_interior_peak": {
+        "compression_percent": 10.900052420595085,
+        "force_N": 4.817418282171628,
+        "prominence_N": 2.996066335072526
+      }
+    },
+    "Abaqus": {
+      "smoothing_points": 25,
+      "approx_width_percentage_points": 0.5000024046144534,
+      "prominence_threshold_N": 0.4636235444916083,
+      "peaks": [
+        {
+          "compression_percent": 10.760051747303038,
+          "force_N": 4.636235444916083,
+          "prominence_N": 3.5359075763481314
+        },
+        {
+          "compression_percent": 15.100072619356494,
+          "force_N": 2.8153080464954545,
+          "prominence_N": 0.9326370876326016
+        },
+        {
+          "compression_percent": 17.08008214162973,
+          "force_N": 4.102598980620274,
+          "prominence_N": 2.2388600964558134
+        }
+      ],
+      "first_prominent_interior_peak": {
+        "compression_percent": 10.760051747303038,
+        "force_N": 4.636235444916083,
+        "prominence_N": 3.5359075763481314
+      }
+    }
+  },
+  "primary_curve_RMS_over_shell_peak": 0.08011909889360815,
+  "peak_rules": {
+    "primary": "Raw global maximum upper-platen compressive force in actual loading window; report force, engineering compression and time",
+    "location_difference": "JAX minus new Abaqus in compression percentage points; report raw sample spacing",
+    "diagnostic_smoothing": "Centered moving mean on fixed 1001-point compression grid: width25 samples (~0.5 percentage points); no time warping",
+    "first_prominent_peak": "On smoothed curve, scipy find_peaks prominence >=10% of its own full-loading absolute peak and distance>=25 samples; list all qualifying peaks, compare first if both have one",
+    "endpoint_rule": "If global maximum is at end or no qualifying interior peak, mark no captured interior peak rather than claim a buckling peak",
+    "incomplete_rule": "Compare common achieved window only; no full20 acceptance, no unseen peak extrapolation"
+  },
+  "no_new_FEM_AD_FD": true,
+  "raw_global_peak_location_difference_percentage_points": 0.1306126167831252,
+  "raw_global_peak_force_relative_bias": 0.03936667198520927,
+  "first_prominent_peak_difference_percentage_points": 0.14000067329204668,
+  "loading_work_N_mm": {
+    "JAX": 5.3813122276432654,
+    "Abaqus": 5.305445344611059
+  },
+  "loading_work_relative_bias": 0.014299814267103361,
+  "point_forces": [
+    {
+      "compression_percent": 2.0,
+      "JAX_N": 1.035022664861905,
+      "Abaqus_N": 1.0472931651848358,
+      "relative_bias": -0.01171639492249077
+    },
+    {
+      "compression_percent": 5.0,
+      "JAX_N": 2.501393007282472,
+      "Abaqus_N": 2.5002153339725104,
+      "relative_bias": 0.00047102875258775434
+    },
+    {
+      "compression_percent": 10.0,
+      "JAX_N": 4.669978725591286,
+      "Abaqus_N": 4.5400724139849515,
+      "relative_bias": 0.028613268635579336
+    },
+    {
+      "compression_percent": 15.0,
+      "JAX_N": 2.1308188318006573,
+      "Abaqus_N": 2.5998414370501144,
+      "relative_bias": -0.1804043118035803
+    }
+  ],
+  "three_working_targets_within10pct": null,
+  "JAX_terminal_time_s": 0.003358258025290416,
+  "JAX_complete": false,
+  "Abaqus_terminal_time_s": 0.00419999985024333,
+  "Abaqus_complete": true,
+  "source_sha256": {
+    "JAX": "b04d4a43156f138db4acf5f6c95015484426563731ff6ef81928d8f5a9fdfa23",
+    "Abaqus": "346415e2456a6195e3111828080ff4b986fd0d8aba1251df4b92b7c0f9d85828"
+  }
+}

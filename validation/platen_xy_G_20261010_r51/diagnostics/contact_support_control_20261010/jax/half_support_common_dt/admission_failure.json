@@ -1,0 +1,15 @@
+{
+  "stage": "stopped_before_dynamic_advance",
+  "reason": "Requested common dt exceeds the conservative initial estimate; no integration was attempted",
+  "requested_dt_s": 6.037128339286612e-08,
+  "allowed_initial_dt_s": 2.269788727221146e-09,
+  "estimate": {
+    "power_estimated_omega2_s_minus2": 6.987657842899896e+16,
+    "power_steps": 25,
+    "safety_fraction": 0.3,
+    "not_a_proven_global_bound": true
+  },
+  "estimate_recheck_seconds": 31.124198462930508,
+  "requested_to_allowed_ratio": 26.59775452615689,
+  "estimate_provenance": "Same-input post-stop re-evaluation, no evolution; original guard raised before writing input.json."
+}

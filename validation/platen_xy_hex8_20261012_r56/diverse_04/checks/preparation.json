@@ -1,0 +1,63 @@
+{
+  "pass": true,
+  "compact_general_residual_relative_difference": 4.398180840863304e-15,
+  "affine_gradient_max_error": 1.802486111757151e-18,
+  "projected_mass_relative_residual": 8.152640664958521e-16,
+  "contact_virtual_work_relative_error": 1.7903729164920897e-08,
+  "XY_classes": 33792,
+  "zero_state": {
+    "time": 0.0,
+    "compression": 0.0,
+    "force_N": 0.0,
+    "bottom_force_N": 0.0,
+    "ax_mm": 0.0,
+    "ay_mm": 0.0,
+    "energy_N_mm": 0.0,
+    "contact_energy_N_mm": 0.0,
+    "KE_N_mm": 0.0,
+    "KE_over_IE": 0.0,
+    "required_positive_J_min": 1.0,
+    "all_J_min": 1.0,
+    "negative_void_J_points": 0,
+    "cap_penetration_phi_ge_0p01_mm": [
+      0.0,
+      0.0
+    ],
+    "momentum_z_N_s": 0.0
+  },
+  "common_geometry_relative_errors": {
+    "gradient": 3.534102350856979e-14,
+    "weight": 3.885780586188048e-14
+  },
+  "mass_conservation_error": 4.440892098500626e-16,
+  "positive_lumped_mass": true,
+  "XY_face_classes_equal": true,
+  "Z_faces_not_periodic": true,
+  "node_count": 35937,
+  "Gauss_points_per_cell": 8,
+  "mass_lumping": "row_sum",
+  "shared_platen_sha256": "d5ce4bc214e38dc1b31e7d2b8d1dc748437684b6d18a9c24f068476e0bb7d1f9",
+  "periodic_source_substitution": [
+    "n=cfg['N'];p.class_ids,_=periodic_node_classes(p.fe.points,2*n,2*n,2*n,periodic_axes=(0,1))",
+    "n=cfg['N']*p.element_degree;p.class_ids,_=periodic_node_classes(p.fe.points,n,n,n,periodic_axes=(0,1))"
+  ],
+  "kind": "diverse_04",
+  "preparation_wall_seconds": 15.715540409088135,
+  "occupancy_volume_fraction": 0.1320035545941125,
+  "HEX27_occupancy_volume_fraction": 0.13251935766125453,
+  "occupancy_relative_change": -0.003892284691422332,
+  "total_mass_tonne": 1.320903542386528e-07,
+  "contact_area_mm2": [
+    15.229465305736445,
+    15.229465305736445
+  ],
+  "same_contact_points_weights_verified": true,
+  "actual_own_Gauss_equality": true,
+  "reference_case_dir": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04",
+  "reference_source_sha256": {
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/protocol.json": "b49b95dc66b274c71dbbb3a414dd12b404f475b372da824edcf4056b43a61315",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/jax/result.json": "5e670a5cf6e6f8f4f19ddb74249cb88339ec966691c6a9bfea624e3b98ec178e",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04/input/rimline_contact.npz": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "reason": "Expose already-computed displacement-field differences and finite-width overrun in main text after visual QA",
+  "new_FEM_calls": 0,
+  "numerical_input_or_result_changes": false,
+  "files": {
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\D\\README.md": {
+      "before": "a485cbbc1540ef7b8f7ce3edbd31d86ba100d07add5ea588b24a5c28071418d3",
+      "after": "a1886b64e1b5f48bbd10d1909f12a0c5016e6bcd8ec8556e772bc17075209ba6"
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r52_platen_xy_PD_20261010\\D\\README.md": {
+      "before": "86468f98b8b85d76c9113802a7ad46dd02a3d1d210095dd6af8fb7ff73857c68",
+      "after": "cb5176cb1ae14dedbb93ff6e3c362f12f67bd231ababb2a0e5f0d42ce37f9100"
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\README.md": {
+      "before": "b68452b341c6dd8e9bdaf13ebea962358b47d89519dc378a1dbe0f8cc2fd19a7",
+      "after": "feac78a69b7bb13ad41ab466e5022d07de410e1e32527d55e56914aebe96031e"
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r52_platen_xy_PD_20261010\\README.md": {
+      "before": "adca5191ec0eb0a5b89d8a151d3b577fda4142fb7fed239a0293ed41bf889f34",
+      "after": "4fdab294c71252ec511c060c77afe6bddaaa3d23762019d88bb8f0f918754120"
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md": {
+      "before": "9b2c5ceaa9b3c95dc8825238e91b5691ef906c17afc6c406491f8467c17e2a16",
+      "after": "5b166f9ba070a402712bb3f422416681ff93d7ac9286ebcb5285fef80127a8a2"
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md": {
+      "before": "35fef212e8ad05ffb0234fa1e39ea70678ec13eb6189968a7833381a37abe46b",
+      "after": "c42ace84fc9b80971a42c9fea977aa190d77e312d1c90a1035831bb44684ffb3"
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\AGENTS.md": {
+      "before": "321255a0244afa54bab1baa4e0b50dde9af2ddcd575be5752f2002ab0e767855",
+      "after": "622c129ebc8a88f57570089d2e289c527bc3222aef5499ae642b1b660451e881"
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md": {
+      "before": "97042d58819002cf93f392bf508a13289d4e381bdf02a544ac47e2bc2f8a77ca",
+      "after": "8832dcd4eb837c2b54a25f033475bc1ba332e1bedb461ec76ce958658a4cb910"
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\tools\\analyze_partial_D.py": {
+      "before": "a84233a9768805bcb443eb47bb054111aab749dcd68f2a061b18fc2de6965f34",
+      "after": "fe387d16e001a32b4ce885ab25b4bc9ba33ebd923b0c8ad2148595fffd9f6836"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "syntax_checked": [
+    "run_batch.py",
+    "analyze_case.py",
+    "run_jax.py",
+    "prepare_case.py"
+  ],
+  "template_geometry_independent_assumptions_checked": true,
+  "jobs_submitted": 0,
+  "source_sha256": {
+    "run_batch.py": "169f95a3e91dafefac53704d9133e9754efc77aad6d05ab86b2cffbea9add8a5",
+    "analyze_case.py": "09dea934d40374743a4d036bd736ed4b7206b49b7efc07623977c3dc7253046b",
+    "run_jax.py": "851a6c12746633e90ffdd1da9d579d42b7352825a3ca6344c14a7d3e429f5484",
+    "prepare_case.py": "af8824af77c826cfd9f17fed8688a2091756b7805537a4b039a832cdf54545ae"
+  }
+}

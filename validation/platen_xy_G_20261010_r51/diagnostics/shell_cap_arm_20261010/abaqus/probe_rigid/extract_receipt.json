@@ -1,0 +1,20 @@
+{
+  "action": "extract",
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "python",
+    "extract.py",
+    "platen.odb",
+    "protocol.json",
+    "result.json"
+  ],
+  "returncode": 0,
+  "wall_seconds": 0.40600000007543713,
+  "budget_stop": false,
+  "success": true,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_rigid_probe_20261010",
+  "INP_sha256": "4089b8a92cd703deb0e8249746dfc800e25dbf02d134e9233cd6ac05b624c8df"
+}

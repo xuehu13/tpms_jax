@@ -1,0 +1,10 @@
+{
+  "planned_target_compression": 0.2,
+  "Abaqus": "not_submitted",
+  "JAX": "partial_or_failed",
+  "result": false,
+  "stage": "partial_or_failed_pair",
+  "full20_completed": false,
+  "three_scalar_targets_within_10pct": false,
+  "overall_minutes": 0.04274286429087321
+}

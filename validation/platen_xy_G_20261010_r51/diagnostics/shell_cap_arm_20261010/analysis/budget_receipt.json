@@ -1,0 +1,296 @@
+{
+  "cases": [
+    {
+      "case": "probe",
+      "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/r51_cap_arm_probe_20261010",
+      "datacheck": {
+        "action": "datacheck",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=check",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF",
+          "datacheck"
+        ],
+        "returncode": 0,
+        "wall_seconds": 27.625,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_arm_probe_20261010",
+        "INP_sha256": "84b71110870a892d80889da5ae41bb07491ee268d090c98a350b8ac7404cda38"
+      },
+      "solve": {
+        "action": "solve",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=platen",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF"
+        ],
+        "returncode": 0,
+        "wall_seconds": 27.780999999959022,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_arm_probe_20261010",
+        "INP_sha256": "84b71110870a892d80889da5ae41bb07491ee268d090c98a350b8ac7404cda38"
+      },
+      "extract": {
+        "action": "extract",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "python",
+          "extract.py",
+          "platen.odb",
+          "protocol.json",
+          "result.json"
+        ],
+        "returncode": 0,
+        "wall_seconds": 0.40700000000651926,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_arm_probe_20261010",
+        "INP_sha256": "84b71110870a892d80889da5ae41bb07491ee268d090c98a350b8ac7404cda38"
+      },
+      "native_input_sha256": "84b71110870a892d80889da5ae41bb07491ee268d090c98a350b8ac7404cda38",
+      "dynamic_solution_complete": true
+    },
+    {
+      "case": "G",
+      "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/r51_G_cap_arm_20261010",
+      "datacheck": {
+        "action": "datacheck",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=check",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF",
+          "datacheck"
+        ],
+        "returncode": 0,
+        "wall_seconds": 26.90700000000652,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_arm_20261010",
+        "INP_sha256": "215942c160c5d746e1dd1eb8c0f470139e5cd656675542057c5ccac80d10ce10"
+      },
+      "solve": {
+        "action": "solve",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=platen",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF"
+        ],
+        "returncode": 0,
+        "wall_seconds": 25.875,
+        "budget_stop": false,
+        "success": false,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_arm_20261010",
+        "INP_sha256": "215942c160c5d746e1dd1eb8c0f470139e5cd656675542057c5ccac80d10ce10"
+      },
+      "native_input_sha256": "215942c160c5d746e1dd1eb8c0f470139e5cd656675542057c5ccac80d10ce10",
+      "dynamic_solution_complete": false
+    },
+    {
+      "case": "probe_rigid",
+      "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/r51_cap_rigid_probe_20261010",
+      "datacheck": {
+        "action": "datacheck",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=check",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF",
+          "datacheck"
+        ],
+        "returncode": 0,
+        "wall_seconds": 27.59299999999348,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_rigid_probe_20261010",
+        "INP_sha256": "4089b8a92cd703deb0e8249746dfc800e25dbf02d134e9233cd6ac05b624c8df"
+      },
+      "solve": {
+        "action": "solve",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=platen",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF"
+        ],
+        "returncode": 0,
+        "wall_seconds": 27.655999999959022,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_rigid_probe_20261010",
+        "INP_sha256": "4089b8a92cd703deb0e8249746dfc800e25dbf02d134e9233cd6ac05b624c8df"
+      },
+      "extract": {
+        "action": "extract",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "python",
+          "extract.py",
+          "platen.odb",
+          "protocol.json",
+          "result.json"
+        ],
+        "returncode": 0,
+        "wall_seconds": 0.40600000007543713,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_rigid_probe_20261010",
+        "INP_sha256": "4089b8a92cd703deb0e8249746dfc800e25dbf02d134e9233cd6ac05b624c8df"
+      },
+      "native_input_sha256": "4089b8a92cd703deb0e8249746dfc800e25dbf02d134e9233cd6ac05b624c8df",
+      "dynamic_solution_complete": true
+    },
+    {
+      "case": "G_rigid",
+      "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/r51_G_cap_rigid_20261010",
+      "datacheck": {
+        "action": "datacheck",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=check",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF",
+          "datacheck"
+        ],
+        "returncode": 0,
+        "wall_seconds": 34.32799999997951,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_rigid_20261010",
+        "INP_sha256": "de0a4800d54eb19d8956d559d7171f8c1dceb5c6514074f3ccdf4b1aedd875bd"
+      },
+      "solve": {
+        "action": "solve",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=platen",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF"
+        ],
+        "returncode": 0,
+        "wall_seconds": 36.0,
+        "budget_stop": false,
+        "success": false,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_rigid_20261010",
+        "INP_sha256": "de0a4800d54eb19d8956d559d7171f8c1dceb5c6514074f3ccdf4b1aedd875bd"
+      },
+      "native_input_sha256": "de0a4800d54eb19d8956d559d7171f8c1dceb5c6514074f3ccdf4b1aedd875bd",
+      "dynamic_solution_complete": false
+    },
+    {
+      "case": "G_wrapped",
+      "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/r51_G_cap_wrapped_20261010",
+      "datacheck": {
+        "action": "datacheck",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=check",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF",
+          "datacheck"
+        ],
+        "returncode": 0,
+        "wall_seconds": 33.32799999997951,
+        "budget_stop": false,
+        "success": true,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_wrapped_20261010",
+        "INP_sha256": "a5d2fbde660dc7a9e73c16231146194058928337216268e7b729b19d33fbcbaa"
+      },
+      "solve": {
+        "action": "solve",
+        "command": [
+          "cmd",
+          "/d",
+          "/c",
+          "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+          "job=platen",
+          "input=platen.inp",
+          "cpus=4",
+          "double=both",
+          "interactive",
+          "ask_delete=OFF"
+        ],
+        "returncode": 0,
+        "wall_seconds": 35.25,
+        "budget_stop": false,
+        "success": false,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_G_cap_wrapped_20261010",
+        "INP_sha256": "a5d2fbde660dc7a9e73c16231146194058928337216268e7b729b19d33fbcbaa"
+      },
+      "native_input_sha256": "a5d2fbde660dc7a9e73c16231146194058928337216268e7b729b19d33fbcbaa",
+      "dynamic_solution_complete": false
+    }
+  ],
+  "datacheck_seconds": 149.78099999995902,
+  "solve_launch_seconds": 152.56199999991804,
+  "receipt_extract_seconds": 0.8130000000819564,
+  "completed_G_dynamic_paths": 0,
+  "completed_prescribed_probes": 2,
+  "G_packaging_stops": 3,
+  "timing_scope": "Receipted launch-to-end wall time; no authoring/postprocessing time; separate source-ODB read not included."
+}

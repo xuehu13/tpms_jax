@@ -1,0 +1,13 @@
+{
+  "kind": "Explanatory figures only; no new solve or source-model changes",
+  "actual_G_panel": "Frozen top cut-face contact and midsurface-rim arrays; coordinates in mm; occupancy is not contact pressure",
+  "schematic_panels": "Idealized local diagrams, not calculated stress/deformation fields",
+  "area_each_end_mm2": [
+    12.999883973621222,
+    12.999883973621222
+  ],
+  "rim_nodes_per_side": [
+    172,
+    172
+  ]
+}

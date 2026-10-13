@@ -1,6 +1,6 @@
 # 机制审查：初始占据影响与大压缩峰位须分别解释
 
-更新2026-10-09，r46只读复盘。当前数值范围见[状态](RESEARCH_STATUS.md)，逐轮事实在冻结报告，后续唯一执行计划见[规划](RESEARCH_PLAN.md)。本页集中解释，避免导航/状态重复铺开全部细节。
+本页保留r46机制复盘，属于已收口调查的历史分析；旧建议不自动执行。r47至r49后续证据已纳入[完整收口报告](/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/TPMS背景有限元与Abaqus差异排查完整总结_20261009.docx)。当前状态见[状态](RESEARCH_STATUS.md)，G/P/D待审阅方案仅见[规划](RESEARCH_PLAN.md)。
 
 ## 当前判断
 

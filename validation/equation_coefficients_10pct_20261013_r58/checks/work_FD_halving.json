@@ -1,0 +1,32 @@
+[
+  {
+    "coefficient": "c1",
+    "AD": -0.09502330381863491,
+    "FD": -0.0950236263449543,
+    "FD_half": -0.09502330381863491,
+    "near_zero": false,
+    "AD_FD_error": 0.0,
+    "FD_halving_error": 3.3941812842403442e-06,
+    "passed": true
+  },
+  {
+    "coefficient": "c2",
+    "AD": 0.014067810639825047,
+    "FD": 0.014067594639298403,
+    "FD_half": 0.014067810639825047,
+    "near_zero": false,
+    "AD_FD_error": 0.0,
+    "FD_halving_error": 1.5354238990982785e-05,
+    "passed": true
+  },
+  {
+    "coefficient": "c0",
+    "AD": -0.1938954243219104,
+    "FD": -0.19389738266373244,
+    "FD_half": -0.1938954243219104,
+    "near_zero": false,
+    "AD_FD_error": 0.0,
+    "FD_halving_error": 1.0099989872829349e-05,
+    "passed": true
+  }
+]

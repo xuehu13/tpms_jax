@@ -1,0 +1,16 @@
+{
+  "unchanged": true,
+  "files": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "validation/platen_xy_G_20261010_r51/tools/platen_model.py": "d5ce4bc214e38dc1b31e7d2b8d1dc748437684b6d18a9c24f068476e0bb7d1f9",
+    "validation/platen_xy_G_20261010_r51/tools/run_jax.py": "733e87e5dd3757e5175ddc8f38fb740aafb73473aa172e985e21e1d779068644",
+    "validation/platen_xy_G_20261010_r51/tools/prepare.py": "68e1f4c4d35fa0dad5de1c6630f08335cfcb32cc3f0f9757625686fa2a81f150",
+    "validation/platen_xy_G_20261010_r51/tools/contact_origin.py": "ee723e6a383c86aee265403b84eca24f0dad608b66beb56dc326f786e2e04e5e",
+    "validation/canonical_tpms_20261009_r50/G/gauss_field.npz": "110de55d63508b1f8e504f804fbcae26ec11e93be0caf6ef85f8388b1ae81712",
+    "validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/rimline_contact.npz": "045ed72593a474952be792773bcc26d3695e84db11f4ba423e6c1d3e2a7b3ffd",
+    "validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/jax/result.json": "398701a15cfafc86bb876e87e3a4eb7c237a0103ba695626e0e908f8ba435c75"
+  }
+}

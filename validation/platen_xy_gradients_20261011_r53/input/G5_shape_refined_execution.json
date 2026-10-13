@@ -1,0 +1,171 @@
+{
+  "id": "G5_shape_refined",
+  "scope": "Targeted G5 complete-path shape derivative check at h=1e-7 and h/2; existing complete JVP reused byte-for-byte",
+  "plan_step": "shape_full_path",
+  "analysis_name": "G5_shape_refined",
+  "plot_title": "G5% shape, refined actual geometry FD",
+  "parameter_label": "shape a",
+  "parameter_label_cn": "周期形态系数a",
+  "active_parameter": "a",
+  "active_parameter_unit": "dimensionless",
+  "parameter_names": [
+    "thickness",
+    "interface_width",
+    "shape_a"
+  ],
+  "parameter_units": [
+    "mm",
+    "mm",
+    "dimensionless"
+  ],
+  "gradient_units": [
+    "N mm",
+    "N"
+  ],
+  "model_adapter": "periodic_shape",
+  "baseline_parameters": [
+    0.5,
+    0.05,
+    0.0
+  ],
+  "benchmark_seed": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "fd_steps": [
+    1e-07,
+    5e-08
+  ],
+  "model_config": "input/protocol.json",
+  "design_geometry": "input/design_geometry.npz",
+  "benchmark_path": "checks/G5_shape/benchmark.json",
+  "requires_reverse_pass": true,
+  "requires": [
+    [
+      "checks/G_shape_geometry/metrics.json",
+      "passed"
+    ],
+    [
+      "checks/G_shape_refined_resolution.json",
+      "passed"
+    ]
+  ],
+  "wall_budget_seconds": 5400,
+  "steps": 24789,
+  "dt_s": 5.7999300462244876e-08,
+  "target_compression": 0.05,
+  "thresholds": {
+    "nonzero_gradient_relative_AD_FD": 0.01,
+    "FD_h_halving_relative": 0.01,
+    "nearzero_dimensionless_gradient_cutoff": 1e-06,
+    "nearzero_absolute_scaled_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ],
+    "parameter_scale": 0.01
+  },
+  "required_objectives": [
+    "loading_work",
+    "terminal_upper_force"
+  ],
+  "cases": [
+    {
+      "label": "G5_shape_refined/FD/a_plus_h",
+      "parameters": [
+        0.5,
+        0.05,
+        1e-07
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "G5_shape_refined/FD/a_minus_h",
+      "parameters": [
+        0.5,
+        0.05,
+        -1e-07
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "G5_shape_refined/FD/a_plus_half",
+      "parameters": [
+        0.5,
+        0.05,
+        5e-08
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "G5_shape_refined/FD/a_minus_half",
+      "parameters": [
+        0.5,
+        0.05,
+        -5e-08
+      ],
+      "is_ad": false
+    }
+  ],
+  "includes": [
+    "actual moving midsurface distance",
+    "Gauss occupancy",
+    "material/internal force",
+    "HRZ nodal mass",
+    "XY projected macro inertia",
+    "rim occupied area",
+    "initial acceleration",
+    "all states and work quadrature"
+  ],
+  "fixed_rim_policy": "T_a fixes z0/1 and periodic seams. Contact points/Q2 interpolation/assignments stay identical by construction; cap occupancy and area are differentiated.",
+  "baseline_original_result": "validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/jax/result.json",
+  "protected_sources": {
+    "validation/canonical_tpms_20261009_r50/G/surface.npz": "f29cee32531216d623f5386439620789117c8c7e1312d2cb3b29f4651f3fa925",
+    "validation/canonical_tpms_20261009_r50/G/gauss_field.npz": "110de55d63508b1f8e504f804fbcae26ec11e93be0caf6ef85f8388b1ae81712",
+    "validation/platen_xy_gradients_20261011_r53/input/design_geometry.npz": "3b37d781bb0b26d949027aebecf2e6ed72515722417dde901ec5d4926bc8aeaa",
+    "validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/rimline_contact.npz": "045ed72593a474952be792773bcc26d3695e84db11f4ba423e6c1d3e2a7b3ffd",
+    "validation/platen_xy_gradients_20261011_r53/tools/design.py": "6a12f9ee8692fc55791551d948426a024eedef3cc529b69f9d735104ab11c1e2",
+    "validation/platen_xy_gradients_20261011_r53/tools/shape.py": "d966f5416ff7f14b21de57a2b1db79eabcba22cd7989c9645e4945fed1bfb2fe",
+    "validation/platen_xy_gradients_20261011_r53/tools/run.py": "ff23d9e14c722951e308535b13595ff3effee0787aac33d0c256c007342518c4",
+    "validation/platen_xy_gradients_20261011_r53/tools/analyze.py": "9996b4099a40cfaae5418d4cbfb30cc1e791302d1125288a9da4477640cb6ce2",
+    "validation/platen_xy_gradients_20261011_r53/input/G_shape/geometry_protocol.json": "66548ea557301b4e0df1a8fa9028eff75ad42f5920a0b3d40432d286dcd7ebde",
+    "validation/platen_xy_gradients_20261011_r53/input/G_shape/queries.npz": "1f133d52e930f10bf530424209c523bc6a431c5c4682788358d642ea622f4208",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/result.json": "63076444e7d468dcf55def0a1d9d74e08cbb31d6068f68408167f1c349bad407",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/final_state.npz": "af4824f75bdb7ffef628dcf6d69216c9509cad9a2322a50f14bead9d3e77c032",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/final_tangent.npz": "c1f74e5b436fc59d723cc839a4786933633caa9180d656751da5351110380394",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_h/result.json": "da46504e60efd7007269c875aa3194ba1bae8be5b6b541bfb92ac685b9a6a54c",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_h/final_state.npz": "5a8d9258b2fab82a11bac4b99093cac16d07eae440145290b71cb317774c90a6",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_h/result.json": "874a5cdf953b51d0733aebc7ec4cb9b0892865ac529e88b9c0d0918d0b241568",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_h/final_state.npz": "fb5559a07a22e4c072f1c04c70c42d0fad5244ad313c93b280d116fdc4d2b9ff",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_half/result.json": "158b03df08ed69b4afb962d7c809a7fb856c7ff03c6585f1c2a0793866c36dae",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_half/final_state.npz": "4961171d2a2018a433d01305ecd398fa9b2000bfeea8e9bf015b633026552823",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_half/result.json": "7eb623e2dedf64d5eb10c0c33fe990597632cfd56754e38a99cdd41d6e84e80a",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_half/final_state.npz": "857274ff67afd77ce01fbd319f2403c32081afd40c4550c6ab0ef441ae272b4d",
+    "validation/platen_xy_gradients_20261011_r53/checks/G_shape_refined_resolution.json": "36324454956174b1cbcbf8b6deafbf814f2ea169d40fdfcb132e447e306f2309",
+    "validation/platen_xy_gradients_20261011_r53/analysis/G5_shape_geometry_diagnostic/metrics.json": "3d03a2661dfb266419732a6a1ed56cea7749fab9819fd4be80f1d8e0405eef86",
+    "validation/platen_xy_gradients_20261011_r53/analysis/G5_shape_diagnostic/metrics.json": "1e3b363f694a3041a57b99d5757fa1a925023e7c1c79a6945ab83817475045c0",
+    "validation/platen_xy_gradients_20261011_r53/tools/run_shape_refined.py": "5725c189c08126028744040c90c0daf025bb3cf482d4416482da6b599c7b5943"
+  },
+  "failure_policy": "Preserve both original and refined failures. No further automatic FD ladder; diagnose and report if this bounded attempt fails.",
+  "status_fields": {
+    "step1": "passed",
+    "step2": "passed",
+    "step2_reverse": "passed",
+    "step2_interface": "passed",
+    "step3": "in_progress",
+    "step4": "gated_not_started",
+    "shape_geometry": "passed",
+    "new_reverse_AD": true,
+    "G5_shape": "not_passed",
+    "shape_full_path": "not_passed",
+    "shape_refined": "running",
+    "original_shape_force_gate": "not_passed"
+  },
+  "frozen_utc": "2026-10-11T17:28:43.511415+00:00",
+  "reason": "Original FD crosses narrow closest-triangle transition zones. Geometry-only slopes converge at 1e-7; saved-state force resolution check passes. This is one bounded targeted diagnostic, not a tolerance change.",
+  "reused_AD": "G5_shape/AD/shape",
+  "new_complete_dynamic_paths": 4,
+  "new_JVP_paths": 0,
+  "analysis_cost_note": "Existing AD cost in shared analyzer is reused historical cost, not additional computation"
+}

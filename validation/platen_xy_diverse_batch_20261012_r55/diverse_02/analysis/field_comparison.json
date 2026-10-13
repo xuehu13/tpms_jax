@@ -1,0 +1,157 @@
+{
+  "scope": "JAX Q2 interpolated midsurface vs Abaqus time-interpolated output fields; not a new equilibrium solution or absence-of-self-contact proof.",
+  "states": [
+    {
+      "target_pct": 5,
+      "time_s": 0.001438078491525672,
+      "Abaqus_interpolation_bracket_s": [
+        0.0014002911048009992,
+        0.0014502366539090872
+      ],
+      "displacement_RMS_mm": 0.04219984021265184,
+      "relative_displacement_RMS": 0.09017827865173801,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.001990661213788527,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.03883017819885077,
+          -0.39601112360605467
+        ],
+        [
+          10.038816947073508,
+          11.428624055520604
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.0009864195190862717,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.03997796035312642,
+          -0.42267849693991016
+        ],
+        [
+          10.04005442654754,
+          11.491189983261954
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.14092258428317095,
+        "0.5": 0.12248545816857792
+      }
+    },
+    {
+      "target_pct": 10,
+      "time_s": 0.0020011926628335044,
+      "Abaqus_interpolation_bracket_s": [
+        0.0020002492237836123,
+        0.0020502284169197083
+      ],
+      "displacement_RMS_mm": 0.043634024840333026,
+      "relative_displacement_RMS": 0.04897578587738787,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.0022886997445592527,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.05810095207913101,
+          -0.90059539281297
+        ],
+        [
+          10.05808209382719,
+          11.466445251780954
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.001474285719959667,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.06563571415771527,
+          -0.9136731324413756
+        ],
+        [
+          10.065513033351207,
+          11.45889203907193
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.22798455459691347,
+        "0.5": 0.19491017719974835
+      }
+    },
+    {
+      "target_pct": 15,
+      "time_s": 0.002564230232979257,
+      "Abaqus_interpolation_bracket_s": [
+        0.0025502454955130816,
+        0.002600198844447732
+      ],
+      "displacement_RMS_mm": 0.060549596252503085,
+      "relative_displacement_RMS": 0.053326864960911956,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.0014038095616208124,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.06721416112126284,
+          -0.925704781790317
+        ],
+        [
+          10.067218231503613,
+          12.232100962844022
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.001064404227990908,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.06447726999371876,
+          -0.9110828331657606
+        ],
+        [
+          10.064630474232848,
+          12.298985172073529
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.25602747727098146,
+        "0.5": 0.21782885200727248
+      }
+    },
+    {
+      "target_pct": 20,
+      "time_s": 0.004001876082334775,
+      "Abaqus_interpolation_bracket_s": [
+        0.004000083543360233,
+        0.004050029907375574
+      ],
+      "displacement_RMS_mm": 0.16145421660042242,
+      "relative_displacement_RMS": 0.10752614130211624,
+      "JAX_all_midsurface_outside_platens_max_mm": 0.0029832348409814854,
+      "JAX_midsurface_xy_bounds_mm": [
+        [
+          -0.06840316500148931,
+          -1.246319087684705
+        ],
+        [
+          10.06836861236348,
+          12.53354726384557
+        ]
+      ],
+      "JAX_within_Abaqus_platen_footprint": true,
+      "Abaqus_all_midsurface_outside_platens_max_mm": 0.0011223514638167842,
+      "Abaqus_midsurface_xy_bounds_mm": [
+        [
+          -0.057773032040119264,
+          -1.2460954744496464
+        ],
+        [
+          10.057388341886771,
+          12.657578647539562
+        ]
+      ],
+      "Abaqus_within_Abaqus_platen_footprint": true,
+      "JAX_finite_width_cut_face_outside_platen_max_mm": {
+        "0.01": 0.27398128211006956,
+        "0.5": 0.23055961711771644
+      }
+    }
+  ]
+}

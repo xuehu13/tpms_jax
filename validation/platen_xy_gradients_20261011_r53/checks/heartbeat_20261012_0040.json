@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-11T16:40:59.6259998Z",
+  "automation_id": "tpms",
+  "stage": "G5_shape_running",
+  "verified_process_id": 911523,
+  "completed_cases": [
+    "G5_shape/AD/shape",
+    "G5_shape/FD/a_plus_h",
+    "G5_shape/FD/a_minus_h",
+    "G5_shape/FD/a_plus_half"
+  ],
+  "active_case": "G5_shape/FD/a_minus_half",
+  "active_steps": 14336,
+  "total_steps": 24789,
+  "active_compression": 0.012828457280267175,
+  "active_wall_minutes": 10.120976185798645,
+  "sampled_current_required_positive_J": 0.972076871665149,
+  "active_protocol_protected_sources_unchanged": true,
+  "new_FE_submissions": 0,
+  "full_shape_gradient_validated": false,
+  "next_action": "Finish existing last FD path; wrapper analyzes and saves full two-level result; full VJP remains gated"
+}

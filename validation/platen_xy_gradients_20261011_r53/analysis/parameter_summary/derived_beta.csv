@@ -1,0 +1,6 @@
+﻿source_phase,objective,gradient_beta,gradient_unit,dimensionless_sensitivity_beta,source_w_verified,independently_FD_validated_beta
+G5_w,loading_work,-0.0001846788221247412,N mm^2,-0.03382147397139357,True,False
+G10_w,loading_work,-0.0008089481775139945,N mm^2,-0.040482840399962125,True,False
+G10_w,terminal_upper_force,-0.0017593721816926624,N mm,-0.048263667180886254,True,False
+G12_w,loading_work,-0.0012123498600594604,N mm^2,-0.04368617306401408,True,False
+G12_w,terminal_upper_force,-0.0023320550733343295,N mm,-0.05675842235345616,False,False

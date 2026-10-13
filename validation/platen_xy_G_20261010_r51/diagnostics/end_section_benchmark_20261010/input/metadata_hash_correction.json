@@ -1,0 +1,10 @@
+{
+  "cap": {
+    "old_stale_lowercase_hash": "9da45c977e0be433879d84a9b4adb05699266f78010e113c9ae8770ccdc06428",
+    "actual_hash": "e6afecf752cd61fd45f8c4f8f732e7628b64488ab3f0998088ca3690ae505c26"
+  },
+  "rim": {
+    "old_stale_lowercase_hash": "d632d6038c5a5ccba084dd84c40fa466c533cf7a634cf4d63f94be8bcb31e839",
+    "actual_hash": "fb54c98bc492a0a0906c0bc1524f7f27dce9c96bab1c76f8d0638f25372bd2ba"
+  }
+}

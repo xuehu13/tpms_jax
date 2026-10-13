@@ -1,0 +1,53 @@
+{
+  "scope": "G complete0-to-about12pct interface-width total derivative; loading work primary, terminal force auxiliary",
+  "passed": true,
+  "actual_compression": 0.1199955736248841,
+  "complete_from_zero_design_JVP": true,
+  "full_prefix_state_tangent_reused": true,
+  "objectives": [
+    {
+      "objective": "loading_work",
+      "baseline_value": 2.4390370884164696,
+      "AD": 2.131043927082218,
+      "FD_h": 2.131035961769001,
+      "FD_half": 2.1310395609663857,
+      "AD_FD_relative_error": 2.048819699270471e-06,
+      "FD_halving_relative_difference": 1.6889397318094646e-06,
+      "nearzero": false,
+      "pass_target": true
+    },
+    {
+      "objective": "terminal_upper_force",
+      "baseline_value": 3.611128365000999,
+      "AD": 4.099238978265446,
+      "FD_h": 4.017943498795695,
+      "FD_half": 4.019652245697003,
+      "AD_FD_relative_error": 0.019799407437208025,
+      "FD_halving_relative_difference": 0.00042509819179928566,
+      "nearzero": false,
+      "pass_target": false
+    }
+  ],
+  "steps": 38189,
+  "dt_s": 5.7999300462244876e-08,
+  "additional_case_wall_minutes": {
+    "G12_interface/AD/width": 5.37583399216334,
+    "G12_interface/FD/w_plus_h": 2.777931563059489,
+    "G12_interface/FD/w_minus_h": 2.801154096921285,
+    "G12_interface/FD/w_plus_half": 2.8012998620669047,
+    "G12_interface/FD/w_minus_half": 2.74391614596049
+  },
+  "sampled_min_required_J": 0.7525135967220017,
+  "sampled_min_all_J": -1.2295499486003498,
+  "protected_sources_unchanged": true,
+  "reverse_at_this_endpoint_validated": false,
+  "required_objectives": [
+    "loading_work"
+  ],
+  "parameter": "interface_10_90_mm",
+  "baseline_vs_original_forward": {
+    "max_absolute_force_N": 5.535836613557166e-06,
+    "RMS_force_N": 1.776106049760593e-06,
+    "includes_sample_interpolation": true
+  }
+}

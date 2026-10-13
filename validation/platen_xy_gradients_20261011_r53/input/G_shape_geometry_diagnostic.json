@@ -1,0 +1,35 @@
+{
+  "scope": "Bounded geometry-only one-sided differentiability diagnosis; no new FE paths",
+  "wall_budget_seconds": 900,
+  "geometry_only_fd_steps": [
+    1E-06,
+    1E-07,
+    1E-08
+  ],
+  "new_dynamic_time_steps": 0,
+  "no_acceptance_change": true,
+  "protected_sources": {
+    "validation/canonical_tpms_20261009_r50/G/surface.npz": "f29cee32531216d623f5386439620789117c8c7e1312d2cb3b29f4651f3fa925",
+    "validation/canonical_tpms_20261009_r50/G/gauss_field.npz": "110de55d63508b1f8e504f804fbcae26ec11e93be0caf6ef85f8388b1ae81712",
+    "validation/platen_xy_gradients_20261011_r53/input/design_geometry.npz": "3b37d781bb0b26d949027aebecf2e6ed72515722417dde901ec5d4926bc8aeaa",
+    "validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/rimline_contact.npz": "045ed72593a474952be792773bcc26d3695e84db11f4ba423e6c1d3e2a7b3ffd",
+    "validation/platen_xy_gradients_20261011_r53/tools/design.py": "6a12f9ee8692fc55791551d948426a024eedef3cc529b69f9d735104ab11c1e2",
+    "validation/platen_xy_gradients_20261011_r53/tools/shape.py": "d966f5416ff7f14b21de57a2b1db79eabcba22cd7989c9645e4945fed1bfb2fe",
+    "validation/platen_xy_gradients_20261011_r53/tools/run.py": "ff23d9e14c722951e308535b13595ff3effee0787aac33d0c256c007342518c4",
+    "validation/platen_xy_gradients_20261011_r53/tools/analyze.py": "9996b4099a40cfaae5418d4cbfb30cc1e791302d1125288a9da4477640cb6ce2",
+    "validation/platen_xy_gradients_20261011_r53/input/G_shape/geometry_protocol.json": "66548ea557301b4e0df1a8fa9028eff75ad42f5920a0b3d40432d286dcd7ebde",
+    "validation/platen_xy_gradients_20261011_r53/input/G_shape/queries.npz": "1f133d52e930f10bf530424209c523bc6a431c5c4682788358d642ea622f4208",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/result.json": "63076444e7d468dcf55def0a1d9d74e08cbb31d6068f68408167f1c349bad407",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/final_state.npz": "af4824f75bdb7ffef628dcf6d69216c9509cad9a2322a50f14bead9d3e77c032",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/final_tangent.npz": "c1f74e5b436fc59d723cc839a4786933633caa9180d656751da5351110380394",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_h/result.json": "da46504e60efd7007269c875aa3194ba1bae8be5b6b541bfb92ac685b9a6a54c",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_h/final_state.npz": "5a8d9258b2fab82a11bac4b99093cac16d07eae440145290b71cb317774c90a6",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_h/result.json": "874a5cdf953b51d0733aebc7ec4cb9b0892865ac529e88b9c0d0918d0b241568",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_h/final_state.npz": "fb5559a07a22e4c072f1c04c70c42d0fad5244ad313c93b280d116fdc4d2b9ff",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_half/result.json": "158b03df08ed69b4afb962d7c809a7fb856c7ff03c6585f1c2a0793866c36dae",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_plus_half/final_state.npz": "4961171d2a2018a433d01305ecd398fa9b2000bfeea8e9bf015b633026552823",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_half/result.json": "7eb623e2dedf64d5eb10c0c33fe990597632cfd56754e38a99cdd41d6e84e80a",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/FD/a_minus_half/final_state.npz": "857274ff67afd77ce01fbd319f2403c32081afd40c4550c6ab0ef441ae272b4d"
+  },
+  "frozen_utc": "2026-10-11T17:23:08.6988651Z"
+}

@@ -1,0 +1,11 @@
+﻿phase,additional_minutes,meaning
+G5_t,106.57218761444092,Preparation and five full paths
+G5_w,70.77,Four full FD paths; shares existing reverse evidence
+G10_t,41.06140857140223,New case wall times; reused prefixes excluded
+G12_t,16.46492890516917,New case wall times; reused prefixes excluded
+G10_w,74.6229924082756,New case wall times; reused prefixes excluded
+G12_w,16.50013566017151,New case wall times; reused prefixes excluded
+P5_t,75.28663611809412,New case wall times; reused prefixes excluded
+G5_a_original,104.2223110238711,Five full paths; final original result mtime minus frozen execution start; includes 33.80min JVP
+G5_a_refined,70.54636501073837,Four new full FD paths plus analysis; existing JVP cost excluded
+G5_W_reverse_t_w,90.89342782100042,One actual complete reverse trajectory for t/w

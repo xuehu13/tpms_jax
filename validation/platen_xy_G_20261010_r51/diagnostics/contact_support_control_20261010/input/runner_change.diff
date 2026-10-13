@@ -1,0 +1,20 @@
+--- run_jax_before.py
++++ run_jax.py
+@@ -69,7 +69,16 @@
+         write(D/'checks/algebra_contact.json',checks);assert checks['pass'],checks
+     dt,bound=estimate_initial_dt(ex)
+     state=ex.initial_state();advance=ex.advance_block();end=cfg['load_time_s']+cfg['hold_time_s']
+-    steps=math.ceil(end/dt);dt=end/steps;initial_dt=dt
++    steps=math.ceil(end/dt)
++    if 'diagnostic_fixed_steps' in cfg:
++        requested_steps=int(cfg['diagnostic_fixed_steps'])
++        requested_dt=end/requested_steps
++        if requested_steps<=0 or requested_dt>dt*(1+1e-10):
++            write(out/'admission_failure.json',{'stage':'stopped_before_dynamic_advance','requested_dt_s':requested_dt,'allowed_initial_dt_s':dt,'estimate':bound,'wall_seconds':time.monotonic()-start})
++            raise ValueError('Requested diagnostic step exceeds the initial conservative estimate')
++        bound={**bound,'automatic_initial_dt_s':dt,'diagnostic_fixed_steps':requested_steps}
++        steps=requested_steps
++    dt=end/steps;initial_dt=dt
+     diag={**cfg,'dt_initial_s':dt,'projected_inertia_schur':np.asarray(ex.schur).tolist(),
+           'schur_relative_diagonal':np.asarray(ex.schur/ex.d).tolist(),'mass_conservation_error':ex.mass_conservation_error,
+           'stability_estimate':bound,'adapter_sha256':hashlib.sha256(Path(__file__).with_name('platen_model.py').read_bytes()).hexdigest()}

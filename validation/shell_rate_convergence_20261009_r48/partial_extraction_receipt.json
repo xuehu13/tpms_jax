@@ -1,0 +1,56 @@
+{
+  "new_shell_jobs": 0,
+  "new_JAX_forward": 0,
+  "AD": 0,
+  "read_only_ODB": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\shell_rate_convergence_20261009_r48_T0p080000\\thin_shell.odb",
+  "commands": [
+    {
+      "command": [
+        "cmd",
+        "/d",
+        "/c",
+        "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+        "python",
+        "extract_partial.py",
+        "thin_shell.odb",
+        "input.json",
+        "partial_shell.json"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.1031683000037447
+    },
+    {
+      "command": [
+        "cmd",
+        "/d",
+        "/c",
+        "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+        "python",
+        "extract_shell_modes.py",
+        "thin_shell.odb",
+        "input.json",
+        "shell_frames"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.0102899000048637
+    }
+  ],
+  "history_compression": 0.1986286997795105,
+  "history_time": 0.07260020077228546,
+  "field_compression": 0.1986286997795105,
+  "field_time": 0.07260020077228546,
+  "checks": {
+    "complete": false,
+    "finite": true,
+    "target_compression": false,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": true,
+    "artificial_energy_le_5pct_work": false
+  },
+  "wall_seconds": 4.1349873542785645,
+  "scope": "Budget-stopped actual history; no full loading/hold invented"
+}

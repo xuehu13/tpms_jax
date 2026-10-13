@@ -1,0 +1,22 @@
+{
+  "source_before.json": {
+    "count": 9,
+    "changed": []
+  },
+  "r50_before.json": {
+    "count": 156,
+    "changed": []
+  },
+  "formal_and_native_INP_match": true,
+  "jax_adapter_unchanged_since_dynamic_launch": true,
+  "r51_tools_sha256": {
+    "extract_abaqus.py": "b829d02b316e8ba86530043f8e028fea4b262688816ed3eaa122a4df65c73e8d",
+    "run_abaqus.py": "d18d9a44530d88d41b05017dae08484985032d0c983ce473ecf1bc835e420e39",
+    "run_jax.py": "7b94be1fb445fbc620a7a8f812e8b8c498cc36be8b4501ed6db306ae6d96985b",
+    "platen_model.py": "d5ce4bc214e38dc1b31e7d2b8d1dc748437684b6d18a9c24f068476e0bb7d1f9",
+    "prepare.py": "68e1f4c4d35fa0dad5de1c6630f08335cfcb32cc3f0f9757625686fa2a81f150",
+    "analyze.py": "a55dc66c65df44cb17884e9f34387b49ee3f4d8ca01f6cd5c89184657a4b258d"
+  },
+  "active_jobs": [],
+  "commit_push": false
+}
