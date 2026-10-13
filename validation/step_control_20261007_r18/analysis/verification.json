@@ -1,0 +1,14 @@
+{
+  "frozen_files_checked": 174,
+  "frozen_files_changed": [],
+  "other_ExplicitXYZ_methods_AST_unchanged": true,
+  "default_block_AST_exactly_unchanged_after_removing_optional_runtime_dt": true,
+  "accepted_endpoint_frequency_limits_passed": true,
+  "actual_terminal_state_dt_and_time_match_path": true,
+  "scientific_results_sha256": {
+    "validation/step_control_20261007_r18/controlled_forward/last_valid_field.npz": "fa4743116736fa32e4c3055858e1b3304018aacc6ab7a1f8bb2863021d0d9e1a",
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": "f0251631d3c674acc0c598a3359b8e47d7927810ec1e0795af9bf89a68db7f57",
+    "validation/step_control_20261007_r18/controlled_forward/stability_path.json": "a389443dea665b1bdb9ccddae64ff839baa51e32b291626c783530896f743f8b",
+    "validation/step_control_20261007_r18/analysis/controlled_analysis.json": "0c968ea3e08ba08ff27752d03220d8fdffdc50c8939dc8e37124c1c2ddfef57c"
+  }
+}

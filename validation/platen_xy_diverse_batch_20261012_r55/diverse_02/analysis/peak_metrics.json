@@ -1,0 +1,172 @@
+{
+  "scope": "diverse_02 simplified midsurface-end platen20pct; not finite-width/self-contact or AD certification",
+  "paired_complete20_and_hold": true,
+  "common_compression_max": 0.2,
+  "common_time_s": 0.004,
+  "normalizer_N": 2.774116039276123,
+  "normalizer_scope": "new shell full loading peak",
+  "raw_global_peak": {
+    "JAX": {
+      "compression_percent": 4.686727485464,
+      "force_N": 2.874859063317263,
+      "time_s": 0.001397852519734797,
+      "at_loading_endpoint": false,
+      "sample_time_spacing_s_min_max": [
+        4.0572393101429016e-07,
+        3.3521643159131753e-06
+      ],
+      "captured_interior_global_peak": true
+    },
+    "Abaqus": {
+      "compression_percent": 4.549655914306641,
+      "force_N": 2.774116039276123,
+      "time_s": 0.0013800658052787185,
+      "at_loading_endpoint": false,
+      "sample_time_spacing_s_min_max": [
+        1.7816200852394104e-06,
+        2.08395067602396e-06
+      ],
+      "captured_interior_global_peak": true
+    }
+  },
+  "smoothed_peaks": {
+    "JAX": {
+      "smoothing_points": 25,
+      "approx_width_percentage_points": 0.5,
+      "prominence_threshold_N": 0.2841685118593842,
+      "peaks": [
+        {
+          "compression_percent": 4.66,
+          "force_N": 2.841685118593842,
+          "prominence_N": 1.86969973009024
+        },
+        {
+          "compression_percent": 7.28,
+          "force_N": 1.7662984861610647,
+          "prominence_N": 0.45813659018818487
+        },
+        {
+          "compression_percent": 9.9,
+          "force_N": 1.9197559044722923,
+          "prominence_N": 0.7868269655378954
+        },
+        {
+          "compression_percent": 12.660000000000002,
+          "force_N": 1.8708420173864717,
+          "prominence_N": 0.6467334531647391
+        },
+        {
+          "compression_percent": 14.48,
+          "force_N": 2.637068858967556,
+          "prominence_N": 1.5772409385400743
+        },
+        {
+          "compression_percent": 19.2,
+          "force_N": 1.9916395220123906,
+          "prominence_N": 0.459079597588109
+        }
+      ],
+      "first_prominent_interior_peak": {
+        "compression_percent": 4.66,
+        "force_N": 2.841685118593842,
+        "prominence_N": 1.86969973009024
+      }
+    },
+    "Abaqus": {
+      "smoothing_points": 25,
+      "approx_width_percentage_points": 0.5,
+      "prominence_threshold_N": 0.27400123993044473,
+      "peaks": [
+        {
+          "compression_percent": 4.54,
+          "force_N": 2.740012399304447,
+          "prominence_N": 2.0813279059329837
+        },
+        {
+          "compression_percent": 6.660000000000001,
+          "force_N": 1.464324254004508,
+          "prominence_N": 0.48963405987170483
+        },
+        {
+          "compression_percent": 9.580000000000002,
+          "force_N": 1.851739461063637,
+          "prominence_N": 1.1757735391507862
+        },
+        {
+          "compression_percent": 14.719999999999999,
+          "force_N": 2.4854183758440684,
+          "prominence_N": 1.7889607985639726
+        }
+      ],
+      "first_prominent_interior_peak": {
+        "compression_percent": 4.54,
+        "force_N": 2.740012399304447,
+        "prominence_N": 2.0813279059329837
+      }
+    }
+  },
+  "primary_curve_RMS_over_shell_peak": 0.15010304791977808,
+  "peak_rules": {
+    "primary": "Raw global maximum upper-platen compressive force in actual loading window; report force, engineering compression and time",
+    "location_difference": "JAX minus new Abaqus in compression percentage points; report raw sample spacing",
+    "diagnostic_smoothing": "Centered moving mean on fixed 1001-point compression grid: width25 samples (~0.5 percentage points); no time warping",
+    "first_prominent_peak": "On smoothed curve, scipy find_peaks prominence >=10% of its own full-loading absolute peak and distance>=25 samples; list all qualifying peaks, compare first if both have one",
+    "endpoint_rule": "If global maximum is at end or no qualifying interior peak, mark no captured interior peak rather than claim a buckling peak",
+    "incomplete_rule": "Compare common achieved window only; no full20 acceptance, no unseen peak extrapolation"
+  },
+  "no_new_FEM_AD_FD": true,
+  "raw_global_peak_location_difference_percentage_points": 0.13707157115735935,
+  "raw_global_peak_force_relative_bias": 0.03631536050216111,
+  "first_prominent_peak_difference_percentage_points": 0.1200000000000001,
+  "loading_work_N_mm": {
+    "JAX": 3.4325983506040236,
+    "Abaqus": 3.045193625260076
+  },
+  "loading_work_relative_bias": 0.12721842122957328,
+  "point_forces": [
+    {
+      "compression_percent": 2.0,
+      "JAX_N": 2.0932212089490827,
+      "Abaqus_N": 2.145686017344072,
+      "relative_bias": -0.02445129807945068
+    },
+    {
+      "compression_percent": 5.0,
+      "JAX_N": 2.6971083031466483,
+      "Abaqus_N": 2.3469278396455415,
+      "relative_bias": 0.14920802318063386
+    },
+    {
+      "compression_percent": 10.0,
+      "JAX_N": 1.8966442609130916,
+      "Abaqus_N": 1.6180057725099344,
+      "relative_bias": 0.1722110595260231
+    },
+    {
+      "compression_percent": 15.0,
+      "JAX_N": 1.7453433643755278,
+      "Abaqus_N": 2.1070871833045,
+      "relative_bias": -0.1716795687407946
+    },
+    {
+      "compression_percent": 20.0,
+      "JAX_N": 1.7615284773789406,
+      "Abaqus_N": 1.3137716185058355,
+      "relative_bias": 0.3408178807990563
+    }
+  ],
+  "hold_mean_N": {
+    "JAX": 1.9812052942013427,
+    "Abaqus": 1.5218397233515448
+  },
+  "hold_mean_relative_bias": 0.30184885031003006,
+  "three_working_targets_within10pct": false,
+  "JAX_terminal_time_s": 0.004199999999999998,
+  "JAX_complete": true,
+  "Abaqus_terminal_time_s": 0.00419999985024333,
+  "Abaqus_complete": true,
+  "source_sha256": {
+    "JAX": "7575172523c1237f04c7f4d92775829be4d5c1ca90911a4afc95659a69a5ba50",
+    "Abaqus": "9a19d7a34b8e75367221307824132007ca031e6ed157b89ba118d09d0472747e"
+  }
+}

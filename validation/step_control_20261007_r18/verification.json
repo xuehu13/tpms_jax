@@ -1,0 +1,16 @@
+{
+  "old_frozen_files_checked": 174,
+  "old_frozen_files_changed": 0,
+  "shared_core_source_and_environment_unchanged": true,
+  "live_entry_equals_forward_source_hash": true,
+  "default_block_AST_equivalence_verified": true,
+  "related_checks": "26 passed",
+  "reading_plan_mirrors_identical": true,
+  "no_full_20pct_result": true,
+  "forward_process_ended": true,
+  "git_diff_check_passed": true,
+  "current_jobs": 0,
+  "new_design_AD": 0,
+  "new_abaqus": 0,
+  "scope": "Closure/provenance only; does not certify nonlinear trajectory, accuracy or design gradients."
+}

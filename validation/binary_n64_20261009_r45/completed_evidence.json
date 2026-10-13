@@ -1,0 +1,81 @@
+{
+  "N": 64,
+  "load_time_seconds": 0.001,
+  "captured_N64_peak": null,
+  "observed_loading_maximum": {
+    "compression": 0.13587668519974092,
+    "force_N": 6.123711452351463,
+    "time": 0.0005981644966550156
+  },
+  "matched_shell_peak": {
+    "compression": 0.12786719799041749,
+    "force_N": 5.4987382888793945,
+    "time": 0.0005754500743933022
+  },
+  "last_accepted": {
+    "time": 0.0005981644966550156,
+    "compression": 0.13587668519974092,
+    "Fz_N": -6.123711452351463,
+    "internal_macro_Fz_N": -6.170626144367181,
+    "energy_N_mm": 4.363655283174232,
+    "KE_N_mm": 0.07536544223351663,
+    "KE_over_U": 0.017271172295418788,
+    "J_finite": true,
+    "J_min": -7.515745889278677,
+    "invalid_material_points": 0,
+    "negative_J_points": 27103,
+    "required_positive_J_min": 0.20572192055270552,
+    "required_positive_J_points": 936886,
+    "dt_seconds": 1.29251609701462e-08
+  },
+  "accepted_steps": 10128,
+  "accepted_rows": 340,
+  "rejected_blocks": 0,
+  "original_solver_status": "TimeoutError",
+  "stop_is_numerical_failure": false,
+  "total_wall_seconds": 7102.500056266785,
+  "N64_wall_seconds": 6199.38330411911,
+  "body_seconds": 5567.336130364914,
+  "bound_seconds": 2057.649527831818,
+  "prior_scientific_files_unchanged": true,
+  "prior_files_count": 249,
+  "stopped_zero_state_files_unchanged": true,
+  "new_N32_runs": 0,
+  "full_20pct_completed": false,
+  "hold_performed": false,
+  "no_AD": true,
+  "shell_quality_checks_preserved": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "frozen_manifest": "frozen_before.json",
+  "checkpoint_keys": [
+    "q",
+    "vhalf",
+    "time",
+    "dt",
+    "N"
+  ],
+  "production_entry_SHA256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "scientific_artifacts_SHA256": {
+    "peak_N64/accepted_path.json": "2c647ba5529cde75852fd39d5b5d9b95ad09a1744ec09f3185476365cbc98ceb",
+    "peak_N64/stability_path.json": "481cb68e7bc2bd69e20141750b355bdb1d7ca93987beb61504b1523c4da121d8",
+    "peak_N64/input.json": "15e58879d6be69b15ae322904927697e303f9511faa94976ec535b2df535588f",
+    "peak_N64/failure.json": "1aa3dc8fc79030fa52525ba940cba796ad0013d7364b086e95df303fdf70b60b",
+    "peak_N64/last_valid_field.npz": "25aa6c83912536598d0d8371c76693d49faca0c723621f2b72b2254c48c8c7dc",
+    "peak_N64_receipt.json": "cae5b6eb23f2748320a4e7957ec11bd816f52548da98b9e6b7ea5818c18bbcdc",
+    "peak_monitor_receipt.json": "86416429e0079c86a58d869eb114ec349f4edbd5727f02cbd9a6a0539034040c",
+    "abaqus/explicit_T0p001000/results/shell.json": "df82cac8d63b1bc3344e7ef65f7ce46857f95234af686f9199a8d637b50900a8"
+  },
+  "interpretation": "Observed maximum is the still-rising endpoint, NOT a captured N64 peak. The 0.80095pp is an endpoint-vs-shell-peak comparison only. No pure mesh cause or full20 accuracy claim.",
+  "monitor_recipe_scope": "Attach-only source; reads prior monitor receipt retained locally, does not launch a job",
+  "input_template_note": "Original input_N64.json retains inherited historical fields; actual executed configuration is peak_N64/input.json plus protocol/runtime receipt. No posthoc input editing."
+}

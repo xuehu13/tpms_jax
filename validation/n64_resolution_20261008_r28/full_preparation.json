@@ -1,0 +1,28 @@
+{
+  "adapter_ready": true,
+  "full_started": true,
+  "selected_budget_pending": false,
+  "no_additional_full_AD_Abaqus_or_physics_change": true,
+  "tested_storage_and_probe_functions_AST_unchanged": [
+    "compact_geometry",
+    "compact_constructor",
+    "make_compact",
+    "equivalence",
+    "resource_probe",
+    "args"
+  ],
+  "adapter_sha256": "931407b46b6025a897eff1d0304013e9272019aa33a01a39f10c6a9ab70fc2e2",
+  "tested_adapter_sha256": "8a49f67179fcc365b1b82f9c0d2afea0c305f0fd83eb24d71776fce5077acc4b",
+  "command_template": ".pixi/envs/default/bin/python validation/n64_resolution_20261008_r28/run.py full --budget-seconds 10800",
+  "requirement": "launch_decision.json must record selected user budget before this single full attempt; no default budget or auto extension",
+  "user_total_budget_seconds": 10800.0,
+  "load_time_seconds": 0.002,
+  "hold_time_seconds": 0.0002,
+  "matched_reference_required": true,
+  "execution_source_sha256": {
+    "run.py": "931407b46b6025a897eff1d0304013e9272019aa33a01a39f10c6a9ab70fc2e2",
+    "run_pipeline.py": "b3c934f6c547f6e598712526e36d2ed88f5885e4b804f4e42b48bfd39a18f28b",
+    "analyze.py": "af90ff5a87953927da1c0bd6c37a369118c24b00d9e8a0c1a0021aa8b4cb94f5"
+  },
+  "scope": "One matched .002s shell completed, independent N64 running under total deadline"
+}

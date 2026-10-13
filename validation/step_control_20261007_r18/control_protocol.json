@@ -1,0 +1,15 @@
+{
+  "safety": 0.8,
+  "only_decrease_dt": true,
+  "ordinary_chunk": 128,
+  "sensitive_chunk": 16,
+  "sensitive_trigger_dt_fraction": 0.5,
+  "sensitive_trigger_required_J": 0.1,
+  "end_frequency_limit": 2.0,
+  "minimum_dt_fraction": 0.0625,
+  "body_budget_seconds": 1500,
+  "quality_stop_when_irrecoverable_high_KE_time": 0.0002,
+  "target_time_seconds": 0.0044,
+  "new_abaqus_jobs": 0,
+  "new_design_AD_jobs": 0
+}

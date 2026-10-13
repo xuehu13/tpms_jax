@@ -1,0 +1,12 @@
+{
+  "prior_protected_files": 193,
+  "changed_prior_files": [],
+  "two_current_experiment_tools_in_original_snapshot_excluded_from_prior_count": [
+    "validation/platen_xy_G_20261010_r51/tools/extract_cap_arm_probe.py",
+    "validation/platen_xy_G_20261010_r51/tools/prepare_cap_arm.py"
+  ],
+  "extract_probe_sign_fix_receipt": "input/probe_extraction_correction.json",
+  "production_changed": false,
+  "original_G_JAX_path_reused_unchanged": true,
+  "active_jobs": []
+}

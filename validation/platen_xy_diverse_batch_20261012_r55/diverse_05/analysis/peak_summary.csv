@@ -1,0 +1,9 @@
+solver,peak_definition,compression_percent,force_N,endpoint_flag
+JAX,raw global max,10.900692706352217,4.823185077584211,False
+Abaqus,raw global max,10.770080089569092,4.640503883361816,False
+JAX,moving mean prominent interior peak,10.900052420595085,4.817418282171628,False
+JAX,moving mean prominent interior peak,17.260083007290934,3.7930003388903284,False
+JAX,moving mean prominent interior peak,18.860090702057185,2.868985985789426,False
+Abaqus,moving mean prominent interior peak,10.760051747303038,4.636235444916083,False
+Abaqus,moving mean prominent interior peak,15.100072619356494,2.8153080464954545,False
+Abaqus,moving mean prominent interior peak,17.08008214162973,4.102598980620274,False

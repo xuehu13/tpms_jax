@@ -1,0 +1,44 @@
+{
+  "status": "proposed_not_submitted",
+  "sole_plan": "docs/RESEARCH_PLAN.md",
+  "step_status": [
+    "pending_implementation_gate",
+    "conditional_pending",
+    "conditional_pending",
+    "conditional_pending"
+  ],
+  "same_model": [
+    "reference HEX27 Gauss occupancy",
+    "C2 objective_void energy",
+    "HRZ node mass",
+    "XYZ PBC affine inertia",
+    "same time/amplitude",
+    "separate internal and dynamic force"
+  ],
+  "implementation_targets": {
+    "energy_force_relative": 1e-06,
+    "mass_relative": 1e-10,
+    "small_dynamic_relative": 0.001
+  },
+  "forward_screen_targets": {
+    "curve_normalized": 0.1,
+    "work_relative": 0.1,
+    "peak_force_relative": 0.1,
+    "peak_compression_percentage_points": 0.5
+  },
+  "targets_not_physical_certification": true,
+  "common_JAX_range_upper": 0.175363,
+  "fallback": "existing shell U/UR finite fold direction transfer only if bridge gate not feasible",
+  "no_new_design_AD_or_training": true,
+  "no_spectrum_retry": true,
+  "sampling": {
+    "compression_min": 0.001,
+    "compression_max": 0.175363,
+    "uniform_points": 1000,
+    "curve": "RMS dynamic-force difference / common-interval Abaqus-background peak",
+    "also_report_original_fixed_denominator": true,
+    "work": "macro-force displacement integral on same interval",
+    "endpoint_maximum_not_buckling_event": true
+  },
+  "plan_sha256": "ca4fa7e3c47556c644202e59858036d850a36d8870686885cab63d4279a139cf"
+}

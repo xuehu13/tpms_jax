@@ -1,0 +1,35 @@
+{
+  "started_unix": 1791510481.9988356,
+  "new_N32_jobs": 0,
+  "scope": "N64 observed dynamic peak only; no hold, no full20 or AD certificate",
+  "planned_stop": {
+    "reason": "shared_two_hour_budget_internal_guard",
+    "last_accepted": {
+      "time": 0.0005981644966550156,
+      "compression": 0.13587668519974092,
+      "Fz_N": -6.123711452351463,
+      "internal_macro_Fz_N": -6.170626144367181,
+      "energy_N_mm": 4.363655283174232,
+      "KE_N_mm": 0.07536544223351663,
+      "KE_over_U": 0.017271172295418788,
+      "J_finite": true,
+      "J_min": -7.515745889278677,
+      "invalid_material_points": 0,
+      "negative_J_points": 27103,
+      "required_positive_J_min": 0.20572192055270552,
+      "required_positive_J_points": 936886,
+      "dt_seconds": 1.29251609701462e-08
+    },
+    "actual_controller_stop": true
+  },
+  "pid": 149137,
+  "forward_started_unix": 1791510497.6112382,
+  "load_time_seconds": 0.001,
+  "attached_monitor_unix": 1791514975.093472,
+  "monitor_handoff": "monitor_handoff.json",
+  "returncode": 1,
+  "finished_unix": 1791516696.994542,
+  "forward_wall_seconds": 6199.38330411911,
+  "total_elapsed_seconds": 7102.500056266785,
+  "stopped_as_planned": true
+}

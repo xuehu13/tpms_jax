@@ -1,0 +1,6 @@
+{
+  "mass_schur_relative_residual": 2.514272425151364e-16,
+  "contact_virtual_work_relative_error": 3.9438466233039154e-08,
+  "separated_contact_force": 0.0,
+  "pass": true
+}

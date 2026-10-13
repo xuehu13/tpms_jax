@@ -1,0 +1,42 @@
+{
+  "objective": "Isolate r51 G cut-end contact geometry from loading duration at 2%, not re-open historical error sweeps.",
+  "baseline": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/input/protocol.json",
+  "fixed": [
+    "G geometry",
+    "L10 t.5 E10 nu.3",
+    "N32 HEX27 27 Gauss",
+    "eta1e-4 interface .05mm objective_void",
+    "HRZ mass and full XY projected inertia",
+    "XY free ax ay zero macro shear",
+    "no friction self-contact mass scaling or new design AD"
+  ],
+  "contact_diagnostic": {
+    "single_changed_factor": "Contact kinematics and force support moved from occupied finite-width cap points to the nearest existing shell midsurface rim node; integrated cap weights and kn unchanged.",
+    "T_s": 0.001,
+    "hold_s": 0.0002,
+    "target": 0.02,
+    "interpretation": "Artificial zero-width contact diagnostic, not physical finite-thickness platen validation; concentrated contact discretization is changed together with its geometric lever arm."
+  },
+  "rate_diagnostic_if_needed": {
+    "single_changed_factor": "Both codes ramp T changed from1ms to2ms; all contact definitions and hold .2ms unchanged.",
+    "T_s": 0.002,
+    "hold_s": 0.0002,
+    "target": 0.02
+  },
+  "metrics_fixed_before_run": [
+    "loading RMS over original baseline shell 2pct loading maximum .7241182386842194N",
+    "loading RMS over each matching shell loading maximum, both denominators disclosed",
+    "force at1pct and2pct",
+    "last .1ms hold mean top and bottom separately",
+    "work integrated over platen travel",
+    "ax ay",
+    "actual J and energy diagnostics"
+  ],
+  "budgets_seconds": {
+    "jax_each": 2350,
+    "abaqus_each": 1450,
+    "maximum_new_dynamic_jobs": 3
+  },
+  "full20_submitted": false,
+  "new_design_AD": false
+}

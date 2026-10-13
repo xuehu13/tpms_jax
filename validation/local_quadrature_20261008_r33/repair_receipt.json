@@ -1,0 +1,7 @@
+{
+  "reason": "NumPy scalar booleans in baseline JSON checks were not JSON serializable; dense stages had not started.",
+  "change": "Cast two baseline checks to built-in bool. No numerical rule, region, budget or source data changed.",
+  "before_sha256": "e663710b7041fbc8c09f1a530abcd1f07017e0a0aacf2626f28af9453d5ad2e5",
+  "after_sha256": "0a9acc5ff000f820f30b4c7f0adc2748129c9699b7a23b25b6cded4778543a5f",
+  "failure_log_sha256": "e98dd3f72547de61bf35d8556abc6177de5b5bc18e022f47b3966f233879eb0a"
+}

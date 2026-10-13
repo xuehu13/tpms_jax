@@ -1,0 +1,13 @@
+{
+  "formal_directory": "/home/xuehu/projects/tpms_jax/validation/simulation_atlas_20261009_r47",
+  "reading_directory": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/r47_simulation_atlas_20261009",
+  "original_frozen_records": 349,
+  "unchanged": true,
+  "changed": [],
+  "new_FEM_Abaqus_AD": 0,
+  "copied_top_level_files": 71,
+  "artifact_copy_hashes_match": true,
+  "production_source_edits": 0,
+  "research_plan_edits": 0,
+  "Git_commit_push_merge": false
+}

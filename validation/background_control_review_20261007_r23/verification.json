@@ -1,0 +1,83 @@
+{
+  "frozen_scientific_files_unchanged": 535,
+  "shared_programs_unchanged": 4,
+  "mirror_documents": [
+    {
+      "windows": "RESEARCH_BACKGROUND.md",
+      "formal": "docs/RESEARCH_BACKGROUND.md",
+      "windows_sha256": "93e320a74dced075b5d7018da327a4f22c6dbf2f6f4fd53b8349623cac0eba84",
+      "formal_sha256": "2bdbaabf081647adf46326d905c5bdcdbf443b3447bf9cdec723e138bde208b3",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "RESEARCH_PLAN.md",
+      "formal": "docs/RESEARCH_PLAN.md",
+      "windows_sha256": "0d0549a4da472f45d26ddae0c6e449ea7cd7cb985802ea4b07f9f5d3fbd7810a",
+      "formal_sha256": "ca4fa7e3c47556c644202e59858036d850a36d8870686885cab63d4279a139cf",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "PROJECT_OVERVIEW.md",
+      "formal": "docs/RESEARCH_STATUS.md",
+      "windows_sha256": "7f88a744333d56ef54a0be63c5f6069e9087714fbd15e7cee6013b4630a9b8f5",
+      "formal_sha256": "7f88a744333d56ef54a0be63c5f6069e9087714fbd15e7cee6013b4630a9b8f5",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "FILE_MAP.md",
+      "formal": "docs/FILE_MAP.md",
+      "windows_sha256": "87057e2c1a62e6c851fc500802ba3437c4a9e9e320fe8205d5264f598904d79e",
+      "formal_sha256": "364d4c556bf4f19a54e9f70ebbcb0c6c3e625304f37ffb1c6599a0e33941711e",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "TPMS_RESEARCH_REVIEW.md",
+      "formal": "docs/TPMS_RESEARCH_REVIEW.md",
+      "windows_sha256": "a9619eba795942dba8fc79351dce7d5ef38571c16802943248159301debc9044",
+      "formal_sha256": "688cdaffb7c1ae6ebbf0dd21f5750e7aed1c2d1f69eb635e571bb5d5e48cce8c",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "MECHANISM_ANALYSIS.md",
+      "formal": "docs/MECHANISM_ANALYSIS.md",
+      "windows_sha256": "9146e850edb3fcef5fc7548840e8985dbba72d0d3effe65bb409e7817e020541",
+      "formal_sha256": "9146e850edb3fcef5fc7548840e8985dbba72d0d3effe65bb409e7817e020541",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "PAPER_ROUTE.md",
+      "formal": "docs/PAPER_ROUTE.md",
+      "windows_sha256": "4c3038111045a24ae3ef02d840652bc444e58733f06a4e085c0086a0290073fd",
+      "formal_sha256": "4c3038111045a24ae3ef02d840652bc444e58733f06a4e085c0086a0290073fd",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "START_HERE.md",
+      "formal": "README.md",
+      "windows_sha256": "01bc75a83ebda2127098581d21fe1b9f421a66c771f02059a504f056a6fa7fa6",
+      "formal_sha256": "5ee59f5b474d0e76000d4e9f16c485d58e2846c5f80ef3c68631a315e34a24f4",
+      "equivalent_after_document_link_mapping": true
+    },
+    {
+      "windows": "AGENTS.md",
+      "formal": "AGENTS.md",
+      "windows_sha256": "75afaeb537adcb643916baf80c0c8392d676fc7f7a5ff1ccba78097b9837762d",
+      "formal_sha256": "c55d078b4b24e4ad580f101f46a6d3d16f3f64438d029444ce0c3c1a4afd0f00",
+      "equivalent_after_document_link_mapping": true
+    }
+  ],
+  "broken_links": [],
+  "four_steps_exactly": true,
+  "stale_linear_and_rate_todo_removed": true,
+  "PDF_visual_pages": [
+    5,
+    6,
+    7
+  ],
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "new_design_AD": 0,
+  "git_commit_push_merge": false,
+  "archived_tool_files": 11,
+  "formal_repository_preexisting_uncommitted_changes_preserved": true
+}

@@ -1,0 +1,28 @@
+{
+  "full_attempt_authorized": true,
+  "user_instruction": "不超过3个小时；加载时长可试，自己判断",
+  "load_time_seconds": 0.002,
+  "hold_time_seconds": 0.0002,
+  "body_budget_seconds": 10800.0,
+  "total_wall_budget_seconds": 10800.0,
+  "deadline_unix": 1791439692.070886,
+  "primary_reference_required": "/home/xuehu/projects/tpms_jax/validation/n64_resolution_20261008_r28/abaqus/explicit_T0p002",
+  "start_deadline_when": "immediately before matched shell launch",
+  "no_other_physical_parameter_changes": true,
+  "no_auto_retry_or_extension": true,
+  "started_unix": 1791428892.070886,
+  "matched_shell_ready": true,
+  "matched_shell_peak": {
+    "time": 0.0011178902350366116,
+    "compression": 0.12190046310424804,
+    "Fz_N": -5.340913772583008,
+    "ALLIE": 3.385469675064087,
+    "ALLSE": 3.374373435974121,
+    "ALLKE": 0.06343813240528107,
+    "ALLAE": 0.011096117086708546,
+    "ALLVD": 0.0010875542648136616,
+    "ALLWK": 3.415039539337158,
+    "ETOTAL": 0.03495583310723305
+  },
+  "matched_shell_sha256": "87ee51ef9480c9209e7c52acc46fe8c2eb30d41e3133564223df296cb50ec127"
+}

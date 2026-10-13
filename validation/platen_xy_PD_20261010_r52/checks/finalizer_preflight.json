@@ -1,0 +1,6 @@
+{
+  "source_sha256": "c3b84ab98cb9a61e3ae0c92065173fda76b5c4c02d3df66eb0ebb97185d925b8",
+  "syntax_checked": true,
+  "solver_calls": false,
+  "purpose": "Postprocess actual complete/partial paths only; publish combined G/P/D chart and update status after batch."
+}

@@ -1,0 +1,15 @@
+{
+  "phase": "G10_interface",
+  "solver_exit_code": 0,
+  "source_at_submission": {
+    "input/G10_interface_protocol.json": "2e319fa1044da3e2c08b01c20434face384c5d48da1f330651ff26f52c20020d",
+    "tools/reverse.py": "3ec3755983bbed970e7b66f89ebaf5760734691ef5006ec732253d8cd403e5e3",
+    "tools/run.py": "87020e40f5c4a917272aa48e911a92c1d395785b1b12e57f1787b521b39bf5ca",
+    "tools/design.py": "6a12f9ee8692fc55791551d948426a024eedef3cc529b69f9d735104ab11c1e2",
+    "tools/prepare.py": "0a7596a356c9935c6127a945bb435d45e830148016b6dc0fde906eb00808e7a7",
+    "tools/analyze.py": "8fe34fd7f8e62f01acb379310abbc2c38100a198c6aed56ae1d5651680b1804b"
+  },
+  "new_FE_submissions": 1,
+  "analysis_exit_code": 0,
+  "passed": true
+}

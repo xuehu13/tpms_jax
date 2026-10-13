@@ -1,75 +1,86 @@
-# 文件地图：当前入口与冻结证据
+# 文件地图
 
-更新2026-10-06。正式程序仅WSL `/home/xuehu/projects/tpms_jax`，Windows是阅读/历史。详细旧地图已保存在`history/before_research_synthesis_20261006/FILE_MAP.md`，本页只列阅读及定位所需路径。
+文件状态核对2026-10-14，科研结果截至10月13日。正式工程R=/home/xuehu/projects/tpms_jax；W为当前Windows任务目录；A=E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus。无新计算队列，N32主线HEX27。原科学文件保持，旧下一步不自动恢复。
 
-## 当前阅读入口
+## 2026-10-14文件状态整理
 
-| 文件 | 唯一用途；正式仓库对应 |
-| --- | --- |
-| RESEARCH_BACKGROUND.md | 长期问题与边界；docs同名 |
-| RESEARCH_PLAN.md | 新几何迁移唯一四步；第1步完成、第2步目标未过、第3/4步限定诊断与范围收口完成，旧四步只作完成依据；docs同名 |
-| RESEARCH_STATUS.md | 完成/未完成事实；docs/RESEARCH_STATUS.md |
-| TPMS_RESEARCH_REVIEW.md | 当前完整方法、数字解释、进度及可行性；docs同名 |
-| GEOMETRY_TRANSFER_REVIEW.md | r16现有记录第3/4步诊断与范围；validation/geometry_transfer_review_20261006_r16/REVIEW.md |
-| PAPER_ROUTE.md | 文献及实际阅读范围；docs同名 |
-| START_HERE.md、AGENTS.md | 阅读入口与工作约定；README.md、根AGENTS.md |
-| THICKNESS_RANGE_PROGRESS.md | r13匹配0.45/0.55mm完整20%及范围；docs同名 |
-| VOID_CONTINUATION_PROGRESS.md | 最新r12执行细节，冻结原字节；docs同名 |
-| 其余*_PROGRESS.md、*_REPORT.md | 冻结各轮执行证据，历史下一步不是待办；docs同名 |
+- [已有总结的覆盖范围与实验索引](../validation/README.md)：10月7日入门总结、10月9日差异排查、10月7—12日完整报告、10月13日近期梯度总结，均已存在；本次不重复生成报告。
+- `history/organization_status_20261014/before`：本次Windows及正式WSL入口修改前原字节；`archive_manifest_before.json`保留归档文件的原路径、大小和SHA256。
+- `history/organization_status_20261014/artifact_qa`：4个已完成的Word/PPT排版临时目录，共232个文件、约70 MiB；没有删除文件，运行时junction仅保留链接、不遍历其目标。
+- `tmp/`仅保留仍有引用的论文阅读资料及说明；`work/`无活动临时编辑稿。归档路径及恢复方法见同级归档说明，原构建收据里的旧路径按清单追溯。
+- 正式WSL只同步文档和维护收据到R/docs/history/organization_status_20261014，不复制上述232个临时文件；科学源码、输入、结果、状态JSON、检查点、INP/ODB保持原位。
 
-## 正式程序与科学结果
+## 10月13日近期总结与归档
 
-以下路径均相对WSL正式根。维护现有一套FEM，历史入口仍可复现；此次不做无依据的代码搬迁或重构。
+- 近期Word总结（本机成品：`W/output/TPMS近期研究与梯度验证阶段总结_20261013.docx`）：r53至r58的最近进展，重点为真实系数0.5%和10%梯度、瞬时力失败及成本。
+- output/gradient_summary_20261013：唯一构建源、仅新增派生图、原图来源清单与排版检查记录。
+- r57正式R/validation/equation_coefficients_20261012_r57，阅读output/r57_equation_coefficients_20261012；0.5%已完成。
+- r58正式R/validation/equation_coefficients_10pct_20261013_r58，阅读output/r58_equation_coefficients_10pct_20261013；10%已完成。tools/extend.py是轻量延伸适配，analysis为一次性分析，不是新框架。
+- history/organization_recent_20261013/before：Windows入口原字节；staging/r57_stage和r58_stage：已完成编辑/维护稿；staging_manifest.json及science_before.json、final_receipt.json为核对凭据。
+- 正式对应归档为R/docs/history/organization_recent_20261013。科学源码、原输入、结果、失败、检查点和大数组未移动或删除。
 
-| 路径 | 用途 |
-| --- | --- |
-| hyperelastic_fem.py | 唯一共享NH/可选C²虚域材料、内力、HEX8/HEX27；默认NH保持 |
-| scripts/thin_target_explicit.py | 当前XYZ中央差分/HRZ/回退减步入口，研究候选需明确选objective_void |
-| surface_distance.py、pbc.py | 周期中面距离/真实Gauss占据、周期自由度 |
-| fem.py、density_fem.py及其他原模块 | 原线性/几何/用料/专用设计计算，按既有范围维护 |
-| scripts/README.md、tests/、pixi.toml/lock | 现有入口分类、维护检查、锁定环境 |
-| validation/geometry_transfer_review_20261006_r16/ | 新第3/4步只读后处理与收口；REVIEW.md、三份诊断、scope_decision、图与冻结哈希；没有新仿真或梯度 |
-| validation/geometry_transfer_20261006_r15/ | diverse_04匹配输入及第2步JAX中止/壳完整诊断；step1_decision与STEP2/step2_summary分别留输入与执行事实；零完整AD |
-| validation/forward_scope_20261006_r14/ | 只读四步收口：范围矩阵、三个原中面库存、diverse_04候选、未来完整梯度方案；零新力学 |
-| validation/thickness_range_20261006_r13/ | 匹配厚度输入、两条完整20%、两份壳参照、27/125点与模式、范围决定及哈希 |
-| validation/void_continuation_20261006_r12/ | 当前C²候选：输入、45项检查、原6点、快慢20%、125点、速率、范围决定及证据哈希 |
-| validation/large_compression_20261005_r6/ | 冻结原HEX8/HEX27、壳参照、背景桥接、20%原梯度失败与定位 |
-| validation/thin_target_20261004_r5/ | 当前恒厚中面/Gauss基础及早期薄壁范围 |
-| validation/simulation_error_20261006_r7/ | 保存场定位及失败三维体网格准备 |
-| validation/jax_improvement_20261006_r8/ | 64点未采纳候选及27/125点检查 |
-| validation/virtual_kernel_20261006_r9/ | 经典虚域转动缺陷，未采纳 |
-| validation/objective_virtual_20261006_r10/ | 客观核原保存场验证，当时未接时间推进 |
-| validation/objective_path_20261006_r11/ | 上一客观路径改善及6点混合域失败，保持 |
-| validation/README.md、results/m4_numerical_study.csv | 全部实验索引；早期M4最终10工况CSV（Git忽略） |
+## 10月12日完整报告与既有整理凭据
 
-r12的`T0p004/`、`T0p008/`含完整输入、结果、最终field.npz及运行源码；`*_analysis/`含对壳、模式和27/125点保存场检查；`decision.json`、`rate_check.json`、`evidence_manifest.json`记录验收及哈希。大场/日志/源码快照留本机，GitHub不含全部本机数据。
+- output/TPMS固定背景可导力学计算研究_阶段完整技术报告_20261007至20261012.docx：10月7日至12日完整说明。
+- output/research_report_20261007_20261012：图表来源、正文源、构建与质量检查凭据；引用原图，避免复制全部科学数据。
+- history/report_consolidation_20261012/before：本轮整理前入口原字节；manifest.json记录修改。
+- r56正式为R/validation/platen_xy_hex8_20261012_r56，阅读为output/r56_platen_xy_hex8_20261012；仅新增JAX前向，原壳/HEX27只引用。
 
-## Abaqus与用户资料
+## 文档分工
 
-- 命令：`E:/ABAQUS/2026/Commands/abaqus.bat`。
-- 包根：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus`；现有20%壳包为`large_compression_20261005_r6_standard`、`_explicit_T0p020`、`_explicit_T0p040`，含INP/ODB/日志。
-- 用户原中面：`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28/abaqus`。
-- 用户论文：`C:/Users/xuehu/Desktop/tpms优化`；原件未移动/改写。
-- 原模型和资料仅参考，不照搬原厚度、塑性或压板边界。r13新增0.45/0.55mm各一个Explicit匹配壳，原模型/资料不改。
+| 用途 | Windows入口 | 正式WSL |
+|---|---|---|
+| 总导航 | START_HERE.md | R/README.md |
+| 长期问题 | RESEARCH_BACKGROUND.md | R/docs/RESEARCH_BACKGROUND.md |
+| 当前事实／停点 | PROJECT_OVERVIEW.md | R/docs/RESEARCH_STATUS.md |
+| 唯一安排 | RESEARCH_PLAN.md | R/docs/RESEARCH_PLAN.md |
+| 方法与假定 | TPMS_RESEARCH_REVIEW.md | R/docs/TPMS_RESEARCH_REVIEW.md |
+| 梯度完整综合分析 | [r53梯度报告](../validation/platen_xy_gradients_20261011_r53/analysis/parameter_summary/README.md) | R/validation/platen_xy_gradients_20261011_r53/analysis/parameter_summary/README.md |
+| 全部实验索引 | [阅读成品索引](../validation/README.md) | R/validation/README.md |
 
-## Windows历史与整理回执
+## 已完成前向批次r54
 
-已完成`work/<旧目录名>/`移动到`history/completed_tools_20261006/<旧目录名>/`，目录内部原字节保留，包括日志、摘录、transport.git和发布收据。此次补归档`research_synthesis_20261006`、`thickness_range_20261006`、`forward_scope_20261006`三个目录，143个文件哈希一致。旧脚本中的旧绝对路径仅作历史上下文，不能直接重跑；恢复定位先看Windows history/completed_tools_20261006/README.md（Windows归档索引）。早期完整映射/哈希现位于`history/completed_tools_20261006/research_synthesis_20261006/organization_receipt.json`；此次映射/哈希在`work/geometry_plan_20261006/organization_receipt.json`。
+正式`R/validation/platen_xy_diverse04_20261012_r54`；阅读`W/output/r54_platen_xy_diverse04_20261012`；原生`A/r54_diverse04_midsurface_end_20pct_20261012`。独立保存协议、输入、原曲线、峰规则／CSV、图和成本。复用r15的surface_geometry.npz及gauss_field.npz，不改原数组；轻量适配复用r51/r52程序。
 
-本次改写前活动说明在`history/before_research_synthesis_20261006/`。正式仓库备份/整理收据在`docs/history/research_synthesis_20261006/`。科学结果、用户论文、ODB和WSL运行源码没有移动或删除。
+## 暂停的梯度批次r53
 
-更早的`history/reading_checkout_20261006/tpms_jax`是旧阅读检出，`history/git_transport/`是原已完成传输，`history/rendered_reports_20261005/`为旧PDF。它们均非活动程序/最新说明，原详细映射可查备份地图。本轮不新增重复PDF。
+正式B=`R/validation/platen_xy_gradients_20261011_r53`；阅读O=`W/output/r53_platen_xy_gradients_20261011`。状态看B/status.json，摘要／图／CSV有O副本，大型状态数组仅本机正式档案，不随Git普通克隆取得。
 
-## 当前新增证据
+| B内目录 | 内容与范围 |
+|---|---|
+| input/ | 原协议、几何／距离缓存；原与补充形态执行／验收协议分开，未修改 |
+| tools/ | 共享内力的轻量参数、形态、执行、分块反向及分析适配；唯一实际版本，未修改 |
+| AD/、FD/ | G5厚度／宽度与实际t/w功反向 |
+| G10/、G12/、G10_interface/、G12_interface/、P5/ | 独立延伸路径与切向，保留原前缀来源 |
+| G5_shape/ | 原完整形态JVP和4条FD，原失败保持 |
+| G5_shape_refined/ | 一次有界补充的4条FD，复用原JVP，不重复计费 |
+| analysis/parameter_summary/ | 唯一详细梯度综合报告、原17行CSV、β／成本表、原3图、新3图、引用旧2图、绘图配方和来源清单 |
+| analysis/G5_shape*_diagnostic/、G5_shape_geometry_diagnostic/ | 已有路径／保存态／几何定位；不是新的完整AD认证 |
+| checks/、status.json | 原哈希、执行与停止收据；整体形态未过、完整形态VJP未启动 |
 
-r13原生作业：`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/thickness_range_20261006_r13_t0p45_explicit_T0p040`及同名`t0p55`目录。ODB留该处；正式实验各厚度`abaqus/explicit_T0p040/`有提取和retention.json。各厚度`T0p004/`含场/完整结果、`analysis/`含27/125点/模式与comparison.json；一份规范INP和厚度单行差异可复现两侧输入。Windows `history/completed_tools_20261006/thickness_range_20261006`仅完成工具/发布收据，不是FEM入口。
+## 前向对照与原Abaqus文件
 
-旧第4步收口未新增重复长报告或PDF。WSL r14下`forward_scope.json`为范围，`geometry_inventory.json`为只读原中面筛选，`geometry_candidate.json`为单一diverse_04候选，`gradient_gate_proposal.json`仅未来方案，`decision.json`/输入与验证收据为依据。Windows `history/completed_tools_20261006/forward_scope_20261006`为完成的收口/发布工具，非活动FEM。用户原中面位置为`F:/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04/abaqus/ingredients/shell_mesh.inc`，未改。
+| 实验 | 正式WSL | Windows阅读副本／原生Abaqus |
+|---|---|---|
+| G共同端缘20% | R/validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010 | [G报告](../validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/README.md)；A/r51_G_midsurface_rim_20pct_20261010/platen.inp及platen.odb |
+| P/D共同端缘20% | R/validation/platen_xy_PD_20261010_r52 | [P/D报告](../validation/platen_xy_PD_20261010_r52/README.md)；原生目录路径按各构型报告引用 |
+| 原r51短程／诊断 | R/validation/platen_xy_G_20261010_r51/diagnostics及abaqus、jax、analysis | [历史全过程](../validation/platen_xy_G_20261010_r51/RESEARCH_LOG.md)，原失败／INP／ODB保持 |
+| 旧XYZ、速率、二值、网格等 | R/validation各原批次 | output各r*；不混作当前压板证据，完整索引见R/validation/README.md |
 
-当前`work/geometry_plan_20261006`只放这次状态/规划/归档与发布收据，不是实验或求解器；正式对应`docs/history/geometry_plan_20261006/receipt.json`。r15已建匹配输入/Gauss占据与HRZ场及壳INP；当前有完整壳ODB/响应及JAX稀疏接受观察/拒绝场，没有有效JAX20%末态。Windows `work/geometry_transfer_20261006`仅本步准备/恢复/诊断/同步收据；正式程序仍唯一共享FEM和显式入口。
+共享程序仍为R/hyperelastic_fem.py、surface_distance.py、pbc.py、fem.py和scripts/thin_target_explicit.py。用户原Abaqus为F:/auto_abaqus/work，论文为C:/Users/xuehu/Desktop/tpms优化，均未移动。
 
-r15正式位置：`/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15`。`gauss_field.npz`是真实27点占据，`hrz_mass.npz`是节点/周期质量，`surface_geometry.npz`为中面；`preparation.json`保留原false，`band_bracket_diagnosis.json`解释4条法向，`step1_decision.json`为当前限定就绪。规范壳包在其`abaqus/explicit_T0p040/`，同字节原生包在`E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/geometry_transfer_20261006_r15_diverse04_explicit_T0p040`；有一次壳ODB/日志。第1步科学数组/首次日志原字节保留，首次预处理计时未知不补造。
+## 前序梯度整理与历史
 
-第2步：r15的T0p004为空输出目录及缓存启动失败收据；实际JAX尝试为T0p004_cpu_reference，含input/progress/rejected_blocks、3拒绝场和source_at_run，无result/有效末态。operator_stop.json保留停止前监测；accepted_logged_observations.json只提取14条真实稀疏接受观察，不等于完整曲线。abaqus/explicit_T0p040/results保留壳JSON/场/日志/retention，ODB留原生不重复复制。step2_summary.json和STEP2.md分别为结构化与可读事实。Windows work/geometry_forward_20261006仅本次调用/提取/留存/发布工具，非第二套FEM。
+Windows已完成的work/r53_stage归档到`history/organization_gradients_20261012/staging/r53_stage`，54个文件逐字节核对，文件清单见同级staging_manifest.json。没有删除原科学数据；正式B/tools不移动。当时的work和tmp已清理；本轮报告正文源与构建凭据集中保存，渲染页在tmp作为内部质量检查。
 
-后两步收口：r16的existing_record_review.py只读已有场/日志，复用共享材料核求值，无内力组装/时间推进；不是新求解器。rejected_endpoint_diagnosis只诊断拒绝子集，partial_force_diagnosis只有14个真实JAX观察对壳插值；不输出完整20%误差/模式。frozen_before.json保全旧证据，verification/evidence_manifest验证追溯；postprocess_attempt01保留Inf序列化失败，不是新仿真。Windows work/geometry_closure_20261006仅本次后处理/说明/发布工具；GEOMETRY_TRANSFER_REVIEW.md镜像正式REVIEW.md，图在该work目录。
+本次修改前导航、原长规划、整理脚本、93项科学小文件／共享源码保护哈希和最终收据在`history/organization_gradients_20261012`；正式收据及原导航在`R/docs/history/gradient_consolidation_20261012`。本轮之前的归档仍在history/execution_gradient_20261011_r53等原目录。
+
+WEEKLY_RESEARCH_SUMMARY.md、MECHANISM_ANALYSIS.md和PAPER_ROUTE.md均为有明确日期的旧总结／机制／文献阅读快照；其“下一步”不作为当前任务。2026-10-07 Word／PPT、2026-10-09差异排查Word及用户要求的r51学习包按原字节保留，见[成品索引](../validation/README.md)。
+
+## 新增批次r55
+
+正式R/validation/platen_xy_diverse_batch_20261012_r55；阅读W/output/r55_platen_xy_diverse_batch_20261012；原生A/r55_<kind>_midsurface_end_20pct_20261012。sources按构型保存三角中面及实际Gauss场，各构型input／abaqus／jax／analysis隔离；共享力学实现仍为r51和仓库原程序。
+
+人工审阅补充在r55原README，新增reviewed_force_comparison.png及reviewed_dynamic_windows.json/CSV，原自动图和原始指标不覆盖。审阅前文档在W/history/execution_diverse_batch_20261012_r55/review_before；哈希及审阅收据在R/validation/platen_xy_diverse_batch_20261012_r55/checks/result_review。
+
+原Abaqus对照核查：W/output/r55_platen_xy_diverse_batch_20261012/original_model_audit，含25条历史曲线清单、8个ODB只读元数据／上板原始峰核对、参数／网格／XY方程审阅、两张新旧对照图、哈希及轻量复核配方。原F盘文件未移动或修改。

@@ -1,0 +1,6 @@
+{
+  "reason": "ODB history does not include fatal energy increment; fatal field and STA retained separately",
+  "raw_history_npz_changed": false,
+  "raw_frames_npz_changed": false,
+  "numerical_path_values_changed": false
+}

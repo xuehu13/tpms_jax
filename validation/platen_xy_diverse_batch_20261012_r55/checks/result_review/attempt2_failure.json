@@ -1,0 +1,7 @@
+{
+  "stage": "archive_initialization_before_report_edits",
+  "reason": "Before-snapshot subdirectory already exists after the prior compatibility failure; allow reuse",
+  "new_dynamic_solve": 0,
+  "raw_scientific_evidence_modified": false,
+  "wall_seconds": 5.3050798
+}

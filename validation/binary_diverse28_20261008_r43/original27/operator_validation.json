@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "constitutive_initial_tangent_error_le_1e-11": true,
+    "whole_mesh_shared_force_JVP_le_5e-10": true
+  },
+  "constitutive_max_absolute_error": 3.552713678800501e-15,
+  "whole_mesh_relative_errors": [
+    3.848897884209295e-16,
+    2.9823595815324145e-16
+  ]
+}

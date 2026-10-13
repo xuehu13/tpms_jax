@@ -1,0 +1,13 @@
+{
+  "selection_rule": "Using r41 saved smooth equilibrium only: candidate cell has >=1 original Gauss point with 0.01<=phi<=0.99; order descending full cell smooth strain energy (ties by cell index), select smallest prefix reaching 80% of candidate energy; sort chosen indices for computation. No r33/diverse_04 region reuse. Outside selection not densely verified.",
+  "selection_sha256": "b4f5ee21841e9bfb51a52285fd28bd15f713421ef546244ca05a0488e57bd96a",
+  "candidate_cells": 9203,
+  "selected_cells": 3896,
+  "candidate_fraction_full_energy": 0.922125564691139,
+  "selected_fraction_candidate_energy": 0.8000772599442452,
+  "selected_fraction_full_energy": 0.7377716951226263,
+  "original_selected_smooth_energy_N_mm": 1.4343224554536895e-06,
+  "original_full_smooth_energy_N_mm": 1.9441277903935963e-06,
+  "outside_selection_densely_checked": false,
+  "wall_seconds": 10.46771636302583
+}

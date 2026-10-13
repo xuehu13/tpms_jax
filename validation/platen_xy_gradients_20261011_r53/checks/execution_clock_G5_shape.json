@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791731056.3893063,
+  "deadline_unix": 1791740056.3893063,
+  "pid": 911523,
+  "steps": 24789,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/G5_shape_protocol.json"
+}

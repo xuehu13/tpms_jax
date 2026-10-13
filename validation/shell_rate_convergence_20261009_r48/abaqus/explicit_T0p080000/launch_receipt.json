@@ -1,0 +1,14 @@
+{
+  "T_seconds": 0.08,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\shell_rate_convergence_20261009_r48_T0p080000",
+  "started_unix": 1791542639.7359374,
+  "new_shell_jobs": 1,
+  "new_JAX_forward": false,
+  "AD": false,
+  "solver_command_pid": 47208,
+  "returncode": 1,
+  "exception_type": "TimeoutError",
+  "exception_message": "Frozen wall budget reached; no retry or extension",
+  "input_package_unchanged": true,
+  "wall_seconds": 1808.7458877563477
+}

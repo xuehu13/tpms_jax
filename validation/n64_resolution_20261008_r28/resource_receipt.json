@@ -1,0 +1,19 @@
+{
+  "stage": "resource",
+  "started_unix": 1791427680.012971,
+  "wall_seconds": 167.32710797397885,
+  "returncode": 0,
+  "frozen_unchanged": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/plate_bending_20261008_r27/comparison.json": true
+  }
+}

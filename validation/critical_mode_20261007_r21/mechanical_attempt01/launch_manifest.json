@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/critical_mode_20261007_r21/diagnose.py"
+  ],
+  "protocol_sha256": "affcc172e0a0dff660a3efa27ff1f1033ec8c00723db3236b282de2d001d504c",
+  "analysis_source_sha256": "e06d3631f6a7e13a3df24fe0a20a74af5ed2fe96c1348bb02f5d55d5984f3d9c",
+  "saved_state_sha256": {
+    "accepted_a0.1000.npz": "516dde4656cd363942ed3517842c44572d13a42df9a709dd72663c25fb5b24d1",
+    "accepted_a0.1200.npz": "59fb40940b44708fd1eec9346468e4692a22fd25679c8ef32042aafd3a676e3a",
+    "accepted_a0.1600.npz": "5761317877fd174f6b524155cbbf851f07dc1ba8cacd02f1143ff3ac05c7a6b4"
+  },
+  "source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967"
+  },
+  "new_forward_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "design_AD": false
+}

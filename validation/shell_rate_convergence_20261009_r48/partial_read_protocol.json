@@ -1,0 +1,8 @@
+{
+  "only_if": "One of the authorized jobs budget-stops after valid histories exist",
+  "new_jobs": 0,
+  "base_extractor_sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+  "partial_extractor_sha256": "6d66ff47ceddd7b500dfc791400ae352df2a42ebab74e5db8955900a3035f378",
+  "changes": "Actual final frame compression for PBC; unknown hold null; actual covered compression; original complete/target/energy checks retained",
+  "no_change_to_active_launcher_or_FEM": true
+}

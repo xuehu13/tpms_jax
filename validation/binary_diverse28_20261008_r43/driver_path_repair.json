@@ -1,0 +1,6 @@
+{
+  "error": "Path/str concatenation before any model construction, matrix preparation or solver",
+  "fix": "parenthesize fixed-field directory name only",
+  "checks_changed": false,
+  "scientific_attempt_repeated": false
+}

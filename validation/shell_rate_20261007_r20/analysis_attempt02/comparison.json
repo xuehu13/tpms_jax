@@ -1,0 +1,214 @@
+{
+  "observed_peaks": {
+    "old_shell": {
+      "time": 0.02151627466082573,
+      "compression": 0.11416069269180298,
+      "Fz_N": -5.098315715789795,
+      "ALLIE": 3.0022664070129395,
+      "ALLSE": 3.000185251235962,
+      "ALLKE": 7.059436029521748e-05,
+      "ALLAE": 0.00208097230643034,
+      "ALLVD": 2.1545531126321293e-05,
+      "ALLWK": 2.986370801925659,
+      "ETOTAL": 0.015987679362297058
+    },
+    "fast_shell": {
+      "time": 0.00219581532292068,
+      "compression": 0.1182407021522522,
+      "Fz_N": -5.229988098144531,
+      "ALLIE": 3.2153453826904297,
+      "ALLSE": 3.2106857299804688,
+      "ALLKE": 0.015035320073366165,
+      "ALLAE": 0.004659564234316349,
+      "ALLVD": 0.00030522781889885664,
+      "ALLWK": 3.2033770084381104,
+      "ETOTAL": 0.02730882167816162
+    },
+    "existing_JAX": {
+      "time": 0.0026854848531435156,
+      "compression": 0.15940872539154782,
+      "Fz_N": -7.072391495989786,
+      "internal_macro_Fz_N": -7.066532413738025,
+      "energy_N_mm": 6.064165091611316,
+      "KE_N_mm": 0.00878989745685824,
+      "KE_over_U": 0.0014494818864706513,
+      "J_finite": true,
+      "J_min": -6.119249212813952,
+      "invalid_material_points": 0,
+      "negative_J_points": 2062,
+      "required_positive_J_min": 0.08466926589126439,
+      "required_positive_J_points": 141282,
+      "dt_seconds": 1.7202401517144088e-07
+    }
+  },
+  "shell_rate_peak_shift_percentage_points": 0.4080009460449216,
+  "original_JAX_shell_peak_gap_percentage_points": 4.524803269974484,
+  "remaining_JAX_fast_shell_peak_gap_percentage_points": 4.116802323929562,
+  "fraction_original_peak_gap_reduced": 0.09016987517497581,
+  "fraction_not_a_causal_variance_decomposition": true,
+  "JAX_peak_force_relative_fast_shell_difference": 0.3522767859641771,
+  "same_compression_force_table": [
+    {
+      "compression": 0.01,
+      "old_shell_N": 0.46555922817458134,
+      "fast_shell_N": 0.474663133142886,
+      "existing_JAX_N": 0.5006483078186619
+    },
+    {
+      "compression": 0.05,
+      "old_shell_N": 2.319672099352383,
+      "fast_shell_N": 2.325966645911184,
+      "existing_JAX_N": 2.4713164461401433
+    },
+    {
+      "compression": 0.1,
+      "old_shell_N": 4.535820606327636,
+      "fast_shell_N": 4.536357579674203,
+      "existing_JAX_N": 4.849331417702432
+    },
+    {
+      "compression": 0.12,
+      "old_shell_N": 2.927569261491428,
+      "fast_shell_N": 5.055781124276235,
+      "existing_JAX_N": 5.729865710807766
+    },
+    {
+      "compression": 0.14,
+      "old_shell_N": 1.5935826252440202,
+      "fast_shell_N": 1.8337604214463437,
+      "existing_JAX_N": 6.528361936981765
+    },
+    {
+      "compression": 0.15,
+      "old_shell_N": 1.2551060843939241,
+      "fast_shell_N": 1.6683822019690941,
+      "existing_JAX_N": 6.871892264355591
+    },
+    {
+      "compression": 0.16,
+      "old_shell_N": 1.6189211840342386,
+      "fast_shell_N": 1.2196661373368218,
+      "existing_JAX_N": 7.065210083289826
+    },
+    {
+      "compression": 0.17,
+      "old_shell_N": 1.9054165881815364,
+      "fast_shell_N": 0.65856009276003,
+      "existing_JAX_N": 0.4520917706807962
+    },
+    {
+      "compression": 0.175,
+      "old_shell_N": 1.601433463477382,
+      "fast_shell_N": 1.4869908954488316,
+      "existing_JAX_N": 1.6504665901593285
+    }
+  ],
+  "partial_raw_metrics": {
+    "vs_old_shell": {
+      "comparison_compression_range": [
+        0.01,
+        0.17536302435107093
+      ],
+      "JAX_not_complete_20pct": true,
+      "RMS_N": 2.681320903850104,
+      "RMS_over_original_fixed_Standard_peak_2p25891N": 1.1869976687208006,
+      "RMS_over_this_matched_shell_own_peak": 0.5259228838155098,
+      "scope": "Raw compression alignment; no event shifting; partial dynamic curve, not old 20% acceptance."
+    },
+    "vs_fast_shell": {
+      "comparison_compression_range": [
+        0.01,
+        0.17536302435107093
+      ],
+      "JAX_not_complete_20pct": true,
+      "RMS_N": 2.3991937978337847,
+      "RMS_over_original_fixed_Standard_peak_2p25891N": 1.062102428974056,
+      "RMS_over_this_matched_shell_own_peak": 0.4587379077755375,
+      "scope": "Raw compression alignment; no event shifting; partial dynamic curve, not old 20% acceptance."
+    }
+  },
+  "predefined_loading_window": {
+    "old_shell": {
+      "compression_range": [
+        0.17,
+        0.175
+      ],
+      "mean_N": 1.8165444402770372,
+      "min_N": 1.4826321596232015,
+      "max_N": 2.0564426189036995,
+      "sampling": "501 uniform compression points, linear interpolation of retained observations; not a settled hold"
+    },
+    "fast_shell": {
+      "compression_range": [
+        0.17,
+        0.175
+      ],
+      "mean_N": 1.0164164856201086,
+      "min_N": 0.27886154956359216,
+      "max_N": 1.4981227640184738,
+      "sampling": "501 uniform compression points, linear interpolation of retained observations; not a settled hold"
+    },
+    "JAX_partial": {
+      "compression_range": [
+        0.17,
+        0.175
+      ],
+      "mean_N": 1.4435202543288284,
+      "min_N": 0.4520917706807962,
+      "max_N": 1.7633451601352905,
+      "sampling": "501 uniform compression points, linear interpolation of retained observations; not a settled hold"
+    }
+  },
+  "shell_hold_means_N": {
+    "old_shell": -1.6281063064284946,
+    "fast_shell": -1.3463700310043667
+  },
+  "no_JAX_hold_or20pct_metric": true,
+  "fast_shell_original_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "quality": {
+    "old_shell": {
+      "KE_fraction_of_IE_terminal": 0.017038166647916346,
+      "loading_time_fraction_KE_below_5pct": 0.6716453908881145,
+      "global_energy_drift_relative_work": 0.06764014548656941,
+      "artificial_energy_relative_max_work": 0.10055576769577278,
+      "energies_N_mm": {
+        "ALLIE": 2.254871368408203,
+        "ALLSE": 1.8221747875213623,
+        "ALLKE": 0.03841887414455414,
+        "ALLAE": 0.4326966404914856,
+        "ALLVD": 2.427884817123413,
+        "ALLWK": 4.42368745803833,
+        "ETOTAL": 0.2974875569343567
+      }
+    },
+    "fast_shell": {
+      "KE_fraction_of_IE_terminal": 0.1215044178470129,
+      "loading_time_fraction_KE_below_5pct": 0.44987956260709805,
+      "global_energy_drift_relative_work": 0.07167647554386603,
+      "artificial_energy_relative_max_work": 0.1216807773986436,
+      "energies_N_mm": {
+        "ALLIE": 2.491366147994995,
+        "ALLSE": 1.942949652671814,
+        "ALLKE": 0.30271199345588684,
+        "ALLAE": 0.5484165549278259,
+        "ALLVD": 2.1977078914642334,
+        "ALLWK": 4.658242225646973,
+        "ETOTAL": 0.3335437476634979
+      }
+    }
+  },
+  "wall_seconds": 81.00496250006836,
+  "conclusion": "Rate difference has a measured but small effect on this shell peak. It is not a sufficient explanation of the much later JAX peak.",
+  "not_a_more_accurate_quasistatic_reference": true
+}

@@ -1,0 +1,3 @@
+﻿fast_T_ms,slow_T_ms,peak_shift_pp,peak_force_relative_change,both_observed_peak,peak_position_working_gate_pass,peak_force_working_gate_pass,scope
+20.0,40.0,-0.08138656616210938,-0.0035928441704837777,True,True,True,Same discrete shell only; not physical truth or complete quasistatic certification
+40.0,80.0,-0.04104018211364746,-0.002475415366505418,True,True,True,Same discrete shell only; not physical truth or complete quasistatic certification

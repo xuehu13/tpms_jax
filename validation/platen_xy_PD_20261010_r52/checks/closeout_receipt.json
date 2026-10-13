@@ -1,0 +1,25 @@
+{
+  "original_source_count": 23,
+  "original_sources_changed": [],
+  "active_jobs": [],
+  "dynamic_paths_submitted": 4,
+  "datachecks": 2,
+  "complete_dynamic_paths": 3,
+  "P_full20_pair_passed": true,
+  "D_reference_failed": true,
+  "D_JAX_full20_completed": true,
+  "through_final_D_reporting_minutes": 80.12066326936086,
+  "new_design_AD": false,
+  "figure_QA_complete": true,
+  "local_report_links_valid": true,
+  "current_tools_sha256": {
+    "run_batch.py": "6dc54d5ff40e6edaa3d3a13da436bb817ce9c3665c674430850b01f598eb5f1e",
+    "analyze_case.py": "09dea934d40374743a4d036bd736ed4b7206b49b7efc07623977c3dc7253046b",
+    "continue_D.py": "7c052418974ac377dca28614cfd4f3ebcae9248dc43bb741923cc9c594583e65",
+    "finalize_batch.py": "5397fa7e545683c81ee002a7b71678dfe77a55a597b2437afe7a2b6ecb54f63e",
+    "extract_partial_D.py": "713705f1aa18c92a8c87bbd3f6091eb08a959260404203072176e3816f82dfad",
+    "run_jax.py": "851a6c12746633e90ffdd1da9d579d42b7352825a3ca6344c14a7d3e429f5484",
+    "prepare_case.py": "583f50b1eba3528b07b52b876256a893a5313cf3cd223693ee11945feb70a2cd",
+    "analyze_partial_D.py": "fe387d16e001a32b4ce885ab25b4bc9ba33ebd923b0c8ad2148595fffd9f6836"
+  }
+}

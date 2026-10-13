@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791693206.6150362,
+  "deadline_unix": 1791695006.6150362,
+  "pid": 802695,
+  "steps": 38189,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/G12_thickness_protocol.json"
+}

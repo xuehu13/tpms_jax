@@ -1,0 +1,87 @@
+{
+  "case_id": "diverse_04_HEX8_platen_xy_r56",
+  "L_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "density_tonne_mm3": 1e-09,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "N": 32,
+  "contact_normal_stiffness_MPa_per_mm": 320.0,
+  "contact_stiffness_rule": "10*E/background_h, selected before response",
+  "target_compression": 0.2,
+  "load_time_s": 0.004,
+  "hold_time_s": 0.0002,
+  "stage": "HEX8 common midsurface-end platen20pct; compare to frozen r54/r55 references, no new design AD",
+  "lateral_macro": "free ax/ay, zero macro shear; dynamics includes projected mass coupling",
+  "material_model": "objective_void",
+  "no_friction": true,
+  "no_self_contact": true,
+  "no_mass_scaling": true,
+  "shell_contact": "node-based midsurface end nodes against rigid planes; zero contact thickness; section .5 retained",
+  "jax_contact": "Same frozen rim points and weights; own Q1 force interpolation; same kn320",
+  "remaining_difference": "Same initial midsurface rim support locations; shell/solid kinematics, Q2 contact interpolation, penalty laws, diffuse occupancy and discrete inertia remain different.",
+  "source_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+  "source_shell_surface_sha256": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+  "original_Gauss_field": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/input/gauss_field.npz",
+  "original_Gauss_sha256": "fb43c86daca9c0f83f357413b2c74e876bf1a8f9a95641e0c8fe0d77690c99d7",
+  "contact_reference_area_mm2": [
+    15.229465305736445,
+    15.229465305736445
+  ],
+  "physical_nodes": 8372,
+  "shell_elements": 15914,
+  "XY_relations": 263,
+  "XY_equations": 1578,
+  "labels": {
+    "ax": 8373,
+    "ay": 8374,
+    "bottom": 8375,
+    "top": 8376
+  },
+  "rim_node_count": [
+    162,
+    162
+  ],
+  "wall_pin": null,
+  "contact_cache_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_hex8_20261012_r56/diverse_04/input/rimline_contact.npz",
+  "contact_cache_sha256": "51a78b1bbbbcbca3ba3ec3404b877b26c28a7f3628a52478a0188b259dd45101",
+  "interpretation": "Forward dynamic comparison of a declared simplified end-loading model; not finite-width contact, self-contact, quasi-static or design-gradient certification.",
+  "inp_sha256": "74d82fd2273b29aa949863528b9967c732d8f5bca9125d38a678b411302188bc",
+  "kind": "diverse_04",
+  "source_shell_surface": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz",
+  "template_G20_INP_sha256": "f255beb116318c79d9a4fcd7fd0c72334d798cd9cb4e37866f54d61104a3d1a1",
+  "end_support_selection": "all z=0/L midsurface nodes, including D tangencies; same as G",
+  "execution_authorized": true,
+  "budget_seconds": {
+    "preparation": 300,
+    "jax_build_compile_checks_solve": 2400,
+    "analysis": 120
+  },
+  "element": "HEX8",
+  "element_degree": 1,
+  "Gauss_points_per_cell": 8,
+  "quadrature_order": 2,
+  "mass": "positive row_sum",
+  "reference_case_dir": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse04_20261012_r54/diverse_04",
+  "reference_contact_sha256": "7c3a0a526a22e73ed33a6a780b61ee7132c3a19abd5c25ecf2518530e7030856",
+  "no_new_abaqus": true,
+  "initial_dt_s": 2.6933435936898807e-07,
+  "initial_stability_estimate": {
+    "power_estimated_omega2_s_minus2": 3917587029729.7485,
+    "power_steps": 25,
+    "safety_fraction": 0.3,
+    "not_a_proven_global_bound": true
+  },
+  "deadline_unix": 1791796267.363916,
+  "projected_inertia_schur": [
+    1.201912637983687e-10,
+    8.909159104465508e-11
+  ],
+  "mass_conservation_error": 4.440892098500626e-16,
+  "devices": [
+    "cuda:0"
+  ],
+  "sample_validation": "actual energy/J at each accepted64-step sample; not every-step/global certification"
+}

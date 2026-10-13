@@ -1,0 +1,10 @@
+{
+  "source": "G10_interface/FD/w_plus_half",
+  "steps": 34483,
+  "seed": null,
+  "hashes": {
+    "result.json": "542b11e7b3e8cadfe0845dfafdf05ad3641e4af01dda9993f7123fd71d138c91",
+    "final_state.npz": "09be91a325681ec569404ceb09d57336bdf78225db87f8ace28233d17c944793"
+  },
+  "interpretation": "Reuses complete prefix state and its full parameter tangent, including accumulated work; not a frozen-state derivative"
+}

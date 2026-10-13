@@ -1,0 +1,9 @@
+{
+  "job_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\initial_tangent_20261008_r30_diverse04",
+  "input_sha256": "064e3d603abd0e21c3101724793a7a9118c9e96106dbad598a5040092aa8fe3a",
+  "job_seconds": 26.58701789996121,
+  "job_returncode": 0,
+  "extract_seconds": 0.9392899998929352,
+  "extract_returncode": 0,
+  "input_unchanged": true
+}

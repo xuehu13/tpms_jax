@@ -1,0 +1,50 @@
+{
+  "delivered_to_reading_folder": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r55_platen_xy_diverse_batch_20261012",
+  "no_new_solve_in_summary": true,
+  "protected_sources_unchanged": true,
+  "batch_rows": [
+    {
+      "case": "diverse_28",
+      "paired_complete": true,
+      "common_compression_percent": 20.0,
+      "curve_RMS_percent_of_shell_peak": 9.264893832352415,
+      "work_bias_percent": 13.985887901218419,
+      "hold_force_bias_percent": 14.862328125695413,
+      "first_prominent_peak_location_difference_pp": null,
+      "raw_global_peak_JAX_percent": 19.999999979275515,
+      "raw_global_peak_Abaqus_percent": 20.0,
+      "working_targets_pass": false,
+      "wall_minutes": 31.760550983746846,
+      "field_relative_RMS_20pct_percent": 0.5997551713778818
+    },
+    {
+      "case": "diverse_05",
+      "paired_complete": false,
+      "common_compression_percent": 19.360093106671638,
+      "curve_RMS_percent_of_shell_peak": 8.011909889360815,
+      "work_bias_percent": 1.4299814267103361,
+      "hold_force_bias_percent": null,
+      "first_prominent_peak_location_difference_pp": 0.14000067329204668,
+      "raw_global_peak_JAX_percent": 10.900692706352217,
+      "raw_global_peak_Abaqus_percent": 10.770080089569092,
+      "working_targets_pass": null,
+      "wall_minutes": 67.80519947608312,
+      "field_relative_RMS_20pct_percent": null
+    },
+    {
+      "case": "diverse_02",
+      "paired_complete": true,
+      "common_compression_percent": 20.0,
+      "curve_RMS_percent_of_shell_peak": 15.010304791977807,
+      "work_bias_percent": 12.721842122957327,
+      "hold_force_bias_percent": 30.184885031003006,
+      "first_prominent_peak_location_difference_pp": 0.1200000000000001,
+      "raw_global_peak_JAX_percent": 4.686727485464,
+      "raw_global_peak_Abaqus_percent": 4.549655914306641,
+      "working_targets_pass": false,
+      "wall_minutes": 61.096599622567496,
+      "field_relative_RMS_20pct_percent": 10.752614130211624
+    }
+  ],
+  "time_unix": 1791785892.854822
+}

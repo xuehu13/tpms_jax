@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "scope": "Geometry/shared-field local derivative, no dynamic design derivative yet",
+  "baseline_equivalence": {
+    "scale": 2.2204460498975956e-16,
+    "nodem": 7.817241806374076e-16,
+    "mass": 7.817241806374076e-16,
+    "c": 8.069410896902276e-16,
+    "schur": 6.155369897057529e-15,
+    "area": 4.623656403804098e-16,
+    "acceleration_q": 1.0743205565533737e-11,
+    "acceleration_macro": 5.834838537127175e-13,
+    "pass": true
+  },
+  "baseline_distance_max_normalized": 0.0,
+  "rim_vertex_velocity_max": 0.0,
+  "field_derivatives": {
+    "scale": {
+      "AD_L2": 6323.517257035047,
+      "FD_half_L2": 6323.477015442027,
+      "AD_FD_relative_L2": 0.0012507397897164683,
+      "FD_halving_relative_L2": 0.00030250809641448533,
+      "scaled_error": 0.0002196577315405618,
+      "nearzero": false,
+      "passed": true
+    },
+    "nodem": {
+      "AD_L2": 9.64921339264782e-10,
+      "FD_half_L2": 9.649204205365005e-10,
+      "AD_FD_relative_L2": 0.0011856959343102746,
+      "FD_halving_relative_L2": 0.00013375670108863974,
+      "scaled_error": 0.00013720125860910181,
+      "nearzero": false,
+      "passed": true
+    },
+    "mass": {
+      "AD_L2": 9.66273652288102e-10,
+      "FD_half_L2": 9.662727134918308e-10,
+      "AD_FD_relative_L2": 0.0011840364589835789,
+      "FD_halving_relative_L2": 0.0001335563438925548,
+      "scaled_error": 0.00013682973985277314,
+      "nearzero": false,
+      "passed": true
+    },
+    "macro_c": {
+      "AD_L2": 3.842287418860113e-10,
+      "FD_half_L2": 3.8422519776320663e-10,
+      "AD_FD_relative_L2": 0.0011736634959263455,
+      "FD_halving_relative_L2": 0.00013336843567271215,
+      "scaled_error": 0.00013374532083384162,
+      "nearzero": false,
+      "passed": true
+    },
+    "macro_schur": {
+      "AD_L2": 2.0385361873641652e-11,
+      "FD_half_L2": 2.0385009699214535e-11,
+      "AD_FD_relative_L2": 1.7501713664856405e-05,
+      "FD_halving_relative_L2": 4.869294249053349e-05,
+      "scaled_error": 7.509188049877925e-08,
+      "nearzero": false,
+      "passed": true
+    },
+    "rim_area": {
+      "AD_L2": 5.622782449678283e-05,
+      "FD_half_L2": 5.622782450140117e-05,
+      "AD_FD_relative_L2": 3.5467857698647976e-09,
+      "FD_halving_relative_L2": 3.851387412586125e-09,
+      "scaled_error": 1.3528245043935726e-13,
+      "nearzero": false,
+      "passed": true
+    }
+  },
+  "distance_diagnostic": {
+    "AD_L2": 214.68639508568964,
+    "FD_half_L2": 214.6840358773738,
+    "AD_FD_relative_L2": 0.0022378806645947185,
+    "FD_halving_relative_L2": 0.005054470100263367,
+    "scaled_error": 4.731850400200931e-05,
+    "nearzero": false,
+    "passed": true
+  },
+  "closest_face_changes": {
+    "0.0001": 118018,
+    "-0.0001": 67504,
+    "5e-05": 116294,
+    "-5e-05": 65411
+  },
+  "short_field_VJP_contraction": -4.289751393576192,
+  "short_field_JVP_contraction": -4.289751393576195,
+  "field_duality_relative_error": 6.211397851843948e-16,
+  "shape_rule_uses_FD": false,
+  "independent_geometries": true,
+  "wall_minutes": 0.8037419040997823,
+  "geometry_protocol_sha256": "66548ea557301b4e0df1a8fa9028eff75ad42f5920a0b3d40432d286dcd7ebde"
+}

@@ -1,0 +1,7 @@
+{
+  "returncode": 0,
+  "wall_seconds": 75.12128033302724,
+  "result_exists": true,
+  "failure_exists": false,
+  "scope": "Only one original rejected time window. Not full 20% simulation."
+}

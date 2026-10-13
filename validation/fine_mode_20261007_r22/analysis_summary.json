@@ -1,0 +1,109 @@
+{
+  "complete_result": true,
+  "compression": 0.1219042645487386,
+  "rows": [
+    {
+      "rank_lowest_block": 0,
+      "eigenvalue_s_minus2": 34009.03118809168,
+      "mass_whitened_relative_residual": 0.9999996364832686,
+      "original_fine_relative_residual": 0.9999914701197892,
+      "uniform_translation_inertia_fraction": 0.9998646498131706,
+      "mode_converged": false,
+      "curvature_for_1mm_max_surface_mode_N_mm": 5.4640442561855185,
+      "parts_N_mm": {
+        "deep_void": 0.39642887988876707,
+        "mixed_tail": 0.08771719211587883,
+        "main_interface": 0.6996334289469698,
+        "geometric_core": 4.280264755233903
+      },
+      "direct_curvature_relative_error": 3.088443135356885e-13,
+      "occupancy_weighted_displacement_fraction": 0.13243559490396872,
+      "absolute_cosine_with_fast_shell_event_increment": 0.2811961357457686,
+      "absolute_cosine_with_initial_r21_candidate": 0.004485765039481746,
+      "deformation_inertia_greater_than_mean_translation": false,
+      "continued_void_curvature_N_mm": 0.4841460720046459,
+      "continued_void_curvature_fraction": 0.08860581088020526
+    },
+    {
+      "rank_lowest_block": 1,
+      "eigenvalue_s_minus2": 36277.737989883775,
+      "mass_whitened_relative_residual": 0.999999646676625,
+      "original_fine_relative_residual": 1.0000004041487287,
+      "uniform_translation_inertia_fraction": 0.9998598952043102,
+      "mode_converged": false,
+      "curvature_for_1mm_max_surface_mode_N_mm": 5.870315229153975,
+      "parts_N_mm": {
+        "deep_void": 0.42044909175393474,
+        "mixed_tail": 0.0857227379497377,
+        "main_interface": 0.5708393253176353,
+        "geometric_core": 4.793304074132667
+      },
+      "direct_curvature_relative_error": 2.097017351965149e-13,
+      "occupancy_weighted_displacement_fraction": 0.1325374590860367,
+      "absolute_cosine_with_fast_shell_event_increment": 0.10608511902922385,
+      "absolute_cosine_with_initial_r21_candidate": 0.25212930540024076,
+      "deformation_inertia_greater_than_mean_translation": false,
+      "continued_void_curvature_N_mm": 0.5061718297036725,
+      "continued_void_curvature_fraction": 0.08622566420110656
+    },
+    {
+      "rank_lowest_block": 2,
+      "eigenvalue_s_minus2": 112952.74479291393,
+      "mass_whitened_relative_residual": 0.9999992454334038,
+      "original_fine_relative_residual": 0.9999873560646961,
+      "uniform_translation_inertia_fraction": 0.9995702048499427,
+      "mode_converged": false,
+      "curvature_for_1mm_max_surface_mode_N_mm": 2.6429038869584445,
+      "parts_N_mm": {
+        "deep_void": 0.16063750496791307,
+        "mixed_tail": 0.044013908017158175,
+        "main_interface": 0.32832549810122097,
+        "geometric_core": 2.109926975872152
+      },
+      "direct_curvature_relative_error": 3.05816025287717e-14,
+      "occupancy_weighted_displacement_fraction": 0.13210018961533757,
+      "absolute_cosine_with_fast_shell_event_increment": 0.008331844767233658,
+      "absolute_cosine_with_initial_r21_candidate": 0.0008243188396199898,
+      "deformation_inertia_greater_than_mean_translation": false,
+      "continued_void_curvature_N_mm": 0.20465141298507125,
+      "continued_void_curvature_fraction": 0.07743430020097779
+    },
+    {
+      "rank_lowest_block": 3,
+      "eigenvalue_s_minus2": 13113511.435796818,
+      "mass_whitened_relative_residual": 0.9661563440699235,
+      "original_fine_relative_residual": 0.7932655041263365,
+      "uniform_translation_inertia_fraction": 9.706461951120648e-06,
+      "mode_converged": false,
+      "curvature_for_1mm_max_surface_mode_N_mm": 0.7345214174448081,
+      "parts_N_mm": {
+        "deep_void": 0.08683784373113701,
+        "mixed_tail": 0.014064790102557836,
+        "main_interface": 0.13391665673610925,
+        "geometric_core": 0.4997021268750041
+      },
+      "direct_curvature_relative_error": 9.673546868542924e-15,
+      "occupancy_weighted_displacement_fraction": 0.2192288590419755,
+      "absolute_cosine_with_fast_shell_event_increment": 0.027549658872513004,
+      "absolute_cosine_with_initial_r21_candidate": 0.9996596259083371,
+      "deformation_inertia_greater_than_mean_translation": true,
+      "continued_void_curvature_N_mm": 0.10090263383369484,
+      "continued_void_curvature_fraction": 0.1373719423794428
+    }
+  ],
+  "receipt": {
+    "returncode": 0,
+    "wall_seconds": 69.168030296918,
+    "budget_stop": false,
+    "result_exists": true,
+    "previous_attempt_seconds": 249.8343603219837
+  },
+  "shell_finite_increment_compressions": [
+    0.11863248348236084,
+    0.13824518918991088
+  ],
+  "shell_increment_not_eigenmode": true,
+  "cause_not_uniquely_identified": true,
+  "new_time_advance": false,
+  "new_design_AD": false
+}

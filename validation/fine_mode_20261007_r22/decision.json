@@ -1,0 +1,16 @@
+{
+  "plan_step": 3,
+  "four_returned_modes_converged": 0,
+  "true_critical_mode_not_identified": true,
+  "cause_not_uniquely_identified": true,
+  "step4_not_started": true,
+  "no_more_r22_spectrum_retries": true,
+  "next_action": "原第3步的下一项改为一个有物理来源的方向诊断：复用r20快壳现有ODB中11.8632%→13.8245%两帧U/UR，先只读提取转角；元数据已确认UR存在，现有NPZ仅有位移。执行前写清有限转角/中面至厚度方向转移、宏观仿射分量、原XYZ周期及平移固定、原N32插值误差与虚域延拓，再在同一12.1904%JAX保存态评价这个完整域方向的切线曲率/材料分项和与现有候选的耦合。该有限壳增量不是特征模态，方向转移本身有近似；正曲率不证明全稳定，负方向也不直接定位静态临界点。只用它判断是否漏掉壳观察到的折叠家族/表示差异，不依赖壳来校准后续生产前向。不扫幅值、η、界面、积分或阻尼，不追加本轮谱迭代或新压缩路径；第4步仍需针对性证据。目前尚未提取UR、生成转移方向或提交新诊断。",
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "new_design_AD": false,
+  "shared_core_changes": false,
+  "current_running_or_queued_jobs": 0,
+  "Git_commit_push_merge": false,
+  "total_launch_seconds": 319.0023906189017
+}

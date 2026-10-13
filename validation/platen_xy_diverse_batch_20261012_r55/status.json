@@ -1,0 +1,54 @@
+{
+  "stage": "batch_attempts_finished",
+  "execution_authorized": true,
+  "active_jobs": [],
+  "cases": {
+    "diverse_28": {
+      "stage": "complete_pair_analyzed",
+      "datachecks": 1,
+      "new_dynamic_jobs": 2,
+      "Abaqus_complete": true,
+      "JAX_complete": true,
+      "complete_pair": true,
+      "overall_minutes": 31.760550983746846,
+      "source_guard_unchanged": true
+    },
+    "diverse_05": {
+      "stage": "partial_or_failed_pair_saved",
+      "datachecks": 1,
+      "new_dynamic_jobs": 2,
+      "Abaqus_complete": true,
+      "JAX_complete": false,
+      "complete_pair": false,
+      "overall_minutes": 67.80519947608312,
+      "source_guard_unchanged": true
+    },
+    "diverse_02": {
+      "stage": "complete_pair_analyzed",
+      "datachecks": 1,
+      "new_dynamic_jobs": 2,
+      "Abaqus_complete": true,
+      "JAX_complete": true,
+      "complete_pair": true,
+      "overall_minutes": 61.096599622567496,
+      "source_guard_unchanged": true
+    }
+  },
+  "queue": [],
+  "heartbeat": "PAUSED",
+  "gradient_research": "paused; original failures and gate preserved",
+  "new_design_AD": false,
+  "new_training": false,
+  "new_git": false,
+  "current_case": "diverse_02",
+  "batch_finished": true,
+  "datachecks": 1,
+  "new_dynamic_jobs": 2,
+  "Abaqus_complete": true,
+  "job_count_note": "Per-case new_dynamic_jobs is maintained by the active coordinator; original input protocol records pre-submission snapshot.",
+  "JAX_complete": true,
+  "complete_pair": true,
+  "overall_minutes": 61.096599622567496,
+  "source_guard_unchanged": true,
+  "batch_minutes": 160.84113618532817
+}

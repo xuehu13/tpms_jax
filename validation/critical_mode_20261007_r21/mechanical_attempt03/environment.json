@@ -1,0 +1,6 @@
+{
+  "Python": "3.13.15",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "backend": "CPU x64",
+  "git_head": "07b2042011fa4fb86a0da17c104fdf127c3b4239"
+}

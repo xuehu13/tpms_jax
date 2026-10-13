@@ -1,0 +1,40 @@
+{
+  "raw_same_rate_shell_path": "/home/xuehu/projects/tpms_jax/validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json",
+  "raw_same_rate_shell_sha256": "a34dbb3340590335f1dda1b3e94d17f0592dc865036fffa92fd0d5fda0dfcece",
+  "matched_shell_loading_peak": {
+    "time": 0.00219581532292068,
+    "compression": 0.1182407021522522,
+    "Fz_N": -5.229988098144531,
+    "ALLIE": 3.2153453826904297,
+    "ALLSE": 3.2106857299804688,
+    "ALLKE": 0.015035320073366165,
+    "ALLAE": 0.004659564234316349,
+    "ALLVD": 0.00030522781889885664,
+    "ALLWK": 3.2033770084381104,
+    "ETOTAL": 0.02730882167816162
+  },
+  "matched_peak_denominator_N": 5.229988098144531,
+  "historical_fixed_denominator_N": 2.2589142322540283,
+  "shell_quality_checks_preserved": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "N32_occupancy": 0.13251935766125453,
+  "N64_occupancy": 0.1324512243730824,
+  "occupancy_relative_change": -0.0005141383823055179,
+  "N32_integrated_mass_tonne": 1.326061057254884e-07,
+  "N64_integrated_mass_tonne": 1.3253797925064496e-07,
+  "mass_relative_change": -0.0005137506638229761,
+  "N32_initial_safe_dt_seconds": 1.9866421112971874e-07,
+  "N64_initial_safe_dt_seconds": 1.2846942163185998e-07,
+  "optimistic_body_hours": 3.511571047541349,
+  "scope": "Actual newly sampled occupancy/mass/dt differences, not physical parameter changes; initial cost only."
+}

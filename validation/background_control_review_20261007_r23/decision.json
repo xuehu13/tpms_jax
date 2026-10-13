@@ -1,0 +1,11 @@
+{
+  "priority": "independent_background_feasibility_gate",
+  "cause_not_found": true,
+  "r22_unconverged_preserved": true,
+  "new_forward": 0,
+  "new_Abaqus": 0,
+  "new_design_AD": 0,
+  "production_core_changes": 0,
+  "git_publish_merge": false,
+  "research_continue": "limited forward evidence supports continuing; general 20percent and gradients unvalidated"
+}

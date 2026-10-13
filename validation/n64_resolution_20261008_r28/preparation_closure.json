@@ -1,0 +1,28 @@
+{
+  "stage": "resource_preparation_complete_full_budget_pending",
+  "closed_unix": 1791428202.4400697,
+  "production_and_evidence_unchanged": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/plate_bending_20261008_r27/comparison.json": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/problem.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/fe.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/basis.py": true
+  },
+  "full_started": false,
+  "no_new_Abaqus_design_AD_training_push_merge": true,
+  "small_equivalence_pass": true,
+  "initial_probe_success": true,
+  "not_full_accuracy_or_AD_certification": true,
+  "full_adapter_ready": true,
+  "budget_question_pending": true
+}

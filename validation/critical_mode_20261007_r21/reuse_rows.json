@@ -1,0 +1,129 @@
+[
+  {
+    "state": "accepted_a0.1000.npz",
+    "compression": 0.1007710270331371,
+    "Ncoarse": 4,
+    "free_dofs": 1533,
+    "basis_eigenvalues": [
+      8.294796387530676e-05,
+      8.552813120434105e-05,
+      8.636905040363554e-05,
+      8.751878371674743e-05,
+      9.773477300054951e-05,
+      9.773492027452437e-05
+    ],
+    "eigenpair_relative_residuals": [
+      1.0668739168487538e-11,
+      1.1105420539833138e-11,
+      2.328273951653079e-11,
+      9.368200337616596e-12,
+      7.46815315518503e-12,
+      7.9749804901556e-12
+    ],
+    "converged": true,
+    "failure": null,
+    "relative_asymmetry": 4.764144151038623e-15,
+    "assembly_seconds": 248.2415885339724,
+    "eigen_seconds": 0.4282133770175278,
+    "minimum_NH_J": 0.5402662818760635,
+    "modes": [
+      {
+        "rank": 0,
+        "curvature_for_1mm_max_surface_mode_N_mm": 54.44721780678838,
+        "parts_N_mm": {
+          "deep_void": 48.38964790176993,
+          "mixed_tail": 0.010225289580051368,
+          "main_interface": 0.36182371557847237,
+          "geometric_core": 5.685520899859924
+        },
+        "Ritz_direct_relative_error": 1.7733808310446013e-12,
+        "projected_residual": 1.3659446020564899e-11,
+        "fine_Euclidean_eigen_residual": 0.9999908346620847,
+        "occupancy_weighted_displacement_fraction": 2.637666134946306e-05,
+        "surface_RMS_mm": 0.11538422649122802,
+        "full_background_max_mode_mm": 88.34453152595242
+      },
+      {
+        "rank": 1,
+        "curvature_for_1mm_max_surface_mode_N_mm": 98.07528329822632,
+        "parts_N_mm": {
+          "deep_void": 85.18429112753445,
+          "mixed_tail": 0.015498895600896434,
+          "main_interface": 0.7610480097665389,
+          "geometric_core": 12.114445265324441
+        },
+        "Ritz_direct_relative_error": 3.8296385948811374e-13,
+        "projected_residual": 1.464137718537788e-11,
+        "fine_Euclidean_eigen_residual": 0.9999904976056465,
+        "occupancy_weighted_displacement_fraction": 0.00017701678961940662,
+        "surface_RMS_mm": 0.39290716064269327,
+        "full_background_max_mode_mm": 129.03565092352696
+      },
+      {
+        "rank": 2,
+        "curvature_for_1mm_max_surface_mode_N_mm": 55.123123487734915,
+        "parts_N_mm": {
+          "deep_void": 48.92902866092989,
+          "mixed_tail": 0.00815509836224492,
+          "main_interface": 0.3414130646581976,
+          "geometric_core": 5.844526663784586
+        },
+        "Ritz_direct_relative_error": 3.4608637365409245e-12,
+        "projected_residual": 2.4632053289836396e-11,
+        "fine_Euclidean_eigen_residual": 0.9999891358919061,
+        "occupancy_weighted_displacement_fraction": 2.9771244886367017e-05,
+        "surface_RMS_mm": 0.121132183807186,
+        "full_background_max_mode_mm": 98.54788955819521
+      },
+      {
+        "rank": 3,
+        "curvature_for_1mm_max_surface_mode_N_mm": 55303.305812651364,
+        "parts_N_mm": {
+          "deep_void": 53411.76987963195,
+          "mixed_tail": 6.290111084321936,
+          "main_interface": 155.91263741480256,
+          "geometric_core": 1729.3331845202897
+        },
+        "Ritz_direct_relative_error": 2.017937919740337e-12,
+        "projected_residual": 9.400966559105514e-12,
+        "fine_Euclidean_eigen_residual": 0.999978915522979,
+        "occupancy_weighted_displacement_fraction": 4.082508053791906e-07,
+        "surface_RMS_mm": 0.4483676478068018,
+        "full_background_max_mode_mm": 3075.5739746058034
+      },
+      {
+        "rank": 4,
+        "curvature_for_1mm_max_surface_mode_N_mm": 26529.854986619463,
+        "parts_N_mm": {
+          "deep_void": 26118.813601406877,
+          "mixed_tail": 0.7851475999895515,
+          "main_interface": 30.844956943811166,
+          "geometric_core": 379.4112806687836
+        },
+        "Ritz_direct_relative_error": 4.8406088896867774e-14,
+        "projected_residual": 7.50171424114832e-12,
+        "fine_Euclidean_eigen_residual": 0.9999406794115975,
+        "occupancy_weighted_displacement_fraction": 8.078144665388416e-07,
+        "surface_RMS_mm": 0.3968285418743384,
+        "full_background_max_mode_mm": 2698.852376505716
+      },
+      {
+        "rank": 5,
+        "curvature_for_1mm_max_surface_mode_N_mm": 26629.57055269079,
+        "parts_N_mm": {
+          "deep_void": 26217.117776400904,
+          "mixed_tail": 0.7908069741532019,
+          "main_interface": 31.220291489483728,
+          "geometric_core": 380.4416778262505
+        },
+        "Ritz_direct_relative_error": 2.3535902978388623e-12,
+        "projected_residual": 7.967176073451636e-12,
+        "fine_Euclidean_eigen_residual": 0.9999406681021016,
+        "occupancy_weighted_displacement_fraction": 8.089904584747923e-07,
+        "surface_RMS_mm": 0.3982441848357578,
+        "full_background_max_mode_mm": 2694.4448467427546
+      }
+    ],
+    "wall_seconds": 253.41287957096938
+  }
+]

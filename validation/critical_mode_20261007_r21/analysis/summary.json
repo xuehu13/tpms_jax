@@ -1,0 +1,177 @@
+{
+  "rows": [
+    {
+      "rank": 0,
+      "curvature_for_1mm_max_surface_mode_N_mm": 54.44721780678838,
+      "parts_N_mm": {
+        "deep_void": 48.38964790176993,
+        "mixed_tail": 0.010225289580051368,
+        "main_interface": 0.36182371557847237,
+        "geometric_core": 5.685520899859924
+      },
+      "Ritz_direct_relative_error": 1.7733808310446013e-12,
+      "projected_residual": 1.3659446020564899e-11,
+      "fine_Euclidean_eigen_residual": 0.9999908346620847,
+      "occupancy_weighted_displacement_fraction": 2.637666134946306e-05,
+      "surface_RMS_mm": 0.11538422649122802,
+      "full_background_max_mode_mm": 88.34453152595242,
+      "state": "accepted_a0.1000.npz",
+      "compression": 0.1007710270331371,
+      "Ncoarse": 4,
+      "basis_eigenvalue": 8.294796387530676e-05,
+      "eigenpair_relative_residual": 1.0668739168487538e-11,
+      "absolute_cosine_with_fast_shell_event_increment": 0.1636803780537118,
+      "plot_sign": -1,
+      "scope": "Shell event increment is an observed finite change, not an eigenmode. Sign alignment changes no geometry or event position."
+    },
+    {
+      "rank": 0,
+      "curvature_for_1mm_max_surface_mode_N_mm": 51.07147556319747,
+      "parts_N_mm": {
+        "deep_void": 45.34353569300892,
+        "mixed_tail": 0.009703510467465253,
+        "main_interface": 0.34388226626653434,
+        "geometric_core": 5.374354093454551
+      },
+      "Ritz_direct_relative_error": 1.527615787993389e-12,
+      "projected_residual": 1.005286683296861e-11,
+      "fine_Euclidean_eigen_residual": 0.9999911221685439,
+      "occupancy_weighted_displacement_fraction": 2.8257713414020914e-05,
+      "surface_RMS_mm": 0.11608076597141594,
+      "full_background_max_mode_mm": 85.85333697187252,
+      "state": "accepted_a0.1200.npz",
+      "compression": 0.1219042645487386,
+      "Ncoarse": 4,
+      "basis_eigenvalue": 8.236593710426002e-05,
+      "eigenpair_relative_residual": 1.0049455661417798e-11,
+      "absolute_cosine_with_fast_shell_event_increment": 0.1604173955104727,
+      "plot_sign": -1,
+      "scope": "Shell event increment is an observed finite change, not an eigenmode. Sign alignment changes no geometry or event position."
+    },
+    {
+      "rank": 0,
+      "curvature_for_1mm_max_surface_mode_N_mm": 42.55779712887547,
+      "parts_N_mm": {
+        "deep_void": 37.676083996343316,
+        "mixed_tail": 0.0083109353623209,
+        "main_interface": 0.2939947436818188,
+        "geometric_core": 4.579407453488012
+      },
+      "Ritz_direct_relative_error": 2.617423649720149e-12,
+      "projected_residual": 1.1396944008402193e-11,
+      "fine_Euclidean_eigen_residual": 0.9999917497132633,
+      "occupancy_weighted_displacement_fraction": 3.274711078831801e-05,
+      "surface_RMS_mm": 0.11490096025165954,
+      "full_background_max_mode_mm": 79.43249829667553,
+      "state": "accepted_a0.1600.npz",
+      "compression": 0.16007084008727882,
+      "Ncoarse": 4,
+      "basis_eigenvalue": 8.120818214026428e-05,
+      "eigenpair_relative_residual": 1.1378964027873508e-11,
+      "absolute_cosine_with_fast_shell_event_increment": 0.12995562279338124,
+      "plot_sign": 1,
+      "scope": "Shell event increment is an observed finite change, not an eigenmode. Sign alignment changes no geometry or event position."
+    }
+  ],
+  "shell_increment_compression": [
+    0.11863248348236084,
+    0.13824518918991088
+  ],
+  "shell_increment_is_not_an_eigenmode": true,
+  "all_original_domains_retained": true,
+  "original_mesh_N32_unchanged": true,
+  "partial_or_complete_source": "validation/critical_mode_20261007_r21/results/result.json",
+  "new_time_advance": false,
+  "new_design_AD": false,
+  "physical_candidates": [
+    {
+      "state": "accepted_a0.1200.npz",
+      "compression": 0.1219042645487386,
+      "rank_nearest_zero": 3,
+      "eigenvalue_s_minus2": 32082696.315798014,
+      "uniform_translation_kinetic_fraction": 0.012593625726285891,
+      "curvature_for_1mm_max_surface_mode_N_mm": 1.8825110829934713,
+      "parts_N_mm": {
+        "deep_void": 0.11168930913284136,
+        "mixed_tail": 0.002993835130957875,
+        "main_interface": 0.20821695983732746,
+        "geometric_core": 1.5596109788923445
+      },
+      "occupancy_weighted_displacement_fraction": 0.17016833323617084,
+      "surface_RMS_mm": 0.6597622532561647,
+      "full_background_max_mode_mm": 1.323978602317305,
+      "generalized_fine_eigen_residual": 0.9998219988536214,
+      "projected_generalized_residual": 1.3773814947494825e-11,
+      "direct_curvature_vs_eigen_mass_relative_error": 4.623690448196427e-14,
+      "absolute_cosine_with_fast_shell_event_increment": 0.02598656957754247,
+      "plot_sign": 1,
+      "continued_virtual_curvature_fraction": 0.06092030230251609
+    },
+    {
+      "state": "accepted_a0.1600.npz",
+      "compression": 0.16007084008727882,
+      "rank_nearest_zero": 3,
+      "eigenvalue_s_minus2": 21744274.13514215,
+      "uniform_translation_kinetic_fraction": 0.029317710610773543,
+      "curvature_for_1mm_max_surface_mode_N_mm": 1.2877438975664972,
+      "parts_N_mm": {
+        "deep_void": 0.11255391481674741,
+        "mixed_tail": 0.0029621277370901248,
+        "main_interface": 0.19624155284437902,
+        "geometric_core": 0.9759863021682808
+      },
+      "occupancy_weighted_displacement_fraction": 0.16949596880969917,
+      "surface_RMS_mm": 0.6572193877547278,
+      "full_background_max_mode_mm": 1.356512763637868,
+      "generalized_fine_eigen_residual": 0.9998832582142498,
+      "projected_generalized_residual": 2.022087343956506e-11,
+      "direct_curvature_vs_eigen_mass_relative_error": 4.483158288663271e-15,
+      "absolute_cosine_with_fast_shell_event_increment": 0.027099164615740474,
+      "plot_sign": 1,
+      "continued_virtual_curvature_fraction": 0.0897042049837184
+    }
+  ],
+  "surface_mapping_checks": [
+    {
+      "state": "accepted_a0.1000.npz",
+      "same_node_labels_in_order": true,
+      "same_triangle_vertex_multiset": true,
+      "double_to_ODB_max_abs_mm": 4.766461749738937e-07,
+      "ODB_equals_exact_float32_rounding": true,
+      "point_fields_mapped_by_node_labels": true
+    },
+    {
+      "state": "accepted_a0.1200.npz",
+      "same_node_labels_in_order": true,
+      "same_triangle_vertex_multiset": true,
+      "double_to_ODB_max_abs_mm": 4.766461749738937e-07,
+      "ODB_equals_exact_float32_rounding": true,
+      "point_fields_mapped_by_node_labels": true
+    },
+    {
+      "state": "accepted_a0.1600.npz",
+      "same_node_labels_in_order": true,
+      "same_triangle_vertex_multiset": true,
+      "double_to_ODB_max_abs_mm": 4.766461749738937e-07,
+      "ODB_equals_exact_float32_rounding": true,
+      "point_fields_mapped_by_node_labels": true
+    },
+    {
+      "state": "accepted_a0.1200.npz",
+      "same_node_labels_in_order": true,
+      "same_triangle_vertex_multiset": true,
+      "double_to_ODB_max_abs_mm": 4.766461749738937e-07,
+      "ODB_equals_exact_float32_rounding": true,
+      "point_fields_mapped_by_node_labels": true
+    },
+    {
+      "state": "accepted_a0.1600.npz",
+      "same_node_labels_in_order": true,
+      "same_triangle_vertex_multiset": true,
+      "double_to_ODB_max_abs_mm": 4.766461749738937e-07,
+      "ODB_equals_exact_float32_rounding": true,
+      "point_fields_mapped_by_node_labels": true
+    }
+  ],
+  "two_candidate_surface_pattern_absolute_cosine": 0.9998944695913315
+}

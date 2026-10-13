@@ -1,0 +1,71 @@
+[
+  {
+    "time": 0.0012107747682837647,
+    "attempted_end_time": 0.0012117204413623146,
+    "dt": 5.910456740946804e-08,
+    "reason": "Endpoint conservative positive-frequency limit exceeded",
+    "accepted_state_dt": 6.192130120860215e-08,
+    "last_valid": {
+      "time": 0.0012107747682837647,
+      "compression": 0.1383653839854517,
+      "Fz_N": -6.4755801192021165,
+      "internal_macro_Fz_N": -6.416699794461371,
+      "energy_N_mm": 4.679399736617444,
+      "KE_N_mm": 0.03110133533739209,
+      "KE_over_U": 0.006646436955154004,
+      "J_finite": true,
+      "J_min": -7.268925520548747,
+      "invalid_material_points": 0,
+      "negative_J_points": 1634,
+      "required_positive_J_min": 0.030777357118267408,
+      "required_positive_J_points": 1131151,
+      "dt_seconds": 6.192130120860215e-08
+    }
+  },
+  {
+    "time": 0.0012543877318165722,
+    "attempted_end_time": 0.0012546925302609657,
+    "dt": 1.9049902774645846e-08,
+    "reason": "Endpoint conservative positive-frequency limit exceeded",
+    "accepted_state_dt": 1.9049902774645846e-08,
+    "last_valid": {
+      "time": 0.0012543877318165722,
+      "compression": 0.14567987136671576,
+      "Fz_N": -5.156244492100239,
+      "internal_macro_Fz_N": -5.231262521423677,
+      "energy_N_mm": 4.874030173808286,
+      "KE_N_mm": 0.2755883543861451,
+      "KE_over_U": 0.056542192920159176,
+      "J_finite": true,
+      "J_min": -15.87486811474644,
+      "invalid_material_points": 0,
+      "negative_J_points": 12594,
+      "required_positive_J_min": 0.008094722742788657,
+      "required_positive_J_points": 1131151,
+      "dt_seconds": 1.9049902774645846e-08
+    }
+  },
+  {
+    "time": 0.0012644460804815583,
+    "attempted_end_time": 0.001264598479703755,
+    "dt": 9.524951387322923e-09,
+    "reason": "Endpoint conservative positive-frequency limit exceeded",
+    "accepted_state_dt": 9.524951387322923e-09,
+    "last_valid": {
+      "time": 0.0012644460804815583,
+      "compression": 0.1473204908506258,
+      "Fz_N": -5.00671699957642,
+      "internal_macro_Fz_N": -4.729158632436635,
+      "energy_N_mm": 4.893400775642203,
+      "KE_N_mm": 0.33950617762027824,
+      "KE_over_U": 0.06938041521353254,
+      "J_finite": true,
+      "J_min": -14.310507697487383,
+      "invalid_material_points": 0,
+      "negative_J_points": 15918,
+      "required_positive_J_min": 0.017995402116018223,
+      "required_positive_J_points": 1131151,
+      "dt_seconds": 9.524951387322923e-09
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "scripts/thin_target_explicit.py",
+    "target",
+    "--case",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15",
+    "--case-input",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/input.json",
+    "--gauss-field",
+    "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/gauss_field.npz",
+    "--geometry-on-cpu",
+    "--material-model",
+    "objective_void",
+    "--element-degree",
+    "2",
+    "--cells",
+    "32",
+    "--quadrature-order",
+    "4",
+    "--force-batch-cells",
+    "2048",
+    "--adaptive",
+    "--load-time",
+    "0.004",
+    "--diagnose-first-failure",
+    "--checkpoint-compressions",
+    "0.10",
+    "0.12",
+    "0.14",
+    "0.159",
+    "--output",
+    "/home/xuehu/projects/tpms_jax/validation/mechanism_20261007_r17/original_diagnostic"
+  ],
+  "old_physical_input_sha256": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+  "same_material_source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "base_commit": "07b2042011fa4fb86a0da17c104fdf127c3b4239",
+  "entry_sha256": "5fb572310f5667f1661e09200bde96c81ec5f64be29768e6ab62da55c7e5db30",
+  "new_design_AD_jobs": 0,
+  "new_abaqus_jobs": 0,
+  "only_instrumentation_changed": true,
+  "environment": {
+    "JAX_PLATFORMS": "cuda,cpu"
+  },
+  "related_tests": "19 passed: first-failure replay, objective Explicit, void continuation; CPU 24.52 seconds"
+}

@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-08",
+  "scope": "Organization, literature and planning; no new mechanics computation",
+  "documents_before": {
+    "README.md": {
+      "sha256": "1d75d51e77e6be94fbf2f32355dfb2e6b6b65b0af07bd85712901a431aae307b",
+      "bytes": 1281
+    },
+    "docs/RESEARCH_BACKGROUND.md": {
+      "sha256": "952acac7ff480de5f5da65a625800de249c0a9d2fd45dd2caee22c556f11d924",
+      "bytes": 3125
+    },
+    "docs/RESEARCH_PLAN.md": {
+      "sha256": "6380daef80900fd68a3203fe1506a38113ce70effa66506716eb25ae2615bdc9",
+      "bytes": 4212
+    },
+    "docs/RESEARCH_STATUS.md": {
+      "sha256": "50175ef70d8d89d0a18452c42edcc7679be21e56ac24097e99d323e262af2574",
+      "bytes": 4965
+    },
+    "docs/FILE_MAP.md": {
+      "sha256": "27f1fab7bb6ec6162328605d2e25a1892579d3791804579992d25d1fca0fa73e",
+      "bytes": 9506
+    },
+    "docs/MECHANISM_ANALYSIS.md": {
+      "sha256": "2cecc5c34db5970e7e9b6b7e5db272f59b752698941f35b41ed3c0c181b3cd5e",
+      "bytes": 5359
+    },
+    "docs/TPMS_RESEARCH_REVIEW.md": {
+      "sha256": "46550d3981026ba4adabaef7a399981d5c2abbe16937446f477918a38f732842",
+      "bytes": 24810
+    },
+    "docs/PAPER_ROUTE.md": {
+      "sha256": "580a7ac5a36d4585e8c6fc85b928549635c87488af12a9a71c8f6ed145894d9c",
+      "bytes": 12051
+    },
+    "AGENTS.md": {
+      "sha256": "dd8955fe7b9111aabee8f7b9e2d6931fb3e2b521a6037973258a0e281ca0b1ec",
+      "bytes": 4883
+    },
+    "scripts/README.md": {
+      "sha256": "72dc40985ec0a38be35b5e10b3eaf1e1ea44c9c43dbf875f001a45d01d74af2c",
+      "bytes": 5500
+    },
+    "validation/README.md": {
+      "sha256": "833d6ff2e2d63cf2b32a44529d3c8a8245a9d6968a4c96973b4852d21971f5ac",
+      "bytes": 10943
+    },
+    "validation/abaqus_validation_progress.md": {
+      "sha256": "77de469f19385e9ea75e16ac718a37732f0a0ca4d3fdc60078bd33b855287c08",
+      "bytes": 895
+    },
+    "docs/history/README.md": {
+      "sha256": "f0f0eabd4e593c70938e1a456463d1842891044413ae370747855807dff39491",
+      "bytes": 1656
+    },
+    ".gitignore": {
+      "sha256": "3eb95f86a72d52f513f861f3ee404677004c9b20ec53814d5fe38ea215f82dc0",
+      "bytes": 1920
+    }
+  },
+  "windows_before": {
+    "START_HERE.md": {
+      "sha256": "0d9d72d2888071bdf81e00ecf3b865205e11950e2d21fe1e1aeda0bc7c733db0",
+      "bytes": 1249
+    },
+    "RESEARCH_BACKGROUND.md": {
+      "sha256": "7881274c2f5cf9aaea6c38180aa6997bfde96cac4dceadab0ddd8b11037fe4b4",
+      "bytes": 3119
+    },
+    "RESEARCH_PLAN.md": {
+      "sha256": "2a62afcb701fa7c723cfc8d9045dead7e2b487406923618583ed898e2061183e",
+      "bytes": 4205
+    },
+    "PROJECT_OVERVIEW.md": {
+      "sha256": "b620c1ad7e2ecd7b85b0dec40454df7594729c9a19c9bae0023141bb41919d66",
+      "bytes": 4928
+    },
+    "FILE_MAP.md": {
+      "sha256": "5d2a197100bc09e74195b238d95703b3459c492868070f46e2a722ceaa902338",
+      "bytes": 9458
+    },
+    "MECHANISM_ANALYSIS.md": {
+      "sha256": "0ccdd064eae3a9a522a71ebc8b757bcea9646796c53cec81b4d2f410587228e4",
+      "bytes": 5338
+    },
+    "TPMS_RESEARCH_REVIEW.md": {
+      "sha256": "d0eaab5a521d96dde24e7204b8cd88e63c54f0e9f52aefc1bd08916c742457bb",
+      "bytes": 24838
+    },
+    "PAPER_ROUTE.md": {
+      "sha256": "01be417d659d9ad151828975a136ff41df6fa7079ab0fcab300e742b84453e04",
+      "bytes": 12023
+    },
+    "AGENTS.md": {
+      "sha256": "1b0a90e2fbe6a1bffdeaa9a177b8390cbba5c800efff4578f8c53f608b984860",
+      "bytes": 4854
+    }
+  },
+  "frozen_files_unchanged": {
+    "hyperelastic_fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "pixi.lock": true,
+    "validation/geometry_transfer_20261006_r15/gauss_field.npz": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/thin_shell.inp": true,
+    "validation/plate_bending_20261008_r27/diagnostic.py": true,
+    "validation/initial_tangent_20261008_r30/jax_result.json": true,
+    "validation/initial_tangent_20261008_r30/abaqus/shell_result.json": true,
+    "validation/initial_tangent_20261008_r30/comparison.json": true,
+    "validation/membrane_diagnostic_20261008_r31/result.json": true,
+    "validation/initial_tangent_20261008_r30/linear_state.npz": true,
+    "validation/initial_bias_mechanism_20261008_r32/analysis.json": true,
+    "validation/initial_bias_mechanism_20261008_r32/local_energy.npz": true,
+    "validation/initial_bias_mechanism_20261008_r32/membrane_trace.json": true,
+    "validation/local_quadrature_20261008_r33/protocol.json": true,
+    "validation/local_quadrature_20261008_r33/result.json": true,
+    "validation/local_quadrature_20261008_r33/selected_cells.npy": true,
+    "validation/local_quadrature_20261008_r33/original_27point.npz": true,
+    "validation/local_quadrature_20261008_r33/dense_12.npz": true,
+    "validation/local_quadrature_20261008_r33/diagnostic.py": true,
+    "validation/local_reequilibrium_20261008_r34/diagnostic.py": true,
+    "validation/local_reequilibrium_20261008_r34/PROTOCOL.md": true,
+    "validation/local_reequilibrium_20261008_r34/protocol.json": true,
+    "validation/local_reequilibrium_20261008_r34/linear_state.npz": true,
+    "validation/local_reequilibrium_20261008_r34/result.json": true,
+    "validation/local_reequilibrium_20261008_r34/additional_operator_validation.json": true,
+    "validation/initial_bias_mechanism_20261008_r32/trace_membrane.py": true,
+    "validation/initial_bias_mechanism_20261008_r32/shell_sections.json": true,
+    "validation/thickness_kinematics_20261008_r35/diagnostic.py": true,
+    "validation/thickness_kinematics_20261008_r35/PROTOCOL.md": true,
+    "validation/thickness_kinematics_20261008_r35/protocol.json": true,
+    "validation/thickness_kinematics_20261008_r35/profile_faces.npy": true
+  },
+  "production_hash": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "scientific_moves": [],
+  "new_mechanics_jobs": 0,
+  "git_publication": "Prepared for reviewed commit: current docs and existing finished r17-r35 code/evidence; new mechanics jobs=0",
+  "cleanup": "Condensed maintained navigation; retained old text locally; removed duplicate validation index entries; no scientific deletion",
+  "new_plan_steps": 3,
+  "new_plan_started": false,
+  "after_documents": {
+    "README.md": {
+      "bytes": 1145,
+      "sha256": "e941bda62c1b0506670ab3f13f0eb38966ce0206ad22511a634579a768967711"
+    },
+    "docs/RESEARCH_BACKGROUND.md": {
+      "bytes": 2467,
+      "sha256": "ab3cfc7d3ee699c08f996914a307d672b529d48711008190eb029d9ed50670fc"
+    },
+    "docs/RESEARCH_PLAN.md": {
+      "bytes": 3605,
+      "sha256": "b64861db29d9d60f1364497146dba3abdd5750db2e418267451611eac62a76a4"
+    },
+    "docs/RESEARCH_STATUS.md": {
+      "bytes": 3572,
+      "sha256": "ae89e701edfaeab4a354dc8407cba3dfc109c04c6c628daaa60d917db8fc4a9e"
+    },
+    "docs/FILE_MAP.md": {
+      "bytes": 4528,
+      "sha256": "aa5205fa5d1ad1be9a44d65bd4b96ed5bb9eb65aafb478736393ecd76b695b29"
+    },
+    "docs/MECHANISM_ANALYSIS.md": {
+      "bytes": 9742,
+      "sha256": "31149748e7c4a862e23bb3513a65e51ab74d4c7ae0f84abcc12beee8cecb2bb9"
+    },
+    "docs/TPMS_RESEARCH_REVIEW.md": {
+      "bytes": 9135,
+      "sha256": "f17bc67b60017a999a02bb12eb2e663425a2327fa567cca29058cb0c1bd9ee6f"
+    },
+    "docs/PAPER_ROUTE.md": {
+      "bytes": 4906,
+      "sha256": "f85aba38296331330d4ae9574e19b0eb2c422ef4b90c4623d1a74947dfea352c"
+    },
+    "AGENTS.md": {
+      "bytes": 4628,
+      "sha256": "a25a03092306c2f90b74415776afffb9ebeb97a3c3c18c8f89b1506e160126ba"
+    },
+    "scripts/README.md": {
+      "bytes": 2772,
+      "sha256": "d83e73a24a4a1357f0543348dc9bab3008815a8c0b37a5f230e724b97e7b42a7"
+    },
+    "validation/README.md": {
+      "bytes": 8359,
+      "sha256": "cdc1906d2fe1f28b49bd767edf28a66798dc0df95285cf2fe9bbce2b211a472e"
+    },
+    "validation/abaqus_validation_progress.md": {
+      "bytes": 469,
+      "sha256": "61723b42e25bcef6716ccd4edadf7abf5f090b038393ec1efa915936f08b6939"
+    },
+    "docs/history/README.md": {
+      "bytes": 976,
+      "sha256": "d07852cb374af26f31dade95fe6b6bd1623a39a0268009aab19dda2a1bd47bc6"
+    },
+    ".gitignore": {
+      "bytes": 2213,
+      "sha256": "b3a684262d13f2dd886b7f82b70822b392147e68e0a896aeda5bf09a81a98d39"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "original_occupancy": true,
+    "original_full_energy": true,
+    "original_selected_energy": true
+  },
+  "original_occupancy_max_absolute_error": 9.992007221626409e-16,
+  "original_full_energy_relative_error": 2.220446049250313e-16,
+  "original_selected_energy_relative_error": 0.0,
+  "full_original_energy_N_mm": 2.458227340869753e-06,
+  "selected_original_energy_fraction": 0.6462161107929351
+}

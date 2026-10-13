@@ -1,0 +1,197 @@
+[
+  {
+    "iteration": 50,
+    "recurrence_residual": 0.002311420193743188,
+    "seconds": 4.062879457953386
+  },
+  {
+    "iteration": 100,
+    "recurrence_residual": 0.0007201961825212081,
+    "seconds": 4.645781512954272
+  },
+  {
+    "iteration": 150,
+    "recurrence_residual": 0.0004913740298626799,
+    "seconds": 5.23093252396211
+  },
+  {
+    "iteration": 200,
+    "recurrence_residual": 0.00022903159681770532,
+    "seconds": 5.809150576009415
+  },
+  {
+    "iteration": 250,
+    "recurrence_residual": 0.00010092599108798852,
+    "seconds": 6.38964239298366
+  },
+  {
+    "iteration": 300,
+    "recurrence_residual": 3.770121081351407e-05,
+    "seconds": 6.969366111909039
+  },
+  {
+    "iteration": 350,
+    "recurrence_residual": 1.819785945982962e-05,
+    "seconds": 7.560082840966061
+  },
+  {
+    "iteration": 400,
+    "recurrence_residual": 8.602718874544214e-06,
+    "seconds": 8.139504992985167
+  },
+  {
+    "iteration": 450,
+    "recurrence_residual": 5.831739410812811e-06,
+    "seconds": 8.720919879968278
+  },
+  {
+    "iteration": 500,
+    "recurrence_residual": 6.236587388536751e-06,
+    "seconds": 9.312777725979686
+  },
+  {
+    "iteration": 550,
+    "recurrence_residual": 2.9738351499587305e-06,
+    "seconds": 9.893778907018714
+  },
+  {
+    "iteration": 600,
+    "recurrence_residual": 8.035545384964159e-07,
+    "seconds": 10.47472304198891
+  },
+  {
+    "iteration": 650,
+    "recurrence_residual": 4.7262769620034005e-07,
+    "seconds": 11.054497720906511
+  },
+  {
+    "iteration": 700,
+    "recurrence_residual": 5.875832627126527e-07,
+    "seconds": 11.6359810649883
+  },
+  {
+    "iteration": 750,
+    "recurrence_residual": 3.464441609744397e-07,
+    "seconds": 12.219853296992369
+  },
+  {
+    "iteration": 800,
+    "recurrence_residual": 3.2502435211879393e-07,
+    "seconds": 12.802471825969405
+  },
+  {
+    "iteration": 850,
+    "recurrence_residual": 3.377401271570109e-07,
+    "seconds": 13.384510812931694
+  },
+  {
+    "iteration": 900,
+    "recurrence_residual": 2.560784852838081e-07,
+    "seconds": 13.966723731020465
+  },
+  {
+    "iteration": 950,
+    "recurrence_residual": 1.9788331123564138e-07,
+    "seconds": 14.548636909923516
+  },
+  {
+    "iteration": 1000,
+    "recurrence_residual": 2.5589008003909954e-07,
+    "seconds": 15.131898844963871
+  },
+  {
+    "iteration": 1050,
+    "recurrence_residual": 2.1697476912716186e-07,
+    "seconds": 15.712688057916239
+  },
+  {
+    "iteration": 1100,
+    "recurrence_residual": 1.1817858857401573e-07,
+    "seconds": 16.29073550598696
+  },
+  {
+    "iteration": 1150,
+    "recurrence_residual": 9.896097459438506e-08,
+    "seconds": 16.873095009941608
+  },
+  {
+    "iteration": 1200,
+    "recurrence_residual": 5.355123455335873e-08,
+    "seconds": 17.45311189093627
+  },
+  {
+    "iteration": 1250,
+    "recurrence_residual": 3.222561141494799e-08,
+    "seconds": 18.032221255940385
+  },
+  {
+    "iteration": 1300,
+    "recurrence_residual": 2.548822597444554e-08,
+    "seconds": 18.61200821690727
+  },
+  {
+    "iteration": 1350,
+    "recurrence_residual": 1.6554108120664527e-08,
+    "seconds": 19.192125897970982
+  },
+  {
+    "iteration": 1400,
+    "recurrence_residual": 1.1418986008790988e-08,
+    "seconds": 19.772768083959818
+  },
+  {
+    "iteration": 1450,
+    "recurrence_residual": 7.941050062548088e-09,
+    "seconds": 20.3552816179581
+  },
+  {
+    "iteration": 1500,
+    "recurrence_residual": 6.033832641608472e-09,
+    "seconds": 20.934068246977404
+  },
+  {
+    "iteration": 1550,
+    "recurrence_residual": 2.835999830022401e-09,
+    "seconds": 21.514380850014277
+  },
+  {
+    "iteration": 1600,
+    "recurrence_residual": 1.5445418143989524e-09,
+    "seconds": 22.095441179000773
+  },
+  {
+    "iteration": 1650,
+    "recurrence_residual": 8.973088174847189e-10,
+    "seconds": 22.677238782984205
+  },
+  {
+    "iteration": 1700,
+    "recurrence_residual": 5.91870885681081e-10,
+    "seconds": 23.258597237989306
+  },
+  {
+    "iteration": 1750,
+    "recurrence_residual": 4.811440124871948e-10,
+    "seconds": 23.84477183490526
+  },
+  {
+    "iteration": 1800,
+    "recurrence_residual": 2.9733957934147197e-10,
+    "seconds": 24.425743917934597
+  },
+  {
+    "iteration": 1850,
+    "recurrence_residual": 2.0681134158782745e-10,
+    "seconds": 25.007044060970657
+  },
+  {
+    "iteration": 1900,
+    "recurrence_residual": 1.0433519559991311e-10,
+    "seconds": 25.58655112294946
+  },
+  {
+    "iteration": 1903,
+    "recurrence_residual": 9.935866636885412e-11,
+    "seconds": 25.625312643009238
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "scope": "Postprocessing of existing data only",
+  "new_FE_AD_FD": 0,
+  "source_and_output_sha256": {
+    "gradient_table.csv": "ddbc609cbed12d0c8fde3e09805375ba281392286fdfaee1136cef70a33dff56",
+    "shape_saved_path.csv": "d1494d51f5da4d05a527ca721438ba44121d7e4732d6064754f84da803fbb578",
+    "plot_existing_results.py": "fd5dfa1a8071a93f860f47e1bedeca7376fdf52af3c6203c94c4071196c75ef7",
+    "parameter_sensitivity_vs_compression.png": "679a3921b57396baa6485c1a47a70d3b0da199550c43585e573dfa2d55a781c0",
+    "shape_response_and_gradients.png": "bc0426c835fcc2898f07f375177b923bff7d5e8ff0d66f8ff89bf9c317e41318",
+    "verification_coverage.png": "fec397739aa237372443058c3f38e846c394cbe6b00325b3bf5419e8cc84ebc4"
+  }
+}

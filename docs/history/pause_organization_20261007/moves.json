@@ -1,0 +1,1210 @@
+[
+  {
+    "old": "CRITICAL_MODE_PROGRESS.md",
+    "new": "history/progress_reports_20261007/CRITICAL_MODE_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "5f4f7ee9171238deae679925d43cdbeae6248483da634cad86cabc8b9749a670"
+      }
+    ]
+  },
+  {
+    "old": "FORWARD20_PROGRESS_REPORT.md",
+    "new": "history/progress_reports_20261007/FORWARD20_PROGRESS_REPORT.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "4942abeab19cec46f3c343a635be9d4735533548a3b09d5a3d27c05b24f632da"
+      }
+    ]
+  },
+  {
+    "old": "GEOMETRY_TRANSFER_REVIEW.md",
+    "new": "history/progress_reports_20261007/GEOMETRY_TRANSFER_REVIEW.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "db303caff7ee050f2564bca95dac042459e4e04afad36acd06a24412e9644b2d"
+      }
+    ]
+  },
+  {
+    "old": "GRADIENT20_PROGRESS_REPORT.md",
+    "new": "history/progress_reports_20261007/GRADIENT20_PROGRESS_REPORT.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "39337ec4bc1eae228500548583defd8e89d3a0351bfd277da74065e9061a4d31"
+      }
+    ]
+  },
+  {
+    "old": "JAX_INTEGRATION_PROGRESS.md",
+    "new": "history/progress_reports_20261007/JAX_INTEGRATION_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "f0d8bcbcc75ca9aa370779d70eb49a8dbab152af930ca996b1ccfabfbdefa600"
+      }
+    ]
+  },
+  {
+    "old": "MECHANISM_PROGRESS.md",
+    "new": "history/progress_reports_20261007/MECHANISM_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "8294b9317128cac0bee91926e0be0617e282c1ca88f40b167a6f395e14120e0b"
+      }
+    ]
+  },
+  {
+    "old": "OBJECTIVE_PATH_PROGRESS.md",
+    "new": "history/progress_reports_20261007/OBJECTIVE_PATH_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "04d507504235a4ea86476b17e87a16f56ebbda8e4c8c332bf84a71e1469e8f53"
+      }
+    ]
+  },
+  {
+    "old": "OBJECTIVE_VIRTUAL_PROGRESS.md",
+    "new": "history/progress_reports_20261007/OBJECTIVE_VIRTUAL_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "6412c644c711081d06770d4cb9f1a9aacd7ed095331e3dbafbad5a77d7b29f41"
+      }
+    ]
+  },
+  {
+    "old": "SHELL_RATE_PROGRESS.md",
+    "new": "history/progress_reports_20261007/SHELL_RATE_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "90f74ed8373d928e467fea8b657e93afe1379ef9c8cc24ab7bef6eca59def2fd"
+      }
+    ]
+  },
+  {
+    "old": "SIMULATION_ERROR_PROGRESS.md",
+    "new": "history/progress_reports_20261007/SIMULATION_ERROR_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "6d778fdeaed1cc4c575030503946943cc4ef98fcd232ae5c00a45abab5103251"
+      }
+    ]
+  },
+  {
+    "old": "STEP_CONTROL_PROGRESS.md",
+    "new": "history/progress_reports_20261007/STEP_CONTROL_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "eb560bc5b1196cbbe6fb2a88e8b8a0d902b3c1562ef9201ff9bcc1fabaf58883"
+      }
+    ]
+  },
+  {
+    "old": "THICKNESS_RANGE_PROGRESS.md",
+    "new": "history/progress_reports_20261007/THICKNESS_RANGE_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "d95ea6ad5252c621690251b3754010c83f0b3abb353914d11012b8ca9c99f20c"
+      }
+    ]
+  },
+  {
+    "old": "VIRTUAL_KERNEL_PROGRESS.md",
+    "new": "history/progress_reports_20261007/VIRTUAL_KERNEL_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "a26b8915fb3b1e23c0c70b252f260c525054340c2081830e63dede92d871d4f1"
+      }
+    ]
+  },
+  {
+    "old": "VOID_CONTINUATION_PROGRESS.md",
+    "new": "history/progress_reports_20261007/VOID_CONTINUATION_PROGRESS.md",
+    "files": [
+      {
+        "relative": ".",
+        "sha256": "3d7f6679fab983081f7b5e1b48e9d49fddd9ec9f15fac92ae711dfa371bf8dee"
+      }
+    ]
+  },
+  {
+    "old": "work/background_probe_20261007",
+    "new": "history/paused_background_probe_20261007",
+    "files": [
+      {
+        "relative": "hex27_reference.cpp",
+        "sha256": "81ae4bf6322eaeae7345c6ece71a32f42a757984f158534391e0264590e5d5d1"
+      },
+      {
+        "relative": "prepare.py",
+        "sha256": "af539a54ca2be15d579f3909f50fbbc4d323fde681f403f6a8e2715f7eee2b8f"
+      }
+    ]
+  },
+  {
+    "old": "work/geometry_closure_20261006",
+    "new": "history/completed_tools_20261007/remaining_tools/geometry_closure_20261006",
+    "files": [
+      {
+        "relative": "commit_closure.py",
+        "sha256": "5f4308c0dd6cf0ae9c8196e826cf35e57cffbf895e7604c1134137e7c66cecd0"
+      },
+      {
+        "relative": "completion_receipt.json",
+        "sha256": "8261618cd0f9633c3afabae0ed01fcdcc3216a2bc2e447a1ff50de68a208dfc4"
+      },
+      {
+        "relative": "existing_record_diagnosis.png",
+        "sha256": "dce10f0e1c952248b31ead83f08ff5453678c77f5777b0bb421ca33b49d12ba9"
+      },
+      {
+        "relative": "local_commit.json",
+        "sha256": "e0cd24471723830be2ad8103c1b35a0699904002db993d2337d651530e17f0e5"
+      },
+      {
+        "relative": "publication_log.json",
+        "sha256": "fbf515219f21c713dc9a1ce1224def70fb0f6cf2047edf7a2342707623706add"
+      },
+      {
+        "relative": "publication_receipt.json",
+        "sha256": "85db4aab154e8f084dea9376ec6224fbb05591bf5216eee401b0d0b1a88ba6e6"
+      },
+      {
+        "relative": "publish.py",
+        "sha256": "12227f0b2e250e29ee75d9d114ae442e5df173cdfb512a60622f55693cec154f"
+      },
+      {
+        "relative": "report_source.md",
+        "sha256": "a7d8fcf4ae6096090e666b9a4eb522d365e3ae69a1568fb07b7b54d61e26b102"
+      },
+      {
+        "relative": "review.log",
+        "sha256": "34c9774c65bd09597018640b3c67c1769944e8394b6073316cdf025d1e31cc92"
+      },
+      {
+        "relative": "review_attempt01.log",
+        "sha256": "45fc98bf0c42b92fc83ba9c5f6c68cf8144668dede377033ea0f73e6c4c29c57"
+      },
+      {
+        "relative": "review_attempt01.py",
+        "sha256": "57722940cac0aeb50cab5ef8464c5744899dad0bdf10ea13543cb32511f9fea3"
+      },
+      {
+        "relative": "review_existing.py",
+        "sha256": "388a00f9f4d80c762ecfdfae4faf9d9ec4aa3572c0b19fdb4735b5f7a6d465eb"
+      },
+      {
+        "relative": "tpms_jax_closure.bundle",
+        "sha256": "733f643365e2d110751b16bacfe26795624b16b1421eff432a971bfa8a247ad4"
+      },
+      {
+        "relative": "update_docs.py",
+        "sha256": "29842d7f44e24670d3a8400ca2cc2559530e453ac6c014e5aca2bf0d683ed6ad"
+      },
+      {
+        "relative": "verify_closure.py",
+        "sha256": "6a5ce7e2aafa654c56b356292efa7c03f2a3c2a0e2b1f59ae46b86ecf98ea51b"
+      }
+    ]
+  },
+  {
+    "old": "work/geometry_forward_20261006",
+    "new": "history/completed_tools_20261007/remaining_tools/geometry_forward_20261006",
+    "files": [
+      {
+        "relative": "README.md",
+        "sha256": "d930dd4d5d842a9a7ba04e40c96270f7fc27d2177eb50ddade27b9d38897de65"
+      },
+      {
+        "relative": "collect_step2.py",
+        "sha256": "454d4f4d9f5fe1d4959a5980b3c73afe2018337545ae7497cc33d0b51106d2c0"
+      },
+      {
+        "relative": "commit_step2.py",
+        "sha256": "943a99301fd0778e55f955b67b51c689e59db747f5cb3068af5d2722100e19d5"
+      },
+      {
+        "relative": "extract_shell.py",
+        "sha256": "69e5ccaff4c54930286d60b7353a9960fc83efaa181ee46e870949652b65e6db"
+      },
+      {
+        "relative": "local_commit.json",
+        "sha256": "ae2fde9df14485443393e70b7292e5ab3a7bf12c3ecacaf3b39cf88ac683fe70"
+      },
+      {
+        "relative": "publication_log.json",
+        "sha256": "ad84bb02785067dd4aff351b1ea15a6f8456ca06a55ec925e08278b3cc8a6c4f"
+      },
+      {
+        "relative": "publication_receipt.json",
+        "sha256": "069b643d214b26bf6b92c7e98210c187cb40b9bb81d129204cd4e2136a0bb6e6"
+      },
+      {
+        "relative": "publish.py",
+        "sha256": "f5553d036493c47f59716b0623ecfb4301f7b77db6dc4140f12a2c627d33178b"
+      },
+      {
+        "relative": "run_jax.py",
+        "sha256": "a8a696015274c81bbb5c285bca8bb23d8372032b3de8cb54272f5e252b22fe71"
+      },
+      {
+        "relative": "run_jax_cpu_reference.py",
+        "sha256": "b436577f4436e45a07d0953a14975df693367d8cf0bb554073ffd1d51b428a44"
+      },
+      {
+        "relative": "run_shell.py",
+        "sha256": "67975cc2a9657e48f468616ef5f3ffda9268ee4278b7df71593cd6f6fa57bfe1"
+      },
+      {
+        "relative": "shell_launch_receipt.json",
+        "sha256": "bbfbe2ed2e82e7b7f0ede7a725fb1d7de724fb9ab1369e286adeecc3f2d557dc"
+      },
+      {
+        "relative": "source_attempt/run_shell_initial.py",
+        "sha256": "f36b1168e77c9396b38d96417a955b9e9e27bf101d58c3b3491b9a8717cd2bec"
+      },
+      {
+        "relative": "stop_jax_for_quality.py",
+        "sha256": "96ec5ea5bbe025c96421f7e656b2f7e1f0518f5cf7aac1655acc6271c9795926"
+      },
+      {
+        "relative": "tpms_jax_step2.bundle",
+        "sha256": "38385aa08ffabd3c4e94fc8c5fa7c2025609e8525483a903a03c6c40894f2d0e"
+      },
+      {
+        "relative": "update_docs.py",
+        "sha256": "5044101ba5a70e5d2b75f99280096197034edc96d2bf4dfd050e92562ba6c19a"
+      },
+      {
+        "relative": "verify_step2.py",
+        "sha256": "893390b43fc8dfaf3a5b7ced027e454ea5e1a67ce238bbec01810da00e1f0b2a"
+      }
+    ]
+  },
+  {
+    "old": "work/geometry_plan_20261006",
+    "new": "history/completed_tools_20261007/remaining_tools/geometry_plan_20261006",
+    "files": [
+      {
+        "relative": "README.md",
+        "sha256": "49f292e410196dc573ae86292a65edcd252c48e1be9a2ce8078bcddfa4c60ba7"
+      },
+      {
+        "relative": "commit.py",
+        "sha256": "5a5fa3fe4402b8c800ff6f082cd232e1840678650969889f2589de0e883b732e"
+      },
+      {
+        "relative": "local_commit.json",
+        "sha256": "103dbb3e7b0d382b5565e47361295988ca8d0f855a9e2287f2ae2e64a1fa4c7e"
+      },
+      {
+        "relative": "organization_before.json",
+        "sha256": "952455e71b10b42ac907bba4c922bbee0b060bc940cf9640625268c9aff7508f"
+      },
+      {
+        "relative": "organization_receipt.json",
+        "sha256": "8c7b3f406daeb11b0a6a7f4bd3c175c7abe2ea780c915af9e5376ae414512536"
+      },
+      {
+        "relative": "organize.py",
+        "sha256": "cceb62773cb937147dda02d50a8b86aa87188930709ca8a98f522a9856c6db51"
+      },
+      {
+        "relative": "publication_log.json",
+        "sha256": "ccc144595cc2bf716641e71982045e2d7a57fdb0a8d2be9c3f11a0c4ccfdb02a"
+      },
+      {
+        "relative": "publication_receipt.json",
+        "sha256": "cdabe999670a8ffc4e098fec6f96d32a14ec51d2c40feda1405765cb56ae7cbe"
+      },
+      {
+        "relative": "publish.py",
+        "sha256": "41cb93ce482cf8b0b17754bb04525518ec5e16504b711b8aa9901c660ee51502"
+      },
+      {
+        "relative": "sync_verify.py",
+        "sha256": "2a817037728482eb67a1c65a11667258fa36fd4cc0ba93d94a4f65060091897c"
+      },
+      {
+        "relative": "tpms_jax_cleanup.bundle",
+        "sha256": "01766d5fb88586ca81fd4f7f921aeb16f0fece5dc44c1112f549b3db89ee7a9a"
+      },
+      {
+        "relative": "transport.git/FETCH_HEAD",
+        "sha256": "d87d5eae711e5a980e328e7089dd44be3572de0826704e2f5e7f3ada0c42eaf4"
+      },
+      {
+        "relative": "transport.git/HEAD",
+        "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+      },
+      {
+        "relative": "transport.git/config",
+        "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598"
+      },
+      {
+        "relative": "transport.git/description",
+        "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+      },
+      {
+        "relative": "transport.git/hooks/applypatch-msg.sample",
+        "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+      },
+      {
+        "relative": "transport.git/hooks/commit-msg.sample",
+        "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+      },
+      {
+        "relative": "transport.git/hooks/fsmonitor-watchman.sample",
+        "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+      },
+      {
+        "relative": "transport.git/hooks/post-update.sample",
+        "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+      },
+      {
+        "relative": "transport.git/hooks/pre-applypatch.sample",
+        "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+      },
+      {
+        "relative": "transport.git/hooks/pre-commit.sample",
+        "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+      },
+      {
+        "relative": "transport.git/hooks/pre-merge-commit.sample",
+        "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+      },
+      {
+        "relative": "transport.git/hooks/pre-push.sample",
+        "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+      },
+      {
+        "relative": "transport.git/hooks/pre-rebase.sample",
+        "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+      },
+      {
+        "relative": "transport.git/hooks/pre-receive.sample",
+        "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+      },
+      {
+        "relative": "transport.git/hooks/prepare-commit-msg.sample",
+        "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+      },
+      {
+        "relative": "transport.git/hooks/push-to-checkout.sample",
+        "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+      },
+      {
+        "relative": "transport.git/hooks/sendemail-validate.sample",
+        "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+      },
+      {
+        "relative": "transport.git/hooks/update.sample",
+        "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+      },
+      {
+        "relative": "transport.git/info/exclude",
+        "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-522682bec123dfada58383e52a12ba696f324cf4.idx",
+        "sha256": "18cfe99c458c0f2f6581e78ee480b4313b03e855dd8c8149181ac0d6da37258d"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-522682bec123dfada58383e52a12ba696f324cf4.pack",
+        "sha256": "4f848faefef4f4b559dfc2f0f90c16ea539f47bec59923a85014f9e5d1e8b0dc"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-522682bec123dfada58383e52a12ba696f324cf4.rev",
+        "sha256": "4895ac953229d4c9d8284b6124e339c17afc2907cc055702ec181776301f6baa"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-a29ab5ba42dfe4372914d619124183fb9cdfbff4.idx",
+        "sha256": "3c9f0dea5259052d0e1c351d1be3a9136ef291438bea0d8f3457728e5103713f"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-a29ab5ba42dfe4372914d619124183fb9cdfbff4.pack",
+        "sha256": "9db4a2b4c588753badeefcbf12188b554b81f6cef2bdcd32665262c33e2ba3c6"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-a29ab5ba42dfe4372914d619124183fb9cdfbff4.rev",
+        "sha256": "305068aa91ada3549b46c75e9162953d93fb0f965f1e5ea67c18c8315f9e3e9e"
+      },
+      {
+        "relative": "transport.git/refs/heads/main",
+        "sha256": "1eeac78ff9a48d31e2d0c9d79e8c8feddc9a6b14dd4aa6edaa583685d18831e8"
+      },
+      {
+        "relative": "transport.git/refs/remotes/origin/main",
+        "sha256": "1eeac78ff9a48d31e2d0c9d79e8c8feddc9a6b14dd4aa6edaa583685d18831e8"
+      },
+      {
+        "relative": "verification.json",
+        "sha256": "cd03499534245e3b46d3183c1054dc4f0b83a1873305a11e43ae6fd933fa1bd0"
+      }
+    ]
+  },
+  {
+    "old": "work/geometry_transfer_20261006",
+    "new": "history/completed_tools_20261007/remaining_tools/geometry_transfer_20261006",
+    "files": [
+      {
+        "relative": "README.md",
+        "sha256": "dcde9c189c4cb7ea166e4f70111702f1f1b97eee43198a2fc40ad18811345775"
+      },
+      {
+        "relative": "commit_inputs.py",
+        "sha256": "e83844023c0e7a8fbb2853b2ffbb03c330909444eabf2d86a3eca18facfc7b9d"
+      },
+      {
+        "relative": "diagnose_band.py",
+        "sha256": "36c2ed516b8edab5f0d5574c4be39dc7ba6d3837cccc78c235a20ebde3060a62"
+      },
+      {
+        "relative": "finalize_inputs.py",
+        "sha256": "699244a98879eff84c106ab7db3f0e453d906900851b19b0deb34b5da6a8391a"
+      },
+      {
+        "relative": "local_commit.json",
+        "sha256": "6fa9a706ca0757aa83a779abc9377bb8158b74525211f0d8eafcd9340bcd9a6b"
+      },
+      {
+        "relative": "prepare_inputs.py",
+        "sha256": "4403cc7bc4e2a787af8bcf275c3e7db3585e40930c82f938aa48e287a987ff02"
+      },
+      {
+        "relative": "publication_log.json",
+        "sha256": "a4129bdb7726dcf021156c467187cd858f91c34d8bbe31bef28ec0f067dc35bc"
+      },
+      {
+        "relative": "publication_receipt.json",
+        "sha256": "42eae9f26dabe3460d2ec030e2f2b4d894630d17fe87f9c224e77d90bed096cd"
+      },
+      {
+        "relative": "publish.py",
+        "sha256": "a251dc39523a08e306eae67fe424e0a8b099d5677be0fc554e73d15e768b3a37"
+      },
+      {
+        "relative": "recover_report.py",
+        "sha256": "790cb822dce1552fb27092f4837da4c14bb5c5e9d2e2a7742d248b1c18587b75"
+      },
+      {
+        "relative": "setup.py",
+        "sha256": "340960e6a6f9cb7d75e78e44af29382019cd906c7a83a8cc625d757040538b89"
+      },
+      {
+        "relative": "tpms_jax_cleanup.bundle",
+        "sha256": "6ce4f80545b15f7040f46f0320aeaa6491c47161dd4ebee1679884b9ec56e2ac"
+      },
+      {
+        "relative": "transport.git/FETCH_HEAD",
+        "sha256": "5f5d869ec9a14db60504abb520458496a1c5575281bb64122e73a375eaf94bc8"
+      },
+      {
+        "relative": "transport.git/HEAD",
+        "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+      },
+      {
+        "relative": "transport.git/config",
+        "sha256": "c311649961e2124a084f874ceb8765e03a7fb660adf849073e7a0ca7bb4c6598"
+      },
+      {
+        "relative": "transport.git/description",
+        "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+      },
+      {
+        "relative": "transport.git/hooks/applypatch-msg.sample",
+        "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+      },
+      {
+        "relative": "transport.git/hooks/commit-msg.sample",
+        "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+      },
+      {
+        "relative": "transport.git/hooks/fsmonitor-watchman.sample",
+        "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+      },
+      {
+        "relative": "transport.git/hooks/post-update.sample",
+        "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+      },
+      {
+        "relative": "transport.git/hooks/pre-applypatch.sample",
+        "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+      },
+      {
+        "relative": "transport.git/hooks/pre-commit.sample",
+        "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+      },
+      {
+        "relative": "transport.git/hooks/pre-merge-commit.sample",
+        "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+      },
+      {
+        "relative": "transport.git/hooks/pre-push.sample",
+        "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+      },
+      {
+        "relative": "transport.git/hooks/pre-rebase.sample",
+        "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+      },
+      {
+        "relative": "transport.git/hooks/pre-receive.sample",
+        "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+      },
+      {
+        "relative": "transport.git/hooks/prepare-commit-msg.sample",
+        "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+      },
+      {
+        "relative": "transport.git/hooks/push-to-checkout.sample",
+        "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+      },
+      {
+        "relative": "transport.git/hooks/sendemail-validate.sample",
+        "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+      },
+      {
+        "relative": "transport.git/hooks/update.sample",
+        "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+      },
+      {
+        "relative": "transport.git/info/exclude",
+        "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-08b2ba16fe41820711f7fae650e29be3e475b685.idx",
+        "sha256": "dba49bdd77c230c913c12e635e6891c0c7012e51fa1af8c76dc3cd916d85400d"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-08b2ba16fe41820711f7fae650e29be3e475b685.pack",
+        "sha256": "cd7864b904b687a57d35d180e131904d509a56895e82cd00194f55cec534feb0"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-08b2ba16fe41820711f7fae650e29be3e475b685.rev",
+        "sha256": "6309aede74b61537590815416f3414d25dd40a995d485bc89e9d6da4a723a06e"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-9f5b068868f9d140afa52df4fe95247c432db8dd.idx",
+        "sha256": "6a384ca96e511e840330aead0509a8ca61b046f8e6a0b3befef7d502ed5c270f"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-9f5b068868f9d140afa52df4fe95247c432db8dd.pack",
+        "sha256": "94b79181b3b59707b8252d1246716f43733d1d2bdbf0eff82bd99735876574ea"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-9f5b068868f9d140afa52df4fe95247c432db8dd.rev",
+        "sha256": "13b7efeb8287a703dc315a1c0ced916ac61ba4ea337d7e05d2763242d436d004"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-c3dc64030470981015c8e651a765cea7c1edb841.idx",
+        "sha256": "f58d51da87b4f8a9dd38ab71d3bcdb295504796ceecd2a1d1f5518d5b7f1063e"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-c3dc64030470981015c8e651a765cea7c1edb841.pack",
+        "sha256": "6982c0c177cf42606e118e22e02bc1666e8e573e12e60e3da9ca0451743dbacf"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-c3dc64030470981015c8e651a765cea7c1edb841.rev",
+        "sha256": "c4f32a47f3aae2a67254bdba3de37e9dec29dfa12bb5a9f56b01f2bb3a770735"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-eec20102f0c417da09b07d29565b1cbd17b135b1.idx",
+        "sha256": "b9219ef63da0399fdcbaf4077abecb9a23ecb9806fb160f8469c0e4a19e29953"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-eec20102f0c417da09b07d29565b1cbd17b135b1.pack",
+        "sha256": "233a2901e04b0a55c5270f964b3676266080052fa1bcfd9dbc45d09e7b8fd252"
+      },
+      {
+        "relative": "transport.git/objects/pack/pack-eec20102f0c417da09b07d29565b1cbd17b135b1.rev",
+        "sha256": "825591b6694aa3d1a4ceb95f22f405eddad9e5d2fab27b786f68c4229a0d0c57"
+      },
+      {
+        "relative": "transport.git/refs/heads/main",
+        "sha256": "adac57f36bf3c74c699519d9b62258e83525a4c8c945881074bc65afa0b5d036"
+      },
+      {
+        "relative": "transport.git/refs/remotes/origin/main",
+        "sha256": "adac57f36bf3c74c699519d9b62258e83525a4c8c945881074bc65afa0b5d036"
+      },
+      {
+        "relative": "verify_inputs.py",
+        "sha256": "6c6ab5d1c822f5754ecb78b072351d11fa5844bc53fc2b6caf7eb7518c648af0"
+      }
+    ]
+  },
+  {
+    "old": "work/mechanism_20261007",
+    "new": "history/completed_tools_20261007/remaining_tools/mechanism_20261007",
+    "files": [
+      {
+        "relative": "analyze_localization.py",
+        "sha256": "feb905e2a2f449acd1993b689344a203bad2866f63cdf6b5b605e02a973f4e60"
+      },
+      {
+        "relative": "diagnose_patch_frequency.py",
+        "sha256": "0e3ae80e16928d85b42ffc94e849558e455e76242354755b2f95fd307b293c72"
+      },
+      {
+        "relative": "extract_shell_modes.py",
+        "sha256": "a811e9f715bbaa97595180a5df3885e645c87372cdfc0e6a6549adf1ab1fd31a"
+      },
+      {
+        "relative": "finalize_mechanism.py",
+        "sha256": "88a04d27a707231099cbe01d76217e4a5a2d524af2a870baba98f976fc385876"
+      },
+      {
+        "relative": "instrument_entry.py",
+        "sha256": "e05359e9cd7f95530e4101d717c507c979a4309b01673668183e8fea1662e208"
+      },
+      {
+        "relative": "mode_comparison.png",
+        "sha256": "a0604356d0068c3122b88cac9ff071fbfa6ef1a37cc65b72d59368f750927455"
+      },
+      {
+        "relative": "plot_mechanism.py",
+        "sha256": "b71b3902db681bcad43fb86b501eef4308665efdf5ba35b4971bb74ad72d4ce0"
+      },
+      {
+        "relative": "plot_shell_modes.py",
+        "sha256": "1e45a8d0630e6f4269470137d0722f3b8ad6a57ceced584d8d1014b6b587c9a3"
+      },
+      {
+        "relative": "prepare_round.py",
+        "sha256": "d4bab71cd913169cfa03a6cd403518d7e5c5df43cf5cbe4eecf497f50559de79"
+      },
+      {
+        "relative": "prepare_short_replay.py",
+        "sha256": "ad6ef35c7b4fcffe7a30ee6a0db6c710f564ff9ec0e9969135dc91b3873e12dc"
+      },
+      {
+        "relative": "response_and_modes.png",
+        "sha256": "87b808815cc22abcab09e35a88b6a78f39e7795817af7dad8a8a643a8e7783d5"
+      },
+      {
+        "relative": "run_localization.py",
+        "sha256": "eb6e28906b55f35fe18ff73eee07bea25c30dfeefd7dd7ad5eda445696a30563"
+      },
+      {
+        "relative": "run_short_replay.py",
+        "sha256": "81c43f78dc597cfddce4d96b7315f4513d7b6ea0a8916edca737ee373fd67740"
+      },
+      {
+        "relative": "shell_frames/frame_a0.1000.npz",
+        "sha256": "d5b56ddae918705511a5dda4a33348f87475ae9dcca2a10fb8a8ff959e328e31"
+      },
+      {
+        "relative": "shell_frames/frame_a0.1140.npz",
+        "sha256": "9649531145087851ae6c5dbb4ac74ed6e9a3c4d5e110299b31e369878d309cbe"
+      },
+      {
+        "relative": "shell_frames/frame_a0.1400.npz",
+        "sha256": "edb07b6cbc9e82f9420a4031cae18060fb7eada9d1f843277f33628b6327fd70"
+      },
+      {
+        "relative": "shell_frames/frame_a0.1600.npz",
+        "sha256": "0a5b50df88e8d7362753bbcc3242487c60ca4933f4574edf0ef8508f93ca9d37"
+      },
+      {
+        "relative": "shell_frames/frame_a0.1700.npz",
+        "sha256": "d162ab2e4ac0c9eadbd7dc9bba77b00b68f2af3e98040459f4e32a546af35569"
+      },
+      {
+        "relative": "shell_frames/frame_a0.2000.npz",
+        "sha256": "34c9a25f6ff1abe97aa43dd24067f8d7eea16b6ee2e0d2b1927a0907178c1a64"
+      },
+      {
+        "relative": "shell_frames/modes.json",
+        "sha256": "1d3a80e26aa0ac07571cfbc8a7c33fcef178adb73d76887fbc97b39c4b7b460a"
+      },
+      {
+        "relative": "shell_frames/reference.npz",
+        "sha256": "35d643d9e70834f367304c39b72adf85017cd1e83f94d1513c2655f571e1c6e4"
+      },
+      {
+        "relative": "shell_transition.png",
+        "sha256": "103ac815efd9dd5bd88a3ea5fd268f80ca200452fef3d1b8225ba73ff7204741"
+      },
+      {
+        "relative": "test_first_failure.py",
+        "sha256": "c2b083172b7edaca0b74c320f7e9d064c4fbcc171dd7ecbf1c18246b1d694746"
+      },
+      {
+        "relative": "test_short_replay.py",
+        "sha256": "5cd106123b0adab78824e0285d301c52d2ce68df2622ca8bc777b077a39a74af"
+      },
+      {
+        "relative": "verify_final.py",
+        "sha256": "7ea8a292c45962a518434e4022a84e808206533ad707fefb871a082c1e2dff61"
+      }
+    ]
+  },
+  {
+    "old": "work/mechanism_literature_20261006",
+    "new": "history/completed_tools_20261007/remaining_tools/mechanism_literature_20261006",
+    "files": [
+      {
+        "relative": "A condition number-based numerical stabilization methodfor geometrically nonlinear topology optimization.txt",
+        "sha256": "0c42bd46dc34c23d5cb16a27033656e0724d2fd3104efd6937038128a2cf0b03"
+      },
+      {
+        "relative": "A voxel-based method of multiscale mechanical property optimization for the design of graded TPMS structures.txt",
+        "sha256": "ea0648472774ca4c16a3787dcc5f500f831b0579fec1f4e8f67f41b33d8d7b9d"
+      },
+      {
+        "relative": "A_page_21.png",
+        "sha256": "16bdd0e96c6f8da512485c40996e5ae770e123602764a071c8cd1c43eb11b5f3"
+      },
+      {
+        "relative": "A_page_27.png",
+        "sha256": "b34b44308f86b505988298610a86a2e29b7502e191ce27a5805ce7af40475074"
+      },
+      {
+        "relative": "An improved finite element modeling method for triply periodic minimal surface structures based on element size and minimum Jacobian.txt",
+        "sha256": "51fa8ace4f3ac24c5f341780d6f4302063461713268f88a376a55af652ccf309"
+      },
+      {
+        "relative": "Data-driven lightweight and robust design of hybrid TPMS structures.txt",
+        "sha256": "69f94f5f96cd120abcf214f278928ae226e40cceaa0b3681f3c8efc33749931a"
+      },
+      {
+        "relative": "Data-driven multiscale nonlinear topology optimization of functionally graded soft composites under large deformations.txt",
+        "sha256": "3f0e9d33177239fba7ff857f4e7d5dbad7870a1a91584fdc217d0bd6afe70bb6"
+      },
+      {
+        "relative": "Design- and Voxel-Based Analysis of a Topology–Density Dual-Gradient TPMS Absorber for Impact-Load Mitigation.txt",
+        "sha256": "2a87ea0f7dafddde53063fff66b97a60144a1926bf79ab2098a45b678be4ea1f"
+      },
+      {
+        "relative": "Experimental and numerical studies on mechanical properties of TPMS structures.txt",
+        "sha256": "d4f30a2aed26ee37f3072ed8a5fbe812414556b6e927a5f30742aeb53fe6da74"
+      },
+      {
+        "relative": "Experimental_page_12.png",
+        "sha256": "e6a433c6a5d52262b95fe9cd13e8e45af231388656a042d8d34b1770a915a442"
+      },
+      {
+        "relative": "Experimental_page_13.png",
+        "sha256": "fe7a26057a0602a423c7c7c7f4b34cb82131b6c46f204bf26260ba6cc25221d1"
+      },
+      {
+        "relative": "Gen-Porous  An INR-based generative framework for multiscale TPMS-like porous structure design and optimization.txt",
+        "sha256": "364f6d308cfc741dee8594d60e25d61369cc4152e20589057414c903e987b82e"
+      },
+      {
+        "relative": "Geometrically non-linear topology optimization via geometry projection.txt",
+        "sha256": "146bfa39cf94e64bfab6bb8e959c28b19445fff4a4e9ef3bad94b3a1d1f6cb91"
+      },
+      {
+        "relative": "Geometrically_page_5.png",
+        "sha256": "c5acc27ed78ccf1b898d36d72e3eb6f2706779bd46f999d65dc4be95886ba4fc"
+      },
+      {
+        "relative": "Inverse design of periodic microstructures with targeted nonlinear mechanical behaviour.txt",
+        "sha256": "de59821ece6850a056147222b172aff5c4877543150d6669a061caa44aad2f42"
+      },
+      {
+        "relative": "Inverse_page_5.png",
+        "sha256": "8bb686e54f4b6085ca247f762ea654fa21c6af3983a05f86549254c77de60a9f"
+      },
+      {
+        "relative": "JAX-FEM  A differentiable GPU-accelerated 3D finite element solver for automatic inverse design and mechanistic data science.txt",
+        "sha256": "5e94c08ddf2b06fcf1363bba402ab30a344e6e3a15fdec26a751253602f7333c"
+      },
+      {
+        "relative": "JAX-FEM_page_4.png",
+        "sha256": "bfa61680fc738e450ba37548c95d5e7695185be17d06bedfae23ccedf3843f5e"
+      },
+      {
+        "relative": "Level-set topology optimisation with unfitted finite elements and automatic shape differentiation.txt",
+        "sha256": "999c624cbbe4a198b82959b8b9f4d0a9d7038dace5d01f9fbebfd14d1ada246d"
+      },
+      {
+        "relative": "Level-set_page_11.png",
+        "sha256": "d908af2a218eef6968230449dc922f54e8746a96e9f077ca28745894c830b889"
+      },
+      {
+        "relative": "Leveraging automatic differentiation in modern machine learning frameworks for (neural) topology optimization.txt",
+        "sha256": "5a08fcbc9007319788bff9f21c2f217e9860a0f630ccea4f646ac91e8aeda908"
+      },
+      {
+        "relative": "Microstructure topology optimization by targeting prescribed nonlinear stress-strain relationships.txt",
+        "sha256": "c2bef3f54d042982b47de5fdbfcf792a82fac38ae9fae3c0bf07af81f54dd797"
+      },
+      {
+        "relative": "Multimaterial topology optimization for finite strain elastoplasticity  Theory, methods, and applications.txt",
+        "sha256": "abd05f32ac3d06c0c1e3ba118d33df48ecc08ec8e2322a88356e191ca9e99348"
+      },
+      {
+        "relative": "Multiscale topology optimization with embedded TPMS architected materials.txt",
+        "sha256": "5d4ff8fc7395d267baac06f855320755550991189ff3c7b08c3b709caad6dc00"
+      },
+      {
+        "relative": "Projection-Based Implicit Modeling Method (PIMM) for Functionally Graded Lattice Optimization.txt",
+        "sha256": "4425310fad6107e8ccac0848f87ade67780b0d2d9c23ed26b16ddda8c9f4b012"
+      },
+      {
+        "relative": "Sensitivity analysis of any hyperelastic evaluation functions coupled with adjoint method and automatic differentiation.txt",
+        "sha256": "f0c6b246336bccec2bee13cef5ec35db4416cbcc9bcbb273ff64b8ac312e1d7d"
+      },
+      {
+        "relative": "Shape Optimization and Sensitivity Analysis for Triply Periodic Minimal Surface Lattice Structures Under Periodic Boundary Conditions.txt",
+        "sha256": "1974e6a5a507c2f58d2dc2a67c0140536832f1ca29f0d92b1110d937ba433c69"
+      },
+      {
+        "relative": "Stress-constrained topology optimization of multi-scale structures made of triply periodic minimal surface (TPMS) lattices.txt",
+        "sha256": "20cab886581b5beb5833577df0d7adee61bf85cdbda391b70028661038482f23"
+      },
+      {
+        "relative": "Style- Constrained Inverse Design of MicrostructuresWith Tailored Mechanical Properties UsingUnconditional Diffusion Models.txt",
+        "sha256": "31eb69d1e649b0f93e40d787fb2319d59ad69da3affacf304e72dafec993a347"
+      },
+      {
+        "relative": "Three-dimensional generative adversarial network for inverse design of hybrid TPMS.txt",
+        "sha256": "54784b92b7080ded492f77fed6e28d4bacacd5d90d97899d62eee4085d4a6d8b"
+      },
+      {
+        "relative": "Topology optimization via implicit neural representations.txt",
+        "sha256": "2999caf14c34872a0103f4a6c67ad554271d98a1e3137a9dfe720072f80e17d1"
+      },
+      {
+        "relative": "extract_papers.py",
+        "sha256": "aad498abff087a2c66109ea4fe7ea49d877a8a36cbda14a01b453f4bf8061fa1"
+      },
+      {
+        "relative": "extraction.log",
+        "sha256": "9d61a3a40fedf8c7e45b34c5e2dd4e7d4dc9ffd954a69f75ab43cd7c1fd15067"
+      },
+      {
+        "relative": "inventory.json",
+        "sha256": "4f3876fd1517c949b646a3adfaf06e44b787eccda9d1137d2ebd658b0b2091d7"
+      },
+      {
+        "relative": "read_selected.py",
+        "sha256": "a660870326f9117b89738ec51ee5b9c51c721ee36bcc938a450f857e5420cf7f"
+      },
+      {
+        "relative": "reading_receipt.json",
+        "sha256": "6314df2b5ac993ae11d55710777a5164a146395d7c814e5fe3eecbfb308db7e3"
+      },
+      {
+        "relative": "reading_receipt.py",
+        "sha256": "a730ee4e8a9b36de90dc71a04e557de742e84a1856425827fb4f0704c0529992"
+      },
+      {
+        "relative": "render_receipts.json",
+        "sha256": "f2d1410d099902f70ed6cc9e1177f87ffc730d858fa82e4511e807fbebce9f8c"
+      },
+      {
+        "relative": "render_selected.py",
+        "sha256": "a5ba982b37d36b318d2c603b099689208172f6781b791c017228411270aff5ca"
+      },
+      {
+        "relative": "selected_pages.txt",
+        "sha256": "46fa3f8425052c5fb9fa016bbe0e741cbb61707c6787b7bf408f07c51ae1f989"
+      }
+    ]
+  },
+  {
+    "old": "work/step_control_20261007",
+    "new": "history/completed_tools_20261007/remaining_tools/step_control_20261007",
+    "files": [
+      {
+        "relative": "analyze_control.py",
+        "sha256": "ae7bd924aa10dd82ab85bb336729919a9d4985c337ebce8379134d577accd64f"
+      },
+      {
+        "relative": "bound_functions.py",
+        "sha256": "6e9393f057063ef573317fd4ce79dd56afd64a337e02872227c56ff487f1a6cf"
+      },
+      {
+        "relative": "close_documents.py",
+        "sha256": "bdd5b8e583179c1bc0de065e5b70816e879c4218226390be59e550d4f9fb8623"
+      },
+      {
+        "relative": "control_function.py",
+        "sha256": "a354383c8681b5bdb3cfe1a4dd9c77105e81487950b61828a58c6046f3fc027a"
+      },
+      {
+        "relative": "controlled_response.png",
+        "sha256": "b5f89a930a6ebf68179c873ae7ff3a9925a7a8deb50af4ed30b72cc5307a2efa"
+      },
+      {
+        "relative": "diagnose_control_endpoint.py",
+        "sha256": "4cb7a09163442147f84019699213860486ae35a19e2153b3338a2c78c0f9e23e"
+      },
+      {
+        "relative": "install_bound.py",
+        "sha256": "829ee4da586e497e3174783ec2acfdf4c232072d5e3c198dfcf764e0256cef96"
+      },
+      {
+        "relative": "install_control.py",
+        "sha256": "78363f4c2efd5e840b89b4c92d7118e42f6e70301d5551d1c6592cf3e9a2ca99"
+      },
+      {
+        "relative": "plan_after.md",
+        "sha256": "c06006bdcb71701400ebdf8c47e9ea6c3a970f9b3a29543e98d4e22ced6f3b8d"
+      },
+      {
+        "relative": "prepare_bound.py",
+        "sha256": "c3bf2d8b387233255824bdc16654a53580e01be4c2700ff2921c9c4a55126a9f"
+      },
+      {
+        "relative": "prepare_closure.py",
+        "sha256": "16c2ea1a0b9af1c0c39bbc17385088272b3c2627c635ac562b0ab66d12690e6e"
+      },
+      {
+        "relative": "prepare_control.py",
+        "sha256": "25be3baa4ef579ace1d3691c1096fdc230d382973c4a227165f4a157772b0aa4"
+      },
+      {
+        "relative": "quality_bound.py",
+        "sha256": "3223fabcc73b14c95058f1dc10a16e9dfa84394efb5ebc5b4d1d2f97820bec76"
+      },
+      {
+        "relative": "run_analysis.py",
+        "sha256": "20c96c98af07ada483446f3a52361d3762f2a2f04eb32350a0dd65b3e98b8aa9"
+      },
+      {
+        "relative": "run_bound_probe.py",
+        "sha256": "a42bdc8f1ddc95defb3db41cb3691504709eef0b9f05df0369523172a3984bbc"
+      },
+      {
+        "relative": "run_control.py",
+        "sha256": "c51f9ee97fb7cd319fbe908dafcf5f331f026edbc51ddb24020f2d2dab291234"
+      },
+      {
+        "relative": "test_bound.py",
+        "sha256": "c47ed5e5b42dc827f1cc1ea2c5828964dfc4fce9f1e392e1304aa2b84cb32ef2"
+      },
+      {
+        "relative": "test_control.py",
+        "sha256": "cf1be0fbcbcd8459797164cc2840ea615a9dc247258a0976446858d8eed511ad"
+      },
+      {
+        "relative": "verify_closure.py",
+        "sha256": "2b943c3c986e83eae1a8c9d652b2d53dc0dea399c7b2c7da8a33af25a2a550e4"
+      }
+    ]
+  },
+  {
+    "old": "tmp/pdfs",
+    "new": "history/completed_tools_20261007/early_reading/pdfs",
+    "files": [
+      {
+        "relative": "correct_research_scope.py",
+        "sha256": "8622c6cd19028bc922c968d80699c5ad856496d4bdc41d8b78ff79fdaef2b998"
+      },
+      {
+        "relative": "diffusion.txt",
+        "sha256": "a711674b1c9f0c565fabe812374a4d8e85b60362d049bf721e6ed02dda0fd6a6"
+      },
+      {
+        "relative": "diffusion_page_23.png",
+        "sha256": "64b044ee698cef62cb5634ada4efa0a634b269a337e33a42b1f69347e3345563"
+      },
+      {
+        "relative": "diffusion_page_5.png",
+        "sha256": "80d72505246966b6b77be9fdc8cc7e400cc5ca23989e52bb60672b37a0dd8b1c"
+      },
+      {
+        "relative": "diffusion_page_9.png",
+        "sha256": "bf9c7d7dbfdf3a90305bbabdf17b3ae7b1b596ce1e96c79f852e6b2e5d6bdc52"
+      },
+      {
+        "relative": "hybrid_tpms_gan.txt",
+        "sha256": "99691714d73a00fffc6f3b387493bb47d14f565d38de980643a6ab2db0bb75eb"
+      },
+      {
+        "relative": "hybrid_tpms_gan_page_3.png",
+        "sha256": "9023de68a863199308daa04c07a88ed9b7427e096763297de15f8edf99fa9ce1"
+      },
+      {
+        "relative": "hybrid_tpms_gan_page_4.png",
+        "sha256": "a30c6697e01d29e61a502dfe7ff3f58ef783bedbe37415e4eb424cc0f1af9ce3"
+      },
+      {
+        "relative": "hybrid_tpms_gan_page_5.png",
+        "sha256": "5ab35371059336e97e9f6e7fd9e3f4d38f99676d5e2f9778f7bf1e2691dac72b"
+      },
+      {
+        "relative": "inspect_paper_pages.py",
+        "sha256": "e9c7b3f6ef04d8bb27acff0ad716835e171c43ae69863a591d1e2270251b037e"
+      },
+      {
+        "relative": "read_reference_papers.py",
+        "sha256": "a606ab59133860cf14d1e311aa7d3127808955c6b2eb5e0669295283a7cf4733"
+      },
+      {
+        "relative": "reference_metadata.json",
+        "sha256": "a0dcd2d01f7fa743383055278f3b356c8d999cc1e4e7efe2b1cffd6a55b8ad0b"
+      },
+      {
+        "relative": "render_reference_pages.py",
+        "sha256": "318444cb988400cc218ec5a52a11cea29848725606e11540788b5c815dcc4179"
+      }
+    ]
+  },
+  {
+    "old": "tmp/research_questions_20261003",
+    "new": "history/completed_tools_20261007/early_reading/research_questions_20261003",
+    "files": [
+      {
+        "relative": "extract_papers.py",
+        "sha256": "61d26169c5bd5765fa404befedbdd91dd497762e3ba4cfe70ee2ba5c98291fcb"
+      },
+      {
+        "relative": "index.json",
+        "sha256": "e74ceaa648f1d03d9211491ed52b8bc20ec918b45a7820f055f6e6ba27b5059e"
+      },
+      {
+        "relative": "inspect_papers.py",
+        "sha256": "6a33c90f66f83bc5b21fb3cc825b2a12edb1334d8feb38ee0431fbd06f4b15e2"
+      },
+      {
+        "relative": "paper_01.txt",
+        "sha256": "fd737c20438aeaf8e490dbadfb95d89bea1368ce2db4b0e50e67985de94c9339"
+      },
+      {
+        "relative": "paper_02.txt",
+        "sha256": "e0be6d457dc2199231bf26f376925554b40c749d2fe9aa2844eca9da64d22050"
+      },
+      {
+        "relative": "paper_03.txt",
+        "sha256": "f0613bfd30a94ea449ed9c87a7d4934dded261c8a84b2e222595481e8aa57fb7"
+      },
+      {
+        "relative": "paper_04.txt",
+        "sha256": "aff6301d0e0b7fef78107dfc8d2ca143dbf442ba8b7c0a6b6d6e53c8c769eb21"
+      },
+      {
+        "relative": "paper_05.txt",
+        "sha256": "004bdb681296af7a77a9807719d30c41c50a10e837a9082823195944120c35f8"
+      },
+      {
+        "relative": "paper_06.txt",
+        "sha256": "5c5cddbeb080e90288cebf41524d613270b5af55290f3ebe0b8e5c6ea0c4e064"
+      },
+      {
+        "relative": "paper_07.txt",
+        "sha256": "21d16a4603a01c0683bb6431c5c49a178af1d2f09a5599173eaaa75d18adea93"
+      },
+      {
+        "relative": "paper_08.txt",
+        "sha256": "e4046b137fdf1d047a9b6abe38658bf2a64ebda1629155d90c65c35b459ef938"
+      },
+      {
+        "relative": "paper_09.txt",
+        "sha256": "29a65f4056eb7d6185966d6dd6c1b677934ebefbb2978534b688451871982bd1"
+      },
+      {
+        "relative": "paper_09_page_4.png",
+        "sha256": "e6342efebae9281bb5408844bd60a170429111cae0cb321e049d9ff3ee7fb1d3"
+      },
+      {
+        "relative": "paper_09_page_5.png",
+        "sha256": "67b280afeca52a159dc73200ca53c040ac92f6d393fe9d6ec1b7f37f0413134a"
+      },
+      {
+        "relative": "paper_10.txt",
+        "sha256": "1cf5eeca1bc177aeac803cba75cfe97332a117a4b841a7bcf9dac609914fc1eb"
+      },
+      {
+        "relative": "paper_11.txt",
+        "sha256": "acb1d257e9865caceeb70a845106befaf420f05e5520fd6d921104c1509155d2"
+      },
+      {
+        "relative": "paper_12.txt",
+        "sha256": "69007c93996a0fb25f02c67ee3ee13425c629246befa36e1580da3504232eebf"
+      },
+      {
+        "relative": "paper_12_page_22.png",
+        "sha256": "1cd7295ca9b7e6fe98fefdbdff7d070e1d0c488bb32bc2a276ce88a8e01e0b7a"
+      },
+      {
+        "relative": "paper_12_page_7.png",
+        "sha256": "9fa77dde51829b7a1e19fa145ba3bfe989ef55678a53b3a9888ef32c64666c24"
+      },
+      {
+        "relative": "paper_13.txt",
+        "sha256": "af1b3474a66906187afab4f2fcf45bd2f1e335ba183d97e965c8064804d13156"
+      },
+      {
+        "relative": "paper_13_page_3.png",
+        "sha256": "83f29a6b04dd4c5ce2058b92badba9baf6bc6a637c656ae0cac41045b6bac969"
+      },
+      {
+        "relative": "paper_13_page_4.png",
+        "sha256": "216881c70b2a7fc51b2ad79366e928d00eb0a7d3d0d49fff34f922d71b8a35ad"
+      },
+      {
+        "relative": "paper_14.txt",
+        "sha256": "7e755ba5516a1242186981de721c00d81e9290950b1e51018f04c321f9ff91db"
+      },
+      {
+        "relative": "paper_15.txt",
+        "sha256": "0ff7a0ac743c8e8158443986573ed5bfbd90fb27e37f7f691edbd22df48d360e"
+      },
+      {
+        "relative": "paper_16.txt",
+        "sha256": "63ee454ed69ff30e330254e575e5c2236917dc020f48609074dd86ad458ac70b"
+      },
+      {
+        "relative": "paper_16_page_5.png",
+        "sha256": "166026a1e111eb203fe090d34f7be320c7e2164ad725cd0c830649ab0a7a99a3"
+      },
+      {
+        "relative": "paper_16_page_6.png",
+        "sha256": "1ca91b8e8ca3f370ff4faa8d70ba5e66068b662367ac87e1c57e0cb9d0b4732e"
+      },
+      {
+        "relative": "paper_17.txt",
+        "sha256": "3ed687ca8efd7fa6b85bf2eeb6ce743dd6d7151896cfe83ef7478e9a7bd39d64"
+      },
+      {
+        "relative": "paper_17_page_11.png",
+        "sha256": "24b78a9593c0000f95df4cedd7702dee1a1f1cd4270e1425dd6785ffc060034d"
+      },
+      {
+        "relative": "paper_17_page_12.png",
+        "sha256": "11d36bb7f8f2d7b4b4441f8aac788ae4cafa1bf01b80cbc5d0846986243c6573"
+      },
+      {
+        "relative": "paper_18.txt",
+        "sha256": "3f9f2b0af4ddef4339bdf9995bb137dca4d83c8661443595904201a79d40f22c"
+      },
+      {
+        "relative": "paper_19.txt",
+        "sha256": "1593c581abd427134368898e2811304be16c6fb3cb3e1d6d4748c327be4e3734"
+      },
+      {
+        "relative": "paper_20.txt",
+        "sha256": "5fd8cb894012c2995ad110910797a9977fc02d7ec054f406ad99f787806c302f"
+      },
+      {
+        "relative": "paper_21.txt",
+        "sha256": "05f987f5d755afaa6639248352887107fe12eae94f97cb36393c9618b7d4c639"
+      },
+      {
+        "relative": "paper_22.txt",
+        "sha256": "c482eed6cda600595573010a4fcb2ea54643c3f4a196212f7515914b440e2fe7"
+      },
+      {
+        "relative": "paper_23.txt",
+        "sha256": "f710f40bc072393d8345a331ee42bab7f88417e41d7d1cbca663148f17da96c8"
+      }
+    ]
+  }
+]

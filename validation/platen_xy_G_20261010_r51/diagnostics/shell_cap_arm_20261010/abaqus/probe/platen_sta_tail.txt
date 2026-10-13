@@ -1,0 +1,100 @@
+   Total mass in model = 5.00000E-10
+   Center of mass of model = ( 5.000000E-01, 5.000000E-01, 0.000000E+00)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          1.785238E-10                  3.035238E-10
+      I(YY)          1.785238E-10                  3.035238E-10
+      I(ZZ)          3.035238E-10                  5.535238E-10
+      I(XY)          4.166667E-11                 -8.333333E-11
+      I(YZ)          0.000000E+00                  0.000000E+00
+      I(ZX)          0.000000E+00                  0.000000E+00
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 5.77795E-06
+
+   Statistics over 2 deformable elements:
+      Mean = 5.77795E-06
+      Standard deviation = 0.0000
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           2          1       5.777952E-06      1.000000E+00
+           1          2       5.777952E-06      1.000000E+00
+
+
+***WARNING: A shell surface with shell offsets has either rigid elements or
+            deformable elements made rigid. Rigid surfaces with shell offsets
+            cannot be used with contact pairs. The shell offsets will not be
+            enforced within the contact domain.  Please use general contact
+            instead.
+
+
+***WARNING: Some nodes referenced by surfaces under *CONTACT PAIR have zero
+            mass.  Contact constraints may not be enforced correctly for these
+            nodes.  The nodes have been added to the node set named
+            "WarnNodeContPairZeroMass".
+
+
+***WARNING: The output variable CDISP is not available for
+            contact pair.
+
+
+Abaqus/Explicit 2 0 2 6                          DATE 10-Oct-2026  TIME 15:25:56
+The model has been decomposed into 4 domains.
+Domain level parallelization will be used with 4 processors each hosting an MPI rank.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 1.3 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 5.57987E-06           1  0.000E+00  0.000E+00
+Output Field Frame Number     0, of      2, at step time 0.000E+00
+       11  6.336E-05 6.336E-05  00:00:00 5.77795E-06           2  5.467E-10  4.394E-12
+       22  1.269E-04 1.269E-04  00:00:00 5.77795E-06           2  6.622E-09  1.639E-11
+       33  1.905E-04 1.905E-04  00:00:00 5.77795E-06           2  2.481E-08  3.915E-11
+       44  2.540E-04 2.540E-04  00:00:00 5.77795E-06           2  5.660E-08  7.245E-11
+       55  3.176E-04 3.176E-04  00:00:00 5.77795E-06           2  9.682E-08  7.976E-11
+       66  3.811E-04 3.811E-04  00:00:00 5.77795E-06           2  1.358E-07 -9.874E-11
+       77  4.447E-04 4.447E-04  00:00:00 5.77795E-06           2  1.632E-07 -8.759E-10
+       88  5.083E-04 5.083E-04  00:00:00 5.77795E-06           2  1.712E-07 -2.969E-09
+       99  5.718E-04 5.718E-04  00:00:00 5.77795E-06           2  1.577E-07 -7.204E-09
+      104  6.007E-04 6.007E-04  00:00:00 5.77795E-06           2  1.453E-07 -9.986E-09
+Output Field Frame Number     1, of      2, at step time 6.007E-04
+      115  6.643E-04 6.643E-04  00:00:00 5.77795E-06           2  1.086E-07 -1.791E-08
+      126  7.278E-04 7.278E-04  00:00:00 5.77795E-06           2  6.759E-08 -2.743E-08
+      137  7.914E-04 7.914E-04  00:00:00 5.77795E-06           2  3.261E-08 -3.677E-08
+      148  8.549E-04 8.549E-04  00:00:00 5.77795E-06           2  1.039E-08 -4.406E-08
+      159  9.185E-04 9.185E-04  00:00:00 5.77795E-06           2  1.382E-09 -4.830E-08
+      170  9.821E-04 9.821E-04  00:00:00 5.77795E-06           2  4.508E-12 -5.000E-08
+      181  1.046E-03 1.046E-03  00:00:00 5.77795E-06           2  0.000E+00 -4.694E-08
+      192  1.109E-03 1.109E-03  00:00:00 5.77795E-06           2  0.000E+00 -4.694E-08
+      203  1.172E-03 1.172E-03  00:00:00 5.77795E-06           2  0.000E+00 -4.694E-08
+      208  1.200E-03 1.200E-03  00:00:00 5.77795E-06           2  0.000E+00 -4.694E-08
+Restart Number  1 at 1.20000E-03
+Output Field Frame Number     2, of      2, at step time 1.200E-03
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =  0.10000
+       SYSTEM TIME (SEC)    =  0.20000
+       WALLCLOCK TIME (SEC) =            0
+              INIT (SEC) =          0
+              MAIN (SEC) =          0
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

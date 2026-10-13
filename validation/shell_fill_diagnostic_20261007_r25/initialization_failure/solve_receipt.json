@@ -1,0 +1,26 @@
+{
+  "phase": "solve",
+  "returncode": 0,
+  "wall_seconds": 30.816522200009786,
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=nearzero",
+    "input=shell_fill.inp",
+    "cpus=1",
+    "double=both",
+    "interactive"
+  ],
+  "INP_sha256": "fed40f91d71101261da15507f32b58b3c0d8c1f9c8cfd2e2223dd1050e8ed927",
+  "input_json_sha256": "d20a68b68dc48ee8c2fc38482c1d3fac51358a63986fcbcd7161416814ac6426",
+  "input_unchanged": true,
+  "Abaqus_success_log": false,
+  "Abaqus_error_log": true,
+  "design_AD": false,
+  "JAX_forward": false,
+  "analysis_completed_successfully": false,
+  "extraction_returncode": 0,
+  "extraction_wall_seconds": 3.5475608999840915
+}

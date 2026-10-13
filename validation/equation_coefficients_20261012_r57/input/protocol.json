@@ -1,0 +1,58 @@
+{
+  "authorization": "2026-10-12 user: 试一下曲面方程的各系数，看看jax-fem能不能正确处理。",
+  "equation": "f=c1*cos(X)*cos(Z)+c2*sin(X)*sin(Y)*sin(Z)+c0=0; X=2pi*x/L",
+  "parameters": [
+    "c1",
+    "c2",
+    "c0"
+  ],
+  "units": [
+    "dimensionless",
+    "dimensionless",
+    "dimensionless"
+  ],
+  "baseline": [
+    -3.4,
+    4.6,
+    2.0
+  ],
+  "relative_fd_step": 1e-05,
+  "fd_halving": true,
+  "parameter_scales": [
+    3.4,
+    4.6,
+    2.0
+  ],
+  "geometry": "strict nonlinear roots along fixed boundary-tangent baseline normals; fixed triangle connectivity; true periodic triangle distance; t=.5mm,w=.05mm unchanged",
+  "contact": "moving rim Q2 interpolation differentiated; fixed reference cap/rim partition, audited against regenerated nearest assignment at all declared perturbations",
+  "required_objective": "full trajectory loading work; complete VJP all three coefficients; complete JVP c2 check",
+  "auxiliary_objective": "terminal force: complete JVP/FD only for c2, FD only for other coefficients; not all-force AD certification",
+  "thresholds": {
+    "relative_AD_FD": 0.01,
+    "relative_FD_halving": 0.01,
+    "nearzero_scaled_cutoff": 1e-06,
+    "nearzero_scaled_absolute_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ]
+  },
+  "candidate_compressions": [
+    0.01,
+    0.005
+  ],
+  "selection": "Before full paths, choose1% if benchmark predicts within180min total, else0.5%; if neither fits stop. Never choose endpoint by gradient agreement.",
+  "total_wall_budget_s": 10800,
+  "geometry_and_benchmark_budget_s": 1500,
+  "failure_policy": "Preserve failures; no tolerance relaxation, no automatic additional FD ladder, no long reverse without geometry and short duality checks",
+  "excludes": [
+    "Abaqus",
+    "training",
+    "Git",
+    "heartbeat",
+    "r53 resumption",
+    "20% gradient",
+    "topology changes"
+  ],
+  "started_unix": 1791808077.5769544
+}

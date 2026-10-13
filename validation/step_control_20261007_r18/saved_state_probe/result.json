@@ -1,0 +1,146 @@
+{
+  "status": "saved_state_bound_diagnostic_complete",
+  "rows": [
+    {
+      "J_min": 1.0,
+      "all_material_tangents_finite": true,
+      "invalid_material_points": 0,
+      "max_component": 0,
+      "max_periodic_class": 116750,
+      "required_positive_J_min": 1.0,
+      "required_positive_J_points": 141282,
+      "row_sum_bound_s_minus2": 64863546583742.75,
+      "source": "undeformed",
+      "source_sha256": null,
+      "time_s": 0.0,
+      "compression": 0.0,
+      "source_dt_seconds": null,
+      "nominal_initial_dt_seconds": 2.693411273035421e-07,
+      "bound_seconds": [
+        2.2041964690433815,
+        0.7613622311037034
+      ],
+      "safe_dt_seconds": 1.9866421112971874e-07,
+      "safe_dt_fraction_of_initial": 0.7375933008026216
+    },
+    {
+      "J_min": -1.3407233656862283,
+      "all_material_tangents_finite": true,
+      "invalid_material_points": 0,
+      "max_component": 0,
+      "max_periodic_class": 116750,
+      "required_positive_J_min": 0.5265871861700135,
+      "required_positive_J_points": 141282,
+      "row_sum_bound_s_minus2": 65437621125776.336,
+      "source": "/home/xuehu/projects/tpms_jax/validation/mechanism_20261007_r17/original_diagnostic/accepted_a0.1000.npz",
+      "source_sha256": "be2c21166efafffe54c84c9bbff3e32450d969c908379e9f6b525e5effb81f1e",
+      "time_s": 0.0020339597233272845,
+      "compression": 0.10318311216977079,
+      "source_dt_seconds": 2.693272938728041e-07,
+      "nominal_initial_dt_seconds": 2.693411273035421e-07,
+      "bound_seconds": [
+        0.7595367160392925,
+        0.7605155049823225
+      ],
+      "safe_dt_seconds": 1.9779086565211408e-07,
+      "safe_dt_fraction_of_initial": 0.7343507752873095
+    },
+    {
+      "J_min": -2.09016244130252,
+      "all_material_tangents_finite": true,
+      "invalid_material_points": 0,
+      "max_component": 0,
+      "max_periodic_class": 116750,
+      "required_positive_J_min": 0.3067210914762064,
+      "required_positive_J_points": 141282,
+      "row_sum_bound_s_minus2": 66310124096247.42,
+      "source": "/home/xuehu/projects/tpms_jax/validation/mechanism_20261007_r17/original_diagnostic/accepted_a0.1400.npz",
+      "source_sha256": "5c286078d1a5d5084d14ec6f3589a5ba36d04acbede1fc32ec7155c8ceac5ce7",
+      "time_s": 0.00244764644671588,
+      "compression": 0.14058631476796862,
+      "source_dt_seconds": 2.693272938728041e-07,
+      "nominal_initial_dt_seconds": 2.693411273035421e-07,
+      "bound_seconds": [
+        0.7603920380352065,
+        0.7602725310716778
+      ],
+      "safe_dt_seconds": 1.964852991078966e-07,
+      "safe_dt_fraction_of_initial": 0.7295035150219059
+    },
+    {
+      "J_min": -6.56609388174803,
+      "all_material_tangents_finite": true,
+      "invalid_material_points": 0,
+      "max_component": 1,
+      "max_periodic_class": 90160,
+      "required_positive_J_min": 0.07987047067157926,
+      "required_positive_J_points": 141282,
+      "row_sum_bound_s_minus2": 122699453941299.08,
+      "source": "/home/xuehu/projects/tpms_jax/validation/mechanism_20261007_r17/original_diagnostic/accepted_a0.1590.npz",
+      "source_sha256": "a7aa82f817a65a6b6d430f293ee05a2cbc0ee1ef383256d9d2e855420d87b943",
+      "time_s": 0.002688963702025894,
+      "compression": 0.159662399170054,
+      "source_dt_seconds": 2.693272938728041e-07,
+      "nominal_initial_dt_seconds": 2.693411273035421e-07,
+      "bound_seconds": [
+        0.7583874550182372,
+        0.7610631530405954
+      ],
+      "safe_dt_seconds": 1.4444372098745416e-07,
+      "safe_dt_fraction_of_initial": 0.5362854252283163
+    },
+    {
+      "J_min": -278.83017975239966,
+      "all_material_tangents_finite": true,
+      "invalid_material_points": 0,
+      "max_component": 1,
+      "max_periodic_class": 41008,
+      "required_positive_J_min": 0.07758193247413875,
+      "required_positive_J_points": 141282,
+      "row_sum_bound_s_minus2": 7474001859329312.0,
+      "source": "/home/xuehu/projects/tpms_jax/validation/mechanism_20261007_r17/original_diagnostic/first_rejection_replay/before_first_invalid.npz",
+      "source_sha256": "e8b282455fe0f3c9eb4936e8fa49a6bd9b30ee90368bd2dce49424ed01ba831a",
+      "time_s": 0.0026967741935482047,
+      "compression": 0.16022941795541268,
+      "source_dt_seconds": 2.693272938728041e-07,
+      "nominal_initial_dt_seconds": 2.693411273035421e-07,
+      "bound_seconds": [
+        0.7589046099456027,
+        0.7599707839544863
+      ],
+      "safe_dt_seconds": 1.8507313509811633e-08,
+      "safe_dt_fraction_of_initial": 0.06871328450687837
+    },
+    {
+      "J_min": -11.241344826427508,
+      "all_material_tangents_finite": true,
+      "invalid_material_points": 0,
+      "max_component": 0,
+      "max_periodic_class": 52976,
+      "required_positive_J_min": 0.047930464869944255,
+      "required_positive_J_points": 141282,
+      "row_sum_bound_s_minus2": 783176486601516.5,
+      "source": "/home/xuehu/projects/tpms_jax/validation/mechanism_20261007_r17/short_dt_replay/field.npz",
+      "source_sha256": "fbf847fe4fdad469d1a419859547fc420441820051c188708fb7551d0f4f6dc6",
+      "time_s": 0.0027234375956416658,
+      "compression": 0.16213855462749566,
+      "source_dt_seconds": 3.366591173410051e-08,
+      "nominal_initial_dt_seconds": 2.693411273035421e-07,
+      "bound_seconds": [
+        0.7589054320706055,
+        0.7607028230559081
+      ],
+      "safe_dt_seconds": 5.717289222779107e-08,
+      "safe_dt_fraction_of_initial": 0.21226944729966307
+    }
+  ],
+  "compile_seconds": 3.7652107800822705,
+  "force_compile_seconds": 0.5916855609975755,
+  "force_seconds": [
+    0.03879326896276325,
+    0.03954335197340697
+  ],
+  "compiled_bound_temporary_bytes": 82821776,
+  "peak_RSS_GiB": 7.193073272705078,
+  "scope": "Conservative frozen-state positive-frequency bound and cost. No time advance, design AD, full-path stability or 20% accuracy certification."
+}

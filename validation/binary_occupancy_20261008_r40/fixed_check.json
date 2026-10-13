@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "selected_cells": 1941,
+  "original_selected_energy_N_mm": 1.5103271979289415e-06,
+  "full_original_energy_N_mm": 2.3596943869907255e-06,
+  "original_selected_occupancy_volume_mm3": 32.78918063526123,
+  "levels": [
+    {
+      "level_per_axis": 8,
+      "energy_N_mm": 1.873000838141261e-06,
+      "occupancy_volume_mm3": 32.6270008986279
+    },
+    {
+      "level_per_axis": 12,
+      "energy_N_mm": 1.8784969109637298e-06,
+      "occupancy_volume_mm3": 32.64473686539765
+    }
+  ],
+  "relative_energy_8_12": -0.002925782198731075,
+  "relative_volume_8_12": -0.0005433024883269022,
+  "partial_confirm_allowed": true,
+  "dense12_delta_scaled_by_original_full_energy": 0.15602432038002528,
+  "outside_selected_not_checked": true,
+  "sharp_interface_convergence_certified": false,
+  "wall_seconds": 1.4713713940000162
+}

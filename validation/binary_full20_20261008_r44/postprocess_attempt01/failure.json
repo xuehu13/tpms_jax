@@ -1,0 +1,7 @@
+{
+  "stage": "read_only_result_extraction",
+  "type": "AssertionError",
+  "source": "interval(b,T,END)",
+  "reason": "Abaqus saved terminal timestamp 0.004399999976158142 is 2.384185855214049e-11 s shorter than nominal 0.0044; no forward failure, no missing hold, no original data changed.",
+  "repair": "Use common covered hold endpoint for both time integrals, no extrapolation or relaxed solver gate."
+}

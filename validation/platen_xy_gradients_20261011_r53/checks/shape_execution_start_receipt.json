@@ -1,0 +1,15 @@
+{
+  "geometry_gate": true,
+  "full_FE_running": true,
+  "active_jobs": [
+    {
+      "pid": 911523,
+      "case": "G5_shape/AD/shape"
+    }
+  ],
+  "no_new_Abaqus": true,
+  "no_training": true,
+  "no_git_push": true,
+  "source_backup": "checks/source_before_shape",
+  "launch_note": "First nohup did not retain a process or create FE path; hidden persistent WSL process verified before this update"
+}

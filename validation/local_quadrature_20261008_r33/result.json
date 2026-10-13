@@ -1,0 +1,75 @@
+{
+  "status": "ok",
+  "checks": {
+    "original_occupancy": true,
+    "original_full_energy": true,
+    "original_selected_energy": true,
+    "constant_floor_energy_exact": true,
+    "dense_levels_stable": true,
+    "two_levels_completed": true,
+    "budget": true
+  },
+  "case": "diverse_04 r30 saved initial static equilibrium",
+  "state_fixed": true,
+  "selected_cells": 1941,
+  "full_original_energy_N_mm": 2.458227340869753e-06,
+  "selected_original": {
+    "occupancy_volume_mm3": 32.68882466995249,
+    "occupancy_distance_moment_mm5": 0.6850551229479405,
+    "floor_energy_N_mm": 2.005598081622794e-09,
+    "occupancy_energy_N_mm": 1.5865405135800883e-06,
+    "total_energy_N_mm": 1.588546111661711e-06,
+    "mean_distance_squared_mm2": 0.020956860023714524
+  },
+  "selected_original_energy_fraction": 0.6462161107929353,
+  "levels": [
+    {
+      "points_per_axis": 8,
+      "completed_cells": 1941,
+      "complete": true,
+      "seconds": 0.28108412795700133,
+      "occupancy_volume_mm3": 32.61667381306662,
+      "occupancy_distance_moment_mm5": 0.6812737797443171,
+      "floor_energy_N_mm": 2.0055980816227996e-09,
+      "occupancy_energy_N_mm": 1.637967792867527e-06,
+      "total_energy_N_mm": 1.6399733909491498e-06,
+      "mean_distance_squared_mm2": 0.020887285553666448
+    },
+    {
+      "points_per_axis": 12,
+      "completed_cells": 1941,
+      "complete": true,
+      "seconds": 0.7821830959292129,
+      "occupancy_volume_mm3": 32.61682439006838,
+      "occupancy_distance_moment_mm5": 0.6812755026867903,
+      "floor_energy_N_mm": 2.0055980816227955e-09,
+      "occupancy_energy_N_mm": 1.6378544189152992e-06,
+      "total_energy_N_mm": 1.639860016996922e-06,
+      "mean_distance_squared_mm2": 0.02088724195033022
+    }
+  ],
+  "comparison": {
+    "total_energy_N_mm": {
+      "dense8_over_original_minus_one": 0.032373803259411194,
+      "dense12_over_original_minus_one": 0.03230243362689267,
+      "dense8_over_dense12_minus_one": 6.913635984329147e-05
+    },
+    "occupancy_volume_mm3": {
+      "dense8_over_original_minus_one": -0.002207202541368525,
+      "dense12_over_original_minus_one": -0.0022025961658478366,
+      "dense8_over_dense12_minus_one": -4.616543902602466e-06
+    },
+    "occupancy_distance_moment_mm5": {
+      "dense8_over_original_minus_one": -0.005519764872863653,
+      "dense12_over_original_minus_one": -0.005517249830766402,
+      "dense8_over_dense12_minus_one": -2.5289951955942414e-06
+    }
+  },
+  "local_dense_levels_stable": true,
+  "full_energy_scale_of_selected_reintegration_change": 0.020874353027517546,
+  "outside_selected_cells_retained_original_rule_not_verified": true,
+  "this_is_not_a_new_stiffness_force_or_equilibrium": true,
+  "original_5pct_cause_certified": false,
+  "no_FEM_Abaqus_AD_or_production_changes": true,
+  "wall_seconds": 1.6933298429939896
+}

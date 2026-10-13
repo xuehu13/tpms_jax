@@ -1,0 +1,22 @@
+[
+  {
+    "fast_T_ms": 20.0,
+    "slow_T_ms": 40.0,
+    "peak_shift_pp": -0.08138656616210938,
+    "peak_force_relative_change": -0.0035928441704837777,
+    "both_observed_peak": true,
+    "peak_position_working_gate_pass": true,
+    "peak_force_working_gate_pass": true,
+    "scope": "Same discrete shell only; not physical truth or complete quasistatic certification"
+  },
+  {
+    "fast_T_ms": 40.0,
+    "slow_T_ms": 80.0,
+    "peak_shift_pp": -0.04104018211364746,
+    "peak_force_relative_change": -0.002475415366505418,
+    "both_observed_peak": true,
+    "peak_position_working_gate_pass": true,
+    "peak_force_working_gate_pass": true,
+    "scope": "Same discrete shell only; not physical truth or complete quasistatic certification"
+  }
+]

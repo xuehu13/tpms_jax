@@ -1,0 +1,64 @@
+{
+  "scope": "Local saved-state resolution only, no new dynamic time steps",
+  "rows": [
+    {
+      "h": 1e-07,
+      "geometry_field_relative_L2": [
+        1.1450522377370621e-06,
+        3.6886971782476268e-06,
+        3.683534726041554e-06,
+        6.347749096976756e-06,
+        1.2478537647048537e-05,
+        1.488842869773028e-06
+      ],
+      "affine_saved_state_observable_FD": [
+        0.0006712774780481823,
+        0.0013521195274535103
+      ],
+      "full_AD_at_saved_state": [
+        0.0006712776899371033,
+        0.0013517795834399032
+      ],
+      "relative_difference": [
+        3.1565017606032574e-07,
+        0.00025147887848849383
+      ],
+      "observable_response_difference": [
+        1.3425549560963645e-10,
+        2.7042390549070205e-10
+      ]
+    },
+    {
+      "h": 5e-08,
+      "geometry_field_relative_L2": [
+        1.14508862542427e-06,
+        3.688807265351902e-06,
+        3.6836447682847347e-06,
+        6.347938230828164e-06,
+        1.258613603630875e-05,
+        3.3936960772883443e-06
+      ],
+      "affine_saved_state_observable_FD": [
+        0.0006712774780481823,
+        0.0013516321395456998
+      ],
+      "full_AD_at_saved_state": [
+        0.0006712776899371033,
+        0.0013517795834399032
+      ],
+      "relative_difference": [
+        3.1565017606032574e-07,
+        0.00010907391708648963
+      ],
+      "observable_response_difference": [
+        6.712774780481823e-11,
+        1.3516321395456998e-10
+      ]
+    }
+  ],
+  "primary_geometry_scale_relative_tolerance": 1e-05,
+  "local_observable_relative_tolerance": 0.01,
+  "passed": true,
+  "original_response_gate_unchanged": true,
+  "wall_minutes": 0.7071621616681417
+}

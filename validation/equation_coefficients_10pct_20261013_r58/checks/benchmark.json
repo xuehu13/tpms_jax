@@ -1,0 +1,9 @@
+{
+  "forward256_s": 13.256479740142822,
+  "JVP256_s": 22.18065619468689,
+  "VJP256_s": 44.17408204078674,
+  "short_duality_relative": 1.5557493899801473e-12,
+  "passed": true,
+  "estimated_remaining_s": 24233.915307998657,
+  "scope": "256-step duality at reused0.5pct state; not complete gradient validation"
+}

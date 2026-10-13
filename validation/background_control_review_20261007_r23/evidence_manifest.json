@@ -1,0 +1,58 @@
+[
+  {
+    "path": "validation/background_control_review_20261007_r23/README.md",
+    "sha256": "65c1bbf24615999528c0fe0737d6573791fe80052369be9698514c466d2937f9"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/REVIEW.md",
+    "sha256": "d29835cb8bf7d09d74096419e1336205aac6ef5dd7cdd42a1ece066d79ade200"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/decision.json",
+    "sha256": "b72822aa5882ebae4d853e98933476f0b87d99f3f62319f3992d6239965ffc5d"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/existing_bridge_audit.json",
+    "sha256": "899c8fe9b55fefbc262cdd3e1ad7b95ad7d6471d92b6106b798c91eb9f4b8e2f"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/frozen_before.json",
+    "sha256": "7f1992752ac2359337387e728e2fef5d743c6abfd0d3477823bfffcda7ff8d00"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/git_status_after.txt",
+    "sha256": "923345933197bf0f20b9f61564f1221355a092a3104690c577bf82d0a5e7c1d0"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/git_status_before.txt",
+    "sha256": "fee3ffb977338b748bd9cbe980879f043669cb09c373e917e95e9df06e2e34de"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/literature_record.json",
+    "sha256": "bbff6a18ebf7b5a9dbf405eea4f2d48797354d7bfabde0c1813082b247e90829"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/next_protocol.json",
+    "sha256": "47371b60801a817fc89033672da5575a1a319eb8d5e137dff510c385c866b3e3"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/organization_receipt.json",
+    "sha256": "77b1d3c7599ce37ba2afa7ab26af1c4df9e905bf25587be4acafbdde1b60b7a5"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/preparation.json",
+    "sha256": "a462c7ccf3ee66e4ffba1f7bf9c2df18a0296e1c7791bf18c6cecc046fb6266f"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/source_before.json",
+    "sha256": "2ccb28f74aaee3f4b29cae2ed0b9e6140555c67f879399a3536c0a19e9203e2b"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/verification.json",
+    "sha256": "a5f6e44df9b05962e77cf3efed1c505d75f5d60529d33cd2f0820fde3fb2ef5c"
+  },
+  {
+    "path": "validation/background_control_review_20261007_r23/verification_attempt01.json",
+    "sha256": "b3b9a2a4b6ad6e28e50e5e29dda64408f23ba461547866a5e162ca1d7733f916"
+  }
+]

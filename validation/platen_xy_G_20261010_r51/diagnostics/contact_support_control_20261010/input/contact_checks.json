@@ -1,0 +1,14 @@
+{
+  "area_preserved_exactly": true,
+  "all_weights_nonnegative": true,
+  "contact_points": 18432,
+  "uniform_gap_force_and_energy_unchanged": true,
+  "local_affine_rocking_energy_half_over_full": 0.25,
+  "rocking_probe_scope": "Assigned local rim-node centers; uniform prescribed local slope; one-sided penalty. Not a dynamic FE result or isolated moment measurement.",
+  "contact_virtual_work_relative_error": 1.6631240020708634e-09,
+  "mean_occupied_distance_to_assigned_rim_mm": [
+    0.17830824165549697,
+    0.08915412082774848,
+    0.0
+  ]
+}

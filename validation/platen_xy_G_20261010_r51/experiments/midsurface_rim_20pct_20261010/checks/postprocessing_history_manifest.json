@@ -1,0 +1,61 @@
+{
+  "archive": "postprocessing_history.zip",
+  "archive_sha256": "3023d4ee9defe4ab65198d4f3e1203453b1b9dbdd7286d246441cc8b96d05b97",
+  "kind": "Superseded postprocessor outputs, not failed physical runs; archived byte-identically",
+  "original_files": {
+    "analysis_import_failure/force_and_lateral.png": {
+      "sha256": "279d5bd17906f327c80a860136ffede77c864504de9161ba5a9401294e0b7474",
+      "bytes": 232528
+    },
+    "analysis_import_failure/Abaqus_path.csv": {
+      "sha256": "f2311ce80310cdec398b70ae21738640ccc7b604d5a8cc9275b02d42ef39c4ec",
+      "bytes": 553362
+    },
+    "analysis_import_failure/energy_and_J.png": {
+      "sha256": "a77dbc992ff743d0214f84a7aff7b9bc5a213028d91f04e541e25b6a77193ee9",
+      "bytes": 196322
+    },
+    "analysis_import_failure/JAX_path.csv": {
+      "sha256": "1711dafda134753186f45dd83416ff4ece08c31b546c0227e020b918e1f52a27",
+      "bytes": 343625
+    },
+    "analysis_import_failure/force_comparison.csv": {
+      "sha256": "b0232c3b1bd024d7285e592cab6fc080a9eb3776971e8d5448031295ed8f8f1f",
+      "bytes": 79160
+    },
+    "analysis_float_endpoint_before_fix/metrics.json": {
+      "sha256": "4c86c673409e676c82fcd69a51f1161f939e561e64035f5db211d96a1b2c3dce",
+      "bytes": 7881
+    },
+    "analysis_float_endpoint_before_fix/force_and_lateral.png": {
+      "sha256": "279d5bd17906f327c80a860136ffede77c864504de9161ba5a9401294e0b7474",
+      "bytes": 232528
+    },
+    "analysis_float_endpoint_before_fix/field_comparison.json": {
+      "sha256": "723714465238b641bf5d341b0f46f4097107dd0a44930114faba98b4af5a85a6",
+      "bytes": 4596
+    },
+    "analysis_float_endpoint_before_fix/Abaqus_path.csv": {
+      "sha256": "f2311ce80310cdec398b70ae21738640ccc7b604d5a8cc9275b02d42ef39c4ec",
+      "bytes": 553362
+    },
+    "analysis_float_endpoint_before_fix/energy_and_J.png": {
+      "sha256": "a77dbc992ff743d0214f84a7aff7b9bc5a213028d91f04e541e25b6a77193ee9",
+      "bytes": 196322
+    },
+    "analysis_float_endpoint_before_fix/deformation_10_20pct.png": {
+      "sha256": "a1c9020d654392179cd4e45f71fb71b69e98c55a3c4a6336b9671b3b5e55cd0b",
+      "bytes": 1129196
+    },
+    "analysis_float_endpoint_before_fix/JAX_path.csv": {
+      "sha256": "1711dafda134753186f45dd83416ff4ece08c31b546c0227e020b918e1f52a27",
+      "bytes": 343625
+    },
+    "analysis_float_endpoint_before_fix/force_comparison.csv": {
+      "sha256": "b0232c3b1bd024d7285e592cab6fc080a9eb3776971e8d5448031295ed8f8f1f",
+      "bytes": 79160
+    }
+  },
+  "original_bytes": 3951667,
+  "archive_bytes": 2785385
+}

@@ -1,0 +1,81 @@
+{
+  "scope": "independent linear static equilibrium of original shared initial material tangent, not finite-strain path or AD",
+  "phase_name": "phase_half",
+  "midsurface_z_mm": 1.40625,
+  "mesh_cells": 1024,
+  "mesh_nodes": 9945,
+  "cells_per_axis": [
+    32,
+    4,
+    8
+  ],
+  "h_mm": 0.3125,
+  "quad_per_cell": 27,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "moment_N_mm": 0.0001,
+  "Q_rad": 0.008744735412899444,
+  "compliance_per_N_mm": 87.44735412899443,
+  "effective_EI_N_mm2": 0.11435451763639301,
+  "linear_strain_energy_N_mm": 4.372367706153732e-07,
+  "energy_work_relative": -6.769551585961153e-11,
+  "free_residual_relative": 4.880790017804797e-11,
+  "root_reaction_force_N": [
+    9.065346626059753e-17,
+    3.7966736465791816e-17,
+    -2.6999374343873945e-14
+  ],
+  "root_reaction_moment_N_mm": [
+    -1.633747966835218e-14,
+    -9.999999979794375e-05,
+    7.4995757662700245e-16
+  ],
+  "actual_J_min": 0.9987869150170197,
+  "small_strain_norm_max": 0.001676389786160768,
+  "K_symmetry_relative": 6.438332532129001e-17,
+  "shared_tangent_absolute_error": 3.552713678800501e-15,
+  "load": {
+    "area_mm2": 0.6080525562517238,
+    "centroid_z_mm": 1.4061696975253244,
+    "I_mm4": 0.011396808118832966,
+    "resultant_force_N": [
+      -1.3575063691857813e-18,
+      0.0,
+      0.0
+    ],
+    "applied_moment_N_mm": [
+      0.0,
+      0.0001,
+      8.376733986232628e-19
+    ]
+  },
+  "continuous_section": {
+    "area_mm2": 0.6252500000081572,
+    "centroid_z_mm": 1.4061719062375058,
+    "I_mm4": 0.013456079337514004,
+    "physical_I_mm4": 0.013020833333333334
+  },
+  "actual_Gauss_section_I_mm4": 0.011396808118832938,
+  "Gauss_vs_dense_I_relative": -0.15303649503165861,
+  "effective_EI_vs_Gauss_EI_relative": 0.0033907427766994847,
+  "checks": {
+    "free_residual": true,
+    "load_net_force": true,
+    "reaction_moment": true,
+    "reaction_net_force": true,
+    "energy_work": true,
+    "finite_positive_small_J": true,
+    "matrix_symmetry": true,
+    "shared_tangent": true
+  },
+  "all_checks_pass": true,
+  "cost_seconds": {
+    "preparation": 0.19238192902412266,
+    "assembly": 8.472042908077128,
+    "linear_solve": 1.941543060936965,
+    "total": 11.257954214001074
+  }
+}

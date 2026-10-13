@@ -1,0 +1,17 @@
+{
+  "started_unix": 1791428892.070886,
+  "deadline_unix": 1791439692.070886,
+  "total_budget_seconds": 10800.0,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\n64_resolution_20261008_r28_shell_T0p002",
+  "new_shell_jobs": 1,
+  "new_JAX_from_zero_attempts": 1,
+  "no_design_AD_or_training": true,
+  "launcher_pid": 37264,
+  "full_returncode": 1,
+  "analysis_returncode": 1,
+  "full_complete": false,
+  "comparison_exists": true,
+  "returncode": 1,
+  "total_wall_seconds": 7012.232227087021,
+  "deadline_overrun_seconds": 0.0
+}

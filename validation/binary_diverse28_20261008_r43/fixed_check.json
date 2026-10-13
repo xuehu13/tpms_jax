@@ -1,0 +1,78 @@
+{
+  "status": "ok",
+  "checks": {
+    "smooth_original_energy_reproduced": true,
+    "binary_original_energy_reproduced": true,
+    "original_distance_reproduction_le_1e-12": true,
+    "smooth_state_floor_energy_N_mm_exact": true,
+    "smooth_state_smooth_occ_energy_N_mm_8_12_stable": true,
+    "smooth_state_binary_occ_energy_N_mm_8_12_stable": true,
+    "binary_state_floor_energy_N_mm_exact": true,
+    "binary_state_smooth_occ_energy_N_mm_8_12_stable": true,
+    "binary_state_binary_occ_energy_N_mm_8_12_stable": true,
+    "smooth_volume_mm3_8_12_stable": true,
+    "smooth_distance_moment_mm5_8_12_stable": true,
+    "binary_volume_mm3_8_12_stable": true,
+    "binary_distance_moment_mm5_8_12_stable": true,
+    "budget": true
+  },
+  "original_selected": {
+    "smooth_state_floor_energy_N_mm": 3.1716384729480347e-10,
+    "smooth_state_smooth_occ_energy_N_mm": 1.4343224554536893e-06,
+    "smooth_state_binary_occ_energy_N_mm": 1.4236212866460718e-06,
+    "binary_state_floor_energy_N_mm": 1.845341174224837e-09,
+    "binary_state_smooth_occ_energy_N_mm": 1.6351350205892923e-06,
+    "binary_state_binary_occ_energy_N_mm": 1.3810581773838084e-06,
+    "smooth_volume_mm3": 95.29972006612441,
+    "smooth_distance_moment_mm5": 1.7737684731068715,
+    "binary_volume_mm3": 95.53763307171093,
+    "binary_distance_moment_mm5": 1.7607266284357284
+  },
+  "full_original_energies_N_mm": {
+    "smooth": 1.944127790393596e-06,
+    "binary": 1.8508165478878615e-06
+  },
+  "levels": [
+    {
+      "axis_count": 8,
+      "smooth_state_floor_energy_N_mm": 3.171638472948041e-10,
+      "smooth_state_smooth_occ_energy_N_mm": 1.4580979455524795e-06,
+      "smooth_state_binary_occ_energy_N_mm": 1.458983161129575e-06,
+      "binary_state_floor_energy_N_mm": 1.8453411742248397e-09,
+      "binary_state_smooth_occ_energy_N_mm": 1.6997249483977227e-06,
+      "binary_state_binary_occ_energy_N_mm": 1.6583392888554047e-06,
+      "smooth_volume_mm3": 95.35800277659153,
+      "smooth_distance_moment_mm5": 1.7734515696985231,
+      "binary_volume_mm3": 95.6999391186808,
+      "binary_distance_moment_mm5": 1.767657910925346
+    },
+    {
+      "axis_count": 12,
+      "smooth_state_floor_energy_N_mm": 3.1716384729480373e-10,
+      "smooth_state_smooth_occ_energy_N_mm": 1.4581639109938418e-06,
+      "smooth_state_binary_occ_energy_N_mm": 1.4593559888893096e-06,
+      "binary_state_floor_energy_N_mm": 1.8453411742248366e-09,
+      "binary_state_smooth_occ_energy_N_mm": 1.6986422315994032e-06,
+      "binary_state_binary_occ_energy_N_mm": 1.657630780586421e-06,
+      "smooth_volume_mm3": 95.3599958036012,
+      "smooth_distance_moment_mm5": 1.7735903211149096,
+      "binary_volume_mm3": 95.7150231250896,
+      "binary_distance_moment_mm5": 1.7686026650890694
+    }
+  ],
+  "relative_8_over_12_minus_one": {
+    "smooth_state_floor_energy_N_mm": 1.1102230246251565e-15,
+    "smooth_state_smooth_occ_energy_N_mm": -4.523870112604911e-05,
+    "smooth_state_binary_occ_energy_N_mm": -0.00025547416982085736,
+    "binary_state_floor_energy_N_mm": 1.7763568394002505e-15,
+    "binary_state_smooth_occ_energy_N_mm": 0.0006374013186403182,
+    "binary_state_binary_occ_energy_N_mm": 0.00042742224461655987,
+    "smooth_volume_mm3": -2.09000324807862e-05,
+    "smooth_distance_moment_mm5": -7.823194270661915e-05,
+    "binary_volume_mm3": -0.0001575928826668127,
+    "binary_distance_moment_mm5": -0.0005341811263614993
+  },
+  "partial_confirm_allowed": true,
+  "outside_selected_not_checked": true,
+  "wall_seconds": 30.467837115982547
+}

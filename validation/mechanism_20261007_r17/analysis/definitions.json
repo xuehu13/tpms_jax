@@ -1,0 +1,7 @@
+{
+  "shared_basis": "installed JAX-FEM/Basix HEX27, one-cell Cartesian map scaled by N",
+  "cached_quadrature_coordinate_max_abs_error": 5.551115123125783e-16,
+  "material_source_sha256": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+  "Gauss_sha256": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+  "scope": "Read-only field/material diagnostics. Local Hessians are mechanical tangents, not design/path AD certification. No alternative FEM or new trajectory."
+}

@@ -1,0 +1,17 @@
+{
+  "case": "G12/FD/t_plus_h",
+  "steps": 38189,
+  "total_steps": 38189,
+  "wall_s": 163.51258659362793,
+  "time_s": 0.00221493528535155,
+  "compression": 0.1199955736248841,
+  "work_N_mm": 2.4575592912330535,
+  "force_N": 3.643133874511035,
+  "IE_N_mm": 2.4279161077223974,
+  "all_J_min": -1.1998854135597263,
+  "required_positive_J_min": 0.7623465903018847,
+  "negative_void_J_points": 448,
+  "KE_N_mm": 0.02219452551456476,
+  "bottom_force_N": 3.6604681034006146,
+  "contact_energy_N_mm": 0.0074486583797178565
+}

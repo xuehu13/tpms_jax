@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "actual_point_mm": [
+    0.24875104264356196,
+    0.0,
+    -0.034958336502313614
+  ],
+  "expected_point_mm": [
+    0.24875104131950646,
+    0.0,
+    -0.03495835416170704
+  ],
+  "motion_error_mm": 1.7659393426738834e-08,
+  "ground_force_N": -0.06991667300462723,
+  "expected_force_N": 0.06991670832341408,
+  "force_relative_error": -1.9999994948448276,
+  "field_keys": [
+    "CNORMF   GROUND/TIP",
+    "CNORMF   TIP/GROUND",
+    "CPRESS   GROUND/TIP",
+    "CPRESS   TIP/GROUND",
+    "CSHEAR1  GROUND/TIP",
+    "CSHEAR1  TIP/GROUND",
+    "CSHEAR2  GROUND/TIP",
+    "CSHEARF  GROUND/TIP",
+    "CSHEARF  TIP/GROUND",
+    "RF",
+    "RM",
+    "U",
+    "UR"
+  ],
+  "passed": false
+}

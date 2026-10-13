@@ -1,0 +1,374 @@
+[
+  {
+    "kind": "diverse_02",
+    "label": "original",
+    "odb": "F:\\auto_abaqus\\work\\r3_smoke/batch_001\\diverse_02\\abaqus\\diverse_02_solve.odb",
+    "step": "Compression",
+    "time_period_s": 0.0010000000474974513,
+    "top_labels": [
+      13756
+    ],
+    "top_history": "Node PART-1-1.13756",
+    "history_samples": 101,
+    "loading_raw_peak": [
+      0.00024002313148230314,
+      0.018654872477054597,
+      0.40533424377441407
+    ],
+    "materials": {
+      "MAT_SHELL": {
+        "elastic": [
+          [
+            484.0,
+            0.4
+          ]
+        ],
+        "plastic": [
+          [
+            8.0,
+            0.0
+          ],
+          [
+            9.5,
+            0.02
+          ],
+          [
+            11.0,
+            0.05
+          ],
+          [
+            12.5,
+            0.08
+          ],
+          [
+            13.5,
+            0.11
+          ],
+          [
+            14.2,
+            0.147
+          ],
+          [
+            14.5,
+            0.2
+          ],
+          [
+            15.0,
+            0.3
+          ],
+          [
+            15.6,
+            0.5
+          ],
+          [
+            16.3,
+            0.8
+          ],
+          [
+            17.0,
+            1.2
+          ],
+          [
+            18.0,
+            2.0
+          ]
+        ],
+        "density": [
+          [
+            1.1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-SHELL_ALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.23180164989011612
+      }
+    }
+  },
+  {
+    "kind": "diverse_02",
+    "label": "current",
+    "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_02_midsurface_end_20pct_20261012\\platen.odb",
+    "step": "PLATEN",
+    "time_period_s": 0.00419999985024333,
+    "top_labels": [
+      13756
+    ],
+    "top_history": "Node PART-1-1.13756",
+    "history_samples": 2101,
+    "loading_raw_peak": [
+      0.0013800658052787185,
+      0.045496559143066405,
+      0.02774116039276123
+    ],
+    "materials": {
+      "BASE": {
+        "hyperelastic": [
+          [
+            1.923076923076923,
+            0.24
+          ]
+        ],
+        "density": [
+          [
+            1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-WALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.5
+      }
+    }
+  },
+  {
+    "kind": "diverse_04",
+    "label": "original",
+    "odb": "F:\\auto_abaqus\\work\\para_aly/Fine/T0p02/MS0\\diverse_04\\abaqus\\diverse_04_solve.odb",
+    "step": "Compression",
+    "time_period_s": 0.019999999552965164,
+    "top_labels": [
+      8376
+    ],
+    "top_history": "Node PART-1-1.8376",
+    "history_samples": 101,
+    "loading_raw_peak": [
+      0.015600012615323067,
+      0.18509995937347412,
+      0.24025856018066405
+    ],
+    "materials": {
+      "MAT_SHELL": {
+        "elastic": [
+          [
+            484.0,
+            0.4
+          ]
+        ],
+        "plastic": [
+          [
+            8.0,
+            0.0
+          ]
+        ],
+        "density": [
+          [
+            1.1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-SHELL_ALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.3758492595310066
+      }
+    }
+  },
+  {
+    "kind": "diverse_04",
+    "label": "current",
+    "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r54_diverse04_midsurface_end_20pct_20261012\\platen.odb",
+    "step": "PLATEN",
+    "time_period_s": 0.00419999985024333,
+    "top_labels": [
+      8376
+    ],
+    "top_history": "Node PART-1-1.8376",
+    "history_samples": 2101,
+    "loading_raw_peak": [
+      0.003998027183115482,
+      0.2,
+      0.029020986557006835
+    ],
+    "materials": {
+      "BASE": {
+        "hyperelastic": [
+          [
+            1.923076923076923,
+            0.24
+          ]
+        ],
+        "density": [
+          [
+            1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-WALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.5
+      }
+    }
+  },
+  {
+    "kind": "diverse_05",
+    "label": "original",
+    "odb": "F:\\auto_abaqus\\work\\para_aly/Fine/T0p02/MS0\\diverse_05\\abaqus\\diverse_05_solve.odb",
+    "step": "Compression",
+    "time_period_s": 0.019999999552965164,
+    "top_labels": [
+      11628
+    ],
+    "top_history": "Node PART-1-1.11628",
+    "history_samples": 101,
+    "loading_raw_peak": [
+      0.006200011819601059,
+      0.035267531871795654,
+      0.21499286651611327
+    ],
+    "materials": {
+      "MAT_SHELL": {
+        "elastic": [
+          [
+            484.0,
+            0.4
+          ]
+        ],
+        "plastic": [
+          [
+            8.0,
+            0.0
+          ]
+        ],
+        "density": [
+          [
+            1.1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-SHELL_ALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.2740142519595549
+      }
+    }
+  },
+  {
+    "kind": "diverse_05",
+    "label": "current",
+    "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_05_midsurface_end_20pct_20261012\\platen.odb",
+    "step": "PLATEN",
+    "time_period_s": 0.00419999985024333,
+    "top_labels": [
+      11628
+    ],
+    "top_history": "Node PART-1-1.11628",
+    "history_samples": 2101,
+    "loading_raw_peak": [
+      0.0020822344813495874,
+      0.10770080089569092,
+      0.04640503883361816
+    ],
+    "materials": {
+      "BASE": {
+        "hyperelastic": [
+          [
+            1.923076923076923,
+            0.24
+          ]
+        ],
+        "density": [
+          [
+            1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-WALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.5
+      }
+    }
+  },
+  {
+    "kind": "diverse_28",
+    "label": "original",
+    "odb": "F:\\auto_abaqus\\work\\para_aly/Fine/T0p02/MS0\\diverse_28\\abaqus\\diverse_28_solve.odb",
+    "step": "Compression",
+    "time_period_s": 0.019999999552965164,
+    "top_labels": [
+      9355
+    ],
+    "top_history": "Node PART-1-1.9355",
+    "history_samples": 101,
+    "loading_raw_peak": [
+      0.009200038388371468,
+      0.08506469130516052,
+      0.14243915557861328
+    ],
+    "materials": {
+      "MAT_SHELL": {
+        "elastic": [
+          [
+            484.0,
+            0.4
+          ]
+        ],
+        "plastic": [
+          [
+            8.0,
+            0.0
+          ]
+        ],
+        "density": [
+          [
+            1.1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-SHELL_ALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.3285947046369498
+      }
+    }
+  },
+  {
+    "kind": "diverse_28",
+    "label": "current",
+    "odb": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_28_midsurface_end_20pct_20261012\\platen.odb",
+    "step": "PLATEN",
+    "time_period_s": 0.00419999985024333,
+    "top_labels": [
+      9355
+    ],
+    "top_history": "Node PART-1-1.9355",
+    "history_samples": 2101,
+    "loading_raw_peak": [
+      0.004000000189989805,
+      0.2,
+      0.005971449017524719
+    ],
+    "materials": {
+      "BASE": {
+        "hyperelastic": [
+          [
+            1.923076923076923,
+            0.24
+          ]
+        ],
+        "density": [
+          [
+            1e-09
+          ]
+        ]
+      }
+    },
+    "sections": {
+      "Section-WALL": {
+        "type": "HomogeneousShellSection",
+        "thickness": 0.5
+      }
+    }
+  }
+]

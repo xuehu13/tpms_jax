@@ -1,0 +1,13 @@
+{
+  "R_mm": 2.5,
+  "t_mm": 0.5,
+  "B_mm": 0.3125,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "generalized_force_N": 0.0001,
+  "control_label": 1000001,
+  "solid_radial_elements": 4,
+  "shell_circumferential": 128,
+  "solid_reference": "CAX8 axisymmetric 3D reduction, NOT plane stress / full 3D C3D mesh",
+  "shell_rotations": "zero for exact axisymmetric plane-strain radial mode; no constitutive shear deleted"
+}

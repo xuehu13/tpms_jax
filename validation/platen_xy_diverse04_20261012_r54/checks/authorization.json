@@ -1,0 +1,7 @@
+{
+  "UTC": "2026-10-12T02:24:19.277104+00:00",
+  "scope": "Only diverse_04 paired 20% forward simulation; compare peak location, force and full response",
+  "heartbeat_reenabled": false,
+  "no_design_AD_training_or_Git": true,
+  "source_guard_count": 43
+}

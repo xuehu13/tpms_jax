@@ -1,0 +1,25 @@
+{
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu-24.04",
+    "--exec",
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=10s",
+    "3900s",
+    "/usr/bin/env",
+    "PYTHONUNBUFFERED=1",
+    "JAX_PLATFORMS=cuda,cpu",
+    "XLA_PYTHON_CLIENT_PREALLOCATE=false",
+    "OMP_NUM_THREADS=1",
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/platen_xy_PD_20261010_r52/tools/run_jax.py",
+    "D"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 3441.9486598968506,
+  "started_UTC": "2026-10-10T13:57:07.149909+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_PD_20261010_r52\\D\\checks\\JAX.log"
+}

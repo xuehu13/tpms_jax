@@ -1,0 +1,23 @@
+{
+  "cylinder_solid": {
+    "standard_reported_wall_seconds": 9.0,
+    "native_job_complete": true,
+    "input_sha_matches_formal": true,
+    "timing_source": "last job time summary in native DAT; excluding input processing/wrap-up"
+  },
+  "cylinder_shell": {
+    "standard_reported_wall_seconds": 9.0,
+    "native_job_complete": true,
+    "input_sha_matches_formal": true,
+    "timing_source": "last job time summary in native DAT; excluding input processing/wrap-up"
+  },
+  "interactive_timestamp_record": {
+    "solid_start": "2026-10-08 20:34:48 Asia/Shanghai",
+    "solid_finish": "2026-10-08 20:35:09 Asia/Shanghai",
+    "solid_seconds": 21,
+    "shell_start": "2026-10-08 20:35:44 Asia/Shanghai",
+    "shell_finish": "2026-10-08 20:36:04 Asia/Shanghai",
+    "shell_seconds": 20,
+    "source": "interactive tool output timestamps; no native .log present"
+  }
+}

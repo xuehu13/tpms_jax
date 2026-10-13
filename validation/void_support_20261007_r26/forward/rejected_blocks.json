@@ -1,0 +1,25 @@
+[
+  {
+    "time": 0.0016384781511978998,
+    "attempted_end_time": 0.0016600472999317574,
+    "dt": 1.6850897448336658e-07,
+    "reason": "Endpoint conservative positive-frequency limit exceeded",
+    "accepted_state_dt": 1.903042002806512e-07,
+    "last_valid": {
+      "time": 0.0016384781511978998,
+      "compression": 0.06683837411984932,
+      "Fz_N": -3.2402255139001808,
+      "internal_macro_Fz_N": -3.237014629984075,
+      "energy_N_mm": 1.0848185003344046,
+      "KE_N_mm": 0.004358863221947838,
+      "KE_over_U": 0.004018057601897627,
+      "J_finite": true,
+      "J_min": -3.3331708879191684,
+      "invalid_material_points": 0,
+      "negative_J_points": 4678,
+      "required_positive_J_min": 0.6771409849655161,
+      "required_positive_J_points": 141282,
+      "dt_seconds": 1.903042002806512e-07
+    }
+  }
+]

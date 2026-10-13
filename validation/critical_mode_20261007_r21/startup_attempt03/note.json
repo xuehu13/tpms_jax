@@ -1,0 +1,6 @@
+{
+  "problem": "Absolute basis roundoff 2.0428e-12 exceeded the initial absolute 2e-12 at gradient scale 151.763.",
+  "probe_relative_error": 1.3460518624251594e-14,
+  "repair": "Use scaled relative 1e-12 plus absolute 5e-11 roundoff assertion, keeping gradient equivalence checked. Not a material/stability/accuracy gate change.",
+  "physical_or_solver_protocol_changed": false
+}

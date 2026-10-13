@@ -1,0 +1,5 @@
+{
+  "problem": "Missing optional threadpoolctl import; failed before basis or material evaluation.",
+  "repair": "Use existing BLAS environment thread limits, no package or shared core change.",
+  "physical_or_solver_protocol_changed": false
+}

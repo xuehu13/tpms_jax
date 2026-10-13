@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "case": "diverse_28",
+  "N": 32,
+  "compression": 0.0001,
+  "background_K_N_per_mm": 3.8882555807871677,
+  "shell_K_N_per_mm": 3.7748837447547623,
+  "background_over_shell_minus_one": 0.03003319935082427,
+  "historical_initial_shell_reproduced_relative": 0.0,
+  "two_cases_have_same_bias_sign_not_proof_of_same_cause": true,
+  "diverse04_current_bias": 0.0570250057288928,
+  "full_path_or_design_AD_certified": false,
+  "new_native_job": true,
+  "production_changed": false,
+  "cost_seconds": {
+    "background": 39.1013031109469,
+    "job_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\initial_diverse28_20261008_r41_diverse28",
+    "input_sha256": "98e517c965510d35b2d5bfe1e251c80f57d5bbc00a1b2bda9cbdc3309a209d3b",
+    "job_seconds": 24.625696699949913,
+    "job_returncode": 0,
+    "extract_seconds": 0.9784723999910057,
+    "extract_returncode": 0,
+    "input_unchanged": true
+  }
+}

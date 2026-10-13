@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "scope": "r36 compatible fixed-node energy trial; r37 two width equilibria plus local postprocessing; r38 one same-mixed-rule narrow-width equilibrium",
+  "no_new_production_change": true,
+  "no_new_abaqus_job": true,
+  "no_new_full_20pct_or_AD": true,
+  "production_explicit_sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "preexisting_scientific_frozen_checks": {
+    "compatible_mode_20261008_r36": {
+      "frozen_files": 39,
+      "changed": [],
+      "result_status": "ok"
+    },
+    "interface_width_20261008_r37": {
+      "frozen_files": 39,
+      "changed": [],
+      "result_status": "initial_width_diagnostic_complete"
+    },
+    "interface_width_mixed_20261008_r38": {
+      "frozen_files": 45,
+      "changed": [],
+      "result_status": "ok"
+    }
+  },
+  "current_plan_step1_complete": true,
+  "current_plan_step2_patch_design_not_started": true,
+  "branches": "research/initial-stiffness-review-20261008; no merge to main",
+  "previous_docs_archived": "docs/history/before_r36_r38_20261008",
+  "new_figures_visually_reviewed": true,
+  "regression": "No production changes; previous 208 tests not rerun. Each new experiment passed its predeclared meaningful checks.",
+  "support_archive_completed": true,
+  "support_archive_windows": "history/completed_tools_20261008/r36_r38_support",
+  "support_files_hash_verified": 20,
+  "maintained_local_links_checked": true
+}

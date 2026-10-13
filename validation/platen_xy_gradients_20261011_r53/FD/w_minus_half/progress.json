@@ -1,0 +1,17 @@
+{
+  "case": "FD/w_minus_half",
+  "steps": 24789,
+  "total_steps": 24789,
+  "wall_s": 1050.3934495449066,
+  "time_s": 0.0014377446591583515,
+  "compression": 0.04999999999998118,
+  "work_N_mm": 0.4798685069548601,
+  "force_N": 1.8225828569111444,
+  "IE_N_mm": 0.46216611646611006,
+  "all_J_min": 0.017913487843751585,
+  "required_positive_J_min": 0.9028901212511623,
+  "negative_void_J_points": 0,
+  "KE_N_mm": 0.016051819158473663,
+  "bottom_force_N": 1.7864568506069531,
+  "contact_energy_N_mm": 0.0016505714004568489
+}

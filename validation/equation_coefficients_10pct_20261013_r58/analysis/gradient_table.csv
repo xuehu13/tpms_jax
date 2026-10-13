@@ -1,0 +1,7 @@
+﻿coefficient,baseline_coefficient,parameter_scale,objective,AD_method,AD,FD_h,FD_half,h,units,near_zero,error_type,AD_FD_error,FD_halving_error,applicable_limit,FD_halving_passed,signed_coefficient_scaled_sensitivity,passed
+c1,-3.4,3.4,work,complete loading-work VJP,-0.0950223341188825,-0.0950236263449543,-0.09502330381863491,3.4e-05,N mm per dimensionless coefficient,False,relative,1.0204862527859902e-05,3.3941812842403442e-06,0.01,True,1.1981798929168324,True
+c2,4.6,4.6,work,complete loading-work VJP,0.014067409813481993,0.014067594639298403,0.014067810639825047,4.6e-05,N mm per dimensionless coefficient,False,relative,2.849244657298648e-05,1.5354238990982785e-05,0.01,True,0.23999231202704102,True
+c0,2.0,2.0,work,complete loading-work VJP,-0.19389301057311564,-0.19389738266373244,-0.1938954243219104,2e-05,N mm per dimensionless coefficient,False,relative,1.2448714574861332e-05,1.0099989872829349e-05,0.01,True,-1.43817104309553,True
+c1,-3.4,3.4,force,not computed,,-0.2465346345575283,-0.23906389581665957,3.4e-05,N per dimensionless coefficient,False,relative,,0.0312499665219131,0.01,False,1.904709212550793,
+c2,4.6,4.6,force,complete c2 JVP,0.0370744054027597,0.034108433364546026,0.030664471287068843,4.6e-05,N per dimensionless coefficient,False,relative,0.20903455519201838,0.11231115140502995,0.01,False,0.330543853252388,False
+c0,2.0,2.0,force,not computed,,-0.5069735275822773,-0.483773121545683,2e-05,N per dimensionless coefficient,False,relative,,0.04795720349751482,0.01,False,-2.26729225094647,

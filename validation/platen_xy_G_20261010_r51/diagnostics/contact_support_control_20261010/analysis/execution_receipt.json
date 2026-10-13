@@ -1,0 +1,30 @@
+{
+  "date_utc": "2026-10-10T05:33:49.735850+00:00",
+  "completed_dynamic_jobs": 1,
+  "pre_dynamic_admission_stops": 1,
+  "extra_stability_rechecks": 1,
+  "contact_only_spectrum_probe": true,
+  "new_Abaqus_jobs": 0,
+  "completed_dynamic_wall_seconds": 780.4229180020047,
+  "commands": [
+    [
+      ".pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/tools/run_jax.py",
+      "--config",
+      "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_support_control_20261010/input/cap_common_dt.json",
+      "--out",
+      "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_support_control_20261010/jax/cap_common_dt"
+    ],
+    [
+      ".pixi/envs/default/bin/python",
+      "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/tools/run_jax.py",
+      "--config",
+      "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_support_control_20261010/input/half_support_common_dt.json",
+      "--out",
+      "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/contact_support_control_20261010/jax/half_support_common_dt"
+    ]
+  ],
+  "raw_stdout": "Tool transcript; path/result/progress are persisted. No reconstructed solver log is claimed.",
+  "no_full20": true,
+  "no_new_AD": true
+}

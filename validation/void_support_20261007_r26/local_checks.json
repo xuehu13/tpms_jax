@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "name": "energy_P_tangent_scale_phi_0.0",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        8.046812998915853e-21,
+        1.641126335305207e-20
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_0.0005",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        8.131516293641283e-20,
+        1.0842021724855044e-19
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_0.001",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        2.168404344971009e-19,
+        2.439454888092385e-19
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_0.004",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        8.673617379884035e-19,
+        1.734723475976807e-18
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_0.0099",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        1.3877787807814457e-17,
+        3.8163916471489756e-17
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_0.01",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_0.4",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "energy_P_tangent_scale_phi_1.0",
+      "pass": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "fold_finite_objective_phi_0.0005",
+      "pass": true
+    },
+    {
+      "name": "fold_finite_objective_phi_0.004",
+      "pass": true
+    },
+    {
+      "name": "HRZ_prescription_same_nodal_mass_bitwise_same",
+      "pass": true,
+      "periodic_scatter_relative_roundoff": 1.1102230246251565e-16
+    },
+    {
+      "name": "assembled_shared_force_is_energy_gradient",
+      "pass": true,
+      "absolute_error": 7.28583859910259e-17
+    },
+    {
+      "name": "same_bound_uses_finite_new_tangent",
+      "pass": true
+    },
+    {
+      "name": "adapted_controller_completes_original_motion_at_17pct",
+      "pass": true
+    },
+    {
+      "name": "controller_only_two_checked_changes",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "scope": "Local/shared-kernel consistency only; no complete trajectory or design AD certification"
+}

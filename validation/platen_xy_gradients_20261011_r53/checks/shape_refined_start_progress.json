@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-10-11T17:33:58.2435695Z",
+  "phase": "G5_shape_refined_running",
+  "active_jobs": [
+    {
+      "pid": 959399,
+      "case": "G5_shape_refined/FD/a_plus_h"
+    }
+  ],
+  "actual_progress": {
+    "case": "G5_shape_refined/FD/a_plus_h",
+    "steps": 5632,
+    "total_steps": 24789,
+    "wall_s": 248.76498126983643,
+    "time_s": 0.0003266520602033246,
+    "compression": 0.0009601340830559037,
+    "work_N_mm": 0.0003764476528849351,
+    "force_N": 0.06586066973414136,
+    "IE_N_mm": 0.00021253641362494654,
+    "all_J_min": 0.9768242461559387,
+    "required_positive_J_min": 0.9966661889541449,
+    "negative_void_J_points": 0,
+    "KE_N_mm": 0.00016282091298995012,
+    "bottom_force_N": 0.02133414488720311,
+    "contact_energy_N_mm": 1.0903321318149964E-06
+  },
+  "original_shape_overall_passed": false,
+  "original_shape_work_passed": true,
+  "original_shape_force_passed": false,
+  "new_full_VJP_started": false,
+  "heartbeat_id": "tpms",
+  "heartbeat_status": "ACTIVE",
+  "refined_budget_minutes": 90,
+  "threshold_changes": false
+}

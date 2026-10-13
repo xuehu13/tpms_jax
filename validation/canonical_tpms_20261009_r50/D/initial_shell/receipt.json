@@ -1,0 +1,22 @@
+{
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=shell",
+    "input=shell.inp",
+    "cpus=1",
+    "interactive",
+    "ask_delete=OFF"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 22.155999999959022,
+  "log": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\canonical_tpms_20261009_r50_D_initial\\launch.log",
+  "analysis_completed_successfully": true,
+  "extraction_returncode": 0,
+  "extraction_seconds": 1.5790000000270084,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\canonical_tpms_20261009_r50_D_initial",
+  "input_unchanged": true
+}

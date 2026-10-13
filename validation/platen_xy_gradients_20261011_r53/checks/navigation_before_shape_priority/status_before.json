@@ -1,0 +1,19 @@
+{
+  "stage": "P5_thickness_analyzed",
+  "active_jobs": [],
+  "step1": "passed",
+  "step2": "passed",
+  "step3": "in_progress",
+  "step4": "pending",
+  "wall_s": 4549.135896205902,
+  "G10_thickness": "passed",
+  "G12_thickness": "passed",
+  "G10_interface": "passed",
+  "G12_interface": "passed",
+  "G12_interface_loading_work": "passed",
+  "G12_interface_terminal_force": "not_passed",
+  "step2_reverse": "passed",
+  "step2_interface": "passed",
+  "new_reverse_AD": true,
+  "P5_thickness": "passed"
+}

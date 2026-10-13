@@ -1,0 +1,15 @@
+{
+  "phase": "G12_thickness",
+  "solver_exit_code": 0,
+  "source_at_submission": {
+    "input/G12_thickness_protocol.json": "41f7398999bc2fd3df530c31e1205e5096d059a51fabb4dd18045da935c397c8",
+    "tools/reverse.py": "3ec3755983bbed970e7b66f89ebaf5760734691ef5006ec732253d8cd403e5e3",
+    "tools/run.py": "12fba51988cb809b9a92c8c35cb2e0439e49b602ba99cc01569c4af80331de9c",
+    "tools/design.py": "f71fa445fba1c105a99b4514b804e054ef2cdd5c2d29d47faa623c64f2b30a4a",
+    "tools/prepare.py": "0a7596a356c9935c6127a945bb435d45e830148016b6dc0fde906eb00808e7a7",
+    "tools/analyze.py": "423c31ea41a2afb8c91ab7117489cbf3ff81191ac5e86209e5d1fdd62c393cf4"
+  },
+  "new_FE_submissions": 1,
+  "analysis_exit_code": 0,
+  "passed": true
+}

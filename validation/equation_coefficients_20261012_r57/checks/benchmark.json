@@ -1,0 +1,9 @@
+{
+  "forward256_s": 9.674993991851807,
+  "JVP256_s": 22.213245630264282,
+  "VJP256_s": 48.22994780540466,
+  "short_duality_relative": 4.643255537799647e-08,
+  "short_duality_passed": true,
+  "scope": "256-step all-chain mixed-coefficient duality and cost only; not full response certification",
+  "wall_s": 823.683580160141
+}

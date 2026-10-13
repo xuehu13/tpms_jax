@@ -1,0 +1,97 @@
+[
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_BACKGROUND.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/RESEARCH_BACKGROUND.md",
+    "sha256": "367c5c7bfd7946d95dabbf9d6898c8f6c003ed0986ed2a83df0637482305e594"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_PLAN.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/RESEARCH_PLAN.md",
+    "sha256": "c06006bdcb71701400ebdf8c47e9ea6c3a970f9b3a29543e98d4e22ced6f3b8d"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/PROJECT_OVERVIEW.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/PROJECT_OVERVIEW.md",
+    "sha256": "e015c50d8500d9da4c046f92f9108df9d6ef2174c306112e32718b33b1085843"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/FILE_MAP.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/FILE_MAP.md",
+    "sha256": "bcfecd4f1f7d8bfca63cac9b2e0f7e19d956d9b60a21f6f636461da84380cdca"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/TPMS_RESEARCH_REVIEW.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/TPMS_RESEARCH_REVIEW.md",
+    "sha256": "aa285ffc20407dff72680ec3d59fa3a7c713745e60e4f62a0d0c06053290ff54"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/MECHANISM_ANALYSIS.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/MECHANISM_ANALYSIS.md",
+    "sha256": "e5c0edbc22a43095381f85e0a4e1349897151c1d64d1fd63412690f423e70011"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/PAPER_ROUTE.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/PAPER_ROUTE.md",
+    "sha256": "8dac22d4b4155281fa9f9a3221cb7d82ba0cba980c533334594497dd16a8ea6b"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/START_HERE.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/START_HERE.md",
+    "sha256": "49aa6a354900cacac1fc2b50f7f08ca0eb5b9ef2e613a67e7d06754eaa38dc7c"
+  },
+  {
+    "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/AGENTS.md",
+    "backup": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/before_dynamic_review_20261007/AGENTS.md",
+    "sha256": "defb007751a2d03101555ed48be754e0b187789b55736d86a9f2223f0040d67a"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/AGENTS.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/AGENTS.md",
+    "sha256": "1f07a4fbe9f88ecc129262feaf656ba35ee00c49dbf49b384253cecdd9c20e19"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/README.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/README.md",
+    "sha256": "2110437914a853cd92af0249f5e070fa9ca15cd0b3ac701781c5f8884b45cbc0"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/validation/README.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/validation/README.md",
+    "sha256": "40b56f433beb5b13e296b6322db7c3bb0c4919a1f84dfbaaf54d02317084b453"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_BACKGROUND.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/RESEARCH_BACKGROUND.md",
+    "sha256": "0a964157ea0ade50842f9dc02f1bb3e22c4dfcf9a208a1f7d4d98af370414f18"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/RESEARCH_PLAN.md",
+    "sha256": "c06006bdcb71701400ebdf8c47e9ea6c3a970f9b3a29543e98d4e22ced6f3b8d"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/RESEARCH_STATUS.md",
+    "sha256": "e015c50d8500d9da4c046f92f9108df9d6ef2174c306112e32718b33b1085843"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/FILE_MAP.md",
+    "sha256": "bcfecd4f1f7d8bfca63cac9b2e0f7e19d956d9b60a21f6f636461da84380cdca"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/TPMS_RESEARCH_REVIEW.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/TPMS_RESEARCH_REVIEW.md",
+    "sha256": "326da617d908ecbd63b3b3f1414ba3ee6851b1ac3f04a1e6d08766e1441b7945"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/MECHANISM_ANALYSIS.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/MECHANISM_ANALYSIS.md",
+    "sha256": "e5c0edbc22a43095381f85e0a4e1349897151c1d64d1fd63412690f423e70011"
+  },
+  {
+    "source": "/home/xuehu/projects/tpms_jax/docs/PAPER_ROUTE.md",
+    "backup": "/home/xuehu/projects/tpms_jax/docs/history/before_dynamic_review_20261007/docs/PAPER_ROUTE.md",
+    "sha256": "8dac22d4b4155281fa9f9a3221cb7d82ba0cba980c533334594497dd16a8ea6b"
+  }
+]

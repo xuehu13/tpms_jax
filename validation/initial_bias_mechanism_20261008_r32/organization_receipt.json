@@ -1,0 +1,35 @@
+{
+  "scope": "existing states only",
+  "new_FEM_Abaqus_analysis_AD": false,
+  "original_ODB_sha256_matches": true,
+  "scientific_freeze_checks": {
+    "hyperelastic_fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "pixi.lock": true,
+    "validation/geometry_transfer_20261006_r15/gauss_field.npz": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/thin_shell.inp": true,
+    "validation/plate_bending_20261008_r27/diagnostic.py": true,
+    "validation/initial_tangent_20261008_r30/jax_result.json": true,
+    "validation/initial_tangent_20261008_r30/abaqus/shell_result.json": true,
+    "validation/initial_tangent_20261008_r30/comparison.json": true,
+    "validation/membrane_diagnostic_20261008_r31/result.json": true,
+    "validation/initial_tangent_20261008_r30/linear_state.npz": true
+  },
+  "current_local_links_checked": 167,
+  "support_archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261008/r32_support",
+  "support_file_sha256": {
+    "analyze.log": "b2049b36a4c8a71b2a7ffc1f8a82aacf39105d454c6861bfd7f9d403ff873e63",
+    "analyze.py": "aa5ea396bf2e72d0ac1912b45bd09d67696267549e0fa9b730b268c571d0919d",
+    "extract_sections.py": "fb2731fb2d2edf092510b8f2fbda1cd48ada63aeab4fa23fee21f6eca72ecbeb",
+    "PROTOCOL.md": "921b262eca7d61619d74dd6c7b3269226330ce5a01f2eed403ef822b80533625",
+    "trace_membrane.py": "196292cb8767384a645da503acf1ecffd44b97384775917f08fcc4d98af9a7f7",
+    "update_docs.py": "2af05e1c7d2c387c59ed3d40e90f6796ae3243b2bce8f7c6d7fb1d0101248c62"
+  },
+  "production_modified": false,
+  "git_commit_push_merge": false,
+  "local_dense_integration_executed": false
+}

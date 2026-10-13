@@ -1,0 +1,14 @@
+{
+  "all_three_PNGs_visually_inspected": true,
+  "no_label_overlap_or_clipping_observed": true,
+  "current_markdown_links_checked": true,
+  "broken_links": [],
+  "protected_count": 531,
+  "protected_unchanged": true,
+  "new_shell_jobs": 2,
+  "additional_jobs": 0,
+  "new_JAX": 0,
+  "AD": 0,
+  "total_wall_to_QA_seconds": 1996.7862260341644,
+  "scope": "Includes batch, read-only partial extraction, analysis, visual QA and current documentation update; not CPU time"
+}

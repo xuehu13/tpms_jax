@@ -1,0 +1,100 @@
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *contactpair, interaction=CAP_K607, mechanicalconstraint=PENALTY
+  *boundary, amplitude=LOAD
+
+ ***WARNING: THE OPTION *BOUNDARY,TYPE=DISPLACEMENT HAS BEEN USED; CHECK STATUS 
+             FILE BETWEEN STEPS FOR WARNINGS ON ANY JUMPS PRESCRIBED ACROSS THE 
+             STEPS IN DISPLACEMENT VALUES OF TRANSLATIONAL DOF. FOR ROTATIONAL 
+             DOF MAKE SURE THAT THERE ARE NO SUCH JUMPS. ALL JUMPS IN 
+             DISPLACEMENTS ACROSS STEPS ARE IGNORED
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                 41554
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE       36578
+          NUMBER OF NODES IS                                    23777
+          NUMBER OF NODES DEFINED BY THE USER                   23777
+          TOTAL NUMBER OF VARIABLES IN THE MODEL               142638
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =       7.E+00
+       SYSTEM TIME (SEC)    =       4.E-01
+       TOTAL CPU TIME (SEC) =       7.E+00
+       WALLCLOCK TIME (SEC) =            8

@@ -1,0 +1,17 @@
+{
+  "compatible_mode_20261008_r36": {
+    "frozen_files": 39,
+    "changed": [],
+    "result_status": "ok"
+  },
+  "interface_width_20261008_r37": {
+    "frozen_files": 39,
+    "changed": [],
+    "result_status": "initial_width_diagnostic_complete"
+  },
+  "interface_width_mixed_20261008_r38": {
+    "frozen_files": 45,
+    "changed": [],
+    "result_status": "ok"
+  }
+}

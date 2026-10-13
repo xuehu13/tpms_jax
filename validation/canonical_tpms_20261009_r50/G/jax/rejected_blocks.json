@@ -1,0 +1,68 @@
+[
+  {
+    "time": 0.0026200159147944614,
+    "attempted_end_time": 0.0026544898084101777,
+    "dt": 2.693272938728041e-07,
+    "reason": "Nonfinite state or material energy/force",
+    "last_valid": {
+      "time": 0.0026200159147944614,
+      "compression": 0.1545097033359184,
+      "Fz_N": -5.7130991918776965,
+      "internal_macro_Fz_N": -5.683637418100321,
+      "energy_N_mm": 6.879317204602244,
+      "KE_N_mm": 0.18143008144436362,
+      "KE_over_U": 0.026373268748675727,
+      "J_finite": true,
+      "J_min": -4.85434093860752,
+      "invalid_material_points": 0,
+      "negative_J_points": 2684,
+      "required_positive_J_min": 0.18677094627100016,
+      "required_positive_J_points": 163600,
+      "dt_seconds": 2.693272938728041e-07
+    }
+  },
+  {
+    "time": 0.0029819917977600653,
+    "attempted_end_time": 0.002999228744567951,
+    "dt": 1.3466364693640205e-07,
+    "reason": "Nonfinite state or material energy/force",
+    "last_valid": {
+      "time": 0.0029819917977600653,
+      "compression": 0.1783358461280817,
+      "Fz_N": -4.831619432076618,
+      "internal_macro_Fz_N": -5.030398747036195,
+      "energy_N_mm": 7.883496273060654,
+      "KE_N_mm": 0.4879405283110386,
+      "KE_over_U": 0.06189392515836158,
+      "J_finite": true,
+      "J_min": -5.945732294277934,
+      "invalid_material_points": 0,
+      "negative_J_points": 3727,
+      "required_positive_J_min": 0.19890736021725808,
+      "required_positive_J_points": 163600,
+      "dt_seconds": 1.3466364693640205e-07
+    }
+  },
+  {
+    "time": 0.0030767950052034377,
+    "attempted_end_time": 0.0030854134786073807,
+    "dt": 6.733182346820103e-08,
+    "reason": "Nonfinite state or material energy/force",
+    "last_valid": {
+      "time": 0.0030767950052034377,
+      "compression": 0.1831377163669311,
+      "Fz_N": -4.875000483774904,
+      "internal_macro_Fz_N": -4.834166351308176,
+      "energy_N_mm": 8.355470741250853,
+      "KE_N_mm": 0.2460933060461388,
+      "KE_over_U": 0.029452955275299963,
+      "J_finite": true,
+      "J_min": -11.226084204077987,
+      "invalid_material_points": 0,
+      "negative_J_points": 3991,
+      "required_positive_J_min": 0.1403780241997592,
+      "required_positive_J_points": 163600,
+      "dt_seconds": 6.733182346820103e-08
+    }
+  }
+]

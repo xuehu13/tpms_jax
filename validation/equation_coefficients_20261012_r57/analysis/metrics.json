@@ -1,0 +1,220 @@
+{
+  "scope": "diverse_28 equation coefficients; complete loading-work gradients; terminal force auxiliary c2 only",
+  "status": {
+    "stage": "completed",
+    "active_jobs": [],
+    "result": "AD/work_VJP_result.json",
+    "heartbeat": "PAUSED",
+    "r53": "unchanged_paused",
+    "new_training": false,
+    "new_Git": false
+  },
+  "execution": {
+    "compression": 0.005,
+    "end_time_s": 0.0005865311985386901,
+    "steps": 10113,
+    "dt_s": 5.7997745331621686e-08,
+    "estimated_remaining_s": 9554.06982421875,
+    "choices": [
+      {
+        "compression": 0.01,
+        "end_time_s": 0.0007570215097510796,
+        "steps": 13053,
+        "dt_s": 5.799597868314408e-08,
+        "estimated_remaining_s": 12016.439025878906
+      },
+      {
+        "compression": 0.005,
+        "end_time_s": 0.0005865311985386901,
+        "steps": 10113,
+        "dt_s": 5.7997745331621686e-08,
+        "estimated_remaining_s": 9554.06982421875
+      }
+    ],
+    "fd_steps": [
+      3.4e-05,
+      4.6e-05,
+      2e-05
+    ],
+    "frozen_unix": 1791808901.2609694,
+    "source_hashes": {
+      "execute.py": "afa1574ab03dfd774f30f83bf137c006889498ea4c8f08d0580de61684357fb8",
+      "setup.py": "ac8a1c5947c8aacd5c2d880bd26a54deba855e797fb634f4c0e4afc571538599",
+      "coefficient_geometry.py": "6b1c22695c8f8b213b56369b70104d0d4ed3a71fe099c6d7b6f5520c8d859593",
+      "coefficient_model.py": "76e07d1c9e205004f94f351a3fbe4f6fb9bf83fdd8965cb8899e9dbc6eab7d01"
+    }
+  },
+  "geometry_passed": true,
+  "benchmark": {
+    "forward256_s": 9.674993991851807,
+    "JVP256_s": 22.213245630264282,
+    "VJP256_s": 48.22994780540466,
+    "short_duality_relative": 4.643255537799647e-08,
+    "short_duality_passed": true,
+    "scope": "256-step all-chain mixed-coefficient duality and cost only; not full response certification",
+    "wall_s": 823.683580160141
+  },
+  "work": [
+    {
+      "coefficient": "c1",
+      "baseline_coefficient": -3.4,
+      "objective": "work",
+      "FD_h": -0.0005000358621216771,
+      "FD_half": -0.0005000345149048129,
+      "h": 3.4e-05,
+      "units": "N mm / coefficient",
+      "AD": -0.0005000343375599008,
+      "AD_method": "complete VJP",
+      "near_zero": false,
+      "AD_FD_error": 3.54665341688276e-07,
+      "FD_halving_error": 2.6942477450254545e-06,
+      "passed": true,
+      "baseline_response": 0.0030505088744971626,
+      "signed_logabs_sensitivity": 0.557322538835953
+    },
+    {
+      "coefficient": "c2",
+      "baseline_coefficient": 4.6,
+      "objective": "work",
+      "FD_h": 0.00016043897344137557,
+      "FD_half": 0.00016043914623020442,
+      "h": 4.6e-05,
+      "units": "N mm / coefficient",
+      "AD": 0.0001604391642710568,
+      "AD_method": "complete VJP",
+      "near_zero": false,
+      "AD_FD_error": 1.1244669906805994e-07,
+      "FD_halving_error": 1.076974247900142e-06,
+      "passed": true,
+      "baseline_response": 0.0030505088744971626,
+      "signed_logabs_sensitivity": 0.24193342914978194
+    },
+    {
+      "coefficient": "c0",
+      "baseline_coefficient": 2.0,
+      "objective": "work",
+      "FD_h": -0.0012190702655895738,
+      "FD_half": -0.0012190699518431491,
+      "h": 2e-05,
+      "units": "N mm / coefficient",
+      "AD": -0.001219068451675289,
+      "AD_method": "complete VJP",
+      "near_zero": false,
+      "AD_FD_error": 1.2305839036497868e-06,
+      "FD_halving_error": 2.5736539908927496e-07,
+      "passed": true,
+      "baseline_response": 0.0030505088744971626,
+      "signed_logabs_sensitivity": -0.799256781079909
+    }
+  ],
+  "terminal_force": [
+    {
+      "coefficient": "c1",
+      "baseline_coefficient": -3.4,
+      "objective": "force",
+      "FD_h": -0.01783416239890893,
+      "FD_half": -0.017833235137373404,
+      "h": 3.4e-05,
+      "units": "N / coefficient",
+      "AD": null,
+      "AD_method": "not computed",
+      "near_zero": false,
+      "AD_FD_error": 0.0,
+      "FD_halving_error": 5.199626026260698e-05,
+      "passed": null,
+      "baseline_response": 0.08231728068108521,
+      "signed_logabs_sensitivity": 0.7365768033807483
+    },
+    {
+      "coefficient": "c2",
+      "baseline_coefficient": 4.6,
+      "objective": "force",
+      "FD_h": 0.004614688308864622,
+      "FD_half": 0.004614567374050527,
+      "h": 4.6e-05,
+      "units": "N / coefficient",
+      "AD": 0.004614731068817136,
+      "AD_method": "complete JVP",
+      "near_zero": false,
+      "AD_FD_error": 3.547348068429682e-05,
+      "FD_halving_error": 2.620718353258284e-05,
+      "passed": true,
+      "baseline_response": 0.08231728068108521,
+      "signed_logabs_sensitivity": 0.2578682112067138
+    },
+    {
+      "coefficient": "c0",
+      "baseline_coefficient": 2.0,
+      "objective": "force",
+      "FD_h": -0.04093210845060313,
+      "FD_half": -0.040931863782428524,
+      "h": 2e-05,
+      "units": "N / coefficient",
+      "AD": null,
+      "AD_method": "not computed",
+      "near_zero": false,
+      "AD_FD_error": 0.0,
+      "FD_halving_error": 5.977450132978383e-06,
+      "passed": null,
+      "baseline_response": 0.08231728068108521,
+      "signed_logabs_sensitivity": -0.9944901834405181
+    }
+  ],
+  "complete_work_result": true,
+  "final_acceptance_passed": true,
+  "representative_full_JVP_checks": {
+    "work": {
+      "AD": 0.0001604391642708997,
+      "FD": 0.00016043897344137557,
+      "FD_half": 0.00016043914623020442,
+      "near_zero": false,
+      "AD_FD_error": 1.1244571987502331e-07,
+      "FD_halving_error": 1.076974247900142e-06,
+      "passed": true
+    },
+    "force": {
+      "AD": 0.004614731068817136,
+      "FD": 0.004614688308864622,
+      "FD_half": 0.004614567374050527,
+      "near_zero": false,
+      "AD_FD_error": 3.547348068429682e-05,
+      "FD_halving_error": 2.620718353258284e-05,
+      "passed": true
+    }
+  },
+  "c2_VJP_JVP": {
+    "VJP": 0.0001604391642710568,
+    "JVP": 0.0001604391642708997,
+    "near_zero": false,
+    "AD_FD_error": 9.791929265343623e-13,
+    "FD_halving_error": 0.0,
+    "passed": true
+  },
+  "common_scaling": {
+    "contraction_Nmm": -5.377642775528102e-17,
+    "relative_to_sum_abs_terms": 1.1028180509753176e-14,
+    "note": "Common coefficient scaling leaves the zero surface unchanged; diagnostic, no post-hoc tolerance added"
+  },
+  "path_consistency": {
+    "steps": 10113,
+    "expected_steps": 10113,
+    "terminal_time": 0.0005865311985387058,
+    "expected_time": 0.0005865311985386901,
+    "terminal_compression": 0.005000000000000313,
+    "expected_compression": 0.005,
+    "passed": true
+  },
+  "completed_FD_paths": 12,
+  "FD_terminal_consistency": true,
+  "protected_original_changes": [],
+  "frozen_r57_source_changes": [],
+  "costs": {
+    "JVP_s": 817.7306430339813,
+    "FD_s": 5114.849344968796,
+    "VJP_s": 1856.2505722045898,
+    "total_s": 8613.03425526619,
+    "checkpoint_bytes": 766850160
+  },
+  "sampled_min_required_J": 0.9924676752287368,
+  "failure": null
+}

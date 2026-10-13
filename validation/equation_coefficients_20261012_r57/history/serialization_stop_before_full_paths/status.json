@@ -1,0 +1,7 @@
+{
+  "stage": "stopped",
+  "active_jobs": [],
+  "reason": "Circular reference detected",
+  "heartbeat": "PAUSED",
+  "r53": "unchanged_paused"
+}

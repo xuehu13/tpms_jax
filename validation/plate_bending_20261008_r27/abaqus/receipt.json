@@ -1,0 +1,23 @@
+{
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\plate_bending_20261008_r27",
+  "command": [
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=plate",
+    "input=plate.inp",
+    "cpus=1",
+    "interactive",
+    "ask_delete=OFF"
+  ],
+  "one_new_job": true,
+  "input_sha256": {
+    "plate.inp": "b7dba0e752f817a36aa7cc89059a4f65a25ba350f5817e53f5a1f9b5f0078147",
+    "input.json": "1d960902502f8383c69c15bcbd4c359ae9fffc66755c6bcc03e5a7f63ec97706",
+    "extract_shell.py": "bd09d5fd21c5bf191b61c0dae11bd12d4a5d648e0c1140ac064652adea6f03fa"
+  },
+  "job_seconds": 22.038679599994794,
+  "returncode": 0,
+  "analysis_completed_successfully": true,
+  "extract_seconds": 0.39382060000207275,
+  "extract_returncode": 0,
+  "input_files_unchanged": true
+}

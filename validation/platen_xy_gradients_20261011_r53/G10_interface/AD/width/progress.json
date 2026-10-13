@@ -1,0 +1,19 @@
+{
+  "case": "G10_interface/AD/width",
+  "steps": 34483,
+  "total_steps": 34483,
+  "wall_s": 2799.629336118698,
+  "time_s": 0.0019999898778387147,
+  "compression": 0.09999905104737952,
+  "work_N_mm": 1.7562412121919728,
+  "force_N": 3.2038475516652833,
+  "IE_N_mm": 1.7277157080174925,
+  "all_J_min": -1.0505897010259606,
+  "required_positive_J_min": 0.8186712647676979,
+  "negative_void_J_points": 190,
+  "KE_N_mm": 0.022873480889497484,
+  "bottom_force_N": 3.20382279485835,
+  "contact_energy_N_mm": 0.00565202355719439,
+  "work_gradient_N": 1.421952653940073,
+  "force_gradient_N_per_mm": 3.0925886386374097
+}

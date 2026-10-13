@@ -1,0 +1,4 @@
+﻿solver,definition,compression_percent,force_N,time_s,at_loading_endpoint,prominence_N
+HEX8,raw global max in own achieved loading,19.9999999976719,3.267096773660553,0.004,True,
+HEX27,raw global max in own achieved loading,19.999999954089237,2.756562886525545,0.004,True,
+Abaqus,raw global max in own achieved loading,20.0,2.902436788645905,0.004,True,

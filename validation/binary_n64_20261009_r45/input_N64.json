@@ -1,0 +1,122 @@
+{
+  "case_id": "diverse04_binary_N64_r45",
+  "N": 64,
+  "cell_size_mm": 10.0,
+  "thickness_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.0,
+  "solid_density_tonne_per_mm3": 1e-09,
+  "mechanical_periodic_axes": [
+    0,
+    1,
+    2
+  ],
+  "target_compression": 0.2,
+  "hold_fraction": 0.1,
+  "material_model": "objective_void",
+  "element_degree": 2,
+  "quadrature_order": 4,
+  "Gauss_points_per_cell": 27,
+  "JAX_load_time_seconds": 0.004,
+  "shell_load_time_seconds": 0.04,
+  "base_commit": "7e9c642be67ebdddcd44cdabb68fe86b7a4822e8",
+  "main_plan_step": 1,
+  "research_question": "Can the fixed candidate transfer to another existing periodic midsurface without retuning physical or numerical constants?",
+  "scientific_scope": "Matched forward input readiness only; no displacement solve or derivative certification.",
+  "only_physical_change": "Original midsurface diverse_28 -> diverse_04; physical thickness/material/boundary fixed",
+  "reused_screen": {
+    "case": "diverse_04",
+    "source_directory": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_04",
+    "implicit_expression": "-2.6*sin(Z)-4.5*sin(X)*cos(Y)-0.1*cos(Z)*cos(Z)+1.8",
+    "case_sha256": "95eda44705b37dfa799ff2c34319bf0a5fac1ddc9d0f8255cfc4b729b1e19ca3",
+    "mesh_sha256": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85",
+    "L_mm": 10.0,
+    "nodes": 8372,
+    "triangles": 15914,
+    "coordinate_bounds_over_L": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "area_over_L2": 2.660641133756185,
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "low_nodes": 124,
+        "high_nodes": 124,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 1,
+        "low_nodes": 141,
+        "high_nodes": 141,
+        "coordinate_gap_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "low_nodes": 162,
+        "high_nodes": 162,
+        "coordinate_gap_over_L": 0.0
+      }
+    ],
+    "normal_second_moment": [
+      [
+        0.36526557173245816,
+        -3.115260060707476e-05,
+        4.771396954744297e-06
+      ],
+      [
+        -3.115260060707466e-05,
+        0.36530217387831765,
+        5.611880191984628e-06
+      ],
+      [
+        4.771396954742036e-06,
+        5.611880191983644e-06,
+        0.2694322543892243
+      ]
+    ],
+    "basic_periodic_surface_screen_pass": true,
+    "new_XYZ_shell_reference_exists": false,
+    "strict_mathematical_minimal_surface_certified": false,
+    "mechanical_response_predicted": false,
+    "constant_thickness_overlap_or_contact_certified": false
+  },
+  "original_source_sha256": {
+    "case_used.json": "95eda44705b37dfa799ff2c34319bf0a5fac1ddc9d0f8255cfc4b729b1e19ca3",
+    "abaqus/ingredients/shell_mesh.inc": "163afaf691b9057420be4de9d1ba359af4e1d0fdcd578178e3838c3ed521ec85"
+  },
+  "gates": {
+    "hold_force_difference": 0.1,
+    "work_difference": 0.1,
+    "legacy_RMS_denominator_N": 2.2589142322540283,
+    "legacy_RMS_limit": 0.1,
+    "new_geometry_RMS_over_own_shell_loading_peak_limit": 0.1,
+    "JAX_energy_work_gap": 0.01,
+    "terminal_KE_over_U": 0.05,
+    "loading_fraction_KE_below_5pct": 0.95,
+    "shell_energy_drift": 0.01
+  },
+  "solver_source_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "scripts/thin_target_explicit.py": "a537cecde1523a7272008ecf0dc28952ac6e3e01333e9ef0db2925c437ade2ae",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30"
+  },
+  "original_smooth_interface_width_mm": 0.05,
+  "occupancy": "reference Gauss threshold d_normalized <= 0.025; no element deletion"
+}

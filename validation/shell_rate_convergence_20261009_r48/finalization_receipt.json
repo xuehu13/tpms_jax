@@ -1,0 +1,22 @@
+{
+  "updated_current_entries": [
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/PROJECT_OVERVIEW.md",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/RESEARCH_PLAN.md",
+    "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/START_HERE.md",
+    "/home/xuehu/projects/tpms_jax/README.md",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/FILE_MAP.md",
+    "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md",
+    "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/output/README.md",
+    "/home/xuehu/projects/tpms_jax/validation/README.md"
+  ],
+  "protected_count": 531,
+  "all_protected_unchanged": true,
+  "new_JAX_forward": 0,
+  "AD": 0,
+  "new_shell_jobs": 2,
+  "additional_jobs_after_batch": 0,
+  "finished_unix": 1791544543.8775487,
+  "finding": "新增diverse_04壳T20/80ms，与既有40ms对照。20/40/80ms观察峰位分别11.4975%/11.4161%/11.3750%，峰力5.11670/5.09832/5.08570N。两次放慢均通过预设峰位0.2个百分点/峰力2%工作标准；只界定当前离散壳观察峰的T稳定性，不认证物理真值或JAX20%。80ms30min求解预算停止，实际至19.8629%，无完整20%/保载。"
+}

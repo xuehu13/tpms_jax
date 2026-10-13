@@ -1,0 +1,56 @@
+{
+  "scope": "G deformed-midsurface coefficient a: complete0-to5pct total derivative, independent actual-geometry FD",
+  "passed": false,
+  "actual_compression": 0.04999999999998118,
+  "complete_from_zero_design_JVP": true,
+  "full_prefix_state_tangent_reused": false,
+  "objectives": [
+    {
+      "objective": "loading_work",
+      "baseline_value": 0.47990912191372703,
+      "AD": 0.0006712776899371033,
+      "FD_h": 0.0006733229779287697,
+      "FD_half": 0.0006740132152405209,
+      "AD_FD_relative_error": 0.00405856330642045,
+      "FD_halving_relative_difference": 0.0010240708878458827,
+      "nearzero": false,
+      "pass_target": true,
+      "gradient_unit": "N mm"
+    },
+    {
+      "objective": "terminal_upper_force",
+      "baseline_value": 1.8227484584491298,
+      "AD": 0.0013517795834398503,
+      "FD_h": 0.0007833179394012291,
+      "FD_half": 0.0009368832953882134,
+      "AD_FD_relative_error": 0.4428473536607541,
+      "FD_halving_relative_difference": 0.1639108699481635,
+      "nearzero": false,
+      "pass_target": false,
+      "gradient_unit": "N"
+    }
+  ],
+  "steps": 24789,
+  "dt_s": 5.7999300462244876e-08,
+  "additional_case_wall_minutes": {
+    "G5_shape/AD/shape": 33.796455379327135,
+    "G5_shape/FD/a_plus_h": 17.499712312221526,
+    "G5_shape/FD/a_minus_h": 17.468447772661843,
+    "G5_shape/FD/a_plus_half": 17.466493797302245,
+    "G5_shape/FD/a_minus_half": 17.46966789563497
+  },
+  "sampled_min_required_J": 0.9032478074045867,
+  "sampled_min_all_J": 0.019677230935156012,
+  "protected_sources_unchanged": true,
+  "reverse_at_this_endpoint_validated": false,
+  "required_objectives": [
+    "loading_work",
+    "terminal_upper_force"
+  ],
+  "parameter": "a",
+  "baseline_vs_original_forward": {
+    "max_absolute_force_N": 3.5287309634313146e-06,
+    "RMS_force_N": 1.3316160640974123e-06,
+    "includes_sample_interpolation": true
+  }
+}

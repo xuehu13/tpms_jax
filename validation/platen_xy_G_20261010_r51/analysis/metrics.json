@@ -1,0 +1,95 @@
+{
+  "scope": "2pct cut-end prototype, not full-wall contact or 20pct certification",
+  "full20_submitted": false,
+  "new_design_AD": false,
+  "load_RMS_over_shell_2pct_max": 0.11512172538540663,
+  "shell_loading_max_N": 0.7241182386842194,
+  "force_at_1pct_N": {
+    "jax": 0.44221941534938086,
+    "abaqus": 0.3667075714631803
+  },
+  "force_at_2pct_N": {
+    "jax": 0.8945024901729769,
+    "abaqus": 0.7241182386842194
+  },
+  "last_half_hold_mean_force_N": {
+    "jax": 0.930617090566278,
+    "abaqus": 0.785530870297678,
+    "relative_bias": 0.1846983049992923
+  },
+  "external_work_N_mm": {
+    "jax_sampled_RF_U": 0.09102761617198804,
+    "abaqus_sampled_RF_U": 0.07702516810107193,
+    "relative_bias": 0.1817905551668797
+  },
+  "terminal_ax_ay_mm": {
+    "jax": [
+      0.08079266273265885,
+      0.03586144719151366
+    ],
+    "abaqus": [
+      0.07425511628389359,
+      0.02692657895386219
+    ]
+  },
+  "terminal_contact_penetration_mm": {
+    "jax_phi_ge_0p01": [
+      0.00503331995762724,
+      0.005105221374344104
+    ],
+    "abaqus_rim_nodes": [
+      0.0001030600251397118,
+      0.0001087188720703125
+    ]
+  },
+  "jax_sampled_energy_defect_over_work": 1.2158388640311628e-05,
+  "jax_sampled_impulse_defect_over_peak_momentum": 0.00020883033678861413,
+  "sampled_work_impulse_note": "Trapezoidal diagnostic on saved output, not stepwise conservation certification",
+  "jax_terminal_KE_over_IE": 0.0012242729007495446,
+  "jax_min_required_J_in_saved_rows": 0.9699563831250096,
+  "jax_max_negative_void_J_points_in_saved_rows": 0,
+  "jax_rejected_blocks": 0,
+  "abaqus_XY_U_error_mm": 1.862645149230957e-09,
+  "abaqus_XY_UR_error_rad": 0.0,
+  "abaqus_energy_drift_relative_work": 0.0003247825257954255,
+  "abaqus_work_relative_ALLWK_error": 2.842536805643749e-07,
+  "abaqus_terminal_KE_over_IE": 0.00016185620393875249,
+  "wall_minutes": {
+    "jax_including_preparation": 7.563884983498913,
+    "abaqus_solve_launcher": 4.4179666666663255,
+    "abaqus_datacheck": 0.6776000000012573
+  },
+  "input_sha256": "c31665438fc03919e3620c5fafaa8ebef5af83327b0adce240b49333cc3231e1",
+  "initial_uniform_check": true,
+  "terminal_contact_coverage": {
+    "scope": "saved terminal state only; excludes finite shell-thickness envelope and self-contact",
+    "jax_caps_bottom_top": [
+      {
+        "area_weighted_penetration_mm": 0.00021648624862568937,
+        "max_penetration_mm_by_phi_threshold": {
+          "0.01": 0.00503331995762724,
+          "0.5": 0.0018982176742533754,
+          "0.9": 0.0012688996296340974
+        },
+        "integrated_force_N": 0.900574756485913
+      },
+      {
+        "area_weighted_penetration_mm": 0.00021829259374659687,
+        "max_penetration_mm_by_phi_threshold": {
+          "0.01": 0.005105221374344104,
+          "0.5": 0.0019285854330231,
+          "0.9": 0.0012806347931670903
+        },
+        "integrated_force_N": 0.9080890851221095
+      }
+    ],
+    "jax_volume_Gauss_points_outside_planes_by_phi_threshold": {
+      "0.01": 0,
+      "0.5": 0,
+      "0.9": 0
+    },
+    "jax_volume_max_penetration_phi_ge_0p01_mm": 0.0,
+    "shell_nonrim_midsurface_nodes_outside_planes": 0,
+    "shell_nonrim_midsurface_max_penetration_mm": 0.0
+  }
+}

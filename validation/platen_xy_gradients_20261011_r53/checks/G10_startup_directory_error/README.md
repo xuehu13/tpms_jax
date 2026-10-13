@@ -1,0 +1,1 @@
+Startup failed before any dynamic step: nested G10 parent directories were missing. Original log, clock, failure, status and run.py are preserved here. The only correction was mkdir(parents=True, exist_ok=False). Retry uses the unchanged frozen numerical protocol; current status.json is authoritative.

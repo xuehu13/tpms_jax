@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791474697.7300785,
+  "pid": 34804,
+  "protocol_sha256": "abfd36342aa72aee9f13dfc02ac6dfcaa4aff20a0271ec188fdb238c02f8bd92",
+  "adapter_sha256": "838c6d4d82f7dbd95736c44ad9ea478a07f928ea6b3cad73abfdbe4d7a4e46f5",
+  "one_from_zero_attempt": true,
+  "returncode": 0
+}

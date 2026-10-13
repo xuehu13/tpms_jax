@@ -1,0 +1,16 @@
+{
+  "preparation_seconds": 1.868441104888916,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Abaqus solve failed",
+    "common_input_error": false
+  },
+  "overall_minutes": 7.202206007639567,
+  "within_100min": true,
+  "budget_minutes": {
+    "overall": 100,
+    "JAX": 65,
+    "Abaqus_datacheck_solve": 25,
+    "preparation_extraction_analysis": 10
+  }
+}

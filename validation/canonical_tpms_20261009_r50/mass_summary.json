@@ -1,0 +1,23 @@
+[
+  {
+    "kind": "G",
+    "occupancy_volume_mm3": 153.97370993355892,
+    "HRZ_weighted_volume_mm3": 154.05831256256556,
+    "shell_volume_mm3": 154.65871557827344,
+    "weighted_mass_bias_pct": -0.38821156212436314
+  },
+  {
+    "kind": "P",
+    "occupancy_volume_mm3": 117.02531384255097,
+    "HRZ_weighted_volume_mm3": 117.11361131116671,
+    "shell_volume_mm3": 117.65435702629863,
+    "weighted_mass_bias_pct": -0.4596053463715277
+  },
+  {
+    "kind": "D",
+    "occupancy_volume_mm3": 190.6972142181567,
+    "HRZ_weighted_volume_mm3": 190.77814449673485,
+    "shell_volume_mm3": 192.10679042987553,
+    "weighted_mass_bias_pct": -0.6916184119091118
+  }
+]

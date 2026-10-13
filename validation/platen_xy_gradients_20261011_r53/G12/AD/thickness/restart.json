@@ -1,0 +1,14 @@
+{
+  "source": "G10/AD/thickness",
+  "steps": 34483,
+  "seed": [
+    1.0,
+    0.0
+  ],
+  "hashes": {
+    "result.json": "0bb53cec5e44a812b5a59e252dbaf199a5ded2359fac327e5c33ba0fa73065ea",
+    "final_state.npz": "e1d982c48b72fcec01c1eca05a1f9329a5bf42a7bb8c317cadcea2f687787deb",
+    "final_tangent.npz": "c6c580264c95e7da985eb1d27cec3d1bd806a30bbc5ebf4206acbe24ac4a221b"
+  },
+  "interpretation": "Reuses complete prefix state and its full parameter tangent, including accumulated work; not a frozen-state derivative"
+}

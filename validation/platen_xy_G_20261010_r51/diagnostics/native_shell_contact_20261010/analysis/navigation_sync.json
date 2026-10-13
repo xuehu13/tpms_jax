@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "RESEARCH_PLAN.md": "docs/RESEARCH_PLAN.md",
+    "PROJECT_OVERVIEW.md": "docs/RESEARCH_STATUS.md",
+    "FILE_MAP.md": "docs/FILE_MAP.md",
+    "AGENTS.md": "AGENTS.md"
+  },
+  "matches": {
+    "RESEARCH_PLAN.md": true,
+    "PROJECT_OVERVIEW.md": true,
+    "FILE_MAP.md": true,
+    "AGENTS.md": true
+  },
+  "r51_README_matches": true
+}

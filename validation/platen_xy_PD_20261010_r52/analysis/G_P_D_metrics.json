@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "G",
+    "full20": true,
+    "RMS": 0.03418660233554509,
+    "work_bias": 0.038586311534834605,
+    "hold_bias": 0.05761410013902335,
+    "targets_pass": true
+  },
+  {
+    "kind": "P",
+    "full20": true,
+    "RMS": 0.027818742532248225,
+    "work_bias": 0.03648637720541559,
+    "hold_bias": 0.0480215249229059,
+    "targets_pass": true
+  },
+  {
+    "kind": "D",
+    "full20": false,
+    "RMS": null,
+    "work_bias": null,
+    "hold_bias": null,
+    "targets_pass": false
+  }
+]

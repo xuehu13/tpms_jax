@@ -1,0 +1,8 @@
+{
+  "removed_unrelated_G_template_fields": {
+    "contextual_original2pct_peak_N": 0.7241182386842194,
+    "curve_RMS_over_old_fixed_peak": 0.1082116468169853
+  },
+  "reason": "r54 uses its own new Abaqus full-loading peak only; no response or criterion changed",
+  "original_derived_sha256": "3d42098f7b10559d1d5fae5e781c1a5acdcf0de4dfcc571d0b129387bfc3b168"
+}

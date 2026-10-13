@@ -1,0 +1,35 @@
+{
+  "id": "G_shape_geometry",
+  "formula": "T_a(x,y,z)=(x+a*sin(2*pi*x)*sin(pi*z)^2,y,z), normalized coordinates",
+  "interpretation": "Periodic deformed-G midsurface family with fixed triangle connectivity and fixed end rims; not a strict minimal-surface or all-harmonic-weight claim",
+  "parameter": "a",
+  "parameter_unit": "dimensionless",
+  "baseline": 0.0,
+  "parameter_range": [
+    -0.01,
+    0.01
+  ],
+  "parameter_scale": 0.01,
+  "fd_steps": [
+    0.0001,
+    5e-05
+  ],
+  "surface_path": "validation/canonical_tpms_20261009_r50/G/surface.npz",
+  "gauss_path": "validation/canonical_tpms_20261009_r50/G/gauss_field.npz",
+  "wall_budget_seconds": 900,
+  "baseline_relative_tolerance": 1e-09,
+  "derivative_relative_L2_tolerance": 0.01,
+  "FD_halving_relative_L2_tolerance": 0.01,
+  "nearzero_scaled_derivative_cutoff": 1e-06,
+  "nearzero_scaled_error_tolerance": 1e-05,
+  "derivative_rule": "Unique closest-point envelope derivative -n dot sum(barycentric_i*vertex_velocity_i); no FD in AD rule",
+  "differentiability_scope": "Piecewise smooth closest-triangle distance; actual independent queries at both FD levels. Report face changes and nonsmooth-query evidence.",
+  "end_geometry": "T_a fixes z0/1 and periodic seams. Contact points/Q2 interpolation/assignments stay identical by construction; cap occupancy and area are differentiated.",
+  "protected_sources": {
+    "validation/canonical_tpms_20261009_r50/G/surface.npz": "f29cee32531216d623f5386439620789117c8c7e1312d2cb3b29f4651f3fa925",
+    "validation/canonical_tpms_20261009_r50/G/gauss_field.npz": "110de55d63508b1f8e504f804fbcae26ec11e93be0caf6ef85f8388b1ae81712",
+    "validation/platen_xy_gradients_20261011_r53/input/design_geometry.npz": "3b37d781bb0b26d949027aebecf2e6ed72515722417dde901ec5d4926bc8aeaa",
+    "validation/platen_xy_G_20261010_r51/diagnostics/contact_origin_20261010/input/rimline_contact.npz": "045ed72593a474952be792773bcc26d3695e84db11f4ba423e6c1d3e2a7b3ffd"
+  },
+  "frozen_utc": "2026-10-11T14:56:33.001043+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "frozen_files_verified": 247,
+  "frozen_bytes": 262571069,
+  "solver_source_unchanged": [
+    {
+      "path": "hyperelastic_fem.py",
+      "sha256": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e"
+    },
+    {
+      "path": "surface_distance.py",
+      "sha256": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6"
+    },
+    {
+      "path": "pbc.py",
+      "sha256": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498"
+    },
+    {
+      "path": "scripts/thin_target_explicit.py",
+      "sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967"
+    }
+  ],
+  "original_PDFs_unchanged": true,
+  "document_mirrors_verified": [
+    {
+      "Windows": "RESEARCH_BACKGROUND.md",
+      "formal": "docs/RESEARCH_BACKGROUND.md",
+      "sha256": "9a6b58128d15744ecb2c43589f2c519a487832c231d820b7f5f27bce1c617f79"
+    },
+    {
+      "Windows": "RESEARCH_PLAN.md",
+      "formal": "docs/RESEARCH_PLAN.md",
+      "sha256": "9464867d1cf2b193a2fc1c1fd309111dd40523f9d20b24518585fd1bf180aee6"
+    },
+    {
+      "Windows": "PROJECT_OVERVIEW.md",
+      "formal": "docs/RESEARCH_STATUS.md",
+      "sha256": "43d17dc0d4e35fea411b5cc9e96f4f06a6fd1403736d768fb74ddb53b370dcb5"
+    },
+    {
+      "Windows": "FILE_MAP.md",
+      "formal": "docs/FILE_MAP.md",
+      "sha256": "44f2a86a46b41125a603bcfc439987bfc192a86b3c8dd2cdeee331eea89b7a44"
+    },
+    {
+      "Windows": "TPMS_RESEARCH_REVIEW.md",
+      "formal": "docs/TPMS_RESEARCH_REVIEW.md",
+      "sha256": "453fe4b244203795360e61eea894718acbac38d0e0786a090ef954754d4fd578"
+    },
+    {
+      "Windows": "MECHANISM_ANALYSIS.md",
+      "formal": "docs/MECHANISM_ANALYSIS.md",
+      "sha256": "a0a210eeff710064971e8e109b2f9326fc68a27eec117960967a56f1794ea8b7"
+    },
+    {
+      "Windows": "PAPER_ROUTE.md",
+      "formal": "docs/PAPER_ROUTE.md",
+      "sha256": "322056a0774115f8fa69c9115402bfa2c6905ef72425811d490dbcd68109bb2a"
+    }
+  ],
+  "broken_reading_links": [],
+  "analysis_figure_visual_review": "Reviewed generated force/KE/stored-energy figure; clear labels, partial endpoint, differing KE denominators.",
+  "PDF_visual_review": "Qiu PDF pages 12/13 and Thillaithevan PDF page 5 inspected after rendering.",
+  "git_diff_check": "passed",
+  "new_forward_runs": 0,
+  "new_Abaqus_jobs": 0,
+  "design_AD_runs": 0,
+  "Git_commit_or_push": false,
+  "old_quasistatic_checks_preserved": true,
+  "next_job_protocol": "proposed_not_submitted",
+  "no_running_forward_jobs_observed": true
+}

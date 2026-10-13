@@ -1,0 +1,42 @@
+[
+  {
+    "target_compression": 0.05,
+    "actual_compression": 0.05036568921184362,
+    "time": 0.0014423371203337856,
+    "allowed_dt_s": 1.4757545503534677e-07,
+    "old_dt_s": 1.3911430558775794e-07,
+    "omega2_estimate": 16530052722853.588,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 1.1869678497314453
+  },
+  {
+    "target_compression": 0.1,
+    "actual_compression": 0.10030431200904172,
+    "time": 0.0020032460004633648,
+    "allowed_dt_s": 1.4668166493494683e-07,
+    "old_dt_s": 1.3911430558775794e-07,
+    "omega2_estimate": 16732114932173.871,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 0.4196646213531494
+  },
+  {
+    "target_compression": 0.15,
+    "actual_compression": 0.15015095791583252,
+    "time": 0.002564154880592944,
+    "allowed_dt_s": 1.459975388304345e-07,
+    "old_dt_s": 1.3911430558775794e-07,
+    "omega2_estimate": 16889291498474.363,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 0.42818689346313477
+  },
+  {
+    "target_compression": 0.2,
+    "actual_compression": 0.2,
+    "time": 0.00400649200092646,
+    "allowed_dt_s": 1.5798368301126023e-07,
+    "old_dt_s": 1.3911430558775794e-07,
+    "omega2_estimate": 14423744889359.607,
+    "not_a_proven_global_bound": true,
+    "wall_seconds": 3.9905526638031006
+  }
+]

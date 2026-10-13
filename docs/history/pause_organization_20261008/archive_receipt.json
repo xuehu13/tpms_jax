@@ -1,0 +1,201 @@
+[
+  {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\weekly_report_20261007",
+    "destination": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261008\\presentation_and_report\\weekly_report_20261007",
+    "same_volume_directory_rename": true,
+    "top_level_hashes": [
+      {
+        "name": "assets_01.jpg",
+        "sha256": "39E6C450513FBBA31F821CC528CA79B7FE0A37B6CE34787609347164E5260E96"
+      },
+      {
+        "name": "assets_02.jpg",
+        "sha256": "591C97C19D7F4BDC29436724B3AA21036628F2CB450EBE3085B28F8FA7F319EE"
+      },
+      {
+        "name": "assets_03.jpg",
+        "sha256": "6DD0252286405F1BBDFD7D50F7BED017DD01E447EC41F5A3D8D151EA8DEE8F54"
+      },
+      {
+        "name": "assets_04.jpg",
+        "sha256": "1F06E9626B84C2F63CFF355C1F58F429BD90486B8D4FA73DBDC621CE97CBA871"
+      },
+      {
+        "name": "assets_05.jpg",
+        "sha256": "BAC99A79302713AAB99A8ADB59E0427B5EA140D00F8D5F9519ACBF5A3CEBD76B"
+      },
+      {
+        "name": "assets_06.jpg",
+        "sha256": "39DD713A6C511E11622D84578C994BE14C1617BA5B83DD9A62078F12F68ACDB5"
+      },
+      {
+        "name": "assets.json",
+        "sha256": "8C8589F817CE360C0544E1E3BAA33390BF2FC15F38FFC2A9CDB013E71C9E9078"
+      },
+      {
+        "name": "build_manifest.json",
+        "sha256": "33ED2FAAB97D56ACCFFA4FA5AA2D0C07292C30883A1B248B7A8C10AB8E3575FE"
+      },
+      {
+        "name": "build_report.py",
+        "sha256": "37A3882B4B7C3063E223D626348AE7674150EB2012EF5BB186CDC0FC05830690"
+      },
+      {
+        "name": "final_qa.json",
+        "sha256": "16FC939C80C599F16A1FDFD130ACDFBF23DA60DEFA2A5DD66689224C7957DF46"
+      },
+      {
+        "name": "make_teaching_figures.py",
+        "sha256": "E9B8EE436ECCE08AC1AAD44CF0C595D0154234AEC57A4E988D2F5EF1EEEC2A43"
+      },
+      {
+        "name": "prepare_assets.py",
+        "sha256": "9D816DA8C1F401CCE1468C9E512880B4F459E80E87B25401929BEE00A74635C0"
+      },
+      {
+        "name": "qa_previous_pages.json",
+        "sha256": "8054E22A71BDFA89EA4688799B45800FE9BCC8AD5F67A23906146BFA1C16ABFE"
+      },
+      {
+        "name": "raster_qa.py",
+        "sha256": "D13D2CB375D856ABFC88E24550B0E405CE137BD6766CC8DEAF58E0BEA3A1F2EB"
+      },
+      {
+        "name": "reference_text.txt",
+        "sha256": "F81BEB7F8C19A127BF144DECB468C3AD7CEB2ED8902A674152B1CD975FBBC588"
+      },
+      {
+        "name": "render_word.ps1",
+        "sha256": "7B2F982CC98E5B67ECAFC032B90927B9B1361EC96EA869A24400D39C996FDBFD"
+      },
+      {
+        "name": "report_02.md",
+        "sha256": "B22618F359E223CE390E4FBD0D452CF5237043BBB6369B4FA59E007DC27C9940"
+      },
+      {
+        "name": "report_03.md",
+        "sha256": "332D01C5BCB83D90F6DA325BE5D0600BBDD894589FA3A781D8385A16B0DBE4E8"
+      },
+      {
+        "name": "report_04.md",
+        "sha256": "A9E2382864F1D24601F39912EEC8EC46B42DF269E4DF66A80FAF679E193D3BEA"
+      },
+      {
+        "name": "report_05.md",
+        "sha256": "A8C0A59771B625468D9FAA9670E5DF10BE8480483FDD7B695F856E830DBC54B0"
+      },
+      {
+        "name": "report.md",
+        "sha256": "5C823129FF5DF8F4F3081D022341531365A33059AA2A5F4E246A2A6288B58440"
+      },
+      {
+        "name": "source_manifest.json",
+        "sha256": "B01520AF770270DDE5844BA8D3293E798960A1A1F5702953ECD5A495C81B9703"
+      },
+      {
+        "name": "verify_final.py",
+        "sha256": "A70359FA19B891D1C8E64C7FA6C0914ECA55C25F267F1B9911C0255D3C40B955"
+      }
+    ],
+    "nested_dependencies_preserved_without_following_links": true
+  },
+  {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\weekly_slides_20261007",
+    "destination": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261008\\presentation_and_report\\weekly_slides_20261007",
+    "same_volume_directory_rename": true,
+    "top_level_hashes": [
+      {
+        "name": "build_deck.mjs",
+        "sha256": "51827DAC9A6430403D15574A1921B4D17BAF16809CAAF8348485D3DC267CFAED"
+      },
+      {
+        "name": "check_deck.py",
+        "sha256": "85FC4983D5A429B1573B30E68F10EE3CD633FA03DEF66606BF2BE2B5196F9987"
+      },
+      {
+        "name": "data_display.json",
+        "sha256": "1E9C454B897BED410BD2D4659AAC31B56EDBCA61B43D015AFDC3421CB0EFA49D"
+      },
+      {
+        "name": "final_qa.json",
+        "sha256": "C49A0EC8CF9CB47720863657FD5E016FCEA03D12166059B0290F6F9991BF83AC"
+      },
+      {
+        "name": "render_powerpoint.ps1",
+        "sha256": "47D2B29FF9FEDD1A0FA8091940D11DB0D7CDACCB5552AF93A56478660A43352B"
+      },
+      {
+        "name": "slide_outline.json",
+        "sha256": "0BDCA601313394C0A7991DE41C68DE73C32B4662183E638364667860339FAA7D"
+      },
+      {
+        "name": "source_hashes.json",
+        "sha256": "DA25BDFAD7EEB2086A4A04BF96D576A08D7FE69BF2A345569A6C245360DC4CAA"
+      }
+    ],
+    "nested_dependencies_preserved_without_following_links": true
+  },
+  {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\display_slides_20261007",
+    "destination": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261008\\presentation_and_report\\display_slides_20261007",
+    "same_volume_directory_rename": true,
+    "top_level_hashes": [
+      {
+        "name": "build_display.mjs",
+        "sha256": "F03E0A26860D53E74FDD55B1688F95BE86477D496EC9994A969C23D86BC77938"
+      },
+      {
+        "name": "outline.json",
+        "sha256": "A045AFB29AF266FE59AC010E4884EBB0337575D1FA0C9D23D78C4CFEE7235EBB"
+      },
+      {
+        "name": "render_powerpoint.ps1",
+        "sha256": "78A519C6610DEBF8B8CDC63786E0229E6317A821889E9E9E19663DB39CB57CD8"
+      },
+      {
+        "name": "source_hashes.json",
+        "sha256": "687DE7F52BB081021B40BF538BAAC86984E20204C42732B569D22FFDA969737F"
+      }
+    ],
+    "nested_dependencies_preserved_without_following_links": true
+  },
+  {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\keypoints_slides_20261007",
+    "destination": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261008\\presentation_and_report\\keypoints_slides_20261007",
+    "same_volume_directory_rename": true,
+    "top_level_hashes": [
+      {
+        "name": "build_keypoints.mjs",
+        "sha256": "954813082BFE90E0EB2F9BA9DD87240A5C11016FBF9D48433D8AA5CFCABD3E80"
+      },
+      {
+        "name": "outline.json",
+        "sha256": "3197D0F5BA4541A5910161A79BBBAEEB3FB8000D79B70D2E3794E5D794A0E8F7"
+      },
+      {
+        "name": "render_powerpoint.ps1",
+        "sha256": "C6C4D59069E0FD2E1A14EDDE7E7DD5E174015AF760B2A5FB1607C0798AE6F624"
+      },
+      {
+        "name": "rewrite_body.mjs",
+        "sha256": "2E7EF305E3B91764793569B1DBB9FA2DB9ECBBAECED37D8C7C1FB1D0DF386609"
+      },
+      {
+        "name": "source_hashes.json",
+        "sha256": "687DE7F52BB081021B40BF538BAAC86984E20204C42732B569D22FFDA969737F"
+      }
+    ],
+    "nested_dependencies_preserved_without_following_links": true
+  },
+  {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\work\\r25_assessment_update.py",
+    "destination": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\completed_tools_20261007\\r25_support\\r25_assessment_update.py",
+    "sha256": "6F580CB1AE1B7CB5853565EDE422B521710D28834DDDDE4B07EAF39CC6286B42"
+  },
+  {
+    "source": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r27_plate_bending_20261008\\REVIEW.md",
+    "destination": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\reading_copies_20261008\\r27\\REVIEW.md",
+    "sha256": "725ABC28C45452D293E36710CF97DFD75918303AC6F7A33F1E68F2218EDFB0F7",
+    "canonical_reading_report": "output/r27_plate_bending_20261008/README.md"
+  }
+]

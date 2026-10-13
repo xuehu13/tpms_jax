@@ -1,0 +1,19 @@
+{
+  "same_original_mass_relative_error": 1.4551418705807332e-15,
+  "projected_action_vs_original_N8_K_relative_error": 6.389540053655088e-14,
+  "H_JVP_vs_jacfwd_relative_error": 1.3838137524933025e-16,
+  "material_H_asymmetry": 1.6795406435165887e-16,
+  "free_dofs": 786429,
+  "initial_eigenvalues_s_minus2": [
+    2801337.683578244,
+    2995489.7386798053,
+    3417359.8701006197,
+    32082696.315798014
+  ],
+  "original_positive_J_min": 0.4156875049419683,
+  "preconditioner_min_max": [
+    2460299404715.167,
+    38285901082747.44
+  ],
+  "preconditioner_does_not_change_operator": true
+}

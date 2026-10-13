@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791694268.5587528,
+  "deadline_unix": 1791699968.5587528,
+  "pid": 806153,
+  "steps": 34483,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/G10_interface_protocol.json"
+}

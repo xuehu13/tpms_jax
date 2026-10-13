@@ -1,0 +1,27 @@
+{
+  "case": "diverse_04 N32 fixed r34 nodes",
+  "selected_cells": 1941,
+  "selected_cells_sha256": "37a651f38ebad044f44362cc87b7bb88e3d32c5fa6988540309cc3c317600c8d",
+  "mode": "psi=b*(n dot (xi-.5))*n; b=64*product_j xi_j*(1-xi_j); one scalar per cell",
+  "normal": "Nearest original triangle at original cell centre; unsigned orientation; no state/energy/shell selection",
+  "degenerate_geometry": "Stop if any normal cannot be normalized; no fallback mode",
+  "points_per_axis": [
+    8,
+    12
+  ],
+  "baseline_rule": "r34: selected cells 12 per axis; all other original 27",
+  "integration_relative_gate": 0.01,
+  "energy_identity_relative_gate": 1e-10,
+  "clear_release_fraction": 0.005,
+  "clear_release_gate_role": "Prospective relevance gate for one global confirmation, not fitted physical tolerance",
+  "denominator": "r34 same-rule whole-model energy 2.47680612690822e-6 Nmm",
+  "total_budget_seconds": 900,
+  "t_mm": 0.5,
+  "E_MPa": 10,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "new_global_equilibrium": false,
+  "new_design_AD": false,
+  "source_frozen_before_run": true
+}

@@ -1,0 +1,17 @@
+{
+  "protected_files_unchanged": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true
+  },
+  "native_INP_ODB_unchanged": true,
+  "tool_compile_pass": true,
+  "selected_reading_links_valid": true,
+  "plots_layout_only_changed": true,
+  "no_additional_FEM_or_Abaqus_jobs": true
+}

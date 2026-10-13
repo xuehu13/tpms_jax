@@ -1,0 +1,53 @@
+{
+  "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/background_control_review_20261007",
+  "destination": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261007/background_control_review_20261007",
+  "files": [
+    {
+      "relative": "MECHANISM_ANALYSIS.md",
+      "sha256": "9146e850edb3fcef5fc7548840e8985dbba72d0d3effe65bb409e7817e020541"
+    },
+    {
+      "relative": "RESEARCH_PLAN.md",
+      "sha256": "0d0549a4da472f45d26ddae0c6e449ea7cd7cb985802ea4b07f9f5d3fbd7810a"
+    },
+    {
+      "relative": "hu_geometry_method.txt",
+      "sha256": "e796c14c4ef5133e779af2f2ff068c4a591bb094afc39b8884dbf2e9b0886b00"
+    },
+    {
+      "relative": "hu_geometry_selected.txt",
+      "sha256": "5c85b8c107f987219aa022464789b72b3d499e70a28e73a58c5bc965859b30f6"
+    },
+    {
+      "relative": "hu_page_5.png",
+      "sha256": "64274a558019221b6161303f5a475ef04727f4a78aacc41946b3463add7f346e"
+    },
+    {
+      "relative": "hu_page_6.png",
+      "sha256": "614c9a8ac105fc20eb9a7a4e8d6228cb778d0a1d85dc202ee2af8e2b4580cd13"
+    },
+    {
+      "relative": "hu_page_7.png",
+      "sha256": "3ee0c61e7c2e3ce6b3356d130b832c66d74e5d78cd5a1e43855930e064ff12c5"
+    },
+    {
+      "relative": "local_paper_inventory.json",
+      "sha256": "7f93418b8d7f7cce3e3bde0f72d63a182f1f52d53d7ba3f7bfcfc962fd86a2fd"
+    },
+    {
+      "relative": "prepare.py",
+      "sha256": "c2a9a6c2baa5839acd0c4b92b28e7907b2df03ca7bfa86c190fdb6117add0227"
+    },
+    {
+      "relative": "update_documents.py",
+      "sha256": "020bef7ca4af5430c87482502174d29276987e638471071e153496c6fd3b1693"
+    },
+    {
+      "relative": "verify_and_archive.py",
+      "sha256": "87bebdd699b9f95adbe92b6c5660f2185858020d55a7de6f0025efc092f354ce"
+    }
+  ],
+  "bytes_preserved": true,
+  "scientific_data_moved": false,
+  "historical_old_work_directories_left_for_frozen_links": true
+}

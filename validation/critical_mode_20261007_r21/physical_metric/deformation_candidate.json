@@ -1,0 +1,58 @@
+{
+  "protocol": {
+    "question": "Which extracted near-zero direction represents deformation rather than gross translation, and how stationary is it in the original fine space?",
+    "selection": "Report all six translation fractions; take first in increasing absolute eigenvalue with deformation kinetic share greater than uniform translation kinetic share. No use of reference force or eigenvalue shift to select.",
+    "states": [
+      "accepted_a0.1200.npz",
+      "accepted_a0.1600.npz"
+    ],
+    "no_new_eigensolve_or_time_advance": true,
+    "same_original_material_Gauss_mass_and_pin": true,
+    "full_residual": "Kfine v-lambda MHRZ v on original free periodic classes; this is mode residual, not forward state imbalance.",
+    "limit": "A converged restricted mode with a large fine residual is not a certified fine-space critical mode. Domain curvature shares refer to this candidate only."
+  },
+  "rows": [
+    {
+      "state": "accepted_a0.1200.npz",
+      "compression": 0.1219042645487386,
+      "rank_nearest_zero": 3,
+      "eigenvalue_s_minus2": 32082696.315798014,
+      "uniform_translation_kinetic_fraction": 0.012593625726285891,
+      "curvature_for_1mm_max_surface_mode_N_mm": 1.8825110829934713,
+      "parts_N_mm": {
+        "deep_void": 0.11168930913284136,
+        "mixed_tail": 0.002993835130957875,
+        "main_interface": 0.20821695983732746,
+        "geometric_core": 1.5596109788923445
+      },
+      "occupancy_weighted_displacement_fraction": 0.17016833323617084,
+      "surface_RMS_mm": 0.6597622532561647,
+      "full_background_max_mode_mm": 1.323978602317305,
+      "generalized_fine_eigen_residual": 0.9998219988536214,
+      "projected_generalized_residual": 1.3773814947494825e-11,
+      "direct_curvature_vs_eigen_mass_relative_error": 4.623690448196427e-14
+    },
+    {
+      "state": "accepted_a0.1600.npz",
+      "compression": 0.16007084008727882,
+      "rank_nearest_zero": 3,
+      "eigenvalue_s_minus2": 21744274.13514215,
+      "uniform_translation_kinetic_fraction": 0.029317710610773543,
+      "curvature_for_1mm_max_surface_mode_N_mm": 1.2877438975664972,
+      "parts_N_mm": {
+        "deep_void": 0.11255391481674741,
+        "mixed_tail": 0.0029621277370901248,
+        "main_interface": 0.19624155284437902,
+        "geometric_core": 0.9759863021682808
+      },
+      "occupancy_weighted_displacement_fraction": 0.16949596880969917,
+      "surface_RMS_mm": 0.6572193877547278,
+      "full_background_max_mode_mm": 1.356512763637868,
+      "generalized_fine_eigen_residual": 0.9998832582142498,
+      "projected_generalized_residual": 2.022087343956506e-11,
+      "direct_curvature_vs_eigen_mass_relative_error": 4.483158288663271e-15
+    }
+  ],
+  "wall_seconds": 3.7436146170366555,
+  "not_a_full_space_or_static_critical_certification": true
+}

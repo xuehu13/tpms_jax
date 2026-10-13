@@ -1,0 +1,5 @@
+{
+  "reason": "Detected wrong signature/units in future mode interpolation before first eigen result; stop to correct only the postprocessor interface.",
+  "no_eigen_result_yet": true,
+  "physical_or_eigen_protocol_changed": false
+}

@@ -1,0 +1,19 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_PD_20261010_r52/tools/run_jax.py",
+  "source_sha256": "851a6c12746633e90ffdd1da9d579d42b7352825a3ca6344c14a7d3e429f5484",
+  "substitutions": [
+    [
+      "choices=['P','D']",
+      "choices=['diverse_28', 'diverse_02', 'diverse_04', 'diverse_05']"
+    ],
+    [
+      "build,estimate_initial_dt,jax,jnp,np=record.build,record.estimate_initial_dt,record.jax,record.jnp,record.np",
+      "estimate_initial_dt,jax,jnp,np=record.estimate_initial_dt,record.jax,record.jnp,record.np\nfrom hex8_model import build"
+    ],
+    [
+      "deadline=min(START+3900,clock['started_unix']+6000-300)",
+      "deadline=START+2400"
+    ]
+  ],
+  "adapted_sha256": "ae56e21042744a1a55a7cf4a76070c9ddef95fa54df31576aa9038155a0e1d19"
+}

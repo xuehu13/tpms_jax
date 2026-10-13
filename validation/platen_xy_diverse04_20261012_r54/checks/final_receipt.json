@@ -1,0 +1,14 @@
+{
+  "source_guard_count": 43,
+  "protected_sources_unchanged": true,
+  "stage_archived_sha256": {
+    "bootstrap.py": "81963698de88d84685b8181b2bfb57dbdbc41283320e2a6122f321120f84968b",
+    "compare_peaks.py": "b06450755b238dcb6ae9c868dc2de2af8f67a9e10f71895b43499d153be2c524",
+    "finalize.py": "c30201fb655854cdb422cf571e8a43d4d9c19a66b2edb71a435ae095f8716f27",
+    "install.py": "e5fffb70c63a4b929c06d2c63b20b9b2eacceaee21f03e91220b2cb190629078",
+    "run_pair.py": "260758cd451b2d9c7ced50c40e666f638a66126279704a1cb9441c995c7e1660"
+  },
+  "summary": "diverse_04两端完整20%及保载完成；曲线RMS／壳峰2.700%，加载功差-1.031%，保载均力差-4.706%。总墙钟41.01 min。",
+  "peak_note": "两端均无符合预定规则的显著内部降载峰；原始最大力位置为JAX 20.0000%、Abaqus 20.0000%。不能以全局最大值代替同一屈曲事件的峰位核对。",
+  "no_new_gradient_or_Git": true
+}

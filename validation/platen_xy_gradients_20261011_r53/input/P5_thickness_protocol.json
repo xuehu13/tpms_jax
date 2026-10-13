@@ -1,0 +1,119 @@
+{
+  "id": "P5_thickness",
+  "scope": "P complete0-to5pct thickness derivative, migration of same shared mechanics",
+  "plan_step": "step3",
+  "analysis_name": "P5_thickness",
+  "plot_title": "P5%",
+  "parameter_label": "thickness",
+  "parameter_label_cn": "厚度",
+  "active_parameter": "thickness_mm",
+  "requires_reverse_pass": true,
+  "requires": [
+    [
+      "analysis/G10_thickness/metrics.json",
+      "passed"
+    ]
+  ],
+  "model_config": "input/P5/model.json",
+  "design_geometry": "input/P5/design_geometry.npz",
+  "benchmark_path": "checks/P5_thickness/benchmark.json",
+  "wall_budget_seconds": 7200,
+  "steps": 17972,
+  "dt_s": 7.999914640321546e-08,
+  "target_compression": 0.05,
+  "baseline_parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "fd_steps_mm": [
+    0.0025,
+    0.00125
+  ],
+  "thresholds": {
+    "nonzero_gradient_relative_AD_FD": 0.01,
+    "FD_h_halving_relative": 0.01,
+    "nearzero_dimensionless_gradient_cutoff": 1e-06,
+    "nearzero_absolute_scaled_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ],
+    "parameter_scale_mm": 0.5
+  },
+  "includes": [
+    "Gauss occupancy",
+    "material/internal force",
+    "HRZ nodal mass",
+    "XY projected macro inertia",
+    "end contact occupied area",
+    "initial acceleration",
+    "all states and work quadrature"
+  ],
+  "cases": [
+    {
+      "label": "P5/AD/thickness",
+      "params_mm": [
+        0.5,
+        0.05
+      ],
+      "is_ad": true,
+      "seed": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "label": "P5/FD/t_plus_h",
+      "params_mm": [
+        0.5025,
+        0.05
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "P5/FD/t_minus_h",
+      "params_mm": [
+        0.4975,
+        0.05
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "P5/FD/t_plus_half",
+      "params_mm": [
+        0.50125,
+        0.05
+      ],
+      "is_ad": false
+    },
+    {
+      "label": "P5/FD/t_minus_half",
+      "params_mm": [
+        0.49875,
+        0.05
+      ],
+      "is_ad": false
+    }
+  ],
+  "baseline_original_result": "validation/platen_xy_PD_20261010_r52/P/jax/result.json",
+  "protected_sources": {
+    "validation/platen_xy_PD_20261010_r52/P/input/protocol.json": "315959bb7bf8837fe490bd0f41bdacec838d03959887119f1cfd2c150d17d929",
+    "validation/platen_xy_PD_20261010_r52/P/input/rimline_contact.npz": "79d25ad69409e90136777658c29ea749dc1943d0ae12d3591beea354c662df78",
+    "validation/platen_xy_PD_20261010_r52/P/input/contact_assignment.npz": "df6f50df45fabd51e1b68df6a7cc32c24adfe4c16dc86471234ded19727a3097",
+    "validation/platen_xy_PD_20261010_r52/P/jax/result.json": "7c86538c25c021695e5b8b52cdf18dabe3e19ae6486d6463ffa0cd241744895b",
+    "validation/canonical_tpms_20261009_r50/P/surface.npz": "9a7cfe8f6a58d61feba383611031f86a687eb5936b37ad74461a9ac391ebb8df",
+    "validation/canonical_tpms_20261009_r50/P/gauss_field.npz": "d6d0aa18fe5d4cfe917f802410f83e240e033cdf9144884418bd83caee18c01d"
+  },
+  "status_fields": {
+    "step1": "passed",
+    "step2": "passed",
+    "step2_reverse": "passed",
+    "step2_interface": "passed",
+    "new_reverse_AD": true,
+    "step3": "running",
+    "step4": "pending",
+    "G10_thickness": "passed"
+  },
+  "failure_policy": "Preserve failure and do not advance this parameter/geometry before resolving gate",
+  "frozen_utc": "2026-10-11T04:37:05.124643+00:00"
+}

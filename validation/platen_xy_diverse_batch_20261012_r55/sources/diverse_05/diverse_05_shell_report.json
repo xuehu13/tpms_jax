@@ -1,0 +1,110 @@
+{
+  "case_id": "diverse_05",
+  "source_csv": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05\\mesh\\engine\\cases\\diverse_05\\cgal_output\\diverse_05_mesh_canonical_triangles.csv",
+  "source_sha256": "28267e75ea6510da8f8be5e364a1212c7ba09d1a2cab2efacf8ab0c5556db5cb",
+  "cell_size_mm": 10.0,
+  "nodes": 11624,
+  "triangles": 21998,
+  "edges": 33632,
+  "free_edges": 1270,
+  "internal_edges": 32362,
+  "nonmanifold_edges": 0,
+  "unintended_free_edges": 0,
+  "duplicate_face_groups": 0,
+  "degenerate_connectivity": 0,
+  "zero_area_triangles": 0,
+  "orientation_conflicts": 0,
+  "orientation_components": 1,
+  "cut_components": 1,
+  "glued_periodic_components": 1,
+  "surface_area_mm2": 364.9445212607416,
+  "periodicity": {
+    "X": {
+      "low_nodes": 233,
+      "high_nodes": 233,
+      "bijective": true,
+      "symmetric": true,
+      "symmetric_matches": 233,
+      "max_mismatch": 8.326672684688674e-16,
+      "low_free_edges": 231,
+      "high_free_edges": 231,
+      "edge_topology_equal": true
+    },
+    "Y": {
+      "low_nodes": 166,
+      "high_nodes": 166,
+      "bijective": true,
+      "symmetric": true,
+      "symmetric_matches": 166,
+      "max_mismatch": 7.91033905045424e-16,
+      "low_free_edges": 160,
+      "high_free_edges": 160,
+      "edge_topology_equal": true
+    },
+    "Z": {
+      "low_nodes": 248,
+      "high_nodes": 248,
+      "bijective": true,
+      "symmetric": true,
+      "symmetric_matches": 248,
+      "max_mismatch": 0.0,
+      "low_free_edges": 244,
+      "high_free_edges": 244,
+      "edge_topology_equal": true
+    }
+  },
+  "quality": {
+    "edge_length_mm": {
+      "min": 0.05713354477389004,
+      "q01": 0.11911360880219903,
+      "q05": 0.15186947086547636,
+      "median": 0.19691585039348258,
+      "mean": 0.20103386567762532,
+      "q95": 0.27015927037044957,
+      "q99": 0.2877718844954032,
+      "max": 0.352043500780453
+    },
+    "minimum_angle_deg": {
+      "min": 12.474924970727026,
+      "q01": 29.74440377853459,
+      "q05": 34.88548037377017,
+      "median": 46.04971620519468,
+      "mean": 45.98219983826836,
+      "q95": 56.82282525706369,
+      "q99": 58.85901668956625,
+      "max": 59.99201203696073
+    },
+    "shape_q": {
+      "min": 0.32176419997214883,
+      "q01": 0.6934732280397908,
+      "q05": 0.7835434371984903,
+      "median": 0.932508895463844,
+      "mean": 0.9168307673262307,
+      "q95": 0.9954927111994214,
+      "q99": 0.9993465898681799,
+      "max": 0.9999999481766307
+    },
+    "edge_ratio": {
+      "min": 1.0002414663188042,
+      "q01": 1.028922116070735,
+      "q05": 1.0777443900834056,
+      "median": 1.3488180386723077,
+      "mean": 1.3673476940637463,
+      "q95": 1.7129985039795965,
+      "q99": 1.9389625189379034,
+      "max": 4.475521494134757
+    },
+    "angle_lt_5_deg": 0,
+    "angle_lt_10_deg": 0,
+    "angle_lt_15_deg": 6,
+    "shape_q_lt_02": 0
+  },
+  "geometry": {
+    "max_abs_f": 0.015212715945318034,
+    "q95_abs_f": 0.007833626936027271,
+    "max_estimated_normal_error_mm": 0.006500014988817014,
+    "q95_estimated_normal_error_mm": 0.0031337269417978137,
+    "positive_gradient_normal_fraction": 1.0
+  },
+  "pass": true
+}

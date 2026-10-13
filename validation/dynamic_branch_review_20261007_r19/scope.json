@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-07",
+  "kind": "read_only_dynamic_branch_review",
+  "human_request": "Reassess snap-through kinetic energy, causes of different jump locations, feasibility, current docs and a <=4-step plan.",
+  "scope": [
+    "existing accepted histories",
+    "primary literature",
+    "document organization",
+    "one proposed rate protocol"
+  ],
+  "new_forward_runs": 0,
+  "new_Abaqus_jobs": 0,
+  "design_AD": false,
+  "original_quasistatic_failures_preserved": true,
+  "new_dynamic_feasibility_scope_not_retroactive_pass": true,
+  "frozen_files": 247,
+  "frozen_bytes": 262571069,
+  "git_head": "07b2042011fa4fb86a0da17c104fdf127c3b4239"
+}

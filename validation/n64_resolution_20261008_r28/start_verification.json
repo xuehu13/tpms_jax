@@ -1,0 +1,44 @@
+{
+  "captured_unix": 1791429285.6482182,
+  "stage": "N64_independent_path_started",
+  "matched_shell_complete": true,
+  "matched_shell_peak": {
+    "time": 0.0011178902350366116,
+    "compression": 0.12190046310424804,
+    "Fz_N": -5.340913772583008,
+    "ALLIE": 3.385469675064087,
+    "ALLSE": 3.374373435974121,
+    "ALLKE": 0.06343813240528107,
+    "ALLAE": 0.011096117086708546,
+    "ALLVD": 0.0010875542648136616,
+    "ALLWK": 3.415039539337158,
+    "ETOTAL": 0.03495583310723305
+  },
+  "shell_rate_peak_shift_percentage_points": 0.36597609519958413,
+  "shell_rate_peak_force_change_percent": 2.12095462469275,
+  "N64_progress_snapshot": {
+    "steps": 384,
+    "compression": 2.8915069399096282e-05,
+    "time": 4.9332257906634174e-05,
+    "dt": 1.2846942163185998e-07,
+    "next_safe_dt": 1.2847068525728346e-07,
+    "rejected_blocks": 0,
+    "elapsed_seconds": 214.96635311609134,
+    "bound_seconds_total": 32.69238207023591,
+    "J_min": 0.9993523407402429,
+    "required_positive_J_min": 0.9999126911324681,
+    "negative_J_points": 0,
+    "invalid_material_points": 0,
+    "KE_over_U": 1.19535821826767,
+    "sampled_high_KE_loading_seconds": 0.0
+  },
+  "production_and_frozen_evidence_unchanged": true,
+  "execution_sources": {
+    "run.py": "931407b46b6025a897eff1d0304013e9272019aa33a01a39f10c6a9ab70fc2e2",
+    "run_pipeline.py": "b3c934f6c547f6e598712526e36d2ed88f5885e4b804f4e42b48bfd39a18f28b",
+    "analyze.py": "af90ff5a87953927da1c0bd6c37a369118c24b00d9e8a0c1a0021aa8b4cb94f5"
+  },
+  "total_deadline_unix": 1791439692.070886,
+  "total_budget_hours": 3,
+  "scope": "Launch/initial accepted evidence, not completed 20pct accuracy/gradient certification"
+}

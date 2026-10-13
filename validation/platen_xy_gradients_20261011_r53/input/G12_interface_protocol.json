@@ -1,0 +1,127 @@
+{
+  "id": "G12_interface",
+  "scope": "G complete0-to-about12pct interface-width total derivative; loading work primary, terminal force auxiliary",
+  "plan_step": "step3",
+  "analysis_name": "G12_interface",
+  "plot_title": "G12% interface",
+  "active_parameter": "interface_10_90_mm",
+  "parameter_label": "interface width",
+  "parameter_label_cn": "界面宽度",
+  "requires_reverse_pass": true,
+  "requires": [
+    [
+      "analysis/G10_interface/metrics.json",
+      "passed"
+    ],
+    [
+      "analysis/G12_thickness/metrics.json",
+      "passed"
+    ]
+  ],
+  "wall_budget_seconds": 1800,
+  "steps": 38189,
+  "dt_s": 5.7999300462244876e-08,
+  "target_compression": 0.12,
+  "baseline_parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "fd_steps_mm": [
+    0.00025,
+    0.000125
+  ],
+  "thresholds": {
+    "nonzero_gradient_relative_AD_FD": 0.01,
+    "FD_h_halving_relative": 0.01,
+    "nearzero_dimensionless_gradient_cutoff": 1e-06,
+    "nearzero_absolute_scaled_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ],
+    "parameter_scale_mm": 0.05
+  },
+  "required_objectives": [
+    "loading_work"
+  ],
+  "cases": [
+    {
+      "label": "G12_interface/AD/width",
+      "params_mm": [
+        0.5,
+        0.05
+      ],
+      "is_ad": true,
+      "seed": [
+        0.0,
+        1.0
+      ],
+      "initial_from": "G10_interface/AD/width"
+    },
+    {
+      "label": "G12_interface/FD/w_plus_h",
+      "params_mm": [
+        0.5,
+        0.05025
+      ],
+      "is_ad": false,
+      "initial_from": "G10_interface/FD/w_plus_h"
+    },
+    {
+      "label": "G12_interface/FD/w_minus_h",
+      "params_mm": [
+        0.5,
+        0.04975
+      ],
+      "is_ad": false,
+      "initial_from": "G10_interface/FD/w_minus_h"
+    },
+    {
+      "label": "G12_interface/FD/w_plus_half",
+      "params_mm": [
+        0.5,
+        0.050125
+      ],
+      "is_ad": false,
+      "initial_from": "G10_interface/FD/w_plus_half"
+    },
+    {
+      "label": "G12_interface/FD/w_minus_half",
+      "params_mm": [
+        0.5,
+        0.049875
+      ],
+      "is_ad": false,
+      "initial_from": "G10_interface/FD/w_minus_half"
+    }
+  ],
+  "baseline_original_result": "validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/jax/result.json",
+  "status_fields": {
+    "step1": "passed",
+    "step2": "passed",
+    "step2_reverse": "passed",
+    "step2_interface": "passed",
+    "new_reverse_AD": true,
+    "step3": "running",
+    "step4": "pending",
+    "G10_interface": "passed",
+    "G12_thickness": "passed",
+    "G10_thickness": "passed"
+  },
+  "includes": [
+    "Gauss occupancy",
+    "internal force",
+    "HRZ mass",
+    "XY macro inertia",
+    "end contact area",
+    "initial state",
+    "all steps and work"
+  ],
+  "parameter_interpretation": "Numerical geometry interface width, not physical thickness or material composition",
+  "primary_acceptance": "dW/dw AD and two-level FD use unchanged1pct threshold; force derivative is auxiliary, also reported against1pct without claiming pass when it fails",
+  "prefix_policy": "Each case resumes its own complete10pct state; JVP also resumes the full width tangent including accumulated work. No prefix derivative is frozen.",
+  "frozen_utc": "2026-10-11T11:24:06.186877+00:00",
+  "nominal_end_time_s": 0.0022149836100541077,
+  "actual_end_time_s": 0.00221493528535267,
+  "failure_policy": "No tolerance relaxation or forced unstable timestep; preserve failure and gate migration."
+}

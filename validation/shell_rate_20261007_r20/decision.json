@@ -1,0 +1,12 @@
+{
+  "plan_step2": "complete_duration_only_diagnostic_not_accuracy_pass",
+  "plan_step3": "bounded_observed_direction_diagnosis_complete; critical-mode cause unresolved",
+  "plan_step4": "not_started_conditions_not_satisfied",
+  "new_Abaqus_jobs": 1,
+  "new_JAX_forward": 0,
+  "design_AD": false,
+  "rate_is_insufficient_explanation": true,
+  "no_full_JAX20_or_gradient_claim": true,
+  "next_question": "Critical periodic folding mode: representation stiffness versus branch triggering",
+  "no_parameter_fitting_or_rate_sweep": true
+}

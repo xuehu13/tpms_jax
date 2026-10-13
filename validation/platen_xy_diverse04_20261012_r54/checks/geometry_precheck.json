@@ -1,0 +1,19 @@
+{
+  "diverse_04": {
+    "shell_surface": "/home/xuehu/projects/tpms_jax/validation/geometry_transfer_20261006_r15/surface_geometry.npz",
+    "source_sha256": {
+      "surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+      "gauss_field.npz": "ea20e149033e278587429b2a43f35bbf4eb774cd9ca8770d47feec0e52e85059",
+      "input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6"
+    },
+    "xy_independent_relations": 263,
+    "nodes": 8372,
+    "triangles": 15914,
+    "rim_node_count": [
+      162,
+      162
+    ],
+    "new_remeshing": false,
+    "same_distance_surface_and_shell_vertices": true
+  }
+}

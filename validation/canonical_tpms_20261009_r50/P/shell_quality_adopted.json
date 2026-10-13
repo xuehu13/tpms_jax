@@ -1,0 +1,21 @@
+{
+  "kind": "P",
+  "old": {
+    "min_altitude_mm": 0.0031149413024470075,
+    "min_area_mm2": 7.549309439238921e-05,
+    "area_mm2": 235.33599879390312
+  },
+  "new": {
+    "min_altitude_mm": 0.010817148657408175,
+    "min_area_mm2": 7.549309439238921e-05,
+    "area_mm2": 235.30871405259725
+  },
+  "unchanged_vertices": true,
+  "faces": 26160,
+  "nonmanifold_periodic_edges": 0,
+  "orientation_conflicts": 0,
+  "bidirectional_centroid_distance_max_mm": 0.001433159423285782,
+  "distance_scope": "All old/new facet centroids sampled, not a global Hausdorff bound",
+  "adopted": true,
+  "shell_nominal_volume_mm3": 117.65435702629863
+}

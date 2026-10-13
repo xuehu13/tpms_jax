@@ -1,0 +1,30 @@
+--- 
++++ 
+@@ -14,7 +14,7 @@
+         with np.load(cfg['original_Gauss_field']) as z:rho=z['rho'];qp=z['physical_quad_points']
+         def field(p):
+             np.testing.assert_array_equal(np.asarray(p.physical_quad_points),qp);return rho
+-        with np.load(D/'input/cut_face_contact.npz') as z:contact=dict(z)
++        with np.load(Path(cfg.get('contact_cache_path',D/'input/cut_face_contact.npz'))) as z:contact=dict(z)
+     with jax.default_device(jax.devices('cpu')[0]):
+         p=make_density_hyperelastic_problem(cfg['N'],rho_quad=field,eta=cfg['eta'],periodic_axes=(0,1,2),element_degree=2,quadrature_order=4,material_model='objective_void')
+     return PlatenXY(p,cfg,contact)
+@@ -38,13 +38,15 @@
+     return min(float(ex.dt_estimate)*.5,dt),{'power_estimated_omega2_s_minus2':lam,'power_steps':25,'safety_fraction':.3,'not_a_proven_global_bound':True}
+ 
+ def main():
+-    ap=argparse.ArgumentParser();ap.add_argument('--uniform-check',action='store_true');a=ap.parse_args()
+-    cfg=json.loads((D/'input/protocol.json').read_text());start=time.monotonic()
++    ap=argparse.ArgumentParser();ap.add_argument('--uniform-check',action='store_true');ap.add_argument('--config',type=Path);ap.add_argument('--out',type=Path);a=ap.parse_args()
++    if a.uniform_check and (a.config or a.out):raise ValueError('Keep the original uniform check isolated')
++    cfg=json.loads((a.config or D/'input/protocol.json').read_text());start=time.monotonic()
+     if a.uniform_check:
+         cfg={**cfg,'N':2,'target_compression':1e-4,'load_time_s':.001,'hold_time_s':.0005,
+              'contact_normal_stiffness_MPa_per_mm':320.}
+         out=D/'checks/uniform_contact'
+-    else:out=D/'jax/short_2pct'
++    else:out=a.out.resolve() if a.out else D/'jax/short_2pct'
++    if not out.is_relative_to(D):raise ValueError('Diagnostic output must stay inside r51')
+     out.mkdir(exist_ok=False)
+     if not a.uniform_check:
+         assert json.loads((D/'checks/uniform_contact/result.json').read_text())['analytic_check_pass']

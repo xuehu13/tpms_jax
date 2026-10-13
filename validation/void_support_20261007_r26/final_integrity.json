@@ -1,0 +1,19 @@
+{
+  "frozen_files_unchanged": {
+    "hyperelastic_fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "pixi.lock": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/input.json": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/geometry_transfer_20261006_r15/gauss_field.npz": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true
+  },
+  "matched_common_comparison_windows": true,
+  "unobserved_peak_differences_null": true,
+  "one_forward_only": true,
+  "production_unchanged": true
+}

@@ -1,0 +1,12 @@
+{
+  "failure": "unused U1/U2 of zero-mass macro-control node 8373",
+  "step_time_reached": 0.0,
+  "not_a_physical_or_stiffness_result": true,
+  "repair": "fix unused QZ U1,U2=0; add no mass; preserve shell/pin/host/material/loading",
+  "old_input_sha256": "fed40f91d71101261da15507f32b58b3c0d8c1f9c8cfd2e2223dd1050e8ed927",
+  "new_input_sha256": "e05772434cfb80e2cae91b38555e80a4d1ce549751666c32497e8740553a021a",
+  "only_added_line": "QZ, 1, 2, 0.",
+  "reverse_byte_check": true,
+  "software_threads": 1,
+  "earlier_4thread_packager_system_exception_preserved": true
+}

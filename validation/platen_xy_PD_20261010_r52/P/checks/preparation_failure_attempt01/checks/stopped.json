@@ -1,0 +1,5 @@
+{
+  "type": "RuntimeError",
+  "message": "Input preparation failed; see checks/preparation.log",
+  "common_input_error": true
+}

@@ -1,0 +1,24 @@
+--- original_T0p040.inp
++++ diagnostic_T0p004.inp
+@@ -32440,10 +32440,10 @@
+ *Boundary
+ 1, 1, 3, 0.
+ *Amplitude, name=MACRO, definition=SMOOTH STEP, time=TOTAL TIME
+-0., 0., 0.04, 1., 0.044, 1.
++0., 0., 0.004, 1., 0.0044, 1.
+ *Step, name=compress20, nlgeom=YES
+ *Dynamic, Explicit
+-, 0.044
++, 0.0044
+ *Boundary, amplitude=MACRO
+ QZ, 3, 3, -2.
+ *Output, field, number interval=40
+@@ -32451,7 +32451,7 @@
+ U, UR, RF
+ *Element Output
+ S, LE, STH
+-*Output, history, time interval=4.400000000000001e-05
++*Output, history, time interval=4.400000000000001e-06
+ *Energy Output
+ ALLIE, ALLSE, ALLKE, ALLAE, ALLVD, ALLWK, ETOTAL
+ *Node Output, nset=QZ

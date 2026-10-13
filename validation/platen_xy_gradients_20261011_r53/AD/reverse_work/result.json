@@ -1,0 +1,606 @@
+{
+  "complete": true,
+  "objective": "full_path_loading_work",
+  "parameters": [
+    "thickness_mm",
+    "interface_10_90_mm"
+  ],
+  "value_N_mm": 0.4799091219137277,
+  "gradient_N": [
+    1.2581436238332455,
+    0.3246246775087882
+  ],
+  "reference_JVP_thickness_N": 1.2581436238295363,
+  "relative_VJP_JVP_thickness_difference": 2.948196895027311e-12,
+  "forward_equivalence_relative": 3.6496842626349335e-13,
+  "passed": true,
+  "interface_gradient_status": "VJP computed; independent interface FD not yet checked",
+  "wall_minutes": 90.89342782100042,
+  "steps": 24789,
+  "dt_s": 5.7999300462244876e-08,
+  "checks": [
+    {
+      "step": 256,
+      "min_required_J": 0.9999962587334984,
+      "all_J_min": 0.9999840984334796,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 512,
+      "min_required_J": 0.9999816685795948,
+      "all_J_min": 0.9999057925174963,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 768,
+      "min_required_J": 0.9999560659356853,
+      "all_J_min": 0.9997232804117715,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 1024,
+      "min_required_J": 0.9999178368509316,
+      "all_J_min": 0.9995005914737433,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 1280,
+      "min_required_J": 0.9998642251272153,
+      "all_J_min": 0.9991984242515812,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 1536,
+      "min_required_J": 0.9997938589750439,
+      "all_J_min": 0.9988182604853659,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 1792,
+      "min_required_J": 0.9997078922600554,
+      "all_J_min": 0.998389254762515,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 2048,
+      "min_required_J": 0.9996071178246294,
+      "all_J_min": 0.9977184645425181,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 2304,
+      "min_required_J": 0.9994920212601651,
+      "all_J_min": 0.9968859579252966,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 2560,
+      "min_required_J": 0.9993608088364082,
+      "all_J_min": 0.9959217415674166,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 2816,
+      "min_required_J": 0.999214954937365,
+      "all_J_min": 0.994877182684998,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 3072,
+      "min_required_J": 0.9990545733960432,
+      "all_J_min": 0.9936915185196449,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 3328,
+      "min_required_J": 0.9988778761755762,
+      "all_J_min": 0.9923991032899846,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 3584,
+      "min_required_J": 0.9986866425539954,
+      "all_J_min": 0.9910344932421968,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 3840,
+      "min_required_J": 0.9984813050075743,
+      "all_J_min": 0.9895167328040184,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 4096,
+      "min_required_J": 0.9982626914997013,
+      "all_J_min": 0.9879285014774217,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 4352,
+      "min_required_J": 0.9980285742596201,
+      "all_J_min": 0.9862524276862562,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 4608,
+      "min_required_J": 0.997779349325485,
+      "all_J_min": 0.9845139798743872,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 4864,
+      "min_required_J": 0.9975158245141054,
+      "all_J_min": 0.9826961631470955,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 5120,
+      "min_required_J": 0.9972431868233592,
+      "all_J_min": 0.9808334033416172,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 5376,
+      "min_required_J": 0.996958509870657,
+      "all_J_min": 0.9788351299379915,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 5632,
+      "min_required_J": 0.9966661890804844,
+      "all_J_min": 0.976824243238378,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 5888,
+      "min_required_J": 0.9963630848972338,
+      "all_J_min": 0.9747417995454222,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 6144,
+      "min_required_J": 0.9960472278927316,
+      "all_J_min": 0.9725909711344971,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 6400,
+      "min_required_J": 0.9957218041810628,
+      "all_J_min": 0.9703770640058462,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 6656,
+      "min_required_J": 0.9953794086996327,
+      "all_J_min": 0.9679886255761017,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 6912,
+      "min_required_J": 0.9950264556077631,
+      "all_J_min": 0.9656022839580884,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 7168,
+      "min_required_J": 0.9946557010323449,
+      "all_J_min": 0.962953307595621,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 7424,
+      "min_required_J": 0.9942608556394165,
+      "all_J_min": 0.9602627219061397,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 7680,
+      "min_required_J": 0.9938464726412325,
+      "all_J_min": 0.9572771274954256,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 7936,
+      "min_required_J": 0.9934039360464617,
+      "all_J_min": 0.954177773767426,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 8192,
+      "min_required_J": 0.9929342732578305,
+      "all_J_min": 0.9508392912809446,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 8448,
+      "min_required_J": 0.9924361564061628,
+      "all_J_min": 0.947243505395138,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 8704,
+      "min_required_J": 0.9919030814373061,
+      "all_J_min": 0.9434623064462383,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 8960,
+      "min_required_J": 0.9913379236470261,
+      "all_J_min": 0.9393670130237256,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 9216,
+      "min_required_J": 0.990735831135455,
+      "all_J_min": 0.935065681453742,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 9472,
+      "min_required_J": 0.9900999860682813,
+      "all_J_min": 0.9303218076296961,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 9728,
+      "min_required_J": 0.9894250863002938,
+      "all_J_min": 0.9255986204880974,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 9984,
+      "min_required_J": 0.9887240776385873,
+      "all_J_min": 0.9202690830712862,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 10240,
+      "min_required_J": 0.9879952203216648,
+      "all_J_min": 0.9147768690166797,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 10496,
+      "min_required_J": 0.9872312871886447,
+      "all_J_min": 0.908958301004564,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 10752,
+      "min_required_J": 0.9864317964688101,
+      "all_J_min": 0.9030298432484564,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 11008,
+      "min_required_J": 0.9855962628275854,
+      "all_J_min": 0.8965522505715432,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 11264,
+      "min_required_J": 0.9847232748289101,
+      "all_J_min": 0.8898947198820261,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 11520,
+      "min_required_J": 0.9838166351520218,
+      "all_J_min": 0.8827928913091739,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 11776,
+      "min_required_J": 0.9828734344730606,
+      "all_J_min": 0.8755678543863835,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 12032,
+      "min_required_J": 0.9819047611023511,
+      "all_J_min": 0.8678159845742647,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 12288,
+      "min_required_J": 0.9809056948112105,
+      "all_J_min": 0.8599676406238853,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 12544,
+      "min_required_J": 0.9798783504227112,
+      "all_J_min": 0.8516655815838364,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 12800,
+      "min_required_J": 0.9788250286864101,
+      "all_J_min": 0.8432481058820616,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 13056,
+      "min_required_J": 0.9777582160765734,
+      "all_J_min": 0.8344940808871149,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 13312,
+      "min_required_J": 0.976669746470603,
+      "all_J_min": 0.8254027063565521,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 13568,
+      "min_required_J": 0.9755524848795016,
+      "all_J_min": 0.8158671772576654,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 13824,
+      "min_required_J": 0.9744176838209547,
+      "all_J_min": 0.8064230141622456,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 14080,
+      "min_required_J": 0.9732594020694691,
+      "all_J_min": 0.7967154726003424,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 14336,
+      "min_required_J": 0.9720757532733607,
+      "all_J_min": 0.7866030086639778,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 14592,
+      "min_required_J": 0.9708743493921171,
+      "all_J_min": 0.7763655699232066,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 14848,
+      "min_required_J": 0.9696509709244225,
+      "all_J_min": 0.7660090653563385,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 15104,
+      "min_required_J": 0.9684120593378651,
+      "all_J_min": 0.7549576450738386,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 15360,
+      "min_required_J": 0.9671428638545699,
+      "all_J_min": 0.7438497712120924,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 15616,
+      "min_required_J": 0.9658459727191783,
+      "all_J_min": 0.7324182062601454,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 15872,
+      "min_required_J": 0.9645233929581294,
+      "all_J_min": 0.7205168697712985,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 16128,
+      "min_required_J": 0.9631663373130929,
+      "all_J_min": 0.7081011141068482,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 16384,
+      "min_required_J": 0.9617770168384018,
+      "all_J_min": 0.6956568616296805,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 16640,
+      "min_required_J": 0.9603617418712913,
+      "all_J_min": 0.6823896972382869,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 16896,
+      "min_required_J": 0.9589229833973258,
+      "all_J_min": 0.6692881383669029,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 17152,
+      "min_required_J": 0.9574604075874754,
+      "all_J_min": 0.6550887412563547,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 17408,
+      "min_required_J": 0.9559620843405118,
+      "all_J_min": 0.6405976304905279,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 17664,
+      "min_required_J": 0.9544291132321657,
+      "all_J_min": 0.6259924628701863,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 17920,
+      "min_required_J": 0.9528575918698552,
+      "all_J_min": 0.6101140087979322,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 18176,
+      "min_required_J": 0.9512606219764157,
+      "all_J_min": 0.5940545662514088,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 18432,
+      "min_required_J": 0.949635346124658,
+      "all_J_min": 0.5777552311690748,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 18688,
+      "min_required_J": 0.9479712295428435,
+      "all_J_min": 0.5606223313040801,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 18944,
+      "min_required_J": 0.9462723845966106,
+      "all_J_min": 0.5430725235934625,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 19200,
+      "min_required_J": 0.9445537625518745,
+      "all_J_min": 0.5249823842495892,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 19456,
+      "min_required_J": 0.9428130719937395,
+      "all_J_min": 0.5061075149973291,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 19712,
+      "min_required_J": 0.941057963077124,
+      "all_J_min": 0.48708944514070723,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 19968,
+      "min_required_J": 0.9392711379815746,
+      "all_J_min": 0.4671770846335155,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 20224,
+      "min_required_J": 0.9374592173234749,
+      "all_J_min": 0.4471113821786589,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 20480,
+      "min_required_J": 0.9356301702323924,
+      "all_J_min": 0.4263094545832243,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 20736,
+      "min_required_J": 0.9337740564530557,
+      "all_J_min": 0.40511797204030175,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 20992,
+      "min_required_J": 0.9319121318942016,
+      "all_J_min": 0.38379614225370484,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 21248,
+      "min_required_J": 0.9300425731054398,
+      "all_J_min": 0.36195685927751065,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 21504,
+      "min_required_J": 0.928160503629969,
+      "all_J_min": 0.3394994762310575,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 21760,
+      "min_required_J": 0.9262707556747424,
+      "all_J_min": 0.3169274040239851,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 22016,
+      "min_required_J": 0.9243668573519755,
+      "all_J_min": 0.2940055681823655,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 22272,
+      "min_required_J": 0.9224528594275604,
+      "all_J_min": 0.27039781907960964,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 22528,
+      "min_required_J": 0.9205332018110894,
+      "all_J_min": 0.24684165958736182,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 22784,
+      "min_required_J": 0.9185953059685472,
+      "all_J_min": 0.22244305452657692,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 23040,
+      "min_required_J": 0.9166473517660791,
+      "all_J_min": 0.1981416469361074,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 23296,
+      "min_required_J": 0.9147071567257736,
+      "all_J_min": 0.17306787456839792,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 23552,
+      "min_required_J": 0.9127572416008756,
+      "all_J_min": 0.1481164496895817,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 23808,
+      "min_required_J": 0.9107958519850204,
+      "all_J_min": 0.1220802832853342,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 24064,
+      "min_required_J": 0.9088282189778036,
+      "all_J_min": 0.09591830082190025,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 24320,
+      "min_required_J": 0.9068617829746891,
+      "all_J_min": 0.06918241192837876,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 24576,
+      "min_required_J": 0.9048986374973814,
+      "all_J_min": 0.04217860519495985,
+      "negative_void_J_points": 0
+    },
+    {
+      "step": 24789,
+      "min_required_J": 0.9032635937121309,
+      "all_J_min": 0.01974582035486392,
+      "negative_void_J_points": 0
+    }
+  ],
+  "scope": "Complete fixed-time5pct reverse work derivative; not terminal-force VJP or shape certification"
+}

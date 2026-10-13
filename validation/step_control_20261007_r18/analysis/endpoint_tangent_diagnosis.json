@@ -1,0 +1,172 @@
+{
+  "field": "validation/step_control_20261007_r18/controlled_forward/last_valid_field.npz",
+  "time_s": 0.002928756670124946,
+  "compression": 0.17536302435107093,
+  "actual_dt_s": 2.3559230036849513e-08,
+  "material_domains": {
+    "deep_void": {
+      "points": 730816,
+      "minimum_J": -9.713530861547685,
+      "negative_J_points": 12972,
+      "maximum_F_norm": 19.322647430599226
+    },
+    "mixed_tail": {
+      "points": 12638,
+      "minimum_J": -0.29461864830220785,
+      "negative_J_points": 4,
+      "maximum_F_norm": 4.718410316690699
+    },
+    "uncontinued_NH": {
+      "points": 141282,
+      "minimum_J": 0.09578537374221975,
+      "negative_J_points": 0,
+      "maximum_F_norm": 3.261115566488034
+    },
+    "geometric_core": {
+      "points": 117093,
+      "minimum_J": 0.09578537374221975,
+      "negative_J_points": 0,
+      "maximum_F_norm": 2.6458209665846946
+    }
+  },
+  "minimum_NH_point": {
+    "cell": 9177,
+    "quadrature": 3,
+    "rho": 0.9999999904263793,
+    "J": 0.09578537374221975
+  },
+  "bound_limiting_class": 169906,
+  "restricted_dofs": 81,
+  "incident_cells": 27,
+  "largest_restricted_eigenvalue_s_minus2": 474132944072186.06,
+  "conservative_upper_R_s_minus2": 1286609826994291.8,
+  "upper_to_restricted_lower_eigenvalue_ratio": 2.713605631247609,
+  "dt_times_positive_frequency_lower_bound": 0.5129926691171754,
+  "positive_frequency_limit_dt_upper_bound_s": 9.185016260522125e-08,
+  "negative_restricted_eigenvalues": 0,
+  "tangent_relative_asymmetry": 2.322766381798004e-16,
+  "selected_direction_curvature_contributions_s_minus2": {
+    "deep_void": 473442256079036.75,
+    "mixed_tail": 12733325009.971975,
+    "uncontinued_NH": 677954668139.3987
+  },
+  "selected_direction_curvature_fraction": {
+    "deep_void": 0.9985432609107117,
+    "mixed_tail": 2.6856022491517368e-05,
+    "uncontinued_NH": 0.0014298830667969385
+  },
+  "wall_seconds": 22.608885659021325,
+  "scope": "Frozen accepted endpoint at the upper-bound-limiting class. Restricted lower bound; below 2 cannot certify full stability. Directional curvature fractions are not total energy or force shares. No time advance/design AD.",
+  "saved_state_energy_force_domain_decomposition": [
+    {
+      "field": "validation/step_control_20261007_r18/controlled_forward/accepted_a0.1000.npz",
+      "compression": 0.1007710270331371,
+      "time_s": 0.0020082243810697893,
+      "total_internal_energy_N_mm": 2.490064473483055,
+      "total_signed_internal_macro_Fz_N": -4.88444417666715,
+      "domains": {
+        "deep_void": {
+          "internal_energy_N_mm": 0.018023823877133603,
+          "signed_internal_macro_Fz_N": -0.012784220519303939
+        },
+        "mixed_tail": {
+          "internal_energy_N_mm": 0.004260898523645529,
+          "signed_internal_macro_Fz_N": -0.0033404374941259267
+        },
+        "uncontinued_NH": {
+          "internal_energy_N_mm": 2.4677797510822805,
+          "signed_internal_macro_Fz_N": -4.868319518653726
+        }
+      },
+      "actual_J_min_geometric_core": 0.752800556640044
+    },
+    {
+      "field": "validation/step_control_20261007_r18/controlled_forward/accepted_a0.1200.npz",
+      "compression": 0.1219042645487386,
+      "time_s": 0.0022358221317110845,
+      "total_internal_energy_N_mm": 3.6215790892001674,
+      "total_signed_internal_macro_Fz_N": -5.812294260532964,
+      "domains": {
+        "deep_void": {
+          "internal_energy_N_mm": 0.026525313240382643,
+          "signed_internal_macro_Fz_N": -0.015364533735411212
+        },
+        "mixed_tail": {
+          "internal_energy_N_mm": 0.00634443877575769,
+          "signed_internal_macro_Fz_N": -0.0039369858315102405
+        },
+        "uncontinued_NH": {
+          "internal_energy_N_mm": 3.588709337184026,
+          "signed_internal_macro_Fz_N": -5.792992740966028
+        }
+      },
+      "actual_J_min_geometric_core": 0.6616567207939947
+    },
+    {
+      "field": "validation/step_control_20261007_r18/controlled_forward/accepted_a0.1400.npz",
+      "compression": 0.14184607899724563,
+      "time_s": 0.002462591815800885,
+      "total_internal_energy_N_mm": 4.861071533244579,
+      "total_signed_internal_macro_Fz_N": -6.599394338008739,
+      "domains": {
+        "deep_void": {
+          "internal_energy_N_mm": 0.035828707250544205,
+          "signed_internal_macro_Fz_N": -0.01779066078360991
+        },
+        "mixed_tail": {
+          "internal_energy_N_mm": 0.008599560620424199,
+          "signed_internal_macro_Fz_N": -0.00441715605182576
+        },
+        "uncontinued_NH": {
+          "internal_energy_N_mm": 4.816643265373609,
+          "signed_internal_macro_Fz_N": -6.577186521173285
+        }
+      },
+      "actual_J_min_geometric_core": 0.5347605953869456
+    },
+    {
+      "field": "validation/step_control_20261007_r18/controlled_forward/accepted_a0.1600.npz",
+      "compression": 0.16007084008727882,
+      "time_s": 0.0026945849895526337,
+      "total_internal_energy_N_mm": 6.107572674157578,
+      "total_signed_internal_macro_Fz_N": -7.051074057980608,
+      "domains": {
+        "deep_void": {
+          "internal_energy_N_mm": 0.04564142554531017,
+          "signed_internal_macro_Fz_N": -0.020074716350788942
+        },
+        "mixed_tail": {
+          "internal_energy_N_mm": 0.011320501904172935,
+          "signed_internal_macro_Fz_N": -0.0049497407466864195
+        },
+        "uncontinued_NH": {
+          "internal_energy_N_mm": 6.050610746708084,
+          "signed_internal_macro_Fz_N": -7.026049600883093
+        }
+      },
+      "actual_J_min_geometric_core": 0.263401405254667
+    },
+    {
+      "field": "validation/step_control_20261007_r18/controlled_forward/last_valid_field.npz",
+      "compression": 0.17536302435107093,
+      "time_s": 0.002928756670124946,
+      "total_internal_energy_N_mm": 5.460327787376295,
+      "total_signed_internal_macro_Fz_N": -1.649719510533237,
+      "domains": {
+        "deep_void": {
+          "internal_energy_N_mm": 0.14359046130611278,
+          "signed_internal_macro_Fz_N": -0.021392474235913318
+        },
+        "mixed_tail": {
+          "internal_energy_N_mm": 0.018384907345835918,
+          "signed_internal_macro_Fz_N": -0.00124722689573278
+        },
+        "uncontinued_NH": {
+          "internal_energy_N_mm": 5.298352418724346,
+          "signed_internal_macro_Fz_N": -1.6270798094015861
+        }
+      },
+      "actual_J_min_geometric_core": 0.09578537374221975
+    }
+  ]
+}

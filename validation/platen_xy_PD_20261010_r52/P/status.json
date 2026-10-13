@@ -1,0 +1,10 @@
+{
+  "planned_target_compression": 0.2,
+  "Abaqus": "complete",
+  "JAX": "complete",
+  "result": true,
+  "stage": "complete_pair_analyzed",
+  "full20_completed": true,
+  "three_scalar_targets_within_10pct": true,
+  "overall_minutes": 44.58668013811111
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-08",
+  "stage": "result_analysis_and_organization_complete",
+  "no_new_forward_Abaqus_or_AD": true,
+  "updated_windows_entries": [
+    "RESEARCH_BACKGROUND.md",
+    "RESEARCH_PLAN.md",
+    "PROJECT_OVERVIEW.md",
+    "START_HERE.md",
+    "MECHANISM_ANALYSIS.md",
+    "TPMS_RESEARCH_REVIEW.md",
+    "AGENTS.md",
+    "FILE_MAP.md"
+  ],
+  "formal_entries": {
+    "RESEARCH_BACKGROUND.md": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_BACKGROUND.md",
+    "RESEARCH_PLAN.md": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_PLAN.md",
+    "FILE_MAP.md": "/home/xuehu/projects/tpms_jax/docs/FILE_MAP.md",
+    "MECHANISM_ANALYSIS.md": "/home/xuehu/projects/tpms_jax/docs/MECHANISM_ANALYSIS.md",
+    "TPMS_RESEARCH_REVIEW.md": "/home/xuehu/projects/tpms_jax/docs/TPMS_RESEARCH_REVIEW.md",
+    "PROJECT_OVERVIEW.md": "/home/xuehu/projects/tpms_jax/docs/RESEARCH_STATUS.md",
+    "START_HERE.md": "/home/xuehu/projects/tpms_jax/README.md",
+    "AGENTS.md": "/home/xuehu/projects/tpms_jax/AGENTS.md"
+  },
+  "source_and_old_evidence_unchanged": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/plate_bending_20261008_r27/comparison.json": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/problem.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/fe.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/basis.py": true
+  },
+  "original_comparison_unchanged": true,
+  "original_pipeline_receipt_unchanged": true,
+  "broken_local_markdown_links": [],
+  "archive": "history/completed_tools_20261008/r28_result_support",
+  "scientific_arrays_logs_INP_ODB_kept_in_place": true,
+  "weekly_snapshot_unchanged": true,
+  "archived_helpers": [
+    {
+      "from": "work/r28_result_review.py",
+      "to": "history/completed_tools_20261008/r28_result_support/r28_result_review.py",
+      "sha256": "43e7b3977105f415f40878c30bfc1fc5a744ca412706e0349767f8a4e9bc62a5"
+    },
+    {
+      "from": "work/r28_summary_close.py",
+      "to": "history/completed_tools_20261008/r28_result_support/r28_summary_close.py",
+      "sha256": "2784448b97bc9323bc5c631c88f394b167067caa9f476e89fe027f2c53094478"
+    },
+    {
+      "from": "work/r28_presentation_touchup.py",
+      "to": "history/completed_tools_20261008/r28_result_support/r28_presentation_touchup.py",
+      "sha256": "0e1621e4e29337441097cf8c2bdd87f366dde73ec80b124323d35e93f3546e94"
+    }
+  ],
+  "visual_QA": "Force labels separated; both new scientific figures inspected; standalone r28 table row joined; no numerical result changed.",
+  "protected_hashes_rechecked_after_touchup": {
+    "hyperelastic_fem.py": true,
+    "surface_distance.py": true,
+    "pbc.py": true,
+    "fem.py": true,
+    "scripts/thin_target_explicit.py": true,
+    "pixi.lock": true,
+    "validation/void_support_20261007_r26/comparison.json": true,
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": true,
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+    "validation/geometry_transfer_20261006_r15/input.json": true,
+    "validation/plate_bending_20261008_r27/comparison.json": true,
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/problem.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/fe.py": true,
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/basis.py": true
+  }
+}

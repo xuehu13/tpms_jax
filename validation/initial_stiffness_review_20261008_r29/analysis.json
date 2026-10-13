@@ -1,0 +1,722 @@
+{
+  "stage": "read_only_existing_initial_force_paths",
+  "points": [
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression": 0.002,
+      "dynamic_force_N": 0.10471176100401891,
+      "internal_force_N": 0.09913257525499972,
+      "shell_force_N": 0.10014062150939188,
+      "dynamic_excess_over_shell": 0.04564720515738285,
+      "internal_excess_over_shell": -0.010066307150865983,
+      "explicit_inertia_fraction_of_dynamic_force": 0.053281366825690776,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression": 0.005,
+      "dynamic_force_N": 0.25346795962708224,
+      "internal_force_N": 0.24700264979849598,
+      "shell_force_N": 0.24107653706481225,
+      "dynamic_excess_over_shell": 0.051400367340346476,
+      "internal_excess_over_shell": 0.024581872652710723,
+      "explicit_inertia_fraction_of_dynamic_force": 0.02550740471536687,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression": 0.01,
+      "dynamic_force_N": 0.5006483078186619,
+      "internal_force_N": 0.4935179996556558,
+      "shell_force_N": 0.474663133142886,
+      "dynamic_excess_over_shell": 0.05474445530184813,
+      "internal_excess_over_shell": 0.039722626840484,
+      "explicit_inertia_fraction_of_dynamic_force": 0.014242149731960599,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression": 0.05,
+      "dynamic_force_N": 2.4713164461401433,
+      "internal_force_N": 2.4664823589433325,
+      "shell_force_N": 2.325966645911184,
+      "dynamic_excess_over_shell": 0.062490062135873714,
+      "internal_excess_over_shell": 0.06041174892991741,
+      "explicit_inertia_fraction_of_dynamic_force": 0.0019560777837095964,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression": 0.1,
+      "dynamic_force_N": 4.849331417702432,
+      "internal_force_N": 4.849296343051039,
+      "shell_force_N": 4.536357579674203,
+      "dynamic_excess_over_shell": 0.06899232093840069,
+      "internal_excess_over_shell": 0.06898458904099702,
+      "explicit_inertia_fraction_of_dynamic_force": 7.232883952834154e-06,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression": 0.002,
+      "dynamic_force_N": 0.12544874722374497,
+      "internal_force_N": 0.1026567672244168,
+      "shell_force_N": 0.12211354299675767,
+      "dynamic_excess_over_shell": 0.027312320526772904,
+      "internal_excess_over_shell": -0.15933348009448456,
+      "explicit_inertia_fraction_of_dynamic_force": 0.18168359990616229,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression": 0.005,
+      "dynamic_force_N": 0.27990181483420773,
+      "internal_force_N": 0.2529402865236133,
+      "shell_force_N": 0.26629739027074273,
+      "dynamic_excess_over_shell": 0.051087337167042834,
+      "internal_excess_over_shell": -0.050158598000338506,
+      "explicit_inertia_fraction_of_dynamic_force": 0.09632494997063304,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression": 0.01,
+      "dynamic_force_N": 0.5296909299611144,
+      "internal_force_N": 0.5025968211270277,
+      "shell_force_N": 0.5005862846829565,
+      "dynamic_excess_over_shell": 0.05814111606471828,
+      "internal_excess_over_shell": 0.004016363423429814,
+      "explicit_inertia_fraction_of_dynamic_force": 0.05115078869875254,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression": 0.05,
+      "dynamic_force_N": 2.5215996528172133,
+      "internal_force_N": 2.502726754138856,
+      "shell_force_N": 2.34500904293091,
+      "dynamic_excess_over_shell": 0.0753048737354085,
+      "internal_excess_over_shell": 0.0672567603452916,
+      "explicit_inertia_fraction_of_dynamic_force": 0.0074844944784443045,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression": 0.1,
+      "dynamic_force_N": 4.917504202687777,
+      "internal_force_N": 4.916620716165323,
+      "shell_force_N": 4.539065201274552,
+      "dynamic_excess_over_shell": 0.08337377513479227,
+      "internal_excess_over_shell": 0.08317913450213377,
+      "explicit_inertia_fraction_of_dynamic_force": 0.00017966156937322,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression": 0.002,
+      "dynamic_force_N": 0.08749524465089015,
+      "internal_force_N": 0.08065923055236365,
+      "shell_force_N": 0.07517253786810345,
+      "dynamic_excess_over_shell": 0.16392564535213539,
+      "internal_excess_over_shell": 0.07298799322017135,
+      "explicit_inertia_fraction_of_dynamic_force": 0.07813012153749029,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression": 0.005,
+      "dynamic_force_N": 0.20542207469465698,
+      "internal_force_N": 0.19665304144120316,
+      "shell_force_N": 0.18675282293751422,
+      "dynamic_excess_over_shell": 0.09996770845809011,
+      "internal_excess_over_shell": 0.05301241688325886,
+      "explicit_inertia_fraction_of_dynamic_force": 0.042687881847597295,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression": 0.01,
+      "dynamic_force_N": 0.39565272812951663,
+      "internal_force_N": 0.3865164965487847,
+      "shell_force_N": 0.36932661591689375,
+      "dynamic_excess_over_shell": 0.07128138368058146,
+      "internal_excess_over_shell": 0.04654384463793715,
+      "explicit_inertia_fraction_of_dynamic_force": 0.023091541979058876,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression": 0.05,
+      "dynamic_force_N": 1.70135004433869,
+      "internal_force_N": 1.6940839403771273,
+      "shell_force_N": 1.6124645471572876,
+      "dynamic_excess_over_shell": 0.0551240009202707,
+      "internal_excess_over_shell": 0.0506177908616543,
+      "explicit_inertia_fraction_of_dynamic_force": 0.0042707871820622315,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression": 0.1,
+      "dynamic_force_N": 2.377093064371732,
+      "internal_force_N": 2.3764534845528793,
+      "shell_force_N": 2.2526445388793945,
+      "dynamic_excess_over_shell": 0.05524552291514473,
+      "internal_excess_over_shell": 0.054961598928109145,
+      "explicit_inertia_fraction_of_dynamic_force": 0.00026905964618662676,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression": 0.002,
+      "dynamic_force_N": 0.08008424395894351,
+      "internal_force_N": 0.078278306415707,
+      "shell_force_N": 0.07517253786810345,
+      "dynamic_excess_over_shell": 0.06533910162056866,
+      "internal_excess_over_shell": 0.04131520147760459,
+      "explicit_inertia_fraction_of_dynamic_force": 0.022550472526934862,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression": 0.005,
+      "dynamic_force_N": 0.19575648704538157,
+      "internal_force_N": 0.19360008918132385,
+      "shell_force_N": 0.18675282293751422,
+      "dynamic_excess_over_shell": 0.048211662700701874,
+      "internal_excess_over_shell": 0.036664860729310966,
+      "explicit_inertia_fraction_of_dynamic_force": 0.01101571598778133,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression": 0.01,
+      "dynamic_force_N": 0.38473167778632494,
+      "internal_force_N": 0.38238435708742347,
+      "shell_force_N": 0.36932661591689375,
+      "dynamic_excess_over_shell": 0.041711214966694055,
+      "internal_excess_over_shell": 0.0353555379108339,
+      "explicit_inertia_fraction_of_dynamic_force": 0.006101189047929529,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression": 0.05,
+      "dynamic_force_N": 1.6858765900569963,
+      "internal_force_N": 1.683955942993569,
+      "shell_force_N": 1.6124645471572876,
+      "dynamic_excess_over_shell": 0.04552784929698528,
+      "internal_excess_over_shell": 0.044336724154536045,
+      "explicit_inertia_fraction_of_dynamic_force": 0.0011392572117999882,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression": 0.1,
+      "dynamic_force_N": 2.377753705773583,
+      "internal_force_N": 2.3775487397746713,
+      "shell_force_N": 2.2526445388793945,
+      "dynamic_excess_over_shell": 0.05553879661654282,
+      "internal_excess_over_shell": 0.055447807561068485,
+      "explicit_inertia_fraction_of_dynamic_force": 8.620152642972644e-05,
+      "scope": "Internal force is evaluated in the saved dynamic state, not a static equilibrium force."
+    }
+  ],
+  "window_fits": [
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 4.946985727014668,
+      "intercept_N": 0.006069733095864464,
+      "shell_slope_N_per_mm": 4.678424303878555,
+      "shell_intercept_N": 0.006999971122597294,
+      "slope_relative_excess": 0.0574042467489464,
+      "fit_RMS_N": 0.00012077280496094305,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 4.929838351888514,
+      "intercept_N": 0.00047772462359237723,
+      "shell_slope_N_per_mm": 4.678424303878555,
+      "shell_intercept_N": 0.006999971122597294,
+      "slope_relative_excess": 0.053739043677917264,
+      "fit_RMS_N": 4.151739387512399e-05,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 4.92884259217829,
+      "intercept_N": 0.008590843547462888,
+      "shell_slope_N_per_mm": 4.630506109231166,
+      "shell_intercept_N": 0.013870753556992042,
+      "slope_relative_excess": 0.06442848274238844,
+      "fit_RMS_N": 0.0006143634654637794,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 4.935193738970596,
+      "intercept_N": 0.00040788900845905023,
+      "shell_slope_N_per_mm": 4.630506109231166,
+      "shell_intercept_N": 0.013870753556992042,
+      "slope_relative_excess": 0.065800070781036,
+      "fit_RMS_N": 0.0004739573862053696,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 4.763513136374317,
+      "intercept_N": 0.10208021488906581,
+      "shell_slope_N_per_mm": 4.428752125634366,
+      "shell_intercept_N": 0.12565507807656542,
+      "slope_relative_excess": 0.07558811178487446,
+      "fit_RMS_N": 0.006417065790669864,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N32_T004",
+      "reference": "d04_shell_T004",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 4.772996525555681,
+      "intercept_N": 0.09245801301080538,
+      "shell_slope_N_per_mm": 4.428752125634366,
+      "shell_intercept_N": 0.12565507807656542,
+      "slope_relative_excess": 0.07772943487371298,
+      "fit_RMS_N": 0.006416050733486533,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 5.0703176541843975,
+      "intercept_N": 0.02505605795299642,
+      "shell_slope_N_per_mm": 4.755370796895238,
+      "shell_intercept_N": 0.027658199624154275,
+      "slope_relative_excess": 0.06622971598656147,
+      "fit_RMS_N": 0.0014356529178898437,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 4.996668646841674,
+      "intercept_N": 0.0029927664024684856,
+      "shell_slope_N_per_mm": 4.755370796895238,
+      "shell_intercept_N": 0.027658199624154275,
+      "slope_relative_excess": 0.05074217348181942,
+      "fit_RMS_N": 0.00010204051180843536,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 4.977187957169852,
+      "intercept_N": 0.03556308319533408,
+      "shell_slope_N_per_mm": 4.608918636558245,
+      "shell_intercept_N": 0.04468202913458197,
+      "slope_relative_excess": 0.0799036280854406,
+      "fit_RMS_N": 0.0011754467346973864,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 5.001753284210853,
+      "intercept_N": 0.003086999786617927,
+      "shell_slope_N_per_mm": 4.608918636558245,
+      "shell_intercept_N": 0.04468202913458197,
+      "slope_relative_excess": 0.08523358267525438,
+      "fit_RMS_N": 0.0004719518641201694,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 4.799825439326307,
+      "intercept_N": 0.13486759477928761,
+      "shell_slope_N_per_mm": 4.393657470157859,
+      "shell_intercept_N": 0.16270778177417733,
+      "slope_relative_excess": 0.09244415886472268,
+      "fit_RMS_N": 0.006736606278541543,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d04_N64_T002",
+      "reference": "d04_shell_T002",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 4.836902183287242,
+      "intercept_N": 0.09708887435804618,
+      "shell_slope_N_per_mm": 4.393657470157859,
+      "shell_intercept_N": 0.16270778177417733,
+      "slope_relative_excess": 0.10088285583023793,
+      "fit_RMS_N": 0.006743138021273203,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 3.853608834879299,
+      "intercept_N": 0.011905413146113708,
+      "shell_slope_N_per_mm": 3.6771103442183786,
+      "shell_intercept_N": 0.002530999165030138,
+      "slope_relative_excess": 0.04799923693843833,
+      "fit_RMS_N": 0.0007689338036992111,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 3.8311376313752383,
+      "intercept_N": 0.004699335775240674,
+      "shell_slope_N_per_mm": 3.6771103442183786,
+      "shell_intercept_N": 0.002530999165030138,
+      "slope_relative_excess": 0.04188813300069749,
+      "fit_RMS_N": 0.0005254801416509632,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 3.2789305111806555,
+      "intercept_N": 0.10114455033954357,
+      "shell_slope_N_per_mm": 3.123531028926606,
+      "shell_intercept_N": 0.09187198132782359,
+      "slope_relative_excess": 0.04975122091470063,
+      "fit_RMS_N": 0.016448453396883382,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 3.2844991972302213,
+      "intercept_N": 0.09080235537777938,
+      "shell_slope_N_per_mm": 3.123531028926606,
+      "shell_intercept_N": 0.09187198132782359,
+      "slope_relative_excess": 0.05153403850094995,
+      "fit_RMS_N": 0.016239515501963123,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 1.3467207672078958,
+      "intercept_N": 1.1408307418545334,
+      "shell_slope_N_per_mm": 1.2716642521773576,
+      "shell_intercept_N": 1.0765850384453748,
+      "slope_relative_excess": 0.05902227329424847,
+      "fit_RMS_N": 0.05109363789757541,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T004",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 1.3595337871161404,
+      "intercept_N": 1.1261496751518285,
+      "shell_slope_N_per_mm": 1.2716642521773576,
+      "shell_intercept_N": 1.0765850384453748,
+      "slope_relative_excess": 0.06909806168438859,
+      "fit_RMS_N": 0.05073097464079823,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 3.807022606389538,
+      "intercept_N": 0.004957449284866153,
+      "shell_slope_N_per_mm": 3.6771103442183786,
+      "shell_intercept_N": 0.002530999165030138,
+      "slope_relative_excess": 0.03532998741129001,
+      "fit_RMS_N": 0.0004347654273290386,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.002,
+        0.01
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 3.8011855790125475,
+      "intercept_N": 0.00316719819038475,
+      "shell_slope_N_per_mm": 3.6771103442183786,
+      "shell_intercept_N": 0.002530999165030138,
+      "slope_relative_excess": 0.03374259219314868,
+      "fit_RMS_N": 0.00039910930323917946,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 3.2689123422461557,
+      "intercept_N": 0.09131819759304188,
+      "shell_slope_N_per_mm": 3.123531028926606,
+      "shell_intercept_N": 0.09187198132782359,
+      "slope_relative_excess": 0.04654389918755175,
+      "fit_RMS_N": 0.016395586624828193,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.01,
+        0.05
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 3.270100694571624,
+      "intercept_N": 0.08877641431335317,
+      "shell_slope_N_per_mm": 3.123531028926606,
+      "shell_intercept_N": 0.09187198132782359,
+      "slope_relative_excess": 0.046924350770860324,
+      "fit_RMS_N": 0.016369682670176036,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "Fz_N",
+      "slope_N_per_mm": 1.3788366165025558,
+      "intercept_N": 1.1027805573298004,
+      "shell_slope_N_per_mm": 1.2716642521773576,
+      "shell_intercept_N": 1.0765850384453748,
+      "slope_relative_excess": 0.08427724860685237,
+      "fit_RMS_N": 0.04810677206214532,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    },
+    {
+      "case": "d28_N32_T008",
+      "reference": "d28_shell_Standard",
+      "compression_window": [
+        0.05,
+        0.1
+      ],
+      "force_key": "internal_macro_Fz_N",
+      "slope_N_per_mm": 1.3821060789224882,
+      "intercept_N": 1.0990892846758893,
+      "shell_slope_N_per_mm": 1.2716642521773576,
+      "shell_intercept_N": 1.0765850384453748,
+      "slope_relative_excess": 0.08684825932319074,
+      "fit_RMS_N": 0.04801967016641427,
+      "scope": "Descriptive free-intercept least-squares fit of existing dynamic path; not K0 at zero strain or a new acceptance gate."
+    }
+  ],
+  "old_static_linear_XYZ": {
+    "step": 2,
+    "relative_stiffness_difference": 0.04978753753037135,
+    "relative_energy_difference": 0.051999768651988854,
+    "jax_stiffness_N_per_mm": 3.962825910869529,
+    "shell_stiffness_N_per_mm": 3.7748837447547623,
+    "area_weighted_relative_total_displacement_error": 0.029858756631490964,
+    "area_weighted_relative_fluctuation_error": 0.017913177357443247,
+    "fluctuation_vector_cosine": 0.9998520731909755,
+    "in_plane_gauge_shift_mm": [
+      2.311506615333923e-05,
+      1.2487893941327268e-07,
+      -0.0005614264222627741
+    ],
+    "component_fluctuation_cosines": [
+      0.9987006812502175,
+      0.9995784539367357,
+      0.99989492884675
+    ],
+    "mode_note": "Cosines and weighted errors describe translations on the common triangular midsurface, not shell/solid local stress or rotation equivalence",
+    "stiffness_work_screen_pass": true,
+    "visual_mode_review_required": true,
+    "input_sha256": "87a4f88df427de1cccc7b0a20080dfc7350256e2ef3f5e7a2eb1d64c7eaf56ec"
+  },
+  "old_static_scope": "diverse_28 historical N64 HEX8 static linear XYZ, not current N32 HEX27 certification",
+  "d28_references": "Fits use existing shell Standard loading curve as a static reference. JAX .004/.008s and shell .04s are different time histories; no matched-rate claim.",
+  "old_shell_dynamic_crosscheck_at_points": [
+    {
+      "compression": 0.002,
+      "slow_Explicit_force_N": 0.07530823082658064,
+      "Standard_force_N": 0.07517253786810345
+    },
+    {
+      "compression": 0.005,
+      "slow_Explicit_force_N": 0.18690522111461502,
+      "Standard_force_N": 0.18675282293751422
+    },
+    {
+      "compression": 0.01,
+      "slow_Explicit_force_N": 0.36943723478252233,
+      "Standard_force_N": 0.36932661591689375
+    },
+    {
+      "compression": 0.05,
+      "slow_Explicit_force_N": 1.6103992253526205,
+      "Standard_force_N": 1.6124645471572876
+    },
+    {
+      "compression": 0.1,
+      "slow_Explicit_force_N": 2.2387674044908055,
+      "Standard_force_N": 2.2526445388793945
+    }
+  ],
+  "current_N32_T002_not_run": true,
+  "N64_T002_vs_N32_T004_not_pure_mesh_cause_test": true,
+  "new_forward_jobs": 0,
+  "new_Abaqus_jobs": 0,
+  "new_tangent_or_AD": false,
+  "input_sha256": {
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": "f0251631d3c674acc0c598a3359b8e47d7927810ec1e0795af9bf89a68db7f57",
+    "validation/n64_resolution_20261008_r28/full_from_zero/accepted_path.json": "d268f4f66c4efaebd342617b6546392d65fa8229d4b5c73986884fcbaf2353ce",
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": "a34dbb3340590335f1dda1b3e94d17f0592dc865036fffa92fd0d5fda0dfcece",
+    "validation/n64_resolution_20261008_r28/abaqus/explicit_T0p002/results/shell.json": "87ee51ef9480c9209e7c52acc46fe8c2eb30d41e3133564223df296cb50ec127",
+    "validation/void_continuation_20261006_r12/T0p004/result.json": "51e69a4d3c513e48fb4db4c680219696904927165fc685eb3fc4c8e61f51ad99",
+    "validation/void_continuation_20261006_r12/T0p008/result.json": "1377866d097f8c7e8de7c7b922c284676fa6d31beae9c9a4197c1715e6ae052a",
+    "validation/large_compression_20261005_r6/abaqus/explicit_T0p040/shell.json": "6947cf50626c9a7e49eb0390d912134e7112517a591751d37f880eecc8d1208f",
+    "validation/large_compression_20261005_r6/abaqus/standard/shell.json": "be60ac6509f94d7bf35701ff1b0b067cbc2f3becbeba0c8c837455991b81d4a6",
+    "validation/thin_target_20261004_r5/step2/diagnostic_xyz/comparison.json": "7daf47486a9bc6057dba20ffb853bd4e224b3f751685329f8606af1c7ae08bf5",
+    "validation/thin_target_20261004_r5/step2/diagnostic_xyz/input.json": "87a4f88df427de1cccc7b0a20080dfc7350256e2ef3f5e7a2eb1d64c7eaf56ec",
+    "validation/simulation_error_20261006_r7/step1/result.json": "10e2a28c28215e12a0c67e8ec3aff1a34e7a7d4cad2120e93c99357c9b5fb1b6",
+    "validation/n64_resolution_20261008_r28/comparison.json": "03f0a539dfeb09aee7944cac6363b24180cf3484f4b65540c549445bb3c7af89",
+    "validation/plate_bending_20261008_r27/comparison.json": "6befa191f1d14e637ba028bc1da25fbd2d126b34da2e020a4906ac43f6fb2bab"
+  },
+  "protected_sha256": {
+    "hyperelastic_fem.py": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e",
+    "surface_distance.py": "f972b53a13767a8c189689353b3519839f95a18f1536f2b23c031911ffcf20c6",
+    "pbc.py": "28463010693a0999a64c6f5efd90fe537b6a4b81f41ce67f8b33ae3622c76498",
+    "fem.py": "a37197d6ece5591fe90c6d7a068bbac055627f3265ae850d9c95396e13540e48",
+    "scripts/thin_target_explicit.py": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+    "pixi.lock": "436537c165388c712952e6834090cd30f74356b87b0759ed62b397e6e22b1e30",
+    "validation/void_support_20261007_r26/comparison.json": "497aaa1e0039f4732f61da9c52ba938664972af7eb959fcf894cf419146b2597",
+    "validation/step_control_20261007_r18/controlled_forward/accepted_path.json": "f0251631d3c674acc0c598a3359b8e47d7927810ec1e0795af9bf89a68db7f57",
+    "validation/geometry_transfer_20261006_r15/surface_geometry.npz": "0d4944950d006f55da9965bddc2c3949521e25cca988a86d41203851e6de9c95",
+    "validation/geometry_transfer_20261006_r15/input.json": "44fa998dacfcf77247dcf684be3a57e7473a21fce1dc0f956a551f16f057bbf6",
+    "validation/plate_bending_20261008_r27/comparison.json": "6befa191f1d14e637ba028bc1da25fbd2d126b34da2e020a4906ac43f6fb2bab",
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": "a34dbb3340590335f1dda1b3e94d17f0592dc865036fffa92fd0d5fda0dfcece",
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/problem.py": "c242210fa126f1d9b973ece59d0a53323869d04b127e65f0c98357b60ce316a2",
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/fe.py": "2d05679123b3fe10e483b37c218a2e9008c40e8118e9e1a1f97d1817003e2032",
+    ".pixi/envs/default/lib/python3.13/site-packages/jax_fem/basis.py": "51641346c7d4d1c445d34fe8ea8572f4f44001fa7c428aea6331b08042173654"
+  },
+  "prior_dynamic_gates_and_failures_unchanged": true
+}

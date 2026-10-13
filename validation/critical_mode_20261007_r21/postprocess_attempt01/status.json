@@ -1,0 +1,5 @@
+{
+  "status": "stopped_before_plot_at_geometry_assertion",
+  "reason": "The assertion required identical triangle array order and double coordinates. Node labels match; triangles have the same unordered vertex multisets; ODB coordinates equal exact float32 rounding of original coordinates.",
+  "no_mechanical_results_changed": true
+}

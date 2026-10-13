@@ -1,0 +1,36 @@
+{
+  "step1": "mechanism localization completed, original forward stopped at first rejection",
+  "step2": "one fixed-dt short causal replay completed; general preemptive controller remains pending",
+  "original_first_invalid_compression": 0.1602489080427402,
+  "before_invalid_NH_positive": true,
+  "first_invalid_NH_points": 6,
+  "frozen_dt_omega_lower_bound": 11.692633436245462,
+  "short_replay_endpoint": {
+    "time": 0.0027234375956416658,
+    "compression": 0.1621385546274957,
+    "Fz_N": -6.852041748265384,
+    "internal_macro_Fz_N": -6.712308929462646,
+    "energy_N_mm": 6.141860014604951,
+    "KE_N_mm": 0.12252721191306933,
+    "KE_over_U": 0.019949528582824654,
+    "J_finite": true,
+    "J_min": -11.241344826427508,
+    "invalid_material_points": 0,
+    "negative_J_points": 2515,
+    "required_positive_J_min": 0.04793046486994423,
+    "required_positive_J_points": 141282,
+    "dt_seconds": 3.366591173410051e-08
+  },
+  "new_full_20_percent_pass": false,
+  "earlier_branch_difference_resolved": false,
+  "new_design_AD_certified": false,
+  "next_work": "Conservative state-dependent positive-frequency dt bound using shared tangent and original HRZ; assess frozen-state cost/bound first, then decide one full forward. Branch/reference quality remain separate.",
+  "new_abaqus_jobs": 0,
+  "frozen_old_files": 94,
+  "changed_frozen_files": [],
+  "dominant_patch_curvature_fraction_by_domain": {
+    "deep_void": 0.9990776007698264,
+    "mixed_virtual_tail": 0.0005978859258461743,
+    "uncontinued_NH": 0.0003245133043272644
+  }
+}

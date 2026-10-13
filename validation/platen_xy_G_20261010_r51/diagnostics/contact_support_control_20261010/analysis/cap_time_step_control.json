@@ -1,0 +1,8 @@
+{
+  "RMS_over_shell_peak": 0.1151210911767363,
+  "hold_bias": 0.1847254443736832,
+  "force2_bias": 0.23527789273187993,
+  "max_curve_dt_change_over_shell_peak": 0.00015532283211689538,
+  "hold_dt_change": 2.2908257973019985e-05,
+  "wall_min": 13.007048633366745
+}

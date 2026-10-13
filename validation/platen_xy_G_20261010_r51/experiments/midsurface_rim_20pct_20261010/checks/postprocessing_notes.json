@@ -1,0 +1,11 @@
+{
+  "simulation_unchanged": true,
+  "import_fix": "Explicitly include project root for existing pbc import",
+  "endpoint_fix": "Completed 20% plotting coordinate rounded to declared target only within 1e-8 engineering strain; raw forces and times retained.",
+  "previous_outputs_preserved": [
+    "analysis_import_failure",
+    "analysis_float_endpoint_before_fix"
+  ],
+  "previous_outputs_archive": "postprocessing_history.zip",
+  "manifest": "postprocessing_history_manifest.json"
+}

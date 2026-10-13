@@ -1,0 +1,7 @@
+{
+  "stage": "input reverse-byte check before any Abaqus job",
+  "new_jobs_started": 0,
+  "exception": "AssertionError on reverse token-count check",
+  "cause": "Total-time token occurs in amplitude and step line; ambiguous substring reversal was rejected",
+  "repair": "Transform and reverse exact whole lines; keep byte identity assertion; no original file edited"
+}

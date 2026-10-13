@@ -1,0 +1,112 @@
+{
+  "new_shell_jobs": 2,
+  "new_JAX_forward": 0,
+  "AD": 0,
+  "two_slow_pairs_pass_frozen_peak_gates": true,
+  "slow_pairs": [
+    {
+      "fast_T_ms": 20.0,
+      "slow_T_ms": 40.0,
+      "peak_shift_pp": -0.08138656616210938,
+      "peak_force_relative_change": -0.0035928441704837777,
+      "both_observed_peak": true,
+      "peak_position_working_gate_pass": true,
+      "peak_force_working_gate_pass": true,
+      "scope": "Same discrete shell only; not physical truth or complete quasistatic certification"
+    },
+    {
+      "fast_T_ms": 40.0,
+      "slow_T_ms": 80.0,
+      "peak_shift_pp": -0.04104018211364746,
+      "peak_force_relative_change": -0.002475415366505418,
+      "both_observed_peak": true,
+      "peak_position_working_gate_pass": true,
+      "peak_force_working_gate_pass": true,
+      "scope": "Same discrete shell only; not physical truth or complete quasistatic certification"
+    }
+  ],
+  "all_original_protected_unchanged": true,
+  "protected_files": 531,
+  "old_scientific_records_349_unchanged": true,
+  "source_hashes": {
+    "validation/binary_n64_20261009_r45/abaqus/explicit_T0p000250/results/shell.json": "62966180dc65064886b3ececaddb149e36ba1705ecfc926dd8a90ff768145be4",
+    "validation/binary_n64_20261009_r45/abaqus/explicit_T0p001000/results/shell.json": "df82cac8d63b1bc3344e7ef65f7ce46857f95234af686f9199a8d637b50900a8",
+    "validation/n64_resolution_20261008_r28/abaqus/explicit_T0p002/results/shell.json": "87ee51ef9480c9209e7c52acc46fe8c2eb30d41e3133564223df296cb50ec127",
+    "validation/shell_rate_20261007_r20/abaqus/explicit_T0p004/results/shell.json": "a34dbb3340590335f1dda1b3e94d17f0592dc865036fffa92fd0d5fda0dfcece",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p020000/results/shell.json": "7b992e96c2b838bb61291d2cdb5f9c5c2c4eb21ededaf48cacccec0bb9f0dd59",
+    "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/results/shell.json": "6eb5de517f84c28b15110aa4c074ad09c540ef4ddb520f844f337a7976525675",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p080000/results/partial_shell.json": "25b4c6c4355628708761cd0e5666ce6d6ffc9dcb5503b7522035305b05261ba5",
+    "validation/mechanism_20261007_r17/shell_frames/modes.json": "1d3a80e26aa0ac07571cfbc8a7c33fcef178adb73d76887fbc97b39c4b7b460a",
+    "validation/mechanism_20261007_r17/shell_frames/frame_a0.1000.npz": "d5b56ddae918705511a5dda4a33348f87475ae9dcca2a10fb8a8ff959e328e31",
+    "validation/mechanism_20261007_r17/shell_frames/frame_a0.1140.npz": "9649531145087851ae6c5dbb4ac74ed6e9a3c4d5e110299b31e369878d309cbe",
+    "validation/mechanism_20261007_r17/shell_frames/frame_a0.1400.npz": "edb07b6cbc9e82f9420a4031cae18060fb7eada9d1f843277f33628b6327fd70",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p020000/results/shell_frames/modes.json": "0598414a5f1a335d383ffb0db5bffde525104fa77855b7e494cfb55aad45e9fc",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p020000/results/shell_frames/frame_a0.1000.npz": "3482c3d2e2355bbde1f95ff4d707e2b9ea745e5990051113dec1ee3003bd4589",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p020000/results/shell_frames/frame_a0.1140.npz": "11732bd112630215378e215bbfaca041bfc0da00f9d57eeb5b1a188f7e694949",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p020000/results/shell_frames/frame_a0.1400.npz": "5e2e2ae034462cc8898dd34d24ddefe6e9839c546552ae94e797b47b6cf884d7",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p080000/results/shell_frames/modes.json": "7c1f53f2e030ce8dc6d61d0772d026c6814abeaf6736ca964bf7cb94a53a2a62",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p080000/results/shell_frames/frame_a0.1000.npz": "535eeb25b727a7016c7f662ea06a5cf11950edaa43b9d7beb33ae8ea9193f297",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p080000/results/shell_frames/frame_a0.1140.npz": "0a6a66c0cb626056c53348a9578a90a370c78f58f8c8bd1985561fdcfc92ae6b",
+    "validation/shell_rate_convergence_20261009_r48/abaqus/explicit_T0p080000/results/shell_frames/frame_a0.1400.npz": "3c935680ff5b191ccdfe2a269ac8a61e7319ae60510d791d25397df370991384"
+  },
+  "batch_receipt": {
+    "new_shell_jobs": 2,
+    "new_JAX_forward": false,
+    "AD": false,
+    "cases": [
+      {
+        "T_seconds": 0.02,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\shell_rate_convergence_20261009_r48_T0p020000",
+        "started_unix": 1791542639.7359374,
+        "new_shell_jobs": 1,
+        "new_JAX_forward": false,
+        "AD": false,
+        "solver_command_pid": 44884,
+        "solver_wall_seconds": 646.7825439999579,
+        "solver_returncode": 0,
+        "analysis_completed_successfully": true,
+        "extraction_returncode": 0,
+        "extraction_wall_seconds": 2.4106093000154942,
+        "mode_extraction_returncode": 0,
+        "mode_extraction_wall_seconds": 4.001446899957955,
+        "quality_checks": {
+          "complete": true,
+          "finite": true,
+          "target_compression": true,
+          "physical_node_count": true,
+          "XYZ_periodic_mm_le_1e-6": true,
+          "XYZ_rotation_rad_le_1e-6": true,
+          "global_energy_drift_le_1pct": false,
+          "most_loading_time_KE_below_5pct": false,
+          "terminal_KE_below_5pct": true,
+          "artificial_energy_le_5pct_work": false
+        },
+        "core_valid": true,
+        "returncode": 0,
+        "ODB_retained_native": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\shell_rate_convergence_20261009_r48_T0p020000\\thin_shell.odb",
+        "input_package_unchanged": true,
+        "wall_seconds": 653.2984149456024
+      },
+      {
+        "T_seconds": 0.08,
+        "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\shell_rate_convergence_20261009_r48_T0p080000",
+        "started_unix": 1791542639.7359374,
+        "new_shell_jobs": 1,
+        "new_JAX_forward": false,
+        "AD": false,
+        "solver_command_pid": 47208,
+        "returncode": 1,
+        "exception_type": "TimeoutError",
+        "exception_message": "Frozen wall budget reached; no retry or extension",
+        "input_package_unchanged": true,
+        "wall_seconds": 1808.7458877563477
+      }
+    ],
+    "UTC_wall_seconds": 1808.9124987125397,
+    "within_global_budget": true,
+    "all_completed": false,
+    "all_core_valid": false,
+    "no_automatic_more_jobs": true
+  },
+  "scope": "T sensitivity of this fixed S3R model, not physical accuracy or complete 20% JAX accuracy certification"
+}

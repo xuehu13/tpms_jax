@@ -1,0 +1,32 @@
+{
+  "N": 64,
+  "dt_initial_seconds": 8.845447306984733e-08,
+  "advance_128_seconds": 38.39467739802785,
+  "observe_seconds": 0.5841204149182886,
+  "bound_seconds": 9.637142901890911,
+  "compile_bound_seconds": 10.61152467597276,
+  "compile_advance_seconds": 41.53021571901627,
+  "compile_observe_seconds": 4.468436929048039,
+  "estimated_optimistic_body_seconds_by_T": {
+    "0.001": 4764.362190054031,
+    "0.0005": 2382.1810950270155,
+    "0.00025": 1215.3985178709263
+  },
+  "observed_discarded_probe_endpoint": {
+    "time": 1.1322172552940479e-05,
+    "compression": 2.8537386510914457e-06,
+    "Fz_N": -0.004192834724110189,
+    "internal_macro_Fz_N": -0.0002658819381856008,
+    "energy_N_mm": 2.9262551316009597e-08,
+    "KE_N_mm": 4.6997799101172494e-08,
+    "KE_over_U": 1.6060731886853594,
+    "J_finite": true,
+    "J_min": 0.9988309024827671,
+    "invalid_material_points": 0,
+    "negative_J_points": 0,
+    "required_positive_J_min": 0.9999786113478908,
+    "required_positive_J_points": 936886
+  },
+  "full_from_zero_started": false,
+  "scope": "Duplicate zero-state warm/probe discarded; optimistic initial dt estimate only. Later dt reduction and 16-step bound checks can multiply cost."
+}

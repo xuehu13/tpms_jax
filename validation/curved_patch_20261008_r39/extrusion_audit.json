@@ -1,0 +1,11 @@
+{
+  "original_status_retained": "not_accepted",
+  "basis_sum_gz_abs": 4.192202140984591e-12,
+  "basis_max_g": 99.14837366291893,
+  "basis_sum_gz_over_max_g": 4.228210696866384e-14,
+  "actual_saved_displacement_grad_z_max": 7.650926835227035e-18,
+  "actual_max_gradient": 0.00021982147167741095,
+  "double_epsilon": 2.220446049250313e-16,
+  "no_new_solve": true,
+  "no_original_gate_relaxed": true
+}

@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-10-11T18:11:09.8367565Z",
+  "heartbeat_event_utc": "2026-10-11T18:10:15.621Z",
+  "stage": "G5_shape_refined_running",
+  "active_jobs": [
+    {
+      "pid": 959399,
+      "case": "G5_shape_refined/FD/a_plus_half"
+    }
+  ],
+  "actual_progress": {
+    "case": "G5_shape_refined/FD/a_plus_half",
+    "steps": 8704,
+    "total_steps": 24789,
+    "wall_s": 373.0405957698822,
+    "time_s": 0.0005048259112233205,
+    "compression": 0.0032977646160861416,
+    "work_N_mm": 0.0030100182189583932,
+    "force_N": 0.15749011004238717,
+    "IE_N_mm": 0.0021438719834206946,
+    "all_J_min": 0.9434623034056718,
+    "required_positive_J_min": 0.9919030812004503,
+    "negative_void_J_points": 0,
+    "KE_N_mm": 0.0008575178268054413,
+    "bottom_force_N": 0.11399818258510841,
+    "contact_energy_N_mm": 8.6284144156351E-06
+  },
+  "completed_cases": [
+    "G5_shape_refined/FD/a_plus_h",
+    "G5_shape_refined/FD/a_minus_h"
+  ],
+  "completed_pair_diagnostic": {
+    "scope": "One finished FD pair only; not two-level acceptance",
+    "h": 1E-07,
+    "work_AD": 0.0006712776899371033,
+    "work_FD": 0.0006717965073121945,
+    "work_relative_difference": 0.0007722835255083337,
+    "force_AD": 0.0013517795834398503,
+    "force_FD": 0.001270702432165649,
+    "force_relative_difference": 0.06380498629881584,
+    "half_step_pair_complete": false,
+    "overall_acceptance_evaluated": false
+  },
+  "protected_sources_unchanged": true,
+  "new_submissions": 0,
+  "full_shape_VJP_started": false,
+  "original_failure_retained": true,
+  "acceptance_threshold_changes": false
+}

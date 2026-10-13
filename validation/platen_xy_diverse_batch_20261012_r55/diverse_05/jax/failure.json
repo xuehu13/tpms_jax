@@ -1,0 +1,4 @@
+{
+  "type": "TimeoutError",
+  "message": "JAX or overall wall budget reached"
+}

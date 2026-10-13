@@ -1,0 +1,352 @@
+{
+  "same_window_comparisons": {
+    "prejump_1_to_5pct": {
+      "N32_T0p004_vs_shell_T0p004": {
+        "window": [
+          0.01,
+          0.05
+        ],
+        "RMS_N": 0.09100917882989491,
+        "RMS_over_matched_shell_peak": 0.01740141222542795,
+        "RMS_over_historical_fixed_peak": 0.04028890408073731,
+        "work_N_mm": 0.6202128834115763,
+        "shell_work_N_mm": 0.5852692671264702,
+        "work_relative_gap": 0.059705195963339674
+      },
+      "N64_T0p002_vs_shell_T0p002": {
+        "window": [
+          0.01,
+          0.05
+        ],
+        "RMS_N": 0.10994128106019069,
+        "RMS_over_matched_shell_peak": 0.020584732452443275,
+        "RMS_over_historical_fixed_peak": 0.048669966964831245,
+        "work_N_mm": 0.6392365575722901,
+        "shell_work_N_mm": 0.5973709482637346,
+        "work_relative_gap": 0.07008310235078952
+      },
+      "scope": "Descriptive same-window matched-rate comparisons; shortened rate still confounds N32->N64 attribution; no new acceptance criterion"
+    },
+    "prejump_1_to_10pct": {
+      "N32_T0p004_vs_shell_T0p004": {
+        "window": [
+          0.01,
+          0.1
+        ],
+        "RMS_N": 0.18369789483124066,
+        "RMS_over_matched_shell_peak": 0.0351239603960881,
+        "RMS_over_historical_fixed_peak": 0.08132132340763558,
+        "work_N_mm": 2.457577038089101,
+        "shell_work_N_mm": 2.3088862599202757,
+        "work_relative_gap": 0.06439935164842603
+      },
+      "N64_T0p002_vs_shell_T0p002": {
+        "window": [
+          0.01,
+          0.1
+        ],
+        "RMS_N": 0.2233006979769941,
+        "RMS_over_matched_shell_peak": 0.04180945573832021,
+        "RMS_over_historical_fixed_peak": 0.09885311039639445,
+        "work_N_mm": 2.5066107205473,
+        "shell_work_N_mm": 2.326352416692326,
+        "work_relative_gap": 0.07748538121806603
+      },
+      "scope": "Descriptive same-window matched-rate comparisons; shortened rate still confounds N32->N64 attribution; no new acceptance criterion"
+    },
+    "same_covered_1_to_14p732pct": {
+      "N32_T0p004_vs_shell_T0p004": {
+        "window": [
+          0.01,
+          0.1473204908506258
+        ],
+        "RMS_N": 1.8484897747501554,
+        "RMS_over_matched_shell_peak": 0.3534405318065548,
+        "RMS_over_historical_fixed_peak": 0.8183089682451838,
+        "work_N_mm": 5.231688762687437,
+        "shell_work_N_mm": 3.9379629801652816,
+        "work_relative_gap": 0.3285266491936032
+      },
+      "N64_T0p002_vs_shell_T0p002": {
+        "window": [
+          0.01,
+          0.1473204908506258
+        ],
+        "RMS_N": 1.695048508419518,
+        "RMS_over_matched_shell_peak": 0.317370506358081,
+        "RMS_over_historical_fixed_peak": 0.750381968565551,
+        "work_N_mm": 5.2327283387114045,
+        "shell_work_N_mm": 4.0695117794934825,
+        "work_relative_gap": 0.28583688222244286
+      },
+      "scope": "Descriptive same-window matched-rate comparisons; shortened rate still confounds N32->N64 attribution; no new acceptance criterion"
+    }
+  },
+  "point_force_table": [
+    {
+      "compression": 0.01,
+      "N32_N": 0.5006483078186619,
+      "N32_matched_shell_N": 0.474663133142886,
+      "N32_relative_force_difference": 0.05474445530184813,
+      "N64_N": 0.5296909299611144,
+      "N64_matched_shell_N": 0.5005862846829565,
+      "N64_relative_force_difference": 0.05814111606471828
+    },
+    {
+      "compression": 0.05,
+      "N32_N": 2.4713164461401433,
+      "N32_matched_shell_N": 2.325966645911184,
+      "N32_relative_force_difference": 0.062490062135873714,
+      "N64_N": 2.5215996528172133,
+      "N64_matched_shell_N": 2.34500904293091,
+      "N64_relative_force_difference": 0.0753048737354085
+    },
+    {
+      "compression": 0.1,
+      "N32_N": 4.849331417702432,
+      "N32_matched_shell_N": 4.536357579674203,
+      "N32_relative_force_difference": 0.06899232093840069,
+      "N64_N": 4.917504202687777,
+      "N64_matched_shell_N": 4.539065201274552,
+      "N64_relative_force_difference": 0.08337377513479227
+    },
+    {
+      "compression": 0.12,
+      "N32_N": 5.729865710807766,
+      "N32_matched_shell_N": 5.055781124276235,
+      "N32_relative_force_difference": 0.13332946382801136,
+      "N64_N": 5.7989084025455595,
+      "N64_matched_shell_N": 5.306275833465805,
+      "N64_relative_force_difference": 0.09283960814339931
+    },
+    {
+      "compression": 0.14,
+      "N32_N": 6.528361936981765,
+      "N32_matched_shell_N": 1.8337604214463437,
+      "N32_relative_force_difference": 2.5600953432251767,
+      "N64_N": 6.493599588784862,
+      "N64_matched_shell_N": 1.403652035781095,
+      "N64_relative_force_difference": 3.626217483574087
+    },
+    {
+      "compression": 0.1473204908506258,
+      "N32_N": 6.785603299138567,
+      "N32_matched_shell_N": 2.2010509715097175,
+      "N32_relative_force_difference": 2.0828923941203734,
+      "N64_N": 5.00671699957642,
+      "N64_matched_shell_N": 1.68787564581552,
+      "N64_relative_force_difference": 1.9662830979218002
+    }
+  ],
+  "observed_peaks": {
+    "N32_T0p004": {
+      "time": 0.0026854848531435156,
+      "compression": 0.15940872539154782,
+      "Fz_N": -7.072391495989786,
+      "internal_macro_Fz_N": -7.066532413738025,
+      "energy_N_mm": 6.064165091611316,
+      "KE_N_mm": 0.00878989745685824,
+      "KE_over_U": 0.0014494818864706513,
+      "J_finite": true,
+      "J_min": -6.119249212813952,
+      "invalid_material_points": 0,
+      "negative_J_points": 2062,
+      "required_positive_J_min": 0.08466926589126439,
+      "required_positive_J_points": 141282,
+      "dt_seconds": 1.7202401517144088e-07
+    },
+    "shell_T0p004": {
+      "time": 0.00219581532292068,
+      "compression": 0.1182407021522522,
+      "Fz_N": -5.229988098144531,
+      "ALLIE": 3.2153453826904297,
+      "ALLSE": 3.2106857299804688,
+      "ALLKE": 0.015035320073366165,
+      "ALLAE": 0.004659564234316349,
+      "ALLVD": 0.00030522781889885664,
+      "ALLWK": 3.2033770084381104,
+      "ETOTAL": 0.02730882167816162
+    },
+    "N64_covered_T0p002": {
+      "time": 0.0012192858259907455,
+      "compression": 0.1398170270617498,
+      "Fz_N": -6.49489265343528,
+      "internal_macro_Fz_N": -6.301296334320616,
+      "energy_N_mm": 4.731681357637043,
+      "KE_N_mm": 0.07298016538061063,
+      "KE_over_U": 0.015423727817770095,
+      "J_finite": true,
+      "J_min": -9.982780828509737,
+      "invalid_material_points": 0,
+      "negative_J_points": 2937,
+      "required_positive_J_min": 0.07850026066568724,
+      "required_positive_J_points": 1131151,
+      "dt_seconds": 2.955228370473402e-08
+    },
+    "shell_T0p002": {
+      "time": 0.0011178902350366116,
+      "compression": 0.12190046310424804,
+      "Fz_N": -5.340913772583008,
+      "ALLIE": 3.385469675064087,
+      "ALLSE": 3.374373435974121,
+      "ALLKE": 0.06343813240528107,
+      "ALLAE": 0.011096117086708546,
+      "ALLVD": 0.0010875542648136616,
+      "ALLWK": 3.415039539337158,
+      "ETOTAL": 0.03495583310723305
+    }
+  },
+  "peak_gap_percentage_points": {
+    "old": 4.116802323929562,
+    "new_covered": 1.7916563957501768
+  },
+  "peak_force_relative_gap": {
+    "old": 0.3522767859641771,
+    "new_covered": 0.21606394148808317
+  },
+  "N64_prefix_max_to_terminal_drop_fraction": 0.22913013859770792,
+  "N64_explicit_inertial_part_at_prefix_max_fraction": 0.029807470183863146,
+  "N64_internal_force_at_dynamic_prefix_max_relative_to_shell_peak": 0.17981615181050592,
+  "control": {
+    "initial_safe_dt_seconds": 1.3466364693640205e-07,
+    "first_used_controlled_dt_seconds": 1.2846942163185998e-07,
+    "nominal_initial_dt_seconds": 1.3466364693640205e-07,
+    "floor_seconds": 8.416477933525128e-09,
+    "last_used_dt_seconds": 9.524951387322923e-09,
+    "rejected_proposed_halved_dt_seconds": 4.7624756936614615e-09,
+    "last_accepted_bound_safe_dt_seconds": 1.914678367239311e-08,
+    "last_accepted_bound_to_used_dt_ratio": 2.0101712747716705,
+    "tail_14pct_plus_median_bound_to_used_ratio": 1.9985375606632911,
+    "tail_14pct_plus_fraction_bound_allows_2x_dt": 0.5,
+    "non_tail_end_accepted_dt_nondecreasing_violations": 0,
+    "stop_reason": "Finite rollback reaches unchanged initial/16 safeguard",
+    "recorded_max_row_neighborhoods": [
+      {
+        "label": "initial",
+        "compression": 0.0,
+        "dt_seconds": 1.3466364693640205e-07,
+        "recorded_safe_dt_seconds": 1.2846942163185998e-07,
+        "max_periodic_class": 926496,
+        "component": 0,
+        "reference_xyz_mm": [
+          4.375,
+          5.46875,
+          2.5
+        ],
+        "incident_cells": 8,
+        "incident_phi_min": 2.3246764292858395e-09,
+        "incident_phi_max": 0.9976000576019052,
+        "all_incident_points_deep_virtual_phi_le_0p001": false,
+        "incident_required_positive_J_points": 72,
+        "scope": "Location of already recorded accepted bound row; not decomposition of row contributions or rejected endpoint cause"
+      },
+      {
+        "label": "10pct",
+        "compression": 0.10055699507712111,
+        "dt_seconds": 1.2823140906340527e-07,
+        "recorded_safe_dt_seconds": 1.2818454948265267e-07,
+        "max_periodic_class": 926496,
+        "component": 0,
+        "reference_xyz_mm": [
+          4.375,
+          5.46875,
+          2.5
+        ],
+        "incident_cells": 8,
+        "incident_phi_min": 2.3246764292858395e-09,
+        "incident_phi_max": 0.9976000576019052,
+        "all_incident_points_deep_virtual_phi_le_0p001": false,
+        "incident_required_positive_J_points": 72,
+        "scope": "Location of already recorded accepted bound row; not decomposition of row contributions or rejected endpoint cause"
+      },
+      {
+        "label": "12pct",
+        "compression": 0.12025514818652475,
+        "dt_seconds": 1.0435791092355368e-07,
+        "recorded_safe_dt_seconds": 9.84218177986637e-08,
+        "max_periodic_class": 671840,
+        "component": 2,
+        "reference_xyz_mm": [
+          3.203125,
+          0.0,
+          7.5
+        ],
+        "incident_cells": 4,
+        "incident_phi_min": 7.343378599491924e-08,
+        "incident_phi_max": 0.1566981949146917,
+        "all_incident_points_deep_virtual_phi_le_0p001": false,
+        "incident_required_positive_J_points": 24,
+        "scope": "Location of already recorded accepted bound row; not decomposition of row contributions or rejected endpoint cause"
+      },
+      {
+        "label": "observed_max",
+        "compression": 0.1398170270617498,
+        "dt_seconds": 2.955228370473402e-08,
+        "recorded_safe_dt_seconds": 5.529643402980662e-08,
+        "max_periodic_class": 656224,
+        "component": 2,
+        "reference_xyz_mm": [
+          3.125,
+          0.46875,
+          7.5
+        ],
+        "incident_cells": 8,
+        "incident_phi_min": 3.2976011658897215e-15,
+        "incident_phi_max": 0.9339123646711566,
+        "all_incident_points_deep_virtual_phi_le_0p001": false,
+        "incident_required_positive_J_points": 20,
+        "scope": "Location of already recorded accepted bound row; not decomposition of row contributions or rejected endpoint cause"
+      },
+      {
+        "label": "last_accepted",
+        "compression": 0.1473204908506258,
+        "dt_seconds": 9.524951387322923e-09,
+        "recorded_safe_dt_seconds": 1.914678367239311e-08,
+        "max_periodic_class": 1696608,
+        "component": 1,
+        "reference_xyz_mm": [
+          8.046875,
+          5.46875,
+          7.5
+        ],
+        "incident_cells": 4,
+        "incident_phi_min": 9.126347344006527e-11,
+        "incident_phi_max": 0.9079421847671643,
+        "all_incident_points_deep_virtual_phi_le_0p001": false,
+        "incident_required_positive_J_points": 19,
+        "scope": "Location of already recorded accepted bound row; not decomposition of row contributions or rejected endpoint cause"
+      }
+    ],
+    "scope": "Read saved bounds/control code only. Row-sum bound is conservative; no actual eigenvalue, new tangent or restart test performed."
+  },
+  "cost": {
+    "pipeline_total_seconds": 7012.232227087021,
+    "full_wrapper_seconds": 6239.910113243037,
+    "controlled_body_seconds": 6223.791757449042,
+    "bound_seconds_total": 2002.4617079474265,
+    "observing_seconds_total": 193.18385967169888,
+    "accepted_steps": 12896,
+    "budget_exhausted": false,
+    "deadline_overrun_seconds": 0.0
+  },
+  "quality": {
+    "new_shell_checks": {
+      "complete": true,
+      "finite": true,
+      "target_compression": true,
+      "physical_node_count": true,
+      "XYZ_periodic_mm_le_1e-6": true,
+      "XYZ_rotation_rad_le_1e-6": true,
+      "global_energy_drift_le_1pct": false,
+      "most_loading_time_KE_below_5pct": false,
+      "terminal_KE_below_5pct": false,
+      "artificial_energy_le_5pct_work": false
+    },
+    "new_shell_energy_drift": 0.06019672160495141,
+    "new_shell_artificial_energy_relative_work": 0.11152164162639515,
+    "new_shell_terminal_KE_over_IE": 0.1826098918686915
+  },
+  "all_new_diagnostics_are_existing_data_reading": true,
+  "no_new_forward_bound_AD_or_Abaqus": true,
+  "prefix_peak_not_full20_global_peak": true
+}

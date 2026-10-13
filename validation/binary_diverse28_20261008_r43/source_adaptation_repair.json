@@ -1,0 +1,7 @@
+{
+  "error": "source-string adaptation had two old report references; stopped before compile/exec of solver",
+  "fix": "explicitly replace both references and provide same passed fixed-check status in adapter",
+  "frozen_numerical_gates_or_protocol_changed": false,
+  "model_or_solver_started": false,
+  "original_failure_preserved": true
+}

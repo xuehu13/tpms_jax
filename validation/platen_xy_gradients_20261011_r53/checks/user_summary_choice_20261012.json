@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-12",
+  "user_choice": "先看本轮总结，暂不启动新的完整反向计算",
+  "automation_id": "tpms",
+  "automation_status": "PAUSED",
+  "active_jobs": [],
+  "new_computation": false,
+  "full_shape_VJP": "not_started",
+  "all_four_steps_completed": false,
+  "protected_small_files_unchanged": true,
+  "scientific_sha256": {
+    "input\\protocol.json": "0007864cba264eb6bb6b75d108ddc63948cbb191d777bc27047ec3ff08a5c521",
+    "input\\G10_thickness_protocol.json": "af09eed53898a84aea3b9100007bab3074a168b19d812d4a7119eb3d5c03edc4",
+    "input\\G12_interface_protocol.json": "6501f78cafd7ac13a78dceb1d2f3d786b5592e033bafd8f1354a4876baa21777",
+    "input\\G12_thickness_protocol.json": "41f7398999bc2fd3df530c31e1205e5096d059a51fabb4dd18045da935c397c8",
+    "input\\reverse_benchmark_protocol.json": "ff8671aa9e53ee2dfd507eaa264725184d7fc6a6d971bd220b8da8cd1b171f3b",
+    "input\\G_shape_diagnostic.json": "378803bbe219dc5469dbf1490c0f1fb983514f25d8599b8b0787855b29655f49",
+    "input\\G10_interface_protocol.json": "2e319fa1044da3e2c08b01c20434face384c5d48da1f330651ff26f52c20020d",
+    "input\\interface_protocol.json": "50965dfd2f0e8aa88633fc7d3bee97e528cb3b8bae5e1f6b99099c5ebaa9c845",
+    "input\\G_shape_geometry_diagnostic.json": "0d0846be1c32422a41f67d6ec366d6c9fbb5c9f3bf654a7c71ce1a1aeadc634f",
+    "input\\P5_thickness_protocol.json": "1c57dc315d782f5a50f7c0c530212ec2ce777b9eb240e02f4616b6cc7cea30b5",
+    "input\\G5_shape_protocol.json": "c9adda2ef72a80d62a693de6a0a80b8838982991895f013d162c40e8c38a3c82",
+    "input\\reverse_protocol.json": "ffc73437bb2f168f1f40f5f0536785e3d0acf6923b8b56daa906fd7170e7b590",
+    "input\\G5_shape_refined_protocol.json": "f7f450ce88aff3c6d95405911b70ce40650d06cb2c6a16aedd0c8555d5e0707e",
+    "input\\G5_shape_refined_execution.json": "91c8525b49ee7bf0c287fb7e9207f28fc264e7afc27d89470679747681ee4806",
+    "input\\G_shape_refined_diagnostic.json": "7f9b4e289e3d76c192ff446e5c62af37659e4d33b4bc72947a8eb7deffb9ee1f",
+    "input\\P5\\model.json": "c4fabc34b4c76bb05fd8b525330fad68a8ccb6503a90041293a65aad1e30e735",
+    "input\\G_shape\\geometry_protocol.json": "66548ea557301b4e0df1a8fa9028eff75ad42f5920a0b3d40432d286dcd7ebde",
+    "tools\\reverse.py": "3ec3755983bbed970e7b66f89ebaf5760734691ef5006ec732253d8cd403e5e3",
+    "tools\\shape.py": "d966f5416ff7f14b21de57a2b1db79eabcba22cd7989c9645e4945fed1bfb2fe",
+    "tools\\check_shape.py": "e5bc89e0b65fb240bdf04efc4ead91b060bc0fa4f9ce1c4d8bf4b4cc0b0b8f88",
+    "tools\\run.py": "ff23d9e14c722951e308535b13595ff3effee0787aac33d0c256c007342518c4",
+    "tools\\design.py": "6a12f9ee8692fc55791551d948426a024eedef3cc529b69f9d735104ab11c1e2",
+    "tools\\prepare.py": "0a7596a356c9935c6127a945bb435d45e830148016b6dc0fde906eb00808e7a7",
+    "tools\\diagnose_shape.py": "5ec7542e556770f28b259c406a020b8c89ad90173111e19be890c01981adfb82",
+    "tools\\check_shape_resolution.py": "75ffa55df912f84e35e681518f28952d41a1cd16ee3fbf2f7cc8c14be6dc3788",
+    "tools\\analyze.py": "9996b4099a40cfaae5418d4cbfb30cc1e791302d1125288a9da4477640cb6ce2",
+    "tools\\diagnose_shape_geometry.py": "ef7f390b327353acc52c4aff73e8f8e4be97da0d1676a565ef2970baf0cded5a",
+    "tools\\run_shape_refined.py": "5725c189c08126028744040c90c0daf025bb3cf482d4416482da6b599c7b5943",
+    "analysis\\metrics.json": "5f9521d728514a923c7d5cb532a71646f5e64d091f37afe9ed5c5549782cfeab",
+    "analysis\\interface5\\metrics.json": "07db438a4d8f19493054b7e912a3d7002c3cc8c70d3cfce1bf1777998c3c3701",
+    "analysis\\G5_shape_refined_diagnostic\\metrics.json": "5571fd30492a283c861dd35c5912892352e481d17b18cf950af1ba48116e9154",
+    "analysis\\G5_shape_diagnostic\\metrics.json": "1e3b363f694a3041a57b99d5757fa1a925023e7c1c79a6945ab83817475045c0",
+    "analysis\\G12_interface\\metrics.json": "39996e2356abc0fa0582524ca19a4599be44cb816a9c9d9e04aa0e4575d406ed",
+    "analysis\\parameter_summary\\metrics.json": "46e8ec3c6790a0eac3bf8881af1c8335908f55858952dd4b13a636c7da8b303b",
+    "analysis\\G12_thickness\\metrics.json": "1f74b33f289e6b8186762fb063b9c3bc03467562a32a9b7342a9b1f57f5a341b",
+    "analysis\\G5_shape\\metrics.json": "5d186c81ad0ea8f81f42ce7012ab2418ffc19fef45839686f77ddf547ac64e31",
+    "analysis\\G5_shape_refined\\metrics.json": "6b01a1e7a5a5ddb1c40a90c9b718ad756bf547388dd80c80c6daf7299e350972",
+    "analysis\\P5_thickness\\metrics.json": "5e79cbcc979997b62cd41429b739b9cbbf4d465d5928f803f2f0e302f846d21b",
+    "analysis\\G10_interface\\metrics.json": "297939b50bdd016200962fb28dc36ca38ea2fc952c4f368704be0732eedadc75",
+    "analysis\\G5_shape_geometry_diagnostic\\metrics.json": "3d03a2661dfb266419732a6a1ed56cea7749fab9819fd4be80f1d8e0405eef86",
+    "analysis\\G10_thickness\\metrics.json": "1b6c1117c7abf764cbdd7dc8b972a6e2c897615b8526538a5772c5618ef81a00",
+    "analysis\\parameter_summary\\costs.csv": "3fc299d3bfb94703a7750bea13c2385cd094e9e3fa04d6a435d4cc71e9fb0795",
+    "analysis\\parameter_summary\\gradient_table.csv": "ddbc609cbed12d0c8fde3e09805375ba281392286fdfaee1136cef70a33dff56",
+    "analysis\\parameter_summary\\derived_beta.csv": "12024a9a9881cc9c9ca32590968cccad01fea994ee16ae7921c246cd8e5869bf",
+    "AD\\reverse_work\\result.json": "42c40a5624957f159d059989f611a9b0ca3ce315062cc8b3189f1a7e02e3e226",
+    "AD\\thickness\\result.json": "d3c7620f4c9331fe8bd9488239e281f62fabf9d7bcbba9f75a7e3f868dcead1e",
+    "FD\\w_minus_half\\result.json": "66b446f32a491909239b9933b3335c1674a3e031e5512b1c723216a076342325",
+    "FD\\w_minus_h\\result.json": "65ea69f7e44abcb5daf670984eea659afd9808f516d38fdf3dc48bbd461a0114",
+    "FD\\t_minus_half\\result.json": "dc99b951a97d1a01ac616c1df7a4f35ae4c28df17b4616efb3312e9b918ead90",
+    "FD\\w_plus_h\\result.json": "b1bebe8d69a6a125ccd405c7d1e7663d215dfc3799ea6fafba6576d5b54c4484",
+    "FD\\t_plus_half\\result.json": "07d33dc95f6e5a4cd6772ea00e8587fbb9b5c3cd5a1225d3ec5a52e03829ce16",
+    "FD\\w_plus_half\\result.json": "d56d817ceaa169af9b35c98ffafc5106705dbd69e29c7d23dec7378d5fd84dd6",
+    "FD\\t_minus_h\\result.json": "80d30e2854aaefc1611b1e0beeafe8016e3f506fede6d2ea40ee645b35907b6f",
+    "FD\\t_plus_h\\result.json": "9f1c18ed0418e3e32e1f49dbb120b6f0e890821389ca56bd422e542012b3f983",
+    "G5_shape\\FD\\a_minus_h\\result.json": "874a5cdf953b51d0733aebc7ec4cb9b0892865ac529e88b9c0d0918d0b241568",
+    "G5_shape\\FD\\a_plus_h\\result.json": "da46504e60efd7007269c875aa3194ba1bae8be5b6b541bfb92ac685b9a6a54c",
+    "G5_shape\\FD\\a_minus_half\\result.json": "7eb623e2dedf64d5eb10c0c33fe990597632cfd56754e38a99cdd41d6e84e80a",
+    "G5_shape\\FD\\a_plus_half\\result.json": "158b03df08ed69b4afb962d7c809a7fb856c7ff03c6585f1c2a0793866c36dae",
+    "G5_shape\\AD\\shape\\result.json": "63076444e7d468dcf55def0a1d9d74e08cbb31d6068f68408167f1c349bad407",
+    "G5_shape_refined\\FD\\a_minus_h\\result.json": "55c93d2c6a8905cae6f6953995c51b0891bf73317b64572a3dcc5eb6c4734601",
+    "G5_shape_refined\\FD\\a_plus_h\\result.json": "d0c59a051873584e4363e4c52fc8e1b8dd7a36542039d457bbca24a63d60dcd5",
+    "G5_shape_refined\\FD\\a_minus_half\\result.json": "d109693a7018e71c54a973f76db6ae51b5bfeb45ce7e2f0742210cfad048553f",
+    "G5_shape_refined\\FD\\a_plus_half\\result.json": "dcd3ecee4377952747c621fa24f97cc7b8b3bf79d5472a3b4468021ca3494b52",
+    "G10\\FD\\t_minus_half\\result.json": "3a896c0ae5a8b2cdfe09497ddfb7cc07e6534896866942e6561d254dfa283fec",
+    "G10\\FD\\t_plus_half\\result.json": "f1f138d21b3f3516f681762cbbae7da5b39f24709c485ef04de1c5045c34cd7d",
+    "G10\\FD\\t_minus_h\\result.json": "fabc35264277285208b27b843c631946c5b8529411306aa9c8bf85860328266c",
+    "G10\\FD\\t_plus_h\\result.json": "56aec1b620dd0db276cbaf10b2741bcdabe74af8786a03b34e51f165f8bb4c93",
+    "G10\\AD\\thickness\\result.json": "0bb53cec5e44a812b5a59e252dbaf199a5ded2359fac327e5c33ba0fa73065ea",
+    "G12\\FD\\t_minus_half\\result.json": "aabe20510020971546b19198c7567228d462e719aea12972a5cd0d7ac9fe9664",
+    "G12\\FD\\t_plus_half\\result.json": "534348e772002308f5d12c283c4de91865e9fd3177ed5b25c68a2d11d7a064f4",
+    "G12\\FD\\t_minus_h\\result.json": "19e53d14010e1575885f4a0dde3f566b9f9cefb42fe0be7a3cc5f18c528ee4d0",
+    "G12\\FD\\t_plus_h\\result.json": "575cf538e43bee0a618a23b74f432b4c6ddf4056ac4e0271f7d866267cd988b8",
+    "G12\\AD\\thickness\\result.json": "051e6fd90a51b05ef6ee6b478ce61c67302006ad8761fa6f5c9cb221ec56c730",
+    "G10_interface\\FD\\w_minus_half\\result.json": "655eb69f2b9a199eb72467bc8ba4b6efe8b652a40131795e4e417f0cf17e77e2",
+    "G10_interface\\FD\\w_minus_h\\result.json": "0332c778e688246f3470d44b270bc3166a21c92f7bb84f1bda786baa2ce5929f",
+    "G10_interface\\FD\\w_plus_h\\result.json": "ff92aed28c8b957c5887c44e752febc970b2ba3bf808df6c890bfe69310579ae",
+    "G10_interface\\FD\\w_plus_half\\result.json": "542b11e7b3e8cadfe0845dfafdf05ad3641e4af01dda9993f7123fd71d138c91",
+    "G10_interface\\AD\\width\\result.json": "4dff51cf9cb5aa66baf0c3db4722236af4bdc541a708333e5abb51c6f8cdf23a",
+    "G12_interface\\FD\\w_minus_half\\result.json": "f61dffea7f9bbc547d5f0f5c1ba746eba66aeb0e1661bebbb6cc5933d7c232b8",
+    "G12_interface\\FD\\w_minus_h\\result.json": "a945eaeb71f35149c2fe1f45c2b48f43801f53c5a964524510516217301013b7",
+    "G12_interface\\FD\\w_plus_h\\result.json": "ce0f11e3be0f5689bf8f9293f4bd1a83fb0c9394751cf6530cc78bc0b26e3475",
+    "G12_interface\\FD\\w_plus_half\\result.json": "740d6029696fe4b416bdf90f4f13dde672f50af1c79e7a6df70b8c335907ae4c",
+    "G12_interface\\AD\\width\\result.json": "426fcd92fa14da87ef8c105e5f63c4e1e80209d65db95e0c0b051dcd2433dfd7",
+    "P5\\FD\\t_minus_half\\result.json": "80a807036f1726ee7200ef625249e83d31db59eb3f5c35b1a5335364c2377788",
+    "P5\\FD\\t_plus_half\\result.json": "f04de7b63ea87e8f02fc4ed99c2fbb0d305eef9ab82f3def63c0ebbd3be250ee",
+    "P5\\FD\\t_minus_h\\result.json": "56417b377f963a09fd3597377c73dd61a1f9bb8a4678539ce47b70a5389ad19b",
+    "P5\\FD\\t_plus_h\\result.json": "c9ff3a060664c85855f1173fc8a7a78a7d1edf8176514598ae912d53131c51fd",
+    "P5\\AD\\thickness\\result.json": "6145a6cda5b8a473862b04e0b76fa69cd41fd2e3a114ee47b8c8aa74e24634c9"
+  },
+  "changed_navigation_and_status": [
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\AGENTS.md",
+      "before_sha256": "744f6b3d9d4cc69c6ea52b18acfd784575f3edb12c8ca497fe3847cae0101f65",
+      "after_sha256": "b6ea1bbbdcb8eeca7c485f91bd379951521f80246d1187157d6804c04ee6ea85"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md",
+      "before_sha256": "8ec75acb5214a59b97c1ecd56f4a7439a71bda2a5967e6af25555cccc66691eb",
+      "after_sha256": "b6ea1bbbdcb8eeca7c485f91bd379951521f80246d1187157d6804c04ee6ea85"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md",
+      "before_sha256": "d2c364c489cc2b14fdd17cc177deb2fcbdbfd668b55d037bf14f2f1bc1304d5d",
+      "after_sha256": "27f209cec123ac3032fde4ccded118ce31ae1638e38bc68dc36eee9fc96b30c0"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md",
+      "before_sha256": "d2c364c489cc2b14fdd17cc177deb2fcbdbfd668b55d037bf14f2f1bc1304d5d",
+      "after_sha256": "27f209cec123ac3032fde4ccded118ce31ae1638e38bc68dc36eee9fc96b30c0"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md",
+      "before_sha256": "a3137b0cd00e7d1f9c04b936c2ebbfb98633b2384bd0492a6a76b9091cccc6fd",
+      "after_sha256": "5f914c4e7bf6eb9d211a859b16fb080ea1717ce612d92a8da4e91147a0d3d1f3"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md",
+      "before_sha256": "a3137b0cd00e7d1f9c04b936c2ebbfb98633b2384bd0492a6a76b9091cccc6fd",
+      "after_sha256": "5f914c4e7bf6eb9d211a859b16fb080ea1717ce612d92a8da4e91147a0d3d1f3"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md",
+      "before_sha256": "70d1eaee95579fa02c02965a43407b3820228d5e94a217eedccdc543f04886c5",
+      "after_sha256": "00dcc131bb535505ba7022825942c650aa0418797338aaa4ec1471962e4bccb3"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md",
+      "before_sha256": "70d1eaee95579fa02c02965a43407b3820228d5e94a217eedccdc543f04886c5",
+      "after_sha256": "00dcc131bb535505ba7022825942c650aa0418797338aaa4ec1471962e4bccb3"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md",
+      "before_sha256": "5a8a6814adab7cf26b0d1c537197a5904b99cfe9e3a4d84354d79c3b08ee762e",
+      "after_sha256": "023879177ec774872b4d0746c01da7c148ea210a5d374cda1395e587fe708480"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md",
+      "before_sha256": "5a8a6814adab7cf26b0d1c537197a5904b99cfe9e3a4d84354d79c3b08ee762e",
+      "after_sha256": "023879177ec774872b4d0746c01da7c148ea210a5d374cda1395e587fe708480"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md",
+      "before_sha256": "29ebc9733d0ab3be55174bec4850d5700cf2bbcd9627a6f467b5250a2dc52712",
+      "after_sha256": "2f763ace5595df9ed978958e825676f153d7558d69f850c6186a9f657156a867"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md",
+      "before_sha256": "29ebc9733d0ab3be55174bec4850d5700cf2bbcd9627a6f467b5250a2dc52712",
+      "after_sha256": "2f763ace5595df9ed978958e825676f153d7558d69f850c6186a9f657156a867"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r53_platen_xy_gradients_20261011\\README.md",
+      "before_sha256": "ed9f9624b1ca00077dc03760e65c3ca511b59855b27866e10f3c9aa71e0e5a7a",
+      "after_sha256": "9a26ef3654db6011b743ff88257e5a61c431ce11b767e78597b58d13c0e45973"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r53_platen_xy_gradients_20261011\\analysis\\parameter_summary\\README.md",
+      "before_sha256": "1353464b76a454046578783c91d6f736bc7e385d4becb3ac9e895830f24fe6c5",
+      "after_sha256": "7091ec779183b0e8f189b658c0e7d924fd774df16d877603aa181020cb226553"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_gradients_20261011_r53\\README.md",
+      "before_sha256": "ed9f9624b1ca00077dc03760e65c3ca511b59855b27866e10f3c9aa71e0e5a7a",
+      "after_sha256": "9a26ef3654db6011b743ff88257e5a61c431ce11b767e78597b58d13c0e45973"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_gradients_20261011_r53\\analysis\\parameter_summary\\README.md",
+      "before_sha256": "1353464b76a454046578783c91d6f736bc7e385d4becb3ac9e895830f24fe6c5",
+      "after_sha256": "7091ec779183b0e8f189b658c0e7d924fd774df16d877603aa181020cb226553"
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r53_platen_xy_gradients_20261011\\status.json",
+      "before_sha256": "1f83296e74da6a114a53c1df3559cc1f934b5255a7018e39733b03a00cb8dac8",
+      "after_sha256": "f5805b3e08d9dc362905e3d6d57c551634f233cea6f2dfec91b979986e01ee26"
+    },
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_gradients_20261011_r53\\status.json",
+      "before_sha256": "1f83296e74da6a114a53c1df3559cc1f934b5255a7018e39733b03a00cb8dac8",
+      "after_sha256": "f5805b3e08d9dc362905e3d6d57c551634f233cea6f2dfec91b979986e01ee26"
+    }
+  ]
+}

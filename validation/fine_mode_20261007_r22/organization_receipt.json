@@ -1,0 +1,43 @@
+{
+  "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/fine_mode_20261007",
+  "destination": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261007/fine_mode_20261007",
+  "files": [
+    {
+      "relative": "analyze.py",
+      "sha256": "10797a90966bf42f1142b249dff01d741ef049bb6138178f36d8bb1977a0e7a7"
+    },
+    {
+      "relative": "close.py",
+      "sha256": "f185f103443a9be0e813c15246d8ec685f4c71016c1aa0304e866bf725709279"
+    },
+    {
+      "relative": "fine_modes.py",
+      "sha256": "c4abffb6f43ec6860ed24b5843c7e104e2e925c19e372ad4fadae15145525bbd"
+    },
+    {
+      "relative": "prepare.py",
+      "sha256": "24a882e24bce30e12773b0caf630138d4dfe7c1da37d7c0770dcff1fce5f314c"
+    },
+    {
+      "relative": "recover_startup.py",
+      "sha256": "e02c2e6b9c3028707b37bc3c049bb944d8e5099d519558c855734960cbc3352d"
+    },
+    {
+      "relative": "run.py",
+      "sha256": "9a5b9f0c0230459bd83162470fcba261c65d7da56ee2c59f7d274c40910fbf54"
+    },
+    {
+      "relative": "shell_inventory.py",
+      "sha256": "8ff2215b827419c2aad3607df94bc64f7a18a90d524db18fac721ff5ba853df2"
+    },
+    {
+      "relative": "stop_startup.py",
+      "sha256": "c34cbd5ec8f81fc2d3b5b587865c0cea428a2b99c5adfb719e884eb41aa59ded"
+    },
+    {
+      "relative": "verify.py",
+      "sha256": "f41ff0bec8bfa43b647cf6ba9956f6541972b9917f74acad069e5b3ae01a1011"
+    }
+  ],
+  "bytes_preserved": true
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "Existing evidence only; no new FE/AD/FD runs",
+  "saved_path_samples": 388,
+  "saved_path_note": "388 logged observations of the existing complete paths; not every time step",
+  "shape_fd_steps": [
+    1e-07,
+    5e-08
+  ],
+  "sources_sha256": {
+    "validation/design_gradient_20261002/README.md": "10a3ecd8d10c5eb509d621183a52613fb751d70fc80eedb69f94870ef6fa3bf0",
+    "validation/near_term_20261003/README.md": "2539aebf0440ce974ff35c7ffcf41912054d77d5fc7a5014177a4619405d5797",
+    "validation/geometry_interface_20261003_r2/summary.json": "b1f6771c25b9af950b175d1aa7389e2a9ea8b93abc1f3d6caaecbffc0da65824",
+    "validation/learning_bridge_20261003_r3/README.md": "fa2f4bbc80faa9ca0ca5346e4cfb6060a6e74ea7d7a905355a71ba6520f7ce57",
+    "validation/thin_target_20261004_r5/step4_thickness_a01/README.md": "49409d74ba3c1f1da14b64ab17298b82c3b6f108fa5f2bc824c21ec1bdd029aa",
+    "validation/large_compression_20261005_r6/README.md": "78e0a46c6e8f68b79c0b2290a90d8cdb60a7d6c90c205acefb95ef0703bca039",
+    "validation/large_compression_20261005_r6/gradient20_path_20261005/README.md": "808a17eed9d0aac4d3a6405d1b53869cc6c48e77204bbaa8b32c69988e3c2b75",
+    "validation/void_continuation_20261006_r12/README.md": "f6a4e6e33c90a3bfe1d9723ee6625d4d61a1174dfc625a86947df02ae126bc7e",
+    "docs/history/scientific_reports_20261005/ROUND2_REPORT.md": "f798aba23ac067482879935803f2b77c8536ced0ef115bc71f4006bbdf75887f",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape/AD/shape/result.json": "63076444e7d468dcf55def0a1d9d74e08cbb31d6068f68408167f1c349bad407",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape_refined/FD/a_plus_h/result.json": "d0c59a051873584e4363e4c52fc8e1b8dd7a36542039d457bbca24a63d60dcd5",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape_refined/FD/a_minus_h/result.json": "55c93d2c6a8905cae6f6953995c51b0891bf73317b64572a3dcc5eb6c4734601",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape_refined/FD/a_plus_half/result.json": "dcd3ecee4377952747c621fa24f97cc7b8b3bf79d5472a3b4468021ca3494b52",
+    "validation/platen_xy_gradients_20261011_r53/G5_shape_refined/FD/a_minus_half/result.json": "d109693a7018e71c54a973f76db6ae51b5bfeb45ce7e2f0742210cfad048553f",
+    "validation/design_gradient_20261002/gradient_check.png": "b94e414dd0ce73cfa441175bb27261c01a43dd8d765a9a7eeee849191c7de0b5",
+    "validation/thin_target_20261004_r5/step4_thickness_a01/thickness_gradient.png": "4261f6547185f09d6bb9be9584911648526a4be8f310bbfe173c6390015db7de"
+  }
+}

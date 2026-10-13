@@ -1,0 +1,16 @@
+{
+  "scope": "single from-zero support-energy intervention, not default/20pct/design AD",
+  "factor": 0.1,
+  "stop_compression": 0.17,
+  "stop_time_seconds": 0.002840328835643321,
+  "production_unchanged": true,
+  "dynamic_jump_allowed": true,
+  "started_unix": 1791379815.7842326,
+  "protocol_sha256": "7be0b699ef1bd4ef3e7d959aa5247ec3d884622215581965fc0a9f7f352f25af",
+  "adapter_sha256": "e67a3458aaf4f85cbe06bf69689702355add62b31eae90793062798c9c28ca7e",
+  "exception_type": "TimeoutError",
+  "exception_message": "Controlled forward budget stop; not a numerical method failure",
+  "total_seconds": 1529.4802790379617,
+  "exit_code": 1,
+  "frozen_files_unchanged": true
+}

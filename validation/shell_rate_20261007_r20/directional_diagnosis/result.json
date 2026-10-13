@@ -1,0 +1,105 @@
+{
+  "protocol": {
+    "plan_step": 3,
+    "factor": "Mechanical response in one observed periodic jump direction",
+    "question": "Is the much later JAX jump accompanied by an earlier negative curvature in its observed jump direction, or is this direction still locally stiff?",
+    "direction": "r18 last_valid_field q minus accepted_a0.1600 q, fixed at all tested states; full periodic DOFs, pin unchanged",
+    "states": [
+      "accepted_a0.1000.npz",
+      "accepted_a0.1200.npz",
+      "accepted_a0.1400.npz",
+      "accepted_a0.1600.npz",
+      "last_valid_field.npz"
+    ],
+    "kernel": "same existing material stress derivative, same HEX27 basis/Gauss and complete JxW domain",
+    "partitions": [
+      "phi<=0.001",
+      "0.001<phi<0.01",
+      "0.01<=phi<0.5",
+      "phi>=0.5"
+    ],
+    "method": "deltaF : dP(F)[deltaF], summed at each frozen state, actual F/J and scale",
+    "not_an_eigenmode_or_static_buckling_point": true,
+    "negative_direction_is_sufficient_for_local_energy_nonconvexity": true,
+    "positive_direction_does_not_certify_global_stability": true,
+    "frozen_states_are_dynamic_not_exact_equilibria": true,
+    "no_time_advance_no_design_AD_no_input_changes": true,
+    "bounded_attempt": "one batched pass through five retained states; no parameter or direction scan",
+    "response_if_inconclusive": "Retain limited conclusion; do not claim stiffness proven or auto-fit a perturbation."
+  },
+  "rows": [
+    {
+      "state": "accepted_a0.1000.npz",
+      "compression": 0.1007710270331371,
+      "directional_second_variation_N_mm": 67.49040821555566,
+      "parts_N_mm": {
+        "deep_void": 0.24203277871174536,
+        "mixed_tail": 0.0830779609057347,
+        "main_interface": 2.6317111164986193,
+        "geometric_core": 64.53358635943955
+      },
+      "uncontinued_NH_part_N_mm": 67.16529747593817,
+      "minimum_NH_J": 0.5402662818760635
+    },
+    {
+      "state": "accepted_a0.1200.npz",
+      "compression": 0.1219042645487386,
+      "directional_second_variation_N_mm": 62.71569878716325,
+      "parts_N_mm": {
+        "deep_void": 0.2422263075672294,
+        "mixed_tail": 0.08341155260135237,
+        "main_interface": 2.4942574813586065,
+        "geometric_core": 59.89580344563607
+      },
+      "uncontinued_NH_part_N_mm": 62.39006092699468,
+      "minimum_NH_J": 0.4156875049419683
+    },
+    {
+      "state": "accepted_a0.1400.npz",
+      "compression": 0.14184607899724563,
+      "directional_second_variation_N_mm": 56.86516206224838,
+      "parts_N_mm": {
+        "deep_void": 0.24455959860338214,
+        "mixed_tail": 0.08598684566549912,
+        "main_interface": 2.337252596073135,
+        "geometric_core": 54.19736302190637
+      },
+      "uncontinued_NH_part_N_mm": 56.534615617979505,
+      "minimum_NH_J": 0.2989275449637534
+    },
+    {
+      "state": "accepted_a0.1600.npz",
+      "compression": 0.16007084008727882,
+      "directional_second_variation_N_mm": 39.216708887668005,
+      "parts_N_mm": {
+        "deep_void": 0.26046602319052936,
+        "mixed_tail": 0.47810578800602815,
+        "main_interface": 2.260395739259616,
+        "geometric_core": 36.21774133721183
+      },
+      "uncontinued_NH_part_N_mm": 38.47813707647144,
+      "minimum_NH_J": 0.07615572787062223
+    },
+    {
+      "state": "last_valid_field.npz",
+      "compression": 0.17536302435107093,
+      "directional_second_variation_N_mm": 62.464680858032246,
+      "parts_N_mm": {
+        "deep_void": 0.41466167413322313,
+        "mixed_tail": 0.11372978373130478,
+        "main_interface": 2.888782710618837,
+        "geometric_core": 59.047506689548875
+      },
+      "uncontinued_NH_part_N_mm": 61.93628940016771,
+      "minimum_NH_J": 0.09578537374221975
+    }
+  ],
+  "wall_seconds": 18.317563471966423,
+  "direction_max_nodal_increment_mm": 2.947740126248368,
+  "same_direction_at_all_states": true,
+  "actual_unclipped_F_J": true,
+  "new_time_advance": false,
+  "design_AD": false,
+  "not_full_spectrum_or_static_critical_point": true,
+  "material_source_sha256": "b31a64b8c500b348b17ede34c260b0a079ef45926fe6ddee9593e83fa7f0a98e"
+}

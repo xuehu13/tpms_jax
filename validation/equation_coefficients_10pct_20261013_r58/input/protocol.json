@@ -1,0 +1,48 @@
+{
+  "authorization": "2026-10-13 user: 都算一下压缩到10%的，0–0.5%压缩太小了",
+  "equation": "f=c1*cos(X)*cos(Z)+c2*sin(X)*sin(Y)*sin(Z)+c0=0; X=2pi*x/L",
+  "parameters": [
+    "c1",
+    "c2",
+    "c0"
+  ],
+  "baseline": [
+    -3.4,
+    4.6,
+    2.0
+  ],
+  "parameter_scales": [
+    3.4,
+    4.6,
+    2.0
+  ],
+  "relative_fd_step": 1e-05,
+  "thresholds": {
+    "relative_AD_FD": 0.01,
+    "relative_FD_halving": 0.01,
+    "nearzero_scaled_cutoff": 1e-06,
+    "nearzero_scaled_absolute_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ]
+  },
+  "target_compression": 0.1,
+  "target_time_s": 0.002,
+  "original_ramp": "20% at4ms, unchanged; stop at2ms=10%",
+  "required_objective": "complete0-to10pct loading-work VJP for all3 equation coefficients, each checked against two FD sizes; c2 complete JVP",
+  "auxiliary_objective": "terminal force complete JVP c2; c1/c0 FD only",
+  "prefix_reuse": "original r57 actual-geometry FD terminal states; c2 primal/tangent; original primal checkpoints; cumulative work and derivatives not reset",
+  "reverse_rule": "reverse all extension then all original prefix blocks, accumulate field cotangents, one initial-state pullback, one parameter pullback",
+  "failure_policy": "retain all partials; no tolerance relaxation, no FD ladder; attempt all12FD if dynamics valid; gate long VJP on c2work and work FD halving",
+  "total_wall_budget_s": 28800,
+  "started_unix": 1791855804.2664168,
+  "scope_excludes": [
+    "Abaqus",
+    "training",
+    "Git",
+    "heartbeat",
+    "other configurations",
+    "r53 resumption"
+  ]
+}

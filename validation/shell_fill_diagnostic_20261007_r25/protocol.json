@@ -1,0 +1,82 @@
+{
+  "research_question": "Does near-zero shell-in-solid embedding leave the original shell observed peak and curve sufficiently unchanged to interpret a subsequent filler-stiffness experiment?",
+  "authorization": "2026-10-07 user explicitly resumed work and requested <=4 steps then execution",
+  "plan_step": 1,
+  "status": "prepared_not_run",
+  "source_INP_sha256": "9f578dd1918aebec25e3cd2af1cbec8a71af1b75929bded0960e2e8ffc4c4c28",
+  "host": {
+    "type": "C3D8R",
+    "N": 32,
+    "elements": 32768,
+    "nodes": 35937,
+    "edge_mm": 0.3125,
+    "purpose": "ordinary diagnostic host; NOT equivalent to HEX27/C2/HRZ JAX"
+  },
+  "filler": {
+    "E_ratio_nearzero": 1e-08,
+    "E_MPa": 1e-07,
+    "nu": 0.3,
+    "density_tonne_per_mm3": 1e-13,
+    "planned_finite_E_ratio": 0.0001,
+    "same_mass_for_both_stiffness_levels": true,
+    "full_cube_including_overlap": true,
+    "material": "built-in compressible Neo-Hooke; actual geometry may distort and terminate"
+  },
+  "estimated_mass": {
+    "shell_area_mm2": 266.0641133756185,
+    "shell_tonne": 1.3303205668780924e-07,
+    "added_host_tonne": 1e-10,
+    "added_over_shell": 0.0007516985190620133,
+    "density_not_current_JAX_HRZ_distribution": true
+  },
+  "coupling": {
+    "embedded": "all shell translations; original rotational equations retained",
+    "shell_translation_equations_removed": 1269,
+    "shell_rotation_equations_retained": 1269,
+    "host_PBC": "XYZ, unique canonical representatives, lateral macro strain zero",
+    "gauge": "host interpolation at original shell pin position fixed to zero",
+    "absolute_exterior_tolerance_mm": 1e-09,
+    "roundoff_tolerance": 0.0,
+    "no_displacement_BC_or_translation_equation_on_embedded_shell": true
+  },
+  "loading": {
+    "T20_seconds": 0.004,
+    "a_stop": 0.17,
+    "stop_seconds": 0.002840328835643321,
+    "smoothstep_and_control_displacement_unchanged": true,
+    "hold": false,
+    "no_contact": true,
+    "no_plasticity": true,
+    "no_mass_scaling": true
+  },
+  "predeclared_gate": {
+    "purpose": "attribution screen, NOT a physical validation standard",
+    "need_complete_to_a017": true,
+    "observed_peak_shift_max_percentage_points": 0.5,
+    "peak_force_relative_original_fast_peak_max": 0.05,
+    "curve_RMS_original_fixed_2p25891N_max": 0.05,
+    "curve_RMS_matched_fast_peak_max": 0.05,
+    "window_compression": [
+      0.01,
+      0.17
+    ],
+    "grid_points": 1001,
+    "fixed_denominator_N": 2.25891,
+    "energy_drift_max_relative_work": 0.01,
+    "artificial_energy_max_relative_work": 0.05,
+    "rationale": "peak gate is far smaller than the existing 4.1168pp mismatch; 5% curve/force screen avoids attributing a coupling effect to stiffness",
+    "jump_KE_no_quasistatic_rejection": true,
+    "failure_policy": "stop finite stiffness attribution; retain partial/failure; no VUEL, stabilization, or silent mesh sweep"
+  },
+  "future_finite_trial": {
+    "launch_only_after_nearzero_gate_pass": true,
+    "same_grid_coupling_mass_loading_and_outputs": true
+  },
+  "native_directory": "E:/ABAQUS/2026temp/Abaqus_Work/tpms_jax_abaqus/shell_fill_20261007_r25_nearzero",
+  "documentation": {
+    "embedded": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAECSTRefMap/simacst-c-embeddedelement.htm",
+    "version_scope": "available official 2025 documentation; installed 2026 syntax checked by datacheck"
+  },
+  "production_JAX_unchanged": true,
+  "design_AD": false
+}

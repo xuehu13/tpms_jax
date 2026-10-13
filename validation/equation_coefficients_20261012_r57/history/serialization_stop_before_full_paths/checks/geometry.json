@@ -1,0 +1,943 @@
+{
+  "coefficients": [
+    {
+      "coefficient": "c1",
+      "fields": [
+        {
+          "field": "scale",
+          "relative_AD_FD": 1.2440597762628525e-08,
+          "relative_FD_halving": 2.0260566964639295e-05,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "node_mass",
+          "relative_AD_FD": 8.731705035278876e-09,
+          "relative_FD_halving": 6.325878619034174e-06,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "periodic_mass",
+          "relative_AD_FD": 8.729368135541127e-09,
+          "relative_FD_halving": 6.300269486408606e-06,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "macro_c",
+          "relative_AD_FD": 8.885441586340196e-09,
+          "relative_FD_halving": 6.925181166279702e-06,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "macro_schur",
+          "relative_AD_FD": 2.7816829952366476e-19,
+          "relative_FD_halving": 8.157275916800975e-19,
+          "near_zero": true,
+          "passed": true
+        },
+        {
+          "field": "contact_area",
+          "relative_AD_FD": 1.596450302830792e-08,
+          "relative_FD_halving": 4.788010594457583e-08,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "contact_Q2",
+          "relative_AD_FD": 3.167305858804672e-10,
+          "relative_FD_halving": 9.359206150873188e-10,
+          "near_zero": false,
+          "passed": true
+        }
+      ],
+      "partitions": [
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662337593174824e-05,
+          "min_edge_length_normalized": 0.006567540917512955,
+          "max_longest_edge_squared_over_double_area": 7.110432709448744,
+          "total_surface_area_normalized": 3.0425887215532645,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.987566329527908e-13,
+          "minJacden": 14.868549677746223,
+          "root_iteration_min_abs_denominator": 14.868549677746223,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 1.3451196656381331e-06,
+          "parameters": [
+            -3.399966,
+            4.6,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 2.4716883611426635e-07,
+          "closest_min_bary": -1.0295022524579859e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365086658552625e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 3.888556143749611e-14
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662338289751204e-05,
+          "min_edge_length_normalized": 0.00656752536106316,
+          "max_longest_edge_squared_over_double_area": 7.110558715482382,
+          "total_surface_area_normalized": 3.0425909734197467,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.99644811372491e-13,
+          "minJacden": 14.868910775480352,
+          "root_iteration_min_abs_denominator": 14.868878915011756,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 1.3450898811665217e-06,
+          "parameters": [
+            -3.400034,
+            4.6,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 5.490206021455431e-08,
+          "closest_min_bary": -1.049176644821012e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365088699431021e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 3.889943922530392e-14
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.6623377672783026e-05,
+          "min_edge_length_normalized": 0.006567537028289661,
+          "max_longest_edge_squared_over_double_area": 7.110464212075496,
+          "total_surface_area_normalized": 3.042589284530468,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.99644811372491e-13,
+          "minJacden": 14.868639953001903,
+          "root_iteration_min_abs_denominator": 14.868639953001903,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 6.725561096807102e-07,
+          "parameters": [
+            -3.3999829999999998,
+            4.6,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 1.1189461955506967e-07,
+          "closest_min_bary": -1.0914667713863456e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.36508716865306e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 4.0592529337857286e-14
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662338115566506e-05,
+          "min_edge_length_normalized": 0.006567529250064756,
+          "max_longest_edge_squared_over_double_area": 7.110527215092296,
+          "total_surface_area_normalized": 3.042590410463708,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.992007221626409e-13,
+          "minJacden": 14.86882050186896,
+          "root_iteration_min_abs_denominator": 14.868804571360617,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 6.725486636972103e-07,
+          "parameters": [
+            -3.400017,
+            4.6,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 1.5865239020670192e-07,
+          "closest_min_bary": -1.1850485412267618e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365088189092473e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 4.0668857170800266e-14
+        }
+      ],
+      "passed": true
+    },
+    {
+      "coefficient": "c2",
+      "fields": [
+        {
+          "field": "scale",
+          "relative_AD_FD": 8.02392548453928e-09,
+          "relative_FD_halving": 1.0000912777209918e-05,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "node_mass",
+          "relative_AD_FD": 5.2781499680622265e-09,
+          "relative_FD_halving": 3.1818623865058706e-06,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "periodic_mass",
+          "relative_AD_FD": 5.27788019235076e-09,
+          "relative_FD_halving": 3.181699445580464e-06,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "macro_c",
+          "relative_AD_FD": 4.928704759661589e-19,
+          "relative_FD_halving": 3.612810662518215e-16,
+          "near_zero": true,
+          "passed": true
+        },
+        {
+          "field": "macro_schur",
+          "relative_AD_FD": 1.2343206042400882e-20,
+          "relative_FD_halving": 2.312040019696729e-20,
+          "near_zero": true,
+          "passed": true
+        },
+        {
+          "field": "contact_area",
+          "relative_AD_FD": 4.383368904624385e-09,
+          "relative_FD_halving": 4.5482761933328655e-09,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "contact_Q2",
+          "relative_AD_FD": 0.0,
+          "relative_FD_halving": 0.0,
+          "near_zero": true,
+          "passed": true
+        }
+      ],
+      "partitions": [
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662338026421898e-05,
+          "min_edge_length_normalized": 0.006567532094070869,
+          "max_longest_edge_squared_over_double_area": 7.110498806351178,
+          "total_surface_area_normalized": 3.042595802885521,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.987566329527908e-13,
+          "minJacden": 14.868730227709479,
+          "root_iteration_min_abs_denominator": 14.868730227709479,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 9.416258802336251e-07,
+          "parameters": [
+            -3.4,
+            4.600046,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 2.1122839729921722e-07,
+          "closest_min_bary": -1.216219815901906e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.3650879279102e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 5.330458296981533e-14
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.6623378564987787e-05,
+          "min_edge_length_normalized": 0.006567534184335139,
+          "max_longest_edge_squared_over_double_area": 7.110492621569198,
+          "total_surface_area_normalized": 3.0425838920560224,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.99644811372491e-13,
+          "minJacden": 14.868730227709479,
+          "root_iteration_min_abs_denominator": 14.868730227709479,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 9.416398641240407e-07,
+          "parameters": [
+            -3.4,
+            4.599953999999999,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 3.555443763423581e-07,
+          "closest_min_bary": -9.603429163007604e-15,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365087430057628e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 5.330458296981533e-14
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.6623379839025384e-05,
+          "min_edge_length_normalized": 0.006567532616589897,
+          "max_longest_edge_squared_over_double_area": 7.110497260153036,
+          "total_surface_area_normalized": 3.042592825200494,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.992007221626409e-13,
+          "minJacden": 14.868730227709479,
+          "root_iteration_min_abs_denominator": 14.868730227709479,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 4.708146880641838e-07,
+          "parameters": [
+            -3.4,
+            4.600022999999999,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 2.495229215757223e-07,
+          "closest_min_bary": -9.667388733846381e-15,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365087803334125e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 5.330458296981533e-14
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662337898940951e-05,
+          "min_edge_length_normalized": 0.006567533661722019,
+          "max_longest_edge_squared_over_double_area": 7.110494167762047,
+          "total_surface_area_normalized": 3.042586869785745,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 9.99644811372491e-13,
+          "minJacden": 14.868730227709479,
+          "root_iteration_min_abs_denominator": 14.868730227709479,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 4.7081818405130193e-07,
+          "parameters": [
+            -3.4,
+            4.599977,
+            2.0
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 3.287190684088579e-08,
+          "closest_min_bary": -1.176836406102666e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365087554407632e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 5.330458296981533e-14
+        }
+      ],
+      "passed": true
+    },
+    {
+      "coefficient": "c0",
+      "fields": [
+        {
+          "field": "scale",
+          "relative_AD_FD": 1.0086419473908523e-08,
+          "relative_FD_halving": 3.026946946268171e-08,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "node_mass",
+          "relative_AD_FD": 7.317342312996658e-09,
+          "relative_FD_halving": 2.1960371669297008e-08,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "periodic_mass",
+          "relative_AD_FD": 7.322315659605919e-09,
+          "relative_FD_halving": 2.19754694948459e-08,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "macro_c",
+          "relative_AD_FD": 7.564637388130604e-09,
+          "relative_FD_halving": 2.2701347471782956e-08,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "macro_schur",
+          "relative_AD_FD": 3.3472824349769233e-19,
+          "relative_FD_halving": 1.1706322745245283e-18,
+          "near_zero": true,
+          "passed": true
+        },
+        {
+          "field": "contact_area",
+          "relative_AD_FD": 1.4526867276577983e-08,
+          "relative_FD_halving": 4.3610814728365755e-08,
+          "near_zero": false,
+          "passed": true
+        },
+        {
+          "field": "contact_Q2",
+          "relative_AD_FD": 8.853394906030394e-11,
+          "relative_FD_halving": 2.0720009270265805e-10,
+          "near_zero": false,
+          "passed": true
+        }
+      ],
+      "partitions": [
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662337508153819e-05,
+          "min_edge_length_normalized": 0.006567541962523325,
+          "max_longest_edge_squared_over_double_area": 7.110429617824184,
+          "total_surface_area_normalized": 3.04258276609632,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 6.217248937900877e-15,
+          "minJacden": 14.868698365048512,
+          "root_iteration_min_abs_denominator": 14.868698365048512,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 1.3451062144116097e-06,
+          "parameters": [
+            -3.4,
+            4.6,
+            2.00002
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 2.0544353249450564e-07,
+          "closest_min_bary": -1.2790936796688021e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365086409452059e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 2.220446049250313e-16
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662338374653274e-05,
+          "min_edge_length_normalized": 0.006567524315809387,
+          "max_longest_edge_squared_over_double_area": 7.110561808639739,
+          "total_surface_area_normalized": 3.0425969287922996,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 6.8833827526759706e-15,
+          "minJacden": 14.868762088178066,
+          "root_iteration_min_abs_denominator": 14.868730227709479,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 1.3451033321400015e-06,
+          "parameters": [
+            -3.4,
+            4.6,
+            1.99998
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 2.7582248972388332e-08,
+          "closest_min_bary": -1.3604666830503045e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365088948183193e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 1.942890293094024e-16
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662337724782676e-05,
+          "min_edge_length_normalized": 0.006567537550825193,
+          "max_longest_edge_squared_over_double_area": 7.110462666071598,
+          "total_surface_area_normalized": 3.042586306812497,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 7.549516567451064e-15,
+          "minJacden": 14.86871429665304,
+          "root_iteration_min_abs_denominator": 14.86871429665304,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 6.72552746989764e-07,
+          "parameters": [
+            -3.4,
+            4.6,
+            2.00001
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 1.0792104788873561e-07,
+          "closest_min_bary": -1.0232701820210697e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.365087044146538e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 2.474691458698164e-16
+        },
+        {
+          "changed_nearest_rim_assignments": 0,
+          "background_cells_unchanged": true,
+          "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+          "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+          "vertex_count": 9351,
+          "triangle_count": 17986,
+          "raw_max_abs_f": 0.013637642167362962,
+          "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+          "baseline_projection_max_normalized": 0.000427150105050385,
+          "baseline_projection_rms_normalized": 0.00017833922480820646,
+          "baseline_projected_max_abs_f": 9.99644811372491e-13,
+          "baseline_direction_periodic_gap": 0.0,
+          "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+          "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+          "rim_counts": [
+            126,
+            126
+          ],
+          "min_triangle_area_normalized": 3.662338158032404e-05,
+          "min_edge_length_normalized": 0.006567528727468282,
+          "max_longest_edge_squared_over_double_area": 7.110528761479385,
+          "total_surface_area_normalized": 3.0425933881604865,
+          "triangle_orientation_reversals": 0,
+          "max_locked_boundary_coordinate_error": 0.0,
+          "max_periodic_vertex_gap_normalized": 0.0,
+          "periodic_unpaired_boundary_groups": [
+            0,
+            0,
+            0
+          ],
+          "boundary_coordinates_fixed": true,
+          "root_max_abs_f": 6.439293542825908e-15,
+          "minJacden": 14.868746158217817,
+          "root_iteration_min_abs_denominator": 14.868730227709479,
+          "root_iterations": 2,
+          "root_max_abs_line_shift": 6.725520263359933e-07,
+          "parameters": [
+            -3.4,
+            4.6,
+            1.99999
+          ],
+          "parameter_names": [
+            "c1",
+            "c2",
+            "c0"
+          ],
+          "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+          "min_distance_normalized": 2.8219483310545907e-07,
+          "closest_min_bary": -1.406983405023788e-14,
+          "closest_max_bary": 1.0,
+          "closest_min_triangle_gram_determinant": 5.3650883135120305e-09,
+          "zero_distance_queries": 0,
+          "selected_branch_only": true,
+          "nearest_point_uniqueness_certified": false,
+          "AD_rule_uses_FD": false,
+          "contact_assignment_or_interpolation_included": false,
+          "max_uniform_coefficient_scaling_vertex_null": 1.942890293094024e-16
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "projection": {
+    "source_path": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+    "source_sha256": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+    "vertex_count": 9351,
+    "triangle_count": 17986,
+    "raw_max_abs_f": 0.013637642167362962,
+    "baseline_projection": "strict f=0; constrained-normal fixed lines; no residual compensation",
+    "baseline_projection_max_normalized": 0.000427150105050385,
+    "baseline_projection_rms_normalized": 0.00017833922480820646,
+    "baseline_projected_max_abs_f": 9.99644811372491e-13,
+    "baseline_direction_periodic_gap": 0.0,
+    "baseline_strict_direction_min_abs_denominator": 14.868730227709479,
+    "baseline_direction_definition": "constrained unit normal at the strict projected baseline",
+    "rim_counts": [
+      126,
+      126
+    ],
+    "min_triangle_area_normalized": 3.6623379414088694e-05,
+    "min_edge_length_normalized": 0.006567533139140226,
+    "max_longest_edge_squared_over_double_area": 7.110495713952291,
+    "total_surface_area_normalized": 3.0425898475006,
+    "triangle_orientation_reversals": 0,
+    "max_locked_boundary_coordinate_error": 0.0,
+    "max_periodic_vertex_gap_normalized": 0.0,
+    "periodic_unpaired_boundary_groups": [
+      0,
+      0,
+      0
+    ],
+    "boundary_coordinates_fixed": true,
+    "root_max_abs_f": 9.99644811372491e-13,
+    "minJacden": 14.868730227709479,
+    "root_iteration_min_abs_denominator": 14.868730227709479,
+    "root_iterations": 0,
+    "root_max_abs_line_shift": 0.0,
+    "parameters": [
+      -3.4,
+      4.6,
+      2.0
+    ],
+    "parameter_names": [
+      "c1",
+      "c2",
+      "c0"
+    ],
+    "root_family": "strict f(X0+s*D,p)=0; fixed constrained-normal D and triangle connectivity",
+    "min_distance_normalized": 2.3379149659768215e-08,
+    "closest_min_bary": -1.5348981302634747e-14,
+    "closest_max_bary": 1.0,
+    "closest_min_triangle_gram_determinant": 5.365087678833025e-09,
+    "zero_distance_queries": 0,
+    "selected_branch_only": true,
+    "nearest_point_uniqueness_certified": false,
+    "AD_rule_uses_FD": false,
+    "contact_assignment_or_interpolation_included": false,
+    "max_uniform_coefficient_scaling_vertex_null": 5.3852755588224e-14
+  },
+  "common_scaling_field_tangent_l2": 2.348446255667057e-10,
+  "common_scaling_max_distance_error_over_L": 0.0,
+  "passed": true
+}

@@ -1,0 +1,85 @@
+{
+  "status": "ok",
+  "K_background_N_per_mm": 4.916454681739766,
+  "K_shell_N_per_mm": 4.651218897465464,
+  "relative_stiffness_difference": 0.0570250057288928,
+  "denominator": "new matched initial S3R Standard stiffness",
+  "background_energy_N_mm": 2.4582273408697526e-06,
+  "shell_total_energy_N_mm": 2.32560968976836e-06,
+  "occupancy_volume_mm3": 132.51935766125433,
+  "stiffness_weighted_volume_mm3": 132.60610572548822,
+  "shell_area_times_thickness_mm3": 133.03205668780924,
+  "volume_definition_note": "Area times thickness is a shell measure; closest-distance bands on a curved surface are a different 3D geometry. Their volumes are not assumed identical.",
+  "regions": [
+    {
+      "region": "deep_void",
+      "phi_lower": 0,
+      "phi_upper": 0.001,
+      "points": 730816,
+      "geometric_quadrature_volume_mm3": 826.0883231875979,
+      "occupancy_volume_mm3": 0.005704416828824215,
+      "stiffness_weighted_volume_mm3": 0.08831267870590111,
+      "energy_N_mm": 1.6732540153835782e-08,
+      "energy_fraction": 0.006806750488714193,
+      "macro_Fz_N": -1.3111422752568321e-05
+    },
+    {
+      "region": "void_transition",
+      "phi_lower": 0.001,
+      "phi_upper": 0.01,
+      "points": 12638,
+      "geometric_quadrature_volume_mm3": 14.138701848368893,
+      "occupancy_volume_mm3": 0.05574954008025145,
+      "stiffness_weighted_volume_mm3": 0.057157835311080325,
+      "energy_N_mm": 3.6915740623747266e-09,
+      "energy_fraction": 0.0015017219933240998,
+      "macro_Fz_N": -3.397204242806601e-06
+    },
+    {
+      "region": "interface",
+      "phi_lower": 0.01,
+      "phi_upper": 0.9,
+      "points": 35770,
+      "geometric_quadrature_volume_mm3": 40.14266632875453,
+      "occupancy_volume_mm3": 13.489112044633647,
+      "stiffness_weighted_volume_mm3": 13.491777400062059,
+      "energy_N_mm": 2.5248772387863146e-07,
+      "energy_fraction": 0.10271129918736402,
+      "macro_Fz_N": -0.0004382661777976839
+    },
+    {
+      "region": "solid_core",
+      "phi_lower": 0.9,
+      "phi_upper": 1,
+      "points": 105512,
+      "geometric_quadrature_volume_mm3": 119.63030863527713,
+      "occupancy_volume_mm3": 118.96879165971161,
+      "stiffness_weighted_volume_mm3": 118.9688578114092,
+      "energy_N_mm": 2.1853155027749112e-06,
+      "energy_fraction": 0.8889802283305978,
+      "macro_Fz_N": -0.004461679876946711
+    }
+  ],
+  "local_normal_diagnostic": {
+    "occupied_point_count": 141282,
+    "normal_stress_relaxation_energy_N_mm": 1.430151213903394e-08,
+    "normal_stress_relaxation_fraction_of_total_U": 0.005817815098409034,
+    "transverse_shear_relaxation_energy_N_mm": 4.9618409700012727e-08,
+    "transverse_shear_relaxation_fraction_of_total_U": 0.020184630149975097,
+    "interpretation": "Pointwise independent strain relaxation at fixed in-plane strain; generally incompatible. Not a globally admissible correction, not causal proof, not a replacement 3D constitutive law."
+  },
+  "displacement_diagnostic": {
+    "rigid_translation_removed_mm": [
+      8.055265356530059e-05,
+      -1.5540792329484863e-05,
+      -0.00032055271194910643
+    ],
+    "RMS_displacement_difference_mm": 6.498147780667587e-06,
+    "max_displacement_difference_mm": 1.928499718740885e-05,
+    "normalization_delta_mm": 0.001,
+    "RMS_over_applied_delta": 0.006498147780667587,
+    "interpretation": "Unweighted existing-node samples, after removing the different pin translations. Diagnostic of displacement field, not independent mesh accuracy certification."
+  },
+  "full_20pct_accuracy_certified": false,
+  "design_gradient_certified": false
+}

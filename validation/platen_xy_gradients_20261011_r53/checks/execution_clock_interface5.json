@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791683650.8952022,
+  "deadline_unix": 1791689050.8952022,
+  "pid": 775533,
+  "steps": 24789,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/interface_protocol.json"
+}

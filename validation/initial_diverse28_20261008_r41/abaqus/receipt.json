@@ -1,0 +1,9 @@
+{
+  "job_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\initial_diverse28_20261008_r41_diverse28",
+  "input_sha256": "98e517c965510d35b2d5bfe1e251c80f57d5bbc00a1b2bda9cbdc3309a209d3b",
+  "job_seconds": 24.625696699949913,
+  "job_returncode": 0,
+  "extract_seconds": 0.9784723999910057,
+  "extract_returncode": 0,
+  "input_unchanged": true
+}

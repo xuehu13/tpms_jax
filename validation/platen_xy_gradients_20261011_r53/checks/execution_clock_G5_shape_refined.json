@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791739768.0300417,
+  "deadline_unix": 1791745168.0300417,
+  "pid": 959399,
+  "steps": 24789,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/G5_shape_refined_execution.json"
+}

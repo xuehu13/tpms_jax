@@ -1,0 +1,228 @@
+{
+  "scope": "Saved complete-path diagnosis and smaller geometry-only FD; no new dynamic solve",
+  "original_full_gate_passed": false,
+  "original_work_passed": true,
+  "original_terminal_force_passed": false,
+  "path_samples": [
+    {
+      "target_compression": 0.01,
+      "actual_sample_compression": 0.01000767759584046,
+      "objective": "loading_work",
+      "AD": 0.00019402616904069193,
+      "FD_h": 0.00019466400869722067,
+      "FD_half": 0.00019470012043582008,
+      "AD_FD_absolute": 6.739513951281508e-07,
+      "AD_FD_relative": 0.0034614842231199777,
+      "FD_halving_relative": 0.00018547363257185491
+    },
+    {
+      "target_compression": 0.01,
+      "actual_sample_compression": 0.01000767759584046,
+      "objective": "instantaneous_force",
+      "AD": 0.0014259919670025953,
+      "FD_h": 0.0015477812781439226,
+      "FD_half": 0.0016444040834562301,
+      "AD_FD_absolute": 0.0002184121164536348,
+      "AD_FD_relative": 0.1328214388732077,
+      "FD_halving_relative": 0.05875855349934695
+    },
+    {
+      "target_compression": 0.02,
+      "actual_sample_compression": 0.020043228750320153,
+      "objective": "loading_work",
+      "AD": 0.00038384306466568956,
+      "FD_h": 0.0003846366776472099,
+      "FD_half": 0.000384679028492263,
+      "AD_FD_absolute": 8.359638265734311e-07,
+      "AD_FD_relative": 0.002173146349698252,
+      "FD_halving_relative": 0.00011009397943813092
+    },
+    {
+      "target_compression": 0.02,
+      "actual_sample_compression": 0.020043228750320153,
+      "objective": "instantaneous_force",
+      "AD": -0.0027332500607949667,
+      "FD_h": -0.0027950023262501844,
+      "FD_half": -0.0029238393617347924,
+      "AD_FD_absolute": 0.0001905893009398257,
+      "AD_FD_relative": 0.06518460057489066,
+      "FD_halving_relative": 0.044064334440099176
+    },
+    {
+      "target_compression": 0.03,
+      "actual_sample_compression": 0.029902105895433073,
+      "objective": "loading_work",
+      "AD": 0.0005217791995561759,
+      "FD_h": 0.0005217986975836197,
+      "FD_half": 0.0005222029753060298,
+      "AD_FD_absolute": 4.2377574985383217e-07,
+      "AD_FD_relative": 0.0008115153874898631,
+      "FD_halving_relative": 0.0007741773630705719
+    },
+    {
+      "target_compression": 0.03,
+      "actual_sample_compression": 0.029902105895433073,
+      "objective": "instantaneous_force",
+      "AD": 2.3466602713788527e-05,
+      "FD_h": 0.00020113380627684307,
+      "FD_half": 9.344909734920748e-05,
+      "AD_FD_absolute": 6.998249463541895e-05,
+      "AD_FD_relative": 0.7488835806931682,
+      "FD_halving_relative": 1.1523354637148762
+    },
+    {
+      "target_compression": 0.04,
+      "actual_sample_compression": 0.04001570872048571,
+      "objective": "loading_work",
+      "AD": 0.0005512372814652873,
+      "FD_h": 0.000551785415414674,
+      "FD_half": 0.0005515931311705913,
+      "AD_FD_absolute": 3.55849705304008e-07,
+      "AD_FD_relative": 0.0006451307770073632,
+      "FD_halving_relative": 0.0003485979669011102
+    },
+    {
+      "target_compression": 0.04,
+      "actual_sample_compression": 0.04001570872048571,
+      "objective": "instantaneous_force",
+      "AD": -0.009544958997158277,
+      "FD_h": -0.009312688188378715,
+      "FD_half": -0.009525959538958517,
+      "AD_FD_absolute": 1.899945819975983e-05,
+      "AD_FD_relative": 0.001994492851041131,
+      "FD_halving_relative": 0.022388437585482278
+    },
+    {
+      "target_compression": 0.05,
+      "actual_sample_compression": 0.04999999999998118,
+      "objective": "loading_work",
+      "AD": 0.0006712776899371033,
+      "FD_h": 0.0006733229779287697,
+      "FD_half": 0.0006740132152405209,
+      "AD_FD_absolute": 2.735525303417647e-06,
+      "AD_FD_relative": 0.00405856330642045,
+      "FD_halving_relative": 0.0010240708878458827
+    },
+    {
+      "target_compression": 0.05,
+      "actual_sample_compression": 0.04999999999998118,
+      "objective": "instantaneous_force",
+      "AD": 0.0013517795834398503,
+      "FD_h": 0.0007833179394012291,
+      "FD_half": 0.0009368832953882134,
+      "AD_FD_absolute": 0.0004148962880516369,
+      "AD_FD_relative": 0.4428473536607541,
+      "FD_halving_relative": 0.1639108699481635
+    }
+  ],
+  "terminal_state_partials": [
+    0.0006712776899371033,
+    0.001229915068197971
+  ],
+  "terminal_field_partials": [
+    0.0,
+    0.00012186451524187155
+  ],
+  "terminal_AD_sum": [
+    0.0006712776899371033,
+    0.0013517795834398424
+  ],
+  "final_contact": {
+    "top_active_count": 156,
+    "top_force_derivative_by_point_sum_N": 0.0013517795834401686,
+    "absolute_point_contributions_N": 2.473489640270719,
+    "cancellation_ratio": 0.0005465070730161695,
+    "largest_positive_point_contribution_N": 0.06414660726957523,
+    "largest_negative_point_contribution_N": -0.064077765565447,
+    "minimum_top_gap_abs_with_area_normalized": 1.5470095822145424e-06
+  },
+  "FD_diagnostics": [
+    {
+      "h": 0.0001,
+      "actual_full_path_FD": [
+        0.0006733229779287697,
+        0.0007833179394012291
+      ],
+      "final_observable_linearization_on_FD_state_and_field_tangent": [
+        0.0006733229779287697,
+        0.000783317180874394
+      ],
+      "observable_nonlinearity_remainder": [
+        0.0,
+        7.585268350929208e-10
+      ],
+      "FD_state_tangent_relative_L2_vs_AD": {
+        "q": 0.004994236905187449,
+        "macro": 0.06662076714344632,
+        "vq": 0.603933466247821,
+        "vmacro": 0.4248990351345712,
+        "aq": 1.0060019481199167,
+        "amacro": 0.9402783457582023,
+        "time": 0.0,
+        "work": 0.0030468582858132315
+      },
+      "final_top_active_set_changes_plus": 0,
+      "final_top_active_set_changes_minus": 0
+    },
+    {
+      "h": 5e-05,
+      "actual_full_path_FD": [
+        0.0006740132152405209,
+        0.0009368832953882134
+      ],
+      "final_observable_linearization_on_FD_state_and_field_tangent": [
+        0.0006740132152405209,
+        0.0009368827413658743
+      ],
+      "observable_nonlinearity_remainder": [
+        0.0,
+        5.540223390731319e-10
+      ],
+      "FD_state_tangent_relative_L2_vs_AD": {
+        "q": 0.0031810661151522334,
+        "macro": 0.037459913914598346,
+        "vq": 0.5677340506656834,
+        "vmacro": 0.21370602635651118,
+        "aq": 0.9994024297101426,
+        "amacro": 0.8738253230480223,
+        "time": 0.0,
+        "work": 0.004075102367358518
+      },
+      "final_top_active_set_changes_plus": 0,
+      "final_top_active_set_changes_minus": 0
+    }
+  ],
+  "geometry_only": [
+    {
+      "h": 2.5e-05,
+      "field_FD_relative_L2_vs_AD": {
+        "scale": 0.0011843326670435764,
+        "nodem": 0.001160076661759986,
+        "mass": 0.0011584531013409712,
+        "macro_c": 0.0011505999647958634,
+        "macro_schur": 1.690696108910198e-05,
+        "rim_area": 6.801031205896154e-09
+      }
+    },
+    {
+      "h": 1.25e-05,
+      "field_FD_relative_L2_vs_AD": {
+        "scale": 0.0011266982810028358,
+        "nodem": 0.0011332202880135725,
+        "mass": 0.0011316343277513895,
+        "macro_c": 0.0011267576406199195,
+        "macro_schur": 1.663480532194076e-05,
+        "rim_area": 1.0337867980836729e-08
+      }
+    }
+  ],
+  "force_gradient_path_peak_absolute_N": 0.015484400822792801,
+  "terminal_force_gradient_AD_FD_absolute_N": 0.0004148962880516369,
+  "actual_force_response_difference_plus_half_minus_half_N": 9.368832953882134e-08,
+  "normalized_loading_work_sensitivity_at_scale_0p01": 1.3987600136881302e-05,
+  "normalized_terminal_force_sensitivity_at_scale_0p01": 7.416160892490896e-06,
+  "no_time_steps_executed": true,
+  "new_full_FE_submissions": 0,
+  "protected_sources_unchanged": true,
+  "wall_minutes": 0.873288102944692
+}

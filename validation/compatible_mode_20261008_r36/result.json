@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "checks": {
+    "original_nodes_zero": true,
+    "entire_boundary_zero": true,
+    "normal_sign_invariance": true,
+    "r34_same_rule_energy_reproduced": true,
+    "positive_mode_stiffness": true,
+    "energy_identity": true,
+    "two_level_U_g_k_release_stable": true,
+    "budget": true
+  },
+  "levels": [
+    {
+      "points_per_axis": 8,
+      "selected_energy_N_mm": 1.5955803290000556e-06,
+      "release_N_mm": 5.906093750361485e-11,
+      "release_over_r34_full_energy": 2.3845603764449745e-05,
+      "minimum_mode_stiffness_N_mm": 0.027827804868975098,
+      "maximum_mode_amplitude_normalized": 2.550187650722359e-07,
+      "maximum_sampled_extra_displacement_mm": 4.692142726550959e-07,
+      "energy_identity_relative_to_full": 6.679413487930858e-19,
+      "seconds": 0.4837040019920096
+    },
+    {
+      "points_per_axis": 12,
+      "selected_energy_N_mm": 1.595550318013963e-06,
+      "release_N_mm": 5.873858978310037e-11,
+      "release_over_r34_full_energy": 2.3715457235412824e-05,
+      "minimum_mode_stiffness_N_mm": 0.02784484281255477,
+      "maximum_mode_amplitude_normalized": 2.536490654023679e-07,
+      "maximum_sampled_extra_displacement_mm": 5.187802420226117e-07,
+      "energy_identity_relative_to_full": 8.015296185517029e-18,
+      "seconds": 1.4554571209009737
+    }
+  ],
+  "node_zero_error": 0.0,
+  "boundary_zero_error": 0.0,
+  "normal_sign_error": 0.0,
+  "same_rule_total_energy_N_mm": 2.4768061269082295e-06,
+  "r34_full_energy_N_mm": 2.47680612690822e-06,
+  "reproduction_relative_error": 3.774758283725532e-15,
+  "dense_relative_changes": {
+    "U": 1.880917558905182e-05,
+    "g": 0.008836374561090564,
+    "k": 0.0003580391771221193,
+    "release": 0.0054878355388645605
+  },
+  "clear_release_gate_fraction": 0.005,
+  "supports_one_global_confirmation": false,
+  "is_new_global_stiffness": false,
+  "original_5pct_root_cause_certified": false,
+  "preparation_seconds": 0.7953477610135451,
+  "wall_seconds": 2.7346921819262207,
+  "production_changed": false
+}

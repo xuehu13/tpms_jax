@@ -1,0 +1,46 @@
+[
+  {
+    "time": 0.002826859276488759,
+    "attempted_end_time": 0.0028613331701044754,
+    "dt": 2.693272938728041e-07,
+    "reason": "Nonfinite state or material energy/force",
+    "last_valid": {
+      "time": 0.002826859276488759,
+      "compression": 0.16913786140579057,
+      "Fz_N": -7.925043532822082,
+      "internal_macro_Fz_N": -8.077921641778678,
+      "energy_N_mm": 11.868693934435115,
+      "KE_N_mm": 0.5354898462849567,
+      "KE_over_U": 0.04511784103989055,
+      "J_finite": true,
+      "J_min": -3.1604527621807637,
+      "invalid_material_points": 0,
+      "negative_J_points": 6815,
+      "required_positive_J_min": 0.22460506651461623,
+      "required_positive_J_points": 203168,
+      "dt_seconds": 2.693272938728041e-07
+    }
+  },
+  {
+    "time": 0.002878570116912417,
+    "attempted_end_time": 0.0028958070637203027,
+    "dt": 1.3466364693640205e-07,
+    "reason": "Nonfinite state or material energy/force",
+    "last_valid": {
+      "time": 0.002878570116912417,
+      "compression": 0.17238319668496868,
+      "Fz_N": -8.664619581799519,
+      "internal_macro_Fz_N": -8.635895058867629,
+      "energy_N_mm": 11.826022323865828,
+      "KE_N_mm": 0.8371273504708823,
+      "KE_over_U": 0.07078689076896925,
+      "J_finite": true,
+      "J_min": -5.282036338759139,
+      "invalid_material_points": 0,
+      "negative_J_points": 6281,
+      "required_positive_J_min": 0.23280559288042424,
+      "required_positive_J_points": 203168,
+      "dt_seconds": 1.3466364693640205e-07
+    }
+  }
+]

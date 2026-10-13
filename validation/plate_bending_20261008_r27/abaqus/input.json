@@ -1,0 +1,52 @@
+{
+  "L_mm": 10.0,
+  "B_mm": 1.25,
+  "t_mm": 0.5,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "M_N_mm": 0.0001,
+  "tip_weights": [
+    {
+      "node": 577,
+      "weight": 0.0625
+    },
+    {
+      "node": 578,
+      "weight": 0.125
+    },
+    {
+      "node": 579,
+      "weight": 0.125
+    },
+    {
+      "node": 580,
+      "weight": 0.125
+    },
+    {
+      "node": 581,
+      "weight": 0.125
+    },
+    {
+      "node": 582,
+      "weight": 0.125
+    },
+    {
+      "node": 583,
+      "weight": 0.125
+    },
+    {
+      "node": 584,
+      "weight": 0.125
+    },
+    {
+      "node": 585,
+      "weight": 0.0625
+    }
+  ],
+  "physical_I_mm4": 0.013020833333333334,
+  "analytic_Q_rad": 0.007679999999999999,
+  "analytic_compliance_per_N_mm": 76.8,
+  "nx": 64,
+  "ny": 8,
+  "material_scope": "linear elastic initial NH tangent; no finite strain certification"
+}

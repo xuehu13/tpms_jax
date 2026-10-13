@@ -1,0 +1,35 @@
+{
+  "accessed_date": "2026-10-07",
+  "public_manual_version": "2025",
+  "installed_solver_version": "2026",
+  "public_2026_theory_page_not_accessible_in_browse": true,
+  "sources": [
+    {
+      "title": "Explicit dynamic analysis",
+      "url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAETHERefMap/simathe-c-expdynamic.htm",
+      "relevance": "Central difference, current-frequency limits, varying dt and shell rotational bulk viscosity."
+    },
+    {
+      "title": "Energy balance",
+      "url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEGSARefMap/simagsa-c-qsienergybal.htm",
+      "relevance": "Energy balance and low kinetic energy are separate checks; project keeps its original gates."
+    },
+    {
+      "title": "Unstable static problem: reinforced plate under compressive loads",
+      "url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEEXARefMap/simaexa-c-unstablestaticplate.htm",
+      "relevance": "Localized release can create kinetic energy; does not prove the TPMS mode is physically correct."
+    },
+    {
+      "title": "Buckling of a column with general contact",
+      "url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEBMKRefMap/simabmk-c-sscxsec.htm",
+      "relevance": "Only indexed excerpt read; symmetric models can delay branching. No TPMS imperfection experiment performed."
+    },
+    {
+      "title": "ALAFF Gershgorin summary",
+      "url": "https://www.cs.utexas.edu/~flame/laff/alaff/chapter09-summary.html",
+      "relevance": "Absolute row-sum eigenvalue upper bounds; element contribution proof is derived for the project."
+    }
+  ],
+  "existing_shell_input": "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/thin_shell.inp",
+  "input_observation": "No explicit bulk-viscosity or section-control override found; default-version mechanism is an inference, not a measured attribution of ALLVD."
+}

@@ -1,0 +1,35 @@
+{
+  "compression": 0.005,
+  "end_time_s": 0.0005865311985386901,
+  "steps": 10113,
+  "dt_s": 5.7997745331621686e-08,
+  "estimated_remaining_s": 9554.06982421875,
+  "choices": [
+    {
+      "compression": 0.01,
+      "end_time_s": 0.0007570215097510796,
+      "steps": 13053,
+      "dt_s": 5.799597868314408e-08,
+      "estimated_remaining_s": 12016.439025878906
+    },
+    {
+      "compression": 0.005,
+      "end_time_s": 0.0005865311985386901,
+      "steps": 10113,
+      "dt_s": 5.7997745331621686e-08,
+      "estimated_remaining_s": 9554.06982421875
+    }
+  ],
+  "fd_steps": [
+    3.4e-05,
+    4.6e-05,
+    2e-05
+  ],
+  "frozen_unix": 1791808901.2609694,
+  "source_hashes": {
+    "execute.py": "afa1574ab03dfd774f30f83bf137c006889498ea4c8f08d0580de61684357fb8",
+    "setup.py": "ac8a1c5947c8aacd5c2d880bd26a54deba855e797fb634f4c0e4afc571538599",
+    "coefficient_geometry.py": "6b1c22695c8f8b213b56369b70104d0d4ed3a71fe099c6d7b6f5520c8d859593",
+    "coefficient_model.py": "76e07d1c9e205004f94f351a3fbe4f6fb9bf83fdd8965cb8899e9dbc6eab7d01"
+  }
+}

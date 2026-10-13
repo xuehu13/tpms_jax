@@ -1,0 +1,210 @@
+{
+  "completed": true,
+  "full_20pct_loading_completed": true,
+  "full_hold_completed": true,
+  "stop_reason": null,
+  "total_wall_seconds": 19649.599650144577,
+  "body_seconds": 17896.349000190035,
+  "bound_seconds": 8802.901773895836,
+  "accepted_end": {
+    "time": 0.0044,
+    "compression": 0.2,
+    "Fz_N": -1.436065327747112,
+    "internal_macro_Fz_N": -1.7203996909879666,
+    "energy_N_mm": 5.750577326999407,
+    "KE_N_mm": 0.7806167883554618,
+    "KE_over_U": 0.13574581193620427,
+    "J_finite": true,
+    "J_min": -17.6340815623987,
+    "invalid_material_points": 0,
+    "negative_J_points": 36575,
+    "required_positive_J_min": 0.03644614041699209,
+    "required_positive_J_points": 117093,
+    "dt_seconds": 1.1906720314563968e-10
+  },
+  "accepted_rows": 11431,
+  "rejected_blocks": 0,
+  "completed_steps": 193505,
+  "binary_initial_K_N_per_mm": 4.719388773981349,
+  "smooth_initial_K_N_per_mm": 4.916454681739766,
+  "shell_initial_K_N_per_mm": 4.651218897465464,
+  "binary_initial_bias": 0.014656346652063945,
+  "curve_vs_matched_shell": {
+    "upper_compression": 0.2,
+    "points": 2001,
+    "RMS_N": 1.877385424450154,
+    "relative_to_old_fixed_peak": 0.831100799509696,
+    "relative_to_matched_shell_peak": 0.3589655252019031
+  },
+  "shared_smooth_binary_window": {
+    "upper_compression": 0.17536302435107093,
+    "binary_vs_shell": {
+      "upper_compression": 0.17536302435107093,
+      "points": 2001,
+      "RMS_N": 1.954188157399347,
+      "relative_to_old_fixed_peak": 0.8651006441485765,
+      "relative_to_matched_shell_peak": 0.37365059360128255
+    },
+    "smooth_vs_shell": {
+      "upper_compression": 0.17536302435107093,
+      "points": 2001,
+      "RMS_N": 2.330326509746072,
+      "relative_to_old_fixed_peak": 1.0316135409093359,
+      "relative_to_matched_shell_peak": 0.4455701363016129
+    },
+    "binary_vs_smooth": {
+      "upper_compression": 0.17536302435107093,
+      "points": 2001,
+      "RMS_N": 0.9921924022406534,
+      "relative_to_old_fixed_peak": 0.43923420733447105,
+      "relative_to_matched_shell_peak": 0.18971217211615804
+    }
+  },
+  "observed_binary_peak": {
+    "compression": 0.15238701643777103,
+    "force_N": 6.5638696609580505,
+    "time": 0.0025925587590043295
+  },
+  "observed_smooth_partial_peak": {
+    "compression": 0.15940872539154782,
+    "force_N": 7.072391495989786,
+    "time": 0.0026854848531435156
+  },
+  "observed_shell_peak": {
+    "compression": 0.1182407021522522,
+    "force_N": 5.229988098144531,
+    "time": 0.00219581532292068
+  },
+  "peak_compression_shift_percentage_points": 3.414631428551883,
+  "peak_force_relative_difference": 0.25504485627543727,
+  "covered_loading_work_N_mm": 6.531180571008186,
+  "same_time_covered_shell_work_N_mm": 4.6582912154532305,
+  "covered_loading_work_relative_difference": 0.40205501737244465,
+  "total_macro_work_N_mm": 6.531180571008185,
+  "terminal_internal_energy_N_mm": 5.750577326999407,
+  "terminal_KE_N_mm": 0.7806167883554618,
+  "max_sampled_energy_balance_residual_N_mm": 2.4175643387636114e-05,
+  "max_energy_balance_residual_relative_total_work": 3.7015732645567084e-06,
+  "terminal_energy_balance_residual_relative_total_work": -2.0737976110605098e-06,
+  "loading_inertia": {
+    "duration_seconds": 0.004,
+    "terminal_KE_over_U": 0.12144922570010112,
+    "loading_time_fraction_sampled_KE_below_5pct": 0.5121733696770048,
+    "time_weighted_midpoint_KE_over_U_p95": 0.4926698911550518,
+    "maximum_sampled_KE_over_U_after_1pct": 0.22261779519432362
+  },
+  "minimum_accepted_required_positive_J": 0.021600697481561015,
+  "minimum_accepted_all_J": -26.604938692073425,
+  "maximum_accepted_virtual_negative_J_points": 36667,
+  "initial_required_positive_J_points": 117093,
+  "minimum_accepted_dt_seconds": 1.1906720314563968e-10,
+  "minimum_dt_before_final_time_alignment_seconds": 8.659813325818068e-09,
+  "final_time_alignment_dt_seconds": 1.1906720314563968e-10,
+  "checks": {
+    "completed_to_end_time": true,
+    "compression_20pct": true,
+    "all_accepted_observables_finite": true,
+    "all_accepted_solid_Gauss_J_positive": true,
+    "full_curve_within_10pct_matched_peak": false,
+    "global_work_energy_drift_le_1pct": true,
+    "hold_mean_force_within_10pct": false
+  },
+  "shell_checks_unchanged": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "comparison_scope": "Binary27 numerical diagnostic, same physical loading rate, no fitted shift/scale. Smooth reference partial only. High KE permitted; energy and integration quality assessed separately; no full-path AD.",
+  "hold_comparison_time_window_seconds": [
+    0.004,
+    0.004399999976158142
+  ],
+  "shell_saved_terminal_time_seconds": 0.004399999976158142,
+  "hold_mean_Fz_N": -1.9515671616105827,
+  "shell_hold_mean_Fz_N": -1.3196162033255356,
+  "shell_original_report_hold_mean_Fz_N": -1.3463700310043667,
+  "hold_mean_force_relative_difference": 0.4788899656524992,
+  "hold_Fz_min_max_N": [
+    -2.8887987120336414,
+    -1.040813786515031
+  ],
+  "execution_phases": [
+    {
+      "role": "from_zero_original_budget_stop",
+      "body_seconds": 10769.227012929041,
+      "completed_steps": 119952,
+      "end_compression": 0.19962034255320094,
+      "stop_reason": "Controlled forward budget stop; not a numerical method failure"
+    },
+    {
+      "role": "exact_checkpoint_continuation",
+      "body_seconds": 7127.1219872609945,
+      "continuity_verified": true
+    }
+  ],
+  "selected_total_budget_seconds": 21600.0,
+  "force_at_fixed_compressions_N": [
+    {
+      "compression": 0.01,
+      "binary": 0.48048238455448977,
+      "shell": 0.474663133142886,
+      "smooth_partial": 0.5006483078186619
+    },
+    {
+      "compression": 0.05,
+      "binary": 2.360633297534449,
+      "shell": 2.325966645911184,
+      "smooth_partial": 2.4713164461401433
+    },
+    {
+      "compression": 0.1,
+      "binary": 4.613159237415003,
+      "shell": 4.536357579674203,
+      "smooth_partial": 4.849331417702432
+    },
+    {
+      "compression": 0.12,
+      "binary": 5.445397594889246,
+      "shell": 5.055781124276235,
+      "smooth_partial": 5.729865710807766
+    },
+    {
+      "compression": 0.14,
+      "binary": 6.203579353090664,
+      "shell": 1.8337604214463437,
+      "smooth_partial": 6.528361936981765
+    },
+    {
+      "compression": 0.16,
+      "binary": 2.9108284865915737,
+      "shell": 1.2196661373368218,
+      "smooth_partial": 7.065210083289826
+    },
+    {
+      "compression": 0.18,
+      "binary": 0.6977627243405675,
+      "shell": 1.2111826843657911,
+      "smooth_partial": null
+    },
+    {
+      "compression": 0.2,
+      "binary": 2.5392151114903108,
+      "shell": 1.5718765918861466,
+      "smooth_partial": null
+    }
+  ],
+  "early_0_5_curve_vs_shell": {
+    "upper_compression": 0.05,
+    "points": 2001,
+    "RMS_N": 0.019581163677429837,
+    "relative_to_old_fixed_peak": 0.008668396257741502,
+    "relative_to_matched_shell_peak": 0.003744016871544458
+  }
+}

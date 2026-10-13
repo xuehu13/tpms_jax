@@ -1,0 +1,14 @@
+{
+  "preparation_seconds": 13.395080089569092,
+  "abaqus_check_solve_seconds": 126.84930300712585,
+  "Abaqus_complete": true,
+  "JAX_driver_seconds": 3902.940622806549,
+  "overall_minutes": 67.80519947608312,
+  "within_100min": true,
+  "budgets_minutes": {
+    "total": 100,
+    "JAX_build_compile_solve": 65,
+    "Abaqus_check_solve": 25,
+    "preparation_extraction_analysis": 10
+  }
+}

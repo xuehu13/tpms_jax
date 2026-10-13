@@ -1,0 +1,28 @@
+{
+  "preparation_seconds": 1.868441104888916,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Abaqus solve failed",
+    "common_input_error": false
+  },
+  "overall_minutes": 75.09317688941955,
+  "within_100min": true,
+  "budget_minutes": {
+    "overall": 100,
+    "JAX": 65,
+    "Abaqus_datacheck_solve": 25,
+    "preparation_extraction_analysis": 10
+  },
+  "Abaqus_original_failure_retained": true,
+  "Abaqus_check_solve_seconds": 430.1508672237396,
+  "JAX_driver_seconds": 3441.9486598968506,
+  "no_clock_reset": true,
+  "no_new_Abaqus_attempt": true,
+  "scope": "Original fourth dynamic task with failed/partial Abaqus reference",
+  "other_elapsed_seconds_including_failure_review_extraction_analysis": 633.4910862445831,
+  "10min_overhead_reserve_exceeded": true,
+  "budget_interpretation": "Original100min total clock and65/25min solver limits retained; failed-reference handling consumes remaining overall budget.",
+  "through_final_reporting_minutes": 80.12066326936086,
+  "final_reporting_within_original_100min": true,
+  "note": "overall_minutes ends at initial paired analysis; through_final_reporting also includes image QA and field-report explanation, same original clock."
+}

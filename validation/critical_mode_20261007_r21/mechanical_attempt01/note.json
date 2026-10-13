@@ -1,0 +1,5 @@
+{
+  "repair": "Correct existing pure interpolation function signature interpolate(q), supply its original globals, keep mm output units.",
+  "stop_before_first_eigen_result": true,
+  "physical_or_eigen_protocol_changed": false
+}

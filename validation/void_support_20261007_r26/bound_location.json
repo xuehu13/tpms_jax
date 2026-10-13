@@ -1,0 +1,63 @@
+{
+  "support_energy_factor": 0.1,
+  "incident_periodic_mass_min_max": [
+    1.1302806787984474e-17,
+    1.368427918413112e-15
+  ],
+  "scope": "one accepted frozen endpoint; local conservative row diagnostic, not buckling eigenmode or unique peak cause",
+  "compression": 0.13077724201070814,
+  "state_file": "/home/xuehu/projects/tpms_jax/validation/void_support_20261007_r26/forward/last_valid_field.npz",
+  "target_periodic_class": 94256,
+  "component": 1,
+  "reference_class_position_mm": [
+    3.59375,
+    0.0,
+    7.5
+  ],
+  "incident_cells": [
+    11287,
+    11288,
+    12279,
+    12280
+  ],
+  "original_bound_R_s_minus2": 1080242153725155.2,
+  "reconstructed_row_R_s_minus2": 1080242153725160.0,
+  "reconstruction_relative_error": 4.440892098500626e-15,
+  "partitions": {
+    "deep_phi_le_0p001": {
+      "points": 108,
+      "occupancy_min_max": [
+        0.0,
+        2.1436588867487067e-10
+      ],
+      "max_F_frobenius": 25.000018274629134,
+      "max_F_singular_value": 24.501477766105705,
+      "actual_J_min": -0.3938396466021504,
+      "negative_J_points": 18,
+      "separate_absolute_row_bound_s_minus2": 1080242153725160.0,
+      "local_stored_energy_N_mm": 0.00020351239735017852
+    },
+    "mixed_0p001_lt_phi_lt_0p01": {
+      "points": 0,
+      "occupancy_min_max": null,
+      "max_F_frobenius": null,
+      "max_F_singular_value": null,
+      "actual_J_min": null,
+      "negative_J_points": 0,
+      "separate_absolute_row_bound_s_minus2": 0.0,
+      "local_stored_energy_N_mm": 0.0
+    },
+    "required_NH_phi_ge_0p01": {
+      "points": 0,
+      "occupancy_min_max": null,
+      "max_F_frobenius": null,
+      "max_F_singular_value": null,
+      "actual_J_min": null,
+      "negative_J_points": 0,
+      "separate_absolute_row_bound_s_minus2": 0.0,
+      "local_stored_energy_N_mm": 0.0
+    }
+  },
+  "partition_caution": "Absolute values are taken after integrating each group; separate bounds are not additive percentages of the assembled total.",
+  "analysis_seconds": 1.366198825999163
+}

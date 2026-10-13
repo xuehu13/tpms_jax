@@ -1,0 +1,5 @@
+{
+  "type": "UnboundLocalError",
+  "reason": "function and local variable shared initial_dt name",
+  "dynamic_steps": 0
+}

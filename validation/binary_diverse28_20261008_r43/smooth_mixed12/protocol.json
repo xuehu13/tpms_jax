@@ -1,0 +1,7 @@
+{
+  "shell_stiffness_N_per_mm": 3.7748837447547623,
+  "selected_cells_sha256": "b4f5ee21841e9bfb51a52285fd28bd15f713421ef546244ca05a0488e57bd96a",
+  "total_budget_seconds": 900.0,
+  "maximum_iterations": 6000,
+  "dense_points_per_axis": 12
+}

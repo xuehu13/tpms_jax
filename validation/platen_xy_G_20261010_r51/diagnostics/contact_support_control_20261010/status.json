@@ -1,0 +1,16 @@
+{
+  "stage": "one_path_complete_halfway_admission_stopped_analyzed",
+  "active_jobs": [],
+  "dynamic_complete": [
+    "cap_common_dt"
+  ],
+  "pre_dynamic_stop": [
+    "half_support_common_dt"
+  ],
+  "cap_common_dt_hold_bias": 0.1847254443736832,
+  "cap_dt_control_max_curve_change_over_shell_peak": 0.00015532283211689538,
+  "rimline_is_diagnostic_only": true,
+  "physical_finite_thickness_contact_certified": false,
+  "full20_submitted": false,
+  "new_design_AD": false
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-08",
+  "scientific_freeze_checks": {
+    "initial_tangent_20261008_r30": {
+      "hyperelastic_fem.py": true,
+      "scripts/thin_target_explicit.py": true,
+      "surface_distance.py": true,
+      "pbc.py": true,
+      "fem.py": true,
+      "pixi.lock": true,
+      "validation/geometry_transfer_20261006_r15/gauss_field.npz": true,
+      "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+      "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/thin_shell.inp": true
+    },
+    "membrane_diagnostic_20261008_r31": {
+      "hyperelastic_fem.py": true,
+      "scripts/thin_target_explicit.py": true,
+      "surface_distance.py": true,
+      "pbc.py": true,
+      "fem.py": true,
+      "pixi.lock": true,
+      "validation/geometry_transfer_20261006_r15/gauss_field.npz": true,
+      "validation/geometry_transfer_20261006_r15/surface_geometry.npz": true,
+      "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/thin_shell.inp": true,
+      "validation/plate_bending_20261008_r27/diagnostic.py": true,
+      "validation/initial_tangent_20261008_r30/jax_result.json": true,
+      "validation/initial_tangent_20261008_r30/abaqus/shell_result.json": true,
+      "validation/initial_tangent_20261008_r30/comparison.json": true
+    }
+  },
+  "archived_support_files_sha256": {
+    "analyze.py": "340493bd3f107042f91c02dfb8705c433d21d497e461bf4a682a11ad1261adf7",
+    "diagnostic.py": "e34a2f2cd26ba34d2203ede59d32431f45916121f91bb0c084d86b13f4a203f5",
+    "jax_launch.log": "e6871c50b39dae3d111d628e860bf7fccf2ba4b275db256a0e560562b2b27327",
+    "membrane_diagnostic.py": "3c7cd49a8d789b045229e1ecd0d819d713e6e3bbee55ea00515a7a52afc0a939",
+    "membrane_launch.log": "8d80e57a372b9dac36121579d652edb991ed64326365a934c412a2fc65028a5f",
+    "MEMBRANE_PROTOCOL.md": "ef79ae609e2c74e8aaf853fed2ada5879ac4caaaabed45b00fc6fe4192d471df",
+    "PROTOCOL.md": "ec7944110580cd2a3c8eb6c2406ff1755919e3c3032b3cfc371cf278375220b0",
+    "run_abaqus.py": "7d53519fe8a7aa621fc5625e1a5c75302215a47a3231dfc6ea6ebc34b8aac768",
+    "update_docs.py": "f8881c42b6e34a0a945b1766cb03811f272bda6551757b4fb93a61020a423b15"
+  },
+  "support_archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261008/r30_r31_support",
+  "production_modified_this_round": false,
+  "git_commit_push_merge": false,
+  "job_sessions_finished": true,
+  "word_ppt_regenerated": false,
+  "note": "Frozen scope only; not a full historical directory audit.",
+  "current_local_links_valid": true,
+  "local_link_count": 165,
+  "repaired_links": [
+    "FILE_MAP: ../AGENTS.md",
+    "REVIEW: three pre-existing scientific/history links restored from prior canonical snapshot"
+  ]
+}

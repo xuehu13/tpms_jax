@@ -1,0 +1,9 @@
+{
+  "frozen_files": 264,
+  "old_INP_sha256": "58201f9af4f576498c1adc32759bf2e3c449090cc27ac32dd19100089bfe03c7",
+  "new_INP_sha256": "9f578dd1918aebec25e3cd2af1cbec8a71af1b75929bded0960e2e8ffc4c4c28",
+  "extractor_sha256": "e0049b20553cedd7b868e4f384b90bd1cbf5b744de138d1d16239fe53e2857fb",
+  "three_line_diff_verified": true,
+  "reverse_to_original_byte_identical": true,
+  "new_job_submitted": false
+}

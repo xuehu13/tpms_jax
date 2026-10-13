@@ -1,0 +1,72 @@
+{
+  "source_files": [
+    {
+      "path": "validation/step_control_20261007_r18/controlled_forward/accepted_path.json",
+      "sha256": "f0251631d3c674acc0c598a3359b8e47d7927810ec1e0795af9bf89a68db7f57"
+    },
+    {
+      "path": "validation/geometry_transfer_20261006_r15/abaqus/explicit_T0p040/results/shell.json",
+      "sha256": "6eb5de517f84c28b15110aa4c074ad09c540ef4ddb520f844f337a7976525675"
+    }
+  ],
+  "not_new_simulation": true,
+  "observations_are_saved_endpoints_not_internal_steps": true,
+  "JAX_history_complete_20pct": false,
+  "JAX_observed_dynamic_peak": {
+    "time": 0.0026854848531435156,
+    "compression": 0.15940872539154782,
+    "Fz_N": -7.072391495989786,
+    "internal_macro_Fz_N": -7.066532413738025,
+    "energy_N_mm": 6.064165091611316,
+    "KE_N_mm": 0.00878989745685824,
+    "KE_over_U": 0.0014494818864706513,
+    "J_finite": true,
+    "J_min": -6.119249212813952,
+    "invalid_material_points": 0,
+    "negative_J_points": 2062,
+    "required_positive_J_min": 0.08466926589126439,
+    "required_positive_J_points": 141282,
+    "dt_seconds": 1.7202401517144088e-07
+  },
+  "shell_observed_dynamic_peak": {
+    "time": 0.02151627466082573,
+    "compression": 0.11416069269180298,
+    "Fz_N": -5.098315715789795,
+    "ALLIE": 3.0022664070129395,
+    "ALLSE": 3.000185251235962,
+    "ALLKE": 7.059436029521748e-05,
+    "ALLAE": 0.00208097230643034,
+    "ALLVD": 2.1545531126321293e-05,
+    "ALLWK": 2.986370801925659,
+    "ETOTAL": 0.015987679362297058
+  },
+  "peak_compression_difference_percentage_points": 4.524803269974484,
+  "peak_force_relative_shell_difference": 0.3872015564054141,
+  "JAX_peak_to_interrupted_endpoint": {
+    "start_compression": 0.15940872539154782,
+    "end_compression": 0.17536302435107093,
+    "delta_elastic_N_mm": -0.6038373042350207,
+    "delta_kinetic_N_mm": 1.105869431743579,
+    "applied_work_trapezoid_N_mm": 0.5020416025045041,
+    "delta_energy_minus_work_N_mm": -9.474995945724096e-06,
+    "not_a_settled_hold_endpoint": true,
+    "interpretation": "Energy release plus continued loading is consistent with a dynamic snap; energy balance alone does not certify correct mode or spatial accuracy."
+  },
+  "shell_original_checks": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": true,
+    "artificial_energy_le_5pct_work": false
+  },
+  "loading_times_s": {
+    "JAX": 0.004,
+    "shell": 0.04
+  },
+  "new_dynamic_scope_does_not_change_old_checks": true
+}

@@ -1,0 +1,24 @@
+{
+  "frozen_files_checked": 94,
+  "changed_frozen_files": [],
+  "shared_source_hashes_unchanged": true,
+  "ExplicitXYZ_class_AST_unchanged": true,
+  "diagnostic_tests": "20 passed in 27.72 seconds; test is not design AD certification",
+  "original_returncode": 1,
+  "short_replay_returncode": 0,
+  "new_abaqus_jobs": 0,
+  "new_design_AD_jobs": 0,
+  "new_full_20_percent_success": false,
+  "retention_dt_bookkeeping_followup": "Last accepted dt retained together with accepted half velocity; shared formulas unchanged",
+  "domain_split_eigenvalues_match_initial": true,
+  "dominant_patch_curvature_fraction_by_domain": {
+    "deep_void": 0.9990776007698264,
+    "mixed_virtual_tail": 0.0005978859258461743,
+    "uncontinued_NH": 0.0003245133043272644
+  },
+  "final_entry_syntax_check": true,
+  "final_entry_sha256": "0b3ae07e80bdb824f08c35f4b54096b1f7b100cbd4e91afc0b09a149c0426bab",
+  "original_job_entry_sha256": "5fb572310f5667f1661e09200bde96c81ec5f64be29768e6ab62da55c7e5db30",
+  "short_job_entry_sha256": "7aafa2a5657f0948825c162f4f7d7a2f893ea7709f08aebd86a2b2cadfcf7368",
+  "final_diagnostic_tests": "...                                                                      [100%]\n3 passed in 9.72s"
+}

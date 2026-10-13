@@ -1,0 +1,36 @@
+{
+  "kind": "G",
+  "geometry_intervals_per_axis": 64,
+  "background_N": 32,
+  "nodes": 20374,
+  "triangles": 39648,
+  "area_mm2": 309.33013933404806,
+  "nominal_shell_volume_mm3": 154.66506966702403,
+  "min_triangle_area_mm2": 4.918594493140228e-07,
+  "periodic_components": 1,
+  "nonmanifold_periodic_edges": 0,
+  "orientation_conflicts": 0,
+  "seams": [
+    {
+      "axis": 0,
+      "low_nodes": 189,
+      "high_nodes": 188,
+      "max_gap_over_L": 0.4195357603410951
+    },
+    {
+      "axis": 1,
+      "low_nodes": 189,
+      "high_nodes": 188,
+      "max_gap_over_L": 0.4195357603410951
+    },
+    {
+      "axis": 2,
+      "low_nodes": 189,
+      "high_nodes": 188,
+      "max_gap_over_L": 0.4195357603410951
+    }
+  ],
+  "analytic_vertex_residual_max": 1.201816424156732e-14,
+  "marching_cube_interior_vertices": 0,
+  "pass": false
+}

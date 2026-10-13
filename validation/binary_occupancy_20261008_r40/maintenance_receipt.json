@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-08",
+  "rounds": [
+    "r40",
+    "r41"
+  ],
+  "frozen_files_count": 77,
+  "all_original_scientific_hashes_unchanged": true,
+  "production_entry_sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "new_solves": {
+    "binary_static": 2,
+    "current_diverse28_static": 1,
+    "native_Standard": 1
+  },
+  "new_runtime_gates_passed": true,
+  "binary_selected_8_12_gate_passed": true,
+  "original_r39_not_accepted_preserved": true,
+  "no_outside_selected_or_sharp_interface_certification": true,
+  "no_full20_or_design_AD": true,
+  "production_unchanged": true,
+  "full_208_tests_rerun": false,
+  "tests_reason": "Production unchanged; new shared tangent/JVP and static experimental gates checked.",
+  "current_document_links_verified": true,
+  "scientific_figure_visually_verified": true,
+  "archive_directory": "history/completed_tools_20261008/r40_r41_support",
+  "archive_completed": true,
+  "raw_derived_shell_inp_and_full_nodes_preserved_locally_not_in_Git": true,
+  "reproduction_recipe_matches_existing_input_sha256": true,
+  "next_diverse28_binary_started": false,
+  "no_original_scientific_files_moved_or_deleted": true,
+  "archived_tools_hash_verified": 7
+}

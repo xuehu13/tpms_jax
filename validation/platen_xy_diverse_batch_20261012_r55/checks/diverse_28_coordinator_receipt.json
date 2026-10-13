@@ -1,0 +1,12 @@
+{
+  "command": [
+    "F:\\Anaconda\\python.exe",
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\tools\\run_pair.py",
+    "diverse_28"
+  ],
+  "returncode": 0,
+  "budget_stop": false,
+  "wall_seconds": 1906.933287858963,
+  "started_UTC": "2026-10-12T03:37:19.681632+00:00",
+  "log": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_diverse_batch_20261012_r55\\checks\\diverse_28_coordinator.log"
+}

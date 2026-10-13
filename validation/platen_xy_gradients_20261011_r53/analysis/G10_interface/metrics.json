@@ -1,0 +1,53 @@
+{
+  "scope": "G complete0-to-about10pct interface-width total derivative; loading work primary, terminal force auxiliary",
+  "passed": true,
+  "actual_compression": 0.09999905104737952,
+  "complete_from_zero_design_JVP": true,
+  "full_prefix_state_tangent_reused": true,
+  "objectives": [
+    {
+      "objective": "loading_work",
+      "baseline_value": 1.7562412121919728,
+      "AD": 1.421952653940073,
+      "FD_h": 1.4219612106232127,
+      "FD_half": 1.4219591889803596,
+      "AD_FD_relative_error": 4.595800172828184e-06,
+      "FD_halving_relative_difference": 1.4217305734157101e-06,
+      "nearzero": false,
+      "pass_target": true
+    },
+    {
+      "objective": "terminal_upper_force",
+      "baseline_value": 3.2038475516652833,
+      "AD": 3.0925886386374097,
+      "FD_h": 3.103315543212304,
+      "FD_half": 3.103706436952791,
+      "AD_FD_relative_error": 0.0035821037012433487,
+      "FD_halving_relative_difference": 0.00012594417301626764,
+      "nearzero": false,
+      "pass_target": true
+    }
+  ],
+  "steps": 34483,
+  "dt_s": 5.7999300462244876e-08,
+  "additional_case_wall_minutes": {
+    "G10_interface/AD/width": 46.723812472820285,
+    "G10_interface/FD/w_plus_h": 7.062990379333496,
+    "G10_interface/FD/w_minus_h": 6.924453985691071,
+    "G10_interface/FD/w_plus_half": 6.984387942155203,
+    "G10_interface/FD/w_minus_half": 6.9273476282755535
+  },
+  "sampled_min_required_J": 0.8174504735225953,
+  "sampled_min_all_J": -1.0546218294436844,
+  "protected_sources_unchanged": true,
+  "reverse_at_this_endpoint_validated": false,
+  "required_objectives": [
+    "loading_work"
+  ],
+  "parameter": "interface_10_90_mm",
+  "baseline_vs_original_forward": {
+    "max_absolute_force_N": 5.535836613557166e-06,
+    "RMS_force_N": 1.6440555841864695e-06,
+    "includes_sample_interpolation": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "completed",
+  "active_jobs": [],
+  "result": "AD/work_VJP_result.json",
+  "heartbeat": "PAUSED",
+  "r53": "unchanged_paused",
+  "new_training": false,
+  "new_Git": false
+}

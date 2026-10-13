@@ -1,0 +1,6 @@
+{
+  "source": "physical_metric_attempt01/restricted_HRZ_mass.npz",
+  "sha256": "b6193fce956514bd72c9d2b3fa60c5c3da4cc63c3467a92d5725999088557c73",
+  "original_mass_inverse_residual": 4.377645625021312e-14,
+  "no_mass_model_change": true
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "stopped_G10_thickness_protocol",
+  "active_jobs": [],
+  "step1": "passed",
+  "step2": "passed",
+  "step2_reverse": "passed",
+  "step2_interface": "passed",
+  "step3": "not_passed",
+  "step4": "gated_not_started",
+  "new_reverse_AD": true,
+  "reason": "[Errno 2] No such file or directory: '/home/xuehu/projects/tpms_jax/validation/platen_xy_gradients_20261011_r53/G10/AD/thickness'"
+}

@@ -1,0 +1,29 @@
+{
+  "levels": [
+    {
+      "points_per_axis": 8,
+      "completed_cells": 1941,
+      "complete": true,
+      "seconds": 0.28108412795700133,
+      "occupancy_volume_mm3": 32.61667381306662,
+      "occupancy_distance_moment_mm5": 0.6812737797443171,
+      "floor_energy_N_mm": 2.0055980816227996e-09,
+      "occupancy_energy_N_mm": 1.637967792867527e-06,
+      "total_energy_N_mm": 1.6399733909491498e-06,
+      "mean_distance_squared_mm2": 0.020887285553666448
+    },
+    {
+      "points_per_axis": 12,
+      "completed_cells": 1941,
+      "complete": true,
+      "seconds": 0.7821830959292129,
+      "occupancy_volume_mm3": 32.61682439006838,
+      "occupancy_distance_moment_mm5": 0.6812755026867903,
+      "floor_energy_N_mm": 2.0055980816227955e-09,
+      "occupancy_energy_N_mm": 1.6378544189152992e-06,
+      "total_energy_N_mm": 1.639860016996922e-06,
+      "mean_distance_squared_mm2": 0.02088724195033022
+    }
+  ],
+  "seconds": 1.6925975780468434
+}

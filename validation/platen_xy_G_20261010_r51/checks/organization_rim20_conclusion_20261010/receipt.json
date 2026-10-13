@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-10",
+  "finished_UTC": "2026-10-10T11:34:00.761956+00:00",
+  "new_FEM": 0,
+  "new_Abaqus": 0,
+  "new_design_AD": false,
+  "active_jobs": [],
+  "legacy_guard_entries_verified": 670,
+  "protected_unique_files": 504,
+  "changed_scientific_files": [],
+  "modified_navigation_files": {
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\START_HERE.md": {
+      "before_sha256": "139af148b0f6c84b5d67089d03ee97cf57fa148781813a26bc86a8a0d4c2d901",
+      "after_sha256": "7b1e9d95aeb933e5603d44cca152c2a98accf1afc7078af25d9118c500e64e8a",
+      "characters_before": 692,
+      "characters_after": 775
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\AGENTS.md": {
+      "before_sha256": "98e42c614b5e1105dc120dcd375a1b267caa7ed5cae514ab70d8953f723197b0",
+      "after_sha256": "7cbe1f49878a501d71d45b58fedabf5148356781f38cbd7f2dd7659b82de8bf6",
+      "characters_before": 5596,
+      "characters_after": 2301
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_BACKGROUND.md": {
+      "before_sha256": "1bc6a66a388788ab3826629f167473157cfa8ad476138a8ff249ee28fcb9f7f0",
+      "after_sha256": "e120259b5e911b5bf8df80a3c903fb3e785bfa49863bcec6775c27960fb23e57",
+      "characters_before": 1313,
+      "characters_after": 1621
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\RESEARCH_PLAN.md": {
+      "before_sha256": "894a3d05e51a749987456b092abe7ab85ceba9db780813e58bffb015f3e15d45",
+      "after_sha256": "5d6411dd1426a891855ad7d4be34cff17008d02cb439b60a6e982db0ecc01a15",
+      "characters_before": 2277,
+      "characters_after": 678
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\PROJECT_OVERVIEW.md": {
+      "before_sha256": "5a2da2f41c48c32fb80c6a0cc3aaa878882c2986612a9805c310ae76ec5b33e6",
+      "after_sha256": "389fa326b86019a1e8cf7770e4ed4123eb85fd598e4f7d2c5e4421c26b43b15b",
+      "characters_before": 2029,
+      "characters_after": 1713
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\FILE_MAP.md": {
+      "before_sha256": "dfa5b1a62521c17df965b4b8d91379346c894222d086365dbb69a0ec96ca6987",
+      "after_sha256": "11f73e9558e78769f5b6268c00ec884dd26552fbc92d0a55dc1b133c43470329",
+      "characters_before": 4089,
+      "characters_after": 3324
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\TPMS_RESEARCH_REVIEW.md": {
+      "before_sha256": "04d739897f24720004b4b7a66e63e3b749c6169c641199d98e31e05506efa8f3",
+      "after_sha256": "af3b96cc352b8c6a15c0c243149dd5a3a6148581633a18f81f74f509d1efd7e6",
+      "characters_before": 5744,
+      "characters_after": 5478
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\README.md": {
+      "before_sha256": "f7b59c2a59acd0524a119e0f39f56cb927f49e212fb7da3bee33b49ead9e4d38",
+      "after_sha256": "e40251a7cccbfba7cf1738c1fa4018698109144737f463395a762b5a00f3c409",
+      "characters_before": 983,
+      "characters_after": 1017
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\README.md": {
+      "before_sha256": "457cac1ec9f56d88be35263787d838ab158d4709f949f7ce1de0f9d9ef19b74f",
+      "after_sha256": "cb378a98a46ca34ed9be706858e4c4e190be1cfa13f9f8e58ab934577957fd09",
+      "characters_before": 1742,
+      "characters_after": 1939
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\README.md": {
+      "before_sha256": "9940db8921019d8436eb32b58bba060a02018362a8ae38d86abbb843b85c110d",
+      "after_sha256": "c149cbb00f3fb54d6cbab8cf6f6c0c29d4d4cd6255d44e2f7126f4b4b504eef6",
+      "characters_before": 3388,
+      "characters_after": 1359
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\RESEARCH_LOG.md": {
+      "before_sha256": "4d0328b3b4b9b7154a10fd670db7d1222efddf079495bc6aa751c0f0bfd5f7a6",
+      "after_sha256": "43fcd791915da993c0650a542e83edb8f84a70f9ca4e72159cf014d9c33feac5",
+      "characters_before": 28101,
+      "characters_after": 28214
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\midsurface_rim_20pct_20261010\\README.md": {
+      "before_sha256": "bd592839ddca1e7ca9698670a7037fccc9f7a129503d29e2f17ecfb3677fc087",
+      "after_sha256": "415003422476d45778af1784a7e33e906f2efa97c78a0c920f6c9ad964f1f605",
+      "characters_before": 2749,
+      "characters_after": 4391
+    },
+    "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\output\\r51_platen_xy_G_20261010\\midsurface_rim_20pct_20261010\\status.json": {
+      "before_sha256": "9489cdb32a096dfbd7e32ee6f781d6ba13244228f346b71cd7a98e2c9fddb126",
+      "after_sha256": "eac4ea1a49f0215df11a622c85d9a16442b7fca59b568a92f64885bb8ed3e2be",
+      "characters_before": 424,
+      "characters_after": 685
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\README.md": {
+      "before_sha256": "8cdefc3d148dcc8b4c3ea67884ccf22dc037456b4c52c5b2bc025475f13d9cdd",
+      "after_sha256": "f8243f82ee0a0faf4b9e55f6e354f73b3b22d4a7f74a771bd9648f1e5d7c70f1",
+      "characters_before": 735,
+      "characters_after": 823
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\AGENTS.md": {
+      "before_sha256": "0919ad0a3a5b2d11a7344a7dfa4ed95b71193ba9c4da225a3d8234e71a0e47ed",
+      "after_sha256": "781da68ae0c7cab766f6957ccea1b6c6c3809761cef23309621ae88d11be6c88",
+      "characters_before": 5625,
+      "characters_after": 2364
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_BACKGROUND.md": {
+      "before_sha256": "434afbb3bb49e25f69b6f10c3cbf9d63020eea3f08efca0622f0a8d86adab3db",
+      "after_sha256": "d97c80816fb46a312c8a41b9386fe7c6742ce9dbd9e2a7a73b88aa3e775598c3",
+      "characters_before": 1312,
+      "characters_after": 1619
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_PLAN.md": {
+      "before_sha256": "bbb436a6c1578281d2cd447ddf0245f6ffbd7fd96657a1a613756976cd9d9fb4",
+      "after_sha256": "d3b2c2fd4d887423e71cea9437fd4b21e78bc0a0313fb90fda1f2f2c699d29a5",
+      "characters_before": 2283,
+      "characters_after": 696
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\RESEARCH_STATUS.md": {
+      "before_sha256": "1368034af846da19faf0baf263314e8efcdebb74d93024ffd7ff11b38c02b4d7",
+      "after_sha256": "dc0af2439ab1dcf2552527fbcf1a98a44d8e11951b8ce62f314b7670801b4d01",
+      "characters_before": 2232,
+      "characters_after": 1739
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\FILE_MAP.md": {
+      "before_sha256": "52088d45079e3338e328e260a3d368602e1d8a63e0231710e641d1df8353eaed",
+      "after_sha256": "1a2330c52d83fbd03fb365779adfb0bf2c57fa9537a8a6730a867569f1fd3416",
+      "characters_before": 4724,
+      "characters_after": 3350
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\docs\\TPMS_RESEARCH_REVIEW.md": {
+      "before_sha256": "1abcd03f125b64f478e32000582df8ee9392663a92cc56c61a1cd76525b85432",
+      "after_sha256": "b0e1c754604c17ae4026ece7261b03e1a026524424c9910e429a2052e07f4c5a",
+      "characters_before": 5934,
+      "characters_after": 5731
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\README.md": {
+      "before_sha256": "20ae49f3206eef1dffbb4bcc198bd5375528696324c5e17531da3667c886a61d",
+      "after_sha256": "21ce760a658bd37a6c668a9808ff0fb4ac8b43296f7fe1cb7a74a0d8c111d4e1",
+      "characters_before": 6956,
+      "characters_after": 7161
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\README.md": {
+      "before_sha256": "1e8200922a06e4907ebe9f914a59ecc5048aa458c420e065c115a9b6c66904ac",
+      "after_sha256": "b99513c9c6595b90f379d9b119bad484853cbac50c53a04b6456d8ea29ebd34b",
+      "characters_before": 3470,
+      "characters_after": 1399
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\RESEARCH_LOG.md": {
+      "before_sha256": "38b961fb8e77cbb0a5dbe739d49bc6fca307be2f73bbdef1cddcb720d6a019bb",
+      "after_sha256": "16cb0390a17df0a0c93910d1fe6ce609c09a9f842d6d6384eee6ad5e7ef227c8",
+      "characters_before": 28476,
+      "characters_after": 28601
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\status.json": {
+      "before_sha256": "56747885e42c7a53f8f4521c79c439fdab7681c52e45a4ceff1fbe91bc9f78f6",
+      "after_sha256": "3b5a9d1b92b357266370b212c0b11fa2530f7aeffe12452600f863bf130d3bdb",
+      "characters_before": 5353,
+      "characters_after": 6463
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\experiments\\midsurface_rim_20pct_20261010\\README.md": {
+      "before_sha256": "69e899d4c2c1d302a30a58ce13f390eaf41e6e80cf060a2c5850e2f6aed53cad",
+      "after_sha256": "645b6e7f3d263976eeaa288ca39b2b7aa6b99d6869d41c9cc73f201af01b8d42",
+      "characters_before": 2776,
+      "characters_after": 4409
+    },
+    "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuehu\\projects\\tpms_jax\\validation\\platen_xy_G_20261010_r51\\experiments\\midsurface_rim_20pct_20261010\\status.json": {
+      "before_sha256": "9489cdb32a096dfbd7e32ee6f781d6ba13244228f346b71cd7a98e2c9fddb126",
+      "after_sha256": "eac4ea1a49f0215df11a622c85d9a16442b7fca59b568a92f64885bb8ed3e2be",
+      "characters_before": 424,
+      "characters_after": 685
+    }
+  },
+  "postprocessing_archive": {
+    "files": 13,
+    "original_bytes": 3951667,
+    "zip_bytes": 2785385,
+    "sha256": "3023d4ee9defe4ab65198d4f3e1203453b1b9dbdd7286d246441cc8b96d05b97"
+  },
+  "current_report": "experiments/midsurface_rim_20pct_20261010/README.md",
+  "Windows_archive": "C:\\Users\\xuehu\\Documents\\Codex\\2026-10-01\\referenced-chatgpt-conversation-this-is-an\\history\\organization_platen_xy_20261010_r51\\final_consolidation",
+  "scientific_source_and_raw_results_preserved": true,
+  "original_compute_batch_minutes_unchanged": 87.07866555054983,
+  "current_document_link_check": {
+    "checked": 223,
+    "missing": []
+  },
+  "organization_recipe_sha256": "13cd4b91fa1606e8266ab3f2d7c60e87b4c32fb8d58ecffd775d423951f3f7d8"
+}

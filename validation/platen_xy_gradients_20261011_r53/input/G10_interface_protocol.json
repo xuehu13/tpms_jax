@@ -1,0 +1,124 @@
+{
+  "id": "G10_interface",
+  "scope": "G complete0-to-about10pct interface-width total derivative; loading work primary, terminal force auxiliary",
+  "plan_step": "step3",
+  "analysis_name": "G10_interface",
+  "plot_title": "G10% interface",
+  "active_parameter": "interface_10_90_mm",
+  "parameter_label": "interface width",
+  "parameter_label_cn": "界面宽度",
+  "requires_reverse_pass": true,
+  "requires": [
+    [
+      "analysis/interface5/metrics.json",
+      "step2_interface_pass"
+    ],
+    [
+      "analysis/G10_thickness/metrics.json",
+      "passed"
+    ]
+  ],
+  "wall_budget_seconds": 5700,
+  "steps": 34483,
+  "dt_s": 5.7999300462244876e-08,
+  "target_compression": 0.1,
+  "baseline_parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "fd_steps_mm": [
+    0.00025,
+    0.000125
+  ],
+  "thresholds": {
+    "nonzero_gradient_relative_AD_FD": 0.01,
+    "FD_h_halving_relative": 0.01,
+    "nearzero_dimensionless_gradient_cutoff": 1e-06,
+    "nearzero_absolute_scaled_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ],
+    "parameter_scale_mm": 0.05
+  },
+  "required_objectives": [
+    "loading_work"
+  ],
+  "milestone_reason": "Hit the original5pct prefix endpoint exactly so all resumed FD and full JVP output grids match",
+  "milestones": [
+    24789
+  ],
+  "cases": [
+    {
+      "label": "G10_interface/AD/width",
+      "params_mm": [
+        0.5,
+        0.05
+      ],
+      "is_ad": true,
+      "seed": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "label": "G10_interface/FD/w_plus_h",
+      "params_mm": [
+        0.5,
+        0.05025
+      ],
+      "is_ad": false,
+      "initial_from": "FD/w_plus_h"
+    },
+    {
+      "label": "G10_interface/FD/w_minus_h",
+      "params_mm": [
+        0.5,
+        0.04975
+      ],
+      "is_ad": false,
+      "initial_from": "FD/w_minus_h"
+    },
+    {
+      "label": "G10_interface/FD/w_plus_half",
+      "params_mm": [
+        0.5,
+        0.050125
+      ],
+      "is_ad": false,
+      "initial_from": "FD/w_plus_half"
+    },
+    {
+      "label": "G10_interface/FD/w_minus_half",
+      "params_mm": [
+        0.5,
+        0.049875
+      ],
+      "is_ad": false,
+      "initial_from": "FD/w_minus_half"
+    }
+  ],
+  "baseline_original_result": "validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/jax/result.json",
+  "status_fields": {
+    "step1": "passed",
+    "step2": "passed",
+    "step2_reverse": "passed",
+    "step2_interface": "passed",
+    "new_reverse_AD": true,
+    "step3": "running",
+    "step4": "pending"
+  },
+  "includes": [
+    "Gauss occupancy",
+    "internal force",
+    "HRZ mass",
+    "XY macro inertia",
+    "end contact area",
+    "initial state",
+    "all steps and work"
+  ],
+  "parameter_interpretation": "Numerical geometry interface width, not physical thickness or material composition",
+  "primary_acceptance": "dW/dw AD and two-level FD use unchanged1pct threshold; force derivative is auxiliary, also reported against1pct without claiming pass when it fails",
+  "prefix_policy": "JVP starts at zero because reverse5pct did not save a full width state tangent; each FD reuses its own independently solved5pct prefix",
+  "frozen_utc": "2026-10-11T04:38:38.574544+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "saved terminal state only; excludes finite shell-thickness envelope and self-contact",
+  "jax_caps_bottom_top": [
+    {
+      "area_weighted_penetration_mm": 0.00021648624862568937,
+      "max_penetration_mm_by_phi_threshold": {
+        "0.01": 0.00503331995762724,
+        "0.5": 0.0018982176742533754,
+        "0.9": 0.0012688996296340974
+      },
+      "integrated_force_N": 0.900574756485913
+    },
+    {
+      "area_weighted_penetration_mm": 0.00021829259374659687,
+      "max_penetration_mm_by_phi_threshold": {
+        "0.01": 0.005105221374344104,
+        "0.5": 0.0019285854330231,
+        "0.9": 0.0012806347931670903
+      },
+      "integrated_force_N": 0.9080890851221095
+    }
+  ],
+  "jax_volume_Gauss_points_outside_planes_by_phi_threshold": {
+    "0.01": 0,
+    "0.5": 0,
+    "0.9": 0
+  },
+  "jax_volume_max_penetration_phi_ge_0p01_mm": 0.0,
+  "shell_nonrim_midsurface_nodes_outside_planes": 0,
+  "shell_nonrim_midsurface_max_penetration_mm": 0.0
+}

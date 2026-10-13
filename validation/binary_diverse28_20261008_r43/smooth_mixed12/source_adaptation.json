@@ -1,0 +1,5 @@
+{
+  "compiled_source_sha256": "43f169ee0e86f338229d6525c1deffb66747d2a5f79e68f906126ef4513128a3",
+  "source": "frozen r34 operator/solver; own r43 selection/cache and fixed-field reconstruction",
+  "production_changed": false
+}

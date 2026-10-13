@@ -1,0 +1,23 @@
+{
+  "source": "/home/xuehu/projects/tpms_jax/validation/platen_xy_PD_20261010_r52/tools/prepare_case.py",
+  "source_sha256": "583f50b1eba3528b07b52b876256a893a5313cf3cd223693ee11945feb70a2cd",
+  "substitutions": [
+    [
+      "choices=['P','D']",
+      "choices=['diverse_04']"
+    ],
+    [
+      "old=R/'validation/canonical_tpms_20261009_r50'/a.kind",
+      "old=R/'validation/geometry_transfer_20261006_r15'"
+    ],
+    [
+      "'surface.npz'",
+      "'surface_geometry.npz'"
+    ],
+    [
+      "r52",
+      "r54"
+    ]
+  ],
+  "adapted_sha256": "8cd39d2b5d9d38e07b203a90fd2b6052e8b63d19d05cf45b5c7f1b6e17ca76ea"
+}

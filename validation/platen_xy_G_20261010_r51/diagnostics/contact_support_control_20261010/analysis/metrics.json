@@ -1,0 +1,239 @@
+{
+  "scope": "G 2pct end-contact diagnostics only; no physical finite-thickness certification, no20pct or newAD.",
+  "common_initial_dt_s": 6.037128339286614e-08,
+  "force_RMS_primary_grid_points": 1001,
+  "max_loading_cap_dt_change_over_shell_peak": 0.00015532283211689538,
+  "original_cap_hold_mean_relative_change_from_finer_dt": 2.2908257973019985e-05,
+  "cases": [
+    {
+      "case": "Original cap / original dt",
+      "scope": "2pct cut-end prototype, not full-wall contact or 20pct certification",
+      "loading_RMS_N": 0.08336174102036904,
+      "RMS_over_original_shell_peak": 0.11512172538540663,
+      "RMS_over_matching_shell_peak": 0.11512172538540663,
+      "matching_shell_peak_N": 0.7241182386842194,
+      "jax": {
+        "force_1pct_N": 0.44221941534938086,
+        "force_2pct_N": 0.8945024901729769,
+        "hold_top_N": 0.930617090566278,
+        "hold_bottom_N": 0.877032426035946,
+        "work_N_mm": 0.09102761617198804,
+        "terminal_ax_ay_mm": [
+          0.08079266273265885,
+          0.03586144719151366
+        ],
+        "terminal_KE_over_IE": 0.0012242729007495446,
+        "sampled_energy_defect_over_work": 1.2158388640311628e-05,
+        "sampled_impulse_defect_over_peak_momentum": 0.00020883033678861413,
+        "required_J_min": 0.9699563831250096,
+        "rejected_blocks": 0,
+        "wall_minutes": 7.563884983498913,
+        "initial_dt_s": 1.1182555213866369e-07,
+        "terminal_dt_s": 1.1182555213866369e-07
+      },
+      "abaqus": {
+        "force_1pct_N": 0.3667075714631803,
+        "force_2pct_N": 0.7241182386842194,
+        "hold_top_N": 0.785530870297678,
+        "hold_bottom_N": 0.7338680588446956,
+        "work_N_mm": 0.07702516810107193,
+        "terminal_ax_ay_mm": [
+          0.07425511628389359,
+          0.02692657895386219
+        ],
+        "terminal_KE_over_IE": 0.00016185620393875249,
+        "energy_drift_relative_work": 0.0003247825257954255,
+        "XY_U_error_mm": 1.862645149230957e-09,
+        "XY_UR_error_rad": 0.0
+      },
+      "hold_top_bias": 0.1846983049992923,
+      "force_2pct_bias": 0.23529893653605427,
+      "work_bias": 0.1817905551668797,
+      "loading_RMS_1001_over_original_shell_peak": 0.11503679018621137,
+      "nominal_support_factor": 1.0,
+      "steps": 10731,
+      "terminal_displacement": {
+        "RMS_vector_mm": 0.010138974021481364,
+        "RMS_over_shell_displacement_RMS": 0.08966752983179045,
+        "maximum_vector_difference_mm": 0.03283913245567952
+      },
+      "terminal_support": {
+        "scope": "Moments about assigned, currently displaced shell-rim interpolation points; sum of local magnitudes, not global net moment or isolated proof of moment causality.",
+        "sides": [
+          {
+            "side": 0,
+            "terminal_force_N": 0.9005747564859129,
+            "sum_local_moment_magnitudes_over_force_mm": 0.17158651396729116,
+            "occupied_area_fraction_in_contact": 0.3818814016654968
+          },
+          {
+            "side": 1,
+            "terminal_force_N": 0.9080890851207213,
+            "sum_local_moment_magnitudes_over_force_mm": 0.17212669982598994,
+            "occupied_area_fraction_in_contact": 0.37501840499962114
+          }
+        ]
+      }
+    },
+    {
+      "case": "Original cap / common dt",
+      "scope": "Original cap, matched fine time step; 2pct diagnostic",
+      "loading_RMS_N": 0.08336128177830372,
+      "RMS_over_original_shell_peak": 0.1151210911767363,
+      "RMS_over_matching_shell_peak": 0.1151210911767363,
+      "matching_shell_peak_N": 0.7241182386842194,
+      "jax": {
+        "force_1pct_N": 0.44221177186769184,
+        "force_2pct_N": 0.8944872519705631,
+        "hold_top_N": 0.9306384093826627,
+        "hold_bottom_N": 0.8770081206665616,
+        "work_N_mm": 0.09102783561970205,
+        "terminal_ax_ay_mm": [
+          0.08079266243522018,
+          0.035861452315134906
+        ],
+        "terminal_KE_over_IE": 0.0012242738559527196,
+        "sampled_energy_defect_over_work": 3.486288715976652e-06,
+        "sampled_impulse_defect_over_peak_momentum": 5.527758963400505e-05,
+        "required_J_min": 0.9699565085425418,
+        "rejected_blocks": 0,
+        "wall_minutes": 13.007048633366745,
+        "initial_dt_s": 6.037128339286614e-08,
+        "terminal_dt_s": 6.037128339286614e-08
+      },
+      "abaqus": {
+        "force_1pct_N": 0.3667075714631803,
+        "force_2pct_N": 0.7241182386842194,
+        "hold_top_N": 0.785530870297678,
+        "hold_bottom_N": 0.7338680588446956,
+        "work_N_mm": 0.07702516810107193,
+        "terminal_ax_ay_mm": [
+          0.07425511628389359,
+          0.02692657895386219
+        ],
+        "terminal_KE_over_IE": 0.00016185620393875249,
+        "energy_drift_relative_work": 0.0003247825257954255,
+        "XY_U_error_mm": 1.862645149230957e-09,
+        "XY_UR_error_rad": 0.0
+      },
+      "hold_top_bias": 0.1847254443736832,
+      "force_2pct_bias": 0.23527789273187993,
+      "work_bias": 0.18179340420595924,
+      "loading_RMS_1001_over_original_shell_peak": 0.11503612276560682,
+      "nominal_support_factor": 1.0,
+      "steps": 19878,
+      "terminal_displacement": {
+        "RMS_vector_mm": 0.010138973073954758,
+        "RMS_over_shell_displacement_RMS": 0.08966752145201062,
+        "maximum_vector_difference_mm": 0.032839128830478834
+      },
+      "terminal_support": {
+        "scope": "Moments about assigned, currently displaced shell-rim interpolation points; sum of local magnitudes, not global net moment or isolated proof of moment causality.",
+        "sides": [
+          {
+            "side": 0,
+            "terminal_force_N": 0.9005585115215913,
+            "sum_local_moment_magnitudes_over_force_mm": 0.17158396165923434,
+            "occupied_area_fraction_in_contact": 0.3818814016654968
+          },
+          {
+            "side": 1,
+            "terminal_force_N": 0.9080878468149655,
+            "sum_local_moment_magnitudes_over_force_mm": 0.17212675989090195,
+            "occupied_area_fraction_in_contact": 0.37501840499962114
+          }
+        ]
+      }
+    },
+    {
+      "case": "Rimline support / common dt",
+      "scope": "Artificial midsurface-rim contact-support diagnostic, 2pct; not physical finite-thickness contact certification",
+      "loading_RMS_N": 0.0015072704930711885,
+      "RMS_over_original_shell_peak": 0.002081525381559259,
+      "RMS_over_matching_shell_peak": 0.002081525381559259,
+      "matching_shell_peak_N": 0.7241182386842194,
+      "jax": {
+        "force_1pct_N": 0.3651852472971329,
+        "force_2pct_N": 0.7213481774740473,
+        "hold_top_N": 0.7886046740673649,
+        "hold_bottom_N": 0.7314099410595222,
+        "work_N_mm": 0.07696962953636195,
+        "terminal_ax_ay_mm": [
+          0.06993043870436857,
+          0.028268122085649255
+        ],
+        "terminal_KE_over_IE": 0.00011799792206906416,
+        "sampled_energy_defect_over_work": 5.2646031240952966e-06,
+        "sampled_impulse_defect_over_peak_momentum": 0.0003983355743638864,
+        "required_J_min": 0.9578437603698183,
+        "rejected_blocks": 0,
+        "wall_minutes": 13.17221846145112,
+        "initial_dt_s": 6.037128339286614e-08,
+        "terminal_dt_s": 6.037128339286614e-08
+      },
+      "abaqus": {
+        "force_1pct_N": 0.3667075714631803,
+        "force_2pct_N": 0.7241182386842194,
+        "hold_top_N": 0.785530870297678,
+        "hold_bottom_N": 0.7338680588446956,
+        "work_N_mm": 0.07702516810107193,
+        "terminal_ax_ay_mm": [
+          0.07425511628389359,
+          0.02692657895386219
+        ],
+        "terminal_KE_over_IE": 0.00016185620393875249,
+        "energy_drift_relative_work": 0.0003247825257954255,
+        "XY_U_error_mm": 1.862645149230957e-09,
+        "XY_UR_error_rad": 0.0
+      },
+      "hold_top_bias": 0.003913027337197006,
+      "force_2pct_bias": -0.003825426652980801,
+      "work_bias": -0.0007210443817156076,
+      "loading_RMS_1001_over_original_shell_peak": 0.002079237961960243,
+      "nominal_support_factor": 0.0,
+      "steps": 19878,
+      "terminal_displacement": {
+        "RMS_vector_mm": 0.0025409317227548427,
+        "RMS_over_shell_displacement_RMS": 0.02247161010255493,
+        "maximum_vector_difference_mm": 0.007395531447705815
+      },
+      "terminal_support": {
+        "scope": "Moments about assigned, currently displaced shell-rim interpolation points; sum of local magnitudes, not global net moment or isolated proof of moment causality.",
+        "sides": [
+          {
+            "side": 0,
+            "terminal_force_N": 0.7237774155232195,
+            "sum_local_moment_magnitudes_over_force_mm": 0.0,
+            "occupied_area_fraction_in_contact": 0.9359027349169927
+          },
+          {
+            "side": 1,
+            "terminal_force_N": 0.8004175524451924,
+            "sum_local_moment_magnitudes_over_force_mm": 0.0,
+            "occupied_area_fraction_in_contact": 0.9359027349169928
+          }
+        ]
+      }
+    }
+  ],
+  "halfway_pre_dynamic_admission_failure": {
+    "stage": "stopped_before_dynamic_advance",
+    "reason": "Requested common dt exceeds the conservative initial estimate; no integration was attempted",
+    "requested_dt_s": 6.037128339286612e-08,
+    "allowed_initial_dt_s": 2.269788727221146e-09,
+    "estimate": {
+      "power_estimated_omega2_s_minus2": 6.987657842899896e+16,
+      "power_steps": 25,
+      "safety_fraction": 0.3,
+      "not_a_proven_global_bound": true
+    },
+    "estimate_recheck_seconds": 31.124198462930508,
+    "requested_to_allowed_ratio": 26.59775452615689
+  },
+  "limits": [
+    "Halfway support is artificial; material thickness is unchanged.",
+    "Support map alters contact positions and spatial discretization, not exclusively moment.",
+    "Pressure penalties differ between solvers; rimline matching is not a universal physical accuracy certificate.",
+    "Time-step control tests the current short path; it is not global time convergence."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "three_diagnostics_complete_contact_support_effect_identified",
+  "original_cap_comparison_passed": false,
+  "rimline_loading_RMS_over_original_shell_peak": 0.002081525381559259,
+  "rimline_hold_mean_bias": 0.003913027337197006,
+  "original_cap_T2ms_hold_bias": 0.1824603404213525,
+  "physical_finite_thickness_contact_certified": false,
+  "full20_submitted": false,
+  "new_design_AD": false,
+  "active_jobs": []
+}

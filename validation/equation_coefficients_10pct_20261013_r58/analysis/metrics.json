@@ -1,0 +1,1873 @@
+{
+  "scope": "diverse_28 actual equation coefficients; fixed 0-to-10pct full loading-work gradients; terminal force AD c2 only",
+  "generated_unix": 1791876544.7872021,
+  "conclusion": "完整0–10%加载功三系数梯度通过",
+  "worker_status": {
+    "stage": "completed",
+    "active_jobs": [],
+    "result": "AD/work_VJP_result.json",
+    "heartbeat": "PAUSED",
+    "r53": "unchanged_paused",
+    "r57": "unchanged_completed"
+  },
+  "execution": {
+    "compression": 0.1,
+    "end_time_s": 0.002,
+    "dt_s": 5.7997745331621686e-08,
+    "prefix_steps": 10113,
+    "prefix_time_s": 0.0005865311985387058,
+    "steps": 34485,
+    "extension_steps": 24372,
+    "prefix_blocks": [
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0000.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0001.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0002.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0003.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0004.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0005.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0006.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0007.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0008.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0009.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0010.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0011.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0012.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0013.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0014.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0015.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0016.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0017.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0018.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0019.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0020.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0021.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0022.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0023.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0024.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0025.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0026.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0027.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0028.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0029.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0030.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0031.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0032.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0033.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0034.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0035.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0036.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0037.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0038.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0039.npz",
+        "count": 129,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      }
+    ],
+    "extension_schedule": [
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 51,
+        "dt_s": 5.7997745331621686e-08
+      },
+      {
+        "count": 1,
+        "dt_s": 5.749984341961445e-09
+      }
+    ],
+    "blocks": [
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0000.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0001.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0002.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0003.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0004.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0005.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0006.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0007.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0008.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0009.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0010.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0011.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0012.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0013.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0014.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0015.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0016.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0017.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0018.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0019.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0020.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0021.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0022.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0023.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0024.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0025.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0026.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0027.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0028.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0029.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0030.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0031.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0032.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0033.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0034.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0035.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0036.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0037.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0038.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57/AD/c2/checkpoints/0039.npz",
+        "count": 129,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r57_prefix"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0000.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0001.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0002.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0003.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0004.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0005.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0006.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0007.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0008.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0009.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0010.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0011.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0012.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0013.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0014.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0015.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0016.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0017.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0018.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0019.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0020.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0021.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0022.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0023.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0024.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0025.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0026.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0027.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0028.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0029.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0030.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0031.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0032.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0033.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0034.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0035.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0036.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0037.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0038.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0039.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0040.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0041.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0042.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0043.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0044.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0045.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0046.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0047.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0048.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0049.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0050.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0051.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0052.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0053.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0054.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0055.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0056.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0057.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0058.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0059.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0060.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0061.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0062.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0063.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0064.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0065.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0066.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0067.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0068.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0069.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0070.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0071.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0072.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0073.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0074.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0075.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0076.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0077.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0078.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0079.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0080.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0081.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0082.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0083.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0084.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0085.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0086.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0087.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0088.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0089.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0090.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0091.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0092.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0093.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0094.npz",
+        "count": 256,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0095.npz",
+        "count": 51,
+        "dt_s": 5.7997745331621686e-08,
+        "source": "r58_extension"
+      },
+      {
+        "state_path": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_10pct_20261013_r58/AD/c2/checkpoints/0096.npz",
+        "count": 1,
+        "dt_s": 5.749984341961445e-09,
+        "source": "r58_extension"
+      }
+    ],
+    "expected_new_minutes": 360.0,
+    "estimated_upper_budget_minutes": 480,
+    "source_prefix": "/home/xuehu/projects/tpms_jax/validation/equation_coefficients_20261012_r57",
+    "frozen_unix": 1791855804.266435
+  },
+  "final_acceptance_passed": true,
+  "complete_work_result": true,
+  "acceptance_checks": {
+    "frozen_protocol": true,
+    "all_full_paths": true,
+    "complete_checkpoint_schedule": true,
+    "VJP_scope_and_terminal": true,
+    "all_three_work_AD_FD": true,
+    "all_three_work_FD_halving": true,
+    "c2_full_JVP_work": true,
+    "c2_VJP_JVP": true,
+    "stored_JVP_checks_match": true,
+    "stored_VJP_checks_match": true,
+    "stored_FD_halving_checks_match": true,
+    "protected_files_unchanged": true,
+    "reused_geometry": true,
+    "reused_r57_acceptance": true,
+    "prefix_equivalence": true,
+    "extension_short_duality": true
+  },
+  "work": [
+    {
+      "coefficient": "c1",
+      "baseline_coefficient": -3.4,
+      "parameter_scale": 3.4,
+      "objective": "work",
+      "h": 3.4e-05,
+      "AD": -0.0950223341188825,
+      "FD_h": -0.0950236263449543,
+      "FD_half": -0.09502330381863491,
+      "AD_method": "complete loading-work VJP",
+      "units": "N mm per dimensionless coefficient",
+      "near_zero": false,
+      "AD_FD_error": 1.0204862527859902e-05,
+      "FD_halving_error": 3.3941812842403442e-06,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": true,
+      "passed": true,
+      "baseline_response": 0.2696416747545806,
+      "signed_coefficient_scaled_sensitivity": 1.1981798929168324
+    },
+    {
+      "coefficient": "c2",
+      "baseline_coefficient": 4.6,
+      "parameter_scale": 4.6,
+      "objective": "work",
+      "h": 4.6e-05,
+      "AD": 0.014067409813481993,
+      "FD_h": 0.014067594639298403,
+      "FD_half": 0.014067810639825047,
+      "AD_method": "complete loading-work VJP",
+      "units": "N mm per dimensionless coefficient",
+      "near_zero": false,
+      "AD_FD_error": 2.849244657298648e-05,
+      "FD_halving_error": 1.5354238990982785e-05,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": true,
+      "passed": true,
+      "baseline_response": 0.2696416747545806,
+      "signed_coefficient_scaled_sensitivity": 0.23999231202704102
+    },
+    {
+      "coefficient": "c0",
+      "baseline_coefficient": 2.0,
+      "parameter_scale": 2.0,
+      "objective": "work",
+      "h": 2e-05,
+      "AD": -0.19389301057311564,
+      "FD_h": -0.19389738266373244,
+      "FD_half": -0.1938954243219104,
+      "AD_method": "complete loading-work VJP",
+      "units": "N mm per dimensionless coefficient",
+      "near_zero": false,
+      "AD_FD_error": 1.2448714574861332e-05,
+      "FD_halving_error": 1.0099989872829349e-05,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": true,
+      "passed": true,
+      "baseline_response": 0.2696416747545806,
+      "signed_coefficient_scaled_sensitivity": -1.43817104309553
+    }
+  ],
+  "terminal_force": [
+    {
+      "coefficient": "c1",
+      "baseline_coefficient": -3.4,
+      "parameter_scale": 3.4,
+      "objective": "force",
+      "h": 3.4e-05,
+      "AD": null,
+      "FD_h": -0.2465346345575283,
+      "FD_half": -0.23906389581665957,
+      "AD_method": "not computed",
+      "units": "N per dimensionless coefficient",
+      "near_zero": false,
+      "AD_FD_error": null,
+      "FD_halving_error": 0.0312499665219131,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": false,
+      "passed": null,
+      "baseline_response": 0.42674085914044324,
+      "signed_coefficient_scaled_sensitivity": 1.904709212550793
+    },
+    {
+      "coefficient": "c2",
+      "baseline_coefficient": 4.6,
+      "parameter_scale": 4.6,
+      "objective": "force",
+      "h": 4.6e-05,
+      "AD": 0.0370744054027597,
+      "FD_h": 0.034108433364546026,
+      "FD_half": 0.030664471287068843,
+      "AD_method": "complete c2 JVP",
+      "units": "N per dimensionless coefficient",
+      "near_zero": false,
+      "AD_FD_error": 0.20903455519201838,
+      "FD_halving_error": 0.11231115140502995,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": false,
+      "passed": false,
+      "baseline_response": 0.42674085914044324,
+      "signed_coefficient_scaled_sensitivity": 0.330543853252388
+    },
+    {
+      "coefficient": "c0",
+      "baseline_coefficient": 2.0,
+      "parameter_scale": 2.0,
+      "objective": "force",
+      "h": 2e-05,
+      "AD": null,
+      "FD_h": -0.5069735275822773,
+      "FD_half": -0.483773121545683,
+      "AD_method": "not computed",
+      "units": "N per dimensionless coefficient",
+      "near_zero": false,
+      "AD_FD_error": null,
+      "FD_halving_error": 0.04795720349751482,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": false,
+      "passed": null,
+      "baseline_response": 0.42674085914044324,
+      "signed_coefficient_scaled_sensitivity": -2.26729225094647
+    }
+  ],
+  "c2_full_JVP_recalculated": {
+    "work": {
+      "AD": 0.014067409813480734,
+      "FD": 0.014067594639298403,
+      "FD_half": 0.014067810639825047,
+      "near_zero": false,
+      "AD_FD_error": 2.8492446662510663e-05,
+      "FD_halving_error": 1.5354238990982785e-05,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": true,
+      "passed": true
+    },
+    "force": {
+      "AD": 0.0370744054027597,
+      "FD": 0.034108433364546026,
+      "FD_half": 0.030664471287068843,
+      "near_zero": false,
+      "AD_FD_error": 0.20903455519201838,
+      "FD_halving_error": 0.11231115140502995,
+      "applicable_limit": 0.01,
+      "error_type": "relative",
+      "FD_halving_passed": false,
+      "passed": false
+    }
+  },
+  "c2_full_JVP_stored": {
+    "work": {
+      "AD": 0.014067409813480734,
+      "FD": 0.014067594639298403,
+      "FD_half": 0.014067810639825047,
+      "near_zero": false,
+      "AD_FD_error": 2.8492446662510663e-05,
+      "FD_halving_error": 1.5354238990982785e-05,
+      "passed": true
+    },
+    "force": {
+      "AD": 0.0370744054027597,
+      "FD": 0.034108433364546026,
+      "FD_half": 0.030664471287068843,
+      "near_zero": false,
+      "AD_FD_error": 0.20903455519201838,
+      "FD_halving_error": 0.11231115140502995,
+      "passed": false
+    }
+  },
+  "c2_VJP_JVP": {
+    "VJP": 0.014067409813481993,
+    "JVP": 0.014067409813480734,
+    "near_zero": false,
+    "AD_FD_error": 8.952673308431492e-14,
+    "FD_halving_error": 0.0,
+    "applicable_limit": 0.01,
+    "error_type": "relative",
+    "FD_halving_passed": true,
+    "passed": true
+  },
+  "common_scaling_null_direction": {
+    "contraction_Nmm": -1.3641865415081611e-14,
+    "relative_to_sum_abs_terms": 1.7589423897693314e-14,
+    "role": "diagnostic only; no additional acceptance tolerance",
+    "interpretation": "Positive common scaling of all three coefficients leaves the zero surface unchanged; two independent morphology degrees of freedom"
+  },
+  "path_checks": {
+    "JVP_c2": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c1_plus_h": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c1_minus_h": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c1_plus_half": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c1_minus_half": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c2_plus_h": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c2_minus_h": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c2_plus_half": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c2_minus_half": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c0_plus_h": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c0_minus_h": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c0_plus_half": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    },
+    "c0_minus_half": {
+      "available": true,
+      "passed": true,
+      "reasons": [],
+      "complete_flag": true,
+      "terminal_steps": 34485,
+      "terminal_time_s": 0.0019999999999991964,
+      "terminal_compression": 0.09999999999992465,
+      "rows": 137,
+      "prefix_rows": 40
+    }
+  },
+  "completed_FD_result_files": 12,
+  "protected_file_count": 96,
+  "protected_original_changes": [],
+  "benchmark": {
+    "forward256_s": 13.256479740142822,
+    "JVP256_s": 22.18065619468689,
+    "VJP256_s": 44.17408204078674,
+    "short_duality_relative": 1.5557493899801473e-12,
+    "passed": true,
+    "estimated_remaining_s": 24233.915307998657,
+    "scope": "256-step duality at reused0.5pct state; not complete gradient validation"
+  },
+  "prefix_equivalence": {
+    "response_relative": 0.0,
+    "JVP_relative": 0.0,
+    "passed": true
+  },
+  "costs": {
+    "prefix_historical_total_s": 8613.03425526619,
+    "prefix_historical_cost_included_in_new_total": false,
+    "new_JVP_extension_s": 1973.5709924697876,
+    "new_FD_extension_sum_s": 12372.164559364319,
+    "new_VJP_including_reused_prefix_reverse_s": 6131.418941736221,
+    "new_total_wall_s": 20735.8377058506,
+    "observed_elapsed_since_protocol_s": 20740.51777768135,
+    "worker_reported_wall_s": null,
+    "budget_s": 28800,
+    "new_checkpoint_bytes": 1859611638,
+    "reused_prefix_checkpoint_bytes": 766850160,
+    "note": "Old r57 143.55min is provenance only. r58 reverse revisits the old prefix and is newly incurred work. Task subtotals omit compilation/preflight/IO and do not replace total wall time."
+  },
+  "sampled_min_required_J": 0.8540713470724289,
+  "failure": null
+}

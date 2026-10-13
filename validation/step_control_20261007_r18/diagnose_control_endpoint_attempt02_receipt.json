@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "wall_seconds": 23.846722319023684,
+  "new_time_advancing_jobs": 0,
+  "repair": "Read-only domain energy/stress calls now pass existing scale. Original failed source/log retained."
+}

@@ -1,0 +1,115 @@
+{
+  "id": "G12_thickness",
+  "scope": "G complete0-to-about12pct thickness total derivative, fixed-time full-prefix continuation",
+  "plan_step": "step3",
+  "analysis_name": "G12_thickness",
+  "plot_title": "G12%",
+  "requires_reverse_pass": true,
+  "requires": [
+    [
+      "analysis/G10_thickness/metrics.json",
+      "passed"
+    ]
+  ],
+  "wall_budget_seconds": 1800,
+  "baseline_parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "active_parameter": "thickness_mm",
+  "fd_steps_mm": [
+    0.0025,
+    0.00125
+  ],
+  "dt_s": 5.7999300462244876e-08,
+  "steps": 38189,
+  "target_compression": 0.12,
+  "nominal_end_time_s": 0.0022149836100541077,
+  "actual_end_time_s": 0.00221493528535267,
+  "load": "Original20pct4ms quintic prefix, no hold; stop at last full dt not exceeding12pct",
+  "includes": [
+    "Gauss occupancy",
+    "material/internal force",
+    "HRZ nodal mass",
+    "XY projected macro inertia",
+    "end contact occupied area",
+    "initial acceleration",
+    "all states and work quadrature"
+  ],
+  "thresholds": {
+    "nonzero_gradient_relative_AD_FD": 0.01,
+    "FD_h_halving_relative": 0.01,
+    "nearzero_dimensionless_gradient_cutoff": 1e-06,
+    "nearzero_absolute_scaled_error": 1e-05,
+    "objective_scales": [
+      1.0,
+      1.0
+    ],
+    "parameter_scale_mm": 0.5
+  },
+  "cases": [
+    {
+      "label": "G12/AD/thickness",
+      "params_mm": [
+        0.5,
+        0.05
+      ],
+      "is_ad": true,
+      "initial_from": "G10/AD/thickness",
+      "seed": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "label": "G12/FD/t_plus_h",
+      "params_mm": [
+        0.5025,
+        0.05
+      ],
+      "is_ad": false,
+      "initial_from": "G10/FD/t_plus_h"
+    },
+    {
+      "label": "G12/FD/t_minus_h",
+      "params_mm": [
+        0.4975,
+        0.05
+      ],
+      "is_ad": false,
+      "initial_from": "G10/FD/t_minus_h"
+    },
+    {
+      "label": "G12/FD/t_plus_half",
+      "params_mm": [
+        0.50125,
+        0.05
+      ],
+      "is_ad": false,
+      "initial_from": "G10/FD/t_plus_half"
+    },
+    {
+      "label": "G12/FD/t_minus_half",
+      "params_mm": [
+        0.49875,
+        0.05
+      ],
+      "is_ad": false,
+      "initial_from": "G10/FD/t_minus_half"
+    }
+  ],
+  "status_fields": {
+    "step1": "passed",
+    "step2": "passed",
+    "step2_reverse": "passed",
+    "step2_interface": "passed",
+    "new_reverse_AD": true,
+    "step3": "running",
+    "step4": "pending",
+    "G10_thickness": "passed"
+  },
+  "baseline_original_result": "validation/platen_xy_G_20261010_r51/experiments/midsurface_rim_20pct_20261010/jax/result.json",
+  "prefix_policy": "Each saved state and complete tangent are reused with its own parameters, dt and accumulated work; original prefixes remain unchanged",
+  "failure_policy": "No tolerance relaxation or forced unstable timestep; stop and preserve failure before further extension",
+  "frozen_utc": "2026-10-11T04:32:47.106327+00:00"
+}

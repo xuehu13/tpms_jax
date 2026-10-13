@@ -1,0 +1,49 @@
+{
+  "scope": "Additional implementation verification after the frozen intervention; no new equilibrium or acceptance relaxation",
+  "sample_cells": [
+    1319,
+    6132,
+    9106,
+    12145,
+    21009,
+    23992,
+    27005,
+    31560
+  ],
+  "random_seed": 34,
+  "checks": {
+    "matrix_vs_direct_stress_integral_le_1e-12": true
+  },
+  "errors": [
+    {
+      "level": 3,
+      "trial": 0,
+      "force_relative_error": 2.7366094267976436e-16
+    },
+    {
+      "level": 3,
+      "trial": 1,
+      "force_relative_error": 2.275380704204101e-16
+    },
+    {
+      "level": 3,
+      "trial": 2,
+      "force_relative_error": 3.579274339581482e-16
+    },
+    {
+      "level": 12,
+      "trial": 0,
+      "force_relative_error": 2.1453811780781313e-15
+    },
+    {
+      "level": 12,
+      "trial": 1,
+      "force_relative_error": 2.9873004379477375e-15
+    },
+    {
+      "level": 12,
+      "trial": 2,
+      "force_relative_error": 2.378607653358894e-15
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+[
+  {
+    "iteration": 50,
+    "recurrence_relative_residual": 0.06671444279702887,
+    "seconds": 1.0883196049835533
+  },
+  {
+    "iteration": 100,
+    "recurrence_relative_residual": 0.05351359019546225,
+    "seconds": 1.6458072529640049
+  },
+  {
+    "iteration": 150,
+    "recurrence_relative_residual": 0.03214849393578878,
+    "seconds": 2.2032968300627545
+  },
+  {
+    "iteration": 200,
+    "recurrence_relative_residual": 0.02084249846758301,
+    "seconds": 2.7611394120613113
+  },
+  {
+    "iteration": 250,
+    "recurrence_relative_residual": 0.021186679714068297,
+    "seconds": 3.3261669960338622,
+    "true_relative_residual": 0.021186679714068325
+  },
+  {
+    "iteration": 300,
+    "recurrence_relative_residual": 0.005425952535329851,
+    "seconds": 4.178281089058146
+  },
+  {
+    "iteration": 350,
+    "recurrence_relative_residual": 0.0036653106275166374,
+    "seconds": 4.734889735002071
+  },
+  {
+    "iteration": 400,
+    "recurrence_relative_residual": 0.00249834906529591,
+    "seconds": 5.294259862974286
+  },
+  {
+    "iteration": 450,
+    "recurrence_relative_residual": 0.0014012332718254428,
+    "seconds": 5.853091288008727
+  },
+  {
+    "iteration": 500,
+    "recurrence_relative_residual": 0.002408159238489587,
+    "seconds": 6.411752860993147,
+    "true_relative_residual": 0.0024081592384893324
+  },
+  {
+    "iteration": 550,
+    "recurrence_relative_residual": 0.0008302647537177568,
+    "seconds": 6.981517177075148
+  },
+  {
+    "iteration": 600,
+    "recurrence_relative_residual": 0.00023910972925257173,
+    "seconds": 7.540098290075548
+  },
+  {
+    "iteration": 650,
+    "recurrence_relative_residual": 4.92927310031328e-05,
+    "seconds": 8.100340645993128
+  },
+  {
+    "iteration": 700,
+    "recurrence_relative_residual": 1.0213439485423562e-05,
+    "seconds": 8.660122210043482
+  },
+  {
+    "iteration": 750,
+    "recurrence_relative_residual": 5.129060749540857e-06,
+    "seconds": 9.213835600065067,
+    "true_relative_residual": 5.129060749615766e-06
+  },
+  {
+    "iteration": 800,
+    "recurrence_relative_residual": 1.9782969360024366e-06,
+    "seconds": 9.782471865066327
+  },
+  {
+    "iteration": 850,
+    "recurrence_relative_residual": 7.707189099934431e-07,
+    "seconds": 10.340284220990725
+  },
+  {
+    "iteration": 900,
+    "recurrence_relative_residual": 9.29179017989548e-07,
+    "seconds": 10.897146595991217
+  },
+  {
+    "iteration": 950,
+    "recurrence_relative_residual": 4.4879370092901103e-07,
+    "seconds": 11.452574313036166
+  },
+  {
+    "iteration": 1000,
+    "recurrence_relative_residual": 3.439827955373053e-07,
+    "seconds": 12.010595671017654,
+    "true_relative_residual": 3.4398279534579274e-07
+  },
+  {
+    "iteration": 1050,
+    "recurrence_relative_residual": 2.194119733498334e-07,
+    "seconds": 12.582452574977651
+  },
+  {
+    "iteration": 1100,
+    "recurrence_relative_residual": 1.7543679762489955e-07,
+    "seconds": 13.139376481994987
+  },
+  {
+    "iteration": 1150,
+    "recurrence_relative_residual": 1.6052193439916715e-07,
+    "seconds": 13.695612465031445
+  },
+  {
+    "iteration": 1200,
+    "recurrence_relative_residual": 9.412513704376861e-08,
+    "seconds": 14.252144715981558
+  },
+  {
+    "iteration": 1250,
+    "recurrence_relative_residual": 9.795042627692442e-08,
+    "seconds": 14.808118859073147,
+    "true_relative_residual": 9.795042614483883e-08
+  },
+  {
+    "iteration": 1300,
+    "recurrence_relative_residual": 6.772888431192651e-08,
+    "seconds": 15.375354829011485
+  },
+  {
+    "iteration": 1350,
+    "recurrence_relative_residual": 4.9021983665410043e-08,
+    "seconds": 15.932592913042754
+  },
+  {
+    "iteration": 1400,
+    "recurrence_relative_residual": 3.819930259348677e-08,
+    "seconds": 16.491787165985443
+  },
+  {
+    "iteration": 1450,
+    "recurrence_relative_residual": 3.550064734273158e-08,
+    "seconds": 17.04658763599582
+  },
+  {
+    "iteration": 1500,
+    "recurrence_relative_residual": 2.4539323668366044e-08,
+    "seconds": 17.599465182982385,
+    "true_relative_residual": 2.453932415426789e-08
+  },
+  {
+    "iteration": 1550,
+    "recurrence_relative_residual": 1.6332707861766093e-08,
+    "seconds": 18.168872992042452
+  },
+  {
+    "iteration": 1600,
+    "recurrence_relative_residual": 1.0562239978735992e-08,
+    "seconds": 18.72780818096362
+  },
+  {
+    "iteration": 1650,
+    "recurrence_relative_residual": 8.049988400124878e-09,
+    "seconds": 19.286486024037004
+  },
+  {
+    "iteration": 1700,
+    "recurrence_relative_residual": 4.663567488582782e-09,
+    "seconds": 19.841394538991153
+  },
+  {
+    "iteration": 1750,
+    "recurrence_relative_residual": 2.7119865878205567e-09,
+    "seconds": 20.398126243962906,
+    "true_relative_residual": 2.7119866860025676e-09
+  },
+  {
+    "iteration": 1800,
+    "recurrence_relative_residual": 1.6102816417411374e-09,
+    "seconds": 20.96754276799038
+  },
+  {
+    "iteration": 1850,
+    "recurrence_relative_residual": 1.0951064494571924e-09,
+    "seconds": 21.52476729499176
+  },
+  {
+    "iteration": 1900,
+    "recurrence_relative_residual": 9.62737289505856e-10,
+    "seconds": 22.082618913962506
+  },
+  {
+    "iteration": 1950,
+    "recurrence_relative_residual": 6.360511445756538e-10,
+    "seconds": 22.640465212985873
+  },
+  {
+    "iteration": 2000,
+    "recurrence_relative_residual": 3.315534005937471e-10,
+    "seconds": 23.198534775990993,
+    "true_relative_residual": 3.3155353042363653e-10
+  },
+  {
+    "iteration": 2050,
+    "recurrence_relative_residual": 2.128487326269171e-10,
+    "seconds": 23.766654490027577
+  },
+  {
+    "iteration": 2100,
+    "recurrence_relative_residual": 1.5776707965063976e-10,
+    "seconds": 24.32463327096775
+  },
+  {
+    "iteration": 2150,
+    "recurrence_relative_residual": 1.3346027959566688e-10,
+    "seconds": 24.88184953003656
+  },
+  {
+    "iteration": 2170,
+    "recurrence_relative_residual": 9.923993477595863e-11,
+    "seconds": 25.10821884602774,
+    "true_relative_residual": 9.923945778274889e-11
+  }
+]

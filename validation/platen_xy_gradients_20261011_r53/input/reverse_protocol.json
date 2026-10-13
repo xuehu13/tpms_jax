@@ -1,0 +1,20 @@
+{
+  "scope": "G complete0-5pct reverse loading-work total derivative",
+  "wall_budget_seconds": 7200,
+  "parameters_mm": [
+    0.5,
+    0.05
+  ],
+  "target_compression": 0.05,
+  "load": "Original20pct4ms quintic prefix",
+  "dt_s": 5.7999300462244876E-08,
+  "steps": 24789,
+  "checkpoint_steps": 256,
+  "remat_steps": 32,
+  "VJP_JVP_relative_threshold": 0.01,
+  "forward_equivalence_threshold": 1E-06,
+  "interface_gradient_independent_FD": "pending",
+  "actual_F_J_unclipped": true,
+  "old20pct_sign_failure_preserved": true,
+  "frozen_utc": "2026-10-10T19:07:30.3697334Z"
+}

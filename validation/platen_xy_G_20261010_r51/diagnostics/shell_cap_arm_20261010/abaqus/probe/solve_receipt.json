@@ -1,0 +1,21 @@
+{
+  "action": "solve",
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "job=platen",
+    "input=platen.inp",
+    "cpus=4",
+    "double=both",
+    "interactive",
+    "ask_delete=OFF"
+  ],
+  "returncode": 0,
+  "wall_seconds": 27.780999999959022,
+  "budget_stop": false,
+  "success": true,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r51_cap_arm_probe_20261010",
+  "INP_sha256": "84b71110870a892d80889da5ae41bb07491ee268d090c98a350b8ac7404cda38"
+}

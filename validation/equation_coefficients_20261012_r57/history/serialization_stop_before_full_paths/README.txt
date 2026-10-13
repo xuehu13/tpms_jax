@@ -1,0 +1,1 @@
+Infrastructure save failure before any full dynamics path. Repair copies eligible execution dictionary rather than creating a self-reference; original total budget start retained. No science parameter/gate change.

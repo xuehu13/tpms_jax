@@ -1,0 +1,67 @@
+{
+  "source": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/work/branch_review_20261007",
+  "destination": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/completed_tools_20261007/branch_review_20261007",
+  "files": [
+    {
+      "relative": "analyze_existing_paths.py",
+      "sha256": "eb87c66d2a942d63fe9d7514afda5e887cfa7149efda8b51230b07333e0ade75"
+    },
+    {
+      "relative": "literature_record.json",
+      "sha256": "06188ac5458d6e67c01aaf2eda0637a414979494d216dced27b3e62c7182e52b"
+    },
+    {
+      "relative": "paper_1_page12.png",
+      "sha256": "110006d42a1997dfeaa16a350c76c0ed670b2578a4dce9a193ad3ecce94793e6"
+    },
+    {
+      "relative": "paper_1_page13.png",
+      "sha256": "ab2477f3a275b975b6a6055f5940c7570af1ae42b74e2ba4c482bb1ba7352546"
+    },
+    {
+      "relative": "paper_1_selected_pages.json",
+      "sha256": "78d88bd15a2c4e7f52203bad0ed15788e180cf9e2a7d22d2baeff3e28af7aa4e"
+    },
+    {
+      "relative": "paper_2_page5.png",
+      "sha256": "fe048e61404495ee38401eadb5a9308be7cb1ef8c1f6cbcf3c379c6efe225c5e"
+    },
+    {
+      "relative": "paper_2_selected_pages.json",
+      "sha256": "99ed125cb88dbc3b870ae3c0a70f7b4f704fcc6dd22a2582400ac369983c6164"
+    },
+    {
+      "relative": "prepare_review.py",
+      "sha256": "c345b1a7e8eda1f6eae7f405aaab59da7fa6ff1f83498824bc9a07134b2fb7c0"
+    },
+    {
+      "relative": "read_papers.py",
+      "sha256": "2a6b126d7df5b8b9a495465b57e85809a8ac4cbdb52a2135f3699c7ada46ffc9"
+    },
+    {
+      "relative": "render_papers.py",
+      "sha256": "4dbe07f4fad1c9f6c80761cd72d994ef5fd122e782f19ebc7afc0ea2257d70e9"
+    },
+    {
+      "relative": "repair_figure_mirror.py",
+      "sha256": "d118c497f8f03420a27cb9c14764012a6db0626ae1387b844c942883a61efee0"
+    },
+    {
+      "relative": "repair_reading_links.py",
+      "sha256": "15d5874711c04fbcc765e7d0eaff1240b91b8456091da21139557820b1dddfc4"
+    },
+    {
+      "relative": "update_documents.py",
+      "sha256": "b551420216d81908e0495e9bfe25c7d8d6a3a4c6b54edc8cf6452d32c1f13627"
+    },
+    {
+      "relative": "verify_and_archive.py",
+      "sha256": "2b037012dc9898bdea1e7d836f50b9e962025e2b9e0a4b1a4ac3813e3f1e900d"
+    },
+    {
+      "relative": "write_plan.py",
+      "sha256": "fcfd76ec7decea483ce23678b23cf1d935cda56c42283c973d8ac004f30b9219"
+    }
+  ],
+  "all_bytes_preserved": true
+}

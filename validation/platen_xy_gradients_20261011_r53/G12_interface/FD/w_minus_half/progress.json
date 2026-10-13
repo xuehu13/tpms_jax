@@ -1,0 +1,17 @@
+{
+  "case": "G12_interface/FD/w_minus_half",
+  "steps": 38189,
+  "total_steps": 38189,
+  "wall_s": 161.32559823989868,
+  "time_s": 0.00221493528535155,
+  "compression": 0.1199955736248841,
+  "work_N_mm": 2.438770501414861,
+  "force_N": 3.6106253448196743,
+  "IE_N_mm": 2.4092764415971955,
+  "all_J_min": -1.2285198520612,
+  "required_positive_J_min": 0.7533547944474871,
+  "negative_void_J_points": 452,
+  "KE_N_mm": 0.02213168386813656,
+  "bottom_force_N": 3.627787418785337,
+  "contact_energy_N_mm": 0.007362376336911635
+}

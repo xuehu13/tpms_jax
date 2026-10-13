@@ -1,0 +1,20 @@
+{
+  "action": "extract",
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "E:\\ABAQUS\\2026\\Commands\\abaqus.bat",
+    "python",
+    "extract.py",
+    "platen.odb",
+    "protocol.json",
+    "result.json"
+  ],
+  "returncode": 0,
+  "wall_seconds": 1.4839999999385327,
+  "budget_stop": false,
+  "success": true,
+  "native_directory": "E:\\ABAQUS\\2026temp\\Abaqus_Work\\tpms_jax_abaqus\\r55_diverse_05_midsurface_end_20pct_20261012",
+  "INP_sha256": "47f9bbfeb6fcb4f5dada2d9996ea74d732ba210860f08f723ed823f75e6dba69"
+}

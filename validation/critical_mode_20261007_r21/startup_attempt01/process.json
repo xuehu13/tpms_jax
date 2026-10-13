@@ -1,0 +1,7 @@
+{
+  "pid": 2213768,
+  "command": [
+    "/home/xuehu/projects/tpms_jax/.pixi/envs/default/bin/python",
+    "/home/xuehu/projects/tpms_jax/validation/critical_mode_20261007_r21/diagnose.py"
+  ]
+}

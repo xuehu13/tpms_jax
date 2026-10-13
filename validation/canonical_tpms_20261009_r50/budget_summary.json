@@ -1,0 +1,62 @@
+{
+  "UTC": "2026-10-09T18:11:32.432846+00:00",
+  "physical_dynamic_cases": 6,
+  "tasks": [
+    {
+      "task": "G_dynamic_jax",
+      "accounted_wall_seconds": 2280.0470000000205,
+      "cap_seconds": 2400,
+      "within_budget": true,
+      "returncode": 0,
+      "budget_stop": false
+    },
+    {
+      "task": "G_dynamic_shell",
+      "accounted_wall_seconds": 806.8279999999795,
+      "cap_seconds": 1500,
+      "within_budget": true,
+      "returncode": 0,
+      "budget_stop": false
+    },
+    {
+      "task": "P_dynamic_jax",
+      "accounted_wall_seconds": 728.204000000027,
+      "cap_seconds": 2400,
+      "within_budget": true,
+      "returncode": 0,
+      "budget_stop": false
+    },
+    {
+      "task": "P_dynamic_shell",
+      "accounted_wall_seconds": 307.73499999998603,
+      "cap_seconds": 1500,
+      "within_budget": true,
+      "returncode": 0,
+      "budget_stop": false
+    },
+    {
+      "task": "D_dynamic_jax",
+      "accounted_wall_seconds": 1455.8279999999795,
+      "cap_seconds": 2400,
+      "within_budget": true,
+      "returncode": 0,
+      "budget_stop": false
+    },
+    {
+      "task": "D_dynamic_shell",
+      "accounted_wall_seconds": 541.390999999945,
+      "cap_seconds": 1500,
+      "within_budget": true,
+      "returncode": 0,
+      "budget_stop": false
+    }
+  ],
+  "all_within_budget": true,
+  "cumulative_dynamic_accounted_minutes": 102.00054999999897,
+  "G_mesh_restart_count": 1,
+  "G_initial_startup_reserved_seconds": 320,
+  "new_design_AD_jobs": 0,
+  "initial_conditions_checked": 6,
+  "additional_shell_mesh_quality_static_rechecks": 2,
+  "scope": "Dynamic wall costs include process startup and extraction, plus conservative prior G startup reservation; geometry and initial checks are separate."
+}

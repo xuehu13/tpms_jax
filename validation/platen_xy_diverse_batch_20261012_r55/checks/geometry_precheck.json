@@ -1,0 +1,197 @@
+{
+  "diverse_28": {
+    "source_directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_28",
+    "original_readonly_source_sha256": {
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_28\\mesh\\engine\\cases\\diverse_28\\shell\\diverse_28_shell.npz": "15e6c306acb5c0167e9eea05a967c2f7a495a690080bc909a5a8c8165af7342b",
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_28\\case_used.json": "5ea175b0c73aa45a043b6766a7d000408fc52178e212bcb09e959fd54f4bff43",
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_28\\results\\stress_strain.csv": "19d89a7a57dc80519718e9315fca6f8e3c6655739f28b2c8350d8692b72e8c3f",
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_28\\simulation_used.json": "7ad57bfdd106a0f1e7d90e2212b790b3d3a38edb007405273d9126d6cd4c8c36"
+    },
+    "source_directory_linux": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_28",
+    "implicit_expression": "-3.4*cos(X)*cos(Z)+4.6*sin(X)*sin(Y)*sin(Z)+2.0",
+    "nodes": 9351,
+    "triangles": 17986,
+    "area_mm2": 304.32626755347655,
+    "normal_second_moment": [
+      [
+        0.39954640535032127,
+        -3.1950177486521314e-06,
+        -1.8410523485539816e-05
+      ],
+      [
+        -3.195017748652549e-06,
+        0.2009081777865582,
+        -2.520664166426704e-06
+      ],
+      [
+        -1.8410523485527033e-05,
+        -2.5206641664273045e-06,
+        0.3995454168631173
+      ]
+    ],
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "nodes_per_side": 124,
+        "maximum_gap_over_L": 0.0
+      },
+      {
+        "axis": 1,
+        "nodes_per_side": 120,
+        "maximum_gap_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "nodes_per_side": 126,
+        "maximum_gap_over_L": 0.0
+      }
+    ],
+    "xy_independent_relations": 242,
+    "shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_28/surface.npz",
+    "source_sha256": {
+      "surface.npz": "587a38aa6f27249462e2f555e06b8bd16ca41414fb5be3d6712f470105f0bcef",
+      "gauss_field.npz": "afd06922ccf4c4c600a79e99c1ce280fa8d3d9baf8b0b22f1044d72e7efe14e6"
+    },
+    "geometry_screen_pass": true,
+    "historical_curve_selection_only": {
+      "peak_compression": 0.081394201517,
+      "peak_stress_MPa": 0.14403355598,
+      "final_stress_MPa": 0.087208051682,
+      "not_current_reference": "Old material/rate/contact/mass scaling differ; selection only, no prediction of new response"
+    },
+    "selection_reason": "User-named existing periodic geometry, distinct orientation/area and historical drop; chosen before new results"
+  },
+  "diverse_05": {
+    "source_directory": "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05",
+    "original_readonly_source_sha256": {
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05\\mesh\\engine\\cases\\diverse_05\\shell\\diverse_05_shell.npz": "3a46b96460c130c68721494f0f0526d18e788de9c9ed4318f90ecde5a697e985",
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05\\case_used.json": "cbf71c4b6c4fcaf87151e76d39dbda6a5220d8bfdb00d940a999c83edbf9c64b",
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05\\results\\stress_strain.csv": "d87550e0494f761712ccf93582bac8839ee66b60f100e5319bb486041d9fad33",
+      "F:\\auto_abaqus\\work\\para_aly\\Fine\\T0p02\\MS9\\diverse_05\\simulation_used.json": "7ad57bfdd106a0f1e7d90e2212b790b3d3a38edb007405273d9126d6cd4c8c36"
+    },
+    "source_directory_linux": "/mnt/f/auto_abaqus/work/para_aly/Fine/T0p02/MS9/diverse_05",
+    "implicit_expression": "0.6*sin(2*Z)-4.6*cos(Y)*sin(Z)+0.8*sin(X)*sin(X)-0.4",
+    "nodes": 11624,
+    "triangles": 21998,
+    "area_mm2": 364.9445212607416,
+    "normal_second_moment": [
+      [
+        0.0590241933455776,
+        -7.796427969335463e-06,
+        -6.415556634662649e-06
+      ],
+      [
+        -7.796427969335124e-06,
+        0.4570654144435283,
+        4.5226237449409693e-05
+      ],
+      [
+        -6.415556634663646e-06,
+        4.522623744941019e-05,
+        0.4839103922108969
+      ]
+    ],
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "nodes_per_side": 233,
+        "maximum_gap_over_L": 8.326672684688674e-17
+      },
+      {
+        "axis": 1,
+        "nodes_per_side": 166,
+        "maximum_gap_over_L": 7.892991815694472e-17
+      },
+      {
+        "axis": 2,
+        "nodes_per_side": 248,
+        "maximum_gap_over_L": 0.0
+      }
+    ],
+    "xy_independent_relations": 397,
+    "shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_05/surface.npz",
+    "source_sha256": {
+      "surface.npz": "192eda3e70b7a3457d7be6c141674e9972a08dfaa9b37547abd634ef78c467cb",
+      "gauss_field.npz": "d557f9dc0871dd682bff9d0f505838595c3a1e995002888904e796c8a5f0d672"
+    },
+    "geometry_screen_pass": true,
+    "historical_curve_selection_only": {
+      "peak_compression": 0.043929058313,
+      "peak_stress_MPa": 0.22340415955,
+      "final_stress_MPa": 0.06127327919,
+      "not_current_reference": "Old material/rate/contact/mass scaling differ; selection only, no prediction of new response"
+    },
+    "selection_reason": "User-named existing periodic geometry, distinct orientation/area and historical drop; chosen before new results"
+  },
+  "diverse_02": {
+    "source_directory": "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02",
+    "original_readonly_source_sha256": {
+      "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02\\mesh\\engine\\cases\\diverse_02\\shell\\diverse_02_shell.npz": "11b45dd20aadd51f077840414a3024a73b3630362464a58778f865385d46e5cb",
+      "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02\\case_used.json": "9a993c19064e3105be9bc6e4a457382c0ec87f0d36e4703459811b4977a82062",
+      "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02\\results\\stress_strain.csv": "6291bb5d1e7792faf745fb930a65977dff7953185a8c0c86123462557c7cbb28",
+      "F:\\auto_abaqus\\work\\r3_smoke\\batch_001\\diverse_02\\simulation_used.json": "5f96bcd43365134085bff3ced4b679e6a879c4648786131d16e91c6ac55484f9"
+    },
+    "source_directory_linux": "/mnt/f/auto_abaqus/work/r3_smoke/batch_001/diverse_02",
+    "implicit_expression": "2.9*sin(2*Y)+4.0*sin(Y)*cos(Z)+1.5*sin(X)*sin(X)-0.7",
+    "nodes": 13752,
+    "triangles": 25930,
+    "area_mm2": 431.4033142016215,
+    "normal_second_moment": [
+      [
+        0.09027622761017386,
+        -1.5740628361860843e-05,
+        5.354795414997808e-06
+      ],
+      [
+        -1.5740628361860647e-05,
+        0.7747680065008604,
+        -1.252797467583333e-05
+      ],
+      [
+        5.3547954149977545e-06,
+        -1.2527974675834424e-05,
+        0.13495576588896807
+      ]
+    ],
+    "periodic_components": 1,
+    "edges_not_two": 0,
+    "orientation_conflicts": 0,
+    "seams": [
+      {
+        "axis": 0,
+        "nodes_per_side": 336,
+        "maximum_gap_over_L": 9.020562075079397e-17
+      },
+      {
+        "axis": 1,
+        "nodes_per_side": 248,
+        "maximum_gap_over_L": 0.0
+      },
+      {
+        "axis": 2,
+        "nodes_per_side": 225,
+        "maximum_gap_over_L": 8.673617379884035e-17
+      }
+    ],
+    "xy_independent_relations": 584,
+    "shell_surface": "/home/xuehu/projects/tpms_jax/validation/platen_xy_diverse_batch_20261012_r55/sources/diverse_02/surface.npz",
+    "source_sha256": {
+      "surface.npz": "821b7243e31027c5a62f3611be38ad30394f517d29ab07527071e18a27b77197",
+      "gauss_field.npz": "dc5657ea1e3d850537004c66296675e51b0cecc0fa996089a1a6011d5d138ca7"
+    },
+    "geometry_screen_pass": true,
+    "historical_curve_selection_only": {
+      "peak_compression": 0.018654872477,
+      "peak_stress_MPa": 0.40533424377,
+      "final_stress_MPa": 0.060941605568,
+      "not_current_reference": "Old material/rate/contact/mass scaling differ; selection only, no prediction of new response"
+    },
+    "selection_reason": "User-named existing periodic geometry, distinct orientation/area and historical drop; chosen before new results"
+  }
+}

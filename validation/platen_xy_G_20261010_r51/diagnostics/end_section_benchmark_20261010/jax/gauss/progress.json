@@ -1,0 +1,21 @@
+{
+  "accepted_increments": 40,
+  "last": {
+    "closure_mm": 0.2,
+    "compression": 0.02,
+    "force_N": 0.0011272605476161089,
+    "bottom_force_N": 0.0011272605476215153,
+    "free_residual_l2_N": 3.268755070707003e-14,
+    "J_min": 0.99381703254161,
+    "internal_energy_N_mm": 0.0001398735519372908,
+    "contact_energy_N_mm": 5.6071795025586825e-08,
+    "top_cross_section_rotation_rad": -0.13182140552418337,
+    "tip_mid_U1_mm": 0.8930655567337709,
+    "tip_mid_U3_mm": -0.2314277302641596,
+    "force_lever_from_current_mid_mm": -0.23858451424635188,
+    "max_enabled_quadrature_penetration_mm": 9.948329185149873e-05,
+    "max_physical_top_node_penetration_mm": 0.001956783086521696,
+    "wall_seconds": 40.27928249305114,
+    "Newton_corrections": 3
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "local": [
+    {
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Geometrically non-linear topology optimization via geometry projection.pdf",
+      "sha256": "90b2b02f62880b449ce17e11d4406c037540a97385d057c32986b51995e1c688",
+      "page_count": 15,
+      "selected_pages": [
+        1,
+        2,
+        5,
+        8,
+        15
+      ],
+      "matched_pages": [
+        1,
+        2,
+        5,
+        8,
+        15
+      ],
+      "actually_read_pages": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visual_review_pages": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "path": "C:\\Users\\xuehu\\Desktop\\tpms优化\\Multimaterial topology optimization for finite strain elastoplasticity  Theory, methods, and applications.pdf",
+      "sha256": "9cff0beb5fd788214ff88cb92a1fc9baab331d38bba252f7f667581b7689057f",
+      "page_count": 45,
+      "selected_pages": [],
+      "matched_pages": [],
+      "actually_read_pages": [],
+      "used_for_new_inference": false
+    }
+  ],
+  "public_docs_version": "2025",
+  "installed_version": "2026, new interface not tested",
+  "sources": [
+    "https://portal.research.lu.se/en/publications/geometrically-non-linear-topology-optimization-via-geometry-proje/",
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-r-3delem.htm",
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-expelementindex.htm",
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAESUBRefMap/simasub-c-vuel.htm",
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAESUBRefMap/simasub-c-vumat.htm",
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAESUBRefMap/simasub-c-vusdfld.htm",
+    "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-userelem.htm"
+  ],
+  "failed_fetch_not_used": "SIMACAEANLRefMap/simaanl-c-implicitdynamic.htm returned Internal Error",
+  "inference": "same-background control distinguishes implementation from representation; not void-only attribution"
+}

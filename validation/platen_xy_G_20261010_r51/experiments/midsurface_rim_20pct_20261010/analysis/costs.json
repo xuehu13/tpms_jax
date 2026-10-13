@@ -1,0 +1,13 @@
+{
+  "started_UTC": "2026-10-10T09:14:40.079464+00:00",
+  "finished_UTC": "2026-10-10T10:41:44.799397+00:00",
+  "elapsed_overall_minutes": 87.07866555054983,
+  "Abaqus_preparation_check_solve_extract_minutes": 18.11310909986496,
+  "JAX_build_compile_checks_advance_minutes": 50.345970793565115,
+  "extra_field_extraction_minutes": 1.3693471948305767,
+  "overall_90min_met": true,
+  "JAX_55min_met": true,
+  "Abaqus_25min_met": true,
+  "initial_report_minutes": 84.69842454592387,
+  "includes_final_figure_QA_and_organization": true
+}

@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791689010.3057575,
+  "deadline_unix": 1791692610.3057575,
+  "pid": 790939,
+  "steps": 34483,
+  "dt": 5.7999300462244876e-08,
+  "spec": "input/G10_thickness_protocol.json"
+}

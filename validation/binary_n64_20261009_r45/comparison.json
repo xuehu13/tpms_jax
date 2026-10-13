@@ -1,0 +1,161 @@
+{
+  "N": 64,
+  "occupancy": "binary Gauss, eta/C2 void retained",
+  "load_time_seconds": 0.001,
+  "full_20pct_completed": false,
+  "hold_performed": false,
+  "new_N32_runs": 0,
+  "observed_loading_maximum": {
+    "compression": 0.13587668519974092,
+    "force_N": 6.123711452351463,
+    "time": 0.0005981644966550156
+  },
+  "matched_shell_peak": {
+    "compression": 0.12786719799041749,
+    "force_N": 5.4987382888793945,
+    "time": 0.0005754500743933022
+  },
+  "observed_maximum_minus_shell_peak_compression_pp": 0.8009487209323429,
+  "observed_maximum_vs_shell_peak_force_relative_difference": 0.11365755754115625,
+  "last_accepted": {
+    "time": 0.0005981644966550156,
+    "compression": 0.13587668519974092,
+    "Fz_N": -6.123711452351463,
+    "internal_macro_Fz_N": -6.170626144367181,
+    "energy_N_mm": 4.363655283174232,
+    "KE_N_mm": 0.07536544223351663,
+    "KE_over_U": 0.017271172295418788,
+    "J_finite": true,
+    "J_min": -7.515745889278677,
+    "invalid_material_points": 0,
+    "negative_J_points": 27103,
+    "required_positive_J_min": 0.20572192055270552,
+    "required_positive_J_points": 936886,
+    "dt_seconds": 1.29251609701462e-08
+  },
+  "covered_curve_comparison": {
+    "upper_compression": 0.13587668519974092,
+    "points": 2001,
+    "RMS_N": 0.26650312520107217,
+    "relative_to_matched_shell_peak": 0.048466231924520944,
+    "relative_to_old_fixed_peak": 0.11797841697386867
+  },
+  "covered_work_N_mm": 4.4389485582235615,
+  "same_compression_shell_covered_work_N_mm": 4.2208401915841876,
+  "covered_work_relative_difference": 0.05167415887345217,
+  "postpeak_compression_increment": 0.0,
+  "accepted_rows": 340,
+  "accepted_steps": 10128,
+  "rejected_blocks": 0,
+  "original_solver_status": "TimeoutError",
+  "stop_request": {
+    "reason": "shared_two_hour_budget_internal_guard",
+    "last_accepted": {
+      "time": 0.0005981644966550156,
+      "compression": 0.13587668519974092,
+      "Fz_N": -6.123711452351463,
+      "internal_macro_Fz_N": -6.170626144367181,
+      "energy_N_mm": 4.363655283174232,
+      "KE_N_mm": 0.07536544223351663,
+      "KE_over_U": 0.017271172295418788,
+      "J_finite": true,
+      "J_min": -7.515745889278677,
+      "invalid_material_points": 0,
+      "negative_J_points": 27103,
+      "required_positive_J_min": 0.20572192055270552,
+      "required_positive_J_points": 936886,
+      "dt_seconds": 1.29251609701462e-08
+    },
+    "actual_controller_stop": true
+  },
+  "stop_is_numerical_failure": false,
+  "total_wall_seconds": 7102.500056266785,
+  "N64_wall_seconds": 6199.38330411911,
+  "body_seconds": 5567.336130364914,
+  "bound_seconds": 2057.649527831818,
+  "max_sampled_whole_domain_energy_residual_N_mm": 7.216811248422772e-05,
+  "max_energy_residual_relative_covered_work": 1.625792944829911e-05,
+  "terminal_KE_over_U": 0.017271172295418788,
+  "minimum_sampled_solid_J": 0.20572192055270552,
+  "minimum_sampled_all_J": -14.823519609520119,
+  "maximum_virtual_negative_J_points": 27103,
+  "initial_solid_required_J_points": 936886,
+  "max_accepted_endpoint_dt_sqrt_R": 1.7892871130090546,
+  "sampled_dt_min_seconds": 1.29251609701462e-08,
+  "all_accepted_finite": true,
+  "all_accepted_solid_J_positive": true,
+  "shell_quality_checks_preserved": {
+    "complete": true,
+    "finite": true,
+    "target_compression": true,
+    "physical_node_count": true,
+    "XYZ_periodic_mm_le_1e-6": true,
+    "XYZ_rotation_rad_le_1e-6": true,
+    "global_energy_drift_le_1pct": false,
+    "most_loading_time_KE_below_5pct": false,
+    "terminal_KE_below_5pct": false,
+    "artificial_energy_le_5pct_work": false
+  },
+  "prior_scientific_files_unchanged": true,
+  "prior_files_count": 249,
+  "stopped_zero_state_files_unchanged": true,
+  "old_N32_T4ms_context": {
+    "peak": {
+      "compression": 0.15238701643777103,
+      "force_N": 6.5638696609580505,
+      "time": 0.0025925587590043295
+    },
+    "shell_peak": {
+      "compression": 0.1182407021522522,
+      "force_N": 5.229988098144531,
+      "time": 0.00219581532292068
+    },
+    "delay_percentage_points": 3.414631428551883,
+    "comparison_limit": "Different T; no matched new N32 as user cancelled it. Mesh and loading rate cannot be separated."
+  },
+  "no_AD": true,
+  "scope": "Observed dynamic loading maximum within covered interval, followed by planned postpeak advance if achieved. No future/global peak, static critical load, pure mesh causality, full20/contact or design AD certificate.",
+  "observed_maximum_state": {
+    "KE_over_U": 0.017271172295418788,
+    "energy_N_mm": 4.363655283174232,
+    "KE_N_mm": 0.07536544223351663,
+    "required_positive_J_min": 0.20572192055270552,
+    "dt_seconds": 1.29251609701462e-08
+  },
+  "peak_neighbor_sample_compressions": [
+    0.13580498532865565,
+    0.13587668519974092
+  ],
+  "peak_neighbor_scope": "Accepted endpoint sampling only; neighbor spacing is not a rigorous peak uncertainty bound.",
+  "observed_maximum_is_interior": false,
+  "accepted_postpeak_rows": 0,
+  "peak_turnover_with_three_lower_rows": false,
+  "if_peak_at_endpoint": "Endpoint maximum is still rising/unconfirmed; do not report it as captured peak.",
+  "hold_started": false,
+  "force_at_fixed_compressions_N": [
+    {
+      "compression": 0.01,
+      "N64": 0.6200194645050988,
+      "matched_shell": 0.6181242218066805
+    },
+    {
+      "compression": 0.05,
+      "N64": 2.5029756698651022,
+      "matched_shell": 2.4202900273798575
+    },
+    {
+      "compression": 0.1,
+      "N64": 4.729696669198833,
+      "matched_shell": 4.537383544636678
+    },
+    {
+      "compression": 0.12,
+      "N64": 5.557638351409316,
+      "matched_shell": 5.309324456416128
+    }
+  ],
+  "endpoint_matched_shell_force_N": 4.523104115178185,
+  "endpoint_same_compression_force_relative_difference": 0.3538736443855268,
+  "captured_N64_peak": null,
+  "interpretation": "Observed maximum is the still-rising endpoint, NOT a captured N64 peak. The 0.80095pp is an endpoint-vs-shell-peak comparison only. No pure mesh cause or full20 accuracy claim."
+}

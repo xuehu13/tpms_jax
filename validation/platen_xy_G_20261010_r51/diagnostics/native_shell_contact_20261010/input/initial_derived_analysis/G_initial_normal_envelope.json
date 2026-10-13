@@ -1,0 +1,27 @@
+{
+  "scope": "Read-only initial reference facet-normal extrusion of .5mm shell at its untrimmed midsurface rim. Geometric illustration; not actual Abaqus contact thickness or new initial equilibrium. Facet normals, not interpolated shell directors. Current background solid is clipped by z=0 and10 planes.",
+  "rows": [
+    {
+      "side": "bottom",
+      "boundary_segments": 168,
+      "total_reference_rim_length_mm": 23.08826431016624,
+      "normal_extrusion_beyond_flat_plate_length_weighted_mean_mm": 0.10343386703715302,
+      "weighted_median_mm": 0.12357501092707857,
+      "weighted_95pct_mm": 0.14565082074409416,
+      "max_mm": 0.14610243452041347,
+      "rim_length_fraction_above_0p01mm": 0.9729217919451243
+    },
+    {
+      "side": "top",
+      "boundary_segments": 168,
+      "total_reference_rim_length_mm": 23.08826431016624,
+      "normal_extrusion_beyond_flat_plate_length_weighted_mean_mm": 0.10343384542414163,
+      "weighted_median_mm": 0.12357501092707913,
+      "weighted_95pct_mm": 0.14565082074409388,
+      "max_mm": 0.14610243452041294,
+      "rim_length_fraction_above_0p01mm": 0.9729217919451243
+    }
+  ],
+  "new_G": false,
+  "new_AD": false
+}

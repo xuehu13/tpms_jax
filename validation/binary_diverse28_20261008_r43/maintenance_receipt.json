@@ -1,0 +1,28 @@
+{
+  "scientific_status": "accepted_initial_partial_scope",
+  "completed_original_plan_step": 1,
+  "new_static_equilibria": 3,
+  "new_Abaqus_jobs": 0,
+  "new_design_AD": 0,
+  "production_changed": false,
+  "scientific_original_hashes_verified": 133,
+  "production_sha256": "56592d903e333d88b31804c9a317106865e64326655a221295a76513f1494967",
+  "all_static_local_integration_and_energy_accounting_gates_passed": true,
+  "source_hashes_and_configuration_checked": true,
+  "current_document_links_checked": true,
+  "figures_visually_checked": true,
+  "repair_logs": "before_geometry_input_repair/, before_driver_path_repair/, before_source_adaptation_repair/ preserved; no failed numerical attempt retried or gates changed",
+  "successful_stage_seconds": 274.53614369395655,
+  "cost_note": "stage-internal timings; excludes preparation scripting, input-adapter repairs, process startup, some file IO and documentation time",
+  "scope": "selected integration only; no production adoption, global sharp-interface certificate, long path or design AD",
+  "main_merge": false,
+  "new_files_sha256": {
+    "validation/binary_diverse28_20261008_r43/diagnostic.py": "0779f9014a2fe06a2beb24d43c37326cc5def840719128d2973b57974456a5e9",
+    "validation/binary_diverse28_20261008_r43/protocol.json": "b0e44f94aeaee91568ab53ac386e66e155528d40d6fb050518898119c1335ee7",
+    "validation/binary_diverse28_20261008_r43/selection.json": "bb0352d2441af205ba92de9c989e9d1fef621328ebf8c7282b8d1120b669936f",
+    "validation/binary_diverse28_20261008_r43/fixed_check.json": "cd8ecbb2cad491d2b98efaabaa2fd87c038b521e7bf143f9f23abf3ceff332c1",
+    "validation/binary_diverse28_20261008_r43/comparison.json": "a7814abaf5dc10862b160e2ab7dbbdeecfe799298503c80e363e18f5b85167e0",
+    "validation/binary_diverse28_20261008_r43/REVIEW.md": "aa6d0862e48cfe999c1688bfc220a06b6710ac8c85afc258430f8b56d065e8c6",
+    "validation/binary_diverse28_20261008_r43/energy_accounting/result.json": "0462153e494def2c10f2a578350002f7ad5e49362c158e3b78defdd274720a25"
+  }
+}

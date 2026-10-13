@@ -1,0 +1,52 @@
+{
+  "geometry": "one circular cylindrical wall, exact analytic distance; no TPMS mesh rebuilding",
+  "R_mm": 2.5,
+  "t_mm": 0.5,
+  "B_mm": 0.3125,
+  "background_L_mm": 10.0,
+  "N_xy": 32,
+  "cell_h_mm": 0.3125,
+  "E_MPa": 10.0,
+  "nu": 0.3,
+  "eta": 0.0001,
+  "interface_10_90_mm": 0.05,
+  "generalized_radial_load_N": 0.0001,
+  "background_rule": 27,
+  "background_space": "actual HEX27 Q2 with exact z-invariant plane-strain extrusion reduction",
+  "common_loading": "outward middle-surface radial load; work F * circumferential mean radial displacement at r=R",
+  "common_axial_condition": "Uz=0; displacement independent of z, representing infinite-cylinder plane strain, NOT TPMS boundary replacement",
+  "references": [
+    "analytic 3D piecewise Lame solution with traction jump at r=R",
+    "Abaqus Standard CAX8, 4 through-thickness cells; axisymmetric 3D reduction",
+    "Abaqus Standard S3R, 128 circumferential segments, 2 axial strips, radial axisymmetric mode via RP"
+  ],
+  "material_gates": {
+    "CAX8_relative_analytic_K": 0.001,
+    "shell_relative_membrane_formula_K_diagnostic_sanity": 0.02,
+    "reference_energy_work": 1e-05,
+    "reference_artificial_energy_fraction": 0.01,
+    "equation_gap_mm": 1e-09
+  },
+  "background_gates": {
+    "true_free_residual": 1e-08,
+    "energy_work": 1e-08,
+    "gauge_reaction_over_load": 1e-08,
+    "tangent_error": 1e-11,
+    "trace_8_12_force_relative": 1e-10,
+    "load_rigid_and_affine_work": 1e-10,
+    "J_min": 0.98,
+    "max_abs_strain": 0.02
+  },
+  "reference_jobs": 2,
+  "total_calculation_budget_seconds": 900,
+  "no_automatic_retries_or_new_meshes": true,
+  "background_significance_against_solid": 0.01,
+  "limitations": [
+    "exact one-curvature geometry, not measured TPMS curvature",
+    "middle-surface load introduces an internal radial stress jump; not macro TPMS compression",
+    "soft-domain/material representation and Q2 approximation remain combined in background-vs-solid difference",
+    "S3R imposed axisymmetric radial mode justified by this loading; no relevance to TPMS rotations",
+    "not global physical error certification, no 20pct or AD"
+  ],
+  "production_changed": false
+}

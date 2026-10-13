@@ -1,0 +1,57 @@
+{
+  "stage": "completed_and_reviewed",
+  "active_jobs": [],
+  "queue": [],
+  "cases": {
+    "diverse_28": {
+      "preparation": {
+        "returncode": 0,
+        "wall_seconds": 18.835644006729126
+      },
+      "JAX": {
+        "returncode": 0,
+        "wall_seconds": 126.32654285430908
+      }
+    },
+    "diverse_02": {
+      "preparation": {
+        "returncode": 0,
+        "wall_seconds": 19.239913940429688
+      },
+      "JAX": {
+        "returncode": 0,
+        "wall_seconds": 160.26310563087463
+      }
+    },
+    "diverse_04": {
+      "preparation": {
+        "returncode": 0,
+        "wall_seconds": 20.97043251991272
+      },
+      "JAX": {
+        "returncode": 0,
+        "wall_seconds": 131.58168148994446
+      }
+    },
+    "diverse_05": {
+      "preparation": {
+        "returncode": 0,
+        "wall_seconds": 18.20108914375305
+      },
+      "JAX": {
+        "returncode": 0,
+        "wall_seconds": 234.10686683654785
+      }
+    }
+  },
+  "gradients": "paused",
+  "heartbeat": "paused",
+  "new_Abaqus_jobs": 0,
+  "current_case": null,
+  "batch_seconds": 759.7843987941742,
+  "complete_attempts": true,
+  "all_HEX8_full20_hold": true,
+  "HEX8_three_target_passes": [],
+  "reference_bytes_unchanged": true,
+  "report": "README.md"
+}

@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-10-10T04:49:57.251419+00:00",
+  "question": "Separate time discretization from end-contact support; test intermediate spatial support without fitting the shell curve.",
+  "fixed": "G geometry, t=.5mm, NH E10 nu.3, N32 HEX27/27 points, occupancy, HRZ, mass, XY/free ax ay, kn320, T1ms, 2pct plus .2ms hold.",
+  "max_new_dynamic_jobs": 2,
+  "per_job_wall_budget_seconds": 2350,
+  "common_nominal_steps": 19877,
+  "common_dt_s": 6.037128339286614e-08,
+  "original_actual_accepted_steps": 19878,
+  "step_count_note": "The existing runner may add one final fractional step due to floating-point time accumulation; the initial dt and final time are the controlled values.",
+  "case_1": "Original cap contact; only time step reduced to match existing rimline run.",
+  "case_2": "Same common time step; points halfway between original cap points and assigned existing rim nodes; all original weights conserved.",
+  "diagnostic_not_physical_correction": true,
+  "support_limit": "Halfway map changes support and spatial interpolation, including tangential nearest-node effects. It is not a new physical thickness, optimized parameter, or geometry AD.",
+  "reference": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/abaqus/result.json",
+  "loading_RMS_denominator_N": 0.7241182386842194,
+  "loading_grid": "1001 equally spaced compressions from 0 to .02; linear interpolation; loading segment only.",
+  "hold_window_s": [
+    0.0011,
+    0.0012
+  ],
+  "hold_average": "Trapezoidal time integral with interpolated window endpoints.",
+  "comparison": "Record signed 1pct/2pct force, loading RMS, hold mean, work, displacements, J, energy and actual steps/rejections. No post-hoc threshold changes.",
+  "full20_submitted": false,
+  "new_design_AD": false
+}

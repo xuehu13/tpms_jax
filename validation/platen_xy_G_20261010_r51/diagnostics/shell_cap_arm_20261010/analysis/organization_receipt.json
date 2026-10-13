@@ -1,0 +1,18 @@
+{
+  "Windows_authoring_archive": "/mnt/c/Users/xuehu/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/history/organization_platen_xy_20261010_r51/cap_arm_authoring",
+  "files": 9,
+  "unexecuted_tools_archived": [
+    {
+      "old": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/tools/extract_shell_cap_arm.py",
+      "new": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/shell_cap_arm_20261010/input/unexecuted_tools/extract_shell_cap_arm.py",
+      "sha256": "596f57e187c1b62dda3861a118ead11eeaa3c1117e91046bb5777d6a1b331916",
+      "executed": false
+    },
+    {
+      "old": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/tools/analyze_shell_cap_arm.py",
+      "new": "/home/xuehu/projects/tpms_jax/validation/platen_xy_G_20261010_r51/diagnostics/shell_cap_arm_20261010/input/unexecuted_tools/analyze_shell_cap_arm.py",
+      "sha256": "8809898f640468111dd54ecb2a34927c2fa30a14ca9220f32d3f2d7d0139f1bc",
+      "executed": false
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "case": "diverse_28",
+    "window_s": [
+      0.0041,
+      0.0042
+    ],
+    "window_scope": "fixed latter0.1ms hold",
+    "JAX_upper_mean_N": 0.6976937609200832,
+    "JAX_bottom_mean_N": 0.6837215713082864,
+    "Abaqus_upper_mean_N": 0.6074173946366361,
+    "Abaqus_bottom_mean_N": 0.5988695243628612,
+    "JAX_mean_bottom_minus_upper_N": -0.013972189611796804,
+    "Abaqus_mean_bottom_minus_upper_N": -0.008547870273774905,
+    "JAX_sampled_momentum_change_N_s": -1.3974523308493191e-06,
+    "JAX_sampled_net_impulse_N_s": -1.397218961179672e-06,
+    "interpretation": "Different upper/lower reactions measure net vertical acceleration in this dynamic model; no substitution of bottom force for the frozen upper-force target."
+  },
+  {
+    "case": "diverse_05",
+    "window_s": [
+      0.003258258025290416,
+      0.003358258025290416
+    ],
+    "window_scope": "last0.1ms of actual common loading; not hold",
+    "JAX_upper_mean_N": 2.4950907150530637,
+    "JAX_bottom_mean_N": 1.4814626318458612,
+    "Abaqus_upper_mean_N": 1.4402096625143335,
+    "Abaqus_bottom_mean_N": 1.5839687517305407,
+    "JAX_mean_bottom_minus_upper_N": -1.0136280832072024,
+    "Abaqus_mean_bottom_minus_upper_N": 0.14375908921620728,
+    "JAX_sampled_momentum_change_N_s": -9.981431664316318e-05,
+    "JAX_sampled_net_impulse_N_s": -0.00010136280832072007,
+    "interpretation": "Different upper/lower reactions measure net vertical acceleration in this dynamic model; no substitution of bottom force for the frozen upper-force target."
+  },
+  {
+    "case": "diverse_02",
+    "window_s": [
+      0.0041,
+      0.0042
+    ],
+    "window_scope": "fixed latter0.1ms hold",
+    "JAX_upper_mean_N": 1.9812052942013427,
+    "JAX_bottom_mean_N": 1.5608910215783427,
+    "Abaqus_upper_mean_N": 1.5218397233515448,
+    "Abaqus_bottom_mean_N": 1.555167802530558,
+    "JAX_mean_bottom_minus_upper_N": -0.42031427262300003,
+    "Abaqus_mean_bottom_minus_upper_N": 0.03332807917901315,
+    "JAX_sampled_momentum_change_N_s": -4.215261505893878e-05,
+    "JAX_sampled_net_impulse_N_s": -4.203142726229975e-05,
+    "interpretation": "Different upper/lower reactions measure net vertical acceleration in this dynamic model; no substitution of bottom force for the frozen upper-force target."
+  }
+]

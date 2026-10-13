@@ -1,0 +1,237 @@
+[
+  {
+    "source": "validation/thin_target_20261004_r5/step3_xyz/attempt1_a0p010000/shell.json",
+    "id": "28-ST1old",
+    "reason": "相同时间/压缩/反力记录，已画 28-ST1"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step3_xyz/attempt2_mgs_a0p050000/shell.json",
+    "id": "28-ST5mid",
+    "reason": "相同时间/压缩/反力记录，已画 28-ST5"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step4_thickness_a01/t0p498000/shell.json",
+    "id": "28-ST498",
+    "reason": "相同时间/压缩/反力记录，已画 28-ST498old"
+  },
+  {
+    "source": "validation/binary_full20_20261008_r44/continuation_from_budget/result.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/binary_full20_20261008_r44/full_from_zero/accepted_path.json",
+    "id": "",
+    "reason": "r44原预算停止前缀，精确包含于04-B32完整接续，不另算新路径"
+  },
+  {
+    "source": "validation/binary_full20_20261008_r44/full_from_zero/failure.json",
+    "id": "",
+    "reason": "r44原预算停止前缀，精确包含于04-B32完整接续，不另算新路径"
+  },
+  {
+    "source": "validation/binary_n64_20261009_r45/full_N64/accepted_path.json",
+    "id": "",
+    "reason": "仅零态准备，无非零接受路径"
+  },
+  {
+    "source": "validation/binary_n64_20261009_r45/full_N64/failure.json",
+    "id": "",
+    "reason": "仅零态准备，无非零接受路径"
+  },
+  {
+    "source": "validation/binary_n64_20261009_r45/peak_N64/failure.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/jax_improvement_20261006_r8/uniform_q6/result.json",
+    "id": "",
+    "reason": "均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/explicit/wave_check/result.json",
+    "id": "",
+    "reason": "均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/gradient20_path_20261005/q1_wave_after_interface/result.json",
+    "id": "",
+    "reason": "均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/quadratic_wave/result.json",
+    "id": "",
+    "reason": "均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/quadratic_wave_runtime_geometry/result.json",
+    "id": "",
+    "reason": "均匀或自由波数值控制，无TPMS压缩加载，不作该构型响应"
+  },
+  {
+    "source": "validation/mechanism_20261007_r17/original_diagnostic/failure.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/mechanism_20261007_r17/short_dt_replay/result.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/n64_resolution_20261008_r28/full_from_zero/failure.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/shell_fill_diagnostic_20261007_r25/results/result_gauge.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/step_control_20261007_r18/controlled_forward/failure.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/void_support_20261007_r26/forward/failure.json",
+    "id": "",
+    "reason": "结果内嵌/原失败文件的相同曲线副本"
+  },
+  {
+    "source": "validation/binary_n64_20261009_r45/full_N64/failure.json",
+    "id": "",
+    "reason": ""
+  },
+  {
+    "source": "validation/binary_n64_20261009_r45/peak_N64/failure.json",
+    "id": "",
+    "reason": "Controlled forward budget stop; not a numerical method failure"
+  },
+  {
+    "source": "validation/geometry_transfer_20261006_r15/operator_stop.json",
+    "id": "",
+    "reason": "Main plan requires stopping on actual inertia/completion concern. Rejected nonfinite blocks plus KE/U well above 5%; do not extend/retune merely to reach 20%."
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/explicit/N64_T0p004/failure.json",
+    "id": "",
+    "reason": "Nonfinite displacement or nonpositive reference Gauss detF"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/gradient20/endpoint/algorithm_stop.json",
+    "id": "",
+    "reason": "residual stagnation in thickness-minus Newton; try same-model energy line search"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/gradient20/endpoint_energy/failure.json",
+    "id": "",
+    "reason": "Newton direction is not an energy descent direction"
+  },
+  {
+    "source": "validation/large_compression_20261005_r6/static/a0p150000/failure.json",
+    "id": "",
+    "reason": "error code 91\n[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094\n[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+  },
+  {
+    "source": "validation/mechanism_20261007_r17/original_diagnostic/failure.json",
+    "id": "",
+    "reason": "Nonfinite state or material energy/force"
+  },
+  {
+    "source": "validation/n64_resolution_20261008_r28/full_from_zero/failure.json",
+    "id": "",
+    "reason": "Finite rollback reaches unchanged initial/16 safeguard"
+  },
+  {
+    "source": "validation/step_control_20261007_r18/controlled_forward/failure.json",
+    "id": "",
+    "reason": "Controlled forward budget stop; not a numerical method failure"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step3_xyz/attempt1_a0p010000/failure.json",
+    "id": "",
+    "reason": "error code 82\n[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094\n[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step3_xyz/attempt1_a0p050000/failure.json",
+    "id": "",
+    "reason": "error code 82\n[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094\n[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step3_xyz/attempt2_mgs_a0p050000/failure.json",
+    "id": "",
+    "reason": "error code 82\n[0] KSPSolve() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_1790630496/work/src/ksp/ksp/interface/itfunc.c:1094\n[0] KSPSolve_Private() at /home/conda/feedstock_root/build_artifacts/bld/rattler-build_petsc_179063"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step4_thickness_a01/attempt1_memory_t0p498000/stop_context.json",
+    "id": "",
+    "reason": "guard policy, not OOM or numerical divergence"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step4_thickness_a01/attempt1_overlap_t0p499000/stop_context.json",
+    "id": "",
+    "reason": "operator interrupted attempt after scheduling overlap and prolonged no-progress observation; retry separately"
+  },
+  {
+    "source": "validation/thin_target_20261004_r5/step4_thickness_a01/attempt1_scheduling_t0p501000/stop_context.json",
+    "id": "",
+    "reason": "agent scheduling mistake: overlap with .499 process; guard stopped new .501 process before completion"
+  },
+  {
+    "source": "validation/simulation_error_20261006_r7/",
+    "id": "",
+    "reason": "恒厚保形体网格未通过；无独立新增TPMS实体响应路径"
+  },
+  {
+    "source": "validation/virtual_kernel_20261006_r9/",
+    "id": "",
+    "reason": "经典虚域核转动缺陷；未采用，未算独立压缩路径"
+  },
+  {
+    "source": "validation/objective_virtual_20261006_r10/",
+    "id": "",
+    "reason": "纯核/既有场验证；没有新压缩路径"
+  },
+  {
+    "source": "validation/critical_mode_20261007_r21/",
+    "id": "",
+    "reason": "受限谱/细空间残差诊断；不是力-压缩路径"
+  },
+  {
+    "source": "validation/fine_mode_20261007_r22/",
+    "id": "",
+    "reason": "四方向200迭代未收敛；不当作临界点证据"
+  },
+  {
+    "source": "validation/background_probe_20261007_r24/",
+    "id": "",
+    "reason": "参考背景源仅准备，未编译/运行；没有ABAQUS27节点对照曲线"
+  },
+  {
+    "source": "validation/initial_bias_mechanism_20261008_r32/",
+    "id": "",
+    "reason": "已有初始场能量/膜迹后处理，无新压缩路径"
+  },
+  {
+    "source": "validation/thickness_kinematics_20261008_r35/",
+    "id": "",
+    "reason": "穿厚度已有场后处理，无新平衡路径"
+  },
+  {
+    "source": "validation/compatible_mode_20261008_r36/",
+    "id": "",
+    "reason": "固定节点局部模式释放，不是新全局刚度"
+  },
+  {
+    "source": "validation/initial_bias_reassessment_20261008_r42/",
+    "id": "",
+    "reason": "既有状态能量账目后处理，不另算重复仿真"
+  },
+  {
+    "source": "validation/binary_mesh_reassessment_20261009_r46/",
+    "id": "",
+    "reason": "共同窗口复盘，原N32/N64重复使用，不另画成新仿真"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "observed_eligible_loading_duration_s": 0.0021913151184114,
+  "observed_high_KE_duration_s": 0.00019502635319194883,
+  "maximum_remaining_loading_duration_s": 0.0010712433298750543,
+  "maximum_possible_final_low_KE_fraction_if_all_remaining_low_KE": 0.940222878368852,
+  "original_95pct_quality_still_possible": false,
+  "controlled_peak_observed": {
+    "time": 0.0026854848531435156,
+    "compression": 0.15940872539154782,
+    "Fz_N": -7.072391495989786,
+    "internal_macro_Fz_N": -7.066532413738025,
+    "energy_N_mm": 6.064165091611316,
+    "KE_N_mm": 0.00878989745685824,
+    "KE_over_U": 0.0014494818864706513,
+    "J_finite": true,
+    "J_min": -6.119249212813952,
+    "invalid_material_points": 0,
+    "negative_J_points": 2062,
+    "required_positive_J_min": 0.08466926589126439,
+    "required_positive_J_points": 141282,
+    "dt_seconds": 1.7202401517144088e-07
+  },
+  "maximum_KE_over_U_loading_ge1pct": 0.2218707873964081,
+  "scope": "Same original right-endpoint duration convention. This upper bound is not a completed trajectory or new forward. Triggered solver stop remains budget, independently of this quality conclusion."
+}

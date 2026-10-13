@@ -1,0 +1,4 @@
+_geometry_deps/
+**/*.odb
+**/*.npz
+**/*.log

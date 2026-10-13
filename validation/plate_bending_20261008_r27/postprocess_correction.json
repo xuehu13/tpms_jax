@@ -1,0 +1,15 @@
+{
+  "initial_postprocess_failure": "KeyError ROOT: flat input node set stored in instance, not rootAssembly; initial Abaqus python command returned 0 despite traceback",
+  "correction": "Use exact declared root labels from the generated input metadata; verify field labels. Read-only extraction, no new analysis.",
+  "odb_sha256_before": "6ec363db430509ffda360920caee89047a36d80dad979a2c617b40a1bbd9ad21",
+  "inp_sha256_before": "b7dba0e752f817a36aa7cc89059a4f65a25ba350f5817e53f5a1f9b5f0078147",
+  "extractor_v2_sha256": "1415879a8ad8f0da142d89c937b004878b1d9a63b5212a9ccd30efd09c00fba4",
+  "second_postprocess_failure": "NumPy bool_ from ODB field data not JSON serializable; v2 returned 0 despite traceback",
+  "final_correction": "Convert field/history numbers to builtin float; exact root labels verified. Read-only v3, original native v1/v2 retained.",
+  "extractor_final_sha256": "326a46c30e81f66399da8465591206fc846bd1a6a49e606d2151d9ebbc3104d7",
+  "final_shell_sha256": "457c3ff8cdacbd3d41cbfd5605e749bc498eabdd15e6270240b0bed0f9f88621",
+  "final_result_gate_pass": true,
+  "inp_unchanged_after_postprocess": true,
+  "odb_unchanged_after_postprocess": true,
+  "new_analysis_submissions_after_first_job": 0
+}

@@ -1,0 +1,47 @@
+{
+  "scope": "G complete0-5pct thickness total derivative, fixed time discretization",
+  "full_path_design_JVP": true,
+  "reverse_VJP_validated": false,
+  "shape_gradient_validated": false,
+  "final_states_and_full_tangent_finite": true,
+  "step1_pass": true,
+  "objectives": [
+    {
+      "objective": "loading_work",
+      "baseline_value": 0.4799091219137255,
+      "AD": 1.2581436238295363,
+      "FD_h": 1.2581976871888223,
+      "FD_half": 1.2581532988649835,
+      "AD_FD_relative_error": 7.68987011040002e-06,
+      "FD_halving_relative_difference": 3.5280536862113245e-05,
+      "nearzero": false,
+      "pass_target": true
+    },
+    {
+      "objective": "terminal_upper_force",
+      "baseline_value": 1.8227484584518874,
+      "AD": 4.9606323323223,
+      "FD_h": 4.963893174254386,
+      "FD_half": 4.963714444010758,
+      "AD_FD_relative_error": 0.000620928484751455,
+      "FD_halving_relative_difference": 3.6007358127342136e-05,
+      "nearzero": false,
+      "pass_target": true
+    }
+  ],
+  "baseline_vs_original_G_fixed_dt_change": {
+    "max_absolute_force_difference_N": 3.5287264936734175e-06,
+    "RMS_force_difference_N": 1.3316160227470525e-06,
+    "interpretation": "Also includes interpolation of original64-step samples; not a new spatial convergence claim"
+  },
+  "elapsed_total_minutes": 106.57218761444092,
+  "case_wall_minutes": {
+    "AD/thickness": 33.45941721200943,
+    "FD/t_plus_h": 17.366526794433593,
+    "FD/t_minus_h": 17.335952373345695,
+    "FD/t_plus_half": 17.334968042373657,
+    "FD/t_minus_half": 17.27267328500748
+  },
+  "sampled_min_required_J": 0.8996099081258999,
+  "all_virtual_J_and_energy_retained": true
+}
